@@ -20,6 +20,7 @@ title: Umin Vibrio Subfaction
 ## Medical Background
 
 ### Cholera Vibrio Characteristics
+
 | 特性 | 医学意义 | 游戏转化 |
 |-----|---------|---------|
 | **水传播** | 经口感染，水源性疫情 | 两栖作战，水域控制 |
@@ -78,6 +79,7 @@ title: Umin Vibrio Subfaction
 - 局部温度可达数千摄氏度
 
 **CPHC应用**：
+
 | 空化参数 | 传统水刀 | CPHC |
 |---------|---------|------|
 | 气泡密度 | 低 | 极高（微空化矩阵） |
@@ -131,6 +133,7 @@ title: Umin Vibrio Subfaction
 **协同模式**：八门炮集中一点，穿透力×8
 
 **弹药类型**：
+
 | 弹药 | 成分 | 效果 |
 |-----|------|------|
 | **纯水弹** | H₂O | 物理穿透 |

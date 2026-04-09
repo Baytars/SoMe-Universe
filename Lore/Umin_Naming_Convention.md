@@ -152,6 +152,7 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 ### 4. Naval & Aerial Units (海空单位)
 
 #### German Kriegsmarine Style
+
 | 类型 | 德语术语 | Umin应用 | 病原体对应 |
 |-----|---------|---------|-----------|
 | 潜艇 | U-Boot | *U-Vibrio* | 霍乱弧菌潜艇（血液传播） |
@@ -162,6 +163,7 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 - 血液传播病原体 → 潜艇/战舰命名
 
 #### Japanese Imperial Navy Style
+
 | 类型 | 日语术语 | Umin应用 | 病原体对应 |
 |-----|---------|---------|-----------|
 | 航空母舰 | 空母 | *Kūbo Influenza* | 流感病毒航母 |
@@ -172,6 +174,7 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 - 病毒海空单位 → 旧日本海军命名
 
 #### Italian Regia Marina Style
+
 | 类型 | 意大利语术语 | Umin应用 | 病原体对应 |
 |-----|-------------|---------|-----------|
 | 战列舰 | Corazzata | *Corazzata Giardia* | 贾第鞭毛虫战列舰 |
@@ -181,12 +184,14 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 ### 5. Special Weapons (特殊武器)
 
 #### German Wunderwaffen Style
+
 | 武器类型 | 德语命名 | Umin应用 | 病理机制 |
 |---------|---------|---------|---------|
 | 生物武器 | *Biologische Waffe* | *Toxin-Vergeltungswaffe* | 毒素报复性武器 |
 | 化学武器 | *Chemische Waffe* | *β-lactamase-Kanone* | β-内酰胺酶炮 |
 
 #### Japanese Kamikaze Style
+
 | 武器类型 | 日语命名 | Umin应用 | 病理机制 |
 |---------|---------|---------|---------|
 | 自杀攻击 | 特攻 | *Lysis-Tokkō* | 细胞裂解特攻 |
@@ -196,6 +201,7 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 ### 6. Ranks & Titles (军衔与头衔)
 
 #### German Military Ranks
+
 | 军衔 | 德语 | Umin应用 |
 |-----|------|---------|
 | 元帅 | Generalfeldmarschall | *MRSA-Feldmarschall* |
@@ -203,6 +209,7 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 | 中将 | General der... | *General der Bakterien* |
 
 #### Japanese Military Ranks
+
 | 军衔 | 日语 | Umin应用 |
 |-----|------|---------|
 | 大将 | 大将 | *Virus-Taishō* |
