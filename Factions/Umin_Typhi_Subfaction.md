@@ -285,8 +285,8 @@ Mary Mallon (1869-1938) was the first person in the United States identified as 
 
 ## Cross-References
 
-- **Yukio Character File**: `./SoMe_Characters/Yuan_Yukio.md` (to be updated with incident details)
-- **Lonicera Character File**: `./SoMe_Characters/Lonicera.md`
-- **Akio Character File**: `./SoMe_Characters/Yuan_Akio.md`
+- **Yukio Character File**: `../Characters/Yuan_Yukio.md` (to be updated with incident details)
+- **Lonicera Character File**: `../Characters/Lonicera.md`
+- **Akio Character File**: `../Characters/Yuan_Akio.md`
 - **Umin Naming Convention**: `../Lore/Umin_Naming_Convention.md`
 - **AAA Counter-Intelligence**: [Document pending]

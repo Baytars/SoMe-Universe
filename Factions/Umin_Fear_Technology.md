@@ -347,7 +347,7 @@ By exploiting humanity's capacity for fear, superstition, and distrust of expert
 ## References
 
 - **Inspiration**: Danielle Moonstar (Mirage) — Marvel Universe, Earth-616
-- **Reference Document**: `./SoMe_References/Reference_Marvel_Wiki_Moonstar.md`
+- **Reference Document**: `../References/Reference_Marvel_Wiki_Moonstar.md`
 - **Related Operations**: Operation Diarrhea (Vibrio), Operation Poltergeist (File Pending)
 
 ---

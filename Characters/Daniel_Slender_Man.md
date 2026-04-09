@@ -139,9 +139,8 @@ The association between Slender Man's proportions and Marfan body morphology is 
 
 ## Cross-References
 
-- **Fred (Father):** `./SoMe_Characters/Fred.md`
-- **Umin Fear Technology Division:** `./SoMe_Factions/Umin_Fear_Technology.md`
-- **Phoenix Incident:** `./SoMe_Locations/Phoenix.md`
+- **Fred (Father):** `./Fred.md`
+- **Umin Fear Technology Division:** `../Factions/Umin_Fear_Technology.md`
 - **Marfan Syndrome:** Real-world medical literature
 
 ---

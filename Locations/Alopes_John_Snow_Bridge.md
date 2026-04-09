@@ -91,8 +91,8 @@ The irony is not lost on Alopesian commanders that *Vibrio cholerae*—the very 
 ---
 
 **Related Documents**:
-- [Umin Vibrio Subfaction](./Umin_Vibrio_Subfaction.md)
-- [Umin Naming Convention](./Umin_Naming_Convention.md)
-- [Chief Medical Advisor Personnel File](../SoMe_Characters/Yuan_Yukio.md)
+- [Umin Vibrio Subfaction](../Factions/Umin_Vibrio_Subfaction.md)
+- [Umin Naming Convention](../Lore/Umin_Naming_Convention.md)
+- [Chief Medical Advisor Personnel File](../Characters/Yuan_Yukio.md)
 
 **Last Updated**: 2026-04-09

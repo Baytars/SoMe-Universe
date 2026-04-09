@@ -105,6 +105,5 @@ The Trinity concept serves multiple purposes:
 
 ## Cross-References
 
-- **Umin Fear Technology Division:** `./SoMe_Factions/Umin_Fear_Technology.md`
-- **Slender Man Entry:** `./SoMe_Bestiary/Umin_Slender_Man.md` (to be created)
-- **Phoenix City:** `./SoMe_Locations/Phoenix.md`
+- **Umin Fear Technology Division:** `../Factions/Umin_Fear_Technology.md`
+- **Slender Man Entry:** `./Daniel_Slender_Man.md`

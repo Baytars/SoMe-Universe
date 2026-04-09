@@ -87,7 +87,7 @@ Lonicera was a war orphan who lost her family in one of the conflicts that plagu
 
 ### The Inaugural Diplomacy (Six Months After Yukio's Appointment)
 
-**Full Script**: `./SoMe_Scripts/The_Inaugural_Diplomacy.md`
+**Full Script**: `../Scripts/The_Inaugural_Diplomacy.md`
 
 Lonicera's appointment as Head Maid came not from circumstance, but from sacrifice. During Yukio's first major diplomatic mission—representing Grand Duchess Victoria to the Probiotic Confederacy—Vibrio cholerae forces launched **Operation Diarrhea**, a devastating attack on John Snow Bridge.
 

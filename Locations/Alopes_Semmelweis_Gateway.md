@@ -130,7 +130,7 @@ Both men were pioneers who identified the vectors of deadly diseases through met
 
 **Related Documents**:
 - [John Snow Bridge](./Alopes_John_Snow_Bridge.md)
-- [Umin Pneumoniae Panzergruppe](./Umin_Naming_Convention.md)
-- [Chief Medical Advisor Personnel File](../SoMe_Characters/Yuan_Yukio.md)
+- [Umin Naming Convention](../Lore/Umin_Naming_Convention.md)
+- [Chief Medical Advisor Personnel File](../Characters/Yuan_Yukio.md)
 
 **Last Updated**: 2026-04-09

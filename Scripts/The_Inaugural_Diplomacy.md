@@ -382,7 +382,7 @@ She placed her hand over her heart:
 **Script ID**: INAUGURAL_DIPLOMACY_001
 **Related Documents**:
 - [John Snow Bridge](../Locations/Alopes_John_Snow_Bridge.md)
-- [Vibrio Subfaction](../SoMe_Factions/Umin_Vibrio_Subfaction.md)
-- [Lonicera Personnel File](../SoMe_Characters/Lonicera.md)
+- [Vibrio Subfaction](../Factions/Umin_Vibrio_Subfaction.md)
+- [Lonicera Personnel File](../Characters/Lonicera.md)
 
 **Last Updated**: 2026-04-09
