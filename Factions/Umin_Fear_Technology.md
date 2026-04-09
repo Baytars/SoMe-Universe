@@ -184,7 +184,7 @@ Daniel was extracted alive and transported to Fear Technology Division's primary
 
 ### Strategic Objectives
 
-In late 2345, Fear Technology Division deployed the THIN MAN construct against a specific target: **Fred**, Daniel's father, now working as a forest ranger near the Sacrum-Cervical border.
+In late 2345, Fear Technology Division deployed the THIN MAN construct against a specific target: **Fred**, Daniel's father, now working as a forest ranger near the Sacral-Lumbar border.
 
 **Objectives**:
 1. **Field Test**: Verify whether family members recognize the transformed subject
@@ -198,7 +198,7 @@ In late 2345, Fear Technology Division deployed the THIN MAN construct against a
 **Subject**: Fred (age 52, father of Daniel)  
 **Construct**: THIN MAN Unit 01 (Daniel)  
 **Date**: 2345-11-17  
-**Location**: Forest Sector 7-C, Sacrum-Cervical border
+**Location**: Forest Sector 7-C, Sacral-Lumbar border
 
 **Deployment Log**:
 > 06:00 — THIN MAN Unit deployed to forest sector

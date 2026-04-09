@@ -3,7 +3,7 @@
 **Role:** Forest Ranger  
 **Age:** 52  
 **Status:** Active  
-**Location:** Forest sector near Sacrum-Cervical border  
+**Location:** Forest sector near Sacral-Lumbar border  
 **Affiliation:** Neutral (Civilian) / Former Phoenix Resident
 
 ---
@@ -20,7 +20,7 @@ In the chaos, Fred was separated from his son. Evacuation protocols forced him o
 
 ## Current Status
 
-Fred now works as a forest ranger in a remote sector near the Sacrum-Cervical continental border. The isolation suits him — he avoids reminders of Phoenix, yet obsessively monitors radio transmissions for any news of liberation efforts or missing persons lists.
+Fred now works as a forest ranger in a remote sector near the Sacral-Lumbar border. The isolation suits him — he avoids reminders of Phoenix, yet obsessively monitors radio transmissions for any news of liberation efforts or missing persons lists.
 
 He has refused multiple reassignment offers from Alopes authorities, choosing instead to remain in his forest outpost where he can think, wait, and hope.
 
