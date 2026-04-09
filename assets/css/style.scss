@@ -1,0 +1,36 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+
+table th {
+  background-color: #2d3a4a;
+  color: #e8e8e8;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid #4a5568;
+  text-align: left;
+}
+
+table td {
+  padding: 8px 15px;
+  border: 1px solid #4a5568;
+  background-color: #1a2332;
+  color: #c8d4e0;
+}
+
+table tr:nth-child(even) td {
+  background-color: #222d3d;
+}
+
+table tr:hover td {
+  background-color: #2a3a4d;
+}
