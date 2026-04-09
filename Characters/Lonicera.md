@@ -167,19 +167,3 @@ A diplomat tries to pressure Yukio during off-hours. Lonicera intercepts with ca
 
 ### Scene 3: The Quiet Confession
 After a particularly difficult mission, Yukio sits alone in the garden. Lonicera appears with a blanket, drapes it over Yukio's shoulders, and sits nearby — not speaking, just present.
-
----
-
-## Notes for Future Development
-
-- Lonicera's full backstory should be revealed gradually
-- Her medical training could become relevant in emergencies
-- Her loyalty may be tested by political intrigue
-- Possible subplot: Lonicera's past connection to Yukio's family
-
----
-
-## Changelog
-- **2026-04-09**: Initial creation
-- Established as Yukio's head maid and most trusted domestic staff
-- Named after *Lonicera* (honeysuckle genus)

@@ -273,32 +273,9 @@ AAA has developed countermeasures against Typhi infiltration:
 
 ---
 
-## Historical & Educational Notes
-
-### The Real Typhoid Mary
+## Historical Context: The Real Typhoid Mary
 
 Mary Mallon (1869-1938) was the first person in the United States identified as an asymptomatic carrier of typhoid fever. She worked as a cook and infected approximately 50 people over her career, 3 of whom died. She never showed symptoms and refused to believe she was contagious. She was forcibly quarantined twice, spending a total of 26 years in isolation.
-
-**Educational Value**:
-- Asymptomatic carriers are real — infected individuals who never show symptoms
-- Carriers can spread disease for decades without knowing
-- The gallbladder is a common reservoir for chronic typhoid infection
-- Modern public health systems screen food workers for carrier status
-- The tension between individual liberty and public safety remains relevant
-
-### Game Mechanics Implications
-
-**For Players**:
-- "Mary" operatives can be encountered as enemies or quest givers
-- Players may need to identify impostors through behavioral analysis
-- Medical knowledge (carrier detection) is a useful skill
-- Some NPCs may be former Mary operatives seeking redemption
-
-**For Game Masters**:
-- Substitution operations provide plot hooks for investigation adventures
-- Political intrigue and betrayal scenarios
-- Ethical dilemmas: what to do with captured Mary operatives?
-- Recovery arcs for rescued originals
 
 ---
 
@@ -309,11 +286,3 @@ Mary Mallon (1869-1938) was the first person in the United States identified as 
 - **Akio Character File**: `./SoMe_Characters/Yuan_Akio.md`
 - **Umin Naming Convention**: `./SoMe_Factions/Umin_Naming_Convention.md`
 - **AAA Counter-Intelligence**: [Document pending]
-
----
-
-## Changelog
-- **2026-04-10**: Initial creation
-- Documented Project MARY substitution protocol
-- Detailed Operation DOPPELGÄNGER (Yukio Incident)
-- Established historical and educational context

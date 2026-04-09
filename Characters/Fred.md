@@ -99,27 +99,8 @@ The Trinity concept serves multiple purposes:
 
 ---
 
-## Notes for Writers
-
-- Fred's story bridges the gap between **horror** and **tragedy**. Slender Man is not just a monster — it is a crime against a human being.
-
-- The Marfan syndrome connection grounds the supernatural horror in real medical pathology, making the fear more visceral for players/ readers with medical knowledge.
-
-- Fred's recognition of his son's posture in Slender Man's silhouette is the emotional pivot point — it transforms a "monster sighting" into a "recognition scene" with devastating implications.
-
-- The "上峰" designation suggests Umin's internal power structure mimics real-world authoritarian bureaucracies, adding political satire to the horror.
-
----
-
 ## Cross-References
 
 - **Umin Fear Technology Division:** `./SoMe_Factions/Umin_Fear_Technology.md`
 - **Slender Man Entry:** `./SoMe_Bestiary/Umin_Slender_Man.md` (to be created)
 - **Phoenix City:** `./SoMe_Locations/Phoenix.md`
-- **The Great Patriotic War:** `./MEMORY.md` (Sacrum Continental Theater)
-- **Marfan Syndrome Medical Data:** Real-world condition — see medical references for accurate portrayal
-
----
-
-*Character created: 2345/04/10*  
-*Last updated: 2345/04/10*

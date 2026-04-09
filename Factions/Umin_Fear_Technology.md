@@ -234,36 +234,6 @@ In late 2345, Fear Technology Division deployed the THIN MAN construct against a
 
 ---
 
-## Ethical Horror: The Educational Dimension
-
-Project THIN MAN and Operation FATHER-SON serve multiple narrative and educational purposes:
-
-### Horror Layers
-
-1. **Body Horror**: Surgical transformation of a human being against their will
-2. **Medical Horror**: Real genetic condition weaponized into supernatural terror
-3. **Psychological Horror**: Father unknowingly terrorized by transformed son
-4. **Ethical Horror**: Utilitarian calculus — "this malformed human has propaganda value"
-5. **Existential Horror**: What remains of the self after such transformation?
-
-### Educational Value
-
-Players learn:
-- **Marfan syndrome is real** — a genetic condition affecting ~1 in 5,000 people
-- **Body dysmorphia and "monster" archetypes** often derive from real medical conditions
-- **The "uncanny valley" effect** has neurobiological basis — we fear what looks almost-human
-- **Weaponization of disability** is a real historical phenomenon (e.g., Nazi "eugenics" programs)
-- **Psychological warfare** often targets the most vulnerable populations
-
-### Narrative Potential
-
-- **Redemption arc**: Daniel's consciousness partially reasserts, allowing players to "cure" or rescue him
-- **Moral dilemma**: Fred must choose between fighting his son or letting the construct operate
-- **Medical discovery**: AAA recognizes Marfan skeletal markers and traces the transformation
-- **Counter-operation**: Infiltration of Fear Technology Division to rescue transformed subjects
-
----
-
 ## THIN MAN Registry (Partial)
 
 | Unit ID | Original Identity | Phenotype | Status |
@@ -331,14 +301,6 @@ Each fear operation forces AAA to:
 | Authority Undermining | Anti-science movements, institutional distrust |
 | Fear Cascade Effect | Moral panics, mass psychogenic illness |
 | AAA's Struggle | Scientific community vs. misinformation |
-
-**Educational Purpose**:
-Players learn that:
-- Fear can be manufactured and exploited
-- Scientific literacy is a defense against manipulation
-- Anecdotes ≠ evidence
-- Viral spread does not indicate truth
-- The inability to disprove something does not make it real
 
 ---
 

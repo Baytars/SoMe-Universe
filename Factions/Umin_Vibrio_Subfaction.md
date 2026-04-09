@@ -136,8 +136,8 @@
 
 ### 2. Ink Cloud System (墨云系统)
 
-**设计参考**：章鱼喷墨逃生
-**Umin改编**：战术性水域转化
+**Tactical Inspiration**: Octopus ink escape mechanism
+**Umin Adaptation**: Strategic water domain transformation
 
 **功能**：
 - 喷射"米汤样"液体（霍乱腹泻物视觉化）
@@ -182,51 +182,17 @@
 
 ---
 
-## Reference: Atlantean Hydro-Technology
-## 亚特兰蒂斯水族科技参考
-
-**来源**: Aquaman Wiki (https://aquaman.fandom.com/)
-
-### 核心设计理念
-
-亚特兰蒂斯科技的核心：**仿生学**与**海洋适应**。
-- 载具形态模仿海洋生物（鲸鱼、蝠鲼、鲨鱼）
-- 钻探技术实现海床穿透
-- 水下通讯网络覆盖全域
-
-### 可借鉴科技
-
-#### 1. Whale Sub (鲸鱼潜艇)
-**设计**: 鲸鱼形态的潜艇舰队
-**SoMe转化**: *Vibrio Whale-Class* — 霍乱弧菌主力运输舰
-
-#### 2. Bore Craft (钻探艇)
-**设计**: 钻石尖端钻头，穿透海床
-**SoMe转化**: *Vibrio Bore-Craft* — 水下渗透钻探部队
-
-#### 3. Sea-Saucer (海碟)
-**设计**: 圆盘形水下飞行器
-**SoMe转化**: *Vibrio Saucer* — 快速侦察单位
-
-#### 4. Radio Rings (通讯环)
-**设计**: 水下无线电通讯
-**SoMe转化**: *Vibrio Signal Network* — 水下通讯系统
-
----
-
-## Advanced Technologies (Based on Atlantean Reference)
+## Advanced Technologies
 
 ### 1. Bio-Mimetic Hull Design (仿生船体设计)
 
-**参考**: Whale Sub的生物形态
+Vibrio naval units employ hull designs based on marine biology:
 
-**Vibrio Adaptation**:
-
-| 亚特兰蒂斯设计 | Vibrio改编 | 医学隐喻 |
-|--------------|-----------|---------|
-| 鲸鱼流线型 | 弧菌弧形外壳 | 霍乱弧菌的逗号形态 |
-| 声纳定位 | 化学梯度追踪 | 细菌趋化性 |
-| 深潜能力 | 极端环境耐受 | 弧菌在碱性环境存活 |
+| Biological Form | Vibrio Adaptation | Medical Metaphor |
+|-----------------|-------------------|------------------|
+| Whale streamlining | Curved vibrio hull | Comma shape of cholera bacterium |
+| Sonar navigation | Chemical gradient tracking | Bacterial chemotaxis |
+| Deep dive capability | Extreme environment tolerance | Vibrio survival in alkaline conditions |
 
 **船体结构**:
 ```
@@ -303,13 +269,13 @@
 
 ### Support Units
 
-| 单位 | 类型 | 参考设计 | 职能 |
-|-----|------|---------|------|
-| *Vibrio Whale-Class* | 运输舰 | Whale Sub | 主力运输、登陆作战 |
-| *Vibrio Bore-Craft* | 钻探艇 | Bore Craft | 水下渗透、基地建设 |
-| *Vibrio Saucer* | 侦察机 | Sea-Saucer | 快速侦察、骚扰 |
-| *Vibrio U-Boot* | 攻击潜艇 | 德国U艇+仿生 | 水下猎杀 |
-| *Vibrio Kreuzer* | 巡洋舰 | 日巡洋舰 | 水面火力支援 |
+| Unit | Type | Function |
+|------|------|----------|
+| *Vibrio Whale-Class* | Transport | Main transport, amphibious assault |
+| *Vibrio Bore-Craft* | Driller | Underwater infiltration, base construction |
+| *Vibrio Saucer* | Scout | Fast reconnaissance, harassment |
+| *Vibrio U-Boot* | Attack Sub | Underwater hunter-killer |
+| *Vibrio Kreuzer* | Cruiser | Surface fire support |
 
 ### Special Units
 
@@ -401,12 +367,3 @@
 - 局部温度：可达5000-10000 K
 - 局部压力：可达1000 atm
 - 微射流速度：100-200 m/s
-
----
-
-## Changelog
-- **2026-04-09**: Initial creation
-- Established Octopus visual design for Vibrio forces
-- Developed Critical Pressure Hydraulic Cannon (CPHC) technology
-- Created battlefield transformation "Ocean Protocol"
-- Applied Japanese Imperial Navy naming convention

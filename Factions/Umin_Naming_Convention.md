@@ -227,36 +227,3 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 | *Pneumoniae Panzergruppe* | 肺炎链球菌 | 德国装甲集群 | 德语军事术语，体现细菌装甲化 |
 | *MRSA Excavator* | 耐甲氧西林金葡菌 | 德国工程单位 | Excavator暗示挖掘耐药性"隧道" |
 | *Longicorn Flag* | Umin阵营旗帜 | 日语"長角" | U形长角象征"The Unseen Crown" |
-
----
-
-## Quick Reference: Naming Templates
-
-### Operation Names
-```
-Operation [German Mythology/Animal] — 细菌主导行动
-Operation [Japanese Shinto/Season] — 病毒主导行动
-Operation [Latin Term] — 真菌主导行动
-```
-
-### Unit Names
-```
-[Pathogen Genus] Panzergruppe/Panzerdivision — 细菌装甲部队
-[Pathogen Genus] Fallschirmjäger — 病毒空降部队
-[Pathogen Genus] Legione — 真菌军团
-[Pathogen Genus] Tokkōtai — 病毒特攻队
-```
-
-### Heavy Units
-```
-[Animal Name]-[Pathogen] — 德国风格坦克
-[Mythological Creature]-[Pathogen] — 日本风格巨型单位
-[Classical God]-[Pathogen] — 意大利风格重型载具
-```
-
----
-
-## Changelog
-- **2026-04-09**: Initial creation
-- Established three-style naming convention (German/Japanese/Italian)
-- Linked pathogen types to specific naming styles
