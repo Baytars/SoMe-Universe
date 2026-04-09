@@ -1,3 +1,7 @@
+---
+layout: default
+title: Umin Typhi Subfaction
+---
 # Umin Typhi Subfaction — The Silent Infiltrators
 
 **Codename:** *Abteilung Stille* (Department of Silence)  

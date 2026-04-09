@@ -1,3 +1,7 @@
+---
+layout: default
+title: The Inaugural Diplomacy
+---
 # The Inaugural Diplomacy
 
 ## Episode Summary

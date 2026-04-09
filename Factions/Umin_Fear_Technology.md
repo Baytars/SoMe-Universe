@@ -1,3 +1,7 @@
+---
+layout: default
+title: Umin Fear Technology
+---
 # Umin Fear Technology Division
 
 ## Overview

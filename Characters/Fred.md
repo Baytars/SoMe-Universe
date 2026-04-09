@@ -1,3 +1,7 @@
+---
+layout: default
+title: Fred
+---
 # Fred — Forest Ranger
 
 **Role:** Forest Ranger  

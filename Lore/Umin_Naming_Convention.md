@@ -1,3 +1,7 @@
+---
+layout: default
+title: Umin Naming Convention
+---
 # Umin Naming Convention
 ## The Unseen Crown — Axis Powers Naming Heritage
 

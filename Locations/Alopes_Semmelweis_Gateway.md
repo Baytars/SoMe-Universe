@@ -1,3 +1,7 @@
+---
+layout: default
+title: Alopes Semmelweis Gateway
+---
 # Semmelweis Gateway
 
 ## Overview

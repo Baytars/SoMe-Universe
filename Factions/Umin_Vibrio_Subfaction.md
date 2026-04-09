@@ -1,3 +1,7 @@
+---
+layout: default
+title: Umin Vibrio Subfaction
+---
 # Vibrio Subfaction — The Abyssal Legion
 ## Umin Hydro-Force — Cholera Vibrio Forces
 

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Alopes John Snow Bridge
+---
 # John Snow Bridge
 
 ## Overview

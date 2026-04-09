@@ -1,3 +1,7 @@
+---
+layout: default
+title: Reference Marvel Wiki Moonstar
+---
 # Marvel Wiki Reference: Danielle Moonstar (Mirage)
 
 ## Source

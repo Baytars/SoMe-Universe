@@ -1,3 +1,7 @@
+---
+layout: default
+title: Daniel Slender Man
+---
 # Daniel — Subject of Project THIN MAN
 
 **Original Identity:** Daniel (surname unknown)  

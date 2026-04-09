@@ -1,3 +1,7 @@
+---
+layout: default
+title: Yuan Yukio
+---
 # PERSONNEL FILE: YUAN YUKIO (袁雪炤)
 ## Classification: RESTRICTED // DUCHY OF ALOPES GOVERNMENT
 

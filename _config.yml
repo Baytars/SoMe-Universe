@@ -1,0 +1,44 @@
+theme: jekyll-theme-slate
+title: SoMe Universe
+description: Saga of Medicine — A medical sci-fi game universe
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "Characters"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "Factions"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "Locations"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "Lore"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "Scripts"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "References"
+      type: "pages"
+    values:
+      layout: "default"

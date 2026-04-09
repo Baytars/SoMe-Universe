@@ -1,3 +1,7 @@
+---
+layout: default
+title: Lonicera
+---
 # Lonicera — Head Maid of Chief Medical Advisor's Residence
 
 ---
