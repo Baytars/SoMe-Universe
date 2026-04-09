@@ -10,9 +10,9 @@
 
 ## Background
 
-Fred served as a maintenance worker in Phoenix General Hospital before the city's fall. His son, Daniel, was born with **Marfan syndrome** — a genetic disorder affecting connective tissue, characterized by tall stature, elongated limbs, arachnodactyly (spider-like fingers), and most critically, cardiovascular vulnerabilities including aortic aneurysms.
+Fred served as a maintenance worker at Phoenix Regional Hospital before the city's fall. His son, Daniel, was born with **Marfan syndrome** — a genetic disorder affecting connective tissue, characterized by tall stature, elongated limbs, arachnodactyly (spider-like fingers), and most critically, cardiovascular vulnerabilities including aortic aneurysms.
 
-In 2341, when Umin forces launched their assault on Phoenix (later known as the **Phoenix Incident**), Daniel was undergoing emergency aortic aneurysm repair surgery at Phoenix General. The operation was interrupted when *Pneumoniae Panzergruppe* armor units breached the hospital perimeter.
+In 2341, when Umin forces launched their assault on Phoenix (later known as the **Phoenix Incident**), Daniel was undergoing emergency aortic aneurysm repair surgery at Phoenix Regional Hospital. The operation was interrupted when *Pneumoniae Panzergruppe* armor units breached the hospital perimeter.
 
 In the chaos, Fred was separated from his son. Evacuation protocols forced him onto the last transport out of the city. Daniel was left behind — last seen on the operating table, unconscious and intubated.
 

@@ -148,7 +148,7 @@ Fear Technology Division monitors hospital networks for Marfan syndrome patients
 4. High mortality rates in Marfan patients make disappearance plausible
 
 **Phoenix Incident Acquisition (2341)**:
-During the Umin assault on Phoenix, Division operatives identified **Daniel** (age 24, confirmed Marfan syndrome) undergoing aortic aneurysm repair at Phoenix General Hospital. Initial field orders were for "mercy kill" — standard protocol for incapacitated civilians.
+During the Umin assault on Phoenix, Division operatives identified **Daniel** (age 24, confirmed Marfan syndrome) undergoing aortic aneurysm repair at Phoenix Regional Hospital. Initial field orders were for "mercy kill" — standard protocol for incapacitated civilians.
 
 **Counter-Order (Priority Alpha)**:
 > *"Specimen matches THIN MAN template parameters. Suspend termination. Extract for bioengineering. Mark as 'missing, presumed dead' in casualty reports."*

@@ -19,13 +19,13 @@ Daniel was born with **Marfan syndrome**, a genetic disorder of connective tissu
 - Pectus excavatum (sunken chest)
 - Aortic root dilation (progressive, requiring surgical intervention)
 
-Despite his condition, Daniel maintained an active life and worked alongside his father at Phoenix General Hospital as a medical records clerk. He was known for his gentle demeanor and dry sense of humor.
+Despite his condition, Daniel maintained an active life and worked alongside his father at Phoenix Regional Hospital as a medical records clerk. He was known for his gentle demeanor and dry sense of humor.
 
 ---
 
 ## The Phoenix Incident (2341)
 
-On the day of the Umin assault, Daniel was undergoing emergency **aortic aneurysm repair** at Phoenix General Hospital. The surgery was approximately 60% complete when *Pneumoniae Panzergruppe* armor units breached the facility.
+On the day of the Umin assault, Daniel was undergoing emergency **aortic aneurysm repair** at Phoenix Regional Hospital. The surgery was approximately 60% complete when *Pneumoniae Panzergruppe* armor units breached the facility.
 
 **Timeline:**
 - 14:32 — First explosions reported at hospital perimeter
