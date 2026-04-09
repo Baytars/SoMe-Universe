@@ -377,7 +377,7 @@ She placed her hand over her heart:
 **Document Classification**: Narrative Script
 **Script ID**: INAUGURAL_DIPLOMACY_001
 **Related Documents**:
-- [John Snow Bridge](../SoMe_Factions/Alopes_John_Snow_Bridge.md)
+- [John Snow Bridge](../Locations/Alopes_John_Snow_Bridge.md)
 - [Vibrio Subfaction](../SoMe_Factions/Umin_Vibrio_Subfaction.md)
 - [Lonicera Personnel File](../SoMe_Characters/Lonicera.md)
 

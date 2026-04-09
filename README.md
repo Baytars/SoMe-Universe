@@ -11,10 +11,10 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 ## Factions
 
 ### The Duchy of Alopes (Defenders)
-Named after the Greek word for "unseen" (ἀόρατος), Alopes represents the immune system and medical intervention. Key territories include:
-- **John Snow Bridge** — The anal canal, gateway to the external universe
-- **Semmelweis Gateway** — The birth canal, portal of new life
-- **Anshington** — The capital city, center of medical administration
+Named after the Greek word for "unseen" (ἀόρατος), Alopes represents the immune system and medical intervention.
+- [Fear Technology Division](./Factions/Umin_Fear_Technology.md) — Umin's psychological warfare division
+- [Typhi Subfaction](./Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration
+- [Vibrio Subfaction](./Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces
 
 ### The Unseen Crown / Umin (Invaders)
 A confederation of pathogens with distinct military traditions:
@@ -24,24 +24,30 @@ A confederation of pathogens with distinct military traditions:
 - **Parasites** — Kaiju-style monsters
 - **Tumors** — Freikorps叛军 (mutated former allies)
 
-## Featured Works
+## Locations
 
-### Scripts
+- [John Snow Bridge](./Locations/Alopes_John_Snow_Bridge.md) — The anal canal, gateway to the external universe
+- [Semmelweis Gateway](./Locations/Alopes_Semmelweis_Gateway.md) — The birth canal, portal of new life
+
+## Lore
+
+- [Umin Naming Convention](./Lore/Umin_Naming_Convention.md) — Axis Powers-inspired naming system for pathogen forces
+
+## Characters
+
+- [Yuan Yukio](./Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
+- [Kadd Yuan Akio](./Characters/Yuan_Akio.md) — Marshal of Jackalope Guard
+- [Lonicera](./Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident
+- [Fred](./Characters/Fred.md) — Forest ranger, father of Daniel
+- [Daniel / THIN MAN-01](./Characters/Daniel_Slender_Man.md) — Transformed into Slender Man
+
+## Scripts
+
 - [The Inaugural Diplomacy](./Scripts/The_Inaugural_Diplomacy.md) — Yukio's first diplomatic mission and the birth of her bond with Lonicera
 
-### Factions
-- [Umin Naming Convention](./Factions/Umin_Naming_Convention.md) — Axis Powers-inspired naming system
-- [Vibrio Subfaction](./Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces with CPHC technology
-- [Fear Technology Division](./Factions/Umin_Fear_Technology.md) — Psychological warfare through fear manifestation
-- [John Snow Bridge](./Factions/Alopes_John_Snow_Bridge.md) — The exit gate
-- [Semmelweis Gateway](./Factions/Alopes_Semmelweis_Gateway.md) — The entrance gate
+## References
 
-### References
 - [Marvel Wiki: Danielle Moonstar](./References/Reference_Marvel_Wiki_Moonstar.md) — Inspiration for Fear Technology
-
-### Characters
-- [Yuan Yukio](./Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
-- [Lonicera](./Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident
 
 ## Key Concepts
 
