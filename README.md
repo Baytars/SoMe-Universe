@@ -32,8 +32,12 @@ A confederation of pathogens with distinct military traditions:
 ### Factions
 - [Umin Naming Convention](./Factions/Umin_Naming_Convention.md) — Axis Powers-inspired naming system
 - [Vibrio Subfaction](./Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces with CPHC technology
+- [Fear Technology Division](./Factions/Umin_Fear_Technology.md) — Psychological warfare through fear manifestation
 - [John Snow Bridge](./Factions/Alopes_John_Snow_Bridge.md) — The exit gate
 - [Semmelweis Gateway](./Factions/Alopes_Semmelweis_Gateway.md) — The entrance gate
+
+### References
+- [Marvel Wiki: Danielle Moonstar](./References/Reference_Marvel_Wiki_Moonstar.md) — Inspiration for Fear Technology
 
 ### Characters
 - [Yuan Yukio](./Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
@@ -52,6 +56,13 @@ Characters are named after pioneers of medicine, with their "weapon class" deter
 - Antibiotic ammunition follows real pharmacological mechanisms (β-lactams inhibit cell wall synthesis)
 - Pathogen evolution includes horizontal gene transfer mechanisms (conjugation, transduction, transformation)
 - Environmental hazards reflect actual disease pathology
+
+### Fear as a Weapon System
+Umin's Fear Technology Division creates supernatural constructs (ghosts, zombies, Slender Man) to exploit human superstition and distrust of science. This parallels real-world issues:
+- Misinformation and viral hoaxes
+- Anti-science movements
+- Mass psychogenic illness
+- The challenge of debunking beliefs that "feel true"
 
 ## Development Status
 
