@@ -60,15 +60,18 @@ The result: a living Fear Construct — **Slender Man** — derived from a real 
 
 ---
 
-## Operation FATHER-SON
+## Operation Trinity
 
-Umin Fear Technology Division deliberately engineered Fred's encounter with his transformed son. The objectives were twofold:
+Umin Fear Technology Division deliberately engineered Fred's encounter with his transformed son. The operation was designated **Trinity** — referencing the three entities now intertwined:
 
-1. **Field Test:** Verify the psychological impact of Slender Man on individuals with personal emotional connections to the original human template. Would the terror be amplified? Would the subject recognize the construct?
+1. **The Father** — Fred, the target
+2. **The Son** — Daniel, the original human template
+3. **The Construct** — Slender Man, the weaponized urban legend
 
-2. **Propaganda Value:** Document Fred's psychological breakdown for internal reports to the "上峰" (High Command). Use the footage to demonstrate that Fear Constructs derived from real medical anomalies are more effective than purely fictional designs.
-
-The operation was designated **FATHER-SON** — a designation that reveals Umin's cynical awareness of the emotional core they were weaponizing.
+The Trinity concept serves multiple purposes:
+- **Field Test:** Verify the psychological impact of Slender Man on individuals with personal emotional connections to the original human template
+- **Propaganda Value:** Document Fred's psychological breakdown for internal reports to the "上峰" (High Command)
+- **Strategic Naming:** "Trinity" echoes the first nuclear weapons test — signaling that this represents a new category of psychological mass destruction
 
 ---
 

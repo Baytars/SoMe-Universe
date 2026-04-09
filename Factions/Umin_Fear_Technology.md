@@ -180,7 +180,7 @@ Daniel was extracted alive and transported to Fear Technology Division's primary
 
 ---
 
-## Operation FATHER-SON
+## Operation Trinity
 
 ### Strategic Objectives
 

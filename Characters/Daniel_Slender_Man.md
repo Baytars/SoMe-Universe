@@ -73,7 +73,7 @@ Umin Fear Technology Division had been scanning hospital records for subjects wi
 
 ---
 
-## The Fred Incident (Operation FATHER-SON)
+## The Fred Incident (Operation Trinity)
 
 In late 2345, Fear Technology Division deployed Slender Man to the forest sector where Fred now worked as a ranger. The operation was designed to test:
 

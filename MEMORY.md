@@ -454,13 +454,13 @@
 - **改造流程**：骨骼延长→面部中和→神经重编程→激素修饰→触手植入
 - **战术优势**：成本低、心理冲击大、医学可信度高、家族识别效应
 
-### Operation FATHER-SON
+### Operation Trinity
 - **执行方**：Umin Fear Technology Division
-- **目标**：Fred（Daniel的父亲）
-- **目的**：
-  1. 验证家族成员是否能识别改造后的对象
-  2. 测量情感联系对恐惧效果的放大作用
-  3. 为"上峰"提供影像资料证明Fear Tech价值
+- **三位一体**：
+  1. **The Father (Fred)** — 目标
+  2. **The Son (Daniel)** — 原始人类模板
+  3. **The Construct (Slender Man)** — 武器化都市传说
+- **命名含义**：呼应首次核试验Trinity，象征新型心理大规模杀伤武器
 - **结果**：成功，Fred识别出体态相似性但陷入否认，心理状态恶化
 - **"上峰"批准**：Project THIN MAN预算增加200%
 
