@@ -123,6 +123,70 @@ Her relationship with her family is notably close, particularly with her brother
 
 ---
 
+## INCIDENT HISTORY
+
+### Operation DOPPELGÄNGER (2343)
+
+**Classification**: TOP SECRET — AAA Intelligence Archive  
+**Clearance Required**: Level 5 (Medical Chancellor, Kadd, Grand Duchess only)
+
+**Incident Summary**:
+From 2343.03.15 to 2343.05.22 (68 days), Yuan Yukio was secretly imprisoned by Umin Typhi Subfaction (*Abteilung Stille*). A Mary operative (Designation MARY-07) assumed her identity and conducted a systematic destabilization campaign against Alopes government.
+
+**The Abduction**:
+- Yukio was captured during transit to a medical conference
+- She was held in a Typhi "Cradle" facility in suspended animation
+- Memory extraction was performed weekly to update the impostor
+
+**The Impostor's Actions**:
+During the 68-day infiltration, MARY-07:
+- Seduced **12 high-ranking officials**
+- Created **4 rival factions** within the bureaucracy
+- Leaked **23 classified documents** to Umin intelligence
+- Delayed **3 military operations** through fabricated "medical concerns"
+- Caused estimated **₳47 million** in economic losses
+
+**Discovery**:
+- Lonicera (head maid) first noticed behavioral anomalies
+- Akio recognized inconsistencies upon returning from deployment
+- Secret medical scan revealed Typhi carrier markers
+- Joint rescue operation by Jackalope Guard and household staff
+
+**Rescue**:
+- MARY-07 subdued during a private audience
+- Yukio found in suspended animation, malnourished but alive
+- Rescue completed within 6 hours of discovery
+
+**Aftermath**:
+
+*Physical Recovery*:
+- 3 weeks medical treatment for malnutrition
+- 6 months therapy for psychological trauma
+- Full physical recovery achieved
+
+*Psychological Impact*:
+- **Identity Violation**: Profound sense that her self was "stolen"
+- **Trust Issues**: Difficulty forming new relationships
+- **Guilt**: Blamed herself for officials' disgrace (despite not being her actions)
+- **Nightmares**: Recurring dreams of imprisonment and replacement
+- **Hyperawareness**: Constant monitoring of others' behavior for signs of substitution
+
+*Professional Consequences*:
+- Yukio's reputation suffered; some believed she had "willingly" betrayed Alopes
+- 12 officials implicated in the scandal faced punishment (several suicides)
+- Government trust temporarily collapsed
+- Security protocols dramatically increased
+
+*Personal Growth*:
+- Deeper bond with Lonicera (who first noticed the anomaly)
+- Stronger connection with Akio (who rescued her)
+- Increased caution in romantic relationships
+- Advocacy for identity verification protocols
+
+**Current Status**: RECOVERED — Active duty with enhanced security clearance
+
+---
+
 ## RELATIONSHIPS
 
 ### Family
@@ -232,4 +296,5 @@ Her relationship with her family is notably close, particularly with her brother
 
 *FILE STATUS: ACTIVE*  
 *LAST UPDATED: 2352-03-08*  
+*MAJOR UPDATE: 2343 — Operation DOPPELGÄNGER incident added*  
 *CLASSIFICATION: RESTRICTED*

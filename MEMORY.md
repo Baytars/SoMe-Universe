@@ -471,3 +471,32 @@
 | THIN MAN-02 | [已编辑] | 巨人症 | 生产中 |
 | THIN MAN-03 | [已编辑] | 早衰症 | 计划中 |
 | THIN MAN-04 | [已编辑] | 象皮病 | 概念阶段 |
+
+### 新增Umin子阵营（2026-04-10）
+- **Typhi子阵营**：`./SoMe_Factions/Umin_Typhi_Subfaction.md`
+  - 代号：*Abteilung Stille* (Department of Silence)
+  - 病原体：*Salmonella enterica* serovar Typhi（伤寒杆菌）
+  - 命名风格：德国风格（细菌）
+  - 核心科技：无症状携带者渗透、政治替身
+  - Project MARY：替换政要的"狸猫换太子"计划
+
+### Operation DOPPELGÄNGER（Yukio替身事件）
+- **时间**：2343.03.15 — 2343.05.22（68天）
+- **执行方**：Umin Typhi Subfaction
+- **目标**：Yuan Yukio（Chief Medical Advisor）
+- **替身**：MARY-07（伤寒玛丽）
+- **破坏**：
+  - 诱惑12名高官
+  - 制造4个对立派系
+  - 泄露23份机密文件
+  - 延迟3次军事行动
+  - 经济损失₳47百万
+- **发现**：Lonicera首先察觉异常 → Akio确认 → 医疗扫描发现伤寒杆菌标记
+- **救援**：Jackalope Guard + 宅邸staff联合行动
+- **后果**：Yukio心理创伤、12官员受罚（数人自杀）、政府信任危机、安全协议升级
+
+### Yukio角色档案更新
+- 添加INCIDENT HISTORY章节
+- 记录被替换、监禁、救援全过程
+- 心理影响：身份被侵犯感、信任障碍、自责、噩梦、过度警觉
+- 人际关系变化：与Lonicera和Akio羁绊加深
