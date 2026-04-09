@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoMe Universe — Saga of Medicine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #888;
+            font-style: italic;
+        }
+        .tagline {
+            margin-top: 20px;
+            color: #aaa;
+            font-size: 0.95em;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #00d4ff;
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-size: 1.3em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .card-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .card-title a:hover {
+            color: #00d4ff;
+        }
+        .card-desc {
+            color: #aaa;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        .faction-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .alopes { background: #2a5298; }
+        .aaa { background: #1e7b1e; }
+        .umin { background: #7b2cbf; }
+        .character { background: #b8860b; }
+        .location { background: #8b4513; }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #666;
+        }
+        .med-icon {
+            font-size: 1.5em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ SoMe Universe</h1>
+            <p class="subtitle">Saga of Medicine — 医学传奇</p>
+            <p class="tagline">A medical science fiction universe where pathogens wage war, and humanity fights back with science.</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">🏛️ Factions</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Umin_Naming_Convention.md">Umin Naming Convention</a></h3>
+                    <p class="card-desc">The Unseen Crown — Axis Powers naming heritage for bacterial, viral, and fungal forces.</p>
+                    <span class="faction-tag umin">Umin</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Umin_Vibrio_Subfaction.md">Vibrio Subfaction</a></h3>
+                    <p class="card-desc">Cholera naval forces — Japanese Imperial Navy style with hydraulic cannons and ocean protocols.</p>
+                    <span class="faction-tag umin">Umin</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Umin_Fear_Technology.md">Fear Technology Division</a></h3>
+                    <p class="card-desc">Psychological warfare through urban legends — Project THIN MAN and Operation Trinity.</p>
+                    <span class="faction-tag umin">Umin</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Umin_Typhi_Subfaction.md">Typhi Subfaction</a></h3>
+                    <p class="card-desc">Asymptomatic carrier infiltration — Project MARY political substitution protocol.</p>
+                    <span class="faction-tag umin">Umin</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Alopes_John_Snow_Bridge.md">John Snow Bridge</a></h3>
+                    <p class="card-desc">The eastern gateway of Alopes — named after the father of epidemiology.</p>
+                    <span class="faction-tag alopes">Alopes</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Factions/Alopes_Semmelweis_Gateway.md">Semmelweis Gateway</a></h3>
+                    <p class="card-desc">The birthplace of antiseptic technology — honoring the savior of mothers.</p>
+                    <span class="faction-tag alopes">Alopes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">👥 Characters</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><a href="Characters/Yuan_Yukio.md">Yuan Yukio 袁雪炤</a></h3>
+                    <p class="card-desc">Chief Medical Advisor of Alopes — survivor of Operation DOPPELGÄNGER.</p>
+                    <span class="faction-tag alopes">Alopes</span>
+                    <span class="faction-tag character">Founding Family</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Characters/Yuan_Akio.md">Kadd Yuan Akio</a></h3>
+                    <p class="card-desc">Marshal of Jackalope Guard — youngest Kadd in Alopes history.</p>
+                    <span class="faction-tag alopes">Alopes</span>
+                    <span class="faction-tag character">Founding Family</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Characters/Lonicera.md">Lonicera</a></h3>
+                    <p class="card-desc">Head maid of Yukio's household — named after honeysuckle, the healer's flower.</p>
+                    <span class="faction-tag alopes">Alopes</span>
+                    <span class="faction-tag character">Supporting</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Characters/Fred.md">Fred</a></h3>
+                    <p class="card-desc">Forest ranger searching for his missing son — unknowingly targeted by Operation Trinity.</p>
+                    <span class="faction-tag character">Civilian</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="Characters/Daniel_Slender_Man.md">Daniel / THIN MAN-01</a></h3>
+                    <p class="card-desc">Marfan syndrome patient transformed into Slender Man — the first bioengineered Fear Construct.</p>
+                    <span class="faction-tag umin">Umin Asset</span>
+                    <span class="faction-tag character">Transformed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📜 Scripts & References</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 class="card-title"><a href="Scripts/The_Inaugural_Diplomacy.md">The Inaugural Diplomacy</a></h3>
+                    <p class="card-desc">Yukio's first diplomatic mission — Operation Diarrhea and Lonicera's heroic rescue.</p>
+                    <span class="faction-tag alopes">Story Arc</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title"><a href="References/Reference_Marvel_Wiki_Moonstar.md">Marvel Wiki: Danielle Moonstar</a></h3>
+                    <p class="card-desc">Reference for Umin Fear Technology — fear manifestation abilities.</p>
+                    <span class="faction-tag">Reference</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>SoMe Universe © 2026 — A medical science fiction project</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">
+                <a href="https://github.com/Baytars/SoMe-Universe" style="color: #00d4ff;">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
