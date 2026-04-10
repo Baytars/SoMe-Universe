@@ -16,6 +16,7 @@ In the world of SoMe, the human body is reimagined as a vast universe. **Planet 
 ### 🏛️ Factions
 - [Archaeology Division](Factions/Umin_Archaeology_Division.md) — Primordial life seekers
 - [Fear Technology Division](Factions/Umin_Fear_Technology.md) — Psychological warfare division
+- [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — The Great Imitator
 - [Typhi Subfaction](Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration
 - [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces
 
