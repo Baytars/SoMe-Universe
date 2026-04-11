@@ -96,6 +96,33 @@ The Yuan family is one of Alopes's "founding families," with lineage tracing to 
 3. **Transparency Over Comfort**: Honest communication builds trust; trust saves lives
 4. **Coalition Over Isolation**: No nation can fight modern pathogens alone
 
+### Japanese Nobel Laureates Influence
+
+Despite never having visited Japan, Yukio holds deep reverence for Japanese medical scientists whose discoveries changed medicine. This influence manifests in her unique military operation naming convention.
+
+**The Nobel Operations**:
+Yukio names her military campaigns after Japanese Nobel laureates in Physiology or Medicine. Each operation applies the laureate's scientific discovery as a tactical framework.
+
+| Operation | Laureate | Discovery | Tactical Application |
+|-----------|----------|-----------|---------------------|
+| **YAMANAKA** | Shinya Yamanaka (2012) | iPSCs | Reprogramming tumor cells to normal tissue |
+| **HONJO** | Tasuku Honjo (2018) | PD-1 checkpoint | Removing tumor immune camouflage |
+| **OHSUMI** | Yoshinori Ohsumi (2016) | Autophagy | Inducing self-destruction via over-autophagy |
+| **TONEGAWA** | Susumu Tonegawa (1987) | Antibody diversity | Enhancing immune recognition |
+
+**Philosophy**:
+> "Every military operation should be like a medical breakthrough — capable of standing the test of time."
+
+**Personal Reflection**:
+> "When I say 'Initiate Operation Yamanaka' in the war room, I'm not just giving an order. I'm reminding everyone that we're continuing the mission of great medical scientists — using science to change cellular fate, to change life's trajectory. The real heroes are those who spent decades in laboratories. I'm just the one who turns their discoveries into weapons."
+
+**Connection to Mother's Legacy**:
+- Mother taught her **how to endure** — elegance, composure, never losing face
+- Nobel laureates taught her **how to breakthrough** — decades of persistence, changing the world
+- Both represent different facets of Japan's soul that Yukio carries into battle
+
+*See also: [Nobel Operations](../Lore/OPERATIONS_Nobel.md)*
+
 ---
 
 ## PSYCHOLOGICAL PROFILE
@@ -207,9 +234,18 @@ During the 68-day infiltration, MARY-07:
 - *His Achievement*: Youngest Kadd in Alopesian history; appointed at 23 after unprecedented review
 - *Her Assessment*: "He treats me like I need constant supervision. We're the same age! But I know it comes from love."
 
-**Mother**: [CLASSIFIED — Security protocols]
-- *Background*: Traditional Japanese geisha
-- *Influence*: Cultural heritage; linguistic quirks; appreciation for elegance
+**Mother**: Yosemite (尤希美子) — Traditional Japanese Geisha
+- *Background*: Born to a poor Japanese fisherman family; sold to affluent foster family in childhood
+- *Name Origin*: Her beauty was such that everyone who met her said "Yoshi" first — the Japanese exclamation for "good, beautiful, satisfied." Thus she was given the nickname "Yosemite" — meaning "beauty and satisfaction." (Also the name of the famous American national park, a linguistic coincidence that delighted her American-born daughter.)
+- *Later Life*: Became a geisha, carrying the traditional Japanese feminine virtues — composure, elegance, never losing one's composure
+- *Character*: Yukio never saw her angry or panicked. Even in the worst situations, she would only sigh softly, then continue doing what needed to be done.
+- *Hidden Pain*: She rarely spoke of her true experiences in Japan — the fishing village, being sold, the scars that never healed. Instead, she told beautiful stories: geisha makeup, Kyoto temples, cherry blossom seasons. These stories wove together an idealized Japan that Yukio could never visit.
+- *Influence on Yukio*: 
+  - Japanese language skills: Yukio's Japanese is awkward, always requiring English words to express herself — a source of gentle sighs from her mother
+  - Emotional composure: Learned from her mother to stay calm under pressure
+  - Hidden resilience: The understanding that beauty can emerge from pain
+  - Complex relationship with Japan: Reverence for a homeland she has never touched, filtered through her mother's curated memories
+- *Yukio's Reflection*: "She gave me all the beauty and swallowed the bitterness herself. That was how she loved."
 
 ### Professional Associates
 
