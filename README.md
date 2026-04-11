@@ -26,6 +26,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 
 ### 📖 Lore
 - [Umin Naming Convention](Lore/Umin_Naming_Convention.md) — Axis Powers naming heritage
+- [Nobel Operations](Lore/OPERATIONS_Nobel.md) — Japanese Nobel laureates as tactical codenames
 
 ### 👥 Characters
 - [Yuan Yukio](Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
