@@ -36,9 +36,12 @@ In the world of SoMe, the human body is reimagined as a vast universe. **Planet 
 
 ### 🏛️ Organizations
 - [Athena Aegis Accord (AAA)](Organizations/Athena_Aegis_Accord.md) — Allied antibiotic alliance
-- [Mirror Image Protocol](Organizations/Mirror_Image_Protocol.md) — Autoimmune insurgency
-- [The Peacemaker Dilemma](Organizations/Peacemaker_Dilemma.md) — Glucocorticoid controversies
-- [Triple Countermeasure Protocol](Organizations/Triple_Countermeasure_Protocol.md) — AAA response doctrine
+
+### 📋 Protocols
+- [Protocol Index](Protocols/Protocol_Index.md) — All tactical and operational protocols
+- [Mirror Image Protocol](Protocols/Mirror_Image/Mirror_Image_Protocol.md) — Autoimmune insurgency doctrine
+- [Triple Countermeasure Protocol](Protocols/AAA/Triple_Countermeasure_Protocol.md) — AAA response doctrine
+- [The Peacemaker Dilemma](Protocols/AAA/Peacemaker_Dilemma.md) — Glucocorticoid controversies
 
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first mission

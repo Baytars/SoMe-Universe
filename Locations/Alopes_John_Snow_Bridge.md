@@ -67,12 +67,9 @@ The naming of this passage after Snow carries multiple layers of meaning:
 
 ## The Snow Protocol
 
-Named in honor of John Snow's methodical approach to containment:
+Named in honor of John Snow's methodical approach to containment. See [The Snow Protocol](../Protocols/AAA/Snow_Protocol.md) for full operational details.
 
-1. **Surveillance**: Continuous monitoring of passage activity
-2. **Mapping**: Tracking of all entities approaching or crossing the bridge
-3. **Containment**: Rapid response to unauthorized crossings
-4. **Documentation**: Complete records of all transits for epidemiological analysis
+**Core Principles**: Surveillance → Mapping → Containment → Documentation
 
 ## Connection to Vibrio Forces
 

@@ -507,4 +507,4 @@ The Mirror Image Protocol embodies several themes:
 
 ---
 
-*See also: [Athena Aegis Accord](Athena_Aegis_Accord.md), [Duchy of Alopes](../Locations/Alopes_John_Snow_Bridge.md)*
+*See also: [Athena Aegis Accord](../../Organizations/Athena_Aegis_Accord.md), [Duchy of Alopes](../../Locations/Alopes_John_Snow_Bridge.md)*

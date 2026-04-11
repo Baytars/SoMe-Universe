@@ -362,4 +362,4 @@ The Peacemaker Dilemma embodies several themes:
 
 ---
 
-*See also: [Triple Countermeasure Protocol](Triple_Countermeasure_Protocol.md), [Mirror Image Protocol](Mirror_Image_Protocol.md)*
+*See also: [Triple Countermeasure Protocol](Triple_Countermeasure_Protocol.md), [Mirror Image Protocol](../Mirror_Image/Mirror_Image_Protocol.md)*

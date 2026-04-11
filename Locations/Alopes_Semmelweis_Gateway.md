@@ -75,12 +75,9 @@ The naming of this gateway carries profound layers:
 
 ## The Semmelweis Protocol
 
-Activated during the critical window of labor and delivery:
+Activated during the critical window of labor and delivery. See [The Semmelweis Protocol](../Protocols/AAA/Semmelweis_Protocol.md) for full operational details.
 
-1. **Antiseptic Barrier**: Chlorhexidine and iodine-based sterilization fields
-2. **Screening Protocol**: Rapid pathogen detection for all approaching entities
-3. **Barrier Protocol**: Sterile field maintenance throughout active labor
-4. **Handwashing Mandate**: Named after the original protocol—no entity may approach without antiseptic cleansing
+**Core Principles**: Antiseptic Barrier → Screening → Sterile Field → Handwashing Mandate
 
 ## Historical Defense Record
 

@@ -416,4 +416,4 @@ The Triple Countermeasure Protocol embodies several themes:
 
 ---
 
-*See also: [Mirror Image Protocol](Mirror_Image_Protocol.md), [Athena Aegis Accord](Athena_Aegis_Accord.md)*
+*See also: [Mirror Image Protocol](../Mirror_Image/Mirror_Image_Protocol.md), [Athena Aegis Accord](../../Organizations/Athena_Aegis_Accord.md)*

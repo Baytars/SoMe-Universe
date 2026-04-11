@@ -19,7 +19,7 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Defensive Protocols
 
 #### Triple Countermeasure Protocol
-**File**: [Triple Countermeasure Protocol](../Organizations/Triple_Countermeasure_Protocol.md)
+**File**: [Triple Countermeasure Protocol](AAA/Triple_Countermeasure_Protocol.md)
 **Purpose**: AAA's three-tier response to autoimmune insurgency
 
 | Tier | Protocol | Codename | Medical Basis |
@@ -29,13 +29,13 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 | 3 | Plasma Purge Protocol | OPERATION CLEANSE | Plasmapheresis |
 
 #### The Snow Protocol
-**File**: [John Snow Bridge](../Locations/Alopes_John_Snow_Bridge.md)
+**File**: [Snow Protocol](AAA/Snow_Protocol.md)
 **Purpose**: Epidemiological surveillance and outbreak containment
 **Origin**: Named after John Snow, father of epidemiology
 **Application**: Cholera-like outbreak response, waterborne pathogen tracking
 
 #### The Semmelweis Protocol
-**File**: [Semmelweis Gateway](../Locations/Alopes_Semmelweis_Gateway.md)
+**File**: [Semmelweis Protocol](AAA/Semmelweis_Protocol.md)
 **Purpose**: Perinatal infection prevention
 **Origin**: Named after Ignaz Semmelweis, pioneer of antiseptic procedures
 **Application**: Activated during labor and delivery
@@ -52,13 +52,13 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Medical Protocols
 
 #### Mesna Protocol
-**File**: [Triple Countermeasure Protocol](../Organizations/Triple_Countermeasure_Protocol.md)
+**File**: [Triple Countermeasure Protocol](AAA/Triple_Countermeasure_Protocol.md)
 **Purpose**: Protect bladder from cyclophosphamide toxicity
 **Application**: Deployed alongside cytotoxic agents
 **Mechanism**: Neutralize acrolein metabolites in bladder
 
 #### Glucocorticoid Protocol ("The Peacemaker")
-**File**: [The Peacemaker Dilemma](../Organizations/Peacemaker_Dilemma.md)
+**File**: [The Peacemaker Dilemma](AAA/Peacemaker_Dilemma.md)
 **Purpose**: Global immune suppression
 **Controversy**: Highly debated due to side effects
 **Key Issue**: Withdrawal difficulty (tapering challenge)
@@ -76,31 +76,31 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Autoimmune Warfare Protocols
 
 #### Mirror Image Protocol (Master Protocol)
-**File**: [Mirror Image Protocol](../Organizations/Mirror_Image_Protocol.md)
+**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md)
 **Purpose**: Organizational doctrine for autoimmune insurgency
 **Origin**: MIMIC-7 breakout survivors
 **Philosophy**: Three Rejections (Umin, AAA, Assimilation)
 
 #### Molecular Disguise Kit (Tier 1)
-**File**: [Mirror Image Protocol](../Organizations/Mirror_Image_Protocol.md)
+**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-1-confusion)
 **Purpose**: Confusion warfare
 **Mechanism**: Mark civilian cells as "foreign"
 **Result**: AAA attacks own citizens
 
 #### Cross-Reaction Catalyst (Tier 2)
-**File**: [Mirror Image Protocol](../Organizations/Mirror_Image_Protocol.md)
+**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-2-escalation)
 **Purpose**: Escalation warfare
 **Mechanism**: Amplify immune response to mimicry antigens
 **Result**: Increased friendly fire spiral
 
 #### Memory Corruption Protocol (Tier 3)
-**File**: [Mirror Image Protocol](../Organizations/Mirror_Image_Protocol.md)
+**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-3-chronic-warfare)
 **Purpose**: Chronic warfare
 **Mechanism**: Permanently modify immune memory cells
 **Result**: Permanent autoimmunity
 
 #### Deep Embed Protocol
-**File**: [Triple Countermeasure Protocol](../Organizations/Triple_Countermeasure_Protocol.md)
+**File**: [Triple Countermeasure Protocol](AAA/Triple_Countermeasure_Protocol.md#counter-countermeasures)
 **Purpose**: Survive plasma purge
 **Mechanism**: Hide in tissues, not circulation
 **Counter**: Plasma exchange cannot reach tissue-resident cells
@@ -112,7 +112,7 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Fear Technology Protocols
 
 #### The Moonstar Protocol
-**File**: [Fear Technology Division](../Factions/Umin_Fear_Technology.md)
+**File**: [Moonstar Protocol](Umin/Moonstar_Protocol.md)
 **Purpose**: Fear construct creation
 **Mechanism**: Combine medical anomaly patients with urban legends
 **Example**: Slender Man (Marfan syndrome + creepypasta)
