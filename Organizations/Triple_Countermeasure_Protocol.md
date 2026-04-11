@@ -84,13 +84,27 @@ When Mirror Image Protocol triggers autoimmune chaos, AAA deploys the **Triple C
 
 **Historical Event**: During the Lupus Division's "Operation Erythematosus," AAA deployed massive corticosteroid suppression to stop friendly fire.
 
-**Outcome**:
-- Friendly fire stopped
-- But Umin Vibrio forces exploited the immune suppression
-- Invaded through multiple points simultaneously
-- AAA had to choose: Let civilians die from friendly fire, or let Umin conquer territory
+**The Hidden Threat**: 
+What AAA didn't account for was the **latent infections** throughout the body—Umin units that had been dormant, held in check by immune surveillance for years. When the suppression order went out:
 
-**Lesson Learned**: Immunosuppression is a double-edged sword. The body becomes vulnerable when the police are told to stand down.
+- **Mycobacterium tuberculosis** units in the lung regions—dormant for decades—detected the immune withdrawal
+- Hidden in granulomas (walled-off fortresses), they had been waiting for exactly this moment
+- The "sleeping" army awoke
+
+**Outcome**:
+- Friendly fire from Lupus Division stopped
+- But within 72 hours, **tuberculosis legions** broke out of their containment zones
+- The granulomas ruptured, releasing billions of bacilli into the lung tissue
+- AAA had suppressed the very forces keeping TB in check
+
+**The Choice**:
+- Continue suppression → TB spreads unchecked, likely fatal
+- Restore immune activity → Lupus Division resumes friendly fire
+- The patient would survive only if AAA could thread the needle between two fatal threats
+
+**Medical Parallel**: This mirrors the real clinical scenario of steroid-induced tuberculosis reactivation—a patient with both autoimmune disease and latent TB faces the impossible choice between treating the autoimmunity and awakening the infection.
+
+**Lesson Learned**: Immunosuppression does not just leave you vulnerable to new invaders—it awakens the sleepers within. The body's "peace treaties" with latent pathogens are enforced by immune surveillance. Remove the police, and the truce dissolves.
 
 ---
 
