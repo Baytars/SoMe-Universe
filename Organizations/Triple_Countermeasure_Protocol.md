@@ -61,6 +61,8 @@ When Mirror Image Protocol triggers autoimmune chaos, AAA deploys the **Triple C
    - Target and eliminate overactive immune cells
    - More precise, but slower
    - Risk: Eliminating cells needed for actual defense
+   - **Critical Side Effect**: Cyclophosphamide and similar agents produce toxic metabolites that can damage the bladder lining, causing hemorrhagic cystitis—a "friendly fire" on bladder tissue from the treatment itself
+   - Requires **Mesna Protocol**: Deploy protective agents alongside cytotoxic agents to neutralize bladder-damaging metabolites
 
 3. **Biologic Blockade**
    - Block specific inflammatory signals (cytokines)
@@ -71,8 +73,8 @@ When Mirror Image Protocol triggers autoimmune chaos, AAA deploys the **Triple C
 
 | Action | Effect | Cost | Risk |
 |--------|--------|------|------|
-| **Steroid Pulse** | All immune activity -50% for 3 turns | Low | Umin invasion defense -50% |
-| **Cytotoxic Strike** | Eliminate rogue immune cell unit | Medium | Collateral civilian damage |
+| **Steroid Pulse** | All immune activity -50% for 3 turns | Low | Latent infections reactivate |
+| **Cytotoxic Strike** | Eliminate rogue immune cell unit | Medium | Bladder hemorrhage; requires Mesna escort |
 | **Biologic Shield** | Block one autoimmune pathway | High | Mirror Image can switch pathways |
 
 **Strategic Dilemma**:
@@ -105,6 +107,35 @@ What AAA didn't account for was the **latent infections** throughout the body—
 **Medical Parallel**: This mirrors the real clinical scenario of steroid-induced tuberculosis reactivation—a patient with both autoimmune disease and latent TB faces the impossible choice between treating the autoimmunity and awakening the infection.
 
 **Lesson Learned**: Immunosuppression does not just leave you vulnerable to new invaders—it awakens the sleepers within. The body's "peace treaties" with latent pathogens are enforced by immune surveillance. Remove the police, and the truce dissolves.
+
+### Lore: The Hemorrhagic Bladder Incident
+
+**Historical Event**: During a prolonged autoimmune campaign, AAA deployed cyclophosphamide to eliminate overactive immune cell units.
+
+**The Unforeseen Consequence**:
+- Cyclophosphamide's metabolites (particularly acrolein) are toxic to bladder epithelium
+- As the drug circulated through the body, it attacked the very tissue it passed through
+- The bladder—uninvolved in the autoimmune conflict—suddenly became a battlefield
+
+**Outcome**:
+- Rogue immune cells eliminated successfully
+- But within 48 hours, bladder tissue began hemorrhaging
+- AAA forces had to fight on two fronts: the autoimmune attack AND the treatment-induced bladder damage
+- Blood in urine (hematuria) signaled that the "cure" was creating a new wound
+
+**The Mesna Protocol**:
+- AAA developed a countermeasure: deploy Mesna (mercaptoethane sulfonate) alongside cyclophosphamide
+- Mesna binds to toxic metabolites in the bladder, neutralizing them
+- Requires precise timing—Mesna must arrive at the bladder before metabolites cause damage
+
+**Gameplay Mechanic**: 
+Cytotoxic deployment now requires a **two-unit operation**:
+1. Cytotoxic agent (the weapon)
+2. Mesna escort (the shield)
+
+If Mesna escort is destroyed or delayed, bladder damage occurs. Players must protect the escort unit.
+
+**Medical Parallel**: Real cyclophosphamide treatment requires Mesna administration and aggressive hydration to prevent hemorrhagic cystitis—a reminder that powerful medicines can wound as well as heal.
 
 ---
 
