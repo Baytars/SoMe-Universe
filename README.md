@@ -45,12 +45,22 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [The Peacemaker Dilemma](Protocols/AAA/Peacemaker_Dilemma.md) — Glucocorticoid controversy and moral complexity
 - [Snow Protocol](Protocols/AAA/Snow_Protocol.md) — Epidemiological containment doctrine
 - [Semmelweis Protocol](Protocols/AAA/Semmelweis_Protocol.md) — Barrier defense and sterilization procedures
+- [Mesna Protocol](Protocols/AAA/Mesna_Protocol.md) — Cyclophosphamide bladder protection
+- [Drift Medical Protocols](Protocols/AAA/Drift_Medical_Protocols.md) — Pilot health safety standards
 
 #### Mirror Image Protocol
 - [Mirror Image Protocol](Protocols/Mirror_Image/Mirror_Image_Protocol.md) — Autoimmune rogues and molecular mimicry
+- [Molecular Disguise Kit](Protocols/Mirror_Image/Molecular_Disguise_Kit.md) — MHC suppression and cross-species camouflage
+- [Cross-Reaction Catalyst](Protocols/Mirror_Image/Cross_Reaction_Catalyst.md) — Multivalent antigen complexes
+- [Memory Corruption](Protocols/Mirror_Image/Memory_Corruption.md) — Epitope scrambling and germinal center disruption
 
 #### Umin (The Unseen Crown)
 - [Moonstar Protocol](Protocols/Umin/Moonstar_Protocol.md) — Fear Technology's psychological warfare
+- [Subject Acquisition Protocol](Protocols/Umin/Subject_Acquisition_Protocol.md) — Target acquisition for Fear Technology
+- [Project MARY](Protocols/Umin/Project_MARY.md) — Political doppelgänger infiltration
+- [Cradle Protocol](Protocols/Umin/Cradle_Protocol.md) — Kidnap-and-replace operations
+- [Ocean Protocol](Protocols/Umin/Ocean_Protocol.md) — Cholera Octopus battleship systems
+- [Sightings Protocol](Protocols/Umin/Sightings_Protocol.md) — Fear cascade psychological warfare
 
 *[View Full Protocol Index →](Protocols/Protocol_Index.md)*
 
