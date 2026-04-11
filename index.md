@@ -43,6 +43,9 @@ In the world of SoMe, the human body is reimagined as a vast universe. **Planet 
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first mission
 
+### 📋 Protocols
+- [Protocol Index](Protocols/Protocol_Index.md) — All tactical and operational protocols
+
 ---
 
 *"One gate for life. One gate for leaving. Both guarded by those who learned to see the invisible."*
