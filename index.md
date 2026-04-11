@@ -37,6 +37,7 @@ In the world of SoMe, the human body is reimagined as a vast universe. **Planet 
 ### 🏛️ Organizations
 - [Athena Aegis Accord (AAA)](Organizations/Athena_Aegis_Accord.md) — Allied antibiotic alliance
 - [Mirror Image Protocol](Organizations/Mirror_Image_Protocol.md) — Autoimmune insurgency
+- [The Peacemaker Dilemma](Organizations/Peacemaker_Dilemma.md) — Glucocorticoid controversies
 - [Triple Countermeasure Protocol](Organizations/Triple_Countermeasure_Protocol.md) — AAA response doctrine
 
 ### 📜 Scripts
