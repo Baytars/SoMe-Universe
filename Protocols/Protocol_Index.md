@@ -52,10 +52,15 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Medical Protocols
 
 #### Mesna Protocol
-**File**: [Triple Countermeasure Protocol](AAA/Triple_Countermeasure_Protocol.md)
+**File**: [Mesna Protocol](AAA/Mesna_Protocol.md)
 **Purpose**: Protect bladder from cyclophosphamide toxicity
 **Application**: Deployed alongside cytotoxic agents
 **Mechanism**: Neutralize acrolein metabolites in bladder
+**Key Features**:
+- Standard IV and continuous infusion protocols
+- Dosing guidelines (20% of cyclophosphamide dose)
+- Monitoring and quality assurance standards
+- Treatment failure management
 
 #### Glucocorticoid Protocol ("The Peacemaker")
 **File**: [The Peacemaker Dilemma](AAA/Peacemaker_Dilemma.md)
@@ -64,10 +69,16 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 **Key Issue**: Withdrawal difficulty (tapering challenge)
 
 #### Drift Medical Protocols
-**File**: [Yuan Yukio](../Characters/Yuan_Yukio.md)
-**Purpose**: Pilot health and safety standards
-**Developer**: Yukio, during early career
+**File**: [Drift Medical Protocols](AAA/Drift_Medical_Protocols.md)
+**Purpose**: Pilot health and safety standards for Drift Navigation
+**Developer**: Yuan Yukio, Chief Medical Advisor
 **Application**: Aerospace/Drift navigation medical safety
+**Key Features**:
+- Pre-Drift medical clearance requirements
+- Drift session monitoring standards
+- Post-Drift recovery protocols
+- Cumulative exposure limits
+- Pilot wellness programs
 
 ---
 
@@ -82,21 +93,33 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 **Philosophy**: Three Rejections (Umin, AAA, Assimilation)
 
 #### Molecular Disguise Kit (Tier 1)
-**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-1-confusion)
+**File**: [Molecular Disguise Kit](Mirror_Image/Molecular_Disguise_Kit.md)
 **Purpose**: Confusion warfare
 **Mechanism**: Mark civilian cells as "foreign"
+**Components**:
+- MHC Suppression Agent (MSA-7)
+- Cross-Species MHC Mimicry (CSMM-3)
+- Antigen Decoy System (ADS-9)
 **Result**: AAA attacks own citizens
 
 #### Cross-Reaction Catalyst (Tier 2)
-**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-2-escalation)
+**File**: [Cross-Reaction Catalyst](Mirror_Image/Cross_Reaction_Catalyst.md)
 **Purpose**: Escalation warfare
 **Mechanism**: Amplify immune response to mimicry antigens
+**Components**:
+- Polyvalent Antigen Complex (PAC-X "Hydra")
+- Superantigen Variant (SAV-7 "Storm")
+- Molecular Bridge Complex (MBC-3 "Lynchpin")
 **Result**: Increased friendly fire spiral
 
 #### Memory Corruption Protocol (Tier 3)
-**File**: [Mirror Image Protocol](Mirror_Image/Mirror_Image_Protocol.md#tier-3-chronic-warfare)
+**File**: [Memory Corruption](Mirror_Image/Memory_Corruption.md)
 **Purpose**: Chronic warfare
 **Mechanism**: Permanently modify immune memory cells
+**Components**:
+- Epitope Scrambler (ES-9 "Inkblot")
+- Homunculus Antigen (HA-3 "Trojan")
+- Germinal Center Disruptor (GCD-7 "Sanitizer")
 **Result**: Permanent autoimmunity
 
 #### Deep Embed Protocol
@@ -118,16 +141,25 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 **Example**: Slender Man (Marfan syndrome + creepypasta)
 
 #### Sightings Protocol
-**File**: [Fear Technology Division](../Factions/Umin_Fear_Technology.md)
+**File**: [Sightings Protocol](Umin/Sightings_Protocol.md)
 **Purpose**: Viral terror campaign
 **Mechanism**: Strategic appearances, staged evidence, social media spread
-**Goal**: Psychological destabilization
+**Cascade Effect**: Initial Sighting → Viral Spread → Mass Discussion → Scientific Denial → Increased Belief → More Sightings → Social Panic
+**Categories**:
+- Classical Horrors (Ghosts, Vampires, Mummies)
+- Cultural Specific (Jiangshi, Onryō, Churel)
+- Digital Urban Legends (Slender Man, The Rake)
+- Personalized Constructs
 
 #### Subject Acquisition Protocol
-**File**: [Fear Technology Division](../Factions/Umin_Fear_Technology.md)
-**Purpose**: Identify and capture suitable subjects
-**Criteria**: Medical anomalies, physical deformities, psychological vulnerabilities
-**Example**: Daniel (Marfan syndrome) → THIN MAN-01
+**File**: [Subject Acquisition Protocol](Umin/Subject_Acquisition_Protocol.md)
+**Purpose**: Identify and capture suitable subjects for Fear Construct conversion
+**Target Categories**:
+- Primary: Marfan Syndrome patients (Slender Man morphology)
+- Secondary: Progeria, Achondroplasia, Vitiligo carriers
+- Opportunistic: Runaways, refugees, prisoners
+**Process**: Intelligence Gathering → Approach Vector → Processing → Final Verification
+**Related**: Project THIN MAN subject registry
 
 #### The Rationality Protocol
 **File**: [Fear Technology Division](../Factions/Umin_Fear_Technology.md)
@@ -137,27 +169,34 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 ### Typhi Protocols
 
 #### Project MARY (Substitution Protocol)
-**File**: [Typhi Subfaction](../Factions/Umin_Typhi_Subfaction.md)
+**File**: [Project MARY](Umin/Project_MARY.md)
 **Purpose**: Replace officials with asymptomatic carriers
 **Mechanism**: Typhoid Mary-style infiltration
-**Goal**: Infiltration from within
+**Template Acquisition**: Physical matching, behavioral training, medical modification
+**Mary Operative System**: MARY-01 through MARY-99 designation system
+**Historical Case**: Operation DOPPELGÄNGER (Yuan Yukio replacement, 68 days)
 
 #### Cradle Protocol
-**File**: [Typhi Subfaction](../Factions/Umin_Typhi_Subfaction.md)
+**File**: [Cradle Protocol](Umin/Cradle_Protocol.md)
 **Purpose**: High-value target abduction and replacement
-**Example**: Yukio's 68-day replacement (Operation DOPPELGÄNGER)
-**Mechanism**: Isolate → Replace → Deploy doppelgänger
+**Operational Sequence**: ABDUCTION → IMPRISONMENT → INSERTION → VERIFICATION
+**Facility**: "The Cradle" - secure extraction and substitution center
+**Intelligence Extraction**: Weekly sessions for behavioral updates
+**Case Study**: Yukio abduction timeline (2343.03.12-05.22)
 
 ### Vibrio Protocols
 
 #### Ocean Protocol
-**File**: [Vibrio Subfaction](../Factions/Umin_Vibrio_Subfaction.md)
-**Purpose**: Battlefield transformation
-**Stages**:
-1. Infiltration (渗透)
-2. Expansion (扩张)
-3. Abyssalization (深渊化)
-4. Domination (支配)
+**File**: [Ocean Protocol](Umin/Ocean_Protocol.md)
+**Purpose**: Naval and water-domain warfare doctrine
+**Unit Design**: Cholera Octopus (コレラ・オクトパス) heavy assault platform
+**Primary Weapon**: Critical Pressure Hydraulic Cannon (CPHC)
+**Technical Principles**:
+- Critical Point Breach (supercritical water jets)
+- Cavitation Weaponization (bubble collapse, 4700-5200°C)
+- Water Hammer Effect (implosion-style damage)
+**Ammunition Types**: Pure water, supercritical water, electrolyzed water, toxin solutions
+**Strategic Doctrine**: Control of bodily fluids means control of life
 
 #### Ink Cloud Protocol
 **File**: [Vibrio Subfaction](../Factions/Umin_Vibrio_Subfaction.md)
@@ -198,30 +237,54 @@ Protocols in the SoMe universe are standardized procedures, tactical doctrines, 
 
 ### Experimental Protocols
 
-#### Tolerance Induction Protocol
-**Status**: Under research
-**Purpose**: Retrain immune cells to recognize self
-**Developer**: AAA Research Division
-**Challenge**: Risk of triggering worse autoimmunity
+#### Project THIN MAN
+**File**: [Subject Acquisition Protocol](Umin/Subject_Acquisition_Protocol.md#project-thin-man-bioengineered-fear-construct)
+**Status**: Active development
+**Purpose**: Bioengineered Fear Construct from Marfan syndrome patients
+**Subject Registry**: THIN-01 through THIN-04
+**Notable Subject**: THIN-02 (currently operational, 47+ verified sighting events)
 
 ---
 
-## Protocol Classification System
+## Protocol Categories Summary
 
-| Category | Code | Examples |
-|----------|------|----------|
-| **AAA Defensive** | AAA-DEF | Snow, Semmelweis, Containment |
-| **AAA Medical** | AAA-MED | Triple Countermeasure, Mesna, Peacemaker |
-| **Mirror Image Offensive** | MIR-OFF | Molecular Disguise, Memory Corruption |
-| **Umin Fear** | UMIN-FEAR | Moonstar, Sightings, Subject Acquisition |
-| **Umin Infiltration** | UMIN-INF | MARY, Cradle |
-| **Umin Tactical** | UMIN-TAC | Ocean, Ink Cloud |
+### By Faction
+
+| Faction | Protocol Count | Primary Focus |
+|---------|---------------|----------------|
+| AAA | 8 | Defensive medicine, counter-insurgency |
+| Mirror Image | 5 | Offensive autoimmune warfare |
+| Umin | 11 | Infiltration, fear, naval warfare |
+
+### By Function
+
+| Category | Protocols |
+|----------|-----------|
+| Defensive | Triple Countermeasure, Snow, Semmelweis, Containment, Mesna |
+| Offensive | Molecular Disguise, Cross-Reaction, Memory Corruption, Ocean |
+| Infiltration | Project MARY, Cradle, Moonstar |
+| Psychological | Sightings, Subject Acquisition, Rationality |
+| Medical Support | Drift Medical, Mesna, Peacemaker |
 
 ---
 
-## Related Documents
+## Cross-References
 
-- [Athena Aegis Accord](../Organizations/Athena_Aegis_Accord.md)
-- [Mirror Image Protocol](../Organizations/Mirror_Image_Protocol.md)
-- [Triple Countermeasure Protocol](../Organizations/Triple_Countermeasure_Protocol.md)
-- [The Peacemaker Dilemma](../Organizations/Peacemaker_Dilemma.md)
+### Faction-Protocol Matrix
+
+| Faction | Subdivision | Protocols |
+|---------|-------------|-----------|
+| **AAA** | Medical Division | Mesna, Drift Medical, Peacemaker |
+| **AAA** | Epidemiological | Snow, Semmelweis, Containment |
+| **AAA** | Military Medicine | Triple Countermeasure |
+| **Mirror Image** | All Units | Mirror Image (Master), Molecular Disguise, Cross-Reaction, Memory Corruption |
+| **Umin** | Fear Technology | Moonstar, Sightings, Subject Acquisition |
+| **Umin** | Typhi | Project MARY, Cradle |
+| **Umin** | Vibrio | Ocean, Ink Cloud |
+| **Umin** | Pallidum | Painless Entry, Self-Healing Disguise, Polymorphic Rash |
+
+---
+
+**Last Updated**: 2352.06.15  
+**Total Protocols Catalogued**: 24  
+**Classification Distribution**: AAA (8) | Mirror Image (5) | Umin (11)
