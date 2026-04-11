@@ -37,6 +37,23 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first diplomatic mission
 
+### ⚔️ Protocols
+*Strategic doctrines and operational frameworks across all factions*
+
+#### AAA (Alopes Armed Forces)
+- [Triple Countermeasure Protocol](Protocols/AAA/Triple_Countermeasure_Protocol.md) — The three-tiered approach to autoimmune warfare
+- [The Peacemaker Dilemma](Protocols/AAA/Peacemaker_Dilemma.md) — Glucocorticoid controversy and moral complexity
+- [Snow Protocol](Protocols/AAA/Snow_Protocol.md) — Epidemiological containment doctrine
+- [Semmelweis Protocol](Protocols/AAA/Semmelweis_Protocol.md) — Barrier defense and sterilization procedures
+
+#### Mirror Image Protocol
+- [Mirror Image Protocol](Protocols/Mirror_Image/Mirror_Image_Protocol.md) — Autoimmune rogues and molecular mimicry
+
+#### Umin (The Unseen Crown)
+- [Moonstar Protocol](Protocols/Umin/Moonstar_Protocol.md) — Fear Technology's psychological warfare
+
+*[View Full Protocol Index →](Protocols/Protocol_Index.md)*
+
 ### 📚 References
 - [Marvel Wiki: Danielle Moonstar](References/Reference_Marvel_Wiki_Moonstar.md) — Inspiration for Fear Technology
 
