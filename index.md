@@ -34,6 +34,10 @@ In the world of SoMe, the human body is reimagined as a vast universe. **Planet 
 - [Fred](Characters/Fred.md) — Forest ranger
 - [Daniel / THIN MAN-01](Characters/Daniel_Slender_Man.md) — Transformed into Slender Man
 
+### 🏛️ Organizations
+- [Athena Aegis Accord (AAA)](Organizations/Athena_Aegis_Accord.md) — Allied antibiotic alliance
+- [Mirror Image Protocol](Organizations/Mirror_Image_Protocol.md) — Autoimmune insurgency
+
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first mission
 
