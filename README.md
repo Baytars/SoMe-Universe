@@ -30,6 +30,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 
 ### 👥 Characters
 - [Yuan Yukio](Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
+- [Yuan Yosemite](Characters/Yuan_Yosemite.md) — Former geisha, mother of Akio and Yukio
 - [Kadd Yuan Akio](Characters/Yuan_Akio.md) — Marshal of Jackalope Guard
 - [Lonicera](Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident
 - [Fred](Characters/Fred.md) — Forest ranger, father of Daniel
