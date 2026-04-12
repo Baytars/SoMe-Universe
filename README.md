@@ -19,6 +19,8 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Fear Technology Division](Factions/Umin_Fear_Technology.md) — Umin's psychological warfare division
 - [Typhi Subfaction](Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration
 - [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces
+- [Rabies Subfaction](Factions/Umin_Rabies_Subfaction.md) — Vampire court, light and water phobia
+- [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
