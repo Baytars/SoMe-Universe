@@ -336,6 +336,94 @@ Hydrophobia is the most distinctive rabies symptom — the operation weaponized 
 
 ---
 
+## The Pasteur Countermeasure
+
+### Historical Background
+
+**Louis Pasteur** (1822-1895), the "Father of Microbiology," conducted humanity's most crucial victory against rabies:
+
+**Timeline**:
+- **1882**: Pasteur isolated a rabies virus strain from an ox brain
+- **1884**: Successful vaccination of dogs demonstrated
+- **1885**: First human application — Joseph Meister, a 9-year-old boy bitten by a rabid dog, became the first person saved by the vaccine
+- **1889**: Official announcement of rabies vaccine success
+
+**The Breakthrough**:
+Pasteur's genius lay in **attenuation** — weakening the virus through serial passage in rabbit spinal cords, then drying the cords to further reduce virulence. This created a safe, effective vaccine from an otherwise 100% fatal disease.
+
+### AAA Countermeasure: The Pasteur Protocol
+
+**Weapon Classification**: MECH (Viral Disease = Mech Class)  
+**Designation**: PASTEUR-CLASS VACCINE DISPENSER  
+**Codename**: "The Cure"
+
+**The Pasteur Doctrine**:
+> "One man found a way to turn death into life. We carry his legacy in every vial."
+
+**Tactical Applications**:
+
+1. **The Meister Protocol** — Emergency field vaccination
+   - Deployable within minutes of bite exposure
+   - Single-use auto-injector containing attenuated virus
+   - 99% efficacy when administered within 24 hours
+   - Named after Joseph Meister, the first life saved
+
+2. **The Paris Protocol** — Pre-exposure vaccination
+   - Standard inoculation for all AAA personnel
+   - Three-dose series over 28 days
+   - Named after Pasteur Institute in Paris
+
+3. **The Spinal Cord Protocol** — Mass production
+   - Continuous culture of attenuated virus
+   - Named after Pasteur's original method using rabbit spinal cords
+
+**Pasteur-Class Units**:
+
+| Unit Type | Designation | Role |
+|-----------|-------------|------|
+| **Vaccine Mech** | PASTEUR-V | Mobile vaccine production and deployment |
+| **Field Hospital** | PASTEUR-H | Emergency PEP administration |
+| **Research Station** | PASTEUR-R | New vaccine strain development |
+
+**Combat Doctrine**:
+Pasteur units are **high-priority targets** for Rabies Subfaction. They are:
+- Heavily armored and escorted
+- Deployed only when air superiority is established
+- Protected by AAA's best defensive units
+- Never left unguarded
+
+### The Philosophical Conflict
+
+**Rabies Subfaction's View of Pasteur**:
+> "The Frenchman found a way to cheat death. We despise him. We fear him. We... respect him. A worthy enemy." — Count Dracula
+
+**AAA's View**:
+> "Every operative saved by the Pasteur Protocol is a life stolen back from the Undead Court. Every vaccination is a middle finger to Dracula himself." — AAA Medical Division training manual
+
+**The Numbers Game**:
+- Before Pasteur: 100% mortality once symptomatic
+- After Pasteur: 99% survival with timely PEP
+- Estimated lives saved: Over 29 million since 1885
+
+### Historical Echo: Joseph Meister
+
+**The First Survivor**:
+Joseph Meister (1876-1940) was the first human successfully vaccinated against rabies. He was bitten 14 times by a rabid dog, and Pasteur's experimental vaccine saved his life.
+
+**Fate**:
+Meister later became the caretaker of the Pasteur Institute in Paris. He reportedly committed suicide in 1940 rather than allow Nazi soldiers to desecrate Pasteur's tomb.
+
+**In SoMe Universe**:
+Meister is remembered as the **Patron Saint of Survivors**:
+- His story is taught to every AAA medical recruit
+- "To pull a Meister" means to survive against impossible odds
+- The Joseph Meister Medal is awarded to medical personnel who save lives under fire
+
+**AAA Commemoration**:
+> "He was bitten fourteen times. He should have died fourteen deaths. Instead, he lived — and guarded the memory of the man who saved him for the rest of his days. This is what we fight for. Not victory — survival."
+
+---
+
 ## Psychological Warfare Value
 
 ### The Fear Multiplier
