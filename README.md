@@ -21,6 +21,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces
 - [Rabies Subfaction](Factions/Umin_Rabies_Subfaction.md) — Vampire court, light and water phobia
 - [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator
+- [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
