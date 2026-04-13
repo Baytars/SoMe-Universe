@@ -285,6 +285,44 @@ Radium's bone-seeking property made it useful for treating bone cancers. Surgeon
 **The Trade-off**:
 The treatment worked, but often caused secondary cancers years later — trading one death for another.
 
+### The Curies: Mortals Who Tamed the Gods
+
+> *"We have chosen this way—to live and to work together, united in our scientific aspirations."* — Marie Curie, 1895
+
+**Who They Were**:
+Pierre and Marie Curie were not gods—they were human scientists who discovered Radium and Polonium in 1898. In doing so, they became the first mortals to **wrest control** of the Heavy Metal Pantheon.
+
+**Their Achievement**:
+- 1898: Discovered Polonium (400× more radioactive than uranium)
+- 1898: Discovered Radium (2,000,000× more radioactive than uranium)
+- 1903: First married couple to win the Nobel Prize
+- 1911: Marie won a second Nobel Prize (Chemistry)
+
+**The Tragedy**:
+Neither understood radiation's lethality. They:
+- Handled radioactive minerals bare-handed
+- Stored radium test tubes in their pockets
+- Tested radium's effects on their own bodies
+- Died from radiation exposure (Pierre: 1906 accident, Marie: 1934 leukemia)
+
+**Their Ascension**:
+In SoMe's lore, the Curies' radiation-saturated consciousnesses did not dissipate. They merged with the Heavy Metal Pantheon, becoming **semi-divine intermediaries** between the gods and humanity.
+
+**Pierre (The Architect of Symmetry)**:
+- Fragmented into **Radium Sprites**—tiny radioactive beings that haunt battlefields
+- Appears as a ghostly figure in crystal form, offering protection from radiation
+- His presence shields allies: *Symmetry demands that we stand together.*
+
+**Marie (The Widow of Radium)**:
+- Became the **High Priestess of Divine Intermediaries**
+- Can "see" radiation as a spectrum of colors, invisible to ordinary radiologists
+- Her ghost whispers to radiologists: *We have chosen this way—to live and to work together.*
+
+**The Cost of Power**:
+When a radiologist invokes the Curies' names, they gain incredible healing power—but accumulate radiation damage that cannot be healed, only endured. This is the **Curie Curse**: *To wield the gods' power is to carry their burden.*
+
+**See Also**: [The Curie Legacy (Full Character File)](../Characters/The_Curie_Legacy.md)
+
 ### COBALT-60 — The Therapeutic Beam
 
 **Element**: Cobalt-60  

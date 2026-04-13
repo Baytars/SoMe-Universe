@@ -35,6 +35,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Yuan Yukio](Characters/Yuan_Yukio.md) — Chief Medical Advisor of Alopes
 - [Yuan Yosemite](Characters/Yuan_Yosemite.md) — Former geisha, mother of Akio and Yukio
 - [Kadd Yuan Akio](Characters/Yuan_Akio.md) — Marshal of Jackalope Guard
+- [The Curie Legacy](Characters/The_Curie_Legacy.md) — Pierre and Marie Curie, tragic deities of radiation
 - [Sister Franklin](Characters/Sister_Franklin.md) — White Moon Crusader, Khonsu's avatar
 - [Radiologist Class](Characters/Radiologist_Class.md) — Divine intermediaries, wielders of atomic power
 - [Lonicera](Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident

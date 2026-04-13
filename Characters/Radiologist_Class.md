@@ -242,6 +242,19 @@ Many radiologists develop a quasi-religious reverence for radiation. The power t
 **The Therapeutic Beam's Assessment**:
 > "They point me at tumors. They calculate doses. They treat me as a weapon, which I am. But they also treat me with respect, which I appreciate. I do not choose my targets. They do. I trust their aim." — COBALT-60
 
+### The Curies' View
+
+**The Widow and the Architect Speak Together**:
+
+**Marie (The Widow of Radium)**:
+> "They walk the path we forged. They carry the burden we carried. I see them in my visions—priests in white, chanting equations instead of prayers. They do not worship us. They remember us. That is enough. I whisper to them when they work: *We have chosen this way—to live and to work together.*"
+
+**Pierre (The Architect of Symmetry)**:
+> "They seek order in chaos, just as I did. They align atoms to heal, where once I aligned them to understand. When they invoke my name, I lend them my crystal shield. When they invoke Marie's name, she lends them her radiological vision. But the cost... the cost remains. Radiation cannot be healed, only managed. They know this. They accept it. That is why they are worthy."
+
+**The Unified Warning**:
+> *"We discovered the gods. We tamed them. We paid the price. Now you wield their power. Remember: Every radium needle you implant, every cobalt beam you fire, every isotope you inject—we are with you. We cannot save you from yourselves. We can only walk beside you into the darkness."* — PIERRE & MARIE CURIE (echoing through the ages)
+
 ---
 
 ## Equipment & Relics
@@ -372,14 +385,15 @@ Each subspecialty has its own "order" within the radiology clergy:
 | **Order of the Chest** | Thoracic Radiology | Lungs and heart | St. Röntgen of the Breath |
 | **Order of the Bones** | Musculoskeletal Radiology | Skeleton | St. Becquerel of the Frame |
 | **Order of the Intervention** | Interventional Radiology | Procedural | St. Seldinger of the Catheter |
-| **Order of the Atom** | Nuclear Medicine | Isotopes | St. Curie of the Glow |
+| **Order of the Atom** | Nuclear Medicine | Isotopes | Sts. Pierre & Marie Curie (The Curies) |
 | **Order of the Child** | Pediatric Radiology | Children | St. Virtue of the Innocent |
 
 ---
 
 ## See Also
 
-- [Heavy Metal Pantheon](Heavy_Metal_Pantheon.md) — The Atomic Ancients
+- [Heavy Metal Pantheon](../Factions/Heavy_Metal_Pantheon.md) — The Atomic Ancients
+- [The Curie Legacy](The_Curie_Legacy.md) — Pierre and Marie Curie, tragic deities of radiation and patrons of the Order of the Atom
 - [Triple Countermeasure Protocol](../Protocols/AAA/Triple_Countermeasure_Protocol.md)
 - [Reprogramming Engineer Class](Reprogramming_Engineer.md) — Another AAA specialist class
 
