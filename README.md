@@ -23,6 +23,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator
 - [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
 - [Celestial Corps](Factions/Celestial_Corps.md) — Anatomists as astronauts, surgeons as heavenly army
+- [Lab Martyrs](Factions/Lab_Martyrs.md) — Silent heroes: experimental animals who crossed the species barrier
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
@@ -46,6 +47,9 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Lonicera](Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident
 - [Fred](Characters/Fred.md) — Forest ranger, father of Daniel
 - [Daniel / THIN MAN-01](Characters/Daniel_Slender_Man.md) — Transformed into Slender Man
+- [The DNA-Knitting Mouse](Characters/The_DNA_Knitting_Mouse.md) — Patron Saint of Experimental Sacrifice, keeper of the knitting needles
+- [Laika](Characters/Laika.md) — First cosmic pioneer, Saint of the Void
+- [HeLa](Characters/HeLa.md) — The immortal cell, Henrietta's unending gift
 
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first diplomatic mission
