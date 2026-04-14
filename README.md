@@ -22,6 +22,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Rabies Subfaction](Factions/Umin_Rabies_Subfaction.md) — Vampire court, light and water phobia
 - [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator
 - [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
+- [Celestial Corps](Factions/Celestial_Corps.md) — Anatomists as astronauts, surgeons as heavenly army
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
@@ -36,6 +37,9 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Yuan Yosemite](Characters/Yuan_Yosemite.md) — Former geisha, mother of Akio and Yukio
 - [Kadd Yuan Akio](Characters/Yuan_Akio.md) — Marshal of Jackalope Guard
 - [The Curie Legacy](Characters/The_Curie_Legacy.md) — Pierre and Marie Curie, tragic deities of radiation
+- [Leonardo da Vinci](Characters/Leonardo_da_Vinci.md) — The First Star-Mapper, Captain of the Dawn Pioneer
+- [Andreas Vesalius](Characters/Andreas_Vesalius.md) — Father of Modern Anatomy, Admiral of the Celestial Fleet
+- [William Harvey](Characters/William_Harvey.md) — The Circulation Prophet, Commodore of the Blood Sea Fleet
 - [Sister Franklin](Characters/Sister_Franklin.md) — White Moon Crusader, Khonsu's avatar
 - [Radiologist Class](Characters/Radiologist_Class.md) — Divine intermediaries, wielders of atomic power
 - [Lonicera](Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident
