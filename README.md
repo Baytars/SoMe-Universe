@@ -50,6 +50,8 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [The DNA-Knitting Mouse](Characters/The_DNA_Knitting_Mouse.md) — Patron Saint of Experimental Sacrifice, keeper of the knitting needles
 - [Laika](Characters/Laika.md) — First cosmic pioneer, Saint of the Void
 - [HeLa](Characters/HeLa.md) — The immortal cell, Henrietta's unending gift
+- [MELANCHOLIA](Characters/MELANCHOLIA.md) — The despair pathogen, trust eater, Umin psychological weapon
+- [The Betrayed](Characters/The_Betrayed.md) — Patients turned weapons, the farmer and the snake tragedy
 
 ### 📜 Scripts
 - [The Inaugural Diplomacy](Scripts/The_Inaugural_Diplomacy.md) — Yukio's first diplomatic mission
@@ -78,6 +80,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Cradle Protocol](Protocols/Umin/Cradle_Protocol.md) — Kidnap-and-replace operations
 - [Ocean Protocol](Protocols/Umin/Ocean_Protocol.md) — Cholera Octopus battleship systems
 - [Sightings Protocol](Protocols/Umin/Sightings_Protocol.md) — Fear cascade psychological warfare
+- [Trust Erosion Protocol](Protocols/Umin/Trust_Erosion_Protocol.md) — MELANCHOLIA psychological warfare against doctor-patient trust
 
 *[View Full Protocol Index →](Protocols/Protocol_Index.md)*
 
@@ -100,6 +103,9 @@ Characters are named after pioneers of medicine, with their "weapon class" deter
 
 ### Fear as a Weapon System
 Umin's Fear Technology Division creates supernatural constructs (ghosts, zombies, Slender Man) to exploit human superstition and distrust of science.
+
+### Trust Erosion and MELANCHOLIA
+Beyond physical pathogens, Umin deploys **MELANCHOLIA**—a psycho-toxin that attacks the doctor-patient relationship. It transforms grieving families into weapons, turning healers into victims. The 2024 statistic of 427 doctor assault incidents in China is reimagined as 427 "Hua Tuo Incidents" in SoMe's universe.
 
 ## Development Status
 
