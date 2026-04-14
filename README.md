@@ -40,6 +40,7 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Leonardo da Vinci](Characters/Leonardo_da_Vinci.md) — The First Star-Mapper, Captain of the Dawn Pioneer
 - [Andreas Vesalius](Characters/Andreas_Vesalius.md) — Father of Modern Anatomy, Admiral of the Celestial Fleet
 - [William Harvey](Characters/William_Harvey.md) — The Circulation Prophet, Commodore of the Blood Sea Fleet
+- [Norman Bethune](Characters/Norman_Bethune.md) — The Scarlet Surgeon, Commander of the International Medical Corps
 - [Sister Franklin](Characters/Sister_Franklin.md) — White Moon Crusader, Khonsu's avatar
 - [Radiologist Class](Characters/Radiologist_Class.md) — Divine intermediaries, wielders of atomic power
 - [Lonicera](Characters/Lonicera.md) — Head Maid, survivor of the John Snow Bridge incident

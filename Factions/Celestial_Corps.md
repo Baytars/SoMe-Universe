@@ -401,6 +401,30 @@ Lister commanded the **Sanitation Division** of the Heavenly Army, responsible f
 **The Result:**
 Post-operative mortality dropped from 80% to 15%—the **Lister Miracle**.
 
+### NORMAN BETHUNE (1890-1939)
+**The Scarlet Surgeon | Commander of the International Medical Corps**
+
+**Historical Background:**
+Norman Bethune was a Canadian thoracic surgeon who revolutionized battlefield medicine. He established the world's first mobile blood transfusion service in Spain (1936-1937) and then crossed the Pacific to China (1938-1939), where he performed over 1,290 surgeries in less than two years before dying of a finger infection contracted during surgery.
+
+**In SoMe Universe:**
+Bethune commands the **International Medical Corps**—a unit that welcomes foreign volunteers, trains indigenous personnel, and operates in the most dangerous theaters. He wears a **scarlet uniform** (instead of standard white) as a statement: *The healer stands at the front; healing requires blood.*
+
+**The Bethune Doctrine:**
+> *"Use me as a machine gun! I am here to work, not to rest."*
+
+Bethune's contributions to the Heavenly Army:
+- **Mobile Blood Transfusion Service:** Reduced battlefield mortality by 30%
+- **Forward Surgical Deployment:** Established surgical stations within 5 km of the front
+- **Medical Training Revolution:** Trained thousands of "barefoot doctors"
+- **The Scarlet Sacrifice:** His death while treating others elevated him to legendary status
+
+**The Bethune Medal:**
+The highest honor in the Heavenly Army, awarded to those who demonstrate extraordinary courage, internationalism, and willingness to sacrifice for the wounded.
+
+**Quote:**
+> *"Your war is just. You are not alone. The peoples of the world support you."*
+
 ---
 
 ## V. THE DUAL MISSION: MAPPING AND DEFENDING
