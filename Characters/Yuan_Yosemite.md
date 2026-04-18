@@ -69,15 +69,11 @@ Eventually entered a geisha house (okiya). The path from "sold child" to "geisha
 
 ### Meeting Dr. Yuan Foo
 
-**Circumstances**: CLASSIFIED — Various theories exist:
-1. Diplomatic function where she was performing
-2. Medical consultation during his posting in Japan
-3. Chance encounter during one of his rare personal travels
+They met at **Grand Duchess Victoria's birthday banquet**. Yosemite was performing — she had become the troupe's rising star by then, known for a stillness on stage that made audiences hold their breath. Dr. Yuan Foo was attending as a diplomatic guest.
 
-**What is Known**: He saw past the geisha role to the woman beneath. She saw a man who treated her as an equal, not an ornament.
+Victoria introduced them. He saw past the performance to the woman beneath. She saw a man who treated her as an equal, not an ornament.
 
-**The Decision to Leave**: 
-Marriage meant leaving the geisha life. For a woman of her background, this was either liberation or loss of the only security she had ever known. She chose to follow him.
+**The Decision to Leave**: Marriage meant leaving the stage. For a woman who had rebuilt herself through performance, this was either liberation or the loss of the only identity she had earned for herself. She chose to follow him.
 
 ### Move to the United States
 
@@ -153,6 +149,26 @@ Yukio never asked why they never visited Japan. Perhaps she understood, without 
 **Yukio's Reflection**:
 > "She gave me all the beauty and swallowed the bitterness herself. That was how she loved."
 
+### The Aunt Who Never Grew Up
+
+Franklin visited when Yukio was five. Yukio tugged on her oversized white habit and said: *"Mama, she looks like a big sister, not an aunt."*
+
+Franklin knelt down to Yukio's level and said: *"I get that a lot."*
+
+Franklin visited when Yukio was fifteen. Yukio had grown tall — taller than Franklin, who still had to look up to meet her eyes. Franklin said nothing. Yukio laughed and said: *"I'm taller than you now."*
+
+Franklin tilted her head and said: *"Yes. You are."*
+
+Franklin visited when Yukio was twenty-three. Yukio was a Chief Medical Advisor with a published paper on nuclear reprogramming. Franklin sat on a chair in the Yuan living room with her feet not quite touching the floor, drinking tea that Yukio had made, and Yukio called her *"Aunt Franklin"* and poured her another cup.
+
+Yosemite watched from the doorway. She said nothing.
+
+Franklin did not age. Yukio did. This was the shape of time for both of them, and they had agreed, without ever saying it aloud, not to count it.
+
+But Yosemite counted. She had been sixteen when Franklin carried her out of the fire. Now Yukio was twenty-three. Franklin still looked sixteen. She had always looked sixteen.
+
+Yosemite did not ask Franklin about this. Some questions, she had learned, were better left in the dark.
+
 ### With the Household Staff
 
 **Lonicera (Head Maid of Yukio's Residence)**: 
@@ -204,6 +220,103 @@ Both represent facets of Japanese excellence that Yukio carries into battle.
 ### Linguistic Quirks
 
 Yukio's habit of mixing Japanese words with English sentences — and her mother's gentle sighs when she does so incorrectly — is a permanent reminder of the heritage she inherited but never fully mastered.
+
+---
+
+## THE FUKUSHIMA ORIGIN — The Second Fire She Survived
+
+### The Established Chronology
+
+All of this — the geisha training, the diplomatic circles, the elegance, the composure — came *after* the fishing village and the affluent foster family. The Fukushima disaster came after the geisha house. Nothing in her biography before age sixteen indicated she would survive a second fire.
+
+She did not know she had that in her.
+
+---
+
+### The Night of the Breach
+
+She was sixteen. She had been in geisha training for years by then — sold young, trained in music and dance and the art of making silence feel safe. The Fukushima Temple was not in her city. But the foster family she had been sold to lived near it, and she had been sent back to stay with them for a brief period between training seasons.
+
+When the containment rings failed, she was in their home. The Shattered Aspects poured out. The evacuation order came.
+
+She did not run to the temple. She ran to find Momo — the cat she had kept since she was a child, even after everything else was taken from her.
+
+Momo was already dead. The contamination was in the water, the ground, the air.
+
+She crawled into a collapsed storage hut on the foster family's property and sat in the dark, waiting.
+
+---
+
+### The Girl Who Walked Through Fire
+
+She does not remember most of what happened next. She remembers:
+- A light that was not fire
+- Arms around her, too small to be strong enough
+- The feeling of being carried
+- A voice, very calm, saying: *"Hold on. I'm not letting go."*
+- Waking up in a medical tent, wrapped in a white habit that smelled of moonlight
+
+The girl who carried her out was small. Young. Dark hair. Eyes that had seen too much.
+
+She said: *"You're just a child."*
+
+The girl said: *"I know. I'm always a child. That means I haven't run out of time yet."*
+
+---
+
+### Three Weeks in the Light
+
+Franklin stayed with her for three weeks in the Fukushima medical tent. Every day, the small girl sat beside her bed and held her hands, and warmth spread through her body, and the glow faded from her skin. The radiation was being pulled out of her, gently, by someone who understood it from the inside.
+
+On the day she could stand, the girl told her: she could not go back. The foster family was gone. The theater troupe would not take her back — contamination risk, they said, and they did not mean the radiation. She had no family, no papers, no path.
+
+The girl said: *"I know someone who takes in strays."*
+
+---
+
+### The Meeting with Victoria
+
+Franklin brought her to **Grand Duchess Victoria** — the woman who ran half of Alopes from a cluttered study that smelled of pipe tobacco. Victoria asked three questions: Can you read? Can you learn? Will you work?
+
+Yosemite said yes to all three.
+
+Victoria placed her with a Western theater troupe in Alopes — Franklin had insisted on this, not as servitude but as continuation of training. The troupe owed Franklin a favor. Acting, she told Yosemite, was a skill that crossed all borders: music, movement, the art of becoming someone else so completely that the audience forgot who they were watching.
+
+She did not ask what favor. She understood: Franklin had called in every debt she had ever earned to get her this door.
+
+---
+
+### The Night Before She Left for the Geisha House
+
+Franklin came to see her. They sat in the medical tent as the last of the Fukushima evacuees were processed. No one else was around.
+
+> **Yosemite**: "Why did you save me?"
+
+> **Franklin**: *(long pause)* "Because I know what it feels like to be left behind."
+
+> **Yosemite**: "What happened to you?"
+
+> **Franklin**: *(longer pause)* "I died. I was reborn. I'm still deciding what that means."
+
+> **Yosemite**: "Will I see you again?"
+
+> **Franklin**: *(small smile)* "Yes. I'll find you. I always find the people I've carried."
+
+She kept that promise.
+
+---
+
+### What She Carries
+
+Yosemite never told Dr. Yuan Foo the full story. She told him she was from Japan, that she had lost her family young, that she had rebuilt her life through the theater. All of this was true.
+
+What she did not tell him — what she carried in silence — was the weight of the small girl who had walked through fire to carry her out, who had almost died so that a fisherman's daughter could live.
+
+She named her daughter **Yukio** after her mother's Japanese tradition. She named her son **Akio** after the Japanese word for bright. She built a life of elegance and composure and curated beauty.
+
+And sometimes, when Yukio brought home science books and told her about crystallography, she would look at the photograph on the shelf — the one of a small girl in a white habit standing at her wedding — and she would think: *This is what it looks like when someone carries you out of the fire and gives you a door.*
+
+She never forgot.
 
 ---
 

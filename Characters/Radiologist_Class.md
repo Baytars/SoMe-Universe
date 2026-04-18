@@ -257,6 +257,43 @@ Many radiologists develop a quasi-religious reverence for radiation. The power t
 
 ---
 
+## Temple of Prometheus — The Cathedral IS the Temple
+
+### The Architectural Truth
+
+Every **Cathedral of Light** (AAA Radiology Facility) is, in architectural essence, a **Temple of Prometheus**. The vaulted shielding chambers house the Promethean Core containment rings. The imaging gantry is the altar at which priests commune with atomic fire. The control room is the choir loft where the liturgy of dose calculations is sung.
+
+Radiologists did not build new temples. They built upon the ancient ones—sometimes knowingly, sometimes not. Many temples predate recorded history, their origins lost to age. What radiologists call "conventional shielding" the temples call "the Chained Flame's prison."
+
+### The Order of the Atom = Temple Priesthood
+
+| Temple Order | Radiology Equivalent | Theological Position |
+|--------------|---------------------|---------------------|
+| Order of the Chained Flame | Diagnostic Radiology | Containment-first: image only, never release |
+| Order of the Burning Crown | Radiation Oncology | Controlled release: therapeutic power |
+| Order of the Silent Watch | Nuclear Medicine | Research and record-keeping |
+| Order of the Ashborn | Interventional Radiology | Minister to the afflicted |
+
+The **Order of the Ashborn** is particularly significant in the post-Chernobyl era. These radiologists specialize in **interventional procedures within contaminated zones**—using catheter-based techniques to perform "miracle surgery" inside active contamination areas where Shattered Aspects patrol.
+
+### Fighting Shattered Aspects
+
+Radiologists deployed to contaminated zones face enemies that ordinary soldiers cannot even perceive:
+
+**Tactical Role of Radiologists in Contaminated Zones**:
+- **Divine Vision (灵视)**: The Roentgen Gaze penetrates Blazing Specters, revealing their true form
+- **The Nuclear Revelation (PET/SPECT)**: Identifies Corrupted Ground, maps contamination spread
+- **The Spiral Pilgrimage (CT)**: Locates Radiant Maws (spatial rifts) before they expand
+- **Chant of Destruction (Radiation Therapy)**: One of the few weapons effective against Chained Remnants
+
+> *"The soldier cannot see the enemy. We see it. We guide the blade. We are the eyes of the crusade."* — RADIOLOGIST-BISHOP CHEN, Temple of Chernobyl
+
+### The Silent Watch Connection
+
+The **Order of the Silent Watch** maintains the only complete archive of all temple breaches. Their radiologists serve as both historians and detectives, reconstructing what went wrong at Chernobyl, Fukushima, and the 124 lesser incidents. Their motto: *"The fire that burns brightest leaves the deepest shadows."*
+
+---
+
 ## Equipment & Relics
 
 ### Personal Protection
