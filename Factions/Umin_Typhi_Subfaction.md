@@ -25,6 +25,16 @@ The **Typhi Subfaction** represents Umin's most sophisticated infiltration capab
 
 Typhoid fever (*Salmonella Typhi*) is transmitted through contaminated food and water. Approximately **1-6%** of infected individuals become chronic asymptomatic carriers, harboring the bacteria in their gallbladders without showing symptoms. These carriers can shed bacteria for decades.
 
+**Pathogen Characteristics**:
+
+| Attribute | Description |
+|-----------|-------------|
+| **Transmission** | Fecal-oral route; Typhi can survive in water for days |
+| **Carriage Rate** | ~2-5% of infections become chronic carriers; Typhi persists in gall bladder |
+| **Symptom Profile** | None in carriers; pathogen shed continuously via bile |
+| **Intelligence Value** | High — carriers appear healthy, move freely through populations |
+| **Risk Factor** | If detected, carriers are quarantined — operations require rapid extraction |
+
 **Historical Prototype**: Mary Mallon ("Typhoid Mary," 1869-1938)
 - First identified asymptomatic carrier in the United States
 - Infected approximately 50 people, 3 fatally
@@ -106,127 +116,168 @@ Once inserted, the "Mary" operative can:
 
 ### Background
 
-**Target**: Yuan Yukio (袁雪炤), Chief Medical Advisor of Alopes  
-**Codename**: Operation DOPPELGÄNGER  
-**Duration**: 2343.03.15 — 2343.05.22 (68 days)  
-**Outcome**: Partial success — Operative exposed, original rescued
+**Operation Codename**: Operation DOPPELGÄNGER  
+**Target**: Yuan Yukio (袁雪炤), Chief Medical Advisor, Alopes  
+**Carrier Operative**: MARY-07  
+**Duration**: 2343.02.15 — 2343.05.22  
+**Outcome**: Partial success — Operative exposed, original rescued  
 
-### Target Profile
+### Target Selection Rationale
 
-Yukio was selected for substitution due to:
-- **High-Value Position**: Chief Medical Advisor with access to Alopes military medical intelligence
-- **Beauty & Charisma**: Her influence over officials made her ideal for seduction-based destabilization
-- **Predictable Patterns**: Regular schedule at Anshington medical facilities
-- **Limited Personal Relationships**: Akio (brother) was frequently deployed; Foo (father) was absorbed in administrative duties
+Yukio was selected because she was both **high-value and exploitable**:
 
-**Vulnerability Analysis**:
-> *"The target's position as a beautiful, influential woman in a male-dominated government makes her perfect for our purposes. A Mary operative leveraging her appearance could seduce dozens of officials, creating chaos in the command structure. The Japanese-American cultural background provides cover for any behavioral changes — 'stress from diplomatic pressure' will explain everything."*
+- **Position**: Chief Medical Advisor with access to Alopes military medical intelligence
+- **Social Graph**: Akio (brother) was frequently deployed; Foo (father) was absorbed in administrative duties — limited close contacts to notice behavioral changes
+- **Influence**: Her standing with senior officials made her ideal for social destabilization
+- **Routine**: Predictable schedule at Anshington medical facilities
 
-### The Carrier: "Typhoid Mary" (Designation MARY-07)
+Typhi analysts identified a secondary target through her: **Vasud Stuart**, Deputy Director of the Anstar Ministry of Foreign Affairs — the diplomat who had mentored Yukio during her diplomatic rotation. Vasud's genuine rapport with Yukio meant he would be receptive to a connection from the Chief Medical Advisor — making him the optimal intelligence extraction target.
 
-**Template Profile**:
-- **Codename**: MARY-07
-- **Original Identity**: [CLASSIFIED — Typhi Archive]
-- **Physical Match**: 94% similarity to Yukio
-- **Modifications Required**: Surgical facial refinement (6 weeks), hair treatment, voice coaching
-- **Special Training**: Seduction protocol, emotional manipulation, bureaucratic sabotage
+> *"A Mary operative leveraging her appearance could approach dozens of officials through professional channels, creating chaos in the command structure. Behavioral changes can be explained as 'stress from diplomatic pressure' — Japanese-American cultural background provides natural cover."*  
+> — Typhi Internal Assessment, Operation Authorization
 
-**Personality Profile**:
-> MARY-07 exhibits high adaptability and zero moral constraints. She enjoys the game of deception and takes pleasure in watching men destroy themselves over her. This makes her ideal for the Yukio template — the target's natural charisma will be weaponized into something far more destructive.
+### MARY-07: The Carrier Operative
+
+- **Designation**: MARY-07
+- **Template Match**: 94% physical similarity to Yukio (refined through 4 weeks of surgical and hormonal preparation)
+- **Special Training**: Social manipulation, emotional exploitation, bureaucratic sabotage
+- **Personality Assessment**: *"High adaptability, zero moral constraints. She enjoys watching men destroy themselves over her. This makes her ideal for the Yukio template."*
 
 ### Operation Timeline
 
 | Date | Event | Notes |
 |------|-------|-------|
 | 2343.02.01 | Operation authorized by Umin High Command | "上峰" approval granted |
-| 2343.02.15 | MARY-07 begins training for Yukio template | 4-week intensive program |
+| 2343.02.15 | MARY-07 begins surgical and behavioral preparation for Yukio template | 6-week refinement program |
 | 2343.03.12 | Yukio abducted during medical conference transit | "Cradle Protocol" initiated |
-| 2343.03.15 | MARY-07 assumes Yukio's identity | Initial integration successful |
-| 2343.03.20 | First seduction target approached | Deputy Defense Minister |
-| 2343.04.01 | Second wave of seductions initiated | 7 officials targeted simultaneously |
-| 2343.04.15 | Bureaucratic conflicts erupt | Rival factions form over "Yukio's" favors |
-| 2343.05.01 | Lonicera notices behavioral anomalies | First suspicion arises |
-| 2343.05.10 | Akio returns from deployment | Brother recognizes inconsistencies |
-| 2343.05.18 | Secret medical scan reveals carrier markers | Typhi bacterial signature detected |
-| 2343.05.22 | MARY-07 captured, Yukio rescued | Operation DOPPELGÄNGER terminated |
+| 2343.03.15 | MARY-07 assumes Yukio's identity | Integration begins |
+| 2343.03.20 | MARY-07 begins approach of Deputy Defense Minister | First high-value target |
+| 2343.04.01 | Vasud Stuart contacted at diplomatic reception | Primary intelligence target engaged |
+| 2343.04.15 | Vasud relationship deepens into secret romantic connection | Extraction phase begins |
+| 2343.05.01 | Lonicera notices behavioral anomalies | Discovery process initiated |
+| 2343.05.10 | Akio returns from deployment; recognizes inconsistencies | Immediate family confirms suspicion |
+| 2343.05.18 | Secret medical scan confirms Typhi carrier markers | Medical evidence obtained |
+| 2343.05.22 | Raid executed; Yukio rescued; MARY-07 exfiltrates | Operation terminated |
 
 ### The Sabotage Campaign
 
-During her 68 days as "Yukio," MARY-07 executed a systematic destabilization campaign:
+During her **68 days** as Yukio, MARY-07 pursued simultaneous intelligence and destabilization objectives:
 
-**Seduction & Manipulation**:
+**Intelligence Extraction (Vasud Stuart)**:
+- **23 classified documents** relating to Anstar-Alopes joint operations
+- Joint Patrol Route schedules for the Immune Corridor
+- Medical supply convoy routes and timing
+- Shared intelligence protocols between Anstar and AAA counter-intelligence
+- Complete roster of AAA operatives embedded within Anstar territory
+- Vasud's personal diplomatic notes (handwritten, unencrypted)
+- Vasud's personal access credentials to the Ministry's classified filing system
+
+**Social Destabilization**:
 - **12 high-ranking officials** engaged in romantic/sexual relationships
-- **4 rival factions** created within the bureaucracy
-- **23 classified documents** leaked to Umin intelligence
-- **3 military operations** delayed due to fabricated "medical concerns"
+- **4 rival factions** created within the bureaucracy through manipulated loyalties
+- **3 military operations** delayed through contradictory "medical concerns"
+- Bureaucratic sabotage: blocked officer promotions, redirected medical supplies
 
-**Psychological Operations**:
-- Played officials against each other using jealousy and rivalry
-- Spread rumors about planned purges and reassignments
-- Issued contradictory medical advisories to create confusion
-- Used "Yukio's" perceived innocence to avoid suspicion
+**Estimated Total Damage**: ₳47 million in direct losses; irreparable damage to 14 careers.
 
-**Bureaucratic Sabotage**:
-- Blocked promotions of competent officers (replaced with incompetent loyalists)
-- Redirected medical supplies to "priority" (actually useless) projects
-- Created friction between Foo (Medical Chancellor) and other ministers
+### Discovery
 
-**Estimated Damage Assessment**:
-> The 68-day infiltration caused approximately **₳47 million** in direct economic losses and **irreparable damage** to 14 careers. More significantly, trust within the Alopes government was severely compromised. Officials who had vied for "Yukio's" favor were humiliated, and those who had trusted her judgment questioned their own competence. The psychological impact may take years to fully assess.
+**Lonicera's Instinct** (first to notice):
+- "Yukio" treated staff colder and more dismissively
+- Dietary preferences changed; sleep patterns disrupted
+- Subtle physical tells — a gesture Yukio never used
 
-### Discovery & Rescue
-
-**Lonicera's Instinct**:
-Yukio's head maid Lonicera was the first to notice anomalies:
-- "Yukio" treated staff differently — colder, more dismissive
-- Dietary preferences changed (favorite foods rejected)
-- Sleep patterns altered (insomnia, nightmares)
-- Subtle physical tells (a gesture Yukio never used)
-
-**Akio's Return**:
-When Akio returned from a 3-month deployment, he immediately recognized:
-- Eye contact patterns were wrong
-- "Inside jokes" between siblings fell flat
-- Physical intimacy (sibling affection) was awkward
-- Intuition: "This isn't my sister"
+**Akio's Confirmation** (brother recognizes immediately):
+- Eye contact patterns wrong
+- Sibling inside jokes fell flat
+- Physical intimacy felt forced
+- Instinct: *"This isn't my sister"*
 
 **Medical Confirmation**:
-A secret scan at a private facility revealed:
-- Typhi bacterial DNA in gallbladder tissue (carrier marker)
+- Typhi bacterial DNA detected in gallbladder tissue (carrier marker)
 - Hormonal profiles inconsistent with Yukio's medical history
 - Neural activity patterns suggesting conditioning
 
-**Raid & Rescue**:
-A joint operation by Akio's Jackalope Guard and Lonicera's household staff:
-1. MARY-07 was subdued during a private audience
+**Raid & Rescue** (joint operation by Akio's Jackalope Guard and Lonicera's household staff):
+1. MARY-07 subdued during a private audience
 2. Typhi holding facility located through interrogation
-3. Yukio found in suspended animation, physically healthy but traumatized
-4. Rescue completed within 6 hours of discovery
+3. Yukio found in suspended animation — physically healthy, psychologically traumatized
+4. Rescue completed within 6 hours of initial strike
 
 ### Aftermath
 
 **Yukio's Recovery**:
-- 3 weeks of medical treatment for malnutrition and psychological trauma
-- 6 months of therapy to process the violation of identity theft
+- 3 weeks of medical treatment for malnutrition and trauma
+- 6 months of therapy for identity theft processing
 - Ongoing trust issues with new acquaintances
-- Deeper bond with Lonicera and Akio from the rescue
+- Deeper bond with Lonicera and Akio — they saved her
+
+**Vasud Stuart**:
+- Learned of the deception only after MARY-07's departure
+- Career terminated immediately
+- Exiled to remote diplomatic outpost in the Lower Intestinal Territories
+- The Song-Stuart family quietly distanced themselves
 
 **MARY-07's Fate**:
-- Initial interrogation provided valuable intelligence on Typhi operations
-- Offered amnesty in exchange for cooperation with AAA counter-intelligence
+- Initial interrogation yielded valuable Typhi operational intelligence
+- Offered amnesty in exchange for counter-intelligence cooperation
 - Current status: [CLASSIFIED — AAA Intelligence Archive]
 
-**Political Consequences**:
-- 12 officials implicated in the seduction scandal faced various punishments
-- Several committed suicide or resigned in disgrace
+**Broader Political Consequences**:
+- 12 implicated officials faced punishment; several committed suicide or resigned in disgrace
 - Trust in government institutions temporarily collapsed
 - Yukio's reputation suffered — some believed she had "willingly" betrayed her country before the truth emerged
 
-**Security Reforms**:
+**Security Reforms Enacted**:
 - Mandatory medical screening for all high-ranking officials
 - Identity verification protocols for sensitive meetings
 - Increased security for Alopes leadership
 - Formation of AAA Counter-Infiltration Division
+
+---
+
+## Psychological Impact Operations
+
+Beyond intelligence extraction, Abteilung Stille operations are designed to produce a specific psychological phenomenon in the target population:
+
+### Collective Trust Erosion
+
+When an organization's leadership cannot trust that their colleagues are who they claim to be, the organization itself begins to fracture. Abteilung Stille's operations plant a permanent seed of doubt:
+
+- *Are my colleagues who they say they are?*
+- *Am I who I think I am?*
+- *Can I trust my own memories?*
+
+This doubt does not require additional operations to sustain itself. Once planted, it grows organically within the target organization.
+
+### The Doppelgänger Effect
+
+Targets of successful Abteilung Stille operations — and those who knew the targets — develop a chronic condition that Abteilung Stille analysts call the **Doppelgänger Effect**:
+
+- Hypervigilance toward subtle behavioral inconsistencies in others
+- Difficulty forming new relationships due to trust paranoia
+- Intrusive questioning of one's own identity and memories
+- Emotional numbing in professional contexts
+
+**Yukio**, as the primary identity theft victim of Operation DOPPELGÄNGER, exhibits all four symptoms of the Doppelgänger Effect.
+
+---
+
+## Known Limitations
+
+1. **Carrier Degradation**: Typhi carriers, despite their biological advantages, have a finite operational lifespan. Continuous impersonation causes cellular stress that eventually manifests as subtle physical inconsistencies.
+2. **Discovery Window**: If a carrier is exposed before completing extraction, the entire operation is compromised — and the carrier becomes a liability rather than an asset.
+3. **Target Survival Problem**: Keeping the original target alive requires resources. If the target dies during captivity, evidence of foul play may surface.
+4. **Biological Fidelity Ceiling**: Typhi carriers can replicate physical and vocal characteristics with high accuracy, but deep behavioral patterns — particularly spontaneous emotional responses — remain challenging to sustain under pressure.
+
+---
+
+## Relationship to Other Umin Sub-Factions
+
+- **Archaeology Division**: Provides genetic material for carrier preparation; studies ancient carrier strains
+- **Pallidum (Great Imitator)**: Shares operational philosophy; Syphilis's ability to mimic other diseases parallels Typhi's ability to mimic identity
+- **Despair Cult**: Typhi's psychological operations complement the Cult's trust erosion campaigns
+- **Fear Technology**: Can be deployed to suppress discovery of Doppelgänger operations through manufactured terror
 
 ---
 
@@ -285,8 +336,8 @@ Mary Mallon (1869-1938) was the first person in the United States identified as 
 
 ## Cross-References
 
-- **Yukio Character File**: `../Characters/Yuan_Yukio.md` (to be updated with incident details)
+- **Yuan Yukio Character File**: `../Characters/Yuan_Yukio.md`
+- **Vasud Stuart Profile**: `../Characters/Vasud_Stuart.md`
 - **Lonicera Character File**: `../Characters/Lonicera.md`
 - **Akio Character File**: `../Characters/Yuan_Akio.md`
-- **Umin Naming Convention**: `../Lore/Umin_Naming_Convention.md`
-- **AAA Counter-Intelligence**: [Document pending]
+- **Operation DOPPELGÄNGER Detail**: `../../SoMe百科/Umin_Typhi_Subjugation_Unit.md`

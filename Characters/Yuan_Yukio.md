@@ -329,26 +329,25 @@ Her relationship with her family is notably close, particularly with her brother
 From 2343.03.15 to 2343.05.22 (68 days), Yuan Yukio was secretly imprisoned by Umin Typhi Subfaction (*Abteilung Stille*). A Mary operative (Designation MARY-07) assumed her identity and conducted a systematic destabilization campaign against Alopes government.
 
 **The Abduction**:
-- Yukio was captured during transit to a medical conference
+- Yukio was captured on 2343.03.12 during transit to a medical conference
 - She was held in a Typhi "Cradle" facility in suspended animation
 - Memory extraction was performed weekly to update the impostor
 
 **The Impostor's Actions**:
-During the 68-day infiltration, MARY-07:
-- Seduced **12 high-ranking officials**
-- Created **4 rival factions** within the bureaucracy
-- Leaked **23 classified documents** to Umin intelligence
-- Delayed **3 military operations** through fabricated "medical concerns"
-- Caused estimated **₳47 million** in economic losses
+During the 68-day infiltration, MARY-07 operated across three impact dimensions:
+
+1. **Governance Sabotage**: Blocked promotions, redirected medical supplies, created factional conflicts within the bureaucracy — causing ₳47 million in direct losses and irreparable damage to 14 careers
+2. **Intelligence Extraction**: Using a secret romantic connection with Vasud Stuart (Yukio's former diplomatic mentor), obtained 23 classified documents including joint patrol routes, medical supply convoys, and embedded AAA operatives
+3. **Psychological Warfare**: Exploited trust vulnerabilities to create long-term institutional distrust within the government and military
 
 **Discovery**:
-- Lonicera (head maid) first noticed behavioral anomalies
-- Akio recognized inconsistencies upon returning from deployment
+- Lonicera (head maid) first noticed behavioral anomalies on 2343.05.01 (behavioral changes, altered preferences)
+- Akio recognized inconsistencies upon returning from deployment and confirmed the deception on 2343.05.10
 - Secret medical scan revealed Typhi carrier markers
 - Joint rescue operation by Jackalope Guard and household staff
 
 **Rescue**:
-- MARY-07 subdued during a private audience
+- MARY-07 exfiltrated before capture, but provided valuable intelligence after later amnesty
 - Yukio found in suspended animation, malnourished but alive
 - Rescue completed within 6 hours of discovery
 
@@ -369,7 +368,7 @@ During the 68-day infiltration, MARY-07:
 *Professional Consequences*:
 - Yukio's reputation suffered; some believed she had "willingly" betrayed Alopes
 - 12 officials implicated in the scandal faced punishment (several suicides)
-- Government trust temporarily collapsed
+- Government trust temporarily collapsed; Anstar-Alopes diplomatic relationship set back by 18 months
 - Security protocols dramatically increased
 
 *Personal Growth*:
