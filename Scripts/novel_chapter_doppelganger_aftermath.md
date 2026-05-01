@@ -2,6 +2,46 @@
 
 ---
 
+## Prologue: The Sentences
+
+*Thirty days after the canal lights returned.*
+
+The tribunal had lasted eleven days. The verdicts had taken three hours. The sentences had been delivered in the gray language of institutional pragmatism—the kind of language that transformed lives into logistics and turned people into problems to be managed.
+
+**MARY-07** had been the most complicated case. She had violated seventeen statutes. She had impersonated a founding family member. She had extracted intelligence from six government officials and attempted extraction from twelve others. She had, by any reasonable measure, committed crimes that warranted detention for life.
+
+But she had also handed over Typhi's Continent Sacrum infiltration protocols. She had argued, in her final interrogation, for the preservation of the original Dr. Yuan. She had surrendered without resistance when the Seekers arrived at her apartment, and she had said, in the recorded transcript that would later circulate through a dozen intelligence agencies: *"Because someone believed in me."*
+
+The tribunal had debated for six hours. The verdict had been unprecedented: **Amnesty with Monitoring**. She would not be detained. She would be *managed*. She would be released into AAA custody, placed in a secure facility with movement restrictions, assigned a case number (OBS-7734-Y), and watched for the rest of her life by analysts who would never be certain whether her behavior was genuine.
+
+This was, the tribunal concluded, the appropriate sentence for a woman who had become something her creators had not intended: a person.
+
+**Vasud Stuart** had received his sentence on the eighth day of the tribunal. Unauthorized intelligence sharing. Failure to report. Conduct unbecoming of a diplomatic officer. The Song-Stuart name had survived—barely—but Vasud had not. He was stripped of his rank, his posting, his apartment in the Third Ward. He was reassigned to Facility 14-Gamma, a monitoring outpost in the Industrial Sector, where former intelligence officers were sent to live out their remaining years in productive obscurity.
+
+The official designation was *Administrative Reassignment*. Everyone knew what it meant: exile.
+
+Gamor had visited once, in the first week. He had stood in the doorway of Vasud's new quarters—a room half the size of the old apartment, furnished with government-issue furniture—and had said nothing, because there was nothing to say. They had shaken hands. Gamor had left. He had not returned.
+
+**Dr. Yuan Yukio** had not been tried. She had been rescued; she had not offended. But rescue was not the same as recovery, and recovery was not the same as return. She had spent four months in a medical facility in the Fourth Ward, relearning the left hand she had once used instinctively, relearning the professional protocols that had been extracted from her mind along with everything else, relearning the simple act of existing in a world that had continued without her.
+
+On the 150th day after the extraction, she had returned to Alopes. She had resumed her position as Chief Medical Advisor. She had attended her meetings and signed her briefings and delivered her public statements about epidemic preparedness. She had rebuilt her life with the precision of a surgeon reconstructing a shattered femur.
+
+But she had not returned to herself. She was not sure, anymore, where that self had been located, or whether it had ever really existed, or whether the woman who had lived it had been real or simply a template that MARY-07 had inherited and perfected.
+
+These were the sentences. These were the lives that remained after the tribunal had finished with them.
+
+Three people, separated by institutions and ideologies and the vast bureaucratic distance between what they had done and what had been done to them. Three people who had once orbited each other in the intimate geometry of deception and belief, now scattered across a continent like debris from an explosion that had not quite finished detonating.
+
+They did not communicate. They were not permitted to communicate. The tribunal had been explicit on this point: *Any contact between the parties is prohibited pending clearance from the monitoring authority.*
+
+But they watched each other. Through surveillance nodes and encrypted reports and the elaborate apparatus of institutional observation that had been constructed around them, they watched. And in the watching, in the endless documentation of each other's lives, they found something that was not quite connection and not quite absence—something that occupied the space between.
+
+This is what surveillance had become for them. Not protection. Not punishment.
+
+Memory.
+
+---
+
 ## I. MARY-07 — The Mirror Has No Answers
 
 The kettle screamed at 06:00, exactly as programmed. MARY-07 watched her hand reach for it—three precise motions, muscle memory encoded before she'd ever learned her own name—and wondered, not for the first time, whether the wondering was genuine.
