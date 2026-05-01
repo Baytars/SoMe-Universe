@@ -56,9 +56,18 @@ The Yuan family is one of Alopes's "founding families," with lineage tracing to 
 - Maintained close relationship with twin brother Akio throughout their divergent career paths
 
 **Education**:
-- Alopes Military Academy (Class of 2346)
-- Specialization: Medical Strategy & Bioinformatics
-- Advanced training: AAA Medical Division Fellowship
+- Alopes Military Academy (Class of 2346) — Undergraduate, Medical Strategy & Bioinformatics
+- Allier Military Academy (2347-2348) — Advanced Studies, Cross-Institutional Exchange Program
+- AAA Medical Division Fellowship — Advanced training
+
+### Allier Exchange Program (2347-2348)
+
+Between her graduation from Alopes Military Academy and her commissioning as Field Medical Officer, Yukio was selected for the **Allier-Alopes Cross-Institutional Exchange Program** — a rare privilege extended only to founding family members demonstrating exceptional potential.
+
+This two-year posting at Allier Military Academy's West Tower brought her into contact with officers from across the Coalition's military branches. It was here, in the Forium's evening stillness, that she first encountered Surgical Naval Marines heir **Robert Shire** — a meeting that would prove formative to both their later careers.
+
+> *"Allier taught me what Alopes couldn't: how to work within systems I didn't build, alongside people I didn't choose. Robert Shire was the first lesson. He taught me that precision and compassion aren't opposites — they're the same weapon, pointed different directions."*
+> — Yukio, *Personal Notes on Cross-Institutional Cooperation* (2352)
 
 ### Career Progression
 
