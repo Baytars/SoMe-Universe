@@ -1617,7 +1617,7 @@ To his left: Gamor, still wearing the Seekers insignia on his collar, his face c
 
 Before him: the tribunal panel. Three judges, two from the Intelligence Council, one from the Diplomatic Corps. Behind them, in the gallery: the families. The twelve. The ones who had been exposed in sequence, one after another, over the past three months, each one learning the truth in isolation, each one scrambling in the aftermath.
 
-The first had been the Hendricks family — a minor diplomatic dynasty whose patriarch had accepted MARY-07's attention at a reception in April and had shared intelligence he should not have shared. The exposure had been contained. The Hendricks had retained a solicitor, minimized the damage, emerged with their institutional standing bruised but intact.
+The first had been the Hendricks family — one of Anstar's primary commercial dynasties, controlling significant portions of the nation's shipping infrastructure and logistics contracts. Their patriarch had attended an Alopes-Anstar trade summit in March and had, in the subsequent months, quietly redirected several key shipping routes through Industrial Sector facilities. He had believed he was optimizing supply chains for better margins. He had not understood that he was being guided. The exposure had been contained. The Hendricks had retained a solicitor, minimized the damage, emerged with their institutional standing bruised but intact.
 
 The second had been the Marlowe family. Then the Sato delegation. Then the Williams faction. Then seven more, in sequence, each one separated from the others by weeks of careful management, each one absorbing the revelation without knowing that eleven other families were absorbing the same revelation elsewhere.
 
@@ -1691,13 +1691,31 @@ The penalty, under Anstar Intelligence Code Section 47, Paragraph 3, was severe:
 
 But there was a provision. Section 47, Paragraph 7: *Mitigating Factors.*
 
-Chen had argued it with precision. The family had self-reported. The family had conducted an independent investigation. The family had extracted the original target at personal risk. The family had — in the chaos that followed the exposure of the other twelve families — provided testimony, documentation, and coordination that had prevented the cascade from becoming catastrophic.
+Chen had argued it with precision. The family had self-reported. The family had conducted an independent investigation. The family had extracted the original target at personal risk. The family had — in the chaos that followed the exposure of the eleven other families — provided testimony, documentation, and coordination that had prevented the cascade from becoming catastrophic.
 
 The tribunal acknowledged these factors. The tribunal reduced the sentence.
 
 The Song-Stuart family retained its credentials. The family retained its standing — reduced, marked, stained, but present. The institutional architecture that four generations had built did not collapse.
 
 The name survived.
+
+---
+
+**The Full Architecture — MARY-07's Other Targets**
+
+The tribunal's investigation, expanded in the months following Operation DOPPELGÄNGER's exposure, revealed that the twelve families compromised by MARY-07 had already positioned themselves across Anstar's institutional landscape — and that the asset had simply needed to follow the existing threads.
+
+**The Ministry of Finance and Budget** was compromised through the Marlowe family's network of budget analysts and procurement officers. What had looked like routine departmental cooperation was, in retrospect, systematic budget redirection — surgical military funds flowing through shell contracts to the Industrial Sector, ₳12 million in "medical equipment" purchases for Building 7-C that turned out to be surveillance arrays and communication interceptors.
+
+**The Ministry of Communications and Propaganda** had been penetrated through the Shire family's secondary connections. Lanca Shire — Robert Shire's younger sister, a rising star in the department — had accepted an Alopes-Anstar joint media initiative as a career opportunity. The initiative promised "cultural exchange" and "health awareness campaigns." What Umin's embedded operatives had made of it, however, was something else entirely: a network of content moderators who flagged Alopes-aligned voices as "foreign interference," editorial guidelines that cast doubt on every medical cooperation initiative, and opinion pieces that portrayed Anstar's closest ally as an exploitative neighbor draining the nation's resources. The "Anstar First" rhetoric that emerged from these efforts was not native to Anstar's patriotic tradition — it was manufactured, patient, and precisely targeted at the alliance that kept both nations safe from Umin. Lanca herself remained unaware of how thoroughly her department had been inverted until the tribunal. She wept.
+
+**The Ministry of Science and Technology** had been opened through the Williams faction's academic ties — the same family that had hosted MARY-07 at a diplomatic reception in 2342. The Alopes-Anstar Medical Collaboration Initiative, announced with fanfare that year, was designed to share genetic therapies and neural interface research. The collaboration was genuine in its science and strategic in its access. Alopes researchers embedded within Anstar labs gained clearance to facilities that had no business being accessible to foreign nationals. Three postdoctoral researchers were later identified as having ties to Umin Typhi's network. One had already defected with encrypted data on Anstar's neural interface patents.
+
+**Customs and Border Control** had been compromised through the Hendricks family's control of Anstar's primary shipping infrastructure. The same commercial dynasty that had quietly redirected shipping routes through Industrial Sector facilities had also ensured that customs inspectors at key checkpoints were conveniently reassigned — promoted to desk positions in distant districts, transferred to night shifts with no inspection authority, or simply removed from posts they had held for years. Every spy needs equipment. Every facility needs supplies. Every network needs a channel. The Hendricks network provided the channel; MARY-07 had simply ensured that the locks were never checked.
+
+**The Ministry of Education** had been the most insidious thread of all — and not Alopes's doing, but Umin's. The Sato delegation's institutional ties to Anstar's academic establishment went back three generations; their family had produced half of the Ministry of Education's senior bureaucrats and funded a quarter of the nation's university endowments. The cultural exchange programs, the scholarships, the summer institutes — these had been genuine Alopes-Anstar cooperation initiatives, designed to strengthen the alliance against their common enemy. But Umin's operatives had been inside those programs from the beginning, embedded through the Sato network with the blessing of family members who believed they were cultivating advantageous relationships. They had recruited students who showed aptitude for resentment, shaped their grievances, fed them narratives about "Alopes exploitation" and "Anstar submission." The students who graduated from these programs were not Alopes advocates. They were Umin's children — "angry youths" who believed they were fighting for Anstar's sovereignty while actually tearing apart the alliance that kept their nation safe. Some of them would one day become ministers, advisors, judges — and they would carry into every room where Anstar's future was being decided the conviction that their closest ally was their greatest threat.
+
+The tribunal classified the full report. MARY-07 had not built this architecture alone. She had inherited it — a web that predated her, maintained by handlers she had never met, serving purposes she may not have fully understood. She had been a node in a network, not the architect of one. And when she was exposed, the network remained — patient, embedded, waiting for whoever came next.
 
 ---
 

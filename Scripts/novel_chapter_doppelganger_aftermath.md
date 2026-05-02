@@ -248,7 +248,75 @@ The analysts filed their reports. The surveillance nodes recorded. The databases
 
 ---
 
-## V. Epilogue: Three Meters
+## V. The Diagnosis
+
+*Orin came on the seventh day of the seventh month. He came as he always came—gray-faced, punctual, carrying a tablet and a checklist and the particular expression of a man who had learned to perform empathy as a bureaucratic function. He checked Vasud's vitals on the monitoring system. He verified the water supply. He noted the number of meals consumed and the hours of sleep recorded and the frequency of Vasud's file access.*
+
+*Then he sat down.*
+
+---
+
+You have been reading her file again.
+
+I know. I know because I have been watching you read it—the same sections, over and over, the same paragraphs highlighted, the same questions in the margins. You are looking for the answer. You are looking for the moment when you should have seen the truth, the clinical sign that would have told you she was not who she appeared to be.
+
+You will not find it.
+
+MARY-07's medical history was never in your hands.
+
+Her case notes, her pathology, her attending physician—these were not established by you. You were called in on an emergency night shift, nothing more. A hand extended. A temporary assist. You invested emotion. You tried to stabilize her vital signs. But when you left, her condition did not improve. It simply returned to the previous protocol—the one you had never been authorized to override.
+
+Your sense of powerlessness does not stem from insufficient skill. It stems from the fact that you were never granted attending privileges.
+
+Her words were always half-truth and half-performance. Her behavior was like an arrhythmia monitor—sometimes beating, sometimes flatlined. You relied on such contextual data to make your diagnosis. That itself was destined to lead you astray.
+
+You do not need to blame yourself for the inability to diagnose.
+
+Because her "condition" was never something that could be resolved through diagnosis.
+
+What she needed was not a physician like you. She needed someone who could inhabit that chaos with her—even profit from it. And you are not that person.
+
+You believe you watched a critical patient die. But the truth may be this: the patient was never truly alive. During the time you spent together, she had merely stepped away from someone else's bedside, pausing briefly in your emergency room for a breath of air. Her person survived, but her "illness" never healed. The "death" you witness now is merely her return to that familiar, half-alive state.
+
+You did not kill her. You only stopped the emergency intervention. And emergency intervention is, by its nature, temporary.
+
+You do not need to pretend to be calmly dismissive of responsibility. You can acknowledge: *"I did feel powerless, because I genuinely wanted to help her. But I realized I could not help her. This is not my fault—I received a patient beyond my capabilities."*
+
+Your instinct to rescue is not wrong. Your guilt is not weakness. They only prove you are a person capable of empathy. But now, you need to direct that empathy toward yourself: you have already worked too many consecutive emergency night shifts. It is time to change shifts. Walk out of that operating room. Outside, there are not only critical patients—there are many healthy people. What they need is not rescue, but equal, relaxed companionship.
+
+You deserve to be in such a ward.
+
+---
+
+*The voice fell silent. Orin sat in the chair across from Vasud, the tablet dark on the table between them.*
+
+*Vasud did not move. He did not speak.*
+
+*But something in his chest shifted—not lighter, exactly, but different. Distributed.*
+
+*As if someone had finally, gently, begun to redistribute the load.*
+
+*He wondered if Orin had written those words himself, or whether he had read them somewhere, or whether they had been given to him by someone else—another analyst, another handler, another voice in the vast apparatus of surveillance that surrounded them both.*
+
+*He did not ask.*
+
+*He did not need to know.*
+
+*Some prescriptions do not require attribution.*
+
+---
+
+The analysts filed their reports. The surveillance nodes recorded. The databases grew.
+
+*OBS-7734-Y: Anomalous stationary behavior at perimeter checkpoint. Duration: 7 minutes. Interpretation: May indicate emotional distress, deliberate provocation, or subliminal signaling to external contacts. Recommend continued observation.*
+
+*CONTINGENT ASSET, LOYALTY UNCERTAIN: Pattern analysis suggests deliberate ambiguity—asset may be attempting to appear unpredictable to confuse monitoring apparatus, or may be experiencing genuine psychological deterioration. Recommend further data collection before intervention.*
+
+*Interpretation: Neither AAA nor Typhi can determine whether this behavior was authentic. This is, in fact, the point.*
+
+---
+
+## VI. Epilogue: Three Meters
 
 There is a checkpoint three meters from the edge of MARY-07's permitted zone.
 
