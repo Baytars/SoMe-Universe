@@ -17,6 +17,11 @@ title: Yuan Yukio
 
 **Rank/Title**: Chief Medical Advisor to the Medical Chancellor
 
+**SoMe In-Game Role**: 辅助性T细胞（CD4+）/ 今汐位 / 后方战略协调
+— BBB破坏后随再灌注血流进入CNS，与Eiko（小胶质细胞/秧秧位）配合。
+开场中Phase 6.1登场（再灌注时随血流抵达），非Phase 0-5。
+详见 `SoMe_Design/Opening_Sequence_Somnambule.md`
+
 **Serial Number**: ALO-0003-YY (Founding Family Designation)
 
 **Nationality**: Duchy of Alopes
