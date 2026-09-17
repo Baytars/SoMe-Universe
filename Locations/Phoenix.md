@@ -32,6 +32,8 @@
 - The warm River Phoenix descends from the heights through the city center (navigable for cargo vessels bound south through the Pass)
 - Commands the **Diaphragm Pass**, the principal corridor between thoracic and lumbar-sacral circulation — the route refugees and relief columns alike were forced to use
 
+**The lung as living hydrology** — below the snowline the organ is read as water: **streams** (capillary beds), **lakes** (the alveolar airsacs), **rivers** (small arteries and veins), and **seas** (the great vessels). The mountains' fishermen work the alveolar lakes; expectoration is a *reverse avalanche*, the ciliary escalator carrying the "sky-fallen snow" and any invader caught in it back up and out of the lung.
+
 **Climate**: Highland cold, long snows. Winter storms can seal the Pass and impede ground operations. The inhabitants call the perpetual wind off the lung the *Sweeper's Breath*.
 
 ---
@@ -162,7 +164,7 @@ For Alopes the transfer carries a quiet grief it has never fully surrendered; it
 
 ## CULTURAL SIGNIFICANCE
 
-**The Bird, read twice by history**: the city's phoenix predates the Winter as the herb-wives' totem of flight and gathering. After the occupation it carries a second layer — resistance, liberation, and the rising of a city that refused to die. The annual **Phoenix Rising Festival** commemorates liberation: memorial rites for the missing, aerial displays by Academy cadets, and a re-enactment of the battle in which Aukin and Alopesian colors are carried side by side.
+**The Bird, read twice — 凤 (fèng) and 凰 (huáng)**: in the oldest Alpser glyphs the one bird is two names. **凤 (fèng)**, the yang spirit of the high air and flight, is the winged healers' sky-aspect and the patron of the city's aviation; **凰 (huáng)**, the yin spirit of the nest, the hearth and the medicine-basket, is the women's healing and the city's maternal soul. Before the Schism these were one creature. After it the reading also maps the city's double inheritance — the flying garrison-science of the Aukin north and the women's medicine kept by the Alopesian Hospital enclave — without dividing the bird. **Read again by history**: the city's phoenix predates the Winter as the herb-wives' totem; after the occupation it carries a further layer — resistance, liberation, and the rising of a city that refused to die. The annual **Phoenix Rising Festival** commemorates liberation: memorial rites for the missing, aerial displays by Academy cadets, and a re-enactment of the battle in which Aukin and Alopesian colors are carried side by side.
 
 **The broomstick refuted**: the city's modern aviation is experienced by Phoenixites not merely as industry but as an answer to an ancient slander. Where the old continent saw witches on broomsticks, Phoenix now produces the medevac pilots who pull the wounded off every Accord battlefield.
 

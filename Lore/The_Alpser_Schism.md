@@ -25,6 +25,18 @@ title: The Alpser Schism
 | **The Awakened** — penitents who refused to leave | Held the old ground outside Phoenix, converted, built a theocracy | **Empire of Aukin** |
 | **The Unrepentant** — the reactionary old order | Submitted to Umin, turned against their own | **"Alopes in Error"** — the Alpser strata inside Umin |
 
+### The War for the Mother-Name
+
+After the Winter the two branches that still claimed a legitimate inheritance — the Southbound state and the northern penitents — both asserted they were the true continuation of the mother-civilization. To distinguish themselves from the other, each was compelled both to coin a name for itself and to fasten a name on its rival:
+
+| Faction | Self-name | Claim |
+|---|---|---|
+| The Southbound state | **Alopes** (takes the mother-name outright) | the re-founded, error-corrected civilization |
+| The northern penitents | **Alpsor / Alpsox** (阿普索) — *Alopes Orthodox* | the faithful remnant that never abandoned the sacred ground |
+| (the Umin-submitted branch) | styled by the Southbound as **"Alopes in Error"** | the strayed, erring lineage |
+
+The northerners read the Southbound state's adoption of the bare mother-name as usurpation — a branch that had *walked away* presuming to call itself the whole. The Southbound in turn read "Orthodox" as the old hierarchy's refusal to confess the Hunt. The specific slur the Alpsor level back at the Southbound is left unrecorded in these archives \[name reserved\]; what is canon is the symmetry — *two heirs, one mother-name, each calling itself the orthodox and the other the deviation.* Note that "**Alpser**" remains the scholarly name for the pre-Winter civilization as a whole, not the self-designation of either post-Winter claimant.
+
 ---
 
 ## 2. THE OLD ALPSER CIVILIZATION
@@ -42,6 +54,19 @@ This tradition is the seed of a future **herbalist faction (中草药阵营)** w
 Outside the city, in the windward passages of the lung, lived a second order: the **Sweepers (清道夫)** — mountain ascetics whose cellular archetype is the **ciliated epithelial cell**. Their work was to sweep the "snow of the sky-fallen stones" — the dust and ash that drifted down onto the lung — back up and out of the body, on the moving stair of hair-like cilia that never rests. They were a low, half-monastic order: cleaners, not rulers. Phoenix governed; the Sweepers swept.
 
 Among the Sweepers a minority grew fascinated not with the dust itself but with the **mineral content inside the sky-fallen stones**. These became the first **alchemists** — and the ancestors, by a long road, of the radiological priesthood (see §4).
+
+### The Two Faces of the Lung — Snow and Water
+
+The lung is not snow only. The high passes are the windward snows; the lower lung is a vast living hydrology, and the Alpser peoples named its vessels as a geography of water:
+
+- **Streams (溪)** — the capillary beds
+- **Lakes (湖)** — the alveoli, the still airsacs where breath meets blood
+- **Rivers (河)** — the small arteries and veins
+- **Seas (海)** — the great vessels
+
+So the mountains had their **fishermen (渔民)** as well as their sweepers and their flying healers: lake-folk who worked the alveolar shallows. (The parents of **Yuan Yosemite** were alveolar-cell fishermen of one such northern lake-village; see her [personnel file](../Characters/Yuan_Yosemite.md).) The snow above and the water below are the same organ seen from two altitudes.
+
+The body's own clearance is the converse of an avalanche. Mucociliary clearance carries dust and the trapped dead **upward, against gravity**, out of the lung — a *reverse avalanche* of "snow." Any pathogen that attempts an **air-drop into the lung** and is caught in the ascending mucus-sheet is swept back up into that storm and buried in it; invader and expectorated snow leave the body together. The Alpser name for an airborne assault swallowed by the escalator was simply *"lost in the snow."*
 
 ---
 
@@ -79,7 +104,7 @@ The re-founded state named itself **Alopes** and defined itself against the old 
 
 ### 4.2 The Awakened — The Empire of Aukin
 
-Not everyone walked south. A remnant of penitents — Sweepers, disillusioned alchemists, and those who had taken part in or merely witnessed the Hunt and could not forgive themselves — **stayed on the old ground outside Phoenix**, guarding the approaches to the fallen capital. They are the reason an enclave survived at all: Aukin was founded, in its earliest military form, to **stand guard over Phoenix**.
+Not everyone walked south. A remnant of penitents — Sweepers, disillusioned alchemists, and those who had taken part in or merely witnessed the Hunt and could not forgive themselves — **stayed on the old ground outside Phoenix**, guarding the approaches to the fallen capital. They call themselves the **Alpsor / Alpsox (阿普索)**, *Alopes Orthodox* — the faithful who never left — and contest the Southbound state's sole claim to the mother-name (see §1, *The War for the Mother-Name*). They are the reason an enclave survived at all: Aukin was founded, in its earliest military form, to **stand guard over Phoenix**.
 
 They entered the ancient mountain monasteries of the lung and converted, naming the old civilization's crime an **Original Sin (原罪)**: not the plague, which was Umin's, but the Hunt — a people murdering its own healers. From this penitence grew the **Dhyana doctrine (谛)**: *know the self; the foreign reveals itself by contrast; the worst wars are lost at birth, when defenders are made without ever being taught who they are.* (See [Empire of Aukin](./Aukin_Empire.md), *The Cradle*.)
 
@@ -92,6 +117,10 @@ The spiritual-economic genealogy of these penitents runs in one unbroken, delibe
 5. **Radiological "theology"** — the Order of the Atom and its sects (Khonsu, the Ashborn, the Chained Flame, the Silent Watch), a priesthood that wields a disenchanted atom as though it were still divine. *(See [The Curie Legacy](../Characters/The_Curie_Legacy.md), "The Immortal Alchemist"; [Radiologist Class](../Characters/Radiologist_Class.md).)*
 
 > The Zen theocracy and the nuclear temple orders are therefore not two imported religions bolted together. They are **two growths from the same penitent root**: the meditative doctrine of the self, and the worshippers of the atom, reconciled in Thoracica through the *suijaku* (本地垂迹) arrangement.
+
+#### Veneration of the Healers — the White-Clad Angels
+
+In Aukin doctrine the murdered herb-wives are not a shame to be buried but saints to be recovered. The penitents gave the winged women a name of their own: the **White-Clad Angels (白衣天使)** — white-robed, sky-going mercies who once carried medicine through the mountain air and were burned for it. To name the healers angels is the reverse face of the Original Sin: a people that once called its healers witches now calls them angels, and builds the cult around the apology. The white healing habit descends from this veneration (the Khonsu knight Sister Franklin wears its modern form). The phrase is deliberately beautiful — Aukin's theologians hold that a crime against mercy can only be atoned in a language more beautiful than the crime.
 
 ### 4.3 The Unrepentant — Alpser-in-Error Within Umin
 
