@@ -1,5 +1,6 @@
 # FACTION FILE: EMPIRE OF AUKIN
 ## Classification: RESTRICTED // CONTINENT THORACICA GEOGRAPHICAL DATABASE
+### The Awakened stream of the Alpser Schism — see [The Alpser Schism](../Lore/The_Alpser_Schism.md) for full origins
 
 ---
 
@@ -21,11 +22,12 @@
 
 ## GEOGRAPHY & TERRITORY
 
-**Location**: Continent Thoracica (胸椎大陆), northern hemisphere, north of Lumbar — the anatomical chest. Two organs of empire, two functions of state:
+**Location**: Continent Thoracica (胸椎大陆), northern hemisphere, north of Lumbar — the anatomical chest. Three organs of empire, three functions of state:
 
 | Anatomical Feature | Aukin Institution | Function |
 |---|---|---|
 | **Thymus (superior mediastinum)** | **The Cradle (髓院 / The Medulla)** | Central immune-education academy — the only accredited T-cell academy under the Athena Aegis Accord |
+| **Lungs (the great respiratory plateau)** | **Phoenix (凤凰城)** + the Aerial Academy | Old Alpser capital; the body's air gateway — neutral AAA airway academy, medevac, respiratory-zone air defense; Alopesian hospital enclave; transferred into Aukin's thoracic order post-2343 |
 | **Heart** | **The Pericardium Free Port (心包自由港)** | Demilitarized commercial hub; the great pump of inter-continental circulation |
 | Superior vena cava / descending aorta | The Great Conduits | Toll-free trade and troop-transit waterways guaranteed to all Accord members |
 | Sternum, coastal mountain ranges | The White Rib Wall | Natural defense — a shield rather than a border garrison |
@@ -48,7 +50,9 @@ When the continent-states coalesced, no power dared absorb the Cradle: whoever s
 
 The abbots temporalized, and the Empire of Aukin was proclaimed under the first Supreme Preceptor. The current bearer of the office is the personally named preceptor **Tylean (谛聆)** — an empire whose only permanent territory of strategic value was its neutrality, and whose only permanent army was its graduating class.
 
----
+### The Schism and the Original Sin
+
+The Crimson Winter (2295) gave the ancient teaching a people and a border. When Umin's pneumonic plague struck the lung and the Hunt turned the Alpser peoples on their own healers, the old nation split three ways (see [The Alpser Schism](../Lore/The_Alpser_Schism.md)). Aukin descends from **the Awakened** — penitents who refused to flee south and instead **held the old ground outside the fallen capital Phoenix**, guarding its approaches through the occupation years. They named their civilization's crime an **Original Sin**: not the plague (which was Umin's), but the Hunt — a people murdering the women who kept its medicine. The abbots temporalized around the old monasteries specifically to turn that guilt into doctrine: *never again shall a soldier of the body be left unable to recognize the self.* Aukin's defense of Phoenix across two centuries is therefore not alliance policy but the terms of its own founding — which is why, after the 2343 liberation, the city passed into Aukin's thoracic custody by common Accord rather than by conquest.
 
 ## THE CRADLE (髓院 / THE MEDULLA)
 
@@ -103,6 +107,10 @@ The heart is not garrisoned. Under the Cradle Accords it is a permanently demili
 ## RELIGION — THE DHYANA CHURCH AND THE TEMPLE ORDERS
 
 The Dhyana Church is the established faith: meditative, iconoclastic in its high doctrine, centered on listening (谛) rather than worship. Its deepest teaching mirrors Cradle pedagogy — *know the self; the foreign reveals itself by contrast*.
+
+### From Sweepers to the Atom — One Penitent Root
+
+The Zen church and the nuclear temple orders are not two imported faiths bolted together; they are two growths from the same Alpser root. The Awakened included the lung's **Sweeper orders (清道夫)** — ciliated ascetics whose work was to sweep the sky-fallen dust out of the respiratory passages. A minority studied the **mineral content inside that dust** and became **alchemists**; in the stones they found the Heavy Metal Pantheon and built cathedrals; when the ancient metal gods were **disenchanted** into physics (isotopes, decay, the invisible fire), the alchemist-priests did not disband but became the **radiological priesthood** of the Order of the Atom — wielding a disenchanted atom as though it remained divine (see [The Curie Legacy](../Characters/The_Curie_Legacy.md), "The Immortal Alchemist"; [Radiologist Class](../Characters/Radiologist_Class.md)). A cleaner's humility toward dust is the original temperament of the nuclear temple.
 
 The ancient nuclear-temple orders (the Order of the Atom and its sects: Khonsu, the Order of the Ashborn, the Chained Flame, the Silent Watch) are not suppressed. Under long-standing **Temple Independence Doctrine** they operate temple grounds beyond secular command; within Aukin they are additionally integrated through a *suijaku* arrangement: the foreign divine aspects (Khonsu of moon and medicine, the mercurial radiance, the heavy-metal pantheon) are received as local manifestations (垂迹) of the dharmatic principle. This is why a Khonsu-worshipping Templar such as **Sister Franklin** can be a citizen-knight of a Zen empire without contradiction: her order answers to its own high priesthood, her sword answers to the AAA in wartime, and her papers say Aukin — the three loyalties are reconciled by doctrine older than the current borders.
 
