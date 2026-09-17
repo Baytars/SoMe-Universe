@@ -13,7 +13,7 @@ title: Umin Vibrio Subfaction
 **Codename**: The Abyssal Legion (深渊军团)
 **Pathogen**: *Vibrio cholerae* (霍乱弧菌)
 **Symbol**: Octopus with eight hydro-cannon tentacles
-**Style**: Japanese Imperial Navy (旧日本海军风格)
+**Style**: Old Thoracican Imperial Navy (旧奥金海軍風)
 
 ---
 
@@ -294,7 +294,7 @@ Vibrio naval units employ hull designs based on marine biology:
 
 ---
 
-## Naming Convention (Japanese Imperial Navy Style)
+## Naming Convention (Old Thoracican Imperial Navy Style)
 
 ### 舰船命名
 

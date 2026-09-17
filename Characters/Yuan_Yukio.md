@@ -13,12 +13,13 @@ title: Yuan Yukio
 
 **Chinese Name**: 袁雪炤 (Yuán Xuězhào)
 
-**Japanese Name**: 雪绪 (ゆきお) — "Snow Thread"
+**Thoracican Name**: 雪绪 (ゆきお) — "Snow Thread"
 
 **Rank/Title**: Chief Medical Advisor to the Medical Chancellor
 
 **SoMe In-Game Role**: 辅助性T细胞（CD4+）/ 今汐位 / 后方战略协调
 — BBB破坏后随再灌注血流进入CNS，与Eiko（小胶质细胞/秧秧位）配合。
+— 中枢教育履历：Cervical 出生谱系 → Thoracica 奥金谛国 The Cradle 髓院毕业（外己座 Chair Vasud Stuart 门下；毕业后离髓入外周，符合胸腺教育迁移链），继任座主为 The Generalizer（推世者）。
 开场中Phase 6.1登场（再灌注时随血流抵达），非Phase 0-5。
 详见 `SoMe_Design/Opening_Sequence_Somnambule.md`
 
@@ -49,13 +50,13 @@ title: Yuan Yukio
 
 ### Early Life
 
-**Birth**: 2328, United States (age 24)
+**Birth**: 2328, Anstar City, Continent Lumbar (age 24)
 
 **Family Origin**: 
-The Yuan family is one of Alopes's "founding families," with lineage tracing to survivors of the Crimson Winter epidemic. Yukio was born in the United States during a period of her father's diplomatic assignment, giving her dual cultural perspective.
+The Yuan family is one of Alopes's "founding families," with lineage tracing to survivors of the Crimson Winter epidemic. Yukio was born in Anstar during her father's diplomatic posting to Lumbar, giving her dual cultural perspective.
 
 **Childhood**:
-- Grew up between Alopes and the United States
+- Grew up between Alopes and Anstar
 - Learned medicine at her father's knee from an early age
 - Developed synesthetic intelligence — sees patterns as visual-musical compositions
 - Maintained close relationship with twin brother Akio throughout their divergent career paths
@@ -207,7 +208,7 @@ Yukio's realization was not metaphorical. She documented it:
 
 | Continent Sacrum | 骶骨 | Alopes | 南半球，东侧 |
 | Continent Lumbar | 腰椎 | Anstar帝国 | 北半球，中部 |
-| Continent Thoracica | 胸椎 | （未探索） | 北半球，北部 |
+| Continent Thoracica | 胸椎 | Aukin Empire（奥金谛国，Zen 神权国；The Cradle 髓院=T 细胞中枢教育学院，Yukio 轮训母校，导师 Vasud Stuart） | 北半球，北部 |
 
 Continent Sacrum — where Alopes is located — occupies the exact position of the human sacrum. This was not coincidence. This was **anatomical destiny**.
 
@@ -274,12 +275,12 @@ When she studies SoMe, she studies her own cellular destiny.
 3. **Transparency Over Comfort**: Honest communication builds trust; trust saves lives
 4. **Coalition Over Isolation**: No nation can fight modern pathogens alone
 
-### Japanese Nobel Laureates Influence
+### Thoracican Medical Laureates Influence
 
-Despite never having visited Japan, Yukio holds deep reverence for Japanese medical scientists whose discoveries changed medicine. This influence manifests in her unique military operation naming convention.
+Despite never having visited Thoracica, Yukio holds deep reverence for Thoracican medical scientists whose discoveries changed medicine. This influence manifests in her unique military operation naming convention.
 
 **The Nobel Operations**:
-Yukio names her military campaigns after Japanese Nobel laureates in Physiology or Medicine. Each operation applies the laureate's scientific discovery as a tactical framework.
+Yukio names her military campaigns after Thoracican medical laureates ( Physiology or Medicine laureates of the old world). Each operation applies the laureate's scientific discovery as a tactical framework.
 
 | Operation | Laureate | Discovery | Tactical Application |
 |-----------|----------|-----------|---------------------|
@@ -297,7 +298,7 @@ Yukio names her military campaigns after Japanese Nobel laureates in Physiology 
 **Connection to Mother's Legacy**:
 - Mother taught her **how to endure** — elegance, composure, never losing face
 - Nobel laureates taught her **how to breakthrough** — decades of persistence, changing the world
-- Both represent different facets of Japan's soul that Yukio carries into battle
+- Both represent different facets of Thoracica's soul that Yukio carries into battle
 
 *See also: [Nobel Operations](../Lore/OPERATIONS_Nobel.md)*
 
@@ -309,7 +310,7 @@ Yukio names her military campaigns after Japanese Nobel laureates in Physiology 
 
 **Observer**: Dr. Ines Volkov, AAA Psychiatry Division
 
-Dr. Yuan Yukio embodies the Alopesian ideal of the "healer-strategist" — a medical professional who understands that saving lives requires political acumen as much as clinical skill. Her dual upbringing (Alopes + United States) gives her unique perspective on both insular and collaborative approaches to medicine.
+Dr. Yuan Yukio embodies the Alopesian ideal of the "healer-strategist" — a medical professional who understands that saving lives requires political acumen as much as clinical skill. Her dual upbringing (Alopes + Anstar) gives her unique perspective on both insular and collaborative approaches to medicine.
 
 Her relationship with her family is notably close, particularly with her brother Akio. She has learned to navigate his overprotective tendencies with patience and occasional gentle pushback. Her professional relationship with her father is built on mutual respect rather than familial hierarchy.
 
@@ -322,7 +323,7 @@ Her relationship with her family is notably close, particularly with her brother
 - Direct and efficient in professional contexts
 - Warm but not effusive in personal relationships
 - Uses short sentences; sometimes single words suffice
-- Occasional "Japanese + English" mixed expressions (heritage influence)
+- Occasional "Thoracican + Common" mixed expressions (heritage influence)
 
 **Strengths**: Strategic thinking, coalition diplomacy, pattern recognition, clear communication
 
@@ -411,17 +412,17 @@ During the 68-day infiltration, MARY-07 operated across three impact dimensions:
 - *His Achievement*: Youngest Kadd in Alopesian history; appointed at 23 after unprecedented review
 - *Her Assessment*: "He treats me like I need constant supervision. We're the same age! But I know it comes from love."
 
-**Mother**: Yosemite (尤希美子) — Traditional Japanese Geisha
-- *Background*: Born to a poor Japanese fisherman family; sold to affluent foster family in childhood
-- *Name Origin*: Her beauty was such that everyone who met her said "Yoshi" first — the Japanese exclamation for "good, beautiful, satisfied." Thus she was given the nickname "Yosemite" — meaning "beauty and satisfaction." (Also the name of the famous American national park, a linguistic coincidence that delighted her American-born daughter.)
-- *Later Life*: Became a geisha, carrying the traditional Japanese feminine virtues — composure, elegance, never losing one's composure
+**Mother**: Yosemite (尤希美子) — Traditional Thoracican Geisha
+- *Background*: Born to a poor Thoracican fisherman family; sold to affluent foster family in childhood
+- *Name Origin*: Her beauty was such that everyone who met her said "Yoshi" first — the Thoracican exclamation for "good, beautiful, satisfied." Thus she was given the nickname "Yosemite" — meaning "beauty and satisfaction." (Also the name of Lumbar's famous national park, a linguistic coincidence that delighted her Anstar-born daughter.)
+- *Later Life*: Became a geisha, carrying the traditional Thoracican feminine virtues — composure, elegance, never losing one's composure
 - *Character*: Yukio never saw her angry or panicked. Even in the worst situations, she would only sigh softly, then continue doing what needed to be done.
-- *Hidden Pain*: She rarely spoke of her true experiences in Japan — the fishing village, being sold, the scars that never healed. Instead, she told beautiful stories: geisha makeup, Kyoto temples, cherry blossom seasons. These stories wove together an idealized Japan that Yukio could never visit.
+- *Hidden Pain*: She rarely spoke of her true experiences in Thoracica — the fishing village, being sold, the scars that never healed. Instead, she told beautiful stories: geisha makeup, the mountain temples, cherry blossom seasons. These stories wove together an idealized Thoracica that Yukio could never visit.
 - *Influence on Yukio*: 
-  - Japanese language skills: Yukio's Japanese is awkward, always requiring English words to express herself — a source of gentle sighs from her mother
+  - Thoracican language skills: Yukio's Thoracican is awkward, always requiring Common words to express herself — a source of gentle sighs from her mother
   - Emotional composure: Learned from her mother to stay calm under pressure
   - Hidden resilience: The understanding that beauty can emerge from pain
-  - Complex relationship with Japan: Reverence for a homeland she has never touched, filtered through her mother's curated memories
+  - Complex relationship with Thoracica: Reverence for a homeland she has never touched, filtered through her mother's curated memories
 - *Yukio's Reflection*: "She gave me all the beauty and swallowed the bitterness herself. That was how she loved."
 
 ### Professional Associates

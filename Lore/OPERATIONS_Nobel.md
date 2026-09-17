@@ -8,7 +8,7 @@
 
 ## Overview
 
-The Nobel Operations are a series of military campaigns named after Japanese Nobel laureates in Physiology or Medicine. Each operation applies the laureate's scientific discovery as a tactical framework in the war against pathogens and tumors.
+The Nobel Operations are a series of military campaigns named after Thoracican medical laureates — the Physiology or Medicine laureates honored in the old-world records. Each operation applies the laureate's scientific discovery as a tactical framework in the war against pathogens and tumors.
 
 These names serve a dual purpose:
 1. **Practical**: Codenames that remind commanders of the underlying biological mechanism

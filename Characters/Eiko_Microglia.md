@@ -13,11 +13,11 @@ title: Eiko (英子)
 
 **Chinese Name**: 英子 (Yīngzi)
 
-**Japanese Name**: 栄子 (えいこ) — "Eiko"
+**Thoracican Rendering**: 栄子 (えいこ) — "Eiko"
 
-**Name Origin**: 呼应英姑（《大宋提刑官》），暗示与 Somnambule 的宋慈/英姑关系。
-"子"在中文里有"常驻者"之意——她是脑内常驻细胞，不是过客。
-日文读音 Eiko 与 Yukio 音感和谐，中日双语玩家都能自然接受。
+**Name Origin**: 呼应英姑（《大宋提刑官》），暗示与 Somnambule 的宋慈/英姑关系（此为给中文读者的设计注，世界内不作现实出处引用）。
+"子"在中文里有"常驻者"之意——她是脑内常驻细胞，不是过客（作者注，面向中文读者，非世界内语素）。
+日文读音 Eiko 与 Yukio 音感和谐，中日双语玩家都能自然接受（元注："Chinese/Japanese Name"均为给现实读者的译名标签，非世界内国籍）。
 
 **Cell Type**: Microglia（小胶质细胞）
 

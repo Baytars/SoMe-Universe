@@ -17,6 +17,8 @@ title: Sister Franklin
 
 **Order**: Order of the Atom (Nuclear Medicine) — Khonsu Sect
 
+**Temporal Allegiance**: Citizen-Knight of the **Empire of Aukin (奥金谛国)**, Continent Thoracica (temple registry). Under the Temple Independence Doctrine and Aukin's suijaku settlement, her order answers to its own high priesthood, while her wartime operational command is attached to AAA Medical Command — three reconciled loyalties: Aukin papers, Khonsu's sword, the Accord's orders.
+
 **Avatar Status**: KHONSU'S CHAMPION
 
 **Rank**: Archbishop (Knight-Commander)
@@ -918,7 +920,7 @@ A program for women in science, providing mentorship, protection, and a guarante
 - [Radiologist Class](Radiologist_Class.md) — The Divine Intermediaries
 - [Heavy Metal Pantheon](../Factions/Heavy_Metal_Pantheon.md) — The Atomic Ancients
 - [Yuan Yukio](Yuan_Yukio.md) — Chief Medical Advisor
-- [Nobel Operations](../Lore/OPERATIONS_Nobel.md) — Japanese laureates as codenames
+- [Nobel Operations](../Lore/OPERATIONS_Nobel.md) — Thoracican medical laureates as codenames
 
 ---
 

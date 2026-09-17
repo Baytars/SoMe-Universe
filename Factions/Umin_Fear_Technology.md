@@ -101,7 +101,7 @@ Authority Collapse → Umin Advantage
 ### Operation: Midnight Visitor
 
 **Target Region**: Rural communities with strong folkloric traditions
-**Construct Type**: Regional ghost variants (Yūrei in Japan, Bhoot in India, etc.)
+**Construct Type**: Regional ghost variants (Yūrei in Thoracica, Bhoot on the Cervical subcontinent, etc.)
 **Result**: 340% increase in superstitious behavior, 67% decrease in medical compliance
 
 **Case File Excerpt**:

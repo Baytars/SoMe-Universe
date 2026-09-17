@@ -11,13 +11,13 @@ title: Yuan Yosemite
 
 **Full Name**: Yuan Yosemite
 
-**Japanese Name**: 尤希美子 (Yūkishimeko) — Given after marriage
+**Thoracican Name**: 尤希美子 (Yūkishimeko) — Given after marriage
 
 **Original Nickname**: Yosemite (ヨセミテ)
 
 **Rank/Title**: Lady of the Yuan Household / Former Geisha
 
-**Nationality**: Duchy of Alopes (Naturalized) / Japan (Origin)
+**Nationality**: Duchy of Alopes (Naturalized) / Empire of Aukin, Continent Thoracica (Origin)
 
 **Allegiance**: Yuan Family, Duchy of Alopes
 
@@ -27,13 +27,13 @@ title: Yuan Yosemite
 
 **Origin Story**:
 
-She was born nameless to a poor fisherman's family in a coastal village of Japan. But her beauty was such that everyone who met her would first exclaim "Yoshi!" — the Japanese word for "good, beautiful, satisfied."
+She was born nameless to a poor fisherman's family in a coastal village of northern Thoracica (Empire of Aukin). But her beauty was such that everyone who met her would first exclaim "Yoshi!" — the Thoracican word for "good, beautiful, satisfied."
 
 Thus she was called "Yosemite" — *the one who embodies beauty and satisfaction.*
 
-**The American Connection**:
+**The Lumbar Connection**:
 
-When she later married Dr. Yuan Foo and moved to the United States, she discovered that "Yosemite" was also the name of America's most magnificent national park — a place of waterfalls, granite cliffs, and ancient sequoias. This linguistic coincidence delighted her American-born daughter Yukio endlessly.
+When she later married Dr. Yuan Foo and moved to Anstar City during his diplomatic posting to Lumbar, she discovered that "Yosemite" was also the name of that continent's most magnificent national park — a place of waterfalls, granite cliffs, and ancient sequoias. This linguistic coincidence delighted her Anstar-born daughter Yukio endlessly.
 
 > "A name given by fishermen's praise became the name of mountains and waterfalls. Perhaps beauty speaks the same language everywhere."
 
@@ -43,7 +43,7 @@ When she later married Dr. Yuan Foo and moved to the United States, she discover
 
 ### Origins
 
-**Birthplace**: Coastal fishing village, Japan (exact location unknown)
+**Birthplace**: Coastal fishing village, northern Thoracica, Empire of Aukin, near the Fukushima Temple (exact location unknown)
 
 **Family Origin**: Impoverished fisherman family; the kind where children were mouths to feed, not dreams to nurture
 
@@ -75,13 +75,13 @@ Victoria introduced them. He saw past the performance to the woman beneath. She 
 
 **The Decision to Leave**: Marriage meant leaving the stage. For a woman who had rebuilt herself through performance, this was either liberation or the loss of the only identity she had earned for herself. She chose to follow him.
 
-### Move to the United States
+### Move to Anstar
 
-**Initial Period**: Difficult adjustment to Western customs while maintaining Japanese identity
+**Initial Period**: Difficult adjustment to Lumbar customs while maintaining her Thoracican identity
 
 **Cultural Bridge**: Became invaluable to Dr. Yuan Foo's diplomatic work — her grace and training made her an asset in social functions
 
-**Motherhood**: Gave birth to twins Akio and Yukio in the United States, giving them both Chinese names (Yuan family tradition) and Japanese names (her heritage)
+**Motherhood**: Gave birth to twins Akio and Yukio in Anstar, giving them both Alopesian family names (Yuan tradition) and Thoracican given names (her heritage)
 
 ---
 
@@ -91,14 +91,14 @@ Victoria introduced them. He saw past the performance to the woman beneath. She 
 
 **Composure**: Never seen angry, panicked, or visibly distressed. Even in the worst situations, she would only sigh softly, then continue with what needed to be done.
 
-**Elegance**: Carried herself with traditional Japanese feminine grace — every movement deliberate, every word measured, every gesture meaningful.
+**Elegance**: Carried herself with traditional Thoracican feminine grace — every movement deliberate, every word measured, every gesture meaningful.
 
 **Hidden Depths**: Beneath the serene surface was a woman who had survived being sold, trained as an entertainer, crossed an ocean, and adapted to an entirely foreign culture. The strength required for this was never discussed, only demonstrated.
 
 **Selective Memory**: 
 She curated what she shared. Her children heard of:
 - Geisha makeup rituals
-- Kyoto's ancient temples
+- The ancient mountain temples of Thoracica
 - Cherry blossom viewing parties
 - Traditional tea ceremonies
 
@@ -138,13 +138,13 @@ She never articulated a philosophy, but her life suggested:
 
 **Relationship**: Extremely close; the one she influenced most deeply
 
-**Language Bond**: Patiently tried to teach Yukio proper Japanese, though her daughter's skills remained awkward, always requiring English words to fill gaps
+**Language Bond**: Patiently tried to teach Yukio proper Thoracican, though her daughter's skills remained awkward, always requiring Common words to fill gaps
 
 **Cultural Transmission**: 
-Shared the beautiful Japan — temples, cherry blossoms, geisha traditions — while silently protecting her daughter from the painful parts
+Shared the beautiful Thoracica — temples, cherry blossoms, geisha traditions — while silently protecting her daughter from the painful parts
 
 **The Unasked Question**: 
-Yukio never asked why they never visited Japan. Perhaps she understood, without being told, that some doors are better left closed. That her mother had built an idealized Japan in her stories precisely so her daughter would never have to see the real one.
+Yukio never asked why they never visited Thoracica. Perhaps she understood, without being told, that some doors are better left closed. That her mother had built an idealized Thoracica in her stories precisely so her daughter would never have to see the real one.
 
 **Yukio's Reflection**:
 > "She gave me all the beauty and swallowed the bitterness herself. That was how she loved."
@@ -172,7 +172,7 @@ Yosemite did not ask Franklin about this. Some questions, she had learned, were 
 ### With the Household Staff
 
 **Lonicera (Head Maid of Yukio's Residence)**: 
-Yosemite trained Lonicera in traditional Japanese hospitality before she joined Yukio's household. The quiet grace that Lonicera exhibits comes directly from Yosemite's teaching.
+Yosemite trained Lonicera in traditional Thoracican hospitality before she joined Yukio's household. The quiet grace that Lonicera exhibits comes directly from Yosemite's teaching.
 
 **Staff's View**: "Lady Yosemite could calm a room just by entering it. We learned more from watching her than from anything she said."
 
@@ -182,10 +182,10 @@ Yosemite trained Lonicera in traditional Japanese hospitality before she joined 
 
 ### Residence
 - Primary: Yuan Family Estate, Jackalope Commons, Anshington
-- Maintains a small Japanese garden — her private sanctuary
+- Maintains a small Thoracican garden — her private sanctuary
 
 ### Routine
-- Morning: Traditional Japanese tea ceremony (private)
+- Morning: Traditional Thoracican tea ceremony (private)
 - Day: Household management, cultural education of grandchildren (if any)
 - Evening: Often found in her garden, practicing calligraphy or ikebana
 
@@ -206,20 +206,20 @@ Yosemite trained Lonicera in traditional Japanese hospitality before she joined 
 
 **Hidden Resilience**: The understanding that elegance can be armor; that suffering can be transformed into beauty
 
-**Complex Relationship with Japan**: Yukio reveres a homeland she has never touched, filtered through her mother's curated memories. This creates both longing and a sense of never-quite-belonging.
+**Complex Relationship with Thoracica**: Yukio reveres a homeland she has never touched, filtered through her mother's curated memories. This creates both longing and a sense of never-quite-belonging.
 
 ### Professional Influence
 
 **Nobel Operations Naming Convention**:
-Yukio's decision to name military operations after Japanese Nobel laureates is deeply connected to her mother's influence. Two different Japans live in her heart:
-- Mother's Japan: Traditional, elegant, enduring through silence
-- Scientists' Japan: Modern, innovative, changing the world through persistence
+Yukio's decision to name military operations after Thoracican medical laureates is deeply connected to her mother's influence. Two different Thoracicas live in her heart:
+- Mother's Thoracica: Traditional, elegant, enduring through silence
+- Scientists' Thoracica: Modern, innovative, changing the world through persistence
 
-Both represent facets of Japanese excellence that Yukio carries into battle.
+Both represent facets of Thoracican excellence that Yukio carries into battle.
 
 ### Linguistic Quirks
 
-Yukio's habit of mixing Japanese words with English sentences — and her mother's gentle sighs when she does so incorrectly — is a permanent reminder of the heritage she inherited but never fully mastered.
+Yukio's habit of mixing Thoracican words with Common — and her mother's gentle sighs when she does so incorrectly — is a permanent reminder of the heritage she inherited but never fully mastered.
 
 ---
 
@@ -308,11 +308,11 @@ She kept that promise.
 
 ### What She Carries
 
-Yosemite never told Dr. Yuan Foo the full story. She told him she was from Japan, that she had lost her family young, that she had rebuilt her life through the theater. All of this was true.
+Yosemite never told Dr. Yuan Foo the full story. She told him she was from northern Thoracica, that she had lost her family young, that she had rebuilt her life through the theater. All of this was true.
 
 What she did not tell him — what she carried in silence — was the weight of the small girl who had walked through fire to carry her out, who had almost died so that a fisherman's daughter could live.
 
-She named her daughter **Yukio** after her mother's Japanese tradition. She named her son **Akio** after the Japanese word for bright. She built a life of elegance and composure and curated beauty.
+She named her daughter **Yukio** in her mother's Thoracican naming tradition. She named her son **Akio** after the Thoracican word for bright. She built a life of elegance and composure and curated beauty.
 
 And sometimes, when Yukio brought home science books and told her about crystallography, she would look at the photograph on the shelf — the one of a small girl in a white habit standing at her wedding — and she would think: *This is what it looks like when someone carries you out of the fire and gives you a door.*
 
@@ -348,7 +348,7 @@ She never forgot.
 **To Yukio**:
 - Emotional discipline
 - Hidden resilience
-- A curated Japan to love from afar
+- A curated Thoracica to love from afar
 - The example of transforming pain into grace
 
 ### What She Never Gave Them
@@ -388,7 +388,7 @@ These episodes are ignored by mutual unspoken agreement. Afterward, she serves t
 *She came to me from a world I will never understand, carrying wounds she will never show. Every day I wake beside her, I am reminded that the most beautiful things are those that have survived the most.*
 
 **By Yukio**:
-*My mother is like the Japan she described to me — elegant, mysterious, and holding depths that a thousand questions would never fully explore. I used to wonder why she never took us back. Now I understand: she built us a Japan in her stories, perfect and untouched by the real one. That was her gift. The least I can do is not ask for the receipt.*
+*My mother is like the Thoracica she described to me — elegant, mysterious, and holding depths that a thousand questions would never fully explore. I used to wonder why she never took us back. Now I understand: she built us a Thoracica in her stories, perfect and untouched by the real one. That was her gift. The least I can do is not ask for the receipt.*
 
 ---
 

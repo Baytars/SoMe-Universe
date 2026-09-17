@@ -133,7 +133,7 @@ Yukio was selected because she was both **high-value and exploitable**:
 
 Typhi analysts identified a secondary target through her: **Vasud Stuart**, Deputy Director of the Anstar Ministry of Foreign Affairs — the diplomat who had mentored Yukio during her diplomatic rotation. Vasud's genuine rapport with Yukio meant he would be receptive to a connection from the Chief Medical Advisor — making him the optimal intelligence extraction target.
 
-> *"A Mary operative leveraging her appearance could approach dozens of officials through professional channels, creating chaos in the command structure. Behavioral changes can be explained as 'stress from diplomatic pressure' — Japanese-American cultural background provides natural cover."*  
+> *"A Mary operative leveraging her appearance could approach dozens of officials through professional channels, creating chaos in the command structure. Behavioral changes can be explained as 'stress from diplomatic pressure' — Lumbar–Thoracican dual cultural background provides natural cover."*  
 > — Typhi Internal Assessment, Operation Authorization
 
 ### MARY-07: The Carrier Operative
