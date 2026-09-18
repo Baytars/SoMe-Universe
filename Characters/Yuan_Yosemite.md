@@ -47,13 +47,15 @@ When she later married Dr. Yuan Foo and moved to Anstar City during his diplomat
 
 **Family Origin**: Impoverished fisherman family; the kind where children were mouths to feed, not dreams to nurture.
 
-> **Cellular-geographic note** — In the carbon-base mapping of the lung-as-hydrology, the "coastal" village was a settlement on one of the great **alveolar lakes (湖)**: her parents were **alveolar-cell (pneumocyte) fishermen** who worked the airsac shallows where breath meets blood. "The sea" of her childhood is the lake's vast tidal exchange; "crossing the ocean" to Lumbar is the journey down the vessel-rivers and out through the great-vessel seas. See the lung hydrology in [The Alopes Schism](../Lore/The_Alopes_Schism.md), §2.
+> **Cellular-geographic note** — In the carbon-base mapping of the lung-as-hydrology, the "coastal" village was a settlement on one of the great **alveolar lakes (湖)**: her parents were **alveolar-cell (pneumocyte) fishermen** who worked the airsac shallows where breath meets blood. "The sea" of her childhood is the lake's vast tidal exchange; "crossing the ocean" to Lumbar is the journey down the vessel-rivers and out through the great-vessel seas. Even in peacetime these open-border lakes were a garrisoned frontier: armored lymphocytes of the middle germ-layer patrolled the gas-exchange shore, with BALT (bronchus-associated lymphoid tissue) as their lakeside cantonment — fisherman and sentinel worked the same water, familiar yet separate. See the lung hydrology in [The Alopes Schism](../Lore/The_Alopes_Schism.md), §2.
 
 **Childhood Trauma**:
 Sold to an affluent foster family at a young age. The details remain unspoken — whether this was formal adoption, informal servitude, or something in between, she never clarified. What is known: she never went back to that fishing village, and she never spoke of her birth family.
 
 **Geisha Training**:
 Eventually entered a geisha house (okiya). The path from "sold child" to "geisha in training" remains one of the silences she carried to her grave.
+
+> **Cellular-fate note (carbon-base mapping)** — Once her lineage is fixed as an alveolar cell at the open gas-exchange border, the okiya has a literal toxicological echo: she was sold to service **cigarette smoke**, whose prized payload was **nicotine**. The respiratory membrane at a type-I pneumocyte is only ~0.5 μm thick; nicotine is a small lipophilic molecule that crosses the alveolus–capillary barrier and enters the bloodstream within *seconds* of inhalation — the reason the addiction takes hold so fast. A type-II alveolar cell whose true post was to repair the shoreline and secrete surfactant (keeping the alveolar lake from collapsing) was instead conscripted as the conduit by which an addictive substance reached the blood; chronic smoke further drives AT2 senescence and suppresses surfactant (the cellular substrate of COPD/emphysema). Told as the tragedy of a repair-post cell taken and forced into a smoke-house — never as spectacle.
 
 ### Life as Geisha
 
