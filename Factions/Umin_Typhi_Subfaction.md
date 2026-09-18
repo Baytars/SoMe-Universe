@@ -19,11 +19,11 @@ The **Typhi Subfaction** represents Umin's most sophisticated infiltration capab
 
 ---
 
-## The Alpser-in-Error Root
+## The Alpsox Root — the Alpser-in-Error
 
-Abteilung Stille is not an ordinary Umin formation. Its carrier lineage descends from the **third stream of the Alpser Schism** — the Unrepentant reactionaries of the old lung civilization who, in the Crimson Winter, chose submission to Umin over flight or repentance (see [The Alpser Schism](../Lore/The_Alpser_Schism.md)).
+Abteilung Stille is not an ordinary Umin formation. Its carrier lineage descends from the **third stream of the Alopes Schism** — the Unrepentant reactionaries who style themselves the **Alpsox** (the king-name, *Alopes Orthodox*), whom the two loyalist branches call **Alpser**, the bandit-word, or *Alopes in Error*. In the Crimson Winter they chose submission to Umin over flight or repentance (see [The Alopes Schism](../Lore/The_Alopes_Schism.md)).
 
-The old Alpser order was male-dominated and had led or profited from the Hunt that burned the winged herb-wives. When it bent to Umin, its women were subjected to a doubled oppression: under Umin's coercion they **internalized the very stigmatization** once imposed on the healers, and now submit absolutely to male command. The flying basket of the herb-wife has its darkest descendant here — a basket that once carried alpine medicine now carries contagion, borne by women who carry plague without suffering it. The historical prototype (Mary Mallon) is recorded below; the *cultural* prototype is the murdered herb-wife, weaponized by those who murdered her.
+The old Alpsox order was male-dominated and had led or profited from the Hunt that burned the winged herb-wives. When it bent to Umin, its women were subjected to a doubled oppression: under Umin's coercion they **internalized the very stigmatization** once imposed on the healers, and now submit absolutely to male command. The flying basket of the herb-wife has its darkest descendant here — a basket that once carried alpine medicine now carries contagion, borne by women who carry plague without suffering it. The historical prototype (Mary Mallon) is recorded below; the *cultural* prototype is the murdered herb-wife, weaponized by those who murdered her.
 
 **Strategic mission — breaking the doctrinal heart (破道心)**: under Umin's direction this branch is tasked specifically with penetrating the **Empire of Aukin**. They understand, as only kin can, that Aukin's power is not military but educational — the Cradle that teaches every soldier to distinguish self from foreign. To corrupt a Chair of the Cradle is to blind an entire generation. A doppelgänger is therefore never merely a spy against a ministry; it is a knife aimed at the penitent brother who stayed behind to guard the old capital.
 
@@ -142,7 +142,7 @@ Yukio was selected because she was both **high-value and exploitable**:
 - **Influence**: Her standing with senior officials made her ideal for social destabilization
 - **Routine**: Predictable schedule at Anshington medical facilities
 
-Through Yukio, Typhi planners identified the operation's true primary target: **Vasud Stuart**, holder of the **Chair of Foreign Selves (外己座)** at the Aukin Cradle — seconded from the Anstar Foreign Ministry, and the diplomat who had mentored Yukio during her rotation there. On the surface the operation harvested Anstar–Alopes intelligence; at the strategic level — the Alpser-in-Error doctrine of *breaking the doctrinal heart* — destroying the Chair meant compromising the Cradle's own power to teach soldiers to recognize the fake. Vasud's genuine rapport with his former cadet made him, in Typhi's phrase, *a teacher who had already opened the door himself*.
+Through Yukio, Typhi planners identified the operation's true primary target: **Vasud Stuart**, holder of the **Chair of Foreign Selves (外己座)** at the Aukin Cradle — seconded from the Anstar Foreign Ministry, and the diplomat who had mentored Yukio during her rotation there. On the surface the operation harvested Anstar–Alopes intelligence; at the strategic level — the Alpsox doctrine of *breaking the doctrinal heart* — destroying the Chair meant compromising the Cradle's own power to teach soldiers to recognize the fake. Vasud's genuine rapport with his former cadet made him, in Typhi's phrase, *a teacher who had already opened the door himself*.
 
 > *"A Mary operative leveraging her appearance could approach dozens of officials through professional channels, creating chaos in the command structure. Behavioral changes can be explained as 'stress from diplomatic pressure' — Lumbar–Thoracican dual cultural background provides natural cover."*  
 > — Typhi Internal Assessment, Operation Authorization
@@ -352,5 +352,5 @@ Mary Mallon (1869-1938) was the first person in the United States identified as 
 - **Lonicera Character File**: `../Characters/Lonicera.md`
 - **Akio Character File**: `../Characters/Yuan_Akio.md`
 - **Operation DOPPELGÄNGER Detail**: `../../SoMe百科/Umin_Typhi_Subjugation_Unit.md`
-- **The Alpser Schism (origin of the carrier lineage)**: `../Lore/The_Alpser_Schism.md`
+- **The Alopes Schism (origin of the carrier lineage)**: `../Lore/The_Alopes_Schism.md`
 - **Empire of Aukin / the Cradle (the true target)**: `../Factions/Aukin_Empire.md`

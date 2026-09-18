@@ -47,7 +47,7 @@ When she later married Dr. Yuan Foo and moved to Anstar City during his diplomat
 
 **Family Origin**: Impoverished fisherman family; the kind where children were mouths to feed, not dreams to nurture.
 
-> **Cellular-geographic note** — In the carbon-base mapping of the lung-as-hydrology, the "coastal" village was a settlement on one of the great **alveolar lakes (湖)**: her parents were **alveolar-cell (pneumocyte) fishermen** who worked the airsac shallows where breath meets blood. "The sea" of her childhood is the lake's vast tidal exchange; "crossing the ocean" to Lumbar is the journey down the vessel-rivers and out through the great-vessel seas. See the lung hydrology in [The Alpser Schism](../Lore/The_Alpser_Schism.md), §2.
+> **Cellular-geographic note** — In the carbon-base mapping of the lung-as-hydrology, the "coastal" village was a settlement on one of the great **alveolar lakes (湖)**: her parents were **alveolar-cell (pneumocyte) fishermen** who worked the airsac shallows where breath meets blood. "The sea" of her childhood is the lake's vast tidal exchange; "crossing the ocean" to Lumbar is the journey down the vessel-rivers and out through the great-vessel seas. See the lung hydrology in [The Alopes Schism](../Lore/The_Alopes_Schism.md), §2.
 
 **Childhood Trauma**:
 Sold to an affluent foster family at a young age. The details remain unspoken — whether this was formal adoption, informal servitude, or something in between, she never clarified. What is known: she never went back to that fishing village, and she never spoke of her birth family.

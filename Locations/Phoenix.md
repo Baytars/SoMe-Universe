@@ -12,11 +12,11 @@
 
 **Demonym**: Phoenixite
 
-**Administrative Status**: Old capital of the **Alpser** mother-civilization; thereafter an Alopesian **enclave (飞地)** in the north; since the post-2343 Cradle Accords settlement, **sovereign ground of the Empire of Aukin**, hosting an Alopesian hospital enclave and an AAA-chartered aerial academy.
+**Administrative Status**: Old capital of the **Alopes** mother-civilization; thereafter an Alopesian **enclave (飞地)** in the north; since the post-2343 Cradle Accords settlement, **sovereign ground of the Empire of Aukin**, hosting an Alopesian hospital enclave and an AAA-chartered aerial academy.
 
 **Region**: Southern Thoracica — the high snow ranges above the great lung, commanding the Diaphragm Pass onto the Sacrum approaches.
 
-*For the full civilization history, see [The Alpser Schism](../Lore/The_Alpser_Schism.md).*
+*For the full civilization history, see [The Alopes Schism](../Lore/The_Alopes_Schism.md).*
 
 ---
 
@@ -42,7 +42,7 @@
 
 ### Civilization Role
 
-**Old Capital**: Phoenix was the ruling center of the pre-Winter **Alpser** peoples — a sacred city of updrafts, named for the winged bird that was the totem of the flying herb-wives. It predates both the Duchy of Alopes and the Empire of Aukin.
+**Old Capital**: Phoenix was the ruling center of the pre-Winter **Alopes** peoples — a sacred city of updrafts, named for the winged bird that was the totem of the flying herb-wives. It predates both the Duchy of Alopes and the Empire of Aukin.
 
 **The Lung's Air Gateway**: The city guards the body's chief point of entry from the air. In carbon-base terms the "air war" over Phoenix is **defense of respiration itself** — the pathogens of the Crimson Winter entered as pneumonic plague through the lung, and an enemy holding the plateau could fly contagion into the whole bloodstream. Whoever holds Phoenix holds the body's sky-door.
 
@@ -66,7 +66,7 @@ The historic Alopes aviation institutions were, after 2343, re-chartered under t
 
 ## HISTORY
 
-### Foundation Era — The Alpser Capital (pre-2295)
+### Foundation Era — The Alopes Capital (pre-2295)
 
 Phoenix was not named for rebirth from the Crimson Winter. It is older. The city's bird was the totem of the **winged herb-wives (飞翼女医)**, who flew the snow slopes gathering alpine herbs in baskets slung beside them; the rising bird was their image, and the city grew around their principal sanctuary on the plateau.
 
@@ -76,9 +76,9 @@ The lung-passing **Sweeper orders (清道夫)** — ciliated ascetics whose work
 
 ### The Crimson Winter (2295) — The Defense and the Schism
 
-When Umin's pneumonic plague struck the lung and the Hunt turned the Alpser peoples against their own healers, Phoenix became the last redoubt. Most survivors fled south to Sacrum. **Dutchess Victoria refused the city**, holding the capital with the remnant — the men who had at last awakened fighting beside the women who would not yield an inch. This defense is the founding act of the later Duchy (and the basis on which Victoria would continue to employ loyal men such as Yuan Foo).
+When Umin's pneumonic plague struck the lung and the Hunt turned the Alopes peoples against their own healers, Phoenix became the last redoubt. Most survivors fled south to Sacrum. **Dutchess Victoria refused the city**, holding the capital with the remnant — the men who had at last awakened fighting beside the women who would not yield an inch. This defense is the founding act of the later Duchy (and the basis on which Victoria would continue to employ loyal men such as Yuan Foo).
 
-A second remnant — the penitent Sweepers and disillusioned alchemists — **stayed on the old ground outside the city, guarding its approaches**, and in time became the Empire of Aukin. The reactionary wing of the old order instead submitted to Umin. *(See [The Alpser Schism](../Lore/The_Alpser_Schism.md).)*
+A second remnant — the penitent Sweepers and disillusioned alchemists — **stayed on the old ground outside the city, guarding its approaches**, and in time became the Empire of Aukin. The reactionary wing of the old order instead submitted to Umin. *(See [The Alopes Schism](../Lore/The_Alopes_Schism.md).)*
 
 ### The Relocation and the Enclave (2300s)
 
@@ -123,6 +123,13 @@ Thousands of Phoenix residents were taken prisoner; many were transported elsewh
 - Lt. Roi Hytar's Rapid Response Team inserted by airway drop pods
 - Corporal Emily achieved the first documented "pod-to-uber-unit kill" (an MRSA Excavator destroyed during descent)
 - A multi-antibiotic missile barrage broke the Pneumoniae Panzergruppe
+
+**Carbon-base ballistics — what an "orbital drop" is**: the entire drop is the carbon-base image of an **intravenous infusion**, staged like a ballistic trajectory:
+  - *Boost phase* — compounding the solution and opening the IV-line valve (preparing the drug and gaining venous access)
+  - *Transition phase* — from the opened valve until the payload first meets the "venous sea" (the great veins)
+  - *Glide phase* — through the venous sea and into the heart (right heart, then pulmonary circulation)
+  - *Dive phase* — after cardiac ejection, the payload is driven out through the arterial circulation to the target
+A **supply airdrop** over the lung is the corresponding image of **nebulized / aerosolized delivery** — medicine and materiel descending directly into the alveolar lakes rather than entering through the vessel-seas.
 - Over the Municipal Hall the liberators raised **both the Jackalope banner and the Aukin standard together** — a deliberate signal: the Southbound stream's old capital was being freed by allies, not annexed by them
 
 **Outcome**: Phoenix liberated after 18 months of occupation.
@@ -164,7 +171,7 @@ For Alopes the transfer carries a quiet grief it has never fully surrendered; it
 
 ## CULTURAL SIGNIFICANCE
 
-**The Bird, read twice — 凤 (fèng) and 凰 (huáng)**: in the oldest Alpser glyphs the one bird is two names. **凤 (fèng)**, the yang spirit of the high air and flight, is the winged healers' sky-aspect and the patron of the city's aviation; **凰 (huáng)**, the yin spirit of the nest, the hearth and the medicine-basket, is the women's healing and the city's maternal soul. Before the Schism these were one creature. After it the reading also maps the city's double inheritance — the flying garrison-science of the Aukin north and the women's medicine kept by the Alopesian Hospital enclave — without dividing the bird. **Read again by history**: the city's phoenix predates the Winter as the herb-wives' totem; after the occupation it carries a further layer — resistance, liberation, and the rising of a city that refused to die. The annual **Phoenix Rising Festival** commemorates liberation: memorial rites for the missing, aerial displays by Academy cadets, and a re-enactment of the battle in which Aukin and Alopesian colors are carried side by side.
+**The Bird, read twice — 凤 (fèng) and 凰 (huáng)**: in the oldest Alopes glyphs the one bird is two names. **凤 (fèng)**, the yang spirit of the high air and flight, is the winged healers' sky-aspect and the patron of the city's aviation; **凰 (huáng)**, the yin spirit of the nest, the hearth and the medicine-basket, is the women's healing and the city's maternal soul. Before the Schism these were one creature. After it the reading also maps the city's double inheritance — the flying garrison-science of the Aukin north and the women's medicine kept by the Alopesian Hospital enclave — without dividing the bird. **Read again by history**: the city's phoenix predates the Winter as the herb-wives' totem; after the occupation it carries a further layer — resistance, liberation, and the rising of a city that refused to die. The annual **Phoenix Rising Festival** commemorates liberation: memorial rites for the missing, aerial displays by Academy cadets, and a re-enactment of the battle in which Aukin and Alopesian colors are carried side by side.
 
 **The broomstick refuted**: the city's modern aviation is experienced by Phoenixites not merely as industry but as an answer to an ancient slander. Where the old continent saw witches on broomsticks, Phoenix now produces the medevac pilots who pull the wounded off every Accord battlefield.
 
@@ -172,7 +179,7 @@ For Alopes the transfer carries a quiet grief it has never fully surrendered; it
 
 ## CROSS-REFERENCES
 
-- **The Alpser Schism**: [Lore File](../Lore/The_Alpser_Schism.md)
+- **The Alopes Schism**: [Lore File](../Lore/The_Alopes_Schism.md)
 - **Empire of Aukin**: [Faction File](../Factions/Aukin_Empire.md)
 - **Duchy of Alopes**: [Faction File](../Factions/Duchy_of_Alopes.md)
 - **Grand Duchess Victoria**: [Personnel File](../Characters/Grand_Duchess_Victoria.md)
