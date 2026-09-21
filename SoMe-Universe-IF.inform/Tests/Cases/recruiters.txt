@@ -1,12 +1,11 @@
 n
-ask bosun about joining
-ask bosun about secret
-choose vibrio
+ask budapest about joining
+ask budapest about secret
+ask budapest about light
+choose dracula
 go to landing
 go to cradle
 ask preceptor about joining
 ask preceptor about vasud
-go to undead court
-ask doorman about light
 quit
 yes

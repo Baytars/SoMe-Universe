@@ -15,15 +15,17 @@ Two gates swirl in the newborn light: the Hall of Medicine to the south, the Dis
 
 >You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:
 
-   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale doorman (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).
+   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.
 
->The bosun drums the tide-rhythm on the railing. "Water is life, envoy, and water is death - we hold both ends of that rope. Join the Legion, and the flood goes where you point it."
+>The Bride smiles, and does not trouble to hide the teeth. "Straight talk, envoy, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did."
 
->He lifts one boot; the deck beneath it is dry as bone, and his boot is not. "A secret: eight rings, eight crews, and no survivors from the first seven. The Legion does not count losses. It counts waterline."
+>She glances toward the north, toward a castle you cannot see. "A secret: there are three of us - Budapest, Bucharest, Belgrade - and we rotate this recruiting post because the Count insists his Brides see the world he keeps out of. He has watched empires rise and fall, and he still writes his own invitations. Why do you think the post is always manned by the beautiful ones? You would not cross the street for a recruiting poster. You stopped for me."
 
->The Octopus Admiral waves one greased sleeve at the floodable deck. "Water is life, water is death," she says. "Take the water away and we are a museum exhibit - so we never let it be taken." You swear to the Abyssal Legion.
+>She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."
+
+>The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.
 
 
 The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
@@ -65,21 +67,6 @@ Cradle Outer Court
 The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
 
 >You can't see any such thing.
-
->You can't see any such thing.
-
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Blood Court
-The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
-
-Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
-
-The Budapest Bride watches the stair, unhurried.
-
-The Bucharest Bride stands where the gallery light ends, which is a professional habit.
-
-The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
 
 >You can't see any such thing.
 
