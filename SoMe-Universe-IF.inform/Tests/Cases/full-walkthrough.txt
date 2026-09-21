@@ -1,0 +1,80 @@
+take pamphlet
+n
+n
+n
+attend
+attend
+ask generalizer about autoimmunity
+s
+e
+buy gauntlets
+buy bundle
+buy vial
+w
+s
+s
+report
+sw
+w
+open bundle
+take strand
+take treat
+take cheese wheel
+put strand on altar
+put treat on altar
+put cheese wheel on altar
+e
+ne
+report
+nw
+u
+take codex
+e
+ask vesalius about soul
+w
+d
+se
+report
+w
+w
+wear gauntlets
+decipher codex
+e
+e
+report
+nw
+u
+e
+show codex to vesalius
+w
+d
+se
+report
+s
+n
+take sample
+give sample to division chief
+s
+w
+accuse stern quartermaster
+e
+e
+ask director about sightings
+w
+d
+ask pale masquer about symptoms
+ask pale masquer about symptoms
+unmask pale masquer
+u
+s
+d
+show vial to count dracula
+u
+n
+se
+ask octopus admiral about cannons
+nw
+n
+report
+banners
+score

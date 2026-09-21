@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+    <story>
+        <identification>
+            <ifid>4B8FD9E4-1D8B-4C6B-9F5A-3E6AD8E2C771</ifid>
+            <format>glulx</format>
+        </identification>
+        <bibliographic>
+            <title>SoMe-Universe: The Ten Banners</title>
+            <author>The SoMe-Universe Contributors</author>
+            <headline>A diplomatic circuit through the Saga of Medicine</headline>
+            <genre>Science Fiction</genre>
+            <firstpublished>2026</firstpublished>
+            <description>Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards on the Truce Barge.</description>
+            <language>en</language>
+            <group>Inform</group>
+        </bibliographic>
+        <releases>
+            <attached>
+                <release>
+                    <releasedate>2026-09-21</releasedate>
+                    <version>1</version>
+                    <compiler>Inform 7</compiler>
+                    <compilerversion>Inform 10.1.2 (build )</compilerversion>
+                </release>
+            </attached>
+        </releases>
+        <colophon>
+            <generator>Inform 7</generator>
+            <generatorversion>Inform 10.1.2 (build )</generatorversion>
+            <originated>2026-09-21</originated>
+        </colophon>
+        <glulx>
+            <serial>260921</serial>
+            <release>1</release>
+            <compiler>Inform Inform 10.1.2 (build )</compiler>
+        </glulx>
+    </story>
+</ifindex>

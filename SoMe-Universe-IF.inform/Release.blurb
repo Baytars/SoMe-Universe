@@ -1,0 +1,38 @@
+! Blurb file created by Inform Inform 10.1.2 (build )
+
+status "D:\programs\Inform_10_1_2_Windows\Internal\HTML\CblorbModel.html" "D:\projects\inform\SoMe-Universe-IF.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "D:\projects\inform\SoMe-Universe-IF.inform"
+release to "D:\projects\inform\SoMe-Universe-IF.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "SoMe-Universe: The Ten Banners.gblorb"
+storyfile "D:\projects\inform\SoMe-Universe-IF.inform\Build\output.ulx" include
+ifiction "D:\projects\inform\SoMe-Universe-IF.inform\Metadata.iFiction" include
+cover "D:\programs\Inform_10_1_2_Windows\Internal\Miscellany\DefaultCover.jpg"
+picture 1 "D:\programs\Inform_10_1_2_Windows\Internal\Miscellany\DefaultCover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "4B8FD9E4-1D8B-4C6B-9F5A-3E6AD8E2C771"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2026"
+placeholder [TITLE] = "SoMe-Universe: The Ten Banners"
+placeholder [AUTHOR] = "The SoMe-Universe Contributors"
+placeholder [BLURB] = "Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards on the Truce Barge."
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc399.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc409.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc402.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc402.html><img border=0 src=inform:/doc_images/help.png></a>||

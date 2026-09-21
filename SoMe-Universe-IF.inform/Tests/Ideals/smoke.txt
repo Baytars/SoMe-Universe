@@ -1,0 +1,46 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
+Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D
+
+Truce Barge
+A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+
+>SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project. You are an envoy of the Athena Aegis Accord. Visit all ten factions, win each one's seal, and report to the Registrar on the Truce Barge. Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), LOOK, EXAMINE things, ASK [someone] ABOUT [topic], GIVE and SHOW things to people, BUY at the Pericardium Free Port, WEAR and REMOVE clothing. Every faction is reachable from the Truce Barge: north, northwest, west, southwest, and south (Umin territory, five doors). Built with Inform 7. Setting and factions by the SoMe-Universe contributors.
+
+>Banners: 0 delivered, 0 in hand, 10 not yet won.
+  Cradle Sigil - not yet won.
+  Vesalius Medallion - not yet won.
+  Quicksilver Ampoule - not yet won.
+  Knitting Needle - not yet won.
+  Sulfur Sigil - not yet won.
+  Pale Masque - not yet won.
+  Bat Sigil - not yet won.
+  Stille Seal - not yet won.
+  Sightings Lanyard - not yet won.
+  Abyssal Pennant - not yet won.
+
+>
+White Rib Gate
+The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.
+
+>
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+
+>>You can't see any such thing.
+
+>You can't see any such thing.
+
+>You can't see any such thing.
+
+>Are you sure you want to quit? 
