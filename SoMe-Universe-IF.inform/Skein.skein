@@ -3,7 +3,7 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-476">
     <command xml:space="preserve">SoMe-Universe-IF</command>
-    <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -123,8 +123,15 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-496"/>
       <child nodeId="node-483"/>
     </children>
+  </item>
+  <item nodeId="node-496">
+    <command xml:space="preserve">choose citadel</command>
+    <result xml:space="preserve">Those are the two gates, not a patron. The Citadel hosts six patrons (Archaeology, Fear Technology, Pallidum, Rabies, Typhi, Vibrio); the Hall hosts four (Cradle, Celestial Corps, Pantheon, Martyrs). Choose one of the ten.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-483">
     <command xml:space="preserve">choose disease citadel</command>

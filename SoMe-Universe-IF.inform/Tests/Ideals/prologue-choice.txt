@@ -13,9 +13,14 @@ You are in the Singularity. The universe is beginning to explode.
 
 Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
 
->HOW TO BEGIN: four patrons hold vigil here. Pick one by name, e.g.:
-      CHOOSE CRADLE      or      CHOOSE CELESTIAL      or      CHOOSE PANTHEON      or      CHOOSE MARTYRS
-(To see the Citadel's six patrons: GO NORTH.)
+>You have walked into the Hall of Medicine, where the healing powers of the Athena Aegis Accord keep their banners:
+
+      the Cradle of Aukin - the immune academy that teaches self from foreign (CHOOSE CRADLE)
+      the Celestial Corps - anatomist-astronauts, mappers of the body-cosmos (CHOOSE CELESTIAL)
+      the Heavy Metal Pantheon - atomic ancients, too old to die (CHOOSE PANTHEON)
+      the Lab Martyrs - the sacrificed pioneers of experiment (CHOOSE MARTYRS)
+
+Choose one to begin your journey - type its command, like CHOOSE CRADLE. The Disease Citadel, north of the Singularity, flies six more banners if none of these suits you.
 
 >The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 

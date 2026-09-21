@@ -33,10 +33,10 @@ The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrin
 The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet."
 
 After going to the Disease Citadel for the first time:
-	say "[bold type]HOW TO BEGIN[roman type]: six patrons hold court here. Pick one by name, e.g.:[line break]      CHOOSE VIBRIO      or      CHOOSE DRACULA      or      CHOOSE FEAR[line break](Also valid: CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, CHOOSE MARY. Capitalization does not matter. To see the other gate's four patrons: GO SOUTH.)"
+	say "You have walked into the Unseen Crown's domain. Here six banners stand planted in the dark, one for each patron who will take a sworn envoy:[paragraph break]      [bold type]the Abyssal Legion[roman type] - the cholera fleet, water as weapon (CHOOSE VIBRIO)[line break]      [bold type]the Undead Court[roman type] - the vampire court of rabies (CHOOSE DRACULA)[line break]      [bold type]Fear Technology[roman type] - the puppet workshop of weaponized dread (CHOOSE FEAR)[line break]      [bold type]the Archaeology Division[roman type] - seekers of primordial life (CHOOSE ARCHAEOLOGY)[line break]      [bold type]the Pale Masquerade[roman type] - syphilis, the Great Imitator (CHOOSE PALLIDUM)[line break]      [bold type]the Department of Silence[roman type] - the silent infiltrators (CHOOSE STILLE)[paragraph break]Choose one to begin your journey - type its command, like [bold type]CHOOSE VIBRIO[roman type]. The Hall of Medicine, south of the Singularity, holds four more banners if none of these suits you."
 
 After going to the Hall of Medicine for the first time:
-	say "[bold type]HOW TO BEGIN[roman type]: four patrons hold vigil here. Pick one by name, e.g.:[line break]      CHOOSE CRADLE      or      CHOOSE CELESTIAL      or      CHOOSE PANTHEON      or      CHOOSE MARTYRS[line break](To see the Citadel's six patrons: GO NORTH.)"
+	say "You have walked into the Hall of Medicine, where the healing powers of the Athena Aegis Accord keep their banners:[paragraph break]      [bold type]the Cradle of Aukin[roman type] - the immune academy that teaches self from foreign (CHOOSE CRADLE)[line break]      [bold type]the Celestial Corps[roman type] - anatomist-astronauts, mappers of the body-cosmos (CHOOSE CELESTIAL)[line break]      [bold type]the Heavy Metal Pantheon[roman type] - atomic ancients, too old to die (CHOOSE PANTHEON)[line break]      [bold type]the Lab Martyrs[roman type] - the sacrificed pioneers of experiment (CHOOSE MARTYRS)[paragraph break]Choose one to begin your journey - type its command, like [bold type]CHOOSE CRADLE[roman type]. The Disease Citadel, north of the Singularity, flies six more banners if none of these suits you."
 
 
 
@@ -61,10 +61,10 @@ Carry out choosing a patron:
 	let choice be the topic understood;
 	let lowered be "[choice]" in lower case;
 	if the lowered matches the regular expression "^(citadel|disease citadel)$":
-		say "That is this gate's name, not a patron. Pick one of its six: [bold type]CHOOSE VIBRIO[roman type], CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE MARY.";
+		say "That is this gate's name, not a patron. Pick one of its six banners: [bold type]CHOOSE VIBRIO[roman type], CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(hall|medicine|hall of medicine)$":
-		say "That is the other gate's name, not a patron. Its four are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
+		say "That is the other gate's name, not a patron. Its four banners are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
 		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
@@ -98,9 +98,9 @@ Carry out choosing a patron:
 		now the player's patron is vibrio;
 	otherwise:
 		if the location is the Disease Citadel:
-			say "No patron by that name. From this gate, the working commands are: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, CHOOSE MARY." instead;
+			say "No patron by that name. The six banners of this gate answer to: CHOOSE VIBRIO (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), CHOOSE STILLE (Department of Silence)." instead;
 		otherwise:
-			say "No patron by that name. From this gate, the working commands are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or the Citadel's six across the way: VIBRIO, DRACULA, FEAR, ARCHAEOLOGY, PALLIDUM, MARY." instead.
+			say "No patron by that name. The four banners of this gate answer to: CHOOSE CRADLE (Cradle of Aukin), CHOOSE CELESTIAL (Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), CHOOSE MARTYRS (Lab Martyrs)." instead.
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
@@ -159,9 +159,9 @@ Understand "travel to [text]" as warping to.
 Check warping to:
 	if the player's patron is unsworn:
 		if the location is the Disease Citadel:
-			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: [bold type]CHOOSE VIBRIO[roman type] (or CHOOSE DRACULA / FEAR / ARCHAEOLOGY / PALLIDUM / MARY). The Hall of Medicine to the south holds four more." instead;
+			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE VIBRIO[roman type] (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), or CHOOSE STILLE (Department of Silence). The Hall of Medicine to the south holds four more." instead;
 		otherwise if the location is the Hall of Medicine:
-			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: [bold type]CHOOSE CRADLE[roman type] (or CHOOSE CELESTIAL / PANTHEON / MARTYRS). The Disease Citadel to the north holds six more." instead;
+			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE CRADLE[roman type] (the immune academy of Aukin), CHOOSE CELESTIAL (the Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), or CHOOSE MARTYRS (the Lab Martyrs). The Disease Citadel to the north holds six more." instead;
 		otherwise:
 			say "Not yet - the concordance serves sworn envoys only. Walk back to a gate (GO SOUTH from the Singularity) and CHOOSE a patron." instead.
 
