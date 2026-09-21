@@ -1,7 +1,6 @@
 n
-ask heart-core about joining
-ask heart-core about cannon
-ask heart-core about chlorine
+ask bosun about joining
+ask bosun about demonstration
 choose vibrio
 go to landing
 go to cradle
