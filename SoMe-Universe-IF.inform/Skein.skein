@@ -13,14 +13,46 @@
   </item>
   <item nodeId="node-481">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale doorman (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-648"/>
+      <child nodeId="node-651"/>
       <child nodeId="node-647"/>
       <child nodeId="node-485"/>
       <child nodeId="node-482"/>
     </children>
+  </item>
+  <item nodeId="node-648">
+    <command xml:space="preserve">ask bride about joining</command>
+    <result xml:space="preserve">The Bride smiles, and does not trouble to hide the teeth. "Straight talk, envoy, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-649"/>
+    </children>
+  </item>
+  <item nodeId="node-649">
+    <command xml:space="preserve">ask bride about light</command>
+    <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-650"/>
+    </children>
+  </item>
+  <item nodeId="node-650">
+    <command xml:space="preserve">ask bride about water</command>
+    <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-651">
+    <command xml:space="preserve">ask bride about secret</command>
+    <result xml:space="preserve">She glances toward the north, toward a castle you cannot see. "A secret: there are three of us - Budapest, Bucharest, Belgrade - and we rotate this recruiting post because the Count insists his Brides see the world he keeps out of. He has watched empires rise and fall, and he still writes his own invitations. Why do you think the post is always manned by the beautiful ones? You would not cross the street for a recruiting poster. You stopped for me."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-647">
     <command xml:space="preserve">ask doorman about joining</command>

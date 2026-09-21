@@ -1,8 +1,8 @@
 n
-ask budapest about joining
-ask budapest about secret
-ask budapest about light
-choose dracula
+ask heart-core about joining
+ask heart-core about cannon
+ask heart-core about chlorine
+choose vibrio
 go to landing
 go to cradle
 ask preceptor about joining
