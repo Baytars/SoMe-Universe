@@ -75,18 +75,6 @@ The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets f
 >Cradle Outer Court
 The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
 
->*** Regular expression error: regexp too complex ***
-
-*** Run-time problem P51: Syntax error in regular expression.
-
-The concordance charts only the barge and the banners" halls. Destinations: BARGE, PORT, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
-
->
-Cradle Inner Court
-The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors.
-
-Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood.
-
-The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE flame as if warming it by habit.
+>You have already sworn to a patron.
 
 >Are you sure you want to quit? 

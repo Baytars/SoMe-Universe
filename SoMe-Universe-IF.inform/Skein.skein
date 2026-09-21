@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-476">
+  <generator>Windows Inform 10.1.2</generator>
+  <item nodeId="node-476">
+    <command xml:space="preserve">SoMe-Universe-IF</command>
+    <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-477"/>
+    </children>
+  </item>
+  <item nodeId="node-477">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">(the Accord manifest)&#x000A;ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact: - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica). - NORTHWEST: the Celestial Corps, over the Void Verge. - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes. - SOUTHWEST: the Lab Martyrs, in the Siberian Reach. - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond. Trade at the Pericardium Free Port on your way through Thoracica. Travel light. Trust carefully.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-478"/>
+    </children>
+  </item>
+  <item nodeId="node-478">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Disease Citadel&#x000A;The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-479"/>
+    </children>
+  </item>
+  <item nodeId="node-479">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">(the Accord manifest)&#x000A;ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact: - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica). - NORTHWEST: the Celestial Corps, over the Void Verge. - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes. - SOUTHWEST: the Lab Martyrs, in the Siberian Reach. - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond. Trade at the Pericardium Free Port on your way through Thoracica. Travel light. Trust carefully.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-480"/>
+    </children>
+  </item>
+  <item nodeId="node-480">
+    <command xml:space="preserve">go to Undead Court</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>

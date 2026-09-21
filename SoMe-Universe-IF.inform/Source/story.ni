@@ -48,38 +48,42 @@ Check choosing a patron:
 
 Carry out choosing a patron:
 	let choice be the topic understood;
-	if the choice matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
+	let lowered be "[choice]" in lower case;
+	if the lowered matches the regular expression "^(citadel|disease citadel|hall|medicine|hall of medicine)$":
+		say "Those are the two gates, not a patron. The Citadel hosts six patrons (Archaeology, Fear Technology, Pallidum, Rabies, Typhi, Vibrio); the Hall hosts four (Cradle, Celestial Corps, Pantheon, Martyrs). Choose one of the ten.";
+		rule succeeds;
+	if the lowered matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
 		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
 		now the player's patron is cradle;
-	otherwise if the choice matches the regular expression "^(celestial|corps|vesalius|leonardo|harvey)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(celestial|corps|vesalius|leonardo|harvey)( or .*)?$":
 		say "Vesalius strikes the cardiac error from his own hanging map in salute. 'Never navigate by ancient maps,' he says. 'We will teach you to draw the true ones.' You swear to the Celestial Corps.";
 		now the player's patron is celestial;
-	otherwise if the choice matches the regular expression "^(pantheon|metal|lucifer|mercury|radium)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(pantheon|metal|lucifer|mercury|radium)( or .*)?$":
 		say "The Morning Star inclines his dripping crown. 'You cannot destroy an element,' Lucifer says. 'You can only hope to contain it. Learn containment, and you will never fear the dark chemistry.' You swear to the Heavy Metal Pantheon.";
 		now the player's patron is pantheon;
-	otherwise if the choice matches the regular expression "^(martyrs|shrine|hela|laika|mouse)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(martyrs|shrine|hela|laika|mouse)( or .*)?$":
 		say "HeLa's luminosity brightens by one candle's worth; Laika's ghost-shape circles once. 'They asked for nothing,' HeLa says. 'You asked to serve. That is the difference.' You swear to the Lab Martyrs.";
 		now the player's patron is martyrs;
-	otherwise if the choice matches the regular expression "^(archaeology|sulfur|archaea|ancestor)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(archaeology|sulfur|archaea|ancestor)( or .*)?$":
 		say "The Division Chief taps the tile motto. 'In the beginning, there was sulfur. We are not inventing, envoy - we are remembering.' You swear to the Archaeology Division.";
 		now the player's patron is archaeology;
-	otherwise if the choice matches the regular expression "^(fear|puppet|director|moonstar|sightings)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(fear|puppet|director|moonstar|sightings)( or .*)?$":
 		say "The Director looks up from her tablet at last. 'The mind that fears cannot think,' she says. 'You will learn what the fear cascade eats for breakfast.' You swear to Fear Technology.";
 		now the player's patron is fear-tech;
-	otherwise if the choice matches the regular expression "^(pallidum|masquer|masque|imitation)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(pallidum|masquer|masque|imitation)( or .*)?$":
 		say "The Pale Masquer curtsies, porcelain spiral catching the light. 'I wear a thousand faces, envoy, and every one of them is beautiful.' You swear to the Pallidum court.";
 		now the player's patron is pallidum;
-	otherwise if the choice matches the regular expression "^(rabies|undead|dracula|castle|bride)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(rabies|undead|dracula|castle|bride)( or .*)?$":
 		say "The Count regards you across the dry fountains. 'Fear is not a weapon. Fear is the battlefield,' he says. 'Welcome to the field.' You swear to the Undead Court.";
 		now the player's patron is rabies;
-	otherwise if the choice matches the regular expression "^(typhi|stille|silence|mary|amanuensis)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(typhi|stille|silence|mary|amanuensis)( or .*)?$":
 		say "The Amanuensis stamps gall-coloured wax without looking up. 'The perfect spy does not know she is a spy,' she says. 'You, at least, will know.' You swear to Abteilung Stille.";
 		now the player's patron is typhi;
-	otherwise if the choice matches the regular expression "^(vibrio|abyssal|octopus|admiral|cholera)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(vibrio|abyssal|octopus|admiral|cholera)( or .*)?$":
 		say "The Octopus Admiral waves one greased sleeve at the floodable deck. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken.' You swear to the Abyssal Legion.";
 		now the player's patron is vibrio;
 	otherwise:
-		say "No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio." instead.
+		say "No such patron answers - spelling is flexible, capitalization is not checked, but the name must be one of the ten. Try CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS, CHOOSE ARCHAEOLOGY, CHOOSE FEAR, CHOOSE PALLIDUM, CHOOSE DRACULA, CHOOSE MARY, or CHOOSE VIBRIO." instead.
 
 Report choosing a patron:
 	if the player's patron is not unsworn:

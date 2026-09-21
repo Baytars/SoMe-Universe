@@ -1,10 +1,9 @@
 s
-choose typhi
+choose TYPHI
 go to undead court
 look
 go to cradle
 look
-go to nowhere-xyz
-n
+choose disease citadel
 quit
 yes
