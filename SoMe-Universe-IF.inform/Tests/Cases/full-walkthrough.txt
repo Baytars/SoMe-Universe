@@ -1,23 +1,18 @@
 s
-choose CRADLE
+choose cradle
 take pamphlet
-n
-n
+go to cradle
 n
 attend
 attend
 ask generalizer about autoimmunity
-s
-e
+go to market
 buy gauntlets
 buy bundle
 buy vial
-w
-s
-s
+go to landing
 report
-sw
-w
+go to martyrs
 open bundle
 take strand
 take treat
@@ -25,58 +20,37 @@ take cheese wheel
 put strand on altar
 put treat on altar
 put cheese wheel on altar
-e
-ne
+go to landing
 report
-nw
-u
+go to dawn pioneer
 take codex
-e
+go to celestial corps
 ask vesalius about soul
-w
-d
-se
-report
-w
-w
+go to pantheon
 wear gauntlets
 decipher codex
-e
-e
+go to landing
 report
-nw
-u
-e
+go to celestial corps
 show codex to vesalius
-w
-d
-se
+go to landing
 report
-s
-n
+go to archaeology
 take sample
 give sample to division chief
-s
-w
+go to stille
 accuse stern quartermaster
-e
-e
+go to fear technology
 ask director about sightings
-w
-d
+go to masquerade
 ask pale masquer about symptoms
 ask pale masquer about symptoms
 unmask pale masquer
-u
-s
-d
+go to undead court
 show vial to count dracula
-u
-n
-se
+go to abyssal fleet
 ask octopus admiral about cannons
-nw
-n
+go to landing
 report
 banners
 score

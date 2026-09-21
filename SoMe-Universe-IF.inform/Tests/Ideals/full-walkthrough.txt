@@ -6,7 +6,7 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
-Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
@@ -28,20 +28,17 @@ The Singularity seals itself behind the Big Bang. The gates open. A launch skiff
 
 The circuit of the Ten Banners begins.
 
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the chart table is a Rationality Protocol pamphlet.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >Taken.
 
->
-White Rib Gate
-The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Cradle Outer Court
 The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
 
@@ -63,13 +60,10 @@ The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white a
 
 [Your score has just gone up by one point.]
 
->
-Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Pericardium Free Port
-The heart of the continent is not garrisoned: a demilitarized merchant city-state inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide.
+Port Market
+The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide.
 
 On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial.
 
@@ -81,27 +75,17 @@ The Port Factor watches the quay with the serenity of a man whose tariffs fund a
 
 >The last token goes across the stall. "Show it to the Count himself," the Factor says again. "He has watched empires rise and fall. He will want to see what the living made."
 
->
-Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-White Rib Gate
-The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
->
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
-
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >You lay each banner on the long table and the Registrar raises them one by one. 1 of the ten standards now fly.
 
->
-Siberian Reach
-Cold clean air, snowfields, and the long grey line of an institute against the sky. This is the country of the Novosibirsk memorial. Pilgrims come up the road even now, from every faction, leaving small offerings at the shrine ahead. Frost flowers the windows of the last station.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Shrine of the Knitting Mouse
 A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters.
 
@@ -128,25 +112,19 @@ One of the two bronze needles from the monument rests in your hand, warm as a li
 
 [Your score has just gone up by one point.]
 
->
-Siberian Reach
-Cold clean air, snowfields, and the long grey line of an institute against the sky. This is the country of the Novosibirsk memorial. Pilgrims come up the road even now, from every faction, leaving small offerings at the shrine ahead. Frost flowers the windows of the last station.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack is a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >You lay each banner on the long table and the Registrar raises them one by one. 2 of the ten standards now fly.
 
->
-Void Verge
-The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Dawn Pioneer Deck
 The deck of Leonardo's vessel smells of solvent and ether. The hull ribs arch overhead exactly like the torso it was drawn from. A captain's desk bears the famous mirror-script log; east, a pressurized gallery leads to the Fabrica's bridge. Leonardo himself leans over the rail, watching the blood-tide.
 
@@ -156,7 +134,8 @@ Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide 
 
 >Taken.
 
->
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
 Fabrica Bridge
 The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall.
 
@@ -168,31 +147,8 @@ Bethune, in a scarlet uniform that is not regulation and does not intend to be, 
 
 >"The old charts circle the heart," Vesalius says, tapping the hanging map. "Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an envoy's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected."
 
->
-Dawn Pioneer Deck
-The deck of Leonardo's vessel smells of solvent and ether. The hull ribs arch overhead exactly like the torso it was drawn from. A captain's desk bears the famous mirror-script log; east, a pressurized gallery leads to the Fabrica's bridge. Leonardo himself leans over the rail, watching the blood-tide.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine.
-
->
-Void Verge
-The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up.
-
->
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
-
-On the standard rack are a Knitting Needle and a Cradle Sigil.
-
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
-
->The Registrar glances at your satchel. "Light, envoy. The standards stay hungry."
-
->
-Contaminated Wastes
-Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
-
->
 Black Cathedral
 A cathedral of black stone around a single object: the mercury mirror, a pool of polished metal that does not reflect the room. It shows nerves. Lucifer keeps the hall the way winter keeps a lake - by being what it is. The Morning Star himself stands beside his mirror, crown dripping, reforming, dripping.
 
@@ -206,31 +162,19 @@ A sealed glass thread of quicksilver presses itself into your palm, cold as test
 
 [Your score has just gone up by one point.]
 
->
-Contaminated Wastes
-Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack are a Knitting Needle and a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >You lay each banner on the long table and the Registrar raises them one by one. 3 of the ten standards now fly.
 
->
-Void Verge
-The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Dawn Pioneer Deck
-The deck of Leonardo's vessel smells of solvent and ether. The hull ribs arch overhead exactly like the torso it was drawn from. A captain's desk bears the famous mirror-script log; east, a pressurized gallery leads to the Fabrica's bridge. Leonardo himself leans over the rail, watching the blood-tide.
-
-Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine.
-
->
 Fabrica Bridge
 The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall.
 
@@ -246,31 +190,19 @@ Vesalius pins the Corps" bronze medallion to your collar - his own profile, besi
 
 [Your score has just gone up by one point.]
 
->
-Dawn Pioneer Deck
-The deck of Leonardo's vessel smells of solvent and ether. The hull ribs arch overhead exactly like the torso it was drawn from. A captain's desk bears the famous mirror-script log; east, a pressurized gallery leads to the Fabrica's bridge. Leonardo himself leans over the rail, watching the blood-tide.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine.
-
->
-Void Verge
-The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up.
-
->
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack are a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >You lay each banner on the long table and the Registrar raises them one by one. 4 of the ten standards now fly.
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Sulfur Vent Gallery
 Heat and mineral light: a working gallery along a thermal vent that breathes like a lung of the deep earth. Racks of sampling gear line the walls. The Division Chief checks a thermal probe at the vent's rim, where a viable Sulfolobus sample steams in its casket. Motto of the division, lettered in tile: IN THE BEGINNING, THERE WAS SULFUR.
 
@@ -286,11 +218,8 @@ The Division Chief seals a sulfur crystal around an archaeal strand and hands it
 
 [Your score has just gone up by one point.]
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Abteilung Stille Office
 A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
 
@@ -306,11 +235,8 @@ The Amanuensis presses gall-coloured wax into your hand and stamps it with a mod
 
 [Your score has just gone up by one point.]
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Puppet Workshop
 Cold white light on a hundred workbenches: holographic emitters, animatronic frames, infrasound generators in crates marked CULTURAL SPECIFIC. On a raised plinth at the centre stands the Construct - two and a half meters of borrowed height, a face with nothing on it, dorsal appendages folded like sleeping arms. The Director supervises a fitting with a tablet and no expression.
 
@@ -326,11 +252,8 @@ The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHT
 
 [Your score has just gone up by one point.]
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
 Masquerade Ballroom
 Candlelight, water-music, and three masked figures moving through the figures of a slow pavane. A mural runs the length of the hall: the Hall of Romances, each portrait labelled with a gift. Somewhere a string quartet plays one beat behind itself.
 
@@ -350,17 +273,8 @@ The Pale Masque settles into your satchel, lighter than porcelain has any right 
 
 [Your score has just gone up by one point.]
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Castle Gate
-A gatehouse of imported Transylvanian stone under a sky that the ceiling-water never quite touches. No windows. The humidity gauge reads fifteen percent, and the doorman counts guests with a lip-licking diligence that you decide not to think about. Below, torchlight marks the court proper.
-
-The Renfield doorman counts the guests twice, once aloud and once in a small notebook.
-
->
 Blood Court
 The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
 
@@ -378,17 +292,8 @@ The Budapest Bride seals a black disc of spread wings into your hand. The Undead
 
 [Your score has just gone up by one point.]
 
->
-Castle Gate
-A gatehouse of imported Transylvanian stone under a sky that the ceiling-water never quite touches. No windows. The humidity gauge reads fifteen percent, and the doorman counts guests with a lip-licking diligence that you decide not to think about. Below, torchlight marks the court proper.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-The Renfield doorman counts the guests twice, once aloud and once in a small notebook.
-
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
-
->
 Abyssal Deck
 A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank.
 
@@ -398,29 +303,28 @@ The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-
 
 A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.
 
-Ten seals ride in your satchel. Somewhere behind you, the Truce Barge waits for its standards.
+Ten seals ride in your satchel. Behind you, the Free Port Landing waits for its standards.
 
 [Your score has just gone up by one point.]
 
->
-Dark Concourse
-Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
->
-Sulfur Vent Gallery
-Heat and mineral light: a working gallery along a thermal vent that breathes like a lung of the deep earth. Racks of sampling gear line the walls. The Division Chief checks a thermal probe at the vent's rim, where a viable Sulfolobus sample steams in its casket. Motto of the division, lettered in tile: IN THE BEGINNING, THERE WAS SULFUR.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
-The Division Chief of the Archaeology Division reads thermal gradients the way the Accord's cartographers read coastlines.
+On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.
+
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >You lay each banner on the long table and the Registrar raises them one by one. 10 of the ten standards now fly.
 The Registrar binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant. "Understand what you have carried," she says. "An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it." The map of the whole body-cosmos rolls out across the table, ten colours deep.
 
 
 
-    *** The Ten Banners stand raised over the Truce Barge. ***
+    *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 80 turns.
+In that game you scored 10 out of a possible 10, in 54 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

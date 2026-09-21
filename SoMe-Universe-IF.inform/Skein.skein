@@ -7,8 +7,42 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-481"/>
       <child nodeId="node-477"/>
     </children>
+  </item>
+  <item nodeId="node-481">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Disease Citadel&#x000A;The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-482"/>
+    </children>
+  </item>
+  <item nodeId="node-482">
+    <command xml:space="preserve">go to undead court</command>
+    <result xml:space="preserve">The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-483"/>
+    </children>
+  </item>
+  <item nodeId="node-483">
+    <command xml:space="preserve">choose disease citadel</command>
+    <result xml:space="preserve">No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-484"/>
+    </children>
+  </item>
+  <item nodeId="node-484">
+    <command xml:space="preserve">choose Typhi</command>
+    <result xml:space="preserve">No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-477">
     <command xml:space="preserve">x</command>

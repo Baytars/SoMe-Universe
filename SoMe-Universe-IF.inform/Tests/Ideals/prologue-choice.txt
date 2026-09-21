@@ -6,7 +6,7 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
-Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
@@ -28,12 +28,12 @@ The Singularity seals itself behind the Big Bang. The gates open. A launch skiff
 
 The circuit of the Ten Banners begins.
 
-Truce Barge
-A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the chart table is a Rationality Protocol pamphlet.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
 
 >Taken.
 
@@ -49,8 +49,6 @@ The Registrar stands by the ten standards with a ledger under one arm, catalogui
   Sightings Lanyard - not yet won.
   Abyssal Pennant - not yet won.
 
->
-White Rib Gate
-The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.
+>Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Registrar where you mean to go.
 
 >Are you sure you want to quit? 

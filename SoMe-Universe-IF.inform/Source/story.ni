@@ -7,7 +7,7 @@ The story headline is "A diplomatic circuit through the Saga of Medicine".
 The story genre is "Science Fiction".
 The release number is 1.
 The story creation year is 2026.
-The story description is "Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards on the Truce Barge."
+The story description is "Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards at the Pericardium Free Port."
 
 Use scoring.
 The maximum score is 10.
@@ -106,7 +106,7 @@ Prologue-end is a scene. Prologue-end begins when the player's patron is not uns
 
 When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
-	move the player to the Truce Barge.
+	move the player to the Free Port Landing.
 
 Chapter - The Concordance
 
@@ -114,22 +114,23 @@ Chapter - The Concordance
 charted hall of the war. Room aliases cover every name the gate descriptions
 and porcelain plates use.]
 
-A room has some text called the concordance name. The concordance name of a room is usually "".
+A room has a list of texts called the concordance names. The concordance names of a room are usually { }.
 
-The concordance name of the Truce Barge is "barge|truce barge|home".
-The concordance name of the Pericardium Free Port is "port|free port|pericardium".
-The concordance name of the Cradle Outer Court is "cradle|medulla|aukin".
-The concordance name of the Fabrica Bridge is "celestial corps|fabrica|bridge".
-The concordance name of the Black Cathedral is "pantheon|heavy metal|cathedral".
-The concordance name of the Shrine of the Knitting Mouse is "martyrs|lab martyrs|shrine|novosibirsk".
-The concordance name of the Dark Concourse is "concourse|umin".
-The concordance name of the Sulfur Vent Gallery is "archaeology|archaeology division|sulfur vent".
-The concordance name of the Abteilung Stille Office is "typhi|stille|silence|department of silence".
-The concordance name of the Puppet Workshop is "fear technology|fear tech|puppet workshop|workshop".
-The concordance name of the Masquerade Ballroom is "masquerade|ballroom|pale masquerade".
-The concordance name of the Blood Court is "undead court|blood court|undead".
-The concordance name of the Castle Gate is "castle|castle gate".
-The concordance name of the Abyssal Deck is "abyssal fleet|abyss|abyssal deck".
+The concordance names of the Free Port Landing are { "barge", "truce barge", "home", "landing", "free port landing" }.
+The concordance names of the Port Market are { "market", "port market", "bazaar", "stall", "factor" }.
+The concordance names of the Cradle Outer Court are { "cradle", "medulla", "aukin" }.
+The concordance names of the Fabrica Bridge are { "celestial corps", "fabrica", "bridge" }.
+The concordance names of the Dawn Pioneer Deck are { "dawn pioneer", "pioneer", "leonardo" }.
+The concordance names of the Black Cathedral are { "pantheon", "heavy metal", "cathedral" }.
+The concordance names of the Shrine of the Knitting Mouse are { "martyrs", "lab martyrs", "shrine", "novosibirsk" }.
+The concordance names of the Dark Concourse are { "concourse", "umin" }.
+The concordance names of the Sulfur Vent Gallery are { "archaeology", "archaeology division", "sulfur vent" }.
+The concordance names of the Abteilung Stille Office are { "typhi", "stille", "silence", "department of silence" }.
+The concordance names of the Puppet Workshop are { "fear technology", "fear tech", "puppet workshop", "workshop" }.
+The concordance names of the Masquerade Ballroom are { "masquerade", "ballroom", "pale masquerade" }.
+The concordance names of the Blood Court are { "undead court", "blood court", "undead" }.
+The concordance names of the Castle Gate are { "castle", "castle gate" }.
+The concordance names of the Abyssal Deck are { "abyssal fleet", "abyss", "abyssal deck" }.
 
 Warping to is an action applying to one topic.
 Understand "go to [text]" as warping to.
@@ -141,16 +142,18 @@ Check warping to:
 		say "The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel." instead.
 
 Carry out warping to:
-	if the topic understood matches the regular expression "^(north|south|east|west|northeast|northwest|southeast|southwest|up|down|in|out|inside|outside)$":
+	let dir-topic be "[the topic understood]" in lower case;
+	if the dir-topic is "north" or the dir-topic is "south" or the dir-topic is "east" or the dir-topic is "west" or the dir-topic is "northeast" or the dir-topic is "northwest" or the dir-topic is "southeast" or the dir-topic is "southwest" or the dir-topic is "up" or the dir-topic is "down" or the dir-topic is "in" or the dir-topic is "out" or the dir-topic is "inside" or the dir-topic is "outside":
 		say "For walking, just type the direction itself.";
 		rule succeeds;
+	let lowered-topic be "[the topic understood]" in lower case;
 	repeat with destination running through rooms:
-		if the concordance name of destination is not "":
-			if the topic understood matches the regular expression "^([concordance name of destination])$":
+		if the concordance names of destination is not { }:
+			if the lowered-topic is listed in the concordance names of destination:
 				say "The manifest takes your word, and the concordance carries you along the great vessels of the war.";
 				move the player to the destination;
 				rule succeeds;
-	say "The concordance charts only the barge and the banners' halls. Destinations: BARGE, PORT, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
+	say "The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
 
 The five Umin doors are scenery in the Disease Citadel. The printed name is "five doors". Understand "doors" and "five doors" and "porcelain plates" and "plates" as the five Umin doors. The description is "Five doors on the dark, each named on a porcelain plate: ARCHAEOLOGY. FEAR TECHNOLOGY. THE PALE MASQUERADE. THE UNDEAD COURT. THE ABYSSAL FLEET. Examine any door - and once sworn, the concordance will carry you through: GO TO its faction."
 
@@ -204,7 +207,7 @@ To grant (prize - a seal) noting (flavor - text):
 	increase the score by 1;
 	say "[line break][flavor][line break]";
 	if the score is 10:
-		say "[line break]Ten seals ride in your satchel. Somewhere behind you, the Truce Barge waits for its standards.[line break]";
+		say "[line break]Ten seals ride in your satchel. Behind you, the Free Port Landing waits for its standards.[line break]";
 
 Requesting the banner tally is an action applying to nothing.
 Understand "banners" or "tally" or "progress" as requesting the banner tally.
@@ -238,25 +241,43 @@ To raise the ten banners:
 	say "The Registrar binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant.
 'Understand what you have carried,' she says. 'An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it.'
 The map of the whole body-cosmos rolls out across the table, ten colours deep.";
-	end the story finally saying "The Ten Banners stand raised over the Truce Barge."
+	end the story finally saying "The Ten Banners stand raised over the Pericardium Free Port."
 
 Abouting is an action applying to nothing.
 Understand "about" or "credits" or "help" as abouting.
 
 Carry out abouting:
 	say "SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project.
-You are an envoy of the Athena Aegis Accord. Visit all ten factions, win each one's seal, and report to the Registrar on the Truce Barge.
-Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Pericardium Free Port, WEAR and REMOVE clothing.
-Every faction is reachable from the Truce Barge: north, northwest, west, southwest, and south (Umin territory, five doors).
+You are an envoy of the Athena Aegis Accord. Visit all ten factions, win each one's seal, and report to the Registrar at the Free Port Landing.
+Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Port Market, WEAR and REMOVE clothing.
+Every faction is reachable from the Free Port Landing: GO TO a destination, and the concordance will carry you.
 Built with Inform 7. Setting and factions by the SoMe-Universe contributors."
 
-Part Two - The Truce Barge
+Part Two - The Free Port Landing
 
-The Truce Barge is a room. "A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown."
+The Free Port Landing is a room. "The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all."
 
-The standard rack is a scenery supporter in the Truce Barge. Understand "standard" or "standards" or "rack" as the standard rack. The description is "Ten standards in a row, each waiting for a faction's seal. [if the number of seals on the standard rack is 0]Every pole is bare.[otherwise][The number of seals on the standard rack] of the ten fly banners now.[end if]"
+Instead of going east from the Free Port Landing:
+	say "East lies the open sac - bright water, no shore. The port's business is all inland."
 
-The chart table is a scenery supporter in the Truce Barge. Understand "table" and "chart" as the chart table. The description is "Sea-charts of the great vessels, an anatomical atlas of Planet Homo Sapiens, and room for ten banners when you bring them home."
+Instead of going up from the Free Port Landing:
+	say "Nothing up there but the pump's breath."
+
+Instead of going down from the Free Port Landing:
+	say "The sac floor is far below, and out of bounds by treaty."
+
+Instead of going northeast from the Free Port Landing:
+	say "The northeast channel is reserved for the great conduits."
+
+Instead of going southeast from the Free Port Landing:
+	say "The southeast channel is reserved for the great conduits."
+
+Instead of going north from the Free Port Landing:
+	say "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Registrar where you mean to go."
+
+The standard rack is a scenery supporter in the Free Port Landing. Understand "standard" or "standards" or "rack" as the standard rack. The description is "Ten standards in a row, each waiting for a faction's seal. [if the number of seals on the standard rack is 0]Every pole is bare.[otherwise][The number of seals on the standard rack] of the ten fly banners now.[end if]"
+
+The chart table is a scenery supporter in the Free Port Landing. Understand "table" and "chart" as the chart table. The description is "Sea-charts of the great vessels, an anatomical atlas of Planet Homo Sapiens, and room for ten banners when you bring them home."
 
 The Rationality Protocol pamphlet is a thing on the chart table. Understand "pamphlet" and "rationality" and "protocol" as the Rationality Protocol pamphlet. The description is "An AAA field manual: PRE-EMPTIVE EDUCATION. RAPID RESPONSE. PSYCHOLOGICAL INOCULATION. TRUST RESTORATION. A margin note adds, in pencil: 'Fear is the battlefield. Keep your pulse under command.'"
 
@@ -266,13 +287,13 @@ The Accord manifest is a thing carried by the player. Understand "manifest" and 
 - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes.
 - SOUTHWEST: the Lab Martyrs, in the Siberian Reach.
 - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond.
-Trade at the Pericardium Free Port on your way through Thoracica. Travel light. Trust carefully."
+Trade at the Port Market, east of the Cradle's outer court. Travel light. Trust carefully."
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
 
 The first exchange token, the second exchange token and the third exchange token are exchange tokens.
 
-The Registrar is a woman in the Truce Barge. "The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens." The description is "A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched."
+The Registrar is a woman in the Free Port Landing. "The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate." The description is "A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched."
 
 Instead of asking the Registrar about something when the topic understood matches the regular expression "^mission$":
 	say "'Ten factions,' the Registrar says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and five doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
@@ -280,6 +301,8 @@ Instead of asking the Registrar about something when the topic understood matche
 	say "'The Unseen Crown,' she says, and does not lower her voice, which is its own kind of armour. 'Archaeology. Fear Technology. Pallidum. Rabies. Typhi. Vibrio on the water. They are hosts, envoy, not friends. Be courteous, and come back with everything you left with.'"
 Instead of asking the Registrar about something when the topic understood matches the regular expression "^accord$":
 	say "'The Athena Aegis Accord holds because somebody keeps account,' she says, tapping the ledger. 'That somebody is me. Ten banners, envoy. Then the map.'"
+Instead of asking the Registrar about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
+	say "'From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its five doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
 
 Instead of giving a seal to the Registrar:
 	now the noun is on the standard rack;
@@ -304,7 +327,7 @@ Instead of answering someone that something:
 
 Part Three - Thoracica and the Empire of Aukin
 
-The White Rib Gate is north of the Truce Barge. "The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead."
+The White Rib Gate is north of the Free Port Landing. "The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead."
 
 The white rib wall is scenery in the White Rib Gate. Understand "wall" and "ribs" and "bone" as the white rib wall. The description is "Not a garrison but a shield. The records agree that no army has ever needed to breach it, because the country behind it taught theirs."
 
@@ -366,9 +389,9 @@ Instead of asking the Generalizer about something when the topic understood matc
 Attending is an action applying to nothing.
 Understand "attend" or "attend lecture" or "attend the lecture" or "listen to the lecture" as attending.
 
-The Pericardium Free Port is east of the Cradle Outer Court. "The heart of the continent is not garrisoned: a demilitarized merchant city-state inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide."
+The Port Market is east of the Cradle Outer Court. "The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide."
 
-The stall is a scenery supporter in the Pericardium Free Port. Understand "stall" as the stall. The description is "A neutral factor's stall: wares from every circulation, priced in tokens. Three items are set out for travelers bound for the wastes, the shrine, or the dark courts."
+The stall is a scenery supporter in the Port Market. Understand "stall" as the stall. The description is "A neutral factor's stall: wares from every circulation, priced in tokens. Three items are set out for travelers bound for the wastes, the shrine, or the dark courts."
 
 The Aegis gauntlets are a plural-named wearable thing on the stall. Understand "gauntlets" and "aegis" and "gloves" as the Aegis gauntlets. The description is "Chelation-weave field gauntlets, AAA toxicology pattern. They bind and escort what they touch: mercury, lead, cadmium, heat. The catalog calls the art of chelation not warfare but hostage negotiation."
 
@@ -382,7 +405,7 @@ The cheese wheel is a thing in the offering bundle. Understand "cheese" and "whe
 
 The Pasteur vial is a thing on the stall. Understand "vial" and "pasteur" and "vaccine" as the Pasteur vial. The description is "A single-dose Pasteur-class field vaccine, attenuated virus in a steel-cased vial. The doctrine says: one man found a way to turn death into life. We carry his legacy in every vial."
 
-The Port Factor is a man in the Pericardium Free Port. "The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have held the stall since the Cradle Accords were younger than the AAA by centuries."
+The Port Factor is a man in the Port Market. "The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have held the stall since the Cradle Accords were younger than the AAA by centuries."
 
 Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$":
 	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, envoy - the Port Conclave enforces that one the old way.'"
@@ -441,7 +464,7 @@ Instead of asking the Port Factor about something:
 
 Part Four - The Void and the Celestial Corps
 
-The Void Verge is northwest of the Truce Barge. "The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up."
+The Void Verge is northwest of the Free Port Landing. "The last blood-warm air before the cold. Above you, in a silence like held breath, two vessels ride at anchor: the Dawn Pioneer, her hull ribbed like a dissected torso, and the great seven-chambered Fabrica beyond her. A boarding ladder goes up."
 
 The Dawn Pioneer Deck is above the Void Verge. "The deck of Leonardo's vessel smells of solvent and ether. The hull ribs arch overhead exactly like the torso it was drawn from. A captain's desk bears the famous mirror-script log; east, a pressurized gallery leads to the Fabrica's bridge. Leonardo himself leans over the rail, watching the blood-tide."
 
@@ -503,7 +526,7 @@ Instead of asking Bethune about something when the topic understood matches the 
 
 Part Five - The Wastes and the Heavy Metal Pantheon
 
-The Contaminated Wastes is west of the Truce Barge. "Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong."
+The Contaminated Wastes is west of the Free Port Landing. "Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong."
 
 The radium afterglow is scenery in the Contaminated Wastes. Understand "afterglow" and "glow" as the radium afterglow. The description is "Radium-226, half-life sixteen centuries. They painted it on their lips with their brushes, once. Everything that glows is burning, and everything that burns consumes."
 
@@ -557,7 +580,7 @@ Carry out deciphering:
 
 Part Six - The Reach and the Lab Martyrs
 
-The Siberian Reach is southwest of the Truce Barge. "Cold clean air, snowfields, and the long grey line of an institute against the sky. This is the country of the Novosibirsk memorial. Pilgrims come up the road even now, from every faction, leaving small offerings at the shrine ahead. Frost flowers the windows of the last station."
+The Siberian Reach is southwest of the Free Port Landing. "Cold clean air, snowfields, and the long grey line of an institute against the sky. This is the country of the Novosibirsk memorial. Pilgrims come up the road even now, from every faction, leaving small offerings at the shrine ahead. Frost flowers the windows of the last station."
 
 The Shrine of the Knitting Mouse is west of the Siberian Reach. "A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters."
 
@@ -613,7 +636,7 @@ Instead of giving something to Laika:
 
 Part Seven - The Concourse of the Unseen Crown
 
-The Dark Concourse is south of the Truce Barge. "Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED." The Truce Barge is northeast of the Dark Concourse.
+The Dark Concourse is south of the Free Port Landing. "Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED." The Free Port Landing is northeast of the Dark Concourse.
 
 The concourse directory is scenery in the Dark Concourse. Understand "doors" and "door" and "plates" and "directory" as the concourse directory. The description is "NORTH: Archaeology Division - the Seekers of Primordial Life. WEST: Abteilung Stille - the Department of Silence. EAST: Fear Technology - the Puppet Workshop. DOWN: the Pallidum Masquerade. SOUTH: the Castle Gate of the Undead Court. SOUTHEAST: the Abyssal Deck of the fleet."
 

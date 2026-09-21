@@ -1,9 +1,10 @@
 s
-choose TYPHI
+choose typhi
+ask registrar about destinations
 go to undead court
 look
 go to cradle
 look
-choose disease citadel
+go to nowhere
 quit
 yes
