@@ -13,13 +13,20 @@
   </item>
   <item nodeId="node-481">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Disease Citadel&#x000A;The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale doorman (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-647"/>
       <child nodeId="node-485"/>
       <child nodeId="node-482"/>
     </children>
+  </item>
+  <item nodeId="node-647">
+    <command xml:space="preserve">ask doorman about joining</command>
+    <result xml:space="preserve">The pale doorman bows, and his greatcoat smells of stone and dust. "The Court offers the first fear, envoy - older than your cities, older than your medicine. A bullet kills one soldier; a bite kills his squad. Join us and learn what the dark is for."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-485">
     <command xml:space="preserve">go to Undead Court</command>
