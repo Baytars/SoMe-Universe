@@ -1,7 +1,8 @@
 n
-ask bosun about joining
-ask bosun about demonstration
-choose vibrio
+ask supervisor about joining
+ask supervisor about secret
+ask supervisor about memetic
+choose fear-tech
 go to landing
 go to cradle
 ask preceptor about joining
