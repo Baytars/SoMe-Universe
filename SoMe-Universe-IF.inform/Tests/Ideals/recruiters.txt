@@ -13,9 +13,13 @@ You are in the Singularity. The universe is beginning to explode.
 
 Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
 
->You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each, a recruiter stands ready to make the case for their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS.
+>You have walked into the Unseen Crown's domain. Six banners crown the dark hall - and under each one waits a recruiter, watching you with the patience of their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE.
 
->The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.
+>The bosun drums the tide-rhythm on the railing. "Water is life, envoy, and water is death - we hold both ends of that rope. Join the Legion, and the flood goes where you point it."
+
+>He lifts one boot; the deck beneath it is dry as bone, and his boot is not. "A secret: eight rings, eight crews, and no survivors from the first seven. The Legion does not count losses. It counts waterline."
+
+>The Octopus Admiral waves one greased sleeve at the floodable deck. "Water is life, water is death," she says. "Take the water away and we are a museum exhibit - so we never let it be taken." You swear to the Abyssal Legion.
 
 
 The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
@@ -42,7 +46,23 @@ Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
->"From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its five doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Abyssal Fleet. Say GO TO and a name," she says. "The concordance does the walking."
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+
+>You can't see any such thing.
+
+>You can't see any such thing.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -57,25 +77,6 @@ The Bucharest Bride stands where the gallery light ends, which is a professional
 
 The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
 
->Blood Court
-The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
-
-Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
-
-The Budapest Bride watches the stair, unhurried.
-
-The Bucharest Bride stands where the gallery light ends, which is a professional habit.
-
-The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
-
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
-
->Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
-
->The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
+>You can't see any such thing.
 
 >Are you sure you want to quit? 

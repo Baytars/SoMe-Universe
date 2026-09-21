@@ -33,10 +33,10 @@ The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrin
 The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet."
 
 After going to the Disease Citadel for the first time:
-	say "You have walked into the Unseen Crown's domain. Here six banners stand planted in the dark, one for each patron who will take a sworn envoy:[paragraph break]      [bold type]the Abyssal Legion[roman type] - the cholera fleet, water as weapon (CHOOSE VIBRIO)[line break]      [bold type]the Undead Court[roman type] - the vampire court of rabies (CHOOSE DRACULA)[line break]      [bold type]Fear Technology[roman type] - the puppet workshop of weaponized dread (CHOOSE FEAR)[line break]      [bold type]the Archaeology Division[roman type] - seekers of primordial life (CHOOSE ARCHAEOLOGY)[line break]      [bold type]the Pale Masquerade[roman type] - syphilis, the Great Imitator (CHOOSE PALLIDUM)[line break]      [bold type]the Department of Silence[roman type] - the silent infiltrators (CHOOSE STILLE)[paragraph break]Choose one to begin your journey - type its command, like [bold type]CHOOSE VIBRIO[roman type]. The Hall of Medicine, south of the Singularity, holds four more banners if none of these suits you."
+	say "You have walked into the Unseen Crown's domain. Six banners crown the dark hall - and under each one waits a recruiter, watching you with the patience of their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE."
 
 After going to the Hall of Medicine for the first time:
-	say "You have walked into the Hall of Medicine, where the healing powers of the Athena Aegis Accord keep their banners:[paragraph break]      [bold type]the Cradle of Aukin[roman type] - the immune academy that teaches self from foreign (CHOOSE CRADLE)[line break]      [bold type]the Celestial Corps[roman type] - anatomist-astronauts, mappers of the body-cosmos (CHOOSE CELESTIAL)[line break]      [bold type]the Heavy Metal Pantheon[roman type] - atomic ancients, too old to die (CHOOSE PANTHEON)[line break]      [bold type]the Lab Martyrs[roman type] - the sacrificed pioneers of experiment (CHOOSE MARTYRS)[paragraph break]Choose one to begin your journey - type its command, like [bold type]CHOOSE CRADLE[roman type]. The Disease Citadel, north of the Singularity, flies six more banners if none of these suits you."
+	say "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each, a recruiter stands ready to make the case for their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS."
 
 
 
@@ -897,3 +897,102 @@ Instead of going nowhere:
 	say "There is no way through in that direction - the body-cosmos keeps its own borders."
 
 
+
+Chapter - The Recruiters
+
+[One recruiter per faction stands under its banner at the two gates. Each has
+a recruiting pitch, a private secret (the faction's easter egg), and answers
+to common questions. Asking about joining gives the pitch; choose <faction>
+swears on the spot.]
+
+The Cradle Recruiter is a man in the Hall of Medicine. "Under the Cradle's banner stands a medullary preceptor in bone-white grey, a honey-gold flame swaying at his shoulder." The description is "A preceptor of the Cradle, seconded to the gates. His flame is the color of self-recognition; his manners, the patience of someone who has taught ten thousand cadets to tell friend from foe." Understand "preceptor" and "medullary" as the Cradle Recruiter.
+
+The Celestial Recruiter is a man in the Hall of Medicine. "Under the Celestial Corps' banner waits a broad-shouldered navigator with star-charts rolled under one arm and wax under his fingernails." The description is "A fleet navigator of the Celestial Corps. He talks like a man who has sailed the aorta and named the Liver-Moon; his coat is embroidered with the four chambers of the heart." Understand "navigator" and "fleet navigator" as the Celestial Recruiter.
+
+The Pantheon Recruiter is a man in the Hall of Medicine. "Under the Pantheon's banner stands a figure of quicksilver calm in lead-grey, a glass ampoule of liquid metal strung at his throat." The description is "An element-priest of the Heavy Metal Pantheon. Half his face carries a mercury sheen; the other half is patient as radiological decay." Understand "element" and "priest" and "quicksilver" as the Pantheon Recruiter.
+
+The Martyrs Recruiter is a woman in the Hall of Medicine. "Under the Lab Martyrs' shrine a quiet woman in a knit sweater tends a small bronze mouse, a dog-eared photograph, and a slide of immortal cells." The description is "A keeper of the Shrine of the Lab Martyrs. She speaks softly, in the register of someone who keeps the names of the sacrificed, all of them, all the way back." Understand "keeper" and "quiet woman" as the Martyrs Recruiter.
+
+The Archaeology Recruiter is a woman in the Disease Citadel. "Under the Archaeology Division's banner a dust-caked woman in a thermal veil checks a soil probe that steams gently at its tip." The description is "A field archaeologist of the Umin Archaeology Division. Her veil is stitched with the motto of her order: IN THE BEGINNING, THERE WAS SULFUR." Understand "archaeologist" and "field archaeologist" as the Archaeology Recruiter.
+
+The Fear Recruiter is a woman in the Disease Citadel. "Under Fear Technology's banner stands a composed woman with a tablet, a drone circling her shoulder like a tame wasp." The description is "A recruiter from the Fear Technology Division. Her expression never changes; the drone's shadow, somehow, always falls across your eyes." Understand "drone" and "composed woman" as the Fear Recruiter.
+
+The Pallidum Recruiter is a woman in the Disease Citadel. "Under the Pale Masquerade's banner a masked figure in a porcelain half-mask turns a silk glove inside out, considering you." The description is "An emissary of the Great Imitator. The mask is flawless; the spiral at its temple is the only honest thing about her." Understand "emissary" and "masked figure" as the Pallidum Recruiter.
+
+The Rabies Recruiter is a man in the Disease Citadel. "Under the Undead Court's banner a pale doorman in a Transylvanian greatcoat counts new guests with a lip-licking diligence." The description is "The Court's recruiting doorman. He is professionally deferential and personally hungry, and he will tell you which of those you should worry about." Understand "doorman" and "pale doorman" and "greatcoat" as the Rabies Recruiter.
+
+The Stille Recruiter is a woman in the Disease Citadel. "Under the Department of Silence's banner sits an unremarkable woman at an unremarkable desk, stamping gall-coloured wax in a rhythm you keep almost noticing." The description is "A personnel officer of Abteilung Stille. Nothing about her stands out, which is, of course, the point; her stamp falls like a metronome for silence itself." Understand "personnel" and "officer" as the Stille Recruiter.
+
+The Vibrio Recruiter is a man in the Disease Citadel. "Under the Abyssal Legion's banner a salt-caked bosun with eight brass rings on one sleeve drummed a tide-rhythm on the railing." The description is "A bosun of the Abyssal Legion. His rings mark eight hydro-cannon crews he has sailed with; his boots are always wet, though the hall is bone-dry." Understand "bosun" and "salt-caked" as the Vibrio Recruiter.
+
+
+
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The preceptor lets the flame sway toward you. 'The Cradle teaches the one lesson every army otherwise learns too late: what is self. Join us, and you will never be fooled by anything wearing a friendly face.'";
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^secret|flame|aire$":
+	say "He banks the flame low. 'A secret, then: the AIRE flame burns a fortnight-equivalent and dies. Every preceptor you will ever meet is on their last fortnight. We are an academy of ghosts, teaching by relay.'";
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^vasud|doppelganger|scandal$":
+	say "'You have heard of the Chair that was fooled,' he says quietly. 'A graduate's face, a false self, and the Chair of Foreign Selves opened his own door. We do not hide the story. It is on the syllabus now.'";
+
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The navigator unrolls a chart across both hands. 'The body is the cosmos, envoy. Blood is an ocean with a tide; the heart, a four-chambered sun. We do not fight the war - we map it. Join us and your name outlives the fighting.'";
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^secret|chart|liver|moon$":
+	say "He taps the Liver-Moon with one finger. 'A secret: the old masters drew the soul at the heart. Wrong, and we have known since the seventh voyage - but the chart sells better with a heart on it. We keep the error for the tourists.'";
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^vesalius|leonardo|harvey$":
+	say "'Leonardo wrote mirror-script so the unworthy could not read it,' he says. 'Vesalius corrected two hundred errors and died for one of them. Harvey measured the tide. We stand on dead men's shoulders and call it a fleet.'";
+
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The priest lets the ampoule catch the light. 'We were here before the first cell. We will remain after the last. You cannot destroy an element, envoy - you can only hope to contain it. Join us, and learn containment from the inside.'";
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^secret|lucifer|radium|girls$":
+	say "His voice drops to a bead-of-metal whisper. 'A secret: the Radium Girls are not our servants. They are our honored dead, and the gods keep their names. Fear is the beginning of respect. Their deaths taught your kind to fear us. We have not forgotten who taught whom.'";
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^mercury|chelation|contain$":
+	say "'Chelation,' he says, with something like admiration. 'Bind me, trap me, escort me out. The Accord calls it hostage negotiation. We call it the only honest prayer anyone ever addressed to an element.'";
+
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The keeper does not look up from the bronze mouse. 'They asked for nothing. They gave everything. If you join us, you will spend your war remembering that there are soldiers on every side of this conflict who were never asked.'";
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^secret|hela|laika|mouse|knitting$":
+	say "'A secret,' she says, and her voice warms by one degree. 'The helix the mouse knits is left-handed - Z-DNA, the still-unknown strand. The sculptor put glasses on it because the mouse had already come up with something. Look closely at any sacrifice. It is always already thinking.'";
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^laika|protocol|mercy$":
+	say "'When a subject faces an unbearable fate, they may invoke Laika's name,' she says. 'She cannot save them - she knows that better than anyone. But she grants the grace of a painless end. That is the whole of her protocol. It is enough.'";
+
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The archaeologist thumbs her steaming probe. 'Archaea are the original Umin. We are not inventing, envoy - we are remembering. Join the Division and dig where the war was first invented: the vents, the salt, the anaerobic dark.'";
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^secret|sulfur|beginning$":
+	say "She smiles for the first time. 'A secret: your AAA destroys our dig sites and calls it containment. But you cannot destroy a memory. Every site they level, we find twice as well the next time. The ancestors are patient. So are we.'";
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^aaa|accord|rival$":
+	say "'Your Accord calls the ancestors uncontrollable forces,' she says, level as a drill core. 'We call that a confession: they would rather the deep stay silent than learn what it says.'";
+
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The Director's drone tilts its shadow across your face. 'The mind that fears cannot think. The population that panics cannot resist. Join us, and you will never again be on the wrong end of a rumor.'";
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^secret|drone|shadow$":
+	say "For exactly one second, the drone's shadow takes the shape of something from your worst childhood story. 'A secret,' she says, not looking up. 'The constructs do not scare anyone. The uncertainty does. We manufacture nothing but doubt - it is the only product with a growth market.'";
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^moonstar|mutant|protocol$":
+	say "'A mutant once manifested fear in three dimensions,' she says. 'We asked the obvious question: what if technology could do it? Psionics became data-mining. The rest is organizational chart.'";
+
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The masked figure finishes turning the silk glove. 'We do not conquer, envoy. We are invited. The Great Imitator wears a thousand faces, and every one of them is beautiful. Join the Masquerade and never be diagnosed again.'";
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^secret|mask|face|beautiful$":
+	say "She tilts the porcelain forward, just enough. 'A secret: beneath the mask there is nothing. No face at all. The spiral temple is the true one. We are the only honest court in the Citadel - our mask tells you exactly what we are.'";
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^osler|diagnosis|imitator$":
+	say "'Osler said: know syphilis in all its manifestations, and all things clinical will be added unto you,' she says, pleased. 'Thirty to forty percent of our audiences misdiagnose us to the end. The Admiral of Diagnostics keeps losing the game he named.'";
+
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The pale doorman bows, and his greatcoat smells of stone and dust. 'The Court offers the first fear, envoy - older than your cities, older than your medicine. A bullet kills one soldier; a bite kills his squad. Join us and learn what the dark is for.'";
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^secret|count|bride|hungry$":
+	say "He glances at his own teeth in a polished plate. 'A secret: every operative of the Court is already dead. We are simply fighting while dying. The Count calls it the only honest enlistment contract in the Crown.'";
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^light|water|bite$":
+	say "'Three fears,' he counts on pale fingers. 'Light, water, the bite. Everything else your species is afraid of is a variation with worse press.'";
+
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The personnel officer stamps a folder without looking up. 'The perfect spy does not know she is a spy. The perfect impostor was never suspected. Join the Silence, and you will learn the one trade that never runs out of work: being someone else.'";
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^secret|stamp|wax|rhythm$":
+	say "The stamp pauses, mid-fall. 'A secret: you have been counting my rhythm since you walked in. Most minds do. It is how we find the ones who notice patterns - the only ones we hire.'";
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^mary|doppelganger|yukio|alpsox$":
+	say "'You know the MARY project,' she says, with the closest thing to warmth. 'Sixty-eight days wearing a Chief Medical Advisor, and the man who taught her template to spot fakes opened his own door. The disguise is never the weapon, envoy. The welcome is.'";
+
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+	say "The bosun drums the tide-rhythm on the railing. 'Water is life, envoy, and water is death - we hold both ends of that rope. Join the Legion, and the flood goes where you point it.'";
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^secret|rings|boot|wet$":
+	say "He lifts one boot; the deck beneath it is dry as bone, and his boot is not. 'A secret: eight rings, eight crews, and no survivors from the first seven. The Legion does not count losses. It counts waterline.'";
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^chlorine|weakness|drain$":
+	say "'Heat cooks us. Chlorine unmakes our hide. Take the water away and we are a museum exhibit,' he says, cheerfully. 'So we never let the water be taken. Doctrine and honesty can share a fleet.'";
