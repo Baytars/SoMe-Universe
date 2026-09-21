@@ -1,0 +1,10 @@
+s
+choose typhi
+go to undead court
+look
+go to cradle
+look
+go to nowhere-xyz
+n
+quit
+yes

@@ -1,0 +1,92 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
+Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
+
+>
+Hall of Medicine
+In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Four shrine-niches face the gate; examine them, or - once sworn - GO TO any hall.
+
+>The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.
+
+
+The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
+An Accord manifest appears in your satchel.
+(Type BANNERS at any time to review the campaign.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Truce Barge
+A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+
+>*** Regular expression error: regexp too complex ***
+
+*** Run-time problem P51: Syntax error in regular expression.
+
+The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
+
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
+
+The Budapest Bride watches the stair, unhurried.
+
+The Bucharest Bride stands where the gallery light ends, which is a professional habit.
+
+The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
+
+>Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
+
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
+
+The Budapest Bride watches the stair, unhurried.
+
+The Bucharest Bride stands where the gallery light ends, which is a professional habit.
+
+The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
+
+>*** Regular expression error: regexp too complex ***
+
+*** Run-time problem P51: Syntax error in regular expression.
+
+The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+
+>Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+
+>*** Regular expression error: regexp too complex ***
+
+*** Run-time problem P51: Syntax error in regular expression.
+
+The concordance charts only the barge and the banners" halls. Destinations: BARGE, PORT, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
+
+>
+Cradle Inner Court
+The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors.
+
+Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood.
+
+The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE flame as if warming it by habit.
+
+>Are you sure you want to quit? 

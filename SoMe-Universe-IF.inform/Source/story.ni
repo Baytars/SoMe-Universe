@@ -28,7 +28,7 @@ Instead of going to the Singularity:
 After looking in the Singularity for the first time:
 	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war."
 
-The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs."
+The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Four shrine-niches face the gate; examine them, or - once sworn - GO TO any hall."
 
 The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet."
 
@@ -104,6 +104,72 @@ When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
 	move the player to the Truce Barge.
 
+Chapter - The Concordance
+
+[The Accord manifest doubles as a travel charter: a sworn envoy may GO TO any
+charted hall of the war. Room aliases cover every name the gate descriptions
+and porcelain plates use.]
+
+A room has some text called the concordance name. The concordance name of a room is usually "".
+
+The concordance name of the Truce Barge is "barge|truce barge|home".
+The concordance name of the Pericardium Free Port is "port|free port|pericardium".
+The concordance name of the Cradle Outer Court is "cradle|medulla|aukin".
+The concordance name of the Fabrica Bridge is "celestial corps|fabrica|bridge".
+The concordance name of the Black Cathedral is "pantheon|heavy metal|cathedral".
+The concordance name of the Shrine of the Knitting Mouse is "martyrs|lab martyrs|shrine|novosibirsk".
+The concordance name of the Dark Concourse is "concourse|umin".
+The concordance name of the Sulfur Vent Gallery is "archaeology|archaeology division|sulfur vent".
+The concordance name of the Abteilung Stille Office is "typhi|stille|silence|department of silence".
+The concordance name of the Puppet Workshop is "fear technology|fear tech|puppet workshop|workshop".
+The concordance name of the Masquerade Ballroom is "masquerade|ballroom|pale masquerade".
+The concordance name of the Blood Court is "undead court|blood court|undead".
+The concordance name of the Castle Gate is "castle|castle gate".
+The concordance name of the Abyssal Deck is "abyssal fleet|abyss|abyssal deck".
+
+Warping to is an action applying to one topic.
+Understand "go to [text]" as warping to.
+Understand "goto [text]" as warping to.
+Understand "travel to [text]" as warping to.
+
+Check warping to:
+	if the player's patron is unsworn:
+		say "The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel." instead.
+
+Carry out warping to:
+	if the topic understood matches the regular expression "^(north|south|east|west|northeast|northwest|southeast|southwest|up|down|in|out|inside|outside)$":
+		say "For walking, just type the direction itself.";
+		rule succeeds;
+	repeat with destination running through rooms:
+		if the concordance name of destination is not "":
+			if the topic understood matches the regular expression "^([concordance name of destination])$":
+				say "The manifest takes your word, and the concordance carries you along the great vessels of the war.";
+				move the player to the destination;
+				rule succeeds;
+	say "The concordance charts only the barge and the banners' halls. Destinations: BARGE, PORT, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
+
+The five Umin doors are scenery in the Disease Citadel. The printed name is "five doors". Understand "doors" and "five doors" and "porcelain plates" and "plates" as the five Umin doors. The description is "Five doors on the dark, each named on a porcelain plate: ARCHAEOLOGY. FEAR TECHNOLOGY. THE PALE MASQUERADE. THE UNDEAD COURT. THE ABYSSAL FLEET. Examine any door - and once sworn, the concordance will carry you through: GO TO its faction."
+
+The archaea door is scenery in the Disease Citadel. The printed name is "Archaeology door". Understand "archaeology" and "archaeology door" and "archaea" and "sulfolobus door" as the archaea door. The description is "Porcelain plate: ARCHAEOLOGY DIVISION, THE SEEKERS OF PRIMORDIAL LIFE. Through the gap: mineral heat, sample racks, and the tiled motto IN THE BEGINNING, THERE WAS SULFUR. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO ARCHAEOLOGY.[end if]"
+
+The fear door is scenery in the Disease Citadel. The printed name is "Fear Technology door". Understand "fear" and "fear technology" and "fear technology door" and "puppet door" as the fear door. The description is "Porcelain plate: FEAR TECHNOLOGY, THE PUPPET WORKSHOP. Through the gap: cold white light, animatronic frames in crates marked CULTURAL SPECIFIC, and a low drone under hearing. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO FEAR TECHNOLOGY.[end if]"
+
+The masquerade door is scenery in the Disease Citadel. The printed name is "Pale Masquerade door". Understand "pale masquerade" and "masquerade door" and "masquerade" as the masquerade door. The description is "Porcelain plate: THE PALE MASQUERADE. Through the gap: candlelight, water-music, a pavane one beat behind itself. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO MASQUERADE.[end if]"
+
+The undead door is scenery in the Disease Citadel. The printed name is "Undead Court door". Understand "undead" and "undead court" and "undead door" and "castle door" as the undead door. The description is "Porcelain plate: THE UNDEAD COURT. Through the gap: a gatehouse of imported Transylvanian stone, a humidity gauge at fifteen percent, and a doorman who counts guests twice. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO UNDEAD COURT.[end if]"
+
+The abyssal door is scenery in the Disease Citadel. The printed name is "Abyssal Fleet door". Understand "abyssal" and "abyssal fleet" and "abyssal door" and "fleet door" as the abyssal door. The description is "Porcelain plate: THE ABYSSAL FLEET. Through the gap: sodium light on a floodable deck and the shape of the Cholera Octopus at anchor. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO ABYSSAL FLEET.[end if]"
+
+The four Accord shrines are scenery in the Hall of Medicine. The printed name is "four shrines". Understand "shrines" and "four shrines" and "shrine niches" and "niches" as the four Accord shrines. The description is "Four shrine-niches face the gate, one for each sworn power of the Accord: THE CRADLE OF AUKIN. THE CELESTIAL CORPS. THE HEAVY METAL PANTHEON. THE LAB MARTYRS. Examine any shrine - and once sworn, the concordance will carry you through: GO TO its hall."
+
+The cradle shrine is scenery in the Hall of Medicine. The printed name is "Cradle shrine". Understand "cradle shrine" and "shrine of aukin" as the cradle shrine. The description is "A niche of whitewashed cloister-stone. The inscription: ALL ARMIES ARE BORN IN STILLNESS. TEACH THE CELL BEFORE THE BATTLE TEACHES IT. [if the player's patron is unsworn]The niche is dark until an oath lights it.[otherwise]The concordance will carry you: GO TO CRADLE.[end if]"
+
+The celestial shrine is scenery in the Hall of Medicine. The printed name is "Celestial shrine". Understand "celestial shrine" and "celestial" and "corps shrine" as the celestial shrine. The description is "A niche hung with the Vesalius Map: the cosmos drawn as a giant human body. The inscription: AS ABOVE, SO BELOW. [if the player's patron is unsworn]The niche is dark until an oath lights it.[otherwise]The concordance will carry you: GO TO CELESTIAL CORPS.[end if]"
+
+The pantheon shrine is scenery in the Hall of Medicine. The printed name is "Pantheon shrine". Understand "pantheon shrine" and "pantheon" and "metal shrine" as the pantheon shrine. The description is "A niche of vitrified glass and old lead. The inscription: YOU CANNOT DESTROY AN ELEMENT - YOU CAN ONLY HOPE TO CONTAIN IT. [if the player's patron is unsworn]The niche is dark until an oath lights it.[otherwise]The concordance will carry you: GO TO PANTHEON.[end if]"
+
+The martyrs shrine is scenery in the Hall of Medicine. The printed name is "Martyrs shrine". Understand "martyrs shrine" and "martyr shrine" as the martyrs shrine. The description is "A niche holding a bronze mouse in pince-nez, a small dog's collar, and a slide of immortal cells. The inscription: THEY ASKED FOR NOTHING. THEY GAVE EVERYTHING. [if the player's patron is unsworn]The niche is dark until an oath lights it.[otherwise]The concordance will carry you: GO TO MARTYRS.[end if]"
+
 
 Part One - Seals and Bookkeeping
 
@@ -176,7 +242,7 @@ Understand "about" or "credits" or "help" as abouting.
 Carry out abouting:
 	say "SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project.
 You are an envoy of the Athena Aegis Accord. Visit all ten factions, win each one's seal, and report to the Registrar on the Truce Barge.
-Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Pericardium Free Port, WEAR and REMOVE clothing.
+Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Pericardium Free Port, WEAR and REMOVE clothing.
 Every faction is reachable from the Truce Barge: north, northwest, west, southwest, and south (Umin territory, five doors).
 Built with Inform 7. Setting and factions by the SoMe-Universe contributors."
 

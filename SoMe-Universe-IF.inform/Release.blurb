@@ -1,20 +1,20 @@
 ! Blurb file created by Inform Inform 10.1.2 (build )
 
-status "D:\programs\Inform_10_1_2_Windows\Internal\HTML\CblorbModel.html" "D:\projects\inform\SoMe-Universe-IF.inform\Build\StatusCblorb.html"
+status "C:\Program Files\Inform\Internal\HTML\CblorbModel.html" "D:\projects\inform\SoMe-Universe\SoMe-Universe-IF.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "D:\projects\inform\SoMe-Universe-IF.inform"
-release to "D:\projects\inform\SoMe-Universe-IF.materials\Release"
+project folder "D:\projects\inform\SoMe-Universe\SoMe-Universe-IF.inform"
+release to "D:\projects\inform\SoMe-Universe\SoMe-Universe-IF.materials\Release"
 
 ! Blorb instructions
 
 storyfile leafname "SoMe-Universe: The Ten Banners.gblorb"
-storyfile "D:\projects\inform\SoMe-Universe-IF.inform\Build\output.ulx" include
-ifiction "D:\projects\inform\SoMe-Universe-IF.inform\Metadata.iFiction" include
-cover "D:\programs\Inform_10_1_2_Windows\Internal\Miscellany\DefaultCover.jpg"
-picture 1 "D:\programs\Inform_10_1_2_Windows\Internal\Miscellany\DefaultCover.jpg"
+storyfile "D:\projects\inform\SoMe-Universe\SoMe-Universe-IF.inform\Build\output.ulx" include
+ifiction "D:\projects\inform\SoMe-Universe\SoMe-Universe-IF.inform\Metadata.iFiction" include
+cover "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
+picture 1 "C:\Program Files\Inform\Internal\Miscellany\DefaultCover.jpg"
 
 ! Placeholder variables
 
