@@ -11,14 +11,14 @@
             <headline>A diplomatic circuit through the Saga of Medicine</headline>
             <genre>Science Fiction</genre>
             <firstpublished>2026</firstpublished>
-            <description>Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards on the Truce Barge.</description>
+            <description>Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards at the Pericardium Free Port.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2026-09-21</releasedate>
+                    <releasedate>2026-09-22</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>Inform 10.1.2 (build )</compilerversion>
@@ -28,10 +28,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>Inform 10.1.2 (build )</generatorversion>
-            <originated>2026-09-21</originated>
+            <originated>2026-09-22</originated>
         </colophon>
         <glulx>
-            <serial>260921</serial>
+            <serial>260922</serial>
             <release>1</release>
             <compiler>Inform Inform 10.1.2 (build )</compiler>
         </glulx>

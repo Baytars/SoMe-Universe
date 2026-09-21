@@ -17,8 +17,105 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-485"/>
       <child nodeId="node-482"/>
     </children>
+  </item>
+  <item nodeId="node-485">
+    <command xml:space="preserve">go to Undead Court</command>
+    <result xml:space="preserve">The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-486"/>
+    </children>
+  </item>
+  <item nodeId="node-486">
+    <command xml:space="preserve">choose Undead Court</command>
+    <result xml:space="preserve">No such patron answers - spelling is flexible, capitalization is not checked, but the name must be one of the ten. Try CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS, CHOOSE ARCHAEOLOGY, CHOOSE FEAR, CHOOSE PALLIDUM, CHOOSE DRACULA, CHOOSE MARY, or CHOOSE VIBRIO.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-487"/>
+    </children>
+  </item>
+  <item nodeId="node-487">
+    <command xml:space="preserve">choose Typhi</command>
+    <result xml:space="preserve">The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.&#x000A;&#x000A;&#x000A;The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.&#x000A;An Accord manifest appears in your satchel.&#x000A;(Type BANNERS at any time to review the campaign.)&#x000A;&#x000A;The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.&#x000A;&#x000A;The circuit of the Ten Banners begins.&#x000A;&#x000A;Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-488"/>
+    </children>
+  </item>
+  <item nodeId="node-488">
+    <command xml:space="preserve">x Registrar</command>
+    <result xml:space="preserve">A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-489"/>
+    </children>
+  </item>
+  <item nodeId="node-489">
+    <command xml:space="preserve">talk to Registrar</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-490"/>
+    </children>
+  </item>
+  <item nodeId="node-490">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">White Rib Gate&#x000A;The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-491"/>
+    </children>
+  </item>
+  <item nodeId="node-491">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-492"/>
+    </children>
+  </item>
+  <item nodeId="node-492">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Contaminated Wastes&#x000A;Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-493"/>
+    </children>
+  </item>
+  <item nodeId="node-493">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-494"/>
+    </children>
+  </item>
+  <item nodeId="node-494">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">There is no way through in that direction - the body-cosmos keeps its own borders.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-495"/>
+    </children>
+  </item>
+  <item nodeId="node-495">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Dark Concourse&#x000A;Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-482">
     <command xml:space="preserve">go to undead court</command>

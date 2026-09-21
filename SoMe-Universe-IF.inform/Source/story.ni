@@ -28,9 +28,20 @@ Instead of going to the Singularity:
 After looking in the Singularity for the first time:
 	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war."
 
-The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Four shrine-niches face the gate; examine them, or - once sworn - GO TO any hall."
+The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Four shrine-niches face the gate."
 
 The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet."
+
+After going to the Disease Citadel for the first time:
+	say "[bold type]HOW TO BEGIN[roman type]: six patrons hold court here. Pick one by name, e.g.:[line break]      CHOOSE VIBRIO      or      CHOOSE DRACULA      or      CHOOSE FEAR[line break](Also valid: CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, CHOOSE MARY. Capitalization does not matter. To see the other gate's four patrons: GO SOUTH.)"
+
+After going to the Hall of Medicine for the first time:
+	say "[bold type]HOW TO BEGIN[roman type]: four patrons hold vigil here. Pick one by name, e.g.:[line break]      CHOOSE CRADLE      or      CHOOSE CELESTIAL      or      CHOOSE PANTHEON      or      CHOOSE MARTYRS[line break](To see the Citadel's six patrons: GO NORTH.)"
+
+
+
+After looking in the Singularity for the first time:
+	say "[bold type]HOW TO WALK[roman type]: the two gates are SOUTH (Hall of Medicine) and NORTH (Disease Citadel). Type a direction on its own - like [bold type]N[roman type] - to walk through it."
 
 Chapter - The Patron Choice
 
@@ -49,8 +60,11 @@ Check choosing a patron:
 Carry out choosing a patron:
 	let choice be the topic understood;
 	let lowered be "[choice]" in lower case;
-	if the lowered matches the regular expression "^(citadel|disease citadel|hall|medicine|hall of medicine)$":
-		say "Those are the two gates, not a patron. The Citadel hosts six patrons (Archaeology, Fear Technology, Pallidum, Rabies, Typhi, Vibrio); the Hall hosts four (Cradle, Celestial Corps, Pantheon, Martyrs). Choose one of the ten.";
+	if the lowered matches the regular expression "^(citadel|disease citadel)$":
+		say "That is this gate's name, not a patron. Pick one of its six: [bold type]CHOOSE VIBRIO[roman type], CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE MARY.";
+		rule succeeds;
+	if the lowered matches the regular expression "^(hall|medicine|hall of medicine)$":
+		say "That is the other gate's name, not a patron. Its four are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
 		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
@@ -83,7 +97,10 @@ Carry out choosing a patron:
 		say "The Octopus Admiral waves one greased sleeve at the floodable deck. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken.' You swear to the Abyssal Legion.";
 		now the player's patron is vibrio;
 	otherwise:
-		say "No such patron answers - spelling is flexible, capitalization is not checked, but the name must be one of the ten. Try CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS, CHOOSE ARCHAEOLOGY, CHOOSE FEAR, CHOOSE PALLIDUM, CHOOSE DRACULA, CHOOSE MARY, or CHOOSE VIBRIO." instead.
+		if the location is the Disease Citadel:
+			say "No patron by that name. From this gate, the working commands are: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, CHOOSE MARY." instead;
+		otherwise:
+			say "No patron by that name. From this gate, the working commands are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or the Citadel's six across the way: VIBRIO, DRACULA, FEAR, ARCHAEOLOGY, PALLIDUM, MARY." instead.
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
@@ -106,7 +123,9 @@ Prologue-end is a scene. Prologue-end begins when the player's patron is not uns
 
 When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
-	move the player to the Free Port Landing.
+	move the player to the Free Port Landing;
+	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK REGISTRAR ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
+	say "[line break][bold type]HOW TO WALK[roman type]: directions still work where roads exist - type [bold type]N[roman type] / [bold type]S[roman type] / and so on to walk a real road instead of using the concordance."
 
 Chapter - The Concordance
 
@@ -139,7 +158,12 @@ Understand "travel to [text]" as warping to.
 
 Check warping to:
 	if the player's patron is unsworn:
-		say "The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel." instead.
+		if the location is the Disease Citadel:
+			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: [bold type]CHOOSE VIBRIO[roman type] (or CHOOSE DRACULA / FEAR / ARCHAEOLOGY / PALLIDUM / MARY). The Hall of Medicine to the south holds four more." instead;
+		otherwise if the location is the Hall of Medicine:
+			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: [bold type]CHOOSE CRADLE[roman type] (or CHOOSE CELESTIAL / PANTHEON / MARTYRS). The Disease Citadel to the north holds six more." instead;
+		otherwise:
+			say "Not yet - the concordance serves sworn envoys only. Walk back to a gate (GO SOUTH from the Singularity) and CHOOSE a patron." instead.
 
 Carry out warping to:
 	let dir-topic be "[the topic understood]" in lower case;

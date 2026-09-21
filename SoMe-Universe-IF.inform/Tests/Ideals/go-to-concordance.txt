@@ -13,9 +13,9 @@ You are in the Singularity. The universe is beginning to explode.
 
 Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
 
->
-Hall of Medicine
-In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Four shrine-niches face the gate; examine them, or - once sworn - GO TO any hall.
+>HOW TO BEGIN: four patrons hold vigil here. Pick one by name, e.g.:
+      CHOOSE CRADLE      or      CHOOSE CELESTIAL      or      CHOOSE PANTHEON      or      CHOOSE MARTYRS
+(To see the Citadel's six patrons: GO NORTH.)
 
 >The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.
 
@@ -34,6 +34,15 @@ The landing stage of the Pericardium Free Port, the one place the war may not to
 On the chart table is a Rationality Protocol pamphlet.
 
 The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK REGISTRAR ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
 >"From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its five doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Abyssal Fleet. Say GO TO and a name," she says. "The concordance does the walking."
 
