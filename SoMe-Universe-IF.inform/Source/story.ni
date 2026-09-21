@@ -12,6 +12,99 @@ The story description is "Ten powers divide the body-cosmos of Planet Homo Sapie
 Use scoring.
 The maximum score is 10.
 
+
+Part Zero - The Singularity Prologue
+
+[Continued from the original "SoMe" demo by Baytars: the universe begins in a
+Singularity, and the newborn cosmos offers two gates - the Hall of Medicine and
+the Disease Citadel. In this chronicle the prologue ends with the choice of a
+patron faction, which grants the envoy's opening banner-stance.]
+
+The Singularity is a room. "[if visited]After the Big Bang, the Singularity no more exists.[otherwise]You are in the Singularity. The universe is beginning to explode."
+
+Instead of going to the Singularity:
+	say "After the Big Bang, the Singularity no more exists."
+
+After looking in the Singularity for the first time:
+	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war."
+
+The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs."
+
+The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet."
+
+Chapter - The Patron Choice
+
+A patron is a kind of value. The patrons are unsworn, cradle, celestial, pantheon, martyrs, archaeology, fear-tech, pallidum, rabies, typhi and vibrio.
+
+The player's patron is a patron that varies. The player's patron is usually unsworn.
+
+Choosing a patron is an action applying to one topic. Understand "choose [text]" or "serve [text]" or "patron [text]" as choosing a patron.
+
+Check choosing a patron:
+	if the player's patron is not unsworn:
+		say "You have already sworn to a patron." instead;
+	if the location is not the Hall of Medicine and the location is not the Disease Citadel:
+		say "The swearing is done at the two gates: the Hall of Medicine or the Disease Citadel." instead.
+
+Carry out choosing a patron:
+	let choice be the topic understood;
+	if the choice matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
+		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
+		now the player's patron is cradle;
+	otherwise if the choice matches the regular expression "^(celestial|corps|vesalius|leonardo|harvey)( or .*)?$":
+		say "Vesalius strikes the cardiac error from his own hanging map in salute. 'Never navigate by ancient maps,' he says. 'We will teach you to draw the true ones.' You swear to the Celestial Corps.";
+		now the player's patron is celestial;
+	otherwise if the choice matches the regular expression "^(pantheon|metal|lucifer|mercury|radium)( or .*)?$":
+		say "The Morning Star inclines his dripping crown. 'You cannot destroy an element,' Lucifer says. 'You can only hope to contain it. Learn containment, and you will never fear the dark chemistry.' You swear to the Heavy Metal Pantheon.";
+		now the player's patron is pantheon;
+	otherwise if the choice matches the regular expression "^(martyrs|shrine|hela|laika|mouse)( or .*)?$":
+		say "HeLa's luminosity brightens by one candle's worth; Laika's ghost-shape circles once. 'They asked for nothing,' HeLa says. 'You asked to serve. That is the difference.' You swear to the Lab Martyrs.";
+		now the player's patron is martyrs;
+	otherwise if the choice matches the regular expression "^(archaeology|sulfur|archaea|ancestor)( or .*)?$":
+		say "The Division Chief taps the tile motto. 'In the beginning, there was sulfur. We are not inventing, envoy - we are remembering.' You swear to the Archaeology Division.";
+		now the player's patron is archaeology;
+	otherwise if the choice matches the regular expression "^(fear|puppet|director|moonstar|sightings)( or .*)?$":
+		say "The Director looks up from her tablet at last. 'The mind that fears cannot think,' she says. 'You will learn what the fear cascade eats for breakfast.' You swear to Fear Technology.";
+		now the player's patron is fear-tech;
+	otherwise if the choice matches the regular expression "^(pallidum|masquer|masque|imitation)( or .*)?$":
+		say "The Pale Masquer curtsies, porcelain spiral catching the light. 'I wear a thousand faces, envoy, and every one of them is beautiful.' You swear to the Pallidum court.";
+		now the player's patron is pallidum;
+	otherwise if the choice matches the regular expression "^(rabies|undead|dracula|castle|bride)( or .*)?$":
+		say "The Count regards you across the dry fountains. 'Fear is not a weapon. Fear is the battlefield,' he says. 'Welcome to the field.' You swear to the Undead Court.";
+		now the player's patron is rabies;
+	otherwise if the choice matches the regular expression "^(typhi|stille|silence|mary|amanuensis)( or .*)?$":
+		say "The Amanuensis stamps gall-coloured wax without looking up. 'The perfect spy does not know she is a spy,' she says. 'You, at least, will know.' You swear to Abteilung Stille.";
+		now the player's patron is typhi;
+	otherwise if the choice matches the regular expression "^(vibrio|abyssal|octopus|admiral|cholera)( or .*)?$":
+		say "The Octopus Admiral waves one greased sleeve at the floodable deck. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken.' You swear to the Abyssal Legion.";
+		now the player's patron is vibrio;
+	otherwise:
+		say "No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio." instead.
+
+Report choosing a patron:
+	if the player's patron is not unsworn:
+		say "[line break]The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.[line break]An Accord manifest appears in your satchel.[line break](Type BANNERS at any time to review the campaign.)";
+		now the player carries the Accord manifest;
+		now the first exchange token is carried by the player;
+		now the second exchange token is carried by the player;
+		now the third exchange token is carried by the player;
+		now the score is 0.
+
+Instead of going north from the Hall of Medicine when the player's patron is unsworn:
+	say "The gate holds: no envoy walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
+
+Instead of going south from the Disease Citadel when the player's patron is unsworn:
+	say "The gate holds: no envoy walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
+
+
+
+Prologue-end is a scene. Prologue-end begins when the player's patron is not unsworn.
+
+When Prologue-end begins:
+	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
+	move the player to the Truce Barge.
+
+
 Part One - Seals and Bookkeeping
 
 A seal is a kind of thing. Understand "seal" and "banner" as a seal.
@@ -107,7 +200,7 @@ Trade at the Pericardium Free Port on your way through Thoracica. Travel light. 
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
 
-The player carries three exchange tokens.
+The first exchange token, the second exchange token and the third exchange token are exchange tokens.
 
 The Registrar is a woman in the Truce Barge. "The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens." The description is "A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched."
 

@@ -1,0 +1,7 @@
+s
+choose cradle
+take pamphlet
+banners
+n
+quit
+yes

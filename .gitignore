@@ -1,0 +1,7 @@
+# Generated release builds (cblorb output, re-creatable via Release.blurb)
+SoMe-Universe-IF.materials/Release/
+demo.inform/Build/
+demo.inform/Index/
+SoMe-Universe-IF.inform/Build/
+SoMe-Universe-IF.inform/Index/
+build/

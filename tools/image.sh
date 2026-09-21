@@ -1,0 +1,1 @@
+python blorbtool.py demo.materials/Release/demo.gblorb giload demo.materials/Release/interpreter interpreter

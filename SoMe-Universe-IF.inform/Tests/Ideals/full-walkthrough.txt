@@ -8,6 +8,26 @@ SoMe-Universe: The Ten Banners
 A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
 Release 1 / Serial number 260921 / Inform 7 v10.1.2 / D
 
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
+
+>
+Hall of Medicine
+In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs.
+
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+
+
+The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
+An Accord manifest appears in your satchel.
+(Type BANNERS at any time to review the campaign.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
 Truce Barge
 A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.
 
@@ -400,7 +420,7 @@ The Registrar binds the last seal to its standard and steps back. Ten banners ov
     *** The Ten Banners stand raised over the Truce Barge. ***
 
 
-In that game you scored 10 out of a possible 10, in 78 turns.
+In that game you scored 10 out of a possible 10, in 80 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

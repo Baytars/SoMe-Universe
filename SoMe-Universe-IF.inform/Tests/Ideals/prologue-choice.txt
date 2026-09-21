@@ -17,7 +17,7 @@ Two gates swirl in the newborn light: the Hall of Medicine to the south, the Dis
 Hall of Medicine
 In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs.
 
->The Octopus Admiral waves one greased sleeve at the floodable deck. "Water is life, water is death," she says. "Take the water away and we are a museum exhibit - so we never let it be taken." You swear to the Abyssal Legion.
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
 
 The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
@@ -34,6 +34,8 @@ A neutral deck moored in international blood-plasma waters, equidistant from eve
 On the chart table is a Rationality Protocol pamphlet.
 
 The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.
+
+>Taken.
 
 >Banners: 0 delivered, 0 in hand, 10 not yet won.
   Cradle Sigil - not yet won.

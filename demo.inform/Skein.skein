@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-1">
+  <generator>Windows Inform 10.1.2</generator>
+  <item nodeId="node-1">
+    <command xml:space="preserve">demo</command>
+    <result xml:space="preserve">demo&#x000A;An Interactive Fiction by Baytars&#x000A;Release 1 / Serial number 231103 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Kitchen&#x000A;You can see a table (on which is a vase) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-7"/>
+      <child nodeId="node-2"/>
+      <child nodeId="node-5"/>
+    </children>
+  </item>
+  <item nodeId="node-7">
+    <command xml:space="preserve">see</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-8"/>
+    </children>
+  </item>
+  <item nodeId="node-8">
+    <command xml:space="preserve">take vase</command>
+    <result xml:space="preserve">It's too huge to carry.&#x000A;&#x000A;It's too heavy to carry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-2">
+    <command xml:space="preserve">take the vase</command>
+    <result xml:space="preserve">It's too huge to carry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-3"/>
+    </children>
+  </item>
+  <item nodeId="node-3">
+    <command xml:space="preserve">take the vase</command>
+    <result xml:space="preserve">It's too huge to carry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-4"/>
+    </children>
+  </item>
+  <item nodeId="node-4">
+    <command xml:space="preserve">take the vase</command>
+    <result xml:space="preserve">It's too huge to carry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-5">
+    <command xml:space="preserve">unlock the table</command>
+    <result xml:space="preserve">(with the key)&#x000A;&#x000A;&#x000A;You unlock the door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-6"/>
+    </children>
+  </item>
+  <item nodeId="node-6">
+    <command xml:space="preserve">take the vase</command>
+    <result xml:space="preserve">It's too huge to carry.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+</Skein>
