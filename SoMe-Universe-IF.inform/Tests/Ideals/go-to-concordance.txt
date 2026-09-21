@@ -13,7 +13,11 @@ You are in the Singularity. The universe is beginning to explode.
 
 Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
 
->You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each, a recruiter stands ready to make the case for their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS.
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin), a fleet navigator (the Celestial Corps), an element-priest (the Heavy Metal Pantheon), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
 >The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.
 

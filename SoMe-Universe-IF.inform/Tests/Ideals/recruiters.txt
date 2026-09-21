@@ -13,7 +13,11 @@ You are in the Singularity. The universe is beginning to explode.
 
 Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
 
->You have walked into the Unseen Crown's domain. Six banners crown the dark hall - and under each one waits a recruiter, watching you with the patience of their patron. Talk to any of them: ASK X ABOUT JOINING. When one wins you over, swear on the spot: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE.
+>You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:
+
+   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a masked emissary (the Pale Masquerade), a pale doorman (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.
 
 >The bosun drums the tide-rhythm on the railing. "Water is life, envoy, and water is death - we hold both ends of that rope. Join the Legion, and the flood goes where you point it."
 
