@@ -36,7 +36,7 @@ After going to the Disease Citadel for the first time:
 	say "You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a plain-clothes veteran Archaea[roman type] (the Archaeology Division), [bold type]a containment supervisor[roman type] with a drone on her shoulder (Fear Technology), [bold type]a sunflower muse[roman type] (the Pale Masquerade), [bold type]a pale Bride of Count Dracula[roman type] (the Undead Court), [bold type]a personnel officer[roman type] (the Department of Silence), and [bold type]a gum-chewing girl in a sailor suit[roman type] (the Abyssal Legion).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: [bold type]ASK THE GIRL ABOUT JOINING[roman type]."
 
 After going to the Hall of Medicine for the first time:
-	say "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a medullary preceptor[roman type] (the Cradle of Aukin), [bold type]a fleet navigator[roman type] (the Celestial Corps), [bold type]an element-priest[roman type] (the Heavy Metal Pantheon), and [bold type]a quiet keeper[roman type] (the Lab Martyrs).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS. For example: [bold type]ASK THE PRECEPTOR ABOUT JOINING[roman type]."
+	say "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a medullary preceptor[roman type] (the Cradle of Aukin), [bold type]a fleet navigator[roman type] (the Celestial Corps), [bold type]an element-priest[roman type] (the Heavy Metal Pantheon), and [bold type]a quiet keeper[roman type] (the Lab Martyrs).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The fourth banner - the Heavy Metal Pantheon - is not here to recruit: it waits west of the Singularity, and only the living meet it. For example: [bold type]ASK THE PRECEPTOR ABOUT JOINING[roman type]."
 
 
 
@@ -54,8 +54,8 @@ Choosing a patron is an action applying to one topic. Understand "choose [text]"
 Check choosing a patron:
 	if the player's patron is not unsworn:
 		say "You have already sworn to a patron." instead;
-	if the location is not the Hall of Medicine and the location is not the Disease Citadel:
-		say "The swearing is done at the two gates: the Hall of Medicine or the Disease Citadel." instead.
+	if the location is not the Hall of Medicine and the location is not the Disease Citadel and the location is not the Black Cathedral:
+		say "The swearing is done at the two gates, or at the door of the Pantheon itself if you have crossed the Wastes alive." instead.
 
 Carry out choosing a patron:
 	let choice be the topic understood;
@@ -106,9 +106,6 @@ Report choosing a patron:
 	if the player's patron is not unsworn:
 		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Type BANNERS at any time to review the campaign.)";
 		now the player carries the Keeper's road-map;
-		now the first exchange token is carried by the player;
-		now the second exchange token is carried by the player;
-		now the third exchange token is carried by the player;
 		now the score is 0.
 
 Instead of going north from the Hall of Medicine when the player's patron is unsworn:
@@ -160,6 +157,9 @@ Understand "travel to [text]" as warping to.
 
 Check warping to:
 	if the player's patron is unsworn:
+		if the topic understood matches the regular expression "^market$|^port market$|^singularity$|^start$":
+			say "The concordance serves even the unsworn for errands: the Port Market, and the Singularity where the road west begins.";
+			continue the action;
 		if the location is the Disease Citadel:
 			say "Not yet - the concordance serves the sworn only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE VIBRIO[roman type] (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), or CHOOSE STILLE (Department of Silence). The Hall of Medicine to the south holds four more." instead;
 		otherwise if the location is the Hall of Medicine:
@@ -317,7 +317,7 @@ Trade at the Port Market, east of the Cradle's outer court. Trust carefully. Dec
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
 
-The first exchange token, the second exchange token and the third exchange token are exchange tokens.
+The first exchange token, the second exchange token and the third exchange token are exchange tokens. The player carries the first exchange token. The player carries the second exchange token. The player carries the third exchange token.
 
 The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" as the Keeper.
 
@@ -919,7 +919,7 @@ The Cradle Recruiter is a man in the Hall of Medicine. "Under the Cradle's banne
 
 The Celestial Recruiter is a man in the Hall of Medicine. "Under the Celestial Corps' banner waits a broad-shouldered navigator with star-charts rolled under one arm and wax under his fingernails." The description is "A fleet navigator of the Celestial Corps. He talks like a man who has sailed the aorta and named the Liver-Moon; his coat is embroidered with the four chambers of the heart." Understand "navigator" and "fleet navigator" and "the fleet navigator" as the Celestial Recruiter.
 
-The Pantheon Recruiter is a man in the Hall of Medicine. "Under the Pantheon's banner stands a figure of quicksilver calm in lead-grey, a glass ampoule of liquid metal strung at his throat." The description is "An element-priest of the Heavy Metal Pantheon. Half his face carries a mercury sheen; the other half is patient as radiological decay." Understand "element" and "priest" and "quicksilver" and "element-priest" and "the element-priest" as the Pantheon Recruiter.
+The Pantheon Recruiter is a man in the Black Cathedral. "A figure of quicksilver calm in lead-grey stands at the cathedral threshold, a glass ampoule of liquid metal strung at his throat - the Pantheon's gatekeeper, here to pronounce on the living." The description is "An element-priest of the Heavy Metal Pantheon, seconded to the door. Half his face carries a mercury sheen; the other half is patient as radiological decay. His one duty: to decide who has earned an audience with what waits in this room. Only those who crossed the Wastes alive qualify - the Old Metals do not meet corpses." Understand "element" and "priest" and "quicksilver" and "element-priest" and "the element-priest" and "gatekeeper" as the Pantheon Recruiter.
 
 The Martyrs Recruiter is a woman in the Hall of Medicine. "Under the Lab Martyrs' shrine a quiet woman in a knit sweater tends a small bronze mouse, a dog-eared photograph, and a slide of immortal cells." The description is "A keeper of the Shrine of the Lab Martyrs. She speaks softly, in the register of someone who keeps the names of the sacrificed, all of them, all the way back." Understand "keeper" and "quiet woman" and "quiet keeper" and "the quiet keeper" as the Martyrs Recruiter.
 
@@ -1074,7 +1074,7 @@ After going to the Fabrica Bridge for the first time:
 	say "Vesalius turns from the chart-table before the door has closed. 'So the fleet's letters were right - someone new is walking the war.' He measures you with one look. 'You will want to be useful, not ornamental. Leonardo keeps the truth reversed, Harvey keeps the numbers, Bethune keeps the blood moving. And I keep the errors - mine, and everyone else's. You will see which one you are.'";
 
 After going to the Black Cathedral for the first time:
-	say "Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'";
+	say "Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
 
 After going to the Shrine of the Knitting Mouse for the first time:
 	say "HeLa's luminosity brightens as you enter - recognition, not surprise. 'You are the one they are all courting.' She says it without envy. 'Be careful with the courting, traveler. The ones who were never asked built this shrine, and the ones everyone asks forget to look at it. You will look. I can tell already.'";
@@ -1087,6 +1087,8 @@ After going to the Abteilung Stille Office for the first time:
 
 After going to the Masquerade Ballroom for the first time:
 	say "The Pale Masquer peels away from the pavane and crosses to you - the dance rearranges itself around her absence without missing a beat. 'The traveler. Beautiful timing - arriving exactly when every court wants you and none of them owns you.' She tilts the porcelain mask a degree. 'Do not decide too fast. The best guests always stay for the next dance.'";
+
+
 
 After going to the Blood Court for the first time:
 	say "The Count regards you the way weather regards a coastline. 'The unclaimed one walks into my hall without an invitation. Good. Invitations are for people who can refuse.' The Budapest Bride does not stop watching the stair. 'You have questions. Everyone does. Only one of them matters, and it is not the one you are about to ask.'";

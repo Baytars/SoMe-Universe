@@ -1,5 +1,3 @@
-s
-choose cradle
 go to market
 buy gauntlets
 wear gauntlets
@@ -7,6 +5,6 @@ go to singularity
 w
 w
 w
-look
+choose pantheon
 quit
 yes
