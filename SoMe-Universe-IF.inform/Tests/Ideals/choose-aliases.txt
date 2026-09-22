@@ -1,0 +1,49 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
+Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
+
+>You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:
+
+   a plain-clothes veteran Archaea (the Archaeology Division), a containment supervisor with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a gum-chewing girl in a sailor suit (the Abyssal Legion).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE GIRL ABOUT JOINING.
+
+>The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.
+
+
+The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
+An Accord manifest appears in your satchel.
+(Type BANNERS at any time to review the campaign.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK REGISTRAR ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+>Are you sure you want to quit? 

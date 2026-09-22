@@ -66,39 +66,39 @@ Carry out choosing a patron:
 	if the lowered matches the regular expression "^(hall|medicine|hall of medicine)$":
 		say "That is the other gate's name, not a patron. Its four banners are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
 		rule succeeds;
-	if the lowered matches the regular expression "^(cradle|aukin|tylean|generalizer)( or .*)?$":
+	if the lowered matches the regular expression "^(cradle|cradle of aukin|aukin|aukin empire|tylean|generalizer)( or .*)?$":
 		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
 		now the player's patron is cradle;
-	otherwise if the lowered matches the regular expression "^(celestial|corps|vesalius|leonardo|harvey)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(celestial|celestial corps|corps|vesalius|leonardo|harvey)( or .*)?$":
 		say "Vesalius strikes the cardiac error from his own hanging map in salute. 'Never navigate by ancient maps,' he says. 'We will teach you to draw the true ones.' You swear to the Celestial Corps.";
 		now the player's patron is celestial;
-	otherwise if the lowered matches the regular expression "^(pantheon|metal|lucifer|mercury|radium)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(pantheon|heavy metal|heavy metal pantheon|metal pantheon|lucifer|mercury|radium)( or .*)?$":
 		say "The Morning Star inclines his dripping crown. 'You cannot destroy an element,' Lucifer says. 'You can only hope to contain it. Learn containment, and you will never fear the dark chemistry.' You swear to the Heavy Metal Pantheon.";
 		now the player's patron is pantheon;
-	otherwise if the lowered matches the regular expression "^(martyrs|shrine|hela|laika|mouse)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(martyrs|lab martyrs|shrine|hela|laika|mouse)( or .*)?$":
 		say "HeLa's luminosity brightens by one candle's worth; Laika's ghost-shape circles once. 'They asked for nothing,' HeLa says. 'You asked to serve. That is the difference.' You swear to the Lab Martyrs.";
 		now the player's patron is martyrs;
-	otherwise if the lowered matches the regular expression "^(archaeology|sulfur|archaea|ancestor)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(archaeology|archaeology division|division|sulfur|archaea|ancestor)( or .*)?$":
 		say "The Division Chief taps the tile motto. 'In the beginning, there was sulfur. We are not inventing, envoy - we are remembering.' You swear to the Archaeology Division.";
 		now the player's patron is archaeology;
-	otherwise if the lowered matches the regular expression "^(fear|fear-tech|fear technology|puppet|director|moonstar|sightings)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(fear|fear-tech|fear technology|fear technology division|puppet|puppet workshop|director|moonstar|sightings)( or .*)?$":
 		say "The Director makes one note on her containment schedule - ITEM: ENVOY. STATUS: VOLUNTEER. 'The door you just walked past is not for you anymore,' she says, not looking up. 'It never needed a puppet. Welcome to Site-66.' You swear to Fear Technology.";
 		now the player's patron is fear-tech;
-	otherwise if the lowered matches the regular expression "^(pallidum|masquer|masque|imitation)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(pallidum|pale masquerade|masquerade|masquer|masque|imitation|imitator)( or .*)?$":
 		say "The Pale Masquer curtsies, porcelain spiral catching the light. 'I wear a thousand faces, envoy, and every one of them is beautiful.' You swear to the Pallidum court.";
 		now the player's patron is pallidum;
-	otherwise if the lowered matches the regular expression "^(rabies|undead|dracula|castle|bride)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(rabies|undead|undead court|dracula|castle|bride|brides)( or .*)?$":
 		say "The Count regards you across the dry fountains. 'Fear is not a weapon. Fear is the battlefield,' he says. 'Welcome to the field.' You swear to the Undead Court.";
 		now the player's patron is rabies;
-	otherwise if the lowered matches the regular expression "^(typhi|stille|silence|mary|amanuensis)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(typhi|stille|abteilung stille|department of silence|silence|mary|amanuensis)( or .*)?$":
 		say "The Amanuensis stamps gall-coloured wax without looking up. 'The perfect spy does not know she is a spy,' she says. 'You, at least, will know.' You swear to Abteilung Stille.";
 		now the player's patron is typhi;
-	otherwise if the lowered matches the regular expression "^(vibrio|abyssal|octopus|admiral|cholera)( or .*)?$":
+	otherwise if the lowered matches the regular expression "^(vibrio|abyssal|abyssal legion|abyssal fleet|octopus|octopus admiral|admiral|cholera|cholera octopus)( or .*)?$":
 		say "She snaps a salute that suddenly has not one gram of laziness in it, and behind her the column clears to a live view of the abyss - the flagship's cannon-bores sealing like sleeping eyes. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken. Welcome to the water, envoy.' You swear to the Abyssal Legion.";
 		now the player's patron is vibrio;
 	otherwise:
 		if the location is the Disease Citadel:
-			say "No patron by that name. The six banners of this gate answer to: CHOOSE VIBRIO (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), CHOOSE STILLE (Department of Silence)." instead;
+			say "No patron by that name. The six banners of this gate answer to any of their names: CHOOSE VIBRIO or CHOOSE ABYSSAL LEGION, CHOOSE DRACULA or CHOOSE UNDEAD COURT, CHOOSE FEAR or CHOOSE FEAR TECHNOLOGY, CHOOSE ARCHAEOLOGY or CHOOSE ARCHAEOLOGY DIVISION, CHOOSE PALLIDUM or CHOOSE PALE MASQUERADE, CHOOSE STILLE or CHOOSE DEPARTMENT OF SILENCE." instead;
 		otherwise:
 			say "No patron by that name. The four banners of this gate answer to: CHOOSE CRADLE (Cradle of Aukin), CHOOSE CELESTIAL (Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), CHOOSE MARTYRS (Lab Martyrs)." instead.
 
