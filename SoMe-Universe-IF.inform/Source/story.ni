@@ -125,7 +125,8 @@ When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
 	move the player to the Free Port Landing;
 	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK REGISTRAR ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
-	say "[line break][bold type]HOW TO WALK[roman type]: directions still work where roads exist - type [bold type]N[roman type] / [bold type]S[roman type] / and so on to walk a real road instead of using the concordance."
+	say "[line break][bold type]HOW TO WALK[roman type]: directions still work where roads exist - type [bold type]N[roman type] / [bold type]S[roman type] / and so on to walk a real road instead of using the concordance.";
+	say "[line break][bold type]YOUR MISSION[roman type]: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters' factions all owe you a courtesy now that you are sworn - and bring all ten home. Type [bold type]BANNERS[roman type] any time to see the count; type [bold type]REPORT[roman type] here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.";
 
 Chapter - The Concordance
 
@@ -857,11 +858,19 @@ Instead of showing something to Count Dracula:
 	say "He gestures, without interest, at the dry fountains of the Thirst Gallery. Nothing else interests him."
 
 Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
-	say "'You ask why we serve,' the Budapest Bride says. 'We do not serve. We obey. The difference is, we enjoy it.'"
+	say "'You ask why we serve,' the Budapest Bride says. 'We do not serve. We obey. The difference is, we enjoy it.'";
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$|^plan$":
+	say "The Budapest Bride considers how much a guest should carry. 'Mission, then. Nightfall is not a metaphor: forty-seven substations, seventy-two hours, one continent's dark. My sisters hold Belgrade and Bucharest; I hold the timetable. Your Accord knows the schedule and signs the rotation anyway - that is what your kind calls deterrence. It is what we call a rehearsal.'";
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^recruiter$|^girl$|^sailor$|^post$":
+	say "'The girl at the gate?' A flicker of something like warmth. 'Rota duty. Every century one of us draws the recruiting post - it teaches patience, and the young ones need feeding on conversation more than on blood. She did well, I hear. You are here.'";
 Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
-	say "'Every culture has a word for us,' the Bucharest Bride says. 'They are all correct. They are all insufficient.'"
+	say "'Every culture has a word for us,' the Bucharest Bride says. 'They are all correct. They are all insufficient.'";
+Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$":
+	say "'My station is the gallery,' she says, nodding at the glass. 'Conversion protocol, archival wing. Every operative in this court was once exactly where you stand - a guest, counted twice. The file on you is already open. What it says depends, slightly, on what you ask next.'";
 Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
-	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, envoy. Every operative you see is already dead. We are simply fighting while dying.'"
+	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, envoy. Every operative you see is already dead. We are simply fighting while dying.'";
+Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^pasteur$|^medicine$":
+	say "'You want the medical secret,' she says, and there is no bitterness in it. 'The Frenchman's vaccine works on our disease. The Count respects it because it is the only weapon ever pointed at us that he did not laugh at. Ask him about it - he will bow. The Count bows to exactly one thing in four hundred years: not an army. A syringe.'";
 
 The Abyssal Deck is southeast of the Dark Concourse. "A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank."
 

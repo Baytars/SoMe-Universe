@@ -19,13 +19,7 @@ Two gates swirl in the newborn light: the Hall of Medicine to the south, the Dis
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE GIRL ABOUT JOINING.
 
->The mat-thing changes height without preamble - knee-high, then at your eye - and the air around you goes ammonia-bright and warm. "You came expecting armor. A veteran travels light, envoy: armor is for home, and home is a vent. Most of what walks the mild world is my kind, undressed - you have met us a thousand times and called us bacteria." Then: "Watch the coat go on." The surface of the mat ripples - and in real time, visible to the naked eye, crystals bloom across it: sulfur yellow first, then iron pyrite in fool's-gold plates, locking together edge to edge until the whole body wears a suit of mineral scale, each plate ringing faintly as it seats. Under a minute, unarmed to armored. "Reverse gyrase. Fever cannot unravel my letters. Acidity of pH one is my bath. One hundred thirteen degrees is my afternoon. Everything you call technology, we call metabolism. Join, and dig us up. Wake more of us. We teach what oxygen forgot." The plates dissolve back to wet slate as quietly as they came. The veteran goes back to civilian clothes.
-
->The membrane flushes violet - the archaeal smile. One filament extends, slow, and touches the back of your hand: warm, mineral, faintly electric. "A secret, envoy, kept in your own body: you never stopped hosting us. Methanogens ride your gut to this day; every quiet bubble of methane you have ever produced was signed by my lineage. You did not discover the ancestors. You merely stopped reading the receipt." The filament withdraws. "My kin in the Division's vaults are viable and patient. When you join, you will help wake them - and they will walk out of their sleeping-vats annoyed and alive, the way any of us would."
-
->It presses one edge of itself flat against the chart-table, and where it touches, the wood hisses - the wood is being eaten, politely, at the pace of geology. "Your Accord levels our dig sites and calls it containment. We re-dig them twice as well in the dark. The catalogue of what waits: sulfur metabolism for the oxygen-poor war. Halophilic armor for the salt flats. Taq polymerase and reverse gyrase so fever cannot edit us. Methanogenesis to fight in the anaerobic gut of a continent. The Division does not worship the ancestors, envoy. It does the paperwork of waking them - and the paperwork is learning to walk."
-
->The Division Chief taps the tile motto. "In the beginning, there was sulfur. We are not inventing, envoy - we are remembering." You swear to the Archaeology Division.
+>The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.
 
 
 The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
@@ -52,22 +46,25 @@ Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
-
-On the chart table is a Rationality Protocol pamphlet.
-
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters" factions all owe you a courtesy now that you are sworn - and bring all ten home. Type BANNERS any time to see the count; type REPORT here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
 
->You can't see any such thing.
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
 
->You can't see any such thing.
+The Budapest Bride watches the stair, unhurried.
+
+The Bucharest Bride stands where the gallery light ends, which is a professional habit.
+
+The Belgrade Bride has a physician's hands, and the file on her is the thinnest.
+
+>The Budapest Bride considers how much a guest should carry. "Mission, then. Nightfall is not a metaphor: forty-seven substations, seventy-two hours, one continent's dark. My sisters hold Belgrade and Bucharest; I hold the timetable. Your Accord knows the schedule and signs the rotation anyway - that is what your kind calls deterrence. It is what we call a rehearsal."
+
+>"The girl at the gate?" A flicker of something like warmth. "Rota duty. Every century one of us draws the recruiting post - it teaches patience, and the young ones need feeding on conversation more than on blood. She did well, I hear. You are here."
+
+>"You want the medical secret," she says, and there is no bitterness in it. "The Frenchman's vaccine works on our disease. The Count respects it because it is the only weapon ever pointed at us that he did not laugh at. Ask him about it - he will bow. The Count bows to exactly one thing in four hundred years: not an army. A syringe."
 
 >Are you sure you want to quit? 

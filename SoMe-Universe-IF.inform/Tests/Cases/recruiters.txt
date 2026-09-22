@@ -1,11 +1,8 @@
 n
-ask ancestor about joining
-ask ancestor about secret
-ask ancestor about technology
-choose archaeology
-go to landing
-go to cradle
-ask preceptor about joining
-ask preceptor about vasud
+choose undead court
+go to undead court
+ask budapest about secret
+ask budapest about recruiter
+ask belgrade about secret
 quit
 yes

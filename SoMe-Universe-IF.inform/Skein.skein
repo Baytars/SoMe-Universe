@@ -13,7 +13,7 @@
   </item>
   <item nodeId="node-2">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), a containment supervisor with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a gum-chewing girl in a sailor suit (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a plain-clothes veteran Archaea (the Archaeology Division), a containment supervisor with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a gum-chewing girl in a sailor suit (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE GIRL ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -40,6 +40,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-4"/>
+      <child nodeId="node-181"/>
     </children>
   </item>
   <item nodeId="node-4">
@@ -54,6 +55,21 @@
   <item nodeId="node-5">
     <command xml:space="preserve">ask bride about water</command>
     <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-181">
+    <command xml:space="preserve">choose undead court</command>
+    <result xml:space="preserve">No patron by that name. The six banners of this gate answer to: CHOOSE VIBRIO (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), CHOOSE STILLE (Department of Silence).&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-182"/>
+    </children>
+  </item>
+  <item nodeId="node-182">
+    <command xml:space="preserve">choose Undead Court</command>
+    <result xml:space="preserve">No patron by that name. The six banners of this gate answer to: CHOOSE VIBRIO (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), CHOOSE STILLE (Department of Silence).&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
