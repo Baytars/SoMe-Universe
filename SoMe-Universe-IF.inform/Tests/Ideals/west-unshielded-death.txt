@@ -13,47 +13,23 @@ You are in the Singularity. The universe is beginning to explode.
 
 Three roads leave the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north - and a third way, west, where the land glows wrong. The Ten wait behind them for the first traveler to walk the war. The west road belongs to the Old Metals, and the stories agree: look, but do not look like food.
 
->You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+>You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:
 
-   a medullary preceptor (the Cradle of Aukin), a fleet navigator (the Celestial Corps), an element-priest (the Heavy Metal Pantheon), and a quiet keeper (the Lab Martyrs).
+   a plain-clothes veteran Archaea (the Archaeology Division), a containment supervisor with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a gum-chewing girl in a sailor suit (the Abyssal Legion).
 
-Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The fourth banner - the Heavy Metal Pantheon - is not here to recruit: it waits west of the Singularity, and only the living meet it. For example: ASK THE PRECEPTOR ABOUT JOINING.
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE GIRL ABOUT JOINING.
 
->The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
-
-
-The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
-The Keeper's road-map appears in your satchel.
-(Type BANNERS at any time to review the campaign.)
-
-The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
-
-The circuit of the Ten Banners begins.
-
-Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
-
-On the chart table is a Rationality Protocol pamphlet.
-
-A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
-
-
-HOW TO TRAVEL: no compass needed at this hub. List every destination:
-      ASK KEEPER ABOUT DESTINATIONS
-then jump straight there:
-      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
-Carry every won seal home and REPORT to raise the standards.
-
-HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
-
-YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
-
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
+>You pass back through the after-image of the Big Bang - the room where everything began, now only a shape in the light.
 
 Singularity
 After the Big Bang, the Singularity no more exists.
 
->The Radiologist steps into the road before you have decided to stop. "West is the third realm - the Pantheon, the Cathedral of the Old Metals, the Far Shore your pilgrim fables guessed at. No one in either gate will thank you for knowing: the Medics borrow its light and the Citadel fears its ground, so both pretend the west is empty. I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad."
+>You step off the newborn light and onto the road west.
+
+Pilgrim Turn
+The road west forks at a shrine of white lead paint and surgical steel: a wayside chapel where the Radiology clergy keep their vigil. Beyond it the land turns strange - vitrified glass underfoot, the horizon glowing faintly, the light of the Black Cathedral catching wrong on the dust. A stone placard reads, in three languages: TURN BACK, OR COME ARMED.
+
+A priest of the Radiology Order bars the west road - lead-lined vestments, a collimator staff, eyes that have watched tumors die and patients glow. His hands under the lead gloves are not quite hands anymore: the borrowed light has been settling into him for decades.
 
 >The Radiologist's staff comes down across the road like a barrier dropping. "Stop. Hear the whole sentence before you spend your body.
 
@@ -74,12 +50,8 @@ The afterglow finds you at once - a warmth in the teeth, a taste like a struck c
 >Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
 The gatekeeper-priest pronounces, unhurried: "Alive, and armored, and arrived. The Old Metals receive few guests, and none twice." Then, the offer - the only recruitment speech made inside a god's house: "The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON."
 
->There is no way through in that direction - the body-cosmos keeps its own borders.
+>You can't go that way.
 
 The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.
-
->There is no way through in that direction - the body-cosmos keeps its own borders.
-
-Your gums have begun to bleed in a language you do not speak. The mercury god is quiet, and his silence is the worst sermon this hall has ever held.
 
 >Are you sure you want to quit? 

@@ -3,11 +3,12 @@
   <generator>Windows Inform 10.1.2</generator>
   <item nodeId="node-1">
     <command xml:space="preserve">SoMe-Universe-IF</command>
-    <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;Ten powers want you. Decide who to become. by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
+      <child nodeId="node-219"/>
       <child nodeId="node-26"/>
     </children>
   </item>
@@ -359,6 +360,12 @@
   <item nodeId="node-25">
     <command xml:space="preserve">choose Typhi</command>
     <result xml:space="preserve">No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-219">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">The Radiologist steps into the road before you have decided to stop. "West is the Cathedral of the Old Metals, traveler, and I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
