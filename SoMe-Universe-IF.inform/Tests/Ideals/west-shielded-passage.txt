@@ -1,0 +1,82 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
+Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war.
+
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin), a fleet navigator (the Celestial Corps), an element-priest (the Heavy Metal Pantheon), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS. For example: ASK THE PRECEPTOR ABOUT JOINING.
+
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+
+
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
+(Type BANNERS at any time to review the campaign.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK KEEPER ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Port Market
+The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide.
+
+On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>You slide a token across the stall. The Factor wraps the gauntlets without breaking his watch on the quay. "Bind, trap, escort," he says. "Not warfare. Hostage negotiation."
+
+>You put on the Aegis gauntlets.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Singularity
+After the Big Bang, the Singularity no more exists.
+
+>The Radiologist steps into the road before you have decided to stop. "West is the Cathedral of the Old Metals, traveler, and I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad."
+
+>
+Contaminated Wastes
+Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
+
+>Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
+
+>Black Cathedral
+A cathedral of black stone around a single object: the mercury mirror, a pool of polished metal that does not reflect the room. It shows nerves. Lucifer keeps the hall the way winter keeps a lake - by being what it is. The Morning Star himself stands beside his mirror, crown dripping, reforming, dripping.
+
+Lucifer - the Mercury God, the Morning Star - stands beside his mirror, a figure of liquid metal shifting between solid and fluid, his dripping crown endlessly reforming.
+
+>Are you sure you want to quit? 

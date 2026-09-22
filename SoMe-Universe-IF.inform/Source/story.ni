@@ -139,6 +139,7 @@ A room has a list of texts called the concordance names. The concordance names o
 The concordance names of the Free Port Landing are { "barge", "truce barge", "home", "landing", "free port landing" }.
 The concordance names of the Port Market are { "market", "port market", "bazaar", "stall", "factor" }.
 The concordance names of the Cradle Outer Court are { "cradle", "medulla", "aukin" }.
+The concordance names of the Singularity are { "singularity", "start", "beginning" }.
 The concordance names of the Fabrica Bridge are { "celestial corps", "fabrica", "bridge" }.
 The concordance names of the Dawn Pioneer Deck are { "dawn pioneer", "pioneer", "leonardo" }.
 The concordance names of the Black Cathedral are { "pantheon", "heavy metal", "cathedral" }.
@@ -551,7 +552,7 @@ Instead of asking Bethune about something when the topic understood matches the 
 
 Part Five - The Wastes and the Heavy Metal Pantheon
 
-The Contaminated Wastes is west of the Free Port Landing. "Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong."
+The Contaminated Wastes is west of the Pilgrim's Turn. "Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong."
 
 The radium afterglow is scenery in the Contaminated Wastes. Understand "afterglow" and "glow" as the radium afterglow. The description is "Radium-226, half-life sixteen centuries. They painted it on their lips with their brushes, once. Everything that glows is burning, and everything that burns consumes."
 
@@ -1007,6 +1008,58 @@ The jet shows itself as a whip of white steam - supercritical water leaving the 
 'Single shot,' she says, spinning the pistol once around her finger. 'The entry wound is coin-sized, if you know where to look - it opens up inside the wall. The flagship's cannons are this gun, nine sizes up. There is no counter except distance, and we carry the distance with us.' The smile comes back like a mask going back on. 'Gum?'";
 Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^chlorine|weakness|drain|counter$":
 	say "She shrugs, still chewing. 'Honest? Heat cooks us, chlorine unmakes our hide, drain the water and the Legion is a museum exhibit. But look at the tank, traveler. Look at what it took for you to take us seriously - a girl, a whistle, and one shot of the real thing. The doctrine prints our weaknesses because by the time you reach them, you are already standing in our ocean.'";
+
+
+Chapter - The Western Road and the Radiologist
+
+[Pantheon is the third realm: west of the Singularity, past the Medics'
+warnings. The Radiologist orders the turn, and the Wastes judge the
+unshielded.]
+
+The Pilgrim's Turn is west of the Singularity. "The road west forks at a shrine of white lead paint and surgical steel: a wayside chapel where the Radiology clergy keep their vigil. Beyond it the land turns strange - vitrified glass underfoot, the horizon glowing faintly, the light of the Black Cathedral catching wrong on the dust. A stone placard reads, in three languages: TURN BACK, OR COME ARMED."
+
+The Radiologist is a man in the Pilgrim's Turn. "A priest of the Radiology Order bars the west road - lead-lined vestments, a collimator staff, eyes that have watched tumors die and patients glow." The description is "The Radiology Order serves the Hall of Medicine, but their power is borrowed from the Pantheon: they aim the gods' own light at tumors and pray the patient outlasts the cure. He was sent here to turn back the unshielded, and he has buried the ones who would not turn." Understand "priest" and "radiology" and "radiologist priest" as the Radiologist.
+
+After going to the Pilgrim's Turn for the first time:
+	say "The Radiologist steps into the road before you have decided to stop. 'West is the Cathedral of the Old Metals, traveler, and I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad.'";
+
+Instead of going west from the Pilgrim's Turn when the Aegis gauntlets are not worn by the player and radiology-warning is less than 2:
+	if radiology-warning is 0:
+		now radiology-warning is 1;
+		say "The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body.[paragraph break]'You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.[paragraph break]'There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aegis gauntlets are the first lesson made wearable. Earn the gauntlets, wear them here, and I will not only step aside - I will walk you to the door.[paragraph break]'The gate to Aukin lies north of the port. CHOOSE CRADLE, if the Cradle will have you; otherwise buy its gauntlets at the Port Market and come back. The road west has no third option.'";
+	otherwise:
+		now radiology-warning is 2;
+		say "The Radiologist does not lower his staff - but he steps aside, and the grief in his face is worse than the barrier was. 'Stubbornness is also a kind of faith, and I have buried better stubbornness than yours. The Wastes will judge you in steps, not in words. Walk, then. Walk, and count.'";
+
+radiology-warning is a number that varies. radiology-warning is 0.
+radiation-dose is a number that varies. radiation-dose is 0.
+
+Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets are not worn by the player:
+	if the Aegis gauntlets are not worn by the player:
+		increase radiation-dose by 1;
+	if radiation-dose is 1:
+		say "The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. Somewhere behind, the Radiologist is shouting a number.";
+	otherwise if radiation-dose is 2:
+		say "Your skin tightens. The dust glows where you walked, and the road ahead has begun to swim; the Cathedral's light is inside your eyes now, and it does not leave when you blink.";
+	otherwise if radiation-dose is 3:
+		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
+	otherwise if radiation-dose is 4:
+		say "Your gums have begun to bleed in a language you do not speak. The mercury god is quiet, and his silence is the worst sermon this hall has ever held.";
+	otherwise if radiation-dose is 5:
+		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+Every turn when the player is in the Black Cathedral and the Aegis gauntlets are not worn by the player:
+	increase radiation-dose by 1;
+	if radiation-dose is 3:
+		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
+	if radiation-dose is 4:
+		say "Your gums have begun to bleed in a language you do not speak. The mercury god is quiet, and his silence is the worst sermon this hall has ever held.";
+	if radiation-dose is 5:
+		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+
+Instead of going east from the Contaminated Wastes when the Aegis gauntlets are not worn by the player and radiology-warning is 2:
+	continue the action;
 
 Chapter - The Halls Greet You
 
