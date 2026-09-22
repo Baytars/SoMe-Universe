@@ -5,13 +5,13 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 
 SoMe-Universe: The Ten Banners
-A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
 Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
 
-Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war.
 
 >You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
 
@@ -19,11 +19,11 @@ Two gates swirl in the newborn light: the Hall of Medicine to the south, the Dis
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
->The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
 
-The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
-An Accord manifest appears in your satchel.
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
 (Type BANNERS at any time to review the campaign.)
 
 The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
@@ -31,22 +31,22 @@ The Singularity seals itself behind the Big Bang. The gates open. A launch skiff
 The circuit of the Ten Banners begins.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the chart table is a Rationality Protocol pamphlet.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
 
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
-      ASK REGISTRAR ABOUT DESTINATIONS
+      ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
       GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
-YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters" factions all owe you a courtesy now that you are sworn - and bring all ten home. Type BANNERS any time to see the count; type REPORT here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
 >Taken.
 
@@ -62,6 +62,6 @@ YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win
   Sightings Lanyard - not yet won.
   Abyssal Pennant - not yet won.
 
->Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Registrar where you mean to go.
+>Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go.
 
 >Are you sure you want to quit? 

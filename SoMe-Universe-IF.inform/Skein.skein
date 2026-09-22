@@ -23,6 +23,7 @@
       <child nodeId="node-7"/>
       <child nodeId="node-8"/>
       <child nodeId="node-10"/>
+      <child nodeId="node-190"/>
       <child nodeId="node-11"/>
       <child nodeId="node-22"/>
     </children>
@@ -137,6 +138,48 @@
   <item nodeId="node-10">
     <command xml:space="preserve">ask muse about secret</command>
     <result xml:space="preserve">She unhooks the porcelain mask and holds it out, empty side toward you. "A secret: this is the true face. Beneath it we are nobody - a spiral, a hunger, a stage note that never resolves. We wear the beautiful ones from the outside in. The mask is not a disguise, envoy. It is a job description."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">choose Undead Court</command>
+    <result xml:space="preserve">The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.&#x000A;&#x000A;&#x000A;The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.&#x000A;An Accord manifest appears in your satchel.&#x000A;(Type BANNERS at any time to review the campaign.)&#x000A;&#x000A;The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.&#x000A;&#x000A;The circuit of the Ten Banners begins.&#x000A;&#x000A;Free Port Landing&#x000A;The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.&#x000A;&#x000A;&#x000A;HOW TO TRAVEL: no compass needed at this hub. List every destination:&#x000A;      ASK REGISTRAR ABOUT DESTINATIONS&#x000A;then jump straight there:&#x000A;      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)&#x000A;Carry every won seal home and REPORT to raise the standards.&#x000A;&#x000A;HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.&#x000A;&#x000A;YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters" factions all owe you a courtesy now that you are sworn - and bring all ten home. Type BANNERS any time to see the count; type REPORT here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-191"/>
+    </children>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">go to undead court</command>
+    <result xml:space="preserve">The manifest takes your word, and the concordance carries you along the great vessels of the war.&#x000A;&#x000A;Blood Court&#x000A;The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.&#x000A;&#x000A;Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.&#x000A;&#x000A;The Budapest Bride watches the stair, unhurried.&#x000A;&#x000A;The Bucharest Bride stands where the gallery light ends, which is a professional habit.&#x000A;&#x000A;The Belgrade Bride has a physician's hands, and the file on her is the thinnest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-192"/>
+    </children>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">x Budapest</command>
+    <result xml:space="preserve">Senior commander, first of three. The Brides hunt in threes and never engage singly.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-193"/>
+    </children>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">x Bucharest</command>
+    <result xml:space="preserve">Senior commander, second of three.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-194"/>
+    </children>
+  </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">x Belgrade</command>
+    <result xml:space="preserve">Senior commander, third of three. The file notes, without comment: I was a doctor once.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

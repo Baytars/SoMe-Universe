@@ -5,13 +5,13 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 
 SoMe-Universe: The Ten Banners
-A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
 Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
 
-Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.
+Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war.
 
 >You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
 
@@ -19,11 +19,11 @@ Two gates swirl in the newborn light: the Hall of Medicine to the south, the Dis
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, or CHOOSE MARTYRS. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
->The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
 
-The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.
-An Accord manifest appears in your satchel.
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
 (Type BANNERS at any time to review the campaign.)
 
 The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
@@ -31,22 +31,22 @@ The Singularity seals itself behind the Big Bang. The gates open. A launch skiff
 The circuit of the Ten Banners begins.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the chart table is a Rationality Protocol pamphlet.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
 
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
-      ASK REGISTRAR ABOUT DESTINATIONS
+      ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
       GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
-YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters" factions all owe you a courtesy now that you are sworn - and bring all ten home. Type BANNERS any time to see the count; type REPORT here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
 >Taken.
 
@@ -55,19 +55,13 @@ YOUR MISSION: the war is a map with ten banners. Visit every faction's hall, win
 Cradle Outer Court
 The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
 
->
-Cradle Inner Court
-The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors.
-
-Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood.
-
-The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE flame as if warming it by habit.
+>The Generalizer rises before you have finished bowing. "The traveler who could still choose. Word travels faster than blood." She looks you over like a cadet who might be a weapon. "You will attend the lecture. Not a request - the Cradle does not arm the ignorant, and it does not waste the curious."
 
 >The preceptors walk the outer doctrine first. CORTICAL SELECTION: cadets prove they can see the body's signal at all. Those who cannot read the presenting lattice are released back into circulation - unharmed, ungraded, and dangerous to no one but themselves.
 
 >Then the inner doctrine. MEDULLARY SELECTION: the AIRE-lit library of every tissue the body owns. Strong binders of self are deleted; agonistic binders go to the Treg Cloister, to return as suppressors of friendly fire rather than as fighters. Graduates leave for the periphery and never see the Inner Court again. The preceptors, whose flame burns a fortnight-equivalent, are replaced in endless relay. At the back of the hall, a schism is audible: the Narrow Faction wants the Foreign Selves curriculum cut to unambiguous enemy-forms. The Generalizer's people answer that narrowing AIRE coverage mathematically guarantees more autoreactive graduates. The dispute is the loudest silence in the empire.
 
->"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, envoy - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh."
+>"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh."
 
 The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.
 
@@ -91,11 +85,11 @@ The Port Factor watches the quay with the serenity of a man whose tariffs fund a
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
->You lay each banner on the long table and the Registrar raises them one by one. 1 of the ten standards now fly.
+>You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. 1 of the ten standards now fly.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -119,7 +113,7 @@ HeLa sits by the altar in a soft luminosity - the immortal navigator, first of t
 >The treat vanishes before it quite touches the stone, and from the treeline comes one bark, warm as a stove.
 
 >You set the little wheel before the bronze mouse. In its knitted-glass eyes, something has already come up with something.
-Three offerings, three silences. Then HeLa rises, and the shrine brightens by one candle's worth. "They asked for nothing," she says. "They gave everything. You gave freely, envoy - that is the difference the shrine exists to teach. Take a needle. Knit with it. Quietly."
+Three offerings, three silences. Then HeLa rises, and the shrine brightens by one candle's worth. "They asked for nothing," she says. "They gave everything. You gave freely, traveler - that is the difference the shrine exists to teach. Take a needle. Knit with it. Quietly."
 
 One of the two bronze needles from the monument rests in your hand, warm as a living paw.
 
@@ -128,13 +122,13 @@ One of the two bronze needles from the monument rests in your hand, warm as a li
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack is a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
->You lay each banner on the long table and the Registrar raises them one by one. 2 of the ten standards now fly.
+>You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. 2 of the ten standards now fly.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -158,7 +152,7 @@ Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a ves
 
 Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport.
 
->"The old charts circle the heart," Vesalius says, tapping the hanging map. "Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an envoy's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected."
+>"The old charts circle the heart," Vesalius says, tapping the hanging map. "Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an traveler's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected."
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -169,7 +163,7 @@ Lucifer - the Mercury God, the Morning Star - stands beside his mirror, a figure
 
 >You put on the Aegis gauntlets.
 
->You open the codex to the mirror and hold it low over the quicksilver. The mirror does not reflect the pages - it reads them. Letter by letter the reversed script settles into sense: star charts of the Liver-Moon, the four chambers of the Central Sun, and in the margin of the last page, in Leonardo's careful hand, a correction meant for Vesalius: THE SEAT OF THE SOUL IS THE BRAIN. Lucifer watches with the patience of an element. "A mirror-script brought to a mirror," he says. "I have been many things to your kind, envoy. Tonight, a librarian. Take this - not as a gift. As a receipt."
+>You open the codex to the mirror and hold it low over the quicksilver. The mirror does not reflect the pages - it reads them. Letter by letter the reversed script settles into sense: star charts of the Liver-Moon, the four chambers of the Central Sun, and in the margin of the last page, in Leonardo's careful hand, a correction meant for Vesalius: THE SEAT OF THE SOUL IS THE BRAIN. Lucifer watches with the patience of an element. "A mirror-script brought to a mirror," he says. "I have been many things to your kind, traveler. Tonight, a librarian. Take this - not as a gift. As a receipt."
 
 A sealed glass thread of quicksilver presses itself into your palm, cold as testimony.
 
@@ -178,13 +172,13 @@ A sealed glass thread of quicksilver presses itself into your palm, cold as test
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack are a Knitting Needle and a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
->You lay each banner on the long table and the Registrar raises them one by one. 3 of the ten standards now fly.
+>You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. 3 of the ten standards now fly.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -206,13 +200,13 @@ Vesalius pins the Corps" bronze medallion to your collar - his own profile, besi
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack are a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
->You lay each banner on the long table and the Registrar raises them one by one. 4 of the ten standards now fly.
+>You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. 4 of the ten standards now fly.
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -242,7 +236,7 @@ The young quartermaster catalogs requisitions with a slight smile, as if the req
 
 The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
 
->You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk. "Well caught," says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. "MARY-11," the Amanuensis says, to nobody in particular. "Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11." Then, to you: "The Stille does not sell trust, envoy. We demonstrate its absence. You looked at the details. Take the finding with you."
+>You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk. "Well caught," says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. "MARY-11," the Amanuensis says, to nobody in particular. "Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11." Then, to you: "The Stille does not sell trust, traveler. We demonstrate its absence. You looked at the details. Take the finding with you."
 
 The Amanuensis presses gall-coloured wax into your hand and stamps it with a modest spiral. Abteilung Stille has no objections on file.
 
@@ -259,7 +253,7 @@ The Director supervises the fitting with a tablet and no expression at all.
 
 The Workshop does its work - a low-frequency drone under hearing, a figure at the edge of the lamp - and finds your pulse already catalogued in a pamphlet's four headings. Fear is the battlefield. You keep your footing on it.
 
->The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse." She closes the tablet. "A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, envoy. The pass is provisional. The lesson is not."
+>The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse." She closes the tablet. "A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, traveler. The pass is provisional. The lesson is not."
 
 The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.
 
@@ -276,11 +270,11 @@ The Grey Physician stands at the hall's edge with a physician's stillness and a 
 
 The Pale Masquer wears white porcelain with a spiral flourish, and moves through the pavane like the person the dance was invented for.
 
->"A chancre," the Pale Masquer says, "painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, envoy. They still teach the rash that followed as if it were mine alone."
+>"A chancre," the Pale Masquer says, "painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. They still teach the rash that followed as if it were mine alone."
 
->"Arthritis," the Pale Masquer says instead, "Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, envoy. The chart cannot hold me. That is the point of me."
+>"Arthritis," the Pale Masquer says instead, "Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, traveler. The chart cannot hold me. That is the point of me."
 
->You reach for the porcelain spiral, and she permits it - that is the horror of it, the mask tilts forward into your hand like a gift. Beneath: a face that has been every face in the mural. "Osler said it best," she says. "Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You looked twice, envoy. Nobody looks twice at the beautiful." She sets the porcelain in your hands with a curtsy.
+>You reach for the porcelain spiral, and she permits it - that is the horror of it, the mask tilts forward into your hand like a gift. Beneath: a face that has been every face in the mural. "Osler said it best," she says. "Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You looked twice, traveler. Nobody looks twice at the beautiful." She sets the porcelain in your hands with a curtsy.
 
 The Pale Masque settles into your satchel, lighter than porcelain has any right to be.
 
@@ -299,7 +293,7 @@ The Bucharest Bride stands where the gallery light ends, and the dark approves o
 
 The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
->You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy. Very well, envoy. The Court receives you as received - marked, not turned."
+>You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy. Very well, traveler. The Court receives you as received - marked, not turned."
 
 The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: faced, and stayed polite.
 
@@ -312,7 +306,7 @@ A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel
 
 The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
 
->"A demonstration, then." The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated. "Water is life," the Admiral says. "Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, envoy. Take the pennant to your Accord - and tell them the sea remembers every drainage plan."
+>"A demonstration, then." The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated. "Water is life," the Admiral says. "Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan."
 
 A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.
 
@@ -323,14 +317,14 @@ Ten seals ride in your satchel. Behind you, the Free Port Landing waits for its 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Free Port Landing
-The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
 
 On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.
 
-The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
 
->You lay each banner on the long table and the Registrar raises them one by one. 10 of the ten standards now fly.
-The Registrar binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant. "Understand what you have carried," she says. "An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it." The map of the whole body-cosmos rolls out across the table, ten colours deep.
+>You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. 10 of the ten standards now fly.
+The Keeper binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant. "Understand what you have carried," she says. "An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it." The map of the whole body-cosmos rolls out across the table, ten colours deep.
 
 
 

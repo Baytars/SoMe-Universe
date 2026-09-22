@@ -3,11 +3,11 @@
 [An interactive survey of the ten factions of the SoMe-Universe (Saga of Medicine),
 built from the faction archives in the Factions folder of the SoMe-Universe repository.]
 
-The story headline is "A diplomatic circuit through the Saga of Medicine".
+The story headline is "Ten powers want you. Decide who to become."
 The story genre is "Science Fiction".
 The release number is 1.
 The story creation year is 2026.
-The story description is "Ten powers divide the body-cosmos of Planet Homo Sapiens. As an envoy of the Athena Aegis Accord, gather a banner-seal from every faction and raise all ten standards at the Pericardium Free Port."
+The story description is "Ten powers divide the body-cosmos of Planet Homo Sapiens, and every one of them wants the same rare thing: a traveler awake enough to choose a side and brave enough to walk into every other. Collect each faction's seal, earn the right to be called one of them all, and see the whole war."
 
 Use scoring.
 The maximum score is 10.
@@ -18,7 +18,7 @@ Part Zero - The Singularity Prologue
 [Continued from the original "SoMe" demo by Baytars: the universe begins in a
 Singularity, and the newborn cosmos offers two gates - the Hall of Medicine and
 the Disease Citadel. In this chronicle the prologue ends with the choice of a
-patron faction, which grants the envoy's opening banner-stance.]
+patron faction, which grants the traveler's opening banner-stance.]
 
 The Singularity is a room. "[if visited]After the Big Bang, the Singularity no more exists.[otherwise]You are in the Singularity. The universe is beginning to explode."
 
@@ -26,7 +26,7 @@ Instead of going to the Singularity:
 	say "After the Big Bang, the Singularity no more exists."
 
 After looking in the Singularity for the first time:
-	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war."
+	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war."
 
 The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Under the banners wait a medullary preceptor, a fleet navigator, an element-priest, and a quiet keeper - one recruiter for each power, each ready to make the case for a sworn oath."
 
@@ -67,7 +67,7 @@ Carry out choosing a patron:
 		say "That is the other gate's name, not a patron. Its four banners are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(cradle|cradle of aukin|aukin|aukin empire|tylean|generalizer)( or .*)?$":
-		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, envoy: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
+		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
 		now the player's patron is cradle;
 	otherwise if the lowered matches the regular expression "^(celestial|celestial corps|corps|vesalius|leonardo|harvey)( or .*)?$":
 		say "Vesalius strikes the cardiac error from his own hanging map in salute. 'Never navigate by ancient maps,' he says. 'We will teach you to draw the true ones.' You swear to the Celestial Corps.";
@@ -79,13 +79,13 @@ Carry out choosing a patron:
 		say "HeLa's luminosity brightens by one candle's worth; Laika's ghost-shape circles once. 'They asked for nothing,' HeLa says. 'You asked to serve. That is the difference.' You swear to the Lab Martyrs.";
 		now the player's patron is martyrs;
 	otherwise if the lowered matches the regular expression "^(archaeology|archaeology division|division|sulfur|archaea|ancestor)( or .*)?$":
-		say "The Division Chief taps the tile motto. 'In the beginning, there was sulfur. We are not inventing, envoy - we are remembering.' You swear to the Archaeology Division.";
+		say "The Division Chief taps the tile motto. 'In the beginning, there was sulfur. We are not inventing, traveler - we are remembering.' You swear to the Archaeology Division.";
 		now the player's patron is archaeology;
 	otherwise if the lowered matches the regular expression "^(fear|fear-tech|fear technology|fear technology division|puppet|puppet workshop|director|moonstar|sightings)( or .*)?$":
-		say "The Director makes one note on her containment schedule - ITEM: ENVOY. STATUS: VOLUNTEER. 'The door you just walked past is not for you anymore,' she says, not looking up. 'It never needed a puppet. Welcome to Site-66.' You swear to Fear Technology.";
+		say "The Director makes one note on her containment schedule - ITEM: THE TRAVELER. STATUS: VOLUNTEER. 'The door you just walked past is not for you anymore,' she says, not looking up. 'It never needed a puppet. Welcome to Site-66.' You swear to Fear Technology.";
 		now the player's patron is fear-tech;
 	otherwise if the lowered matches the regular expression "^(pallidum|pale masquerade|masquerade|masquer|masque|imitation|imitator)( or .*)?$":
-		say "The Pale Masquer curtsies, porcelain spiral catching the light. 'I wear a thousand faces, envoy, and every one of them is beautiful.' You swear to the Pallidum court.";
+		say "The Pale Masquer curtsies, porcelain spiral catching the light. 'I wear a thousand faces, traveler, and every one of them is beautiful.' You swear to the Pallidum court.";
 		now the player's patron is pallidum;
 	otherwise if the lowered matches the regular expression "^(rabies|undead|undead court|dracula|castle|bride|brides)( or .*)?$":
 		say "The Count regards you across the dry fountains. 'Fear is not a weapon. Fear is the battlefield,' he says. 'Welcome to the field.' You swear to the Undead Court.";
@@ -94,7 +94,7 @@ Carry out choosing a patron:
 		say "The Amanuensis stamps gall-coloured wax without looking up. 'The perfect spy does not know she is a spy,' she says. 'You, at least, will know.' You swear to Abteilung Stille.";
 		now the player's patron is typhi;
 	otherwise if the lowered matches the regular expression "^(vibrio|abyssal|abyssal legion|abyssal fleet|octopus|octopus admiral|admiral|cholera|cholera octopus)( or .*)?$":
-		say "She snaps a salute that suddenly has not one gram of laziness in it, and behind her the column clears to a live view of the abyss - the flagship's cannon-bores sealing like sleeping eyes. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken. Welcome to the water, envoy.' You swear to the Abyssal Legion.";
+		say "She snaps a salute that suddenly has not one gram of laziness in it, and behind her the column clears to a live view of the abyss - the flagship's cannon-bores sealing like sleeping eyes. 'Water is life, water is death,' she says. 'Take the water away and we are a museum exhibit - so we never let it be taken. Welcome to the water, traveler.' You swear to the Abyssal Legion.";
 		now the player's patron is vibrio;
 	otherwise:
 		if the location is the Disease Citadel:
@@ -104,18 +104,18 @@ Carry out choosing a patron:
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
-		say "[line break]The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.[line break]An Accord manifest appears in your satchel.[line break](Type BANNERS at any time to review the campaign.)";
-		now the player carries the Accord manifest;
+		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Type BANNERS at any time to review the campaign.)";
+		now the player carries the Keeper's road-map;
 		now the first exchange token is carried by the player;
 		now the second exchange token is carried by the player;
 		now the third exchange token is carried by the player;
 		now the score is 0.
 
 Instead of going north from the Hall of Medicine when the player's patron is unsworn:
-	say "The gate holds: no envoy walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
+	say "The gate holds: no traveler walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
 
 Instead of going south from the Disease Citadel when the player's patron is unsworn:
-	say "The gate holds: no envoy walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
+	say "The gate holds: no traveler walks the war unsworn. CHOOSE a patron - for example, CHOOSE CRADLE or CHOOSE VIBRIO."
 
 
 
@@ -124,13 +124,13 @@ Prologue-end is a scene. Prologue-end begins when the player's patron is not uns
 When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
 	move the player to the Free Port Landing;
-	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK REGISTRAR ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
+	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK KEEPER ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
 	say "[line break][bold type]HOW TO WALK[roman type]: directions still work where roads exist - type [bold type]N[roman type] / [bold type]S[roman type] / and so on to walk a real road instead of using the concordance.";
-	say "[line break][bold type]YOUR MISSION[roman type]: the war is a map with ten banners. Visit every faction's hall, win a seal from each - the recruiters' factions all owe you a courtesy now that you are sworn - and bring all ten home. Type [bold type]BANNERS[roman type] any time to see the count; type [bold type]REPORT[roman type] here to raise the standards you carry. When all ten fly, the Accord gets its map, and your story gets its ending.";
+	say "[line break][bold type]YOUR ROAD[roman type]: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type [bold type]BANNERS[roman type] to see how far you have come, [bold type]REPORT[roman type] to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.";
 
 Chapter - The Concordance
 
-[The Accord manifest doubles as a travel charter: a sworn envoy may GO TO any
+[The Keeper's road-map doubles as a travel charter: a sworn traveler may GO TO any
 charted hall of the war. Room aliases cover every name the gate descriptions
 and porcelain plates use.]
 
@@ -160,11 +160,11 @@ Understand "travel to [text]" as warping to.
 Check warping to:
 	if the player's patron is unsworn:
 		if the location is the Disease Citadel:
-			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE VIBRIO[roman type] (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), or CHOOSE STILLE (Department of Silence). The Hall of Medicine to the south holds four more." instead;
+			say "Not yet - the concordance serves the sworn only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE VIBRIO[roman type] (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), or CHOOSE STILLE (Department of Silence). The Hall of Medicine to the south holds four more." instead;
 		otherwise if the location is the Hall of Medicine:
-			say "Not yet - the concordance serves sworn envoys only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE CRADLE[roman type] (the immune academy of Aukin), CHOOSE CELESTIAL (the Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), or CHOOSE MARTYRS (the Lab Martyrs). The Disease Citadel to the north holds six more." instead;
+			say "Not yet - the concordance serves the sworn only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE CRADLE[roman type] (the immune academy of Aukin), CHOOSE CELESTIAL (the Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), or CHOOSE MARTYRS (the Lab Martyrs). The Disease Citadel to the north holds six more." instead;
 		otherwise:
-			say "Not yet - the concordance serves sworn envoys only. Walk back to a gate (GO SOUTH from the Singularity) and CHOOSE a patron." instead.
+			say "Not yet - the concordance serves the sworn only. Walk back to a gate (GO SOUTH from the Singularity) and CHOOSE a patron." instead.
 
 Carry out warping to:
 	let dir-topic be "[the topic understood]" in lower case;
@@ -207,7 +207,7 @@ Part One - Seals and Bookkeeping
 
 A seal is a kind of thing. Understand "seal" and "banner" as a seal.
 
-The cradle sigil is a seal. The printed name is "Cradle Sigil". Understand "cradle" as the cradle sigil. The description is "A ring of bone-white alloy stamped with the Dhyana sign for listening. The Cradle grants it to envoys who can say what the self is for."
+The cradle sigil is a seal. The printed name is "Cradle Sigil". Understand "cradle" as the cradle sigil. The description is "A ring of bone-white alloy stamped with the Dhyana sign for listening. The Cradle grants it to travelers who can say what the self is for."
 
 The corps medallion is a seal. The printed name is "Vesalius Medallion". Understand "medallion" as the corps medallion. The description is "A struck bronze face in profile beside a starred anatomy. The Celestial Corps issues it for corrected charts."
 
@@ -243,7 +243,7 @@ Carry out requesting the banner tally:
 	say "Banners: [delivered] delivered, [held] in hand, [10 minus delivered minus held] not yet won.";
 	repeat with token running through seals:
 		if token is on the standard rack:
-			say "  [printed name of token] - delivered to the Registrar.";
+			say "  [printed name of token] - delivered to the Keeper.";
 		otherwise if token is carried by the player:
 			say "  [printed name of token] - in your satchel.";
 		otherwise:
@@ -254,16 +254,16 @@ Understand "report" or "report in" or "hand over the banners" or "deliver the se
 
 Carry out reporting in:
 	if the number of seals carried by the player is 0:
-		say "The Registrar glances at your satchel. 'Light, envoy. The standards stay hungry.'";
+		say "The Keeper glances at your satchel. 'Light, traveler. The standards remember being banners.'";
 	otherwise:
 		repeat with token running through seals carried by the player:
 			now token is on the standard rack;
-		say "You lay each banner on the long table and the Registrar raises them one by one. [The number of seals on the standard rack] of the ten standards now fly.";
+		say "You lay each banner at the standards and the Keeper raises them one by one, and for a moment she is not weather at all - she is the last official of a war that has waited for a witness. [The number of seals on the standard rack] of the ten standards now fly.";
 		if the number of seals on the standard rack is 10:
 			raise the ten banners.
 
 To raise the ten banners:
-	say "The Registrar binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant.
+	say "The Keeper binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant.
 'Understand what you have carried,' she says. 'An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it.'
 The map of the whole body-cosmos rolls out across the table, ten colours deep.";
 	end the story finally saying "The Ten Banners stand raised over the Pericardium Free Port."
@@ -273,14 +273,14 @@ Understand "about" or "credits" or "help" as abouting.
 
 Carry out abouting:
 	say "SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project.
-You are an envoy of the Athena Aegis Accord. Visit all ten factions, win each one's seal, and report to the Registrar at the Free Port Landing.
+You are the one the ten banners have been waiting for - awake, unclaimed, and brave enough to walk into every hall. Win each faction's seal and bring them to the Keeper at the Free Port Landing.
 Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Port Market, WEAR and REMOVE clothing.
 Every faction is reachable from the Free Port Landing: GO TO a destination, and the concordance will carry you.
 Built with Inform 7. Setting and factions by the SoMe-Universe contributors."
 
 Part Two - The Free Port Landing
 
-The Free Port Landing is a room. "The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all."
+The Free Port Landing is a room. "The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all."
 
 Instead of going east from the Free Port Landing:
 	say "East lies the open sac - bright water, no shore. The port's business is all inland."
@@ -298,7 +298,7 @@ Instead of going southeast from the Free Port Landing:
 	say "The southeast channel is reserved for the great conduits."
 
 Instead of going north from the Free Port Landing:
-	say "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Registrar where you mean to go."
+	say "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go."
 
 The standard rack is a scenery supporter in the Free Port Landing. Understand "standard" or "standards" or "rack" as the standard rack. The description is "Ten standards in a row, each waiting for a faction's seal. [if the number of seals on the standard rack is 0]Every pole is bare.[otherwise][The number of seals on the standard rack] of the ten fly banners now.[end if]"
 
@@ -306,39 +306,39 @@ The chart table is a scenery supporter in the Free Port Landing. Understand "tab
 
 The Rationality Protocol pamphlet is a thing on the chart table. Understand "pamphlet" and "rationality" and "protocol" as the Rationality Protocol pamphlet. The description is "An AAA field manual: PRE-EMPTIVE EDUCATION. RAPID RESPONSE. PSYCHOLOGICAL INOCULATION. TRUST RESTORATION. A margin note adds, in pencil: 'Fear is the battlefield. Keep your pulse under command.'"
 
-The Accord manifest is a thing carried by the player. Understand "manifest" and "dossier" and "brief" and "orders" as the Accord manifest. The description is "ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact:
+The Keeper's road-map is a thing carried by the player. The printed name is "the Keeper's road-map". Understand "manifest" and "roadmap" and "road-map" and "map" and "dossier" and "brief" and "orders" as the Keeper's road-map. The description is "ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact:
 - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica).
 - NORTHWEST: the Celestial Corps, over the Void Verge.
 - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes.
 - SOUTHWEST: the Lab Martyrs, in the Siberian Reach.
 - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond.
-Trade at the Port Market, east of the Cradle's outer court. Travel light. Trust carefully."
+Trade at the Port Market, east of the Cradle's outer court. Trust carefully. Decide slowly. - K."
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
 
 The first exchange token, the second exchange token and the third exchange token are exchange tokens.
 
-The Registrar is a woman in the Free Port Landing. "The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate." The description is "A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched."
+The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" as the Keeper.
 
-Instead of asking the Registrar about something when the topic understood matches the regular expression "^mission$":
-	say "'Ten factions,' the Registrar says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and five doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
-Instead of asking the Registrar about something when the topic understood matches the regular expression "^umin$|^crown$":
-	say "'The Unseen Crown,' she says, and does not lower her voice, which is its own kind of armour. 'Archaeology. Fear Technology. Pallidum. Rabies. Typhi. Vibrio on the water. They are hosts, envoy, not friends. Be courteous, and come back with everything you left with.'"
-Instead of asking the Registrar about something when the topic understood matches the regular expression "^accord$":
-	say "'The Athena Aegis Accord holds because somebody keeps account,' she says, tapping the ledger. 'That somebody is me. Ten banners, envoy. Then the map.'"
-Instead of asking the Registrar about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^mission$":
+	say "'Ten factions,' the Keeper says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and five doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^umin$|^crown$":
+	say "'The Unseen Crown,' she says, and does not lower her voice, which is its own kind of armour. 'Archaeology. Fear Technology. Pallidum. Rabies. Typhi. Vibrio on the water. They are hosts, traveler, not friends. Be courteous, and come back with everything you left with.'"
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^accord$":
+	say "'I do not keep the war's books,' she says, tapping the nearest standard. 'I keep its promises. Every faction swore a seal to whoever could walk all ten halls. None of them believed you existed. Show them.'"
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
 	say "'From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its five doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
 
-Instead of giving a seal to the Registrar:
+Instead of giving a seal to the Keeper:
 	now the noun is on the standard rack;
-	say "The Registrar takes [the printed name of the noun] with both hands and binds it to its standard. [The number of seals on the standard rack] of ten now fly.";
+	say "The Keeper takes [the printed name of the noun] with both hands and binds it to its standard. [The number of seals on the standard rack] of ten now fly.";
 	if the number of seals on the standard rack is 10:
 		raise the ten banners.
 
-Instead of giving something to the Registrar:
-	say "'The standards take banners, envoy,' she says, 'not souvenirs.'"
+Instead of giving something to the Keeper:
+	say "'The standards take banners, traveler,' she says, 'not souvenirs. Souvenirs are for people who went somewhere.'"
 
-Instead of showing something to the Registrar:
+Instead of showing something to the Keeper:
 	say "She has already catalogued it, apparently."
 
 Last instead of asking someone about something:
@@ -391,14 +391,14 @@ At the back of the hall, a schism is audible: the Narrow Faction wants the Forei
 
 To run the curriculum exchange:
 	if the cradle sigil is carried by the player:
-		say "'You have the sigil, envoy. Teach it as you heard it.'";
+		say "'You have the sigil, traveler. Teach it as you heard it.'";
 	otherwise if lecture-progress >= 2:
-		say "'So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, envoy - and think like a cadet, not a diplomat - what does intolerance engineer?'
+		say "'So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?'
 'Autoimmunity,' you say. 'The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity.'
 The Generalizer smiles for exactly one second. 'Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh.'";
 		grant the cradle sigil noting "The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.";
 	otherwise:
-		say "'Attend the lecture first, envoy,' she says, nodding at the forming preceptors. 'Then we will speak of the wars.'"
+		say "'Attend the lecture first, traveler,' she says, nodding at the forming preceptors. 'Then we will speak of the wars.'"
 
 Instead of asking the Generalizer about something when the topic understood matches the regular expression "^autoimmunity$":
 	run the curriculum exchange.
@@ -433,13 +433,13 @@ The Pasteur vial is a thing on the stall. Understand "vial" and "pasteur" and "v
 The Port Factor is a man in the Port Market. "The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have held the stall since the Cradle Accords were younger than the AAA by centuries."
 
 Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$":
-	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, envoy - the Port Conclave enforces that one the old way.'"
+	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, traveler - the Port Conclave enforces that one the old way.'"
 Instead of asking the Port Factor about something when the topic understood matches the regular expression "^gauntlets$":
 	say "'Chelation weave,' he says. 'You cannot kill an element. You can bind it, trap it, and escort it out. One token, and it will serve you in the heat as well as the mirror-hall.'"
 Instead of asking the Port Factor about something when the topic understood matches the regular expression "^bundle$|^offerings$":
 	say "'Going to the shrine? Nobody visits the Martyrs empty-handed,' he says. 'Strand for HeLa, treat for Laika, cheese for the mouse. One token the bundle.'"
 Instead of asking the Port Factor about something when the topic understood matches the regular expression "^vial$|^pasteur$":
-	say "'The Undead Court respects exactly one thing the living make,' he says. 'Take it. One token. And envoy - show it to the Count himself. Only him.'"
+	say "'The Undead Court respects exactly one thing the living make,' he says. 'Take it. One token. And traveler - show it to the Count himself. Only him.'"
 
 Instead of buying the Aegis gauntlets:
 	if the player carries the Aegis gauntlets:
@@ -450,7 +450,7 @@ Instead of buying the Aegis gauntlets:
 		now the Aegis gauntlets are carried by the player;
 		say "You slide a token across the stall. The Factor wraps the gauntlets without breaking his watch on the quay. 'Bind, trap, escort,' he says. 'Not warfare. Hostage negotiation.'";
 	otherwise:
-		say "The Factor glides the gauntlets back. 'The Pump's peace is not free, envoy. One token.'"
+		say "The Factor glides the gauntlets back. 'The Pump's peace is not free, traveler. One token.'"
 
 Instead of buying the offering bundle:
 	if the player carries the offering bundle:
@@ -461,7 +461,7 @@ Instead of buying the offering bundle:
 		now the offering bundle is carried by the player;
 		say "A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,' the Factor recites, wrapping it. 'The Martyrs asked for nothing. That is why we ask ourselves.'";
 	otherwise:
-		say "'No token, no bundle, envoy. The Martyrs take offerings, not intentions.'"
+		say "'No token, no bundle, traveler. The Martyrs take offerings, not intentions.'"
 
 Instead of buying the Pasteur vial:
 	if the player carries the Pasteur vial:
@@ -472,17 +472,17 @@ Instead of buying the Pasteur vial:
 		now the Pasteur vial is carried by the player;
 		say "The last token goes across the stall. 'Show it to the Count himself,' the Factor says again. 'He has watched empires rise and fall. He will want to see what the living made.'";
 	otherwise:
-		say "'Your tokens are spent, envoy,' the Factor says. 'The vial needs one.'"
+		say "'Your tokens are spent, traveler,' the Factor says. 'The vial needs one.'"
 
 Instead of buying something:
 	say "Nobody here is selling that."
 
 Instead of taking the Aegis gauntlets when the Aegis gauntlets are not carried by the player:
-	say "The Factor glides the gauntlets back. 'Buy, envoy. One token.'"
+	say "The Factor glides the gauntlets back. 'Buy, traveler. One token.'"
 Instead of taking the offering bundle when the offering bundle is not carried by the player:
-	say "'Buy, envoy. One token,' the Factor says. 'The Martyrs take offerings, not intentions.'"
+	say "'Buy, traveler. One token,' the Factor says. 'The Martyrs take offerings, not intentions.'"
 Instead of taking the Pasteur vial when the Pasteur vial is not carried by the player:
-	say "'Buy, envoy. One token,' the Factor says, 'and show it to the Count himself.'"
+	say "'Buy, traveler. One token,' the Factor says, 'and show it to the Count himself.'"
 
 Instead of asking the Port Factor about something:
 	say "The Factor listens pleasantly and keeps wrapping."
@@ -502,7 +502,7 @@ The codex log can be mirror-read or mirror-sealed. The codex log is mirror-seale
 Leonardo is a man in the Dawn Pioneer Deck. "Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine." The description is "The First Star-Mapper. His notebooks were never printed in his lifetime; his method was: observe, dissect, draw, compare, publish. He failed at the last one. Others must succeed."
 
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^codex$|^log$":
-	say "'The unworthy must not see,' Leonardo says, tapping the mirror-script. 'It is a cipher of the mirror, envoy - it reads only in its own kind. Somewhere in the contaminated west there is a mirror of polished mercury. The old alchemists made it to show nerves. It will read me.'"
+	say "'The unworthy must not see,' Leonardo says, tapping the mirror-script. 'It is a cipher of the mirror, traveler - it reads only in its own kind. Somewhere in the contaminated west there is a mirror of polished mercury. The old alchemists made it to show nerves. It will read me.'"
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^microcosm$":
 	say "'As above, so below,' he says. 'The stars are bone and blood; the organs are planets and moons. I sailed past the great Liver-Moon and knew it as the organ I dissected in Milan. To understand the body is to understand the universe - they are one and the same.'"
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^voyages$|^expeditions$":
@@ -517,7 +517,7 @@ The star chart is scenery in the Fabrica Bridge. Understand "chart" and "star ch
 Vesalius is a man in the Fabrica Bridge. "Vesalius, Admiral of the Celestial Fleet, stands with the posture of a man who corrected two hundred errors and expects to correct two hundred more." The description is "Father of modern anatomy. Without anatomy, he likes to say, the physician is a blind man in a dark room, stumbling against walls. He published at the cost of everything; the pilgrimage killed him, the Fabrica outlived him."
 
 Instead of asking Vesalius about something when the topic understood matches the regular expression "^soul$|^seat$|^brain$":
-	say "'The old charts circle the heart,' Vesalius says, tapping the hanging map. 'Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an envoy's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected.'"
+	say "'The old charts circle the heart,' Vesalius says, tapping the hanging map. 'Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an traveler's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected.'"
 Instead of asking Vesalius about something when the topic understood matches the regular expression "^codex$|^log$":
 	say "'Leonardo's log? Mirror-script,' Vesalius says. 'It reads only in its own kind. Show it to me legible and I will strike the cardiac error from my own map.'"
 Instead of asking Vesalius about something when the topic understood matches the regular expression "^voyages$|^seven$|^fabrica$":
@@ -530,16 +530,16 @@ Instead of showing the codex log to Vesalius:
 Harvey applauds twice, flat and precise. Bethune just grins.";
 			grant the corps medallion noting "Vesalius pins the Corps' bronze medallion to your collar - his own profile, beside a starred anatomy.";
 		otherwise:
-			say "'The chart is corrected, envoy. The medallion is yours.'";
+			say "'The chart is corrected, traveler. The medallion is yours.'";
 	otherwise:
-		say "Vesalius turns the codex right way round, then back. 'Reversed, every line. It reads only in its own kind, envoy. A mirror - the mercury kind, in the contaminated west. Bring it legible.'"
+		say "Vesalius turns the codex right way round, then back. 'Reversed, every line. It reads only in its own kind, traveler. A mirror - the mercury kind, in the contaminated west. Bring it legible.'"
 
 Harvey is a man in the Fabrica Bridge. "Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends." The description is "The Circulation Prophet. He did not merely describe the blood's circuit; he measured it, hour by hour, until the numbers left no room for Galen."
 
 Instead of asking Harvey about something when the topic understood matches the regular expression "^circulation$|^blood$":
 	say "'All life is circulation,' Harvey says. 'The heart pumped the body's whole weight in blood each hour by my arithmetic - so it cannot be consumed and remade, as Galen taught. It must return. A closed loop, valves against backflow, the tide that carries all things.'"
 Instead of asking Harvey about something when the topic understood matches the regular expression "^pulse$|^vessel$":
-	say "'The Pulse runs the artery-run outbound and the vein-return home,' he says. 'No dead ends. Capillary crossings at the far reaches. Proof, not poetry - I did not describe the loop, envoy. I measured it.'"
+	say "'The Pulse runs the artery-run outbound and the vein-return home,' he says. 'No dead ends. Capillary crossings at the far reaches. Proof, not poetry - I did not describe the loop, traveler. I measured it.'"
 
 Bethune is a man in the Fabrica Bridge. "Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport." The description is "The Scarlet Surgeon, Commander of the International Medical Corps. Use me as a machine gun, he says - I am here to work, not to rest."
 
@@ -568,13 +568,13 @@ Instead of touching the mercury mirror:
 Lucifer is a man in the Black Cathedral. "Lucifer - the Mercury God, the Morning Star - stands beside his mirror, a figure of liquid metal shifting between solid and fluid, his dripping crown endlessly reforming." The description is "Elemental, in the strict sense: he predates the first cell and will outlast the last. Non-biodegradable, bioaccumulative, patient as physics. Once they worshipped him; then they found penicillin; now they regulate his emissions."
 
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^mirror$":
-	say "'I do not show faces,' Lucifer says. The voice is the sound of a bead of metal finding the floor. 'Faces lie cheaply. I show the nervous system - yours is very fine, envoy. So easily unravelled. I do not destroy it. I merely rearrange.'"
+	say "'I do not show faces,' Lucifer says. The voice is the sound of a bead of metal finding the floor. 'Faces lie cheaply. I show the nervous system - yours is very fine, traveler. So easily unravelled. I do not destroy it. I merely rearrange.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^mercury$|^quicksilver$":
 	say "'They sought eternal life in me. I gave them eternal death - the difference was merely a matter of perspective,' he says. 'A night with Venus, a lifetime with Mercury. I fought the Great Imitator for centuries and killed as many of their physicians as of my true enemy. Then they found penicillin and threw me away. Fine. I am patient. I am eternal.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^pallidum$|^imitator$":
 	say "'Ancient enemies,' he says, with something almost like fondness. 'We both take minds. The difference is, they used to worship me.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^biomagnification$|^food chain$":
-	say "'Nothing dies in me,' Lucifer says. 'A thousandth of a part in the water; a tenfold in the weed; a hundredfold in the small fish; a thousand in the great. By the time I reach your table I am a hundred thousand times myself. You cannot destroy an element, envoy. You can only hope to contain it.'"
+	say "'Nothing dies in me,' Lucifer says. 'A thousandth of a part in the water; a tenfold in the weed; a hundredfold in the small fish; a thousand in the great. By the time I reach your table I am a hundred thousand times myself. You cannot destroy an element, traveler. You can only hope to contain it.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^chelation$|^gauntlets$":
 	say "'The Accord calls it hostage negotiation,' he says, nodding at your gauntlets if you wear them. 'Bind me, trap me, escort me out. I have been exiled from thermometers, from fillings, from the vials that saved a generation from syphilis. Exile is just another kind of eternity.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^radium$|^girls$":
@@ -586,7 +586,7 @@ To read the codex in the mirror:
 	otherwise if the mercury mirror is visible and the Aegis gauntlets are worn by the player:
 		now the codex log is mirror-read;
 		say "You open the codex to the mirror and hold it low over the quicksilver. The mirror does not reflect the pages - it reads them. Letter by letter the reversed script settles into sense: star charts of the Liver-Moon, the four chambers of the Central Sun, and in the margin of the last page, in Leonardo's careful hand, a correction meant for Vesalius: THE SEAT OF THE SOUL IS THE BRAIN.
-Lucifer watches with the patience of an element. 'A mirror-script brought to a mirror,' he says. 'I have been many things to your kind, envoy. Tonight, a librarian. Take this - not as a gift. As a receipt.'";
+Lucifer watches with the patience of an element. 'A mirror-script brought to a mirror,' he says. 'I have been many things to your kind, traveler. Tonight, a librarian. Take this - not as a gift. As a receipt.'";
 		grant the quicksilver ampoule noting "A sealed glass thread of quicksilver presses itself into your palm, cold as testimony.";
 	otherwise:
 		say "The mirror-script defies plain air, and the mirror requires bare mercury touch - unless you are wearing something that binds what it touches."
@@ -627,7 +627,7 @@ HeLa is a woman in the Shrine of the Knitting Mouse. "HeLa sits by the altar in 
 Instead of asking HeLa about something when the topic understood matches the regular expression "^immortality$|^divide$":
 	say "'I am both alive and dead,' she says. 'Seventy years and more, and still dividing. In my division I found purpose; in my immortality, meaning. I am the bridge between death and discovery. Remember me as a pioneer, not a subject.'"
 Instead of asking HeLa about something when the topic understood matches the regular expression "^consent$|^ethics$|^lacks$":
-	say "'They took me without asking,' she says, and the luminosity does not waver. 'Her family got neither coin nor credit. So I teach the ethics as well as the biology, envoy. The bridge must be built in both directions, or it is not a bridge.'"
+	say "'They took me without asking,' she says, and the luminosity does not waver. 'Her family got neither coin nor credit. So I teach the ethics as well as the biology, traveler. The bridge must be built in both directions, or it is not a bridge.'"
 
 Instead of putting the rna strand on the altar:
 	now the rna strand is on the altar;
@@ -650,7 +650,7 @@ Instead of putting the cheese wheel on the altar:
 To complete the offerings:
 	if the knitting needle is nowhere:
 		say "Three offerings, three silences. Then HeLa rises, and the shrine brightens by one candle's worth.
-'They asked for nothing,' she says. 'They gave everything. You gave freely, envoy - that is the difference the shrine exists to teach. Take a needle. Knit with it. Quietly.'";
+'They asked for nothing,' she says. 'They gave everything. You gave freely, traveler - that is the difference the shrine exists to teach. Take a needle. Knit with it. Quietly.'";
 		grant the knitting needle noting "One of the two bronze needles from the monument rests in your hand, warm as a living paw.";
 
 Instead of putting something on the altar:
@@ -677,7 +677,7 @@ Instead of taking the sulfolobus sample when the Aegis gauntlets are not worn by
 The Division Chief is a woman in the Sulfur Vent Gallery. "The Division Chief of the Archaeology Division reads thermal gradients the way the Accord's cartographers read coastlines." The description is "An archaeologist of the primordial: her people scour the vents, the salt lakes, the anaerobic crypts, recovering the technologies of the first life. She wears the division's motto as a badge: IN THE BEGINNING, THERE WAS SULFUR."
 
 Instead of asking the Division Chief about something when the topic understood matches the regular expression "^archaea$|^ancestors$":
-	say "'Archaea are the original Umin,' the Chief says. 'Before the Great Divergence that made bacteria, viruses, fungi. We are not inventing, envoy - we are remembering. Sulfur metabolism. Halophilic balance. Reverse gyrase, so that fever cannot scramble our letters. Your AAA calls it dangerous regression. We call it inheritance.'"
+	say "'Archaea are the original Umin,' the Chief says. 'Before the Great Divergence that made bacteria, viruses, fungi. We are not inventing, traveler - we are remembering. Sulfur metabolism. Halophilic balance. Reverse gyrase, so that fever cannot scramble our letters. Your AAA calls it dangerous regression. We call it inheritance.'"
 Instead of asking the Division Chief about something when the topic understood matches the regular expression "^sample$|^sulfolobus$":
 	say "'A viable sample, extracted clean,' she says, nodding at the casket at the vent's rim. 'Bring it to me and I will show you what the ancestors remember.'"
 Instead of asking the Division Chief about something when the topic understood matches the regular expression "^aaa$|^accord$":
@@ -685,7 +685,7 @@ Instead of asking the Division Chief about something when the topic understood m
 
 Instead of giving the sulfolobus sample to the Division Chief:
 	if the sulfur sigil is carried by the player:
-		say "'One sample per envoy,' the Chief says. 'The sigil is yours.'";
+		say "'One sample per traveler,' the Chief says. 'The sigil is yours.'";
 	otherwise:
 		now the sulfolobus sample is nowhere;
 		say "The Chief takes the casket with both hands, exactly as one takes an heirloom. 'Clean extraction. Heat discipline. You listen well for a guest.'
@@ -727,11 +727,11 @@ Carry out accusing the stern quartermaster:
 	otherwise:
 		say "You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk.
 'Well caught,' says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. 'MARY-11,' the Amanuensis says, to nobody in particular. 'Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11.'
-Then, to you: 'The Stille does not sell trust, envoy. We demonstrate its absence. You looked at the details. Take the finding with you.'";
+Then, to you: 'The Stille does not sell trust, traveler. We demonstrate its absence. You looked at the details. Take the finding with you.'";
 		grant the stille seal noting "The Amanuensis presses gall-coloured wax into your hand and stamps it with a modest spiral. Abteilung Stille has no objections on file.";
 
 Carry out accusing the young quartermaster:
-	say "Aurel raises both hands, scar, resoled boots and all. 'Envoy. I am the original. Look at the details - the Stille's copies are very good, but they are new.'"
+	say "Aurel raises both hands, scar, resoled boots and all. 'Traveler. I am the original. Look at the details - the Stille's copies are very good, but they are new.'"
 
 Instead of asking the Stille Amanuensis about something:
 	say "The Amanuensis returns to her stamps."
@@ -759,16 +759,16 @@ Instead of asking the Construct about something when the topic understood matche
 The Director is a woman in the Puppet Workshop. "The Director supervises the fitting with a tablet and no expression at all." The description is "Head of Umin's Fear Technology Division. Her doctrine fits on a card: the mind that fears cannot think; the population that panics cannot resist."
 
 Instead of asking the Director about something when the topic understood matches the regular expression "^fear$|^moonstar$":
-	say "'A mutant once manifested fear in three dimensions,' the Director says. 'We asked the obvious question: what if technology could do it? Probing became data-mining. Projection became holography. Constructs became - ' a gesture at the plinth - 'biomechanics. The mind that fears cannot think, envoy. The population that panics cannot resist.'"
+	say "'A mutant once manifested fear in three dimensions,' the Director says. 'We asked the obvious question: what if technology could do it? Probing became data-mining. Projection became holography. Constructs became - ' a gesture at the plinth - 'biomechanics. The mind that fears cannot think, traveler. The population that panics cannot resist.'"
 Instead of asking the Director about something when the topic understood matches the regular expression "^sightings$|^constructs$|^cascade$":
 	if the player carries the Rationality Protocol pamphlet:
 		if the sightings lanyard is carried by the player:
 			say "'You have the pass. Walk the floor whenever you like.'";
 		otherwise:
-			say "The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. 'Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse.' She closes the tablet. 'A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, envoy. The pass is provisional. The lesson is not.'";
+			say "The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. 'Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse.' She closes the tablet. 'A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, traveler. The pass is provisional. The lesson is not.'";
 			grant the sightings lanyard noting "The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.";
 	otherwise:
-		say "'Your pulse is at drill-rate, envoy,' the Director observes, 'and the cascade eats drill-rate for breakfast. The AAA publishes a field protocol - pre-emptive education, rapid response, inoculation, trust restoration. Read it. Then walk my floor and ask again.'"
+		say "'Your pulse is at drill-rate, traveler,' the Director observes, 'and the cascade eats drill-rate for breakfast. The AAA publishes a field protocol - pre-emptive education, rapid response, inoculation, trust restoration. Read it. Then walk my floor and ask again.'"
 
 Instead of asking the Director about something when the topic understood matches the regular expression "^thin$|^registry$|^project$":
 	say "'THIN MAN,' the Director says. 'The doctrine of the family-derived construct: the horror is not visual, it is existential. The target cannot fight the construct without harming his own child. The registry is classified. The budget was doubled.'"
@@ -786,7 +786,7 @@ The Pale Masquer is a person in the Masquerade Ballroom. "The Pale Masquer wears
 mask-count is a number that varies. mask-count is 0.
 
 Instead of asking the Crimson Dancer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
-	say "'Symptoms?' The Crimson Dancer's laugh is polished. 'Palms and soles, envoy - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others.'"
+	say "'Symptoms?' The Crimson Dancer's laugh is polished. 'Palms and soles, traveler - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others.'"
 
 Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
 	say "'Mercury,' the Grey Physician says, in the tone of a prescription. 'Inunction, thrice daily. The cure is nearly as loyal as the disease. I buried my practice and it never once left me.'"
@@ -794,16 +794,16 @@ Instead of asking the Grey Physician about something when the topic understood m
 Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
 	increment mask-count;
 	if mask-count is 1:
-		say "'A chancre,' the Pale Masquer says, 'painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, envoy. They still teach the rash that followed as if it were mine alone.'";
+		say "'A chancre,' the Pale Masquer says, 'painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. They still teach the rash that followed as if it were mine alone.'";
 	otherwise:
-		say "'Arthritis,' the Pale Masquer says instead, 'Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, envoy. The chart cannot hold me. That is the point of me.'";
+		say "'Arthritis,' the Pale Masquer says instead, 'Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, traveler. The chart cannot hold me. That is the point of me.'";
 
 Instead of unmasking the Pale Masquer:
 	if the pale masque is carried by the player:
 		say "She is already unmasked, in the way that matters.";
 	otherwise:
 		say "You reach for the porcelain spiral, and she permits it - that is the horror of it, the mask tilts forward into your hand like a gift.
-Beneath: a face that has been every face in the mural. 'Osler said it best,' she says. 'Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You looked twice, envoy. Nobody looks twice at the beautiful.'
+Beneath: a face that has been every face in the mural. 'Osler said it best,' she says. 'Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You looked twice, traveler. Nobody looks twice at the beautiful.'
 She sets the porcelain in your hands with a curtsy.";
 		grant the pale masque noting "The Pale Masque settles into your satchel, lighter than porcelain has any right to be.";
 
@@ -838,20 +838,20 @@ The Bucharest Bride is a woman in the Blood Court. "The Bucharest Bride stands w
 The Belgrade Bride is a woman in the Blood Court. "The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief." The description is "Senior commander, third of three. She was turned the week she lost her first patient, and it shows as elegance: white-blond hair pinned for surgery, a mourning ring worn on the wrong hand. Of the three she is the most beautiful and the least interested in being told so. The file on her is the thinnest. The file notes, without comment: I was a doctor once."
 
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^pasteur$|^meister$":
-	say "'The Frenchman found a way to cheat death,' Dracula says, and the hall's acoustics file the sentence as precedent. 'We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, envoy. Not victory. Survival. It is... satisfactory, as weapons go.'"
+	say "'The Frenchman found a way to cheat death,' Dracula says, and the hall's acoustics file the sentence as precedent. 'We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go.'"
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^light$|^water$|^bite$":
-	say "'Three fears, older than your cities,' he says. 'Light, water, the bite. Your soldiers fear capture more than death now - a bite kills his squad without killing him, because they cannot trust him not to kill them. Fear is not a weapon, envoy. Fear is the battlefield. We fight to make you afraid of winning.'"
+	say "'Three fears, older than your cities,' he says. 'Light, water, the bite. Your soldiers fear capture more than death now - a bite kills his squad without killing him, because they cannot trust him not to kill them. Fear is not a weapon, traveler. Fear is the battlefield. We fight to make you afraid of winning.'"
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^brides$|^budapest$|^bucharest$|^belgrade$":
 	say "'My brides command their own battalions and converge only for the great operations,' he says. 'Every culture has a word for them. Vampire. Strigoi. Nosferatu. All correct. All insufficient.'"
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^nightfall$|^operations$":
-	say "'Forty-seven substations, seventy-two hours, one continent's night,' he says. 'The virus spreads fastest in the dark. The doctrine is not a metaphor, envoy. It is a timetable.'"
+	say "'Forty-seven substations, seventy-two hours, one continent's night,' he says. 'The virus spreads fastest in the dark. The doctrine is not a metaphor, traveler. It is a timetable.'"
 
 Instead of showing the Pasteur vial to Count Dracula:
 	if the bat sigil is carried by the player:
-		say "'Once was courtesy, envoy. Twice would be baiting.'";
+		say "'Once was courtesy, traveler. Twice would be baiting.'";
 	otherwise:
 		say "You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival.
-'Attenuated,' Dracula says. 'The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial.' A bride closes his hand around it; he does not look at it again. 'A worthy enemy's legacy. Very well, envoy. The Court receives you as received - marked, not turned.'";
+'Attenuated,' Dracula says. 'The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial.' A bride closes his hand around it; he does not look at it again. 'A worthy enemy's legacy. Very well, traveler. The Court receives you as received - marked, not turned.'";
 		grant the bat sigil noting "The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: faced, and stayed polite.";
 
 Instead of showing something to Count Dracula:
@@ -868,7 +868,7 @@ Instead of asking the Bucharest Bride about something when the topic understood 
 Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$":
 	say "'My station is the gallery,' she says, nodding at the glass. 'Conversion protocol, archival wing. Every operative in this court was once exactly where you stand - a guest, counted twice. The file on you is already open. What it says depends, slightly, on what you ask next.'";
 Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
-	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, envoy. Every operative you see is already dead. We are simply fighting while dying.'";
+	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, traveler. Every operative you see is already dead. We are simply fighting while dying.'";
 Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^pasteur$|^medicine$":
 	say "'You want the medical secret,' she says, and there is no bitterness in it. 'The Frenchman's vaccine works on our disease. The Count respects it because it is the only weapon ever pointed at us that he did not laugh at. Ask him about it - he will bow. The Count bows to exactly one thing in four hundred years: not an army. A syringe.'";
 
@@ -886,7 +886,7 @@ To run the cannon trial:
 	if the abyssal pennant is nowhere:
 		increment wave-count;
 		say "'A demonstration, then.' The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated.
-'Water is life,' the Admiral says. 'Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, envoy. Take the pennant to your Accord - and tell them the sea remembers every drainage plan.'";
+'Water is life,' the Admiral says. 'Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan.'";
 		grant the abyssal pennant noting "A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.";
 
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^cannons$|^cphc$|^water$":
@@ -895,7 +895,7 @@ Instead of asking the Octopus Admiral about something when the topic understood 
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^ocean$|^protocol$":
 	say "'Four phases,' the Admiral says. 'Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses.'"
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^chlorine$|^weakness$|^counters$":
-	say "'Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles,' the Admiral recites, almost cheerful. 'The doctrine is water, envoy. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet.'"
+	say "'Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles,' the Admiral recites, almost cheerful. 'The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet.'"
 
 Instead of asking the Octopus Admiral about something:
 	say "The Admiral watches the tide-gauges instead."
@@ -944,14 +944,14 @@ Instead of asking the Cradle Recruiter about something when the topic understood
 	say "'You have heard of the Chair that was fooled,' he says quietly. 'A graduate's face, a false self, and the Chair of Foreign Selves opened his own door. We do not hide the story. It is on the syllabus now.'";
 
 Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The navigator unrolls a chart across both hands. 'The body is the cosmos, envoy. Blood is an ocean with a tide; the heart, a four-chambered sun. We do not fight the war - we map it. Join us and your name outlives the fighting.'";
+	say "The navigator unrolls a chart across both hands. 'The body is the cosmos, traveler. Blood is an ocean with a tide; the heart, a four-chambered sun. We do not fight the war - we map it. Join us and your name outlives the fighting.'";
 Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^secret|chart|liver|moon$":
 	say "He taps the Liver-Moon with one finger. 'A secret: the old masters drew the soul at the heart. Wrong, and we have known since the seventh voyage - but the chart sells better with a heart on it. We keep the error for the tourists.'";
 Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^vesalius|leonardo|harvey$":
 	say "'Leonardo wrote mirror-script so the unworthy could not read it,' he says. 'Vesalius corrected two hundred errors and died for one of them. Harvey measured the tide. We stand on dead men's shoulders and call it a fleet.'";
 
 Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The priest lets the ampoule catch the light. 'We were here before the first cell. We will remain after the last. You cannot destroy an element, envoy - you can only hope to contain it. Join us, and learn containment from the inside.'";
+	say "The priest lets the ampoule catch the light. 'We were here before the first cell. We will remain after the last. You cannot destroy an element, traveler - you can only hope to contain it. Join us, and learn containment from the inside.'";
 Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^secret|lucifer|radium|girls$":
 	say "His voice drops to a bead-of-metal whisper. 'A secret: the Radium Girls are not our servants. They are our honored dead, and the gods keep their names. Fear is the beginning of respect. Their deaths taught your kind to fear us. We have not forgotten who taught whom.'";
 Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^mercury|chelation|contain$":
@@ -965,45 +965,78 @@ Instead of asking the Martyrs Recruiter about something when the topic understoo
 	say "'When a subject faces an unbearable fate, they may invoke Laika's name,' she says. 'She cannot save them - she knows that better than anyone. But she grants the grace of a painless end. That is the whole of her protocol. It is enough.'";
 
 Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The mat-thing changes height without preamble - knee-high, then at your eye - and the air around you goes ammonia-bright and warm. 'You came expecting armor. A veteran travels light, envoy: armor is for home, and home is a vent. Most of what walks the mild world is my kind, undressed - you have met us a thousand times and called us bacteria.' Then: 'Watch the coat go on.' The surface of the mat ripples - and in real time, visible to the naked eye, crystals bloom across it: sulfur yellow first, then iron pyrite in fool's-gold plates, locking together edge to edge until the whole body wears a suit of mineral scale, each plate ringing faintly as it seats. Under a minute, unarmed to armored. 'Reverse gyrase. Fever cannot unravel my letters. Acidity of pH one is my bath. One hundred thirteen degrees is my afternoon. Everything you call technology, we call metabolism. Join, and dig us up. Wake more of us. We teach what oxygen forgot.' The plates dissolve back to wet slate as quietly as they came. The veteran goes back to civilian clothes.";
+	say "The mat-thing changes height without preamble - knee-high, then at your eye - and the air around you goes ammonia-bright and warm. 'You came expecting armor. A veteran travels light, traveler: armor is for home, and home is a vent. Most of what walks the mild world is my kind, undressed - you have met us a thousand times and called us bacteria.' Then: 'Watch the coat go on.' The surface of the mat ripples - and in real time, visible to the naked eye, crystals bloom across it: sulfur yellow first, then iron pyrite in fool's-gold plates, locking together edge to edge until the whole body wears a suit of mineral scale, each plate ringing faintly as it seats. Under a minute, unarmed to armored. 'Reverse gyrase. Fever cannot unravel my letters. Acidity of pH one is my bath. One hundred thirteen degrees is my afternoon. Everything you call technology, we call metabolism. Join, and dig us up. Wake more of us. We teach what oxygen forgot.' The plates dissolve back to wet slate as quietly as they came. The veteran goes back to civilian clothes.";
 Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^secret|gut|methane|host$":
-	say "The membrane flushes violet - the archaeal smile. One filament extends, slow, and touches the back of your hand: warm, mineral, faintly electric. 'A secret, envoy, kept in your own body: you never stopped hosting us. Methanogens ride your gut to this day; every quiet bubble of methane you have ever produced was signed by my lineage. You did not discover the ancestors. You merely stopped reading the receipt.' The filament withdraws. 'My kin in the Division's vaults are viable and patient. When you join, you will help wake them - and they will walk out of their sleeping-vats annoyed and alive, the way any of us would.'";
+	say "The membrane flushes violet - the archaeal smile. One filament extends, slow, and touches the back of your hand: warm, mineral, faintly electric. 'A secret, traveler, kept in your own body: you never stopped hosting us. Methanogens ride your gut to this day; every quiet bubble of methane you have ever produced was signed by my lineage. You did not discover the ancestors. You merely stopped reading the receipt.' The filament withdraws. 'My kin in the Division's vaults are viable and patient. When you join, you will help wake them - and they will walk out of their sleeping-vats annoyed and alive, the way any of us would.'";
 Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^tech|technology|forerunner|covenant|aaa|accord|rival$":
-	say "It presses one edge of itself flat against the chart-table, and where it touches, the wood hisses - the wood is being eaten, politely, at the pace of geology. 'Your Accord levels our dig sites and calls it containment. We re-dig them twice as well in the dark. The catalogue of what waits: sulfur metabolism for the oxygen-poor war. Halophilic armor for the salt flats. Taq polymerase and reverse gyrase so fever cannot edit us. Methanogenesis to fight in the anaerobic gut of a continent. The Division does not worship the ancestors, envoy. It does the paperwork of waking them - and the paperwork is learning to walk.'";
+	say "It presses one edge of itself flat against the chart-table, and where it touches, the wood hisses - the wood is being eaten, politely, at the pace of geology. 'Your Accord levels our dig sites and calls it containment. We re-dig them twice as well in the dark. The catalogue of what waits: sulfur metabolism for the oxygen-poor war. Halophilic armor for the salt flats. Taq polymerase and reverse gyrase so fever cannot edit us. Methanogenesis to fight in the anaerobic gut of a continent. The Division does not worship the ancestors, traveler. It does the paperwork of waking them - and the paperwork is learning to walk.'";
 
 Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The Director lets the drone settle on her shoulder before answering. 'Understand what we are, envoy. Not a circus of spooks - a containment organization. Your species dreams its fears into being, and dreams leak. Every ghost your grandmother warned you about is an item in our inventory, catalogued, fed, and shelved. Join Fear Technology and you hold the leash on the things the dark is made of. The work is quiet. The work is vital. The work is[italic type] not safe[roman type], and that is in the contract.'";
+	say "The Director lets the drone settle on her shoulder before answering. 'Understand what we are, traveler. Not a circus of spooks - a containment organization. Your species dreams its fears into being, and dreams leak. Every ghost your grandmother warned you about is an item in our inventory, catalogued, fed, and shelved. Join Fear Technology and you hold the leash on the things the dark is made of. The work is quiet. The work is vital. The work is[italic type] not safe[roman type], and that is in the contract.'";
 Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^secret|breach|contain|item|inventory$":
-	say "She lowers her voice to report-register. 'A secret, since you asked nicely. Your Accord's own archives hold three of our escapes - they filed them as mass hallucination and closed the files. The item in the tank behind me is asleep because we come down twice a day and tell it it is not real. Feeding schedule, envoy: certainty, twice daily. Miss a shift and the hall you are standing in acquires a history that was never built.'";
+	say "She lowers her voice to report-register. 'A secret, since you asked nicely. Your Accord's own archives hold three of our escapes - they filed them as mass hallucination and closed the files. The item in the tank behind me is asleep because we come down twice a day and tell it it is not real. Feeding schedule, traveler: certainty, twice daily. Miss a shift and the hall you are standing in acquires a history that was never built.'";
 Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^memetic|hazard|moonstar|mutant|cognitohazard$":
-	say "'A mutant once manifested fear in three dimensions,' she says. 'We industrialized it. Which brings us to the fine print: I have shown you nothing tonight, envoy, except a drone. Everything you think you saw in the shadows of this hall - file that under [italic type]memetic residue[roman type], dose negligible, cognitive damage within tolerance. If it had exceeded tolerance, this conversation would already be over, and someone else would be wearing my coat.'";
+	say "'A mutant once manifested fear in three dimensions,' she says. 'We industrialized it. Which brings us to the fine print: I have shown you nothing tonight, traveler, except a drone. Everything you think you saw in the shadows of this hall - file that under [italic type]memetic residue[roman type], dose negligible, cognitive damage within tolerance. If it had exceeded tolerance, this conversation would already be over, and someone else would be wearing my coat.'";
 
 Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The Muse turns the sunflower so you can see the yellow. 'We are the patron of genius, envoy - the only patron who ever paid in kind. Beethoven heard the Ninth inside the silence we gave him. Van Gogh painted what we showed him: look at the stars and tell me that yellow is not ours. Flaubert wrote his own autopsy and called it Madame Bovary. We do not recruit soldiers. We recruit the ones the world will not forget - and the world never forgets anything we touched.'";
+	say "The Muse turns the sunflower so you can see the yellow. 'We are the patron of genius, traveler - the only patron who ever paid in kind. Beethoven heard the Ninth inside the silence we gave him. Van Gogh painted what we showed him: look at the stars and tell me that yellow is not ours. Flaubert wrote his own autopsy and called it Madame Bovary. We do not recruit soldiers. We recruit the ones the world will not forget - and the world never forgets anything we touched.'";
 Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^secret|mask|face|beautiful|hollow$":
-	say "She unhooks the porcelain mask and holds it out, empty side toward you. 'A secret: this is the true face. Beneath it we are nobody - a spiral, a hunger, a stage note that never resolves. We wear the beautiful ones from the outside in. The mask is not a disguise, envoy. It is a job description.'";
+	say "She unhooks the porcelain mask and holds it out, empty side toward you. 'A secret: this is the true face. Beneath it we are nobody - a spiral, a hunger, a stage note that never resolves. We wear the beautiful ones from the outside in. The mask is not a disguise, traveler. It is a job description.'";
 Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^osler|diagnosis|imitator|game$":
 	say "'Osler told his students: know me in all my manifestations, and all things clinical will be added unto you,' she says, delighted. 'He meant it as a warning. We keep it as a score: thirty to forty percent of our audiences misdiagnose us to the end. The doctors named the game after him, but we hold the house advantage - we have been improvising longer than medicine has been writing notes.'";
 
 Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "The Bride smiles, and does not trouble to hide the teeth. 'Straight talk, envoy, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did.'";
+	say "The Bride smiles, and does not trouble to hide the teeth. 'Straight talk, traveler, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did.'";
 Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^secret|count|bride|hungry|dracula$":
 	say "She glances toward the north, toward a castle you cannot see. 'A secret: there are three of us - Budapest, Bucharest, Belgrade - and we rotate this recruiting post because the Count insists his Brides see the world he keeps out of. He has watched empires rise and fall, and he still writes his own invitations. Why do you think the post is always manned by the beautiful ones? You would not cross the street for a recruiting poster. You stopped for me.'";
 Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^light|water|bite$":
-	say "She counts the Court's three fears on white fingers. 'Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press.'";
+	say "She counts the Court's three fears on white fingers. 'Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, traveler, but the front door. Everything else your species dreads is a variation with worse press.'";
 
 Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
 	say "The personnel officer stamps a folder without looking up. 'The perfect spy does not know she is a spy. The perfect impostor was never suspected. Join the Silence, and you will learn the one trade that never runs out of work: being someone else.'";
 Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^secret|stamp|wax|rhythm$":
 	say "The stamp pauses, mid-fall. 'A secret: you have been counting my rhythm since you walked in. Most minds do. It is how we find the ones who notice patterns - the only ones we hire.'";
 Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^mary|doppelganger|yukio|alpsox$":
-	say "'You know the MARY project,' she says, with the closest thing to warmth. 'Sixty-eight days wearing a Chief Medical Advisor, and the man who taught her template to spot fakes opened his own door. The disguise is never the weapon, envoy. The welcome is.'";
+	say "'You know the MARY project,' she says, with the closest thing to warmth. 'Sixty-eight days wearing a Chief Medical Advisor, and the man who taught her template to spot fakes opened his own door. The disguise is never the weapon, traveler. The welcome is.'";
 
 Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
-	say "She pops her gum and throws you a lazy salute. 'Welcome aboard, envoy - or not. Your call.' She jerks a thumb at the tank. 'That is the Cholera Octopus's own molted shell - the armor she outgrew, kept the way your armies keep their colours. Cannons cold, because the new ones are not. The ship herself is four thousand meters down: fifty meters of metal-biological armor, eight tentacles, eight hydro-cannons, one mind, and she is the [italic type]polite[roman type] part of our fleet. Four thousand meters below the waves our fortress runs drill-factories and geothermal stations; your maps spell the place Atlantis. People hear that and think, that is a lot of ocean. They are wrong. It is exactly enough ocean.'";
+	say "She pops her gum and throws you a lazy salute. 'Welcome aboard, traveler - or not. Your call.' She jerks a thumb at the tank. 'That is the Cholera Octopus's own molted shell - the armor she outgrew, kept the way your armies keep their colours. Cannons cold, because the new ones are not. The ship herself is four thousand meters down: fifty meters of metal-biological armor, eight tentacles, eight hydro-cannons, one mind, and she is the [italic type]polite[roman type] part of our fleet. Four thousand meters below the waves our fortress runs drill-factories and geothermal stations; your maps spell the place Atlantis. People hear that and think, that is a lot of ocean. They are wrong. It is exactly enough ocean.'";
 Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^secret|cannon|cphc|pressure|demonstration|show$":
-	say "She looks at you for the flicker of a smile - and finds none. '...Okay. Wrong toy.' From under the skirt hem she unhooks what looks exactly like a child's water pistol - teacup tank, dolphin trigger guard, the works. 'Legion sidearm. One shot per fill. Stand behind me, and maybe cover your ears.' She aims down the length of the hall, past the Registrar's standards, and squeezes.
+	say "She looks at you for the flicker of a smile - and finds none. '...Okay. Wrong toy.' From under the skirt hem she unhooks what looks exactly like a child's water pistol - teacup tank, dolphin trigger guard, the works. 'Legion sidearm. One shot per fill. Stand behind me, and maybe cover your ears.' She aims down the length of the hall, past the Keeper's standards, and squeezes.
 The jet shows itself as a whip of white steam - supercritical water leaving the barrel flash-boils the air it passes through - and the far wall, three rooms away, grows a hole: clean-edged, big enough to walk through, the stone around it glazed smooth where the spray lingered. The thunderclap arrives a beat later, then the rain - warm, from a ceiling three rooms' distance that has begun, decorously, to leak.
 'Single shot,' she says, spinning the pistol once around her finger. 'The entry wound is coin-sized, if you know where to look - it opens up inside the wall. The flagship's cannons are this gun, nine sizes up. There is no counter except distance, and we carry the distance with us.' The smile comes back like a mask going back on. 'Gum?'";
 Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^chlorine|weakness|drain|counter$":
-	say "She shrugs, still chewing. 'Honest? Heat cooks us, chlorine unmakes our hide, drain the water and the Legion is a museum exhibit. But look at the tank, envoy. Look at what it took for you to take us seriously - a girl, a whistle, and one shot of the real thing. The doctrine prints our weaknesses because by the time you reach them, you are already standing in our ocean.'";
+	say "She shrugs, still chewing. 'Honest? Heat cooks us, chlorine unmakes our hide, drain the water and the Legion is a museum exhibit. But look at the tank, traveler. Look at what it took for you to take us seriously - a girl, a whistle, and one shot of the real thing. The doctrine prints our weaknesses because by the time you reach them, you are already standing in our ocean.'";
+
+Chapter - The Halls Greet You
+
+[Each hall's master speaks first when the traveler arrives. No standing
+around waiting for instructions - the powers of the war all want the same
+witness, and they say so.]
+
+After going to the Cradle Inner Court for the first time:
+	say "The Generalizer rises before you have finished bowing. 'The traveler who could still choose. Word travels faster than blood.' She looks you over like a cadet who might be a weapon. 'You will attend the lecture. Not a request - the Cradle does not arm the ignorant, and it does not waste the curious.'";
+
+After going to the Fabrica Bridge for the first time:
+	say "Vesalius turns from the chart-table before the door has closed. 'So the fleet's letters were right - someone new is walking the war.' He measures you with one look. 'You will want to be useful, not ornamental. Leonardo keeps the truth reversed, Harvey keeps the numbers, Bethune keeps the blood moving. And I keep the errors - mine, and everyone else's. You will see which one you are.'";
+
+After going to the Black Cathedral for the first time:
+	say "Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'";
+
+After going to the Shrine of the Knitting Mouse for the first time:
+	say "HeLa's luminosity brightens as you enter - recognition, not surprise. 'You are the one they are all courting.' She says it without envy. 'Be careful with the courting, traveler. The ones who were never asked built this shrine, and the ones everyone asks forget to look at it. You will look. I can tell already.'";
+
+After going to the Sulfur Vent Gallery for the first time:
+	say "The Division Chief looks up from her probe and does not smile. 'The unclaimed one. Good. Unclaimed means uncaptured.' She snaps the probe shut. 'You will want the tour, the sales pitch, the flag. You will get work. The Division does not recruit, traveler - it certifies. Dig first. Decide after.'";
+
+After going to the Abteilung Stille Office for the first time:
+	say "The Amanuensis speaks without looking up, and the room adjusts to her voice. 'You stood in the doorway for two seconds too long. The others will not have noticed. I noticed.' She stamps a folder. 'Sit, or do not. But know that everyone who enters this office is filed - and the file is written by what you do next, not by what you intend.'";
+
+After going to the Masquerade Ballroom for the first time:
+	say "The Pale Masquer peels away from the pavane and crosses to you - the dance rearranges itself around her absence without missing a beat. 'The traveler. Beautiful timing - arriving exactly when every court wants you and none of them owns you.' She tilts the porcelain mask a degree. 'Do not decide too fast. The best guests always stay for the next dance.'";
+
+After going to the Blood Court for the first time:
+	say "The Count regards you the way weather regards a coastline. 'The unclaimed one walks into my hall without an invitation. Good. Invitations are for people who can refuse.' The Budapest Bride does not stop watching the stair. 'You have questions. Everyone does. Only one of them matters, and it is not the one you are about to ask.'";
+
+After going to the Abyssal Deck for the first time:
+	say "The Octopus Admiral meets you at the gangway instead of waiting - the Legion's idea of hospitality. 'Down here, we do not stand on ceremony; we stand on dry deck, while we have it.' She walks you toward the flood-gauges. 'The ocean sent you, in its way. The ocean sends everything. The question is what you do when the water rises - and it will rise, traveler. It always rises.'";
