@@ -26,7 +26,7 @@ Instead of going to the Singularity:
 	say "After the Big Bang, the Singularity no more exists."
 
 After looking in the Singularity for the first time:
-	say "Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first traveler to walk the war."
+	say "Three roads leave the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north - and a third way, west, where the land glows wrong. The Ten wait behind them for the first traveler to walk the war. The west road belongs to the Old Metals, and the stories agree: look, but do not look like food."
 
 The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Under the banners wait a medullary preceptor, a fleet navigator, an element-priest, and a quiet keeper - one recruiter for each power, each ready to make the case for a sworn oath."
 
@@ -276,7 +276,7 @@ Carry out abouting:
 	say "SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project.
 You are the one the ten banners have been waiting for - awake, unclaimed, and brave enough to walk into every hall. Win each faction's seal and bring them to the Keeper at the Free Port Landing.
 Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Port Market, WEAR and REMOVE clothing.
-Every faction is reachable from the Free Port Landing: GO TO a destination, and the concordance will carry you.
+Every faction is reachable from the Free Port Landing: GO TO a destination, and the concordance will carry you. The west road - the Pantheon - begins at the Singularity, and it is the one road the concordance will not walk for you.
 Built with Inform 7. Setting and factions by the SoMe-Universe contributors."
 
 Part Two - The Free Port Landing
@@ -308,6 +308,7 @@ The chart table is a scenery supporter in the Free Port Landing. Understand "tab
 The Rationality Protocol pamphlet is a thing on the chart table. Understand "pamphlet" and "rationality" and "protocol" as the Rationality Protocol pamphlet. The description is "An AAA field manual: PRE-EMPTIVE EDUCATION. RAPID RESPONSE. PSYCHOLOGICAL INOCULATION. TRUST RESTORATION. A margin note adds, in pencil: 'Fear is the battlefield. Keep your pulse under command.'"
 
 The Keeper's road-map is a thing carried by the player. The printed name is "the Keeper's road-map". Understand "manifest" and "roadmap" and "road-map" and "map" and "dossier" and "brief" and "orders" as the Keeper's road-map. The description is "ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact:
+- WEST: the Pantheon - the Cathedral of the Old Metals. The Radiology clergy guard the turn; go armored or do not go.
 - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica).
 - NORTHWEST: the Celestial Corps, over the Void Verge.
 - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes.
@@ -1021,7 +1022,7 @@ The Pilgrim's Turn is west of the Singularity. "The road west forks at a shrine 
 The Radiologist is a man in the Pilgrim's Turn. "A priest of the Radiology Order bars the west road - lead-lined vestments, a collimator staff, eyes that have watched tumors die and patients glow." The description is "The Radiology Order serves the Hall of Medicine, but their power is borrowed from the Pantheon: they aim the gods' own light at tumors and pray the patient outlasts the cure. He was sent here to turn back the unshielded, and he has buried the ones who would not turn." Understand "priest" and "radiology" and "radiologist priest" as the Radiologist.
 
 After going to the Pilgrim's Turn for the first time:
-	say "The Radiologist steps into the road before you have decided to stop. 'West is the Cathedral of the Old Metals, traveler, and I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad.'";
+	say "The Radiologist steps into the road before you have decided to stop. 'West is the third realm - the Pantheon, the Cathedral of the Old Metals, the 'Xi Tian' your fables guessed at. No one in either gate will thank you for knowing: the Medics borrow its light and the Citadel fears its ground, so both pretend the west is empty. I will tell you what no brochure will: the gods there do not hate you. They simply are - and their bare attention kills. Even the Citadel's plagues route around that ground; even we, who borrow their light to burn tumors, stand in it only lead-clad. You are not lead-clad.'";
 
 Instead of going west from the Pilgrim's Turn when the Aegis gauntlets are not worn by the player and radiology-warning is less than 2:
 	if radiology-warning is 0:
