@@ -40,6 +40,7 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-4"/>
+      <child nodeId="node-186"/>
       <child nodeId="node-181"/>
     </children>
   </item>
@@ -55,6 +56,39 @@
   <item nodeId="node-5">
     <command xml:space="preserve">ask bride about water</command>
     <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-186">
+    <command xml:space="preserve">choose Undead Court</command>
+    <result xml:space="preserve">The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.&#x000A;&#x000A;&#x000A;The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.&#x000A;An Accord manifest appears in your satchel.&#x000A;(Type BANNERS at any time to review the campaign.)&#x000A;&#x000A;The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.&#x000A;&#x000A;The circuit of the Ten Banners begins.&#x000A;&#x000A;Free Port Landing&#x000A;The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Registrar keeps the standards here, under Accord charter, where every faction's oath-binding is neutral ground. Go to any banner's hall from this deck - the port's manifests know them all.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens, on neutral ground no faction dare violate.&#x000A;&#x000A;&#x000A;HOW TO TRAVEL: no compass needed at this hub. List every destination:&#x000A;      ASK REGISTRAR ABOUT DESTINATIONS&#x000A;then jump straight there:&#x000A;      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)&#x000A;Carry every won seal home and REPORT to raise the standards.&#x000A;&#x000A;HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
+    <command xml:space="preserve">go to undead court</command>
+    <result xml:space="preserve">The manifest takes your word, and the concordance carries you along the great vessels of the war.&#x000A;&#x000A;Blood Court&#x000A;The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.&#x000A;&#x000A;Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.&#x000A;&#x000A;The Budapest Bride watches the stair, unhurried.&#x000A;&#x000A;The Bucharest Bride stands where the gallery light ends, which is a professional habit.&#x000A;&#x000A;The Belgrade Bride has a physician's hands, and the file on her is the thinnest.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-188"/>
+    </children>
+  </item>
+  <item nodeId="node-188">
+    <command xml:space="preserve">ask Budapest about secret</command>
+    <result xml:space="preserve">The Budapest Bride listens, and offers nothing on that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-189"/>
+    </children>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">ask Budapest about mission</command>
+    <result xml:space="preserve">The Budapest Bride listens, and offers nothing on that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
