@@ -1,8 +1,8 @@
 n
-ask supervisor about joining
-ask supervisor about secret
-ask supervisor about memetic
-choose fear-tech
+ask ancestor about joining
+ask ancestor about secret
+ask ancestor about technology
+choose archaeology
 go to landing
 go to cradle
 ask preceptor about joining

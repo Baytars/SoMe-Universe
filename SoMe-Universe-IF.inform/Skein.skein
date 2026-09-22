@@ -1,227 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-476">
+<Skein rootNode="node-1">
   <generator>Windows Inform 10.1.2</generator>
-  <item nodeId="node-476">
+  <item nodeId="node-1">
     <command xml:space="preserve">SoMe-Universe-IF</command>
     <result xml:space="preserve">SoMe-Universe: The Ten Banners&#x000A;A diplomatic circuit through the Saga of Medicine by The SoMe-Universe Contributors&#x000A;Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D&#x000A;&#x000A;Singularity&#x000A;You are in the Singularity. The universe is beginning to explode.&#x000A;&#x000A;Two gates swirl in the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north. Ten powers wait behind them for the first envoy to walk the war.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-481"/>
-      <child nodeId="node-477"/>
+      <child nodeId="node-2"/>
+      <child nodeId="node-24"/>
     </children>
   </item>
-  <item nodeId="node-481">
+  <item nodeId="node-2">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a salt-caked bosun (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:&#x000A;&#x000A;   a field archaeologist (the Archaeology Division), the Director with a drone on her shoulder (Fear Technology), a sunflower muse (the Pale Masquerade), a pale Bride of Count Dracula (the Undead Court), a personnel officer (the Department of Silence), and a gum-chewing girl in a sailor suit (the Abyssal Legion).&#x000A;&#x000A;Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: ASK THE BOSUN ABOUT JOINING.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-648"/>
-      <child nodeId="node-651"/>
-      <child nodeId="node-647"/>
-      <child nodeId="node-652"/>
-      <child nodeId="node-485"/>
-      <child nodeId="node-482"/>
+      <child nodeId="node-3"/>
+      <child nodeId="node-6"/>
+      <child nodeId="node-7"/>
+      <child nodeId="node-178"/>
+      <child nodeId="node-8"/>
+      <child nodeId="node-9"/>
+      <child nodeId="node-20"/>
     </children>
   </item>
-  <item nodeId="node-648">
+  <item nodeId="node-3">
     <command xml:space="preserve">ask bride about joining</command>
     <result xml:space="preserve">The Bride smiles, and does not trouble to hide the teeth. "Straight talk, envoy, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-649"/>
+      <child nodeId="node-4"/>
     </children>
   </item>
-  <item nodeId="node-649">
+  <item nodeId="node-4">
     <command xml:space="preserve">ask bride about light</command>
     <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-650"/>
+      <child nodeId="node-5"/>
     </children>
   </item>
-  <item nodeId="node-650">
+  <item nodeId="node-5">
     <command xml:space="preserve">ask bride about water</command>
     <result xml:space="preserve">She counts the Court's three fears on white fingers. "Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, envoy, but the front door. Everything else your species dreads is a variation with worse press."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-651">
+  <item nodeId="node-6">
     <command xml:space="preserve">ask bride about secret</command>
     <result xml:space="preserve">She glances toward the north, toward a castle you cannot see. "A secret: there are three of us - Budapest, Bucharest, Belgrade - and we rotate this recruiting post because the Count insists his Brides see the world he keeps out of. He has watched empires rise and fall, and he still writes his own invitations. Why do you think the post is always manned by the beautiful ones? You would not cross the street for a recruiting poster. You stopped for me."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-647">
+  <item nodeId="node-7">
     <command xml:space="preserve">ask doorman about joining</command>
     <result xml:space="preserve">The pale doorman bows, and his greatcoat smells of stone and dust. "The Court offers the first fear, envoy - older than your cities, older than your medicine. A bullet kills one soldier; a bite kills his squad. Join us and learn what the dark is for."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-652">
+  <item nodeId="node-178">
+    <command xml:space="preserve">ask girl about joining</command>
+    <result xml:space="preserve">She pops her gum and throws you a lazy salute. "Welcome aboard, envoy - or not. Your call." She jerks a thumb at the tank. "That is the heart-core of the Cholera Octopus. Fifty meters of metal-biological armor, eight tentacles, eight hydro-cannons, one mind - and it is the polite part of our fleet. Four thousand meters below the waves our fortress runs drill-factories and geothermal stations; your maps spell the place Atlantis. People hear that and think, that is a lot of ocean. They are wrong. It is exactly enough ocean."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">ask girl about demonstration</command>
+    <result xml:space="preserve">She peers at your face for the flicker of a smile - and finds none. "...Okay. You want the real thing." Two fingers, a whistle; the tentacle turns and a cannon-bore dilates against the glass - a mouth within a mouth. The water around it goes silver, then WRONG: a jet drives past its own critical point, and on the far side of the tank a steel target plate simply fails inward, cavitation bubbles collapsing at ten thousand degrees, micro-jets chewing through armor like paper. "Critical-pressure hydraulic cannon," she says, and for one second the cheerful is gone from her voice. "It fires water, envoy. Water. There is no counter except distance - and we own the distance." The smile returns like a mask going back on. "Gum?"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-8">
     <command xml:space="preserve">ask muse about secret</command>
     <result xml:space="preserve">She unhooks the porcelain mask and holds it out, empty side toward you. "A secret: this is the true face. Beneath it we are nobody - a spiral, a hunger, a stage note that never resolves. We wear the beautiful ones from the outside in. The mask is not a disguise, envoy. It is a job description."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-485">
+  <item nodeId="node-9">
     <command xml:space="preserve">go to Undead Court</command>
     <result xml:space="preserve">The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-486"/>
+      <child nodeId="node-10"/>
     </children>
   </item>
-  <item nodeId="node-486">
+  <item nodeId="node-10">
     <command xml:space="preserve">choose Undead Court</command>
     <result xml:space="preserve">No such patron answers - spelling is flexible, capitalization is not checked, but the name must be one of the ten. Try CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS, CHOOSE ARCHAEOLOGY, CHOOSE FEAR, CHOOSE PALLIDUM, CHOOSE DRACULA, CHOOSE MARY, or CHOOSE VIBRIO.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-487"/>
+      <child nodeId="node-11"/>
     </children>
   </item>
-  <item nodeId="node-487">
+  <item nodeId="node-11">
     <command xml:space="preserve">choose Typhi</command>
     <result xml:space="preserve">The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.&#x000A;&#x000A;&#x000A;The war arranges itself around your oath. Somewhere on neutral waters, a Registrar adds a name to a ledger and begins cataloguing the conflict: the Ten Banners campaign.&#x000A;An Accord manifest appears in your satchel.&#x000A;(Type BANNERS at any time to review the campaign.)&#x000A;&#x000A;The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.&#x000A;&#x000A;The circuit of the Ten Banners begins.&#x000A;&#x000A;Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-488"/>
+      <child nodeId="node-12"/>
     </children>
   </item>
-  <item nodeId="node-488">
+  <item nodeId="node-12">
     <command xml:space="preserve">x Registrar</command>
     <result xml:space="preserve">A grey woman with ten empty hooks on her belt, one for each standard. She has taken the register of every faction since the barge was launched.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-489"/>
+      <child nodeId="node-13"/>
     </children>
   </item>
-  <item nodeId="node-489">
+  <item nodeId="node-13">
     <command xml:space="preserve">talk to Registrar</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-490"/>
+      <child nodeId="node-14"/>
     </children>
   </item>
-  <item nodeId="node-490">
+  <item nodeId="node-14">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">White Rib Gate&#x000A;The sternum of the continent: a wall of white bone running from horizon to horizon, and a gate cut through it like a calm syllable. Beyond, bell-sound at dawn: the highlands of Thoracica. Monastery smoke rises from the mountains; the road forks ahead.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-491"/>
+      <child nodeId="node-15"/>
     </children>
   </item>
-  <item nodeId="node-491">
+  <item nodeId="node-15">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-492"/>
+      <child nodeId="node-16"/>
     </children>
   </item>
-  <item nodeId="node-492">
+  <item nodeId="node-16">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Contaminated Wastes&#x000A;Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-493"/>
+      <child nodeId="node-17"/>
     </children>
   </item>
-  <item nodeId="node-493">
+  <item nodeId="node-17">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Truce Barge&#x000A;A neutral deck moored in international blood-plasma waters, equidistant from every banner and no one's flag. A long chart table dominates the cabin; along the far wall stand ten standards, all empty. Gangways run north, northwest, west, southwest - and south, toward the guarded approaches of the Unseen Crown.&#x000A;&#x000A;On the chart table is a Rationality Protocol pamphlet.&#x000A;&#x000A;The Registrar stands by the ten standards with a ledger under one arm, cataloguing the war before it happens.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-494"/>
+      <child nodeId="node-18"/>
     </children>
   </item>
-  <item nodeId="node-494">
+  <item nodeId="node-18">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">There is no way through in that direction - the body-cosmos keeps its own borders.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-495"/>
+      <child nodeId="node-19"/>
     </children>
   </item>
-  <item nodeId="node-495">
+  <item nodeId="node-19">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Dark Concourse&#x000A;Umin keeps a formal entrance and it is this: a vaulted concourse of black glass under a ceiling of slow dark water. Five faction ways open off it, each named on a porcelain plate; a guarded gangway climbs northeast, back to international waters. A sign in careful lettering reads: GUESTS ARE WELCOMED. GUESTS ARE COUNTED.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-482">
+  <item nodeId="node-20">
     <command xml:space="preserve">go to undead court</command>
     <result xml:space="preserve">The concordance serves sworn envoys only; the gates demand an oath first. CHOOSE a patron in the Hall or the Citadel.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-496"/>
-      <child nodeId="node-483"/>
+      <child nodeId="node-21"/>
+      <child nodeId="node-22"/>
     </children>
   </item>
-  <item nodeId="node-496">
+  <item nodeId="node-21">
     <command xml:space="preserve">choose citadel</command>
     <result xml:space="preserve">Those are the two gates, not a patron. The Citadel hosts six patrons (Archaeology, Fear Technology, Pallidum, Rabies, Typhi, Vibrio); the Hall hosts four (Cradle, Celestial Corps, Pantheon, Martyrs). Choose one of the ten.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-483">
+  <item nodeId="node-22">
     <command xml:space="preserve">choose disease citadel</command>
     <result xml:space="preserve">No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-484"/>
+      <child nodeId="node-23"/>
     </children>
   </item>
-  <item nodeId="node-484">
+  <item nodeId="node-23">
     <command xml:space="preserve">choose Typhi</command>
     <result xml:space="preserve">No such patron answers. The Hall offers the Cradle, the Celestial Corps, the Pantheon and the Martyrs; the Citadel offers Archaeology, Fear Technology, Pallidum, Rabies, Typhi and Vibrio.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-477">
+  <item nodeId="node-24">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">(the Accord manifest)&#x000A;ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact: - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica). - NORTHWEST: the Celestial Corps, over the Void Verge. - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes. - SOUTHWEST: the Lab Martyrs, in the Siberian Reach. - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond. Trade at the Pericardium Free Port on your way through Thoracica. Travel light. Trust carefully.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-478"/>
+      <child nodeId="node-25"/>
     </children>
   </item>
-  <item nodeId="node-478">
+  <item nodeId="node-25">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Disease Citadel&#x000A;The Disease Citadel is where diseases are born. Here you can see many patients being tortured by the diseases - and the five doors of the Unseen Crown open onto the dark: Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, and the Abyssal fleet.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-479"/>
+      <child nodeId="node-26"/>
     </children>
   </item>
-  <item nodeId="node-479">
+  <item nodeId="node-26">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">(the Accord manifest)&#x000A;ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact: - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica). - NORTHWEST: the Celestial Corps, over the Void Verge. - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes. - SOUTHWEST: the Lab Martyrs, in the Siberian Reach. - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond. Trade at the Pericardium Free Port on your way through Thoracica. Travel light. Trust carefully.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
-      <child nodeId="node-480"/>
+      <child nodeId="node-27"/>
     </children>
   </item>
-  <item nodeId="node-480">
+  <item nodeId="node-27">
     <command xml:space="preserve">go to Undead Court</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
