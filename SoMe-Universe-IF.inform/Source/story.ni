@@ -111,7 +111,7 @@ Carry out choosing a patron:
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
-		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Type BANNERS at any time to review the campaign.)";
+		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them.)";
 		now the player carries the Keeper's road-map;
 		now the score is 0.
 
