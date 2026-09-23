@@ -47,7 +47,7 @@ A woman in travel-grey stands at the standards, and she is already speaking as y
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
       ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
-      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.

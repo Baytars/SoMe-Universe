@@ -19,45 +19,13 @@ THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to t
 
 Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
 
->The concordance serves even the unsworn for errands: the Port Market, and the Singularity where the road west begins.
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
 
-The manifest takes your word, and the concordance carries you along the great vessels of the war.
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
 
-Port Market
-The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide.
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
-On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial.
-
-The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack.
-
->You slide a token across the stall. The Factor wraps the gauntlets without breaking his watch on the quay. "Bind, trap, escort," he says. "Not warfare. Hostage negotiation."
-
->You put on the Aegis gauntlets.
-
->The concordance serves even the unsworn for errands: the Port Market, and the Singularity where the road west begins.
-
-The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Singularity
-After the Big Bang, the Singularity no more exists.
-
->You step off the newborn light and onto the road west.
-
-Pilgrim Turn
-The road west forks at a shrine of white lead paint and surgical steel: a wayside chapel where the Radiology clergy keep their vigil. Beyond it the land turns strange - vitrified glass underfoot, the horizon glowing faintly, the light of the Black Cathedral catching wrong on the dust. A stone placard reads, in three languages: TURN BACK, OR COME ARMED.
-
-A priest of the Radiology Order bars the west road - lead-lined vestments, a collimator staff, eyes that have watched tumors die and patients glow. His hands under the lead gloves are not quite hands anymore: the borrowed light has been settling into him for decades.
-
->
-Contaminated Wastes
-Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
-
->You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.
-
-Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
-The gatekeeper-priest pronounces, unhurried: "Alive, and armored, and arrived. The Old Metals receive few guests, and none twice." Then, the offer - the only recruitment speech made inside a god's house: "The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON."
-
->The Morning Star inclines his dripping crown. "You cannot destroy an element," Lucifer says. "You can only hope to contain it. Learn containment, and you will never fear the dark chemistry." You swear to the Heavy Metal Pantheon.
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
 
 The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
@@ -79,11 +47,58 @@ A woman in travel-grey stands at the standards, and she is already speaking as y
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
       ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
-      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
 YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The Generalizer rises before you have finished bowing. "The traveler who could still choose. Word travels faster than blood." She looks you over like a cadet who might be a weapon. "You will attend the lecture. Not a request - the Cradle does not arm the ignorant, and it does not waste the curious."
+
+>The preceptors walk the outer doctrine first. CORTICAL SELECTION: cadets prove they can see the body's signal at all. Those who cannot read the presenting lattice are released back into circulation - unharmed, ungraded, and dangerous to no one but themselves.
+
+>Then the inner doctrine. MEDULLARY SELECTION: the AIRE-lit library of every tissue the body owns. Strong binders of self are deleted; agonistic binders go to the Treg Cloister, to return as suppressors of friendly fire rather than as fighters. Graduates leave for the periphery and never see the Inner Court again. The preceptors, whose flame burns a fortnight-equivalent, are replaced in endless relay. At the back of the hall, a schism is audible: the Narrow Faction wants the Foreign Selves curriculum cut to unambiguous enemy-forms. The Generalizer's people answer that narrowing AIRE coverage mathematically guarantees more autoreactive graduates. The dispute is the loudest silence in the empire.
+
+>"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh."
+
+The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.
+From the AIRE-flame she lifts the Aukin gauntlets - chelation-weave, the Cradle's own shielding, the first lesson made wearable. "Earn the west," she says, "and it is yours. Buy it, and it is no one's." Wear them before you walk the Old Metals" road.
+
+[Your score has just gone up by one point.]
+
+>You put on the Aukin gauntlets.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Singularity
+After the Big Bang, the Singularity no more exists.
+
+>You step off the newborn light and onto the road west.
+
+Pilgrim Turn
+The road west forks at a shrine of white lead paint and surgical steel: a wayside chapel where the Radiology clergy keep their vigil. Beyond it the land turns strange - vitrified glass underfoot, the horizon glowing faintly, the light of the Black Cathedral catching wrong on the dust. A stone placard reads, in three languages: TURN BACK, OR COME ARMED.
+
+A priest of the Radiology Order bars the west road - lead-lined vestments, a collimator staff, eyes that have watched tumors die and patients glow. His hands under the lead gloves are not quite hands anymore: the borrowed light has been settling into him for decades.
+
+>
+Contaminated Wastes
+Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
+
+>You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.
+
+Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
+The gatekeeper-priest pronounces, unhurried: "Alive, and armored, and arrived. The Old Metals receive few guests, and none twice." Then, the offer - the only recruitment speech made inside a god's house: "The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON."
+
+>You have already sworn to a patron.
 
 >Are you sure you want to quit? 

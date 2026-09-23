@@ -47,7 +47,7 @@ A woman in travel-grey stands at the standards, and she is already speaking as y
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
       ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
-      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
@@ -59,7 +59,15 @@ YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keep
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>A token changes hands. "Strand for HeLa, treat for Laika, cheese for the mouse," the Factor recites, wrapping it. "The Martyrs asked for nothing. That is why we ask ourselves."
+
+>The last token goes across the stall. "Show it to the Count himself," the Factor says again. "He has watched empires rise and fall. He will want to see what the living made."
 
 >The Generalizer rises before you have finished bowing. "The traveler who could still choose. Word travels faster than blood." She looks you over like a cadet who might be a weapon. "You will attend the lecture. Not a request - the Cradle does not arm the ignorant, and it does not waste the curious."
 
@@ -70,23 +78,9 @@ The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets f
 >"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh."
 
 The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.
+From the AIRE-flame she lifts the Aukin gauntlets - chelation-weave, the Cradle's own shielding, the first lesson made wearable. "Earn the west," she says, "and it is yours. Buy it, and it is no one's." Wear them before you walk the Old Metals" road.
 
 [Your score has just gone up by one point.]
-
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Port Market
-The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide.
-
-On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial.
-
-The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack.
-
->You slide a token across the stall. The Factor wraps the gauntlets without breaking his watch on the quay. "Bind, trap, escort," he says. "Not warfare. Hostage negotiation."
-
->A token changes hands. "Strand for HeLa, treat for Laika, cheese for the mouse," the Factor recites, wrapping it. "The Martyrs asked for nothing. That is why we ask ourselves."
-
->The last token goes across the stall. "Show it to the Count himself," the Factor says again. "He has watched empires rise and fall. He will want to see what the living made."
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -171,7 +165,7 @@ A figure of quicksilver calm in lead-grey stands at the cathedral threshold, a g
 
 The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.
 
->You put on the Aegis gauntlets.
+>You put on the Aukin gauntlets.
 
 >You open the codex to the mirror and hold it low over the quicksilver. The mirror does not reflect the pages - it reads them. Letter by letter the reversed script settles into sense: star charts of the Liver-Moon, the four chambers of the Central Sun, and in the margin of the last page, in Leonardo's careful hand, a correction meant for Vesalius: THE SEAT OF THE SOUL IS THE BRAIN. Lucifer watches with the patience of an element. "A mirror-script brought to a mirror," he says. "I have been many things to your kind, traveler. Tonight, a librarian. Take this - not as a gift. As a receipt."
 
@@ -341,7 +335,7 @@ The Keeper binds the last seal to its standard and steps back. Ten banners over 
     *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 54 turns.
+In that game you scored 10 out of a possible 10, in 52 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

@@ -47,14 +47,14 @@ A woman in travel-grey stands at the standards, and she is already speaking as y
 HOW TO TRAVEL: no compass needed at this hub. List every destination:
       ASK KEEPER ABOUT DESTINATIONS
 then jump straight there:
-      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
 Carry every won seal home and REPORT to raise the standards.
 
 HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
 
 YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
->"From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name," she says. "The concordance does the walking."
+>"From this deck you may go to: the Cradle (where a neutral factor keeps a stall for offerings and vials); the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name," she says. "The concordance does the walking."
 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
@@ -83,11 +83,19 @@ The Belgrade Bride has a physician's hands - pale, precise, kept folded like an 
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
 
 >Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money.
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
 
->The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The concordance charts the port landing and every banner's hall. Destinations: LANDING, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
 
 >Are you sure you want to quit? 

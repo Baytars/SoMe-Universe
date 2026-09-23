@@ -41,9 +41,9 @@ A priest of the Radiology Order bars the west road - lead-lined vestments, a col
 
 "You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.
 
-"There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aegis gauntlets are the first lesson made wearable. Earn the gauntlets, wear them here, and I will not only step aside - I will walk you to the door.
+"There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aukin gauntlets are the first lesson made wearable. Earn the gauntlets at the Cradle, wear them here, and I will not only step aside - I will walk you to the door.
 
-"The gate to Aukin lies north of the port. CHOOSE CRADLE, if the Cradle will have you; otherwise buy its gauntlets at the Port Market and come back. The road west has no third option."
+"The gate to Aukin lies north of the port. GO TO CRADLE, attend the lectures, and the Cradle presses its gauntlets into your hands - no market sells them. The road west has no third option."
 
 >The Radiologist does not lower his staff - but he steps aside, and the grief in his face is worse than the barrier was. "Stubbornness is also a kind of faith, and I have buried better stubbornness than yours. The Wastes will judge you in steps, not in words. Walk, then. Walk, and count."
 
@@ -57,7 +57,7 @@ The afterglow finds you at once - a warmth in the teeth, a taste like a struck c
 
 
 
-    *** The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. ***
+    *** The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them. ***
 
 
 In that game you scored 0 out of a possible 10, in 7 turns.

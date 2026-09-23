@@ -124,7 +124,7 @@ Prologue-end is a scene. Prologue-end begins when the player's patron is not uns
 When Prologue-end begins:
 	say "The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.[paragraph break]The circuit of the Ten Banners begins.";
 	move the player to the Free Port Landing;
-	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK KEEPER ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      or      GO TO MARKET      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
+	say "[line break][bold type]HOW TO TRAVEL[roman type]: no compass needed at this hub. List every destination:[line break]      ASK KEEPER ABOUT DESTINATIONS[line break]then jump straight there:[line break]      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)[line break]Carry every won seal home and REPORT to raise the standards.";
 	say "[line break][bold type]HOW TO WALK[roman type]: directions still work where roads exist - type [bold type]N[roman type] / [bold type]S[roman type] / and so on to walk a real road instead of using the concordance.";
 	say "[line break][bold type]YOUR ROAD[roman type]: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type [bold type]BANNERS[roman type] to see how far you have come, [bold type]REPORT[roman type] to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.";
 
@@ -137,8 +137,7 @@ and porcelain plates use.]
 A room has a list of texts called the concordance names. The concordance names of a room are usually { }.
 
 The concordance names of the Free Port Landing are { "barge", "truce barge", "home", "landing", "free port landing" }.
-The concordance names of the Port Market are { "market", "port market", "bazaar", "stall", "factor" }.
-The concordance names of the Cradle Outer Court are { "cradle", "medulla", "aukin" }.
+The concordance names of the Cradle Outer Court are { "cradle", "medulla", "aukin", "market", "factor" }.
 The concordance names of the Singularity are { "singularity", "start", "beginning" }.
 The concordance names of the Fabrica Bridge are { "celestial corps", "fabrica", "bridge" }.
 The concordance names of the Dawn Pioneer Deck are { "dawn pioneer", "pioneer", "leonardo" }.
@@ -160,8 +159,8 @@ Understand "travel to [text]" as warping to.
 
 Check warping to:
 	if the player's patron is unsworn:
-		if the topic understood matches the regular expression "^market$|^port market$|^singularity$|^start$":
-			say "The concordance serves even the unsworn for errands: the Port Market, and the Singularity where the road west begins.";
+		if the topic understood matches the regular expression "^singularity$|^start$":
+			say "The concordance serves even the unsworn for errands: the Singularity, where the road west begins.";
 			continue the action;
 		if the location is the Disease Citadel:
 			say "Not yet - the concordance serves the sworn only. Your next step, right here: pick a banner and swear. [bold type]CHOOSE VIBRIO[roman type] (Abyssal Legion), CHOOSE DRACULA (Undead Court), CHOOSE FEAR (Fear Technology), CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM (Pale Masquerade), or CHOOSE STILLE (Department of Silence). The Hall of Medicine to the south holds four more." instead;
@@ -182,7 +181,7 @@ Carry out warping to:
 				say "The manifest takes your word, and the concordance carries you along the great vessels of the war.";
 				move the player to the destination;
 				rule succeeds;
-	say "The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
+	say "The concordance charts the port landing and every banner's hall. Destinations: LANDING, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
 
 The six Umin doors are scenery in the Disease Citadel. The printed name is "six doors". Understand "doors" and "six doors" and "porcelain plates" and "plates" as the six Umin doors. The description is "Six doors on the dark, each named on a porcelain plate: ARCHAEOLOGY. FEAR TECHNOLOGY. THE PALE MASQUERADE. THE UNDEAD COURT. THE DEPARTMENT OF SILENCE. THE ABYSSAL FLEET. Examine any door - and once sworn, the concordance will carry you through: GO TO its faction."
 
@@ -283,6 +282,18 @@ Carry out reporting in:
 		if the number of seals on the standard rack is 10:
 			raise the ten banners.
 
+Listing carried seals is an action applying to nothing.
+Understand "seals" or "list seals" or "my seals" as listing carried seals.
+
+Carry out listing carried seals:
+	if the number of seals carried by the player is 0:
+		say "You carry no seal yet - win a faction's challenge and bring its sigil home.";
+	otherwise:
+		say "Seals in your keeping:";
+		repeat with s running through seals carried by the player:
+			say "  [printed name of s].";
+		say "REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one."
+
 To raise the ten banners:
 	say "The Keeper binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant.
 'Understand what you have carried,' she says. 'An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it.'
@@ -295,7 +306,7 @@ Understand "about" or "credits" or "help" as abouting.
 Carry out abouting:
 	say "SOME-UNIVERSE: THE TEN BANNERS - an interactive chronicle built from the faction archives of the SoMe-Universe (Saga of Medicine) project.
 You are the one the ten banners have been waiting for - awake, unclaimed, and brave enough to walk into every hall. Win each faction's seal and bring them to the Keeper at the Free Port Landing.
-Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, BUY at the Port Market, WEAR and REMOVE clothing.
+Useful commands: BANNERS (progress tally), REPORT (deliver carried seals), GO TO (place) (fast travel once sworn), LOOK, EXAMINE things, ASK [bracket]someone[close bracket] ABOUT [bracket]topic[close bracket], GIVE and SHOW things to people, WEAR and REMOVE clothing, BUY what the Cradle's factor offers.
 Every faction is reachable from the Free Port Landing: GO TO a destination, and the concordance will carry you. The west road - the Pantheon - begins at the Singularity, and it is the one road the concordance will not walk for you.
 Built with Inform 7. Setting and factions by the SoMe-Universe contributors."
 
@@ -334,7 +345,8 @@ The Keeper's road-map is a thing carried by the player. The printed name is "the
 - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes.
 - SOUTHWEST: the Lab Martyrs, in the Siberian Reach.
 - SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens six doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond.
-Trade at the Port Market, east of the Cradle's outer court. Trust carefully. Decide slowly. - K."
+The Cradle's outer court keeps a neutral factor's stall for travelers bound for the shrine or the dark courts - trust carefully, decide slowly. - K.
+[line break][line break]A margin note, in a different hand: CHOOSE takes a banner's short name or its full name alike - CHOOSE UNDEAD COURT is the same oath as CHOOSE DRACULA."
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
 
@@ -366,7 +378,7 @@ After going to the Pilgrim Turn for the first time:
 Instead of going west from the Pilgrim Turn when the Aegis gauntlets are not worn by the player and radiology-warning is less than 2:
 	if radiology-warning is 0:
 		now radiology-warning is 1;
-		say "The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body.[paragraph break]'You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.[paragraph break]'There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aegis gauntlets are the first lesson made wearable. Earn the gauntlets, wear them here, and I will not only step aside - I will walk you to the door.[paragraph break]'The gate to Aukin lies north of the port. CHOOSE CRADLE, if the Cradle will have you; otherwise buy its gauntlets at the Port Market and come back. The road west has no third option.'";
+		say "The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body.[paragraph break]'You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.[paragraph break]'There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aukin gauntlets are the first lesson made wearable. Earn the gauntlets at the Cradle, wear them here, and I will not only step aside - I will walk you to the door.[paragraph break]'The gate to Aukin lies north of the port. GO TO CRADLE, attend the lectures, and the Cradle presses its gauntlets into your hands - no market sells them. The road west has no third option.'";
 	otherwise:
 		now radiology-warning is 2;
 		say "The Radiologist does not lower his staff - but he steps aside, and the grief in his face is worse than the barrier was. 'Stubbornness is also a kind of faith, and I have buried better stubbornness than yours. The Wastes will judge you in steps, not in words. Walk, then. Walk, and count.'";
@@ -384,18 +396,18 @@ Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets
 		say "The tally reads [radiation-dose] - your shadow on the vitrified road now glows faintly with your own afterimage. The Cathedral is one step west. Turn back, or pay the toll.";
 	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
 
 Before going to the Black Cathedral when the Aegis gauntlets are not worn by the player:
 	say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
-	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
 Every turn when the player is in the Black Cathedral and the Aegis gauntlets are not worn by the player:
 	increase radiation-dose by 1;
 	if radiation-dose is 1:
 		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
 	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
 
 Instead of going east from the Contaminated Wastes when the Aegis gauntlets are not worn by the player and radiology-warning is 2:
 	continue the action;
@@ -410,7 +422,7 @@ Instead of asking the Keeper about something when the topic understood matches t
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^accord$":
 	say "'I do not keep the war's books,' she says, tapping the nearest standard. 'I keep its promises. Every faction swore a seal to whoever could walk all ten halls. None of them believed you existed. Show them.'"
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
-	say "'From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
+	say "'From this deck you may go to: the Cradle (where a neutral factor keeps a stall for offerings and vials); the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
 
 Instead of giving a seal to the Keeper:
 	now the noun is on the standard rack;
@@ -439,13 +451,72 @@ The White Rib Gate is north of the Free Port Landing. "The sternum of the contin
 
 The white rib wall is scenery in the White Rib Gate. Understand "wall" and "ribs" and "bone" as the white rib wall. The description is "Not a garrison but a shield. The records agree that no army has ever needed to breach it, because the country behind it taught theirs."
 
-The Cradle Outer Court is north of the White Rib Gate. "The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; a road runs east toward the sound of surf and money."
+The Cradle Outer Court is north of the White Rib Gate. "The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle."
 
 The exam scaffolds are scenery in the Cradle Outer Court. Understand "scaffolds" and "cloisters" and "lattices" as the exam scaffolds. The description is "Cadets read presenting signals off the lattice: pancreas, thyroid, neuron, and the shapes that most resemble pathogens. Learn the self, say the preceptors, before you are permitted to fight anything foreign."
 
+The factor's stall is a scenery supporter in the Cradle Outer Court. Understand "stall" and "factor's stall" and "market" and "market court" as the factor's stall. The description is "A neutral factor's stall folded into the outer court: wares from every circulation, priced in tokens. Two items are set out for travelers bound for the shrine or the dark courts."
+
+The offering bundle is a closed openable container on the factor's stall. Understand "bundle" and "offerings" as the offering bundle. The description is "A wrapped packet of the three customary offerings from the Martyrs' pilgrimage list: small strands for HeLa, treats for Laika, a cheese wheel for the mouse."
+
+The rna strand is a thing in the offering bundle. Understand "strand" and "rna" as the rna strand. The description is "A small synthetic RNA strand, coiled in paper. Offered to the immortal navigator."
+
+The dog treat is a thing in the offering bundle. Understand "treat" as the dog treat. The description is "A plain dried treat. Some offerings cross no species barrier until they are made."
+
+The cheese wheel is a thing in the offering bundle. Understand "cheese" and "wheel" as the cheese wheel. The description is "A tiny cheese wheel, ceremonial grade. The mouse worked for it, after all."
+
+The Pasteur vial is a thing on the factor's stall. Understand "vial" and "pasteur" and "vaccine" as the Pasteur vial. The description is "A single-dose Pasteur-class field vaccine, attenuated virus in a steel-cased vial. The doctrine says: one man found a way to turn death into life. We carry his legacy in every vial."
+
+The Port Factor is a man in the Cradle Outer Court. "The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have kept the stall since the Cradle Accords were younger than the AAA by centuries."
+
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$|^cradle$|^aukin$":
+	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, traveler - the Port Conclave enforces that one the old way.'"
+
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^bundle$|^offerings$":
+	say "'Going to the shrine? Nobody visits the Martyrs empty-handed,' he says. 'Strand for HeLa, treat for Laika, cheese for the mouse. One token the bundle.'"
+
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^vial$|^pasteur$":
+	say "'The Undead Court respects exactly one thing the living make,' he says. 'Take it. One token. And traveler - show it to the Count himself. Only him.'"
+
+Instead of buying the offering bundle:
+	if the player carries the offering bundle:
+		say "You already carry the bundle.";
+	otherwise if the player carries an exchange token:
+		let T be a random exchange token carried by the player;
+		now T is nowhere;
+		now the offering bundle is carried by the player;
+		say "A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,' the Factor recites, wrapping it. 'The Martyrs asked for nothing. That is why we ask ourselves.'";
+	otherwise:
+		say "'No token, no bundle, traveler. The Martyrs take offerings, not intentions.'"
+
+Instead of buying the Pasteur vial:
+	if the player carries the Pasteur vial:
+		say "One vial is doctrine enough.";
+	otherwise if the player carries an exchange token:
+		let T be a random exchange token carried by the player;
+		now T is nowhere;
+		now the Pasteur vial is carried by the player;
+		say "The last token goes across the stall. 'Show it to the Count himself,' the Factor says again. 'He has watched empires rise and fall. He will want to see what the living made.'";
+	otherwise:
+		say "'Your tokens are spent, traveler,' the Factor says. 'The vial needs one.'"
+
+Instead of buying something:
+	say "Nobody here is selling that."
+
+Instead of taking the offering bundle when the offering bundle is not carried by the player:
+	say "'Buy, traveler. One token,' the Factor says. 'The Martyrs take offerings, not intentions.'"
+
+Instead of taking the Pasteur vial when the Pasteur vial is not carried by the player:
+	say "'Buy, traveler. One token,' the Factor says, 'and show it to the Count himself.'"
+
+Instead of asking the Port Factor about something:
+	say "The Factor listens pleasantly and keeps wrapping."
+
 The Cradle Inner Court is north of the Cradle Outer Court. "The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors."
 
-The aire library is scenery in the Cradle Inner Court. Understand "library" and "aire" and "flame" and "shelves" as the aire library. The description is "The library of the self. Strong binders of self are deleted here; agonistic binders are redirected to the Treg Cloister, to come back into the world as suppressors of friendly fire. The chair outlives the person. That is doctrine, not metaphor."
+The Aegis gauntlets are a plural-named wearable thing in the Cradle Inner Court. The Aegis gauntlets are scenery. Understand "gauntlets" and "aegis" and "gloves" and "aukin" and "aukin gauntlets" as the Aegis gauntlets. The printed name of the Aegis gauntlets is "Aukin gauntlets". The description is "Chelation-weave field gauntlets of the Cradle - the first lesson of the radiology curriculum made wearable. They bind and escort what they touch: mercury, lead, cadmium, heat. The Cradle grants them only to those who study at the Inner Court; they are never sold."
+
+The aire library is in the Cradle Inner Court. The aire library is scenery. Understand "library" and "aire" and "flame" and "shelves" as the aire library. The description is "The library of the self. Strong binders of self are deleted here; agonistic binders are redirected to the Treg Cloister, to come back into the world as suppressors of friendly fire. The chair outlives the person. That is doctrine, not metaphor."
 
 Tylean is a man in the Cradle Inner Court. "Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood." The description is "The head of state, head of the Dhyana Church, and supreme preceptor of the Cradle in one person. He listens the way other sovereigns ride reviews."
 
@@ -480,6 +551,9 @@ To run the curriculum exchange:
 'Autoimmunity,' you say. 'The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity.'
 The Generalizer smiles for exactly one second. 'Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh.'";
 		grant the cradle sigil noting "The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.";
+		if the Aegis gauntlets are not carried by the player:
+			now the Aegis gauntlets are carried by the player;
+			say "From the AIRE-flame she lifts the Aukin gauntlets - chelation-weave, the Cradle's own shielding, the first lesson made wearable. 'Earn the west,' she says, 'and it is yours. Buy it, and it is no one's.' Wear them before you walk the Old Metals' road.";
 	otherwise:
 		say "'Attend the lecture first, traveler,' she says, nodding at the forming preceptors. 'Then we will speak of the wars.'"
 
@@ -496,79 +570,6 @@ Instead of asking the Generalizer about something when the topic understood matc
 
 Attending is an action applying to nothing.
 Understand "attend" or "attend lecture" or "attend the lecture" or "listen to the lecture" as attending.
-
-The Port Market is east of the Cradle Outer Court. "The market quarter of the Pericardium Free Port: a demilitarized merchant quarter inside Aukin's nominal territory, tariffs funding the Cradle, every flag welcome inside the pericardial sac. The Port Factor keeps a modest stall near the quays, where the great pump breathes under everything like a tide."
-
-The stall is a scenery supporter in the Port Market. Understand "stall" as the stall. The description is "A neutral factor's stall: wares from every circulation, priced in tokens. Three items are set out for travelers bound for the wastes, the shrine, or the dark courts."
-
-The Aegis gauntlets are a plural-named wearable thing on the stall. Understand "gauntlets" and "aegis" and "gloves" as the Aegis gauntlets. The description is "Chelation-weave field gauntlets, AAA toxicology pattern. They bind and escort what they touch: mercury, lead, cadmium, heat. The catalog calls the art of chelation not warfare but hostage negotiation."
-
-The offering bundle is a closed openable container on the stall. Understand "bundle" and "offerings" as the offering bundle. The description is "A wrapped packet of the three customary offerings from the Martyrs' pilgrimage list: small strands for HeLa, treats for Laika, a cheese wheel for the mouse."
-
-The rna strand is a thing in the offering bundle. Understand "strand" and "rna" as the rna strand. The description is "A small synthetic RNA strand, coiled in paper. Offered to the immortal navigator."
-
-The dog treat is a thing in the offering bundle. Understand "treat" as the dog treat. The description is "A plain dried treat. Some offerings cross no species barrier until they are made."
-
-The cheese wheel is a thing in the offering bundle. Understand "cheese" and "wheel" as the cheese wheel. The description is "A tiny cheese wheel, ceremonial grade. The mouse worked for it, after all."
-
-The Pasteur vial is a thing on the stall. Understand "vial" and "pasteur" and "vaccine" as the Pasteur vial. The description is "A single-dose Pasteur-class field vaccine, attenuated virus in a steel-cased vial. The doctrine says: one man found a way to turn death into life. We carry his legacy in every vial."
-
-The Port Factor is a man in the Port Market. "The Port Factor watches the quay with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have held the stall since the Cradle Accords were younger than the AAA by centuries."
-
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$":
-	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, traveler - the Port Conclave enforces that one the old way.'"
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^gauntlets$":
-	say "'Chelation weave,' he says. 'You cannot kill an element. You can bind it, trap it, and escort it out. One token, and it will serve you in the heat as well as the mirror-hall.'"
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^bundle$|^offerings$":
-	say "'Going to the shrine? Nobody visits the Martyrs empty-handed,' he says. 'Strand for HeLa, treat for Laika, cheese for the mouse. One token the bundle.'"
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^vial$|^pasteur$":
-	say "'The Undead Court respects exactly one thing the living make,' he says. 'Take it. One token. And traveler - show it to the Count himself. Only him.'"
-
-Instead of buying the Aegis gauntlets:
-	if the player carries the Aegis gauntlets:
-		say "You already hold them.";
-	otherwise if the player carries an exchange token:
-		let T be a random exchange token carried by the player;
-		now T is nowhere;
-		now the Aegis gauntlets are carried by the player;
-		say "You slide a token across the stall. The Factor wraps the gauntlets without breaking his watch on the quay. 'Bind, trap, escort,' he says. 'Not warfare. Hostage negotiation.'";
-	otherwise:
-		say "The Factor glides the gauntlets back. 'The Pump's peace is not free, traveler. One token.'"
-
-Instead of buying the offering bundle:
-	if the player carries the offering bundle:
-		say "You already carry the bundle.";
-	otherwise if the player carries an exchange token:
-		let T be a random exchange token carried by the player;
-		now T is nowhere;
-		now the offering bundle is carried by the player;
-		say "A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,' the Factor recites, wrapping it. 'The Martyrs asked for nothing. That is why we ask ourselves.'";
-	otherwise:
-		say "'No token, no bundle, traveler. The Martyrs take offerings, not intentions.'"
-
-Instead of buying the Pasteur vial:
-	if the player carries the Pasteur vial:
-		say "One vial is doctrine enough.";
-	otherwise if the player carries an exchange token:
-		let T be a random exchange token carried by the player;
-		now T is nowhere;
-		now the Pasteur vial is carried by the player;
-		say "The last token goes across the stall. 'Show it to the Count himself,' the Factor says again. 'He has watched empires rise and fall. He will want to see what the living made.'";
-	otherwise:
-		say "'Your tokens are spent, traveler,' the Factor says. 'The vial needs one.'"
-
-Instead of buying something:
-	say "Nobody here is selling that."
-
-Instead of taking the Aegis gauntlets when the Aegis gauntlets are not carried by the player:
-	say "The Factor glides the gauntlets back. 'Buy, traveler. One token.'"
-Instead of taking the offering bundle when the offering bundle is not carried by the player:
-	say "'Buy, traveler. One token,' the Factor says. 'The Martyrs take offerings, not intentions.'"
-Instead of taking the Pasteur vial when the Pasteur vial is not carried by the player:
-	say "'Buy, traveler. One token,' the Factor says, 'and show it to the Count himself.'"
-
-Instead of asking the Port Factor about something:
-	say "The Factor listens pleasantly and keeps wrapping."
 
 Part Four - The Void and the Celestial Corps
 
@@ -1106,7 +1107,7 @@ After going to the Fabrica Bridge for the first time:
 After going to the Black Cathedral for the first time:
 	if the Aegis gauntlets are not worn by the player:
 		say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning.";
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them.";
 	say "You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.[paragraph break]Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
 
 After going to the Shrine of the Knitting Mouse for the first time:

@@ -2,14 +2,12 @@ s
 choose cradle
 take pamphlet
 go to cradle
+buy bundle
+buy vial
 n
 attend
 attend
 ask generalizer about autoimmunity
-go to market
-buy gauntlets
-buy bundle
-buy vial
 go to landing
 report
 go to martyrs

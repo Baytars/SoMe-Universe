@@ -1,154 +1,9 @@
-================ SoMe-Universe-IF 测试玩家 agent 评测 (review 模式, 完整一轮) ================
-评测模型: agnes-3.0-flash（+限流降级 openrouter/free）   用例数: 8
-说明：首轮跑批时 agnes API 严重限流/抖动，6 个用例返回 [API ERROR] 或安全网关短响应；
-已对这 6 个用例做定向重试（每例最多 4 次内重试 + 退避），并对 full-walkthrough 提高 token 上限补全截断，
-下方为最终 8 个用例的完整评测。
+================ SoMe-Universe-IF 评测补跑 (定向重试 6 个失败/废结果用例) ================
+评测模型: agnes-3.0-flash（+限流降级）   用例数: 6
 ================================================================================
 
 
-################ 用例：choose-aliases ################
-
-===== 用例 choose-aliases 评测 =====
-
-## 1. 事实复述
-
-| 序号 | 玩家输入 | 游戏关键回应（引用原文） |
-|------|---------|------------------------|
-| 1 | `n` | "You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath..."（列出六名招募者，含"a pale Bride of Count Dracula (the Undead Court)"） |
-| 2 | `choose undead court` | "The Count regards you across the dry fountains. 'Fear is not a weapon. Fear is the battlefield,' he says. 'Welcome to the field.' You swear to the Undead Court." 随后自动传送至 Free Port Landing |
-| 3 | `quit` | "Are you sure you want to quit?" |
-| 4 | `yes` | **未观察到**任何输出（转录在此终止） |
-
-## 2. 困惑/卡点
-
-- **命令别名与教程不符**：教程明确列出 `CHOOSE VIBRIO / DRACULA / FEAR / ARCHAEOLOGY / PALLIDUM / STILLE`，但玩家输入 `choose undead court` 仍被接受并触发宣誓，文档未说明此别名。
-- **传送缺乏过渡**：宣誓后游戏直接出现 "A launch skiff carries you to neutral waters" 并跳转到 Free Port Landing，中间无移动指令，玩家位置突变。
-- **逻辑矛盾**：宣誓后写道 "The Singularity seals itself behind the Big Bang"，但玩家此前已从 Singularity 向北离开，此处"封印"语义含混——是封印入口还是封印整个宇宙？
-- **退出无确认**：输入 `yes` 后转录结束，未观察到任何"再见"或退出确认语，不清楚游戏是正常退出还是静默挂起。
-
-## 3. 缺陷/Bug
-
-- **命令识别不一致**：`CHOOSE DRACULA` 是教程给出的格式，`CHOOSE UNDEAD COURT` 也能工作，但两者关系未说明，可能导致玩家困惑哪个是"正确"命令。
-- **HELP/SEARCH/EXAMINE 未测试**：转录中未出现这些命令的响应，无法判断是否被识别（依据铁律，不脑补）。
-- **退出流程不完整**：`yes` 回应后无输出，无法确认游戏是否真正退出或卡在确认循环中。
-
-## 4. 可玩性评分：6/10
-
-**理由**：世界观和氛围营造出色，但命令语法与教程脱节、关键状态转换缺少过渡说明，影响新手流畅度。
-
-## 5. 改进建议
-
-在教程段落中明确补充别名说明，例如："CHOOSE <patron> 也接受完整名称如 CHOOSE UNDEAD COURT / CHOOSE THE UNDEAD COURT"，或在 `choose undead court` 成功后给出提示："(You may also use CHOOSE DRACULA for the Undead Court.)"，消除玩家对"正确语法"的疑虑。
-
-
-
-################ 用例：full-walkthrough ################
-
-===== 用例 full-walkthrough 评测 =====
-
-这是一份基于提供的【真实实机转录】与【玩家输入序列】的严谨评测报告。
-
-### 1. 事实复述
-
-根据提供的命令序列，以下是对关键游戏事件的复述（引用转录原文）：
-
-1.  **起始与移动**
-    *   输入 `s` / `choose cradle`：玩家在Singularity选择阵营。
-    *   转录反馈：`"You swear to the Cradle."` 随后 `"The war arranges itself around your oath... The Singularity seals itself... GO TO is refused."`（此时GO TO不可用，需先宣誓）。
-    *   输入 `go to cradle`：进入Cradle Outer Court。
-    *   转录反馈：`"The outer court of the Cradle... Stairs rise to the Inner Court..."`
-
-2.  **Cradle 主线任务**
-    *   输入 `attend` (x2) / `ask generalizer about autoimmunity`：参与讲座并回答谜题。
-    *   转录反馈：`"The Generalizer smiles for exactly one second. 'Correct...'"` 获得物品：`"The Generalizer presses the Cradle Sigil into your hand..."` 评分增加。
-
-3.  **Market 购物与获取**
-    *   输入 `go to market` / `buy gauntlets` / `buy bundle` / `buy vial`。
-    *   转录反馈：
-        *   Gauntlets: `"You slide a token... 'Bind, trap, escort,' he says."`
-        *   Bundle: `"A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,'...`
-        *   Vial: `"The last token goes across... 'Show it to the Count himself,'..."`
-
-4.  **Martyrs (Shrine of the Knitting Mouse) 任务**
-    *   输入 `go to martyrs` / `open bundle` / `take strand/treat/cheese wheel` / `put ... on altar`。
-    *   转录反馈：打开Bundle获得物品。放置祭品后，`"HeLa rises... 'Take a needle. Knit with it. Quietly.'"` 获得物品：`"One of the two bronze needles... rests in your hand..."` 评分增加。
-
-5.  **Dawn Pioneer / Celestial Corps 任务**
-    *   输入 `go to dawn pioneer` / `take codex` / `go to celestial corps` / `ask vesalius about soul`。
-    *   *注：转录中此处有大段省略 `[中部省略]`，但后续显示玩家已获取Vesalius Medallion（见Landing处的Inventory列表推断），且后续有 `show codex to vesalius` 和 `wear gauntlets` / `decipher codex` 的操作。*
-    *   在Celestial Corps部分，玩家穿戴手套并破译法典。虽然具体对话被省略，但最终结果指向获得了 `Vesalius Medallion`。
-
-6.  **Stille / Fear Technology 任务**
-    *   输入 `go to stille` / `accuse stern quartermaster` / `go to fear technology` / `ask director about sightings` / `go to masquerade` / `unmask pale masquer`。
-    *   *注：转录中此段亦被省略，但后续Landing处的Inventory显示拥有 `Porcelain Masque`（推测为Mask任务奖励）或相关剧情已推进。*
-
-7.  **Undead Court 任务**
-    *   输入 `go to undead court` / `show vial to count dracula`。
-    *   转录反馈：`"Attenuated," Dracula says... "The Court receives you as received - marked, not turned."` 获得物品：`"The Budapest Bride seals a black disc..."` 评分增加。
-
-8.  **Abyssal Fleet 任务**
-    *   输入 `go to abyssal fleet` / `ask octopus admiral about cannons`。
-    *   转录反馈：`"The Admiral signals... fires... 'Water is life...'"` 获得物品：`"A wet swallow-tailed pennant... coils itself around your forearm..."` 评分增加。
-
-9.  **最终汇报与胜利**
-    *   输入 `go to landing` / `report` (多次) / `banners` / `score`。
-    *   转录反馈：每次 `report` 后旗帜数量增加（`1 of the ten` -> `2 of the ten` -> ... -> `10 of the ten standards now fly.`）。
-    *   最终输出：`"*** The Ten Banners stand raised over the Pericardium Free Port. ***"`
-
-### 2. 困惑/卡点
-
-*   **叙述缺失导致的逻辑跳跃（中部省略部分）**：
-    *   在 `go to dawn pioneer` 到 `go to undead court` 之间，转录标记了 `[中部省略]`。虽然我们知道玩家在此间完成了 Celestial Corps (Vesalius) 和 Masquerade/Undead 的相关任务，但转录中缺失了具体的对话交互细节。
-    *   *具体证据*：玩家在 `Dawn Pioneer` 拿到 `codex log`，在 `Celestial Corps` 穿戴 `gauntlets` 并 `decipher codex`。然而，转录中直接跳过了这些交互的具体文字反馈，直到 `Undead Court` 章节才重新出现详细对话。这导致评测员无法确认 `decipher codex` 是否成功解出具体信息，只能从后续 `show codex to vesalius` 后的结果（虽也被省略）以及最终的 `Vesalius Medallion` 出现在Landing的Inventory中反向推断任务完成。
-*   **`wear gauntlets` 的作用不明**：
-    *   玩家在 `Celestial Corps` 执行了 `wear gauntlets`。在转录中，`gauntlets` 在Market被描述为 `"Bind, trap, escort"` 和 `"Hostage negotiation"`。但在Celestial Corps的具体任务中，其作用被省略了。玩家可能会困惑：手套是用于破译Codex的工具，还是用于防御Vesalius攻击的护具？由于转录缺失，这一机制无法通过文本验证。
-*   **`accuse stern quartermaster` 的反馈模糊**：
-    *   命令序列中有 `go to stille` 和 `accuse stern quartermaster`。这部分内容完全包含在 `[中部省略]` 中。玩家无法从当前转录判断“指控”是否成功，还是触发了不同的剧情分支。
-
-### 3. 缺陷/Bug
-
-*   **`report` 命令的逻辑依赖性与静默失败风险**：
-    *   玩家在拥有全部10个徽章前反复执行 `go to landing` 和 `report`。转录显示每次 `report` 后旗帜数量增加。
-    *   *潜在问题*：如果玩家在未收集齐徽章时就执行 `report`，转录中未展示“缺少徽章”的负面反馈或提示。虽然本次测试因为按顺序完成而显得顺畅，但对于普通玩家，`report` 命令是否会在缺少物品时给出明确的“你缺少...”提示，还是仅仅静默不提升旗帜数？转录中只展示了成功的 `report`。
-*   **Inventory 更新的不一致性（轻微）**：
-    *   在第一次到达 Landing（Cradle任务后），Inventory 显示：`On the standard rack is a Cradle Sigil.`
-    *   在最后一次到达 Landing（所有任务后），Inventory 显示：`On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.`
-    *   *观察*：这里列出了部分已提交的徽章。但注意，在Undead Court任务完成后，玩家身上应该多了 `Black Disc` (Bat)，在Abyssal任务后多了 `Pennant`。最终的Inventory列表似乎只列出了部分未提交或已提交的混合状态？
-    *   *修正*：仔细看转录，最后的Inventory列表是 `Vesalius Medallion, Quicksilver Ampoule, Knitting Needle and Cradle Sigil`。这里**缺失**了 `Black Disc` 和 `Pennant` 等后续获得的物品。
-    *   *Bug判定*：这可能是一个显示Bug。当玩家在Abyssal获得Pennant并回到Landing时，Landing的房间描述中的Inventory列表应该包含所有未REPORT的物品。如果之前的物品已经REPORT（被Keeper拿走），那么列表更新是合理的。但是，`Quicksilver Ampoule` 出现在列表中，而前文并未明确展示玩家在Stille/Fear Tech章节获得该物品（该章节被省略）。如果 `Quicksilver` 是某任务的奖励，它应该出现在之前的Inventory或当前手中。如果它一直在手中，那么列表显示是合理的。
-    *   *更严重的Bug可能性*：在 `[中部省略]` 之前，玩家在Martyrs任务后得到 `Knitting Needle`。在Celestial任务后得到 `Vesalius Medallion`。如果 `report` 操作会移除玩家手中的物品并转化为Landing的旗帜，那么最终Landing的Inventory列表中应该**没有**这些已Report的物品，或者Landing的描述动态变化。
-    *   *实际转录表现*：转录显示最终Landing的Inventory为 `"a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil"`。这表明这些物品**仍然在房间描述中被列为可交互对象**，或者它们是“标准架上”的展示品。如果这些物品是玩家**身上持有**的，那么它们不应该出现在 `On the standard rack...` 这个静态描述中，除非游戏逻辑是：未Report的物品放在架上，Report后变为旗帜。
-    *   *矛盾点*：在Undead Court结束后，玩家得到 `Black Disc`。在Abyssal结束后，玩家得到 `Pennant`。最终 `report` 后，旗帜达到10面。如果 `Black Disc` 和 `Pennant` 也是十面旗帜之一，它们最终去哪了？最终Landing的Inventory列表**没有**列出 `Black Disc` 或 `Pennant`。
-    *   *结论*：如果 `Black Disc` 和 `Pennant` 是任务必需品，它们应该在最终Report前处于玩家Inventory中。Report后，它们应该变成旗帜。此时Landing的Inventory如果展示的是“已提交的徽章”，那么列表应该是空的或者显示旗帜。如果展示的是“未提交的物品”，那么 `Black Disc` 和 `Pennant` 应该在列表中（假设它们尚未Report，或者Report是累积的）。
-    *   *Bug描述*：最终Landing的Inventory列表 `"a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil"` 似乎在显示**已提交**的徽章（因为此时10面旗帜已升起，意味着所有徽章都已提交）。但是，它遗漏了 `Black Disc` 和 `Pennant` 这两个显然也是十面旗帜之一的物品。这表明Landing房间的动态描述更新存在**列表截断或逻辑错误**，未能正确显示所有已提交的/当前的状态，或者 `Black Disc` 和 `Pennant` 不是“标准”意义上的Sigil，但前文 `"Ten seals ride in your satchel"` 暗示它们也是封条。
-
-*   **`HELP` 或 `SEARCH` 命令缺失**：
-    *   转录开头提到了 `Type HELP any time to see this again.`
-    *   但是，在玩家的命令序列中，没有尝试输入 `HELP` 或 `SEARCH`。我们无法判断这些命令是否实际工作，或者是否有语法错误。
-
-### 4. 可玩性评分
-
-**评分：8/10**
-
-**理由**：游戏的世界观宏大，任务设计（如Cradle的答题、Martyrs的祭品匹配、Undead的展示）具有清晰的逻辑闭环，`report` 机制提供了良好的进度反馈。扣分主要在于转录中显示的中部剧情缺失使得部分任务（Celestial, Stille）的具体交互体验无法完整评估，以及Landing房间Inventory显示可能存在的数据一致性问题。
-
-### 5. 给开发者的一条具体改进建议
-
-**建议：修复 Free Port Landing 房间描述中 Inventory 列表的逻辑一致性。**
-
-*   **具体操作**：
-    当玩家在 `Landing` 执行 `REPORT` 成功将徽章转化为旗帜后，房间描述中的 `On the standard rack is/are ...` 这一行动态文本需要更新。
-    *   目前观察到的Bug：在最终10面旗帜升起后，Landing描述仍然列出 `"a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil"`，却遗漏了玩家最后获得的 `Black Disc` (Undead Court) 和 `Pennant` (Abyssal Fleet)。
-    *   **修正方案**：
-        1.  如果该列表旨在显示**已提交**的徽章：请确保所有10个徽章（包括Black Disc和Pennant）都出现在列表中，或者统一改为显示 `"The ten standards fly above the deck."` 而不再列出具体物品名称，以避免玩家困惑“为什么我的Bat和Pennant不见了/没被列出来”。
-        2.  如果该列表旨在显示**未提交**的物品：当所有物品都提交后，该列表应变为 `"The rack is empty; the standards are fully raised."` 或类似提示，而不是残留部分已提交的物品名称。
-    *   建议在Inform 7中为 `Landing` 房间创建一个条件输出（Conditional Output），根据 `score` 或 `number of standards raised` 的状态，切换不同的Inventory描述文本，确保涵盖所有10种徽章的状态。
-
-
-
-################ 用例：go-to-concordance ################
-
-===== 用例 go-to-concordance 评测 =====
+################ 用例：go-to-concordance（尝试 1 次）################
 
 以下是对《SoMe-Universe: The Ten Banners》片段（文件名：go-to-concordance.txt）的试玩评测报告。
 
@@ -213,10 +68,7 @@
 2.  当前提示仅列出 `CRADLE`, `CELESTIAL`, `MARTYRS`，但允许 `TYPHI` 导致宣誓 `STILLE`。这种"隐性"的映射会让严谨的玩家感到困惑。请确保所有合法的 `CHOOSE` 参数都在游戏说明或场景提示中有迹可循，或者当玩家输入未列出的别名（如 Typhi）时，游戏应给予更明确的反馈（例如："Typhi is known as the agent of the Silent Department. Do you choose Stille?"），而不是直接静默完成宣誓。
 
 
-
-################ 用例：prologue-choice ################
-
-===== 用例 prologue-choice 评测 =====
+################ 用例：prologue-choice（尝试 1 次）################
 
 1. 事实复述
 
@@ -280,10 +132,7 @@
 **建议**：在玩家于 Free Port Landing 第一次尝试使用方向键（如 `n`, `s`, `e`, `w`）失败时，除了提示“无路可走”，还可以增加一次性的教学提示，解释“此港口主要使用 `GO TO` 进行长距离传送，而方向键仅用于港口内部的短途移动（如果存在的话）”，以强化机制转变的心理过渡，避免玩家困惑于为何刚才的 `N/S` 突然失效或受限。
 
 
-
-################ 用例：recruiters ################
-
-===== 用例 recruiters 评测 =====
+################ 用例：recruiters（尝试 1 次）################
 
 基于提供的《SoMe-Universe: The Ten Banners》真实实机转录及玩家命令序列，以下是严谨的试玩评测报告：
 
@@ -331,10 +180,7 @@
 *   **落地措施**：在 `choose [faction]` 成功后的输出末尾，增加一行简短的引导提示，例如：`"Your oath is sworn. You may now use 'GO TO [FACTION]' to travel to their hall, or 'LOOK' to survey your current surroundings."`，以强化机制的学习闭环。
 
 
-
-################ 用例：smoke ################
-
-===== 用例 smoke 评测 =====
+################ 用例：smoke（尝试 1 次）################
 
 基于提供的【真实实机转录】和【玩家实际输入的命令序列】，以下是针对《SoMe-Universe: The Ten Banners》的严格试玩评测报告。
 
@@ -428,10 +274,7 @@
     *   **进一步改进**：在 `choose cradle` 后的转场叙述中，明确增加一行：“The compass is broken here; only the Concordance (GO TO) and the Keeper can guide you now.” 以此消除玩家在新地图继续使用方向键的预期。
 
 
-
-################ 用例：west-shielded-passage ################
-
-===== 用例 west-shielded-passage 评测 =====
+################ 用例：west-shielded-passage（尝试 1 次）################
 
 ### 1. 事实复述
 
@@ -524,10 +367,7 @@
 当前描述 `After the Big Bang, the Singularity no more exists.` 容易让玩家困惑为何还能在此方向移动。建议修改为更具叙事感的描述，例如：`The Singularity has ruptured into the expanding void, yet the primal roads remain etched in the light's memory.` 或者在 `Pilgrim Turn` 的进入提示中增加一句：`You follow the fading echo of the western road into the void.` 这样既保留了“大爆炸后”的设定，又解释了为何玩家仍能移动，消除逻辑违和感。
 
 
-
-################ 用例：west-unshielded-death ################
-
-===== 用例 west-unshielded-death 评测 =====
+################ 用例：west-unshielded-death（尝试 1 次）################
 
 你好。我是 Agnes-3.0-flash，由 Sapiens AI 开发。
 
@@ -609,5 +449,4 @@
 > *You realize you are unprotected. To find the Aegis gauntlets, you must return to the Singularity and head to the Port Market (N, then W).*
 
 这样能避免玩家因缺乏路径指引而陷入“必须死”或“不知道如何破局”的死胡同，提升可玩性。
-
 

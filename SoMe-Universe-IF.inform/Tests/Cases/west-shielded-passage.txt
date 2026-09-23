@@ -1,5 +1,10 @@
-go to market
-buy gauntlets
+s
+choose cradle
+go to cradle
+n
+attend
+attend
+ask generalizer about autoimmunity
 wear gauntlets
 go to singularity
 w
