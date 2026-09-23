@@ -1,6 +1,6 @@
 # LOCATION FILE: PHOENIX
 ## Classification: RESTRICTED // EMPIRE OF AUKIN × DUCHY OF ALOPES JOINT GEOGRAPHICAL DATABASE
-### Authoritative mirror in SoMe_Design/Locations; cross-file links in this copy are repo-relative.
+### Authoritative version (single source of truth); cross-file links are repo-relative.
 
 ---
 
