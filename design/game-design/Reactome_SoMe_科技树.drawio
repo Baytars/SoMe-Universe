@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.0.0">
+  <diagram id="some_tech_tree" name="SoMe科技树-Reactome映射">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        
+        <mxCell id="root" value="SoMe科技树&amp;#xa;× Reactome" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C62828;strokeColor=#B71C1C;fontColor=#FFFFFF;fontSize=16;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="180" height="80" as="geometry" />
+        </mxCell>
+        
+        
+        
+        
+        <mxCell id="l1_cc" value="Cell Cycle&amp;#xa;细胞周期" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7043;strokeColor=#E64A19;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_cc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_cc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_met" value="Metabolism&amp;#xa;代谢调控" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AB47BC;strokeColor=#7B1FA2;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_met" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_met">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_st" value="Signal Transduction&amp;#xa;信号转导" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42A5F5;strokeColor=#1976D2;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_st">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_dr" value="DNA Repair&amp;#xa;DNA修复" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26A69A;strokeColor=#00897B;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_dr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_dr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_ie" value="Immune Evasion&amp;#xa;免疫逃逸" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EF5350;strokeColor=#C62828;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_ie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_ie">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_emt" value="EMT &amp; Invasion&amp;#xa;侵袭转移" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFA726;strokeColor=#F57C00;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_emt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_emt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_ang" value="Angiogenesis&amp;#xa;血管生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7E57C2;strokeColor=#5E35B1;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_ang" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_ang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l1_stem" value="Stemness&amp;#xa;干性维持" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66BB6A;strokeColor=#43A047;fontColor=#FFFFFF;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="335" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_root_stem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#666666;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="root" target="l1_stem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_cc_1" value="G1/S Transition&amp;#xa;R-HSA-69206" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#FF7043;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cc_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FF7043;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_cc" target="l2_cc_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_cc_2" value="Mitosis&amp;#xa;R-HSA-68875" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#FF7043;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2300" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cc_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FF7043;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_cc" target="l2_cc_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_cc_3" value="Meiosis&amp;#xa;R-HSA-186712" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCCBC;strokeColor=#FF7043;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2740" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cc_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FF7043;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_cc" target="l2_cc_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_met_1" value="Glycolysis&amp;#xa;R-HSA-71403" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#AB47BC;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_met_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#AB47BC;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_met" target="l2_met_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_met_2" value="TCA Cycle&amp;#xa;R-HSA-71403" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#AB47BC;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_met_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#AB47BC;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_met" target="l2_met_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_met_3" value="Lipid Metabolism&amp;#xa;R-HSA-77289" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#AB47BC;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="3400" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_met_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#AB47BC;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_met" target="l2_met_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_st_1" value="MAPK Cascade&amp;#xa;R-HSA-194315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#42A5F5;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="3180" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_st_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#42A5F5;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_st" target="l2_st_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_st_2" value="PI3K/AKT&amp;#xa;R-HSA-194313" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#42A5F5;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="3620" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_st_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#42A5F5;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_st" target="l2_st_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_dr_1" value="BER/NER&amp;#xa;R-HSA-73885" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2DFDB;strokeColor=#26A69A;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="3840" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dr_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#26A69A;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_dr" target="l2_dr_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_dr_2" value="Telomere&amp;#xa;R-HSA-419829" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2DFDB;strokeColor=#26A69A;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="4060" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dr_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#26A69A;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_dr" target="l2_dr_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_ie_1" value="PD-1/PD-L1&amp;#xa;R-HSA-389948" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#EF5350;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="4280" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ie_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#EF5350;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_ie" target="l2_ie_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_ie_2" value="TGF-β&amp;#xa;R-HSA-9665413" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#EF5350;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="4500" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ie_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#EF5350;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_ie" target="l2_ie_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_emt_1" value="SNAIL/SLUG&amp;#xa;R-HSA-8937144" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#FFA726;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="4720" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_emt_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FFA726;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_emt" target="l2_emt_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_emt_2" value="MMPs/ECMs&amp;#xa;R-HSA-1474228" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#FFA726;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="4940" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_emt_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FFA726;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_emt" target="l2_emt_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_ang_1" value="VEGF/VEGFR&amp;#xa;R-HSA-4420097" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#7E57C2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="5160" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ang_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#7E57C2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_ang" target="l2_ang_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_ang_2" value="Lymphangiogenesis&amp;#xa;R-HSA-9668321" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#7E57C2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="5380" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ang_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#7E57C2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_ang" target="l2_ang_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l2_stem_1" value="Hedgehog&amp;#xa;R-HSA-452723" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#66BB6A;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="5600" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_stem_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#66BB6A;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_stem" target="l2_stem_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l2_stem_2" value="WNT/β-catenin&amp;#xa;R-HSA-453276" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#66BB6A;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="5820" y="345" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_stem_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#66BB6A;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="l1_stem" target="l2_stem_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        
+        
+        <mxCell id="l3_cc_1" value="分裂进化I/II/III&amp;#xa;加速生产" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7043;strokeColor=#BF360C;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6040" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cc_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FF7043;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_cc_1" target="l3_cc_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l3_cc_2" value="有丝分裂异常&amp;#xa;死后分裂反击" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7043;strokeColor=#BF360C;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6240" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cc_22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FF7043;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_cc_2" target="l3_cc_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_met_1" value="代谢发电厂&amp;#xa;ATP产出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AB47BC;strokeColor=#6A1B9A;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6440" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_met_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#AB47BC;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_met_1" target="l3_met_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l3_met_2" value="瓦氏效应&amp;#xa;高效产能" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#AB47BC;strokeColor=#6A1B9A;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6640" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_met_22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#AB47BC;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_met_2" target="l3_met_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_st_1" value="增殖协议&amp;#xa;攻速+移速" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42A5F5;strokeColor=#0D47A1;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="6840" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_st_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#42A5F5;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_st_1" target="l3_st_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_dr_1" value="突变熔炉&amp;#xa;随机进化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26A69A;strokeColor=#004D40;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="7040" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dr_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#26A69A;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_dr_1" target="l3_dr_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="l3_dr_2" value="永生祭坛&amp;#xa;无限复活" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26A69A;strokeColor=#004D40;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="7240" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dr_22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#26A69A;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_dr_2" target="l3_dr_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_ie_1" value="免疫驯化者&amp;#xa;检查点攻击" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EF5350;strokeColor=#B71C1C;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="7440" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ie_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#EF5350;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_ie_1" target="l3_ie_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_emt_1" value="EMT转化&amp;#xa;解锁侵袭" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFA726;strokeColor=#E65100;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="7640" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_emt_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#FFA726;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_emt_1" target="l3_emt_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_ang_1" value="血管生成科技&amp;#xa;解锁载具" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7E57C2;strokeColor=#311B92;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="7840" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ang_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#7E57C2;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_ang_1" target="l3_ang_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="l3_stem_1" value="干细胞巢穴&amp;#xa;干性基础" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66BB6A;strokeColor=#1B5E20;fontColor=#FFFFFF;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="8040" y="345" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e_stem_11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#66BB6A;endArrow=classic;endFill=1;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashPattern=8 4;" edge="1" parent="1" source="l2_stem_1" target="l3_stem_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="legend" value="图例" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#BDBDBD;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="8240" y="270" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_1" value="Reactome通路节点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#90CAF9;strokeColor=#1976D2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="8500" y="355" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_2" value="SoMe科技节点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C62828;strokeColor=#B71C1C;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="8700" y="355" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_3" value="科技映射关系" style="endArrow=classic;endFill=1;strokeColor=#666666;dashed=1;dashPattern=8 4;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="195" as="sourcePoint" />
+            <mxPoint x="1250" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

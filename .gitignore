@@ -13,3 +13,6 @@ SoMe-Universe-IF.inform/Tests/playtest_transcript.txt
 SoMe-Universe-IF.inform/Tests/playtest_review_*.txt
 # Agent workspace memory (private agent data, not project source)
 .workbuddy/
+# Third-party CARD antibiotic-resistance database raw downloads (~82MB,
+# re-fetchable from https://card.mcmaster.ca/); not committed
+design/data/
