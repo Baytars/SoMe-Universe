@@ -234,7 +234,7 @@ The sightings lanyard is a seal. The printed name is "Sightings Lanyard". Unders
 The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand "pennant" and "abyssal" as the abyssal pennant. The description is "A wet swallow-tailed flag that never quite dries. The Abyssal Legion flew it over the first flooded field."
 
 [Comment: TRIAL TEXTS - shown when a faction representative is asked ABOUT SEAL/TRIAL/TASK. Edit these freely; the task mechanics live elsewhere, these are only the briefing strings.]
-The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Sacrum as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets."
+The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Sacrum as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets. She then opens the remaining six temples one at a time - ASK her about each, WALK it, read its register, SAY THE NAMES at its seat, TAKE the key, and tell her what that walk left behind."
 The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
 The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
@@ -359,6 +359,9 @@ To raise the ten banners:
 	say "The Keeper binds the last seal to its standard and steps back. Ten banners over a neutral deck: the Cradle's listening ring, Vesalius's bronze face, a thread of quicksilver, a knitting needle, a sulfur crystal, a porcelain masque, a black bat, a gall-coloured seal, a laminated pass, a wet pennant.
 'Understand what you have carried,' she says. 'An academy that teaches the self. A fleet that maps the body-cosmos. Gods that cannot be killed, only contained. Martyrs who were never asked. And the Unseen Crown - ancestors, terrors, imitators, the dead who fight while dying, and the quiet ones who replace you. This is the shape of the war. Now the Accord can draw it.'
 The map of the whole body-cosmos rolls out across the table, ten colours deep.";
+	if the assembled apocalypse is carried by the player:
+		say "[paragraph break]You set the Apocalypse of the White Moon beside the standards, and the Keeper reads the spine without opening it. 'Seven temples,' she says. 'Six keys. One page that no scripture ordered. You walked every one of them as somebody else, and came back as yourself.'
+'The ten banners are the shape of the war. This is the shape of what it was for. Every hall in this Accord treats something that can be cured. Those seven could not be cured. They could only be witnessed, and you witnessed them.'";
 	end the story finally saying "The Ten Banners stand raised over the Pericardium Free Port."
 
 Abouting is an action applying to nothing.
@@ -678,6 +681,63 @@ To franklin answers (qt - a text):
 			now franklin-stage is 2;
 		say "[line break]She folds the page once, along a crease worn white. 'Two questions is a hearing,' she says. 'Come into the memory, then. Walk it as I walked it, and bring me back one thing.'[line break](ENTER THE MEMORY.)"
 
+[Comment: SITE STATE - declared here because the asking rules below need the say-phrases.]
+A temple site is a kind of value. The temple sites are no-site, chernobyl-site, fukushima-site, sellafield-site, ignalina-site, three-mile-site, mayak-site, apollo-site.
+
+[Comment: site-label is a plain text variable, refreshed on demand; a parameterised say-phrase would not parse in this build.]
+The site-label is some text that varies. The site-label is "nowhere".
+
+To refresh the site label for (s - a temple site):
+	if s is chernobyl-site:
+		now the site-label is "Wastes of Sacrum";
+	otherwise if s is fukushima-site:
+		now the site-label is "Fukushima";
+	otherwise if s is sellafield-site:
+		now the site-label is "Sellafield";
+	otherwise if s is ignalina-site:
+		now the site-label is "Ignalina";
+	otherwise if s is three-mile-site:
+		now the site-label is "Three Mile";
+	otherwise if s is mayak-site:
+		now the site-label is "Mayak";
+	otherwise if s is apollo-site:
+		now the site-label is "Apollo";
+	otherwise:
+		now the site-label is "nowhere".
+
+The current site is a temple site that varies. The current site is no-site.
+The pending site is a temple site that varies. The pending site is no-site.
+
+seals-walked is a number that varies. seals-walked is 0.
+site-briefed is a truth state that varies. site-briefed is false.
+walk-registry-read is a truth state that varies. walk-registry-read is false.
+walk-names-spoken is a truth state that varies. walk-names-spoken is false.
+pending-telling is a truth state that varies. pending-telling is false.
+
+A temple key is a kind of thing. Understand "key" as a temple key.
+
+The key of sacrifice is a temple key. The printed name is "Key of Sacrifice". Understand "sacrifice" and "key of sacrifice" as the key of sacrifice. The description is "Prometheus' key. Precision over passion: sacrifice is not destruction, it is the arrow that finds the single thread and severs it with honour."
+The key of dilution is a temple key. The printed name is "Key of Dilution". Understand "dilution" and "key of dilution" as the key of dilution. The description is "Tsukuyomi's key. Reception over resistance: the ocean does not fight the poison, it makes the poison part of the greater whole."
+The key of patience is a temple key. The printed name is "Key of Patience". Understand "patience" and "key of patience" as the key of patience. The description is "Vulcan's key. Time over triumph: what was corrupted in centuries must be healed in centuries."
+The key of weight is a temple key. The printed name is "Key of Weight". Understand "weight" and "key of weight" as the key of weight. The description is "Iron's key. Gravity over glory: the stone that supports the arch is not lesser than the stone that crowns it."
+The key of warning is a temple key. The printed name is "Key of Warning". Understand "warning" and "key of warning" as the key of warning. The description is "Cassandra's key. Speak anyway: the warning that is given is the warning that matters, whether or not it is believed."
+The key of truth is a temple key. The printed name is "Key of Truth". Understand "truth" and "key of truth" as the key of truth. The description is "Hephaestus' key. Revelation over peace: the chains must be named before they can be broken."
+
+The assembled apocalypse is a thing. The printed name is "Apocalypse of the White Moon". Understand "apocalypse" and "assembled apocalypse" and "white moon apocalypse" as the assembled apocalypse. The description is "Seven seals, six keys, and one page that no scripture ordered. Franklin bound them into a single volume and carried it through every one of the walks. It is not prophecy. It is a register, and it is finished."
+
+To decide if six keys are held:
+	if the key of sacrifice is carried by the player and the key of dilution is carried by the player and the key of patience is carried by the player and the key of weight is carried by the player and the key of warning is carried by the player and the key of truth is carried by the player:
+		decide yes;
+	otherwise:
+		decide no.
+
+[Comment: during a walk the player IS Sister Franklin, so key checks inside a walk must look at the walker who is waiting behind.]
+To decide if six keys are held by the walker:
+	if the key of sacrifice is carried by the memory-walker and the key of dilution is carried by the memory-walker and the key of patience is carried by the memory-walker and the key of weight is carried by the memory-walker and the key of warning is carried by the memory-walker and the key of truth is carried by the memory-walker:
+		decide yes;
+	otherwise:
+		decide no.
+
 Instead of asking Sister Franklin about something:
 	let qt be "[the topic understood]" in lower case;
 	if qt is "seal" or qt is "trial" or qt is "task" or qt is "earn":
@@ -686,8 +746,31 @@ Instead of asking Sister Franklin about something:
 		franklin preaches;
 	otherwise if qt is "names" or qt is "the names" or qt is "list" or qt is "miners" or qt is "the miners" or qt is "children" or qt is "the children" or qt is "wolves" or qt is "the wolves" or qt is "katerina" or qt is "vasya" or qt is "guseva" or qt is "eighth" or qt is "eighth seal" or qt is "the eighth seal" or qt is "witness":
 		franklin answers qt;
+	otherwise if qt is "progress" or qt is "temples" or qt is "the temples" or qt is "keys" or qt is "the six" or qt is "six" or qt is "walks" or qt is "seven seals" or qt is "the seven seals":
+		say "'Seven temples, seven memories,' she says. 'The First I walked myself - the Wastes of Sacrum, Year Forty-Seven.'";
+		if the cradle sigil is carried by the player or franklin-stage >= 4:
+			say "[line break]'You have walked it too, and you carry the [printed name of the key of sacrifice].'";
+		otherwise:
+			say "[line break]'You have not walked it yet.'";
+		say "[line break]Of the six that remain:[line break]";
+		repeat with k running through temple keys carried by the player:
+			say "  held - [printed name of k][line break]";
+		if the open site is no-site:
+			say "All seven are walked. Nothing left but to carry it.";
+		otherwise:
+			refresh the site label for the open site;
+			say "The next one walking is [site-label].[line break](ASK me about it, then WALK it.)";
 	otherwise:
-		say "Sister Franklin listens, and offers nothing on that."
+		let s be the site for qt;
+		if s is no-site:
+			say "Sister Franklin listens, and offers nothing on that.";
+		otherwise if s is chernobyl-site:
+			franklin preaches;
+		otherwise if s is the open site:
+			franklin preaches the site s;
+		otherwise:
+			refresh the site label for the open site;
+			say "'That temple is either behind you or not yet walking,' she says. 'The one in front of you now is [site-label].'"
 
 [Comment: THE MEMORY - Franklin's walk through the Wastes of Sacrum. The player acts AS her for its duration.]
 The Threshold of Ash is a room. "Ash to the horizon, and every grain older than the first cell. You came back here without orders, without a medal, and with one page in your coat that you wrote yourself. The contaminated vestibule lies north, where the registry was found. Beyond it, down, is the room beneath the world."
@@ -745,7 +828,11 @@ Instead of leaving the memory:
 		say "You are not inside anyone's memory.";
 	otherwise:
 		say "You step back out of the year. The ash goes with you, a little.";
-		now franklin-stage is 2;
+		if the current site is no-site:
+			now franklin-stage is 2;
+		otherwise:
+			now site-briefed is true;
+			now the current site is no-site;
 		end the memory walk.
 
 Instead of warping to when the player is Sister Franklin:
@@ -773,21 +860,6 @@ Instead of examining the list of names:
 Reciting the names is an action applying to nothing.
 Understand "say names" or "say the names" or "recite names" or "recite the names" or "speak names" or "read names aloud" as reciting the names.
 
-Instead of reciting the names:
-	if the player is not Sister Franklin:
-		say "You are not inside the memory. Nobody is listening.";
-	otherwise if the location is not the Core Chamber:
-		say "Not here. Names are said where the fire can hear them.";
-	otherwise if names-read is false:
-		say "You have not read the registry. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
-	otherwise if names-spoken is true:
-		say "You have said them. The floor is warm under your knees and the breathing has already slowed once.";
-	otherwise:
-		now names-spoken is true;
-		say "You say them aloud, one by one, in the room beneath the world: the firefighter, the wife, the sister at the northern point, the brother under the floor, the physician and her nurse, the old woman and her cat, and the child of apartment four-twelve whose name nobody kept.
-You do not pray and you do not bind. You say the names the way you would read a register in a town that has decided to forget.
-The breathing changes. It does not stop - it attends."
-
 To lay down the seal:
 	if the player is not Sister Franklin:
 		say "You are not inside the memory.";
@@ -806,7 +878,8 @@ You sit, the way the six miners sat, and offer nothing except the fact of being 
 The breathing slows. Not all the way. Enough.
 You climb back up through the tunnels toward the light, and the weight goes with you, and some of it stays here.";
 		end the memory walk;
-		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)";
+		now the key of sacrifice is carried by the player;
+		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved. On your palm where the page was, there is a key - Prometheus' key, the first of six, the one the Wastes leave behind.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)";
 
 Offering the seal is an action applying to nothing.
 Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" as offering the seal.
@@ -817,7 +890,7 @@ Instead of offering the seal:
 Instead of putting the eighth seal page on the throne:
 	lay down the seal.
 
-Instead of telling Sister Franklin about something when memory-walked is true:
+Instead of telling Sister Franklin about something when pending-telling is false and memory-walked is true:
 	if the cradle sigil is carried by the player:
 		say "'You carry it,' Sister Franklin says. 'Go and teach it somewhere that has forgotten worse.'";
 	otherwise:
@@ -836,6 +909,435 @@ She closes the page at last. 'The dead are not saved by being counted. They are 
 Instead of telling Sister Franklin about something:
 	say "'I am not the Chair,' she says. 'I do not grade. Walk it first - then tell me what you carried out.'"
 
+
+Section - The Six That Are Still Walking
+
+[Comment: THE REMAINING SIX TEMPLES.
+Franklin opens them one at a time, in the order of the seals: Fukushima (dilution), Sellafield (patience), Ignalina (weight), Three Mile (warning), Mayak (truth), Apollo (the seventh, not yet built).
+Per site: ASK her about it -> WALK it -> READ the register -> SAY THE NAMES at the seat -> TAKE the key -> TELL FRANKLIN the one thing you carried out.
+CONTENT STRINGS ARE FREE TO REWRITE. The chain and the flags are structural.]
+
+To decide which temple site is the site for (t - a text):
+	if t is "chernobyl" or t is "wastes" or t is "sacrum" or t is "first" or t is "first seal" or t is "prometheus":
+		decide on chernobyl-site;
+	otherwise if t is "fukushima" or t is "second" or t is "second seal" or t is "tsukuyomi" or t is "dilution" or t is "ocean" or t is "sea":
+		decide on fukushima-site;
+	otherwise if t is "sellafield" or t is "third" or t is "third seal" or t is "vulcan" or t is "patience" or t is "windscale":
+		decide on sellafield-site;
+	otherwise if t is "ignalina" or t is "fourth" or t is "fourth seal" or t is "iron" or t is "weight" or t is "visaginas":
+		decide on ignalina-site;
+	otherwise if t is "three mile" or t is "three mile island" or t is "fifth" or t is "fifth seal" or t is "cassandra" or t is "warning":
+		decide on three-mile-site;
+	otherwise if t is "mayak" or t is "sixth" or t is "sixth seal" or t is "hephaestus" or t is "truth" or t is "kyshtym":
+		decide on mayak-site;
+	otherwise if t is "apollo" or t is "seventh" or t is "seventh seal" or t is "humility" or t is "tokamak":
+		decide on apollo-site;
+	otherwise:
+		decide on no-site.
+
+To decide which temple site is the open site:
+	if seals-walked is 0:
+		decide on fukushima-site;
+	otherwise if seals-walked is 1:
+		decide on sellafield-site;
+	otherwise if seals-walked is 2:
+		decide on ignalina-site;
+	otherwise if seals-walked is 3:
+		decide on three-mile-site;
+	otherwise if seals-walked is 4:
+		decide on mayak-site;
+	otherwise if seals-walked is 5:
+		decide on apollo-site;
+	otherwise:
+		decide on no-site.
+
+[Comment: ROOMS AND OBJECTS - one approach (register) and one seat per temple; Apollo has only the nave that does not exist yet.]
+The Flooded Nave is a room. "The Temple of Tsukuyomi, a year after the water left. Salt crust on every surface, and the light through the broken roof the colour of a sky that cannot decide. Brother Kenji wrote that the water was warm. The register was recovered from the flooded vestibule, in a waterproof container. The core lies north, below the waterline."
+The Drowned Core is north of the Flooded Nave. "You go down through the dark, one hand on a hose nobody coiled, counting steps you will count again in your sleep. Below, the spent fuel pool: water at 2.7 metres and falling, the level indicators the only light. Whatever sits at the centre of this temple is not on fire. It is simply there, and it has been there since the water came."
+
+The Filter Gallery is a room. "Windscale, and the great filters that the engineers called Cockcroft's Follies - two hundred feet of ducting bolted onto a reactor that everyone insisted did not need them. They were right for sixty years and wrong once. The milk register is kept here, in a dairy ledger: half a million litres poured away, and the farms that never recovered. The hearth is north."
+The Black Horse Hearth is north of the Filter Gallery. "The hearth of the lame god. On the wall, a figure on a black horse holds a pair of scales, and the scales are not weighing guilt - they are measuring accumulation. Every gram the filters caught, every gram the sea took, every gram that went out with the milk. Nothing here is dramatic. That is the point: poison by addition, and the arithmetic takes sixty years."
+
+The Dismantling Floor is a room. "Ignalina, and the work no one has ever done before: taking apart, piece by piece, the largest reactor ever built on Lithuanian soil, with no precedent to copy and a deadline measured in decades. The register of the workers who stayed is kept by the door. North is the place they call the inheritance."
+The Inheritance Seat is north of the Dismantling Floor. "A city built from nothing for a plant, and a plant that closed, and a city with no purpose left. One million, one hundred and fifty-five thousand, one hundred and ninety-two voted to keep the fire burning. They lost. The weight that sits here is not the reactor. It is what a people agreed to carry, and then had to carry anyway after the vote went against them."
+
+The Valve Gallery is a room. "Three Mile Island, and a valve that stuck open and told the control room it had shut. Everything that followed followed from that one lie. The register of the unafraid is pinned here - the ones who stayed when the rest of the valley left, and the ones who came back. The chamber is north."
+The Listening Chamber is north of the Valve Gallery. "A room with no radiation in it worth speaking of, and that is the whole curse of this temple. Cassandra stands in it, and she is not wailing. She is simply repeating what she said, in the same voice, to people who have decided she is mad. The harm here may be nothing. The harm here may be something. Nobody can prove either, and the not-proving is the wound."
+
+The Techa Bank is a room. "Mayak, and a river that was used as a sewer for a decade before anyone told the people on its banks. They fished it. They washed in it. They drank it. The register of the trace is kept here: the East Ural Radioactive Trace, drawn on a map like a long thin scar. The wound is north."
+The Wound Revealed is north of the Techa Bank. "Karachay: forty-five hectares of water that will kill you in an hour standing at the edge. The lame god stands in it up to his knees, and he is not hiding anything. This is the temple of the thing that was done and then denied for thirty years. The silence did more damage than the tank. Hephaestus forged the chains; he also knows where they cut."
+
+The Unbuilt Nave is a room. "The seventh temple, which does not exist. Blueprints on trestles, equations on a board, a torus drawn in chalk on the floor - a ring with no beginning and no end. There is no fire here. There has never been a fire here. Nothing has died in this room and nobody will. The lyre hangs on the wall with seven strings, and an eighth that cannot be plucked. Listen, or leave."
+
+The drowned register is a thing in the Flooded Nave. The printed name is "Drowned Register". Understand "register" and "drowned register" and "fukushima register" as the drowned register. The description is "Brother Kenji's record, and Dr. Ishikawa's registry behind it: five thousand workers enrolled, seventeen thousand by the end."
+The drowned seat is a scenery supporter in the Drowned Core. Understand "seat" and "pool" and "fuel pool" as the drowned seat. The description is "The spent fuel pool. Two point seven metres and falling, the level indicators the only light in the room."
+
+The milk register is a thing in the Filter Gallery. The printed name is "Milk Register". Understand "milk register" and "ledger" and "sellafield register" as the milk register. The description is "A dairy ledger: half a million litres poured away, farms that never recovered, and the technician who noticed a leak that ran for nine months before anyone else looked."
+The black horse seat is a scenery supporter in the Black Horse Hearth. Understand "seat" and "hearth" and "scales" as the black horse seat. The description is "The scales of the black horse. They do not weigh guilt. They measure accumulation."
+
+The dismantling register is a thing in the Dismantling Floor. The printed name is "Register of Those Who Stayed". Understand "register" and "dismantling register" and "ignalina register" and "workers" as the dismantling register. The description is "The workers who remained after the closing, and the referendum that failed by a margin nobody expected."
+The iron seat is a scenery supporter in the Inheritance Seat. Understand "seat" as the iron seat. The description is "What a people agreed to carry, and carried anyway once the vote went against them."
+
+The register of the unafraid is a thing in the Valve Gallery. The printed name is "Register of the Unafraid". Understand "register" and "unafraid" and "three mile register" as the register of the unafraid. The description is "The ones who stayed when the valley left, and the ones who came back, and the ones who spent thirty years trying to prove a number nobody could prove."
+The listening seat is a scenery supporter in the Listening Chamber. Understand "seat" and "cassandra" as the listening seat. The description is "She is not wailing. She is repeating what she said, in the same voice, to people who have decided she is mad."
+
+The trace register is a thing in the Techa Bank. The printed name is "Register of the Trace". Understand "register" and "trace" and "mayak register" as the trace register. The description is "The East Ural Radioactive Trace, drawn on a map like a long thin scar, and the village that is still waiting on its bank."
+The wound seat is a scenery supporter in the Wound Revealed. Understand "seat" and "lake" and "karachay" as the wound seat. The description is "Forty-five hectares of water that will kill you in an hour at the edge. The lame god stands in it and hides nothing."
+
+The unbuilt torus is scenery in the Unbuilt Nave. Understand "torus" and "ring" and "tokamak" as the unbuilt torus. The description is "A ring with no beginning and no end, chalked on the floor. The sacred geometry of return: the orbit that swallows itself and begins again."
+The eight-stringed lyre is scenery in the Unbuilt Nave. Understand "lyre" and "strings" and "eighth string" as the eight-stringed lyre. The description is "Seven strings that can be plucked, and an eighth that cannot. The eighth is the terahertz - the string that does not sound, only listens. It is the act of measurement itself: told without touching, measured without disturbing."
+
+The key of dilution is in the Drowned Core.
+The key of patience is in the Black Horse Hearth.
+The key of weight is in the Inheritance Seat.
+The key of warning is in the Listening Chamber.
+The key of truth is in the Wound Revealed.
+
+[Comment: PREACHING - she opens one temple at a time.]
+To franklin preaches the site (s - a temple site):
+	now site-briefed is true;
+	if s is fukushima-site:
+		say "'The second temple stood on a coast, and the coast is the entire argument,' Sister Franklin says. 'Fire remembers. Water does not remember - water dilutes. The Order of the Chained Tide built over a shard at the edge of the ocean on purpose, to ask whether the chains would hold if the sea came. The sea came. The chains held. Barely.'
+She turns a page. 'Brother Kenji wrote one line I cannot put down: the water was warm. Warm from the cores it had begun to touch. Warm like the body of something dying that did not want to die alone.'
+'Tsukuyomi is the god of what cannot be seen. The harm was invisible, the contamination was invisible, the grief was invisible. And here is the arithmetic that makes this seal: two thousand one hundred and twenty-nine people died of the evacuation. Not of the fire. Of being saved from it.'
+[line break](ASK me about THE OCEAN, HIROSHI, or THE NAMES - then WALK FUKUSHIMA.)";
+	otherwise if s is sellafield-site:
+		say "'The third temple is the one that was never dramatic, and that is why it kills,' she says. 'Windscale, 1957. A fire that smouldered for two days while the men who fought it were told nothing was wrong. Tom Tuohy walked into the core and put it out, and was told for thirty years that he had been exposed to nothing.'
+'Cockcroft built filters everyone called follies. Two hundred feet of ducting on a reactor that did not need them. Sixty years later they were the only reason the plume was not worse. Patience, traveler: a filter is a bet placed by a man who will be dead before it pays.'
+'The register I keep from that temple is a dairy ledger. Half a million litres of milk poured into the ground, farms that never recovered, and a leak of eighty-three thousand litres that ran for nine months before anybody looked.'
+[line break](ASK me about THE FILTERS, THE MILK, or THE NAMES - then WALK SELLAFIELD.)";
+	otherwise if s is ignalina-site:
+		say "'The fourth is Iron, and Iron is not about the accident,' she says. 'There was no accident. There was a flaw in the control rods that everyone knew about and nobody fixed, and then there was a closing.'
+'Visaginas was built from nothing, for the plant, by people brought in from across a union that no longer exists. It had no language of its own. Then the plant closed and the city had no purpose, and the city is still there.'
+'One million, one hundred and fifty-five thousand, one hundred and ninety-two people voted to keep the fire burning. They lost. And then the dismantling began - the largest reactor ever built on that soil, taken apart piece by piece, with no precedent to copy and a schedule measured in decades. That is the weight. Not the reactor. The inheritance.'
+[line break](ASK me about VISAGINAS, THE WORKERS, or THE NAMES - then WALK IGNALINA.)";
+	otherwise if s is three-mile-site:
+		say "'The fifth is the cruellest, because nothing happened,' she says. 'A valve stuck open and told the control room it had shut. Everything after that followed from one lie told by a piece of metal.'
+'The harm may be nothing. The harm may be something. Thirty years of epidemiology has not been able to prove either, and the not-proving is the wound - because the people who lived there were told, in one decade, that they were fine, and in the next, that nobody had ever checked.'
+'Cassandra is the god of this temple, and she is not wailing. She is saying the same true thing in the same voice to people who have decided she is mad. The seal of this temple is: say it anyway. The warning that is given is the warning that matters, whether or not it is believed.'
+[line break](ASK me about THE VALVE, THE GOVERNOR, or THE NAMES - then WALK THREE MILE.)";
+	otherwise if s is mayak-site:
+		say "'The sixth is Hephaestus, and it is the temple of the thing that was done and then denied,' she says. 'A tank whose cooling system was forgotten exploded in 1957. The Techa river had been used as a sewer for a decade, and the people on its banks fished it and washed in it and drank it, and were never told.'
+'Karachay: forty-five hectares of water that will kill you in an hour standing at its edge. The East Ural Radioactive Trace, drawn on maps like a long thin scar. Muslyumovo is still on the bank, still inhabited, still waiting.'
+'The lame god forged the chains that bound Prometheus. He is also the only god who knows where the chains cut. This seal is revelation over peace: the chains must be named before they can be broken. The silence did more damage here than the tank ever did.'
+[line break](ASK me about THE TECHA, MUSLYUMOVO, or THE NAMES - then WALK MAYAK.)";
+	otherwise if s is apollo-site:
+		say "'The seventh temple has never been built,' Sister Franklin says, and for the first time she closes the book in her lap. 'It is blueprints. Equations. A ring drawn in chalk on a floor that does not exist. Apollo is the god of the bow and the lyre, and his seal is humility: not to control the fire, but to admit we cannot fully control it, and to proceed anyway.'
+'The six keys you carry were never six. They were broken into six so that no single hand could hold them all. Sacrifice. Dilution. Patience. Weight. Warning. Truth. Only someone who has walked all six paths can hear the seventh sound.'
+She looks at you. 'The seventh seal does not break into catastrophe. When it opens there is silence - half an hour of it - and then a song nobody else can learn, because it is not taught. It is undergone.'
+[line break](WALK APOLLO. Bring all six keys. In the nave, LISTEN.)";
+	otherwise:
+		say "'That temple is not the one walking now,' she says."
+
+[Comment: ENTERING A WALK.]
+Walking a site is an action applying to one topic.
+Understand "walk [text]" or "remember [text]" or "walk into [text]" as walking a site.
+
+To attempt the walk of (s - a temple site):
+	if the location is not the Cradle Inner Court:
+		say "A memory is only walked where she keeps it: the Cradle Inner Court, in her presence.";
+	otherwise if Sister Franklin is not in the location:
+		say "Sister Franklin is not here to hold the door open.";
+	otherwise if pending-telling is true:
+		say "'Answer me first,' she says. 'You came back out of it. Say what you carried.'";
+	otherwise if franklin-stage < 4:
+		say "'The first walk is the one that opens the others,' she says. 'Walk the Wastes with me, and tell me what you brought back. Then we will speak of the six.'";
+	otherwise if s is not the open site:
+		if the open site is no-site:
+			say "'All seven are walked,' she says. 'There is nothing left to enter. Only to carry.'";
+		otherwise:
+			refresh the site label for the open site;
+			say "'Not that one,' she says. 'The seals open in their order. The next one walking is [site-label].'";
+	otherwise if site-briefed is false:
+		refresh the site label for s;
+		say "'Hear it from a mouth first,' she says. 'ASK me about [site-label], then walk it.'";
+	otherwise if s is apollo-site:
+		if six keys are held:
+			start the walk of s;
+		otherwise:
+			say "'You do not carry all six keys,' she says. 'Sacrifice, dilution, patience, weight, warning, truth. Come back with the whole chord.'";
+	otherwise:
+		start the walk of s.
+
+Instead of walking a site:
+	let t be "[the topic understood]" in lower case;
+	let s be the site for t;
+	if s is no-site:
+		say "Name a temple she has opened: Fukushima, Sellafield, Ignalina, Three Mile, Mayak, Apollo.";
+	otherwise:
+		attempt the walk of s.
+
+To start the walk of (s - a temple site):
+	now the current site is s;
+	now site-briefed is false;
+	now walk-registry-read is false;
+	now walk-names-spoken is false;
+	now the memory-walker is the player;
+	now the player is Sister Franklin;
+	say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.";
+	if s is fukushima-site:
+		say "[line break]You are walking the coast. She did not stand here - she stood in a reading room and walked it in her head, which is a kind of standing, and the Order has never accepted any other kind.[line break](READ THE REGISTER, go north to the core, SAY THE NAMES, and TAKE THE KEY. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Flooded Nave;
+	otherwise if s is sellafield-site:
+		say "[line break]You are walking Windscale. She read it in a dairy ledger, in a technician's log, in a retired worker's letter to a god who did not answer.[line break](READ THE REGISTER, go north to the hearth, SAY THE NAMES, and TAKE THE KEY. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Filter Gallery;
+	otherwise if s is ignalina-site:
+		say "[line break]You are walking a city with no purpose left, built by people with no language in common, to serve a plant that has closed.[line break](READ THE REGISTER, go north to the seat, SAY THE NAMES, and TAKE THE KEY. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Dismantling Floor;
+	otherwise if s is three-mile-site:
+		say "[line break]You are walking a valley where nothing happened, which is the hardest kind of place to walk.[line break](READ THE REGISTER, go north to the chamber, SAY THE NAMES, and TAKE THE KEY. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Valve Gallery;
+	otherwise if s is mayak-site:
+		say "[line break]You are walking a river that was used as a sewer, and a village that is still on its bank.[line break](READ THE REGISTER, go north to the wound, SAY THE NAMES, and TAKE THE KEY. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Techa Bank;
+	otherwise if s is apollo-site:
+		say "[line break]You are walking a temple that has never been built. There is no register here and no names to say. There is only the listening.[line break](LISTEN. LEAVE THE MEMORY steps back out.)";
+		now Sister Franklin is in the Unbuilt Nave.
+
+To end a site walk:
+	end the memory walk;
+	now pending-telling is true;
+	now the pending site is the current site;
+	now the current site is no-site.
+
+[Comment: READING THE REGISTER.]
+To witness the register of (s - a temple site):
+	if the player is Sister Franklin and the current site is s:
+		now walk-registry-read is true;
+		if s is fukushima-site:
+			say "OFFICIAL: 2,129 disaster-related deaths. CONFIRMED RADIATION DEATHS: 1.
+Tanaka Hiroshi - fifty-nine - six months from retirement - two weeks in the dark - died 2018, lung cancer, the first confirmed.
+Dr. Naoko Ishikawa - physician - enrolled five thousand workers by hand, then seventeen thousand. 'My weapon is documentation.'
+Sato Kenji - fisherman - fished empty waters for three months, then stopped - died 2013 of losing the sea.
+Sato Emiko - his daughter. Sato Ren - his grandson - went out in 2019 on his own boat, and in 2025 passed every test on every fish.
+Suzuki Masahiro - decommissioning - lifetime limit 100 millisieverts, accumulated 120, signed the exemption, came back.
+Three hundred and eighty thousand children screened. One hundred and eighty-seven thyroid cancers. Zero deaths.
+The radiation is invisible. The grief is invisible. The choice is invisible. Only the cost is visible, and the cost is too high.
+Write their names. Say them aloud.";
+		otherwise if s is sellafield-site:
+			say "OFFICIAL: one fire, two days, October 1957. MEN WHO FOUGHT IT: told for thirty years they were exposed to nothing.
+Tom Tuohy - went into the core and put it out, and was never told what he had been given.
+Davies - dairy farmer, Cumbria - half a million litres poured away - the farm never recovered.
+Evans - keeper of the archives - kept the record of the filters everybody called follies.
+Williams - technician at THORP - noticed a leak. Eighty-three thousand litres. Nine months before anyone else looked.
+Dr. Sarah Thompson - epidemiology - the children who did not become.
+Thomas Evans - retired - wrote a letter to the lame god and received no answer, and wrote it anyway.
+No plume maps were published for thirty years. The filters caught what they caught. The milk was poured out. The Irish Sea was monitored by two nations who had not spoken in a century, and then did.
+Patience is not passivity. Patience is a filter bolted on by a man who will be dead before it pays.
+Write their names. Say them aloud.";
+		otherwise if s is ignalina-site:
+			say "OFFICIAL: no accident. A flaw in the control rods, known, unfixed, inherited.
+Visaginas - built from nothing, for the plant, by people with no language in common.
+One million, one hundred and fifty-five thousand, one hundred and ninety-two voted to keep the fire burning. They lost.
+The workers who remained after the closing - dismantling the largest reactor ever built on this soil, piece by piece, with no precedent.
+Druksiai - the lake that was changed, and remembers it.
+The city in 2026 - still there, and still without a purpose.
+The referendum failed and the dismantling went ahead, and the people who voted to keep the fire carried the weight of losing anyway.
+The stone that supports the arch is not lesser than the stone that crowns it.
+Write their names. Say them aloud.";
+		otherwise if s is three-mile-site:
+			say "OFFICIAL: a valve stuck open and reported shut. Everything after followed from that one lie.
+The ones who stayed when the valley left.
+The ones who spoke later, and were reanalysed, and were right the second time.
+The children who were not born, or were born and watched for thirty years.
+The mother who stayed, and the daughter who came back.
+The ones who counted the ghosts - epidemiologists who spent three decades failing to prove a number, and said so.
+The harm may be nothing. The harm may be something. Nobody has been able to prove either, and the not-proving is the wound.
+Cassandra does not wail. She repeats herself, in the same voice, to people who have decided she is mad.
+Write their names. Say them aloud.";
+		otherwise if s is mayak-site:
+			say "OFFICIAL: a tank exploded in 1957. The cooling system had been forgotten.
+The Techa - used as a sewer for a decade. Fished. Washed in. Drunk. Never mentioned.
+Karachay - forty-five hectares. An hour at the edge kills.
+The East Ural Radioactive Trace - a long thin scar across the maps, and across the people.
+Muslyumovo - still on the bank. Still inhabited. Still waiting.
+The children of chronic radiation syndrome, whom the record did not have a name for until it did.
+The father who sued, and won the first acknowledgment.
+Classified for thirty years. The silence did more damage than the tank.
+The chains must be named before they can be broken. The wound must be shown before it can be healed.
+Write their names. Say them aloud.";
+	otherwise:
+		say "You are not walking that year. The page stays shut."
+
+Instead of examining the drowned register:
+	witness the register of fukushima-site.
+Instead of examining the milk register:
+	witness the register of sellafield-site.
+Instead of examining the dismantling register:
+	witness the register of ignalina-site.
+Instead of examining the register of the unafraid:
+	witness the register of three-mile-site.
+Instead of examining the trace register:
+	witness the register of mayak-site.
+
+[Comment: SAYING THE NAMES - now covers the first walk and all six.]
+To decide if at the seat:
+	if the current site is fukushima-site and the location is the Drowned Core:
+		decide yes;
+	otherwise if the current site is sellafield-site and the location is the Black Horse Hearth:
+		decide yes;
+	otherwise if the current site is ignalina-site and the location is the Inheritance Seat:
+		decide yes;
+	otherwise if the current site is three-mile-site and the location is the Listening Chamber:
+		decide yes;
+	otherwise if the current site is mayak-site and the location is the Wound Revealed:
+		decide yes;
+	otherwise:
+		decide no.
+
+To speak the names of the current site:
+	if the current site is fukushima-site:
+		say "You say them into the dark of a flooded temple, where the water level is the only light: the technician with six months to retirement, the physician with her documentation, the fisherman who could not bear an empty net, the daughter and the grandson who came back, the decommissioning hand who signed his own exemption, and two thousand one hundred and twenty-nine people who died of being saved.
+You do not pray. You read a register aloud in a town that has decided to forget.
+And the voice of the temple answers, from somewhere under the water: you learn to live with what you cannot see.";
+	otherwise if the current site is sellafield-site:
+		say "You say them in a room that was never dramatic: the man who walked into the fire and was told he had been exposed to nothing, the farmer who poured away half a million litres, the archivist who kept the record of a folly, the technician who noticed a leak that ran for nine months, the epidemiologist counting children who did not become, and the retired worker who wrote to a god and got no answer.
+Nothing dramatic happens. That is the seal.
+And the lame god says, in a voice like a forge banked for the night: what fire made, fire unmakes slowly. The remedy takes as long as the poison took.";
+	otherwise if the current site is ignalina-site:
+		say "You say them on a floor where the largest reactor ever built on this soil is being taken apart with no precedent to copy: the city with no language, the million who voted to keep the fire and lost, the workers who stayed after the closing, the lake that remembers, and the city that is still there in 2026 with nothing left to be for.
+Iron answers, and Iron does not complain of the weight: the stone that supports the arch is not lesser than the stone that crowns it. They are one structure. The weight is the measure of what matters.";
+	otherwise if the current site is three-mile-site:
+		say "You say them in a chamber where there is nothing to be afraid of, which is the hardest room in which to be believed: the ones who stayed, the ones who spoke later and were right the second time, the children who were watched for thirty years, the mother who stayed and the daughter who came back, and the ones who spent three decades failing to prove a number and said so.
+Cassandra answers, without raising her voice: they called me mad and they were right. Say it anyway. The warning that is given is the warning that matters.";
+	otherwise if the current site is mayak-site:
+		say "You say them at the edge of water that will kill you in an hour: the river that was used as a sewer, the village still on its bank, the children the record had no name for, the father who sued and won the first acknowledgment, and thirty years of people who were told nothing because the tank was classified.
+Hephaestus answers, standing in it up to his knees: I forged the chains. I know where they cut. The healing is not in the forgetting. It is in the showing.";
+	otherwise:
+		say "You say the names, and the room attends."
+
+Instead of reciting the names:
+	if the player is not Sister Franklin:
+		say "You are not inside the memory. Nobody is listening.";
+	otherwise if the current site is apollo-site:
+		say "There are no names here. This temple was never built and nobody has died in it. LISTEN instead.";
+	otherwise if the current site is no-site:
+		if the location is not the Core Chamber:
+			say "Not here. Names are said where the fire can hear them.";
+		otherwise if names-read is false:
+			say "You have not read the registry. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
+		otherwise if names-spoken is true:
+			say "You have said them. The floor is warm under your knees and the breathing has already slowed once.";
+		otherwise:
+			now names-spoken is true;
+			say "You say them aloud, one by one, in the room beneath the world: the firefighter, the wife, the sister at the northern point, the brother under the floor, the physician and her nurse, the old woman and her cat, and the child of apartment four-twelve whose name nobody kept.
+You do not pray and you do not bind. You say the names the way you would read a register in a town that has decided to forget.
+The breathing changes. It does not stop - it attends.";
+	otherwise if at the seat:
+		if walk-registry-read is false:
+			say "You have not read the register. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
+		otherwise if walk-names-spoken is true:
+			say "You have said them already. What they leave behind is on the seat.";
+		otherwise:
+			now walk-names-spoken is true;
+			speak the names of the current site;
+	otherwise:
+		say "Not here. Names are said at the seat, where the temple can hear them."
+
+[Comment: TAKING THE KEY.]
+To close the site walk of (s - a temple site):
+	if s is fukushima-site:
+		say "A key is lying in the water of the pool where nothing was resting a moment ago - not metal, not stone, the colour of diluted ink.
+You pick it up and the temple lets you. The sea does not forget and does not forgive; it disperses, and it goes on being there.";
+	otherwise if s is sellafield-site:
+		say "A key is lying on the scale-pan of the black horse, and the pan does not move. It weighs almost nothing, which is the joke, and the point.
+Sixty years of accumulation, and what is left in your hand is a bet placed by a dead man.";
+	otherwise if s is ignalina-site:
+		say "A key is lying on the seat, heavier than it looks - heavier than it has any right to be, for something you can close your fist around.
+A million votes. A city with no purpose. A dismantling with no precedent. It all comes with you.";
+	otherwise if s is three-mile-site:
+		say "A key is lying at Cassandra's feet, and she does not look down at it. She is still talking.
+You understand, picking it up, that she will still be talking when you are gone, and that this is not a tragedy. It is the job.";
+	otherwise if s is mayak-site:
+		say "A key is lying at the edge of the water, and the lame god does not stop you taking it.
+He knows where the chains cut because he forged them. He also knows what happens to people who are told nothing.";
+	otherwise:
+		say "You take the key."
+
+Instead of taking a temple key when the player is Sister Franklin and the current site is not no-site and the current site is not apollo-site:
+	if at the seat:
+		if walk-registry-read is false:
+			say "Not before the register. You will not be handed what you have not read.";
+		otherwise if walk-names-spoken is false:
+			say "Not before the names. The key is not a reward for arriving - it is what the names leave behind when they are said in the right room.";
+		otherwise:
+			close the site walk of the current site;
+			end a site walk;
+			now the noun is carried by the player;
+			say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what that walk leaves behind.)";
+	otherwise:
+		say "That key belongs to another temple, in another year."
+
+[Comment: THE SEVENTH - Apollo. There are no names. There is only the listening.]
+Instead of listening when the location is the Unbuilt Nave and the player is Sister Franklin:
+	if the current site is not apollo-site:
+		say "You are not walking that year.";
+	otherwise if six keys are held by the walker:
+		say "You stand in a temple that has never been built and you do nothing at all.
+Half an hour of silence. Not the silence of fear, not the silence of death - the silence of a bow raised above a string.
+Then the six keys in your coat begin to sound, each in its own key: sacrifice, dilution, patience, weight, warning, truth. They were never six. They were broken into six so that no single hand could hold them all. Properly joined, they are one chord, and the chord says: we do not control the fire, we are not worthy of it, and we will tend it regardless.
+The torus turns. The plasma would burn at a hundred million degrees, hotter than the heart of any star, and it would touch nothing - held by fields as invisible as thought, as precise as music.
+And the light that comes out is not white. It is the spectrum: red, orange, yellow, green, blue, indigo, violet - the rainbow set in the cloud after the flood, the covenant that says never again by water.
+And the eighth string sounds, the one that cannot be plucked, the terahertz: the string that only listens. Temperature of the core, shape of the plasma, health of the fire - told without touching, measured without disturbing, witnessed without participating.
+You did not have to touch the fire to know it was burning true.
+The seventh seal does not ask how we survive. It asks: do you deserve this fire? And it answers not in words but in music.";
+		end a site walk;
+		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. For a long moment she does not speak.[line break]'Every other temple asked me what you had seen,' she says. 'This one asks what you are for.'[line break](TELL FRANKLIN ABOUT HUMILITY, or about THE SILENCE.)";
+	otherwise:
+		say "The six keys are not in your hand, and the lyre stays silent. There is nothing to listen with."
+
+[Comment: COMING BACK - she asks the one question, every time.]
+To decide if (t - a text) answers (s - a temple site):
+	if s is fukushima-site:
+		if t is "dilution" or t is "ocean" or t is "sea" or t is "invisible" or t is "the invisible" or t is "hiroshi" or t is "tanaka" or t is "kenji" or t is "ishikawa" or t is "emiko" or t is "ren" or t is "masahiro" or t is "2129" or t is "names" or t is "the names" or t is "water":
+			decide yes;
+	otherwise if s is sellafield-site:
+		if t is "patience" or t is "filters" or t is "the filters" or t is "cockcroft" or t is "milk" or t is "the milk" or t is "tuohy" or t is "tom tuohy" or t is "slow" or t is "accumulation" or t is "names" or t is "the names" or t is "leak":
+			decide yes;
+	otherwise if s is ignalina-site:
+		if t is "weight" or t is "iron" or t is "visaginas" or t is "druksiai" or t is "referendum" or t is "workers" or t is "the workers" or t is "inheritance" or t is "names" or t is "the names" or t is "city":
+			decide yes;
+	otherwise if s is three-mile-site:
+		if t is "warning" or t is "cassandra" or t is "valve" or t is "the valve" or t is "governor" or t is "script" or t is "china syndrome" or t is "returned" or t is "names" or t is "the names" or t is "unproven":
+			decide yes;
+	otherwise if s is mayak-site:
+		if t is "truth" or t is "hephaestus" or t is "techa" or t is "the techa" or t is "karachay" or t is "muslyumovo" or t is "kyshtym" or t is "trace" or t is "the trace" or t is "silence" or t is "names" or t is "the names" or t is "children":
+			decide yes;
+	otherwise if s is apollo-site:
+		if t is "humility" or t is "silence" or t is "the silence" or t is "listening" or t is "lyre" or t is "rainbow" or t is "tokamak" or t is "seventh" or t is "chord" or t is "music" or t is "eighth string":
+			decide yes;
+	decide no.
+
+To complete the site (s - a temple site):
+	increment seals-walked;
+	now pending-telling is false;
+	now the pending site is no-site;
+	if s is fukushima-site:
+		say "'Yes,' she says. 'That one. Two thousand one hundred and twenty-nine dead of the rescue, and one dead of the fire. Hold both of those at once or you have not walked it.'";
+	otherwise if s is sellafield-site:
+		say "'Yes,' she says. 'A filter is a bet placed by a man who will be dead before it pays. Everything that temple ever did right was done by somebody who would not live to see it.'";
+	otherwise if s is ignalina-site:
+		say "'Yes,' she says. 'They voted to keep the fire and lost, and then carried the weight of having lost. That is the difference between a burden and an inheritance.'";
+	otherwise if s is three-mile-site:
+		say "'Yes,' she says. 'The cruellest temple, because nothing happened. Say it anyway. That is the whole of the fifth seal.'";
+	otherwise if s is mayak-site:
+		say "'Yes,' she says. 'The tank did less damage than the silence. Remember that when you are tempted to keep something quiet because it is easier.'";
+	otherwise if s is apollo-site:
+		say "'Then you heard it,' Sister Franklin says. She is quiet for a while. 'Six keys, one chord, and an eighth string that only listens. Apollo asked whether we deserve the fire, and the honest answer is that we do not, and the honest answer after that is that we tend it anyway.'
+She binds the seven walks into one volume - the Wastes, the coast, the filters, the dismantling, the valley, the river, and the temple that does not exist yet - and puts it into your hands. 'Mine is finished,' she says. 'Yours is not. Go and be a witness somewhere that has decided to forget.'";
+		now the assembled apocalypse is carried by the player;
+	if the open site is no-site:
+		say "[line break]All seven are walked. There is nothing left to enter - only to carry. REPORT when you are ready.";
+	otherwise:
+		refresh the site label for the open site;
+		say "[line break]'The next one is walking now,' she says. '[site-label].'[line break](ASK me about it, then WALK it.)"
+
+Instead of telling Sister Franklin about something when pending-telling is true:
+	let tt be "[the topic understood]" in lower case;
+	if tt answers the pending site:
+		complete the site the pending site;
+	otherwise:
+		say "'That is not what that walk leaves behind,' she says. 'Try again - tell me one thing you carried out of it.'";
 
 Part Four - The Void and the Celestial Corps
 

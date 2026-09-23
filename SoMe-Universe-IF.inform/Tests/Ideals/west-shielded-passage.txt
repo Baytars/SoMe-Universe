@@ -114,7 +114,7 @@ The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE f
 Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood.
 
 
-Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved.
+Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved. On your palm where the page was, there is a key - Prometheus" key, the first of six, the one the Wastes leave behind.
 "Tell me one thing from the fragments," she says. "Just so I know you were listening."
 (TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)
 

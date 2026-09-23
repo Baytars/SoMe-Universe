@@ -1,0 +1,61 @@
+s
+choose cradle
+go to cradle
+n
+attend
+attend
+ask generalizer about autoimmunity
+ask franklin about fire
+ask franklin about names
+ask franklin about miners
+enter memory
+n
+read list
+n
+say the names
+put eighth seal on throne
+tell franklin about names
+seals
+ask franklin about progress
+ask franklin about fukushima
+walk fukushima
+read register
+n
+say the names
+take key
+tell franklin about dilution
+ask franklin about sellafield
+walk sellafield
+read register
+n
+say the names
+take key
+tell franklin about patience
+ask franklin about ignalina
+walk ignalina
+read register
+n
+say the names
+take key
+tell franklin about weight
+ask franklin about three mile
+walk three mile
+read register
+n
+say the names
+take key
+tell franklin about warning
+ask franklin about mayak
+walk mayak
+read register
+n
+say the names
+take key
+tell franklin about truth
+ask franklin about apollo
+walk apollo
+listen
+tell franklin about humility
+ask franklin about progress
+quit
+yes

@@ -1,0 +1,105 @@
+s
+choose cradle
+take pamphlet
+go to cradle
+buy bundle
+buy vial
+n
+attend
+attend
+ask generalizer about autoimmunity
+ask franklin about fire
+ask franklin about names
+ask franklin about miners
+enter memory
+n
+read list
+n
+say the names
+place the eighth seal
+tell franklin about names
+ask franklin about fukushima
+walk fukushima
+read register
+n
+say the names
+take key
+tell franklin about dilution
+ask franklin about sellafield
+walk sellafield
+read register
+n
+say the names
+take key
+tell franklin about patience
+ask franklin about ignalina
+walk ignalina
+read register
+n
+say the names
+take key
+tell franklin about weight
+ask franklin about three mile
+walk three mile
+read register
+n
+say the names
+take key
+tell franklin about warning
+ask franklin about mayak
+walk mayak
+read register
+n
+say the names
+take key
+tell franklin about truth
+ask franklin about apollo
+walk apollo
+listen
+tell franklin about humility
+go to landing
+report
+go to martyrs
+open bundle
+take strand
+take treat
+take cheese wheel
+put strand on altar
+put treat on altar
+put cheese wheel on altar
+go to landing
+report
+go to dawn pioneer
+take codex
+go to celestial corps
+ask vesalius about soul
+go to pantheon
+wear gauntlets
+decipher codex
+go to landing
+report
+go to celestial corps
+show codex to vesalius
+go to landing
+report
+go to archaeology
+take sample
+give sample to division chief
+go to stille
+accuse stern quartermaster
+go to fear technology
+ask director about sightings
+go to masquerade
+ask pale masquer about symptoms
+ask pale masquer about symptoms
+unmask pale masquer
+go to undead court
+show vial to count dracula
+go to abyssal fleet
+ask octopus admiral about cannons
+go to landing
+report
+banners
+score
+quit
+yes
