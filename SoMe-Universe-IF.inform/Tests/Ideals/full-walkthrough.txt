@@ -30,7 +30,7 @@ Court any of them before you swear - each hides a secret, if you ask. When one w
 
 The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
 The Keeper's road-map appears in your satchel.
-(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them.)
+(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)
 
 The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
 
@@ -96,9 +96,9 @@ A woman in travel-grey stands at the standards, and she is already speaking as y
 Shrine of the Knitting Mouse
 A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters.
 
-Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void.
-
 HeLa sits by the altar in a soft luminosity - the immortal navigator, first of the cell lines, still dividing, still serving.
+
+Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void.
 
 >You open the offering bundle, revealing a rna strand, a dog treat and a cheese wheel.
 
@@ -251,9 +251,9 @@ The Amanuensis presses gall-coloured wax into your hand and stamps it with a mod
 Puppet Workshop
 Cold white light on a hundred workbenches: holographic emitters, animatronic frames, infrasound generators in crates marked CULTURAL SPECIFIC. Along the far wall, steel doors with hatches and warning stripes - the items that do not need puppets. On a raised plinth at the centre stands the Construct - two and a half meters of borrowed height, a face with nothing on it, dorsal appendages folded like sleeping arms. The Director supervises a fitting with a tablet and no expression.
 
-The Construct stands motionless on the plinth - THIN MAN-01, a living urban legend, patient as a rumour.
-
 The Director supervises the fitting with a tablet and no expression at all.
+
+The Construct stands motionless on the plinth - THIN MAN-01, a living urban legend, patient as a rumour.
 
 The Workshop does its work - a low-frequency drone under hearing, a figure at the edge of the lamp - and finds your pulse already catalogued in a pamphlet's four headings. Fear is the battlefield. You keep your footing on it.
 
@@ -268,11 +268,11 @@ The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHT
 Masquerade Ballroom
 Candlelight, water-music, and three masked figures moving through the figures of a slow pavane. A mural runs the length of the hall: the Hall of Romances, each portrait labelled with a gift. Somewhere a string quartet plays one beat behind itself.
 
+The Pale Masquer wears white porcelain with a spiral flourish, and moves through the pavane like the person the dance was invented for.
+
 The Crimson Dancer turns through the pavane with impeccable timing, mask lacquered the red of a secondary rash.
 
 The Grey Physician stands at the hall's edge with a physician's stillness and a physician's mask, grey as granulation tissue.
-
-The Pale Masquer wears white porcelain with a spiral flourish, and moves through the pavane like the person the dance was invented for.
 
 >"A chancre," the Pale Masquer says, "painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. They still teach the rash that followed as if it were mine alone."
 

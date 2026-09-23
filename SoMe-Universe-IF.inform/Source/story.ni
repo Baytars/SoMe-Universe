@@ -111,7 +111,7 @@ Carry out choosing a patron:
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
-		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them.)";
+		say "[line break]The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.[line break]The Keeper's road-map appears in your satchel.[line break](Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)";
 		now the player carries the Keeper's road-map;
 		now the score is 0.
 
@@ -210,6 +210,9 @@ Part One - Seals and Bookkeeping
 
 A seal is a kind of thing. Understand "seal" and "banner" as a seal.
 
+A seal has some text called trial text.
+A person has a patron called faction patron. The faction patron of a person is usually unsworn.
+
 The cradle sigil is a seal. The printed name is "Cradle Sigil". Understand "cradle" as the cradle sigil. The description is "A ring of bone-white alloy stamped with the Dhyana sign for listening. The Cradle grants it to travelers who can say what the self is for."
 
 The corps medallion is a seal. The printed name is "Vesalius Medallion". Understand "medallion" as the corps medallion. The description is "A struck bronze face in profile beside a starred anatomy. The Celestial Corps issues it for corrected charts."
@@ -230,6 +233,18 @@ The sightings lanyard is a seal. The printed name is "Sightings Lanyard". Unders
 
 The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand "pennant" and "abyssal" as the abyssal pennant. The description is "A wet swallow-tailed flag that never quite dries. The Abyssal Legion flew it over the first flooded field."
 
+[Comment: TRIAL TEXTS - shown when a faction representative is asked ABOUT SEAL/TRIAL/TASK. Edit these freely; the task mechanics live elsewhere, these are only the briefing strings.]
+The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court, then answer the Generalizer's question on what the self is for - the Cradle presses the sigil into your hand."
+The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
+The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
+The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
+The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from the vent and GIVE it to the Division Chief."
+The trial text of the pale masque is "At the Masquerade, UNMASK the Pale Masquer - look twice at the beautiful, and she gives you the mask."
+The trial text of the bat sigil is "Buy the Pasteur vial from the Cradle's factor (one token), then SHOW it to Count Dracula himself."
+The trial text of the stille seal is "In the Stille office, ACCUSE the stern quartermaster - name the mimic and the Amanuensis stamps your finding."
+The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
+The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching."
+
 To decide which patron is the patron of (tk - a seal):
 	if tk is the cradle sigil, decide on cradle;
 	if tk is the corps medallion, decide on celestial;
@@ -242,6 +257,51 @@ To decide which patron is the patron of (tk - a seal):
 	if tk is the sightings lanyard, decide on fear-tech;
 	if tk is the abyssal pennant, decide on vibrio;
 	decide on unsworn.
+
+[Comment: FACTION REPRESENTATIVES - which NPC speaks for which faction. Add or reassign freely.]
+The faction patron of the Generalizer is cradle.
+The faction patron of Tylean is cradle.
+The faction patron of Vesalius is celestial.
+The faction patron of Lucifer is pantheon.
+The faction patron of HeLa is martyrs.
+The faction patron of the Division Chief is archaeology.
+The faction patron of the Pale Masquer is pallidum.
+The faction patron of Count Dracula is rabies.
+The faction patron of the Stille Amanuensis is typhi.
+The faction patron of the Director is fear-tech.
+The faction patron of the Octopus Admiral is vibrio.
+
+To decide which seal is the standard of (p - a patron):
+	if p is cradle, decide on the cradle sigil;
+	if p is celestial, decide on the corps medallion;
+	if p is pantheon, decide on the quicksilver ampoule;
+	if p is martyrs, decide on the knitting needle;
+	if p is archaeology, decide on the sulfur sigil;
+	if p is pallidum, decide on the pale masque;
+	if p is rabies, decide on the bat sigil;
+	if p is typhi, decide on the stille seal;
+	if p is fear-tech, decide on the sightings lanyard;
+	if p is vibrio, decide on the abyssal pennant;
+	decide on the cradle sigil.
+
+Instead of asking a person about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+	if the faction patron of the noun is unsworn:
+		say "[The noun] keeps no trial to disclose.";
+	otherwise:
+		let s be the standard of the faction patron of the noun;
+		if the trial text of s is "":
+			say "[The noun] says only: complete our trial, and the [printed name of s] is yours.";
+		otherwise:
+			say the trial text of s.
+
+[Comment: these two representatives have catch-all asking rules below, so they need their own more specific SEAL rules to win over them.]
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+	let s be the standard of the faction patron of the Stille Amanuensis;
+	say the trial text of s.
+
+Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+	let s be the standard of the faction patron of the Octopus Admiral;
+	say the trial text of s.
 
 To grant (prize - a seal) noting (flavor - text):
 	now the player carries the prize;

@@ -1,0 +1,15 @@
+s
+choose cradle
+ask keeper about seal
+go to martyrs
+ask hela about seal
+go to celestial corps
+ask vesalius about seal
+go to undead court
+ask dracula about seal
+go to stille
+ask amanuensis about seal
+go to abyssal fleet
+ask admiral about seal
+quit
+yes

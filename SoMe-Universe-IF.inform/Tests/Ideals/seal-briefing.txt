@@ -25,7 +25,7 @@ Only after you have sworn can you cross the cosmos by concordance (GO TO <place>
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
->The Amanuensis stamps gall-coloured wax without looking up. "The perfect spy does not know she is a spy," she says. "You, at least, will know." You swear to Abteilung Stille.
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
 
 The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
@@ -54,8 +54,30 @@ HOW TO WALK: directions still work where roads exist - type N / S / and so on to
 
 YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
->"From this deck you may go to: the Cradle (where a neutral factor keeps a stall for offerings and vials); the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name," she says. "The concordance does the walking."
+>The Keeper keeps no trial to disclose.
 
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Shrine of the Knitting Mouse
+A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters.
+
+HeLa sits by the altar in a soft luminosity - the immortal navigator, first of the cell lines, still dividing, still serving.
+
+Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void.
+
+>Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs" altar.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Fabrica Bridge
+The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall.
+
+Vesalius, Admiral of the Celestial Fleet, stands with the posture of a man who corrected two hundred errors and expects to correct two hundred more.
+
+Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends.
+
+Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport.
+
+>Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Blood Court
@@ -69,33 +91,25 @@ The Bucharest Bride stands where the gallery light ends, and the dark approves o
 
 The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
->Blood Court
-The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
-
-Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
-
-The Budapest Bride watches the stair, unhurried - black hair pinned with a single jade pin, the kind of stillness that makes you aware of your own pulse, which is, of course, the point.
-
-The Bucharest Bride stands where the gallery light ends, and the dark approves of her: dark hair, darker eyes, the rose-and-ash coloring that launches a thousand warning poems.
-
-The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
-
+>Buy the Pasteur vial from the Cradle's factor (one token), then SHOW it to Count Dracula himself.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+Abteilung Stille Office
+A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
 
-On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm.
 
-The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got.
 
->Cradle Outer Court
-The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
 
-On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+>In the Stille office, ACCUSE the stern quartermaster - name the mimic and the Amanuensis stamps your finding.
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+Abyssal Deck
+A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank.
 
->The concordance charts the port landing and every banner's hall. Destinations: LANDING, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET.
+The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
 
+>At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching.
 >Are you sure you want to quit? 
