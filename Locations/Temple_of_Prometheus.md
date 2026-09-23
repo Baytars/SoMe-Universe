@@ -91,14 +91,16 @@ When a Temple's containment fails, the consequences are catastrophic. The Promet
 
 ### Temple of Chernobyl (切尔诺贝利)
 **Status**: Class-III Contaminated Zone  
-**Location**: Continent Sacrum, Alopes territory (northern border)  
+**Location**: Continent Thoracica, northern coast (Aukin sovereign ground, jointly administered with the Order of the Ashborn)  
 **Incident Date**: Year of the First Breach  
 **Promethean Core Status**: Partially Awakened, Sealed
 
-The most infamous temple in SoMe history. The Order of the Chained Flame maintained this temple for centuries until a ceremony gone wrong triggered a cascade failure. The resulting breach created the **Wastes of Sacrum**, a contaminated zone that to this day spawns Shattered Aspects.
+The most infamous temple in SoMe history. The Order of the Chained Flame maintained this temple for centuries until a ceremony gone wrong triggered a cascade failure. The resulting breach created the **Wastes of Thoracica**, a contaminated zone that to this day spawns Shattered Aspects.
 
 **Casualties**: Estimated 400,000+ direct; countless affected by contamination.  
-**Lasting Impact**: Birth of the Order of the Ashborn; Alopes-Anstar tensions over remediation responsibilities.
+**Lasting Impact**: Birth of the Order of the Ashborn; Aukin-Anstar tensions over remediation responsibilities.
+
+> **Setting note — why Thoracica**: the First Breach fell on the northern Thoracican coast, the same shore the Fukushima Temple would later stand on. That coast is where Yosemite was born and sold out of; the fire that made the Wastes is the same fire that, a generation later, put a sixteen-year-old fisherman's daughter back in Franklin's arms at Fukushima. One seaboard, two breaches — see [Yuan Yosemite](../Characters/Yuan_Yosemite.md) and [Sister Franklin](../Characters/Sister_Franklin.md).
 
 **Temple Scripture**:
 > *"Here stood the greatest of our temples, where the fire was chained most securely. Here, our hubris taught us that even the greatest chain may rust, and the greatest seal may fail. Remember this place, and remember that the fire does not forgive."*
@@ -151,7 +153,7 @@ When a breach occurs, the Promethean Core's fragment does not fully awaken—it 
 
 ### Known Lairs
 Major concentrations of Shattered Aspects exist in:
-- Wastes of Sacrum (Chernobyl)
+- Wastes of Thoracica (Chernobyl)
 - Fukushima Exclusion Zone
 - Deep tunnels beneath Temple of Mayak
 
@@ -211,7 +213,7 @@ During the Alopes-Umin conflict, temple sabotage becomes a military tactic. Play
 
 ### Dungeon Arc Structure
 
-**Act 1 — Discovery**: Players enter the Wastes of Sacrum (Chernobyl equivalent). The dungeon teaches core mechanics: radiation management, fragment collection, Chained Remnant dialogue.
+**Act 1 — Discovery**: Players enter the Wastes of Thoracica (Chernobyl equivalent). The dungeon teaches core mechanics: radiation management, fragment collection, Chained Remnant dialogue.
 
 **Act 2 — Expansion**: Fukushima, Three Mile, and Sellafield dungeons unlock. Players learn that the temple breaches are not isolated — they are accelerating. Franklin provides briefings; Brother Cobalt provides equipment.
 

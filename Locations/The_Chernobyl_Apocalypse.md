@@ -1,5 +1,5 @@
 # The Chernobyl Apocalypse — Revelation Fragments
-## Wastes of Sacrum — Primary Source Documents
+## Wastes of Thoracica — Primary Source Documents
 
 > *"They built temples to contain the fire of the gods, but the fire remembered what it was."*
 > — Temple Inscription, Contaminated Zone of Chernobyl
@@ -594,7 +594,7 @@
 
 ---
 
-*This document was compiled by the Order of the Silent Watch from fragments recovered from the Wastes of Sacrum over a period of forty-seven years.*
+*This document was compiled by the Order of the Silent Watch from fragments recovered from the Wastes of Thoracica over a period of forty-seven years.*
 
 *Classification: Open. All priests may read.*
 
@@ -738,7 +738,7 @@ The following real-world sources inspired specific fragments within this documen
 >
 > *Found in personal effects of Pavel Mikhailov, returned with the second mining delegation, Year 2. Donated to the Order of the Silent Watch by his widow.*
 >
-> *Note: Mikhailov died fourteen months after writing this. Cause of death: systemic contamination. His name is on the Memorial Wall in the Wastes of Sacrum. His miners funded the construction of the wall from their own compensation.*
+> *Note: Mikhailov died fourteen months after writing this. Cause of death: systemic contamination. His name is on the Memorial Wall in the Wastes of Thoracica. His miners funded the construction of the wall from their own compensation.*
 
 ---
 
@@ -798,7 +798,7 @@ The following real-world sources inspired specific fragments within this documen
 
 ---
 
-> *SURVEY REPORT: Wastes of Sacrum, Year 47*
+> *SURVEY REPORT: Wastes of Thoracica, Year 47*
 >
 > *ORDERING PARTY: Order of the Chained Flame, Environmental Monitoring Division*
 >
@@ -1039,7 +1039,7 @@ The following real-world sources inspired specific fragments within this documen
 >
 > *Author unknown. Attributed collectively to the Brotherhood of the Unspoken, Year 19. Written by all of them, in one room, on one night, without speaking.*
 >
-> *Placed in the Core Chamber of the Wastes of Sacrum by Sister Franklin of the White Moon, Year 47, as an offering.*
+> *Placed in the Core Chamber of the Wastes of Thoracica by Sister Franklin of the White Moon, Year 47, as an offering.*
 >
 > *It is still there.*
 >

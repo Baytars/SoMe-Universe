@@ -1,5 +1,5 @@
 # The Fukushima Apocalypse — Revelation Fragments
-## Wastes of Sacrum — Primary Source Documents
+## Fukushima Exclusion — Primary Source Documents
 
 > *"The sea takes everything. That is not cruelty. That is mercy."*
 > — Temple Inscription, Shrine of the Drowned Tide

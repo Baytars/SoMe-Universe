@@ -45,6 +45,8 @@ When she later married Dr. Yuan Foo and moved to Anstar City during his diplomat
 
 **Birthplace**: Coastal fishing village, northern Thoracica, Empire of Aukin, near the Fukushima Temple (exact location unknown)
 
+> **Setting note — the same coast twice**: northern Thoracica is the shore the First Breach fell on; the Wastes of Thoracica begin inland of the village she was born in. Her family's poverty and the sale that followed belong to the long tail of that first fire, and it was on this same seaboard — at Fukushima, a generation later — that Sister Franklin carried her out. See [Temple of Prometheus](../Locations/Temple_of_Prometheus.md).
+
 **Family Origin**: Impoverished fisherman family; the kind where children were mouths to feed, not dreams to nurture.
 
 > **Cellular-geographic note** — In the carbon-base mapping of the lung-as-hydrology, the "coastal" village was a settlement on one of the great **alveolar lakes (湖)**: her parents were **alveolar-cell (pneumocyte) fishermen** who worked the airsac shallows where breath meets blood. "The sea" of her childhood is the lake's vast tidal exchange; "crossing the ocean" to Lumbar is the journey down the vessel-rivers and out through the great-vessel seas. Even in peacetime these open-border lakes were a garrisoned frontier: armored lymphocytes of the middle germ-layer patrolled the gas-exchange shore, with BALT (bronchus-associated lymphoid tissue) as their lakeside cantonment — fisherman and sentinel worked the same water, familiar yet separate. See the lung hydrology in [The Alopes Schism](../Lore/The_Alopes_Schism.md), §2.

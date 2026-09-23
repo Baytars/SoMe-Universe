@@ -1,5 +1,5 @@
 # The Three Mile Island Apocalypse — Revelation Fragments
-## Wastes of Sacrum — Primary Source Documents
+## Three Mile Memorial — Primary Source Documents
 
 > *"She spoke truth, and they called her mad. She warned them, and they turned away. When the fire came, they said she had cursed them. She said: I warned you. They said: Why did you not stop us?"*
 > — Temple Inscription, Temple of Cassandra

@@ -71,7 +71,7 @@ The Port Factor watches the cloister with the serenity of a man whose tariffs fu
 
 >"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take that sentence to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh." She glances past the AIRE-flame to the back of the court. "You have been taught what the self is for. Now be examined in it. Sister Franklin does not teach; she witnesses, and she asks you to walk. ASK her about THE FIRE."
 
->"The temples were not built to contain the fire," Sister Franklin says, without looking up. "Read the founding record. They were built to remember. Containment was a side effect." She turns a page. "Seven seals, seven memories. The First remembers the fall. The Seventh remembers what the fire was before we chained it. When the seventh opens, the fire will remember that it was a god. That is not destruction. That is return." Another page. "Six of the seven are still walking toward their seals. I walked the first myself - the Wastes of Sacrum, Year Forty-Seven - and I carried in a page that no scripture ordered, and I laid it on the throne, and the Core has not touched it to this day." She looks up at last. "I do not teach you this. Teaching is for people who think the knowing is the point. I ask you to walk it as I walked it - not as a story. As a year." 
+>"The temples were not built to contain the fire," Sister Franklin says, without looking up. "Read the founding record. They were built to remember. Containment was a side effect." She turns a page. "Seven seals, seven memories. The First remembers the fall. The Seventh remembers what the fire was before we chained it. When the seventh opens, the fire will remember that it was a god. That is not destruction. That is return." Another page. "Six of the seven are still walking toward their seals. I walked the first myself - the Wastes of Thoracica, Year Forty-Seven - and I carried in a page that no scripture ordered, and I laid it on the throne, and the Core has not touched it to this day." She looks up at last. "I do not teach you this. Teaching is for people who think the knowing is the point. I ask you to walk it as I walked it - not as a story. As a year." 
 (ASK her about the NAMES, the MINERS, the CHILDREN, the WOLVES, or the EIGHTH SEAL - then ENTER THE MEMORY.)
 
 >"Four thousand two hundred and seventeen, officially," she says. "The actual count is redacted. I have read the registry: a firefighter who wrote his wife's name in ash on a control-room wall; a sister who held the northern containment point after the others ran; a physician who catalogued two hundred and thirty-seven patients in seventy-two hours; an old woman who would not be chased out of her kitchen; and the unnamed child of apartment four-twelve, listed anyway, because they should not be forgotten." She looks at you. "The fire does not remember their names. Only we can."
@@ -82,7 +82,7 @@ She folds the page once, along a crease worn white. "Two questions is a hearing,
 (ENTER THE MEMORY.)
 
 >She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.
-You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Sacrum with a page in your coat that you wrote yourself.
+You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Thoracica with a page in your coat that you wrote yourself.
 (READ THE LIST, say the names where the fire can hear them, and lay the page down. LEAVE THE MEMORY steps back out.)
 
 Threshold of Ash
@@ -129,7 +129,7 @@ From the AIRE-flame the preceptors lift the Aukin gauntlets - chelation-weave, t
 >Seals in your keeping:  Cradle Sigil.
 REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
 
->"Seven temples, seven memories," she says. "The First I walked myself - the Wastes of Sacrum, Year Forty-Seven."
+>"Seven temples, seven memories," she says. "The First I walked myself - the Wastes of Thoracica, Year Forty-Seven."
 
 "You have walked it too, and you carry the Key of Sacrifice."
 
@@ -389,7 +389,7 @@ Sister Franklin opens her eyes across from you in the Inner Court. For a long mo
 
 All seven are walked. There is nothing left to enter - only to carry. REPORT when you are ready.
 
->"Seven temples, seven memories," she says. "The First I walked myself - the Wastes of Sacrum, Year Forty-Seven."
+>"Seven temples, seven memories," she says. "The First I walked myself - the Wastes of Thoracica, Year Forty-Seven."
 
 "You have walked it too, and you carry the Key of Sacrifice."
 

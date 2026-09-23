@@ -234,7 +234,7 @@ The sightings lanyard is a seal. The printed name is "Sightings Lanyard". Unders
 The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand "pennant" and "abyssal" as the abyssal pennant. The description is "A wet swallow-tailed flag that never quite dries. The Abyssal Legion flew it over the first flooded field."
 
 [Comment: TRIAL TEXTS - shown when a faction representative is asked ABOUT SEAL/TRIAL/TASK. Edit these freely; the task mechanics live elsewhere, these are only the briefing strings.]
-The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Sacrum as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets. She then opens the remaining six temples one at a time - ASK her about each, WALK it, read its register, SAY THE NAMES at its seat, TAKE the key, and tell her what that walk left behind."
+The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Thoracica as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets. She then opens the remaining six temples one at a time - ASK her about each, WALK it, read its register, SAY THE NAMES at its seat, TAKE the key, and tell her what that walk left behind."
 The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
 The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
@@ -656,7 +656,7 @@ To franklin preaches:
 		now franklin-stage is 1;
 	say "'The temples were not built to contain the fire,' Sister Franklin says, without looking up. 'Read the founding record. They were built to remember. Containment was a side effect.'
 She turns a page. 'Seven seals, seven memories. The First remembers the fall. The Seventh remembers what the fire was before we chained it. When the seventh opens, the fire will remember that it was a god. That is not destruction. That is return.'
-Another page. 'Six of the seven are still walking toward their seals. I walked the first myself - the Wastes of Sacrum, Year Forty-Seven - and I carried in a page that no scripture ordered, and I laid it on the throne, and the Core has not touched it to this day.'
+Another page. 'Six of the seven are still walking toward their seals. I walked the first myself - the Wastes of Thoracica, Year Forty-Seven - and I carried in a page that no scripture ordered, and I laid it on the throne, and the Core has not touched it to this day.'
 She looks up at last. 'I do not teach you this. Teaching is for people who think the knowing is the point. I ask you to walk it as I walked it - not as a story. As a year.'
 [line break](ASK her about the NAMES, the MINERS, the CHILDREN, the WOLVES, or the EIGHTH SEAL - then ENTER THE MEMORY.)"
 
@@ -689,7 +689,7 @@ The site-label is some text that varies. The site-label is "nowhere".
 
 To refresh the site label for (s - a temple site):
 	if s is chernobyl-site:
-		now the site-label is "Wastes of Sacrum";
+		now the site-label is "Wastes of Thoracica";
 	otherwise if s is fukushima-site:
 		now the site-label is "Fukushima";
 	otherwise if s is sellafield-site:
@@ -742,12 +742,12 @@ Instead of asking Sister Franklin about something:
 	let qt be "[the topic understood]" in lower case;
 	if qt is "seal" or qt is "trial" or qt is "task" or qt is "earn":
 		say the trial text of the cradle sigil;
-	otherwise if qt is "fire" or qt is "the fire" or qt is "apocalypse" or qt is "seven seals" or qt is "seventh seal" or qt is "the seventh seal" or qt is "prometheus" or qt is "temple" or qt is "chernobyl" or qt is "wastes" or qt is "sacrum":
+	otherwise if qt is "fire" or qt is "the fire" or qt is "apocalypse" or qt is "seven seals" or qt is "seventh seal" or qt is "the seventh seal" or qt is "prometheus" or qt is "temple" or qt is "chernobyl" or qt is "wastes" or qt is "thoracica":
 		franklin preaches;
 	otherwise if qt is "names" or qt is "the names" or qt is "list" or qt is "miners" or qt is "the miners" or qt is "children" or qt is "the children" or qt is "wolves" or qt is "the wolves" or qt is "katerina" or qt is "vasya" or qt is "guseva" or qt is "eighth" or qt is "eighth seal" or qt is "the eighth seal" or qt is "witness":
 		franklin answers qt;
 	otherwise if qt is "progress" or qt is "temples" or qt is "the temples" or qt is "keys" or qt is "the six" or qt is "six" or qt is "walks" or qt is "seven seals" or qt is "the seven seals":
-		say "'Seven temples, seven memories,' she says. 'The First I walked myself - the Wastes of Sacrum, Year Forty-Seven.'";
+		say "'Seven temples, seven memories,' she says. 'The First I walked myself - the Wastes of Thoracica, Year Forty-Seven.'";
 		if the cradle sigil is carried by the player or franklin-stage >= 4:
 			say "[line break]'You have walked it too, and you carry the [printed name of the key of sacrifice].'";
 		otherwise:
@@ -772,7 +772,7 @@ Instead of asking Sister Franklin about something:
 			refresh the site label for the open site;
 			say "'That temple is either behind you or not yet walking,' she says. 'The one in front of you now is [site-label].'"
 
-[Comment: THE MEMORY - Franklin's walk through the Wastes of Sacrum. The player acts AS her for its duration.]
+[Comment: THE MEMORY - Franklin's walk through the Wastes of Thoracica. The player acts AS her for its duration.]
 The Threshold of Ash is a room. "Ash to the horizon, and every grain older than the first cell. You came back here without orders, without a medal, and with one page in your coat that you wrote yourself. The contaminated vestibule lies north, where the registry was found. Beyond it, down, is the room beneath the world."
 
 The Contaminated Vestibule is north of the Threshold of Ash. "An administrative office of the temple, stripped by forty-seven years of weather and one night of everything else. Water-damaged pages lie where the wind dropped them. This is where the casualty registry was recovered - and where a firefighter's jacket was found with the dosimeter still pinned to it, reading LETHAL."
@@ -811,7 +811,7 @@ Instead of entering the memory:
 	otherwise if memory-walked is true:
 		say "'Once is the doctrine,' Sister Franklin says. 'Walking it twice is tourism.'";
 	otherwise:
-		say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.[line break]You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Sacrum with a page in your coat that you wrote yourself.[line break](READ THE LIST, say the names where the fire can hear them, and lay the page down. LEAVE THE MEMORY steps back out.)";
+		say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.[line break]You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Thoracica with a page in your coat that you wrote yourself.[line break](READ THE LIST, say the names where the fire can hear them, and lay the page down. LEAVE THE MEMORY steps back out.)";
 		now franklin-stage is 3;
 		now names-read is false;
 		now names-spoken is false;
@@ -918,7 +918,7 @@ Per site: ASK her about it -> WALK it -> READ the register -> SAY THE NAMES at t
 CONTENT STRINGS ARE FREE TO REWRITE. The chain and the flags are structural.]
 
 To decide which temple site is the site for (t - a text):
-	if t is "chernobyl" or t is "wastes" or t is "sacrum" or t is "first" or t is "first seal" or t is "prometheus":
+	if t is "chernobyl" or t is "wastes" or t is "thoracica" or t is "first" or t is "first seal" or t is "prometheus":
 		decide on chernobyl-site;
 	otherwise if t is "fukushima" or t is "second" or t is "second seal" or t is "tsukuyomi" or t is "dilution" or t is "ocean" or t is "sea":
 		decide on fukushima-site;

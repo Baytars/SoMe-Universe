@@ -416,7 +416,7 @@ The Egyptian moon god's domains — darkness, medicine, and fertility — map pe
 
 **Franklin's Role**: Knight-Commander of the White Moon Strike Force
 
-**The Problem**: Decades after the First Breach, the Wastes of Sacrum had become a de facto territory for rogue Shattered Aspects. The Order of the Chained Flame maintained only a perimeter watch. The partially-awakened Core pulsed with increasing intensity. Allier Military Academy graduates sent to investigate were lost without trace.
+**The Problem**: Decades after the First Breach, the Wastes of Thoracica had become a de facto territory for rogue Shattered Aspects. The Order of the Chained Flame maintained only a perimeter watch. The partially-awakened Core pulsed with increasing intensity. Allier Military Academy graduates sent to investigate were lost without trace.
 
 **Franklin's Approach**:
 > *"The last team went in with shields and guns. They came out as Chained Remnants themselves. You cannot fight what you cannot see. You cannot see what your instruments cannot penetrate. I am the instrument."*
@@ -530,7 +530,7 @@ Franklin never forgot the girl she had saved — the girl who was old enough to 
 
 ---
 
-### The Wastes of Sacrum Patrol
+### The Wastes of Thoracica Patrol
 
 Beyond specific operations, Franklin leads **permanent patrols** through the Chernobyl Contaminated Zone:
 
@@ -539,7 +539,7 @@ Beyond specific operations, Franklin leads **permanent patrols** through the Che
 - **As-needed**: Emergency response to any attempted breach of containment
 
 **The Patrol Prayer** (recited at the Zone boundary):
-> *"I enter the Wastes of Sacrum. I carry moonlight into darkness. I see what the fire remembers. I speak for those it silenced. I am the moon that does not look away."*
+> *"I enter the Wastes of Thoracica. I carry moonlight into darkness. I see what the fire remembers. I speak for those it silenced. I am the moon that does not look away."*
 
 ---
 
@@ -557,7 +557,7 @@ The Apocalypse of Franklin is a **narrative dungeon-crawler system** where playe
 
 ### The Cathedral of the White Moon — Hub Area
 
-**Location**: Built within the shell of a decommissioned temple on the edge of Continent Sacrum (Alopes territory)
+**Location**: Built within the shell of a decommissioned temple on the edge of the Wastes of Thoracica (Continent Thoracica, Aukin sovereign ground)
 
 **Atmosphere**: A radiology cathedral repurposed as a living memorial. The old imaging gantry still stands in the center — its tubes cold, its screens dark. Franklin has placed offerings on the altar: dosimeter beads, crystallography prints, fragments of Photo 51 blown up to poster size.
 
@@ -669,7 +669,7 @@ Franklin enters as an NPC escort for the first completion of each zone. She prov
 
 | Zone | Real-World Equivalent | Difficulty | Core Fragment |
 |------|---------------------|------------|--------------|
-| **Wastes of Sacrum** | Chernobyl | ★★★★☆ | The Sacrifice |
+| **Wastes of Thoracica** | Chernobyl | ★★★★☆ | The Sacrifice |
 | **Fukushima Exclusion** | Fukushima | ★★★☆☆ | The Slow Death |
 | **Three Mile Memorial** | Three Mile Island | ★★☆☆☆ | The Almost-Breach |
 | **Sellafield Deep** | Sellafield | ★★★★☆ | The Contained One |
@@ -680,7 +680,7 @@ Franklin enters as an NPC escort for the first completion of each zone. She prov
 
 ### Apocalypse Fragment Examples
 
-**Fragment: "The Last Log of Engineer Vasquez" (Wastes of Sacrum — Technical Log)**
+**Fragment: "The Last Log of Engineer Vasquez" (Wastes of Thoracica — Technical Log)**
 
 > *[Terminal entry, partially corrupted]*
 >
