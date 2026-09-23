@@ -621,14 +621,32 @@ She glances past the AIRE-flame to the back of the court. 'You have been taught 
 	otherwise:
 		say "'Attend the lecture first, traveler,' she says, nodding at the forming preceptors. 'Then we will speak of the wars.'"
 
+[Comment: CROSS-FACTION HOOK - the Cradle vouches for the traveler at the Stille.
+The chain: hear the lecture and answer the Chair (curriculum-passed) -> ASK THE GENERALIZER
+about VASUD -> carry the introduction -> SHOW it to the Amanuensis -> she takes the
+MARY-07 folder off the wall herself and tells you whose face was copied.
+This hook is a gain, never a gate: the folder can still be taken straight off the wall
+without it. CONTENT STRINGS ARE MEANT TO BE REWRITTEN FREELY.]
+
+The cradle introduction is a thing. The printed name is "Cradle introduction". Understand "introduction" and "card" and "note" and "letter" and "cradle introduction" and "cradle card" as the cradle introduction. The description is "Three lines in the Generalizer's hand, on Cradle card: the bearer has heard the doctrine and answered the Chair. Yukio Yuan was ours - medulla graduate, Vasud Stuart's student. The face Stille copied was a Cradle face. Open the folder for her, and send the finding home."
+
+cradle-vouched is a truth state that varies. cradle-vouched is false.
+
 Instead of asking the Generalizer about something when the topic understood matches the regular expression "^autoimmunity$":
 	run the curriculum exchange.
 Instead of asking the Generalizer about something when the topic understood matches the regular expression "^curriculum$|^curriculum wars$|^narrow$":
 	run the curriculum exchange.
 Instead of asking the Generalizer about something when the topic understood matches the regular expression "^foreign selves$":
 	say "'The chair teaches cadets to recognize self-tissue that looks foreign, and foreign things that mimic the self,' she says. 'My predecessor held it through the DOPPELGANGER affair. The chair survived him. The chair outlives the person - that is doctrine, not metaphor.'"
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^vasud$|^doppelganger$":
-	say "'A foreign agent wore a graduate's face and sat down across from the Chair of Foreign Selves himself,' she says. 'The first successful direct assault on central education in recorded history, our archives call it. He was pensioned into Lower Intestinal exile by his own foreign ministry. The Cradle never recalled him. We had already lost the argument he failed.'"
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^vasud$|^stuart$|^doppelganger$|^yukio$|^mary$":
+	say "'A foreign agent wore a graduate's face and sat down across from the Chair of Foreign Selves himself,' she says. 'The first successful direct assault on central education in recorded history, our archives call it. He was pensioned into Lower Intestinal exile by his own foreign ministry. The Cradle never recalled him. We had already lost the argument he failed.'";
+	if curriculum-passed is false:
+		say "[line break]'Hear the lecture, and answer me on what intolerance engineers. Then I will give you a line to carry to Typhi.'";
+	otherwise if the cradle introduction is not carried by the player:
+		now the cradle introduction is carried by the player;
+		say "[line break]'The face they copied was ours,' she says. 'Yukio Yuan - medulla graduate, Foreign Selves, and Vasud Stuart's own student. Vasud held this chair before me. Stille built its mimic out of a woman this court taught to read a face, and then walked her through Vasud's door.' She writes three lines on a card and presses it into your hand.[line break]'SHOW THAT to the Amanuensis in the Abteilung Stille office. She will not open a folder for a stranger. The Cradle is not a stranger to this case.'";
+	otherwise:
+		say "[line break]'You carry the card,' she says. 'SHOW it to the Amanuensis. The folder is hers to open, not mine.'"
 Instead of asking the Generalizer about something when the topic understood matches the regular expression "^dwindling$|^involution$|^long dwindling$":
 	say "'Less of the old medulla lights every decade. Cohorts shrink. Nations fight with veteran memory-cells because we cannot graduate fresh ones fast enough,' she says. 'Aukin calls it the Long Dwindling and treats it as the strategic problem of the age. Our adversaries call it a target window.'"
 
@@ -1606,6 +1624,30 @@ Instead of asking the Stille Amanuensis about something when the topic understoo
 	say "'Sixty-eight days,' she says. 'MARY-07 wore the Chief Medical Advisor's face, took twenty-three documents, twelve officials, four factions of the bureaucracy - and sat down across from the man who taught her template everything about recognizing fakes. He opened the door himself. That is the lesson we keep: the disguise is never the weapon. The welcome is.'"
 Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^alpsox$|^schism$":
 	say "'You want the lineage,' she says. 'In the Crimson Winter, some kin fled south. Some repented and held the old ground - you have visited their empire in the north. Ours submitted. The mother-name, the king-name, the bandit-word: we are the ones who answered to the bandit-word, and made it a department. The herb-wife's basket, they say, flies darkest in our hands.'"
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^vasud$|^stuart$|^cradle$|^aukin$|^introduction$|^card$|^letter$":
+	if cradle-vouched is true:
+		say "'Already read,' she says. 'The folder is yours. Two flaws, and the finding is yours too.'";
+	otherwise if the cradle introduction is carried by the player:
+		say "'You are carrying the Chair's card and describing it to me,' she says. 'SHOW it to me instead.'";
+	otherwise if the MARY-07 dossier is carried by the player:
+		say "'Vasud Stuart held the Foreign Selves chair at the Cradle, and the woman we copied was his student,' she says. 'They keep that on the syllabus now. We keep the folder.'";
+	otherwise:
+		say "'Vasud Stuart held the Foreign Selves chair at the Cradle, and the woman we copied was his student,' she says. 'That is not our shame to keep - it is theirs, and they keep it on the syllabus. Bring me a line from the Cradle and I will open the folder for you myself.'"
+
+[Comment: THE INTRODUCTION ITSELF - showing or giving it to the Amanuensis. A gain,
+not a gate: she simply takes the folder down for you and tells you whose face it was.]
+
+Instead of showing the cradle introduction to the Stille Amanuensis:
+	now cradle-vouched is true;
+	say "The Amanuensis reads the three lines without changing expression, and lays the card face-down beside her wax.[line break]'The successor of Vasud Stuart writes to me about a woman Vasud Stuart taught,' she says. 'Very well. Yukio Yuan was a Cradle graduate before she was a Chief Medical Advisor, and before that she was a sister with a brother who knew how she slept. We took the face. The Cradle had already taught that face what to look for - and still the Chair opened his own door.'";
+	if the MARY-07 dossier is not carried by the player:
+		now the MARY-07 dossier is carried by the player;
+		say "[line break]She reaches across and takes the folder off the wall herself, and sets it on the desk in front of you. 'The Cradle vouches; I will not make you find it.[line break](READ the ASSESSMENT, the TRANSCRIPT and the LOG, then NAME what you found: DIET, HAND, WARMTH, SLEEP or TIMING.)'";
+	otherwise:
+		say "[line break]'You have the folder,' she says. 'Read it, then name me two flaws.'"
+
+Instead of giving the cradle introduction to the Stille Amanuensis:
+	try showing the cradle introduction to the Stille Amanuensis.
 
 The young quartermaster is a man in the Abteilung Stille Office. "The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got." The description is "Aurel, per his desk-plate. Close up, there is a true scar through one eyebrow, and his boots are resoled twice."
 

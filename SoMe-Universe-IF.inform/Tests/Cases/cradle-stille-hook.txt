@@ -1,0 +1,28 @@
+s
+choose cradle
+go to cradle
+n
+ask generalizer about vasud
+s
+go to stille
+ask amanuensis about vasud
+go to cradle
+n
+attend
+attend
+ask generalizer about autoimmunity
+ask generalizer about vasud
+s
+go to stille
+ask amanuensis about vasud
+show introduction to amanuensis
+ask amanuensis about vasud
+read assessment
+read transcript
+read log
+ask amanuensis about diet
+ask amanuensis about sleep
+accuse stern quartermaster
+seals
+quit
+yes

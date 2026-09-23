@@ -1,0 +1,188 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
+
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
+
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+
+
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
+(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK KEEPER ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The Generalizer rises before you have finished bowing. "The traveler who could still choose. Word travels faster than blood." She looks you over like a cadet who might be a weapon. "You will attend the lecture. Not a request - the Cradle does not arm the ignorant, and it does not waste the curious."
+
+>"A foreign agent wore a graduate's face and sat down across from the Chair of Foreign Selves himself," she says. "The first successful direct assault on central education in recorded history, our archives call it. He was pensioned into Lower Intestinal exile by his own foreign ministry. The Cradle never recalled him. We had already lost the argument he failed."
+
+"Hear the lecture, and answer me on what intolerance engineers. Then I will give you a line to carry to Typhi."
+
+>
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Abteilung Stille Office
+A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
+
+The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm.
+
+The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got.
+
+The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
+
+>"Vasud Stuart held the Foreign Selves chair at the Cradle, and the woman we copied was his student," she says. "That is not our shame to keep - it is theirs, and they keep it on the syllabus. Bring me a line from the Cradle and I will open the folder for you myself."
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>
+Cradle Inner Court
+The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors. At the back of the court, apart from them all, a woman in a white habit reads testimony pages in her lap.
+
+The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE flame as if warming it by habit.
+
+Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood.
+
+Sister Franklin of the White Moon sits apart from the preceptors with a lapful of testimony pages, reading.
+
+>The preceptors walk the outer doctrine first. CORTICAL SELECTION: cadets prove they can see the body's signal at all. Those who cannot read the presenting lattice are released back into circulation - unharmed, ungraded, and dangerous to no one but themselves.
+
+>Then the inner doctrine. MEDULLARY SELECTION: the AIRE-lit library of every tissue the body owns. Strong binders of self are deleted; agonistic binders go to the Treg Cloister, to return as suppressors of friendly fire rather than as fighters. Graduates leave for the periphery and never see the Inner Court again. The preceptors, whose flame burns a fortnight-equivalent, are replaced in endless relay. At the back of the hall, a schism is audible: the Narrow Faction wants the Foreign Selves curriculum cut to unambiguous enemy-forms. The Generalizer's people answer that narrowing AIRE coverage mathematically guarantees more autoreactive graduates. The dispute is the loudest silence in the empire.
+
+>"So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?" "Autoimmunity," you say. "The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity." The Generalizer smiles for exactly one second. "Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take that sentence to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh." She glances past the AIRE-flame to the back of the court. "You have been taught what the self is for. Now be examined in it. Sister Franklin does not teach; she witnesses, and she asks you to walk. ASK her about THE FIRE."
+
+>"A foreign agent wore a graduate's face and sat down across from the Chair of Foreign Selves himself," she says. "The first successful direct assault on central education in recorded history, our archives call it. He was pensioned into Lower Intestinal exile by his own foreign ministry. The Cradle never recalled him. We had already lost the argument he failed."
+
+"The face they copied was ours," she says. "Yukio Yuan - medulla graduate, Foreign Selves, and Vasud Stuart's own student. Vasud held this chair before me. Stille built its mimic out of a woman this court taught to read a face, and then walked her through Vasud's door." She writes three lines on a card and presses it into your hand.
+"SHOW THAT to the Amanuensis in the Abteilung Stille office. She will not open a folder for a stranger. The Cradle is not a stranger to this case."
+
+>
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Abteilung Stille Office
+A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
+
+The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm.
+
+The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got.
+
+The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
+
+>"You are carrying the Chair's card and describing it to me," she says. "SHOW it to me instead."
+
+>The Amanuensis reads the three lines without changing expression, and lays the card face-down beside her wax.
+"The successor of Vasud Stuart writes to me about a woman Vasud Stuart taught," she says. "Very well. Yukio Yuan was a Cradle graduate before she was a Chief Medical Advisor, and before that she was a sister with a brother who knew how she slept. We took the face. The Cradle had already taught that face what to look for - and still the Chair opened his own door."
+
+She reaches across and takes the folder off the wall herself, and sets it on the desk in front of you. "The Cradle vouches; I will not make you find it.
+(READ the ASSESSMENT, the TRANSCRIPT and the LOG, then NAME what you found: DIET, HAND, WARMTH, SLEEP or TIMING.)"
+>"Already read," she says. "The folder is yours. Two flaws, and the finding is yours too."
+
+>BEHAVIORAL ANOMALY ASSESSMENT - subject designated Chief Medical Advisor Yukio - prepared by Lonicera, Senior Security Liaison, Alopes Diplomatic Corps, over 2343.03.20 to 2343.05.12.
+1. PROFESSIONAL COMPETENCE: on three documented occasions the subject referenced protocols that were out of date or incorrect - subtle errors, the kind a non-specialist would not notice, but consistent with a person briefed on medicine rather than trained in it.
+2. PHYSICAL TELL: the subject consistently favors her right hand for tasks that, according to public record, the original performs with her left.
+3. INTERPERSONAL DYNAMICS: increased warmth toward subordinate staff, inconsistent with the original's documented demeanor. The warmth appears calculated, deployed to build rapport.
+4. DIETARY CHANGES: food preferences have shifted in ways that do not align with her known preferences.
+ASSESSMENT: insufficient to justify formal investigation. Continued monitoring recommended. The possibility of deliberate infiltration cannot be excluded.
+
+>SPECIAL AGENT AKIO YUAN - the Chief Medical Advisor's brother - receiving room, Meridian security.
+"You sleep on your right side, Yukio. You always have. Since we were children. You told me - during the Siege, when we had to share the shelter cot - that it was because your left shoulder hurt from the way the air filtration units vibrated."
+"That was a long time ago."
+"No. It was last month. You subvocal-messaged me on the 14th. You said the new quarters were difficult, that you could not sleep on your left side because the vibrations had come back, and that you had to relearn the right side. Relearn, Yukio. Like it was new."
+Then, to the room at large: "Take me to the Medical Chancellor. Now."
+
+>SEEKERS RECONNAISSANCE UNIT - Meridian Hall, dinner service.
+Service began at nineteen hundred. Shire arrived at eighteen forty-five; the subject at nineteen-oh-three. Second course delivered at nineteen twenty-two. Shire appeared to abandon his meal midway through the third course.
+Physical proximity increased at twenty-oh-four: the subject placed her hand over his on the table surface. Duration: fourteen seconds.
+Shire ordered the Aldebaran Reserve - forty-five thousand credits a bottle - and ordered a second glass at twenty-one fifteen, after the contact event.
+In a four-hour dinner the sum of physical contact is fourteen seconds, and it is logged to the second.
+
+>"Preference reversed," the Amanuensis says. "Lonicera filed it as recovery from illness, because that is the charitable reading and Lonicera is a charitable woman. It was not illness. A template inherits the shape of a palate and not the history of it. You cannot remember what you never ate."
+
+"One flaw is an impression," she says. "Name me another."
+(ASK me about DIET, HAND, WARMTH, SLEEP or TIMING.)
+
+>"Relearn," the Amanuensis repeats. "Eleven years of micro-behaviour, and one of them is which shoulder you sleep on. The brother needed no file. He needed one sentence in the wrong tense. That is what a family is, traveler: a second copy of the pattern, held somewhere we cannot reach."
+
+"Two flaws is a hearing," the Amanuensis says. "Name the mimic now - ACCUSE the one you mean - and I will stamp it."
+
+>You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk. "Well caught," says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. "MARY-11," the Amanuensis says, to nobody in particular. "Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11." Then, to you: "The Stille does not sell trust, traveler. We demonstrate its absence. You read the folder, and then you looked at the details. Take the finding with you."
+
+The Amanuensis presses gall-coloured wax into your hand and stamps it with a modest spiral. Abteilung Stille has no objections on file.
+
+[Your score has just gone up by one point.]
+
+>Seals in your keeping:  Stille Seal.
+REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
+>Are you sure you want to quit? 
