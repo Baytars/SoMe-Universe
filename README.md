@@ -26,10 +26,15 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 - [Typhi Subfaction](Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration (the Department of Silence)
 - [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces (the Abyssal Fleet)
 
-**Athena Aegis Accord (AAA)** — the immune defenders / healer powers that *oppose* Umin (do **not** belong to Umin).
+**Athena Aegis Accord (AAA)** — the immune-defender *alliance of nations* that opposes Umin (do **not** belong to Umin). Its sworn defender-powers keep vigil in the Hall of Medicine.
+*Member nations:*
+- [Empire of Anstar](Factions/Anstar_Empire.md) — largest AAA member; military backbone, host of the Aegis Council (Anstar City)
+- [Duchy of Alopes](Factions/Duchy_of_Alopes.md) — Constitutional Duchy of Continent Sacrum; rapid-response & medical expertise (capital Anshington)
+*Sworn defender-powers (recruited in the Hall of Medicine):*
 - [Celestial Corps](Factions/Celestial_Corps.md) — Anatomists as astronauts, surgeons as heavenly army
-- [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
 - [Lab Martyrs](Factions/Lab_Martyrs.md) — Silent heroes: experimental animals who crossed the species barrier
+
+**Heavy Metal Pantheon** — [Elemental / Environmental power](Factions/Heavy_Metal_Pantheon.md): atomic ancients, bioaccumulative toxins. *Independent — **not** an AAA member* (classified as an "Independent Contractor" aligned with neither Umin nor the Accord as a formal member; in-game it waits west of the Singularity, "only the living meet it").
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
