@@ -1,0 +1,15 @@
+# Line endings for the Inform regression harness.
+#
+# glulxe reads each test script line as one command. A trailing CR becomes part
+# of the command ("s\r"), so every turn answers "I beg your pardon?" and the
+# whole case fails. Transcripts are diffed against glulxe output, which is
+# always LF. Both therefore have to stay strictly LF, regardless of the
+# developer's core.autocrlf setting.
+SoMe-Universe-IF.inform/Tests/Cases/*.txt text eol=lf
+SoMe-Universe-IF.inform/Tests/Ideals/*.txt text eol=lf
+
+# Story source is fed to the Inform 7 compiler; keep it LF too so that a
+# checkout on another machine cannot change the compiled output.
+SoMe-Universe-IF.inform/Source/story.ni text eol=lf
+
+# Only the paths above are pinned; everything else keeps the platform default.
