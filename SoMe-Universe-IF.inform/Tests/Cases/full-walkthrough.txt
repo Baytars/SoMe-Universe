@@ -47,6 +47,12 @@ go to archaeology
 take sample
 give sample to division chief
 go to stille
+read dossiers wall
+read assessment
+read transcript
+read log
+ask amanuensis about diet
+ask amanuensis about sleep
 accuse stern quartermaster
 go to fear technology
 ask director about sightings

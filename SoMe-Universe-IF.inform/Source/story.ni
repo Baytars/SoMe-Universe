@@ -241,7 +241,7 @@ The trial text of the knitting needle is "Buy the offering bundle from the Cradl
 The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from the vent and GIVE it to the Division Chief."
 The trial text of the pale masque is "At the Masquerade, UNMASK the Pale Masquer - look twice at the beautiful, and she gives you the mask."
 The trial text of the bat sigil is "Buy the Pasteur vial from the Cradle's factor (one token), then SHOW it to Count Dracula himself."
-The trial text of the stille seal is "In the Stille office, ACCUSE the stern quartermaster - name the mimic and the Amanuensis stamps your finding."
+The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
 The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
 The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching."
 
@@ -1546,12 +1546,62 @@ Her team cracks the casket and floods the workbench with amber light. 'Reverse g
 
 The Abteilung Stille Office is west of the Dark Concourse. "A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk."
 
-The dossiers wall is scenery in the Abteilung Stille Office. Understand "dossiers" and "wall" and "files" as the dossiers wall. The description is "PROJECT MARY: the substitution doctrine, in summary. Identify a carrier with the target's build. Train the mimicry. Abduct during routine transit. Insert within seventy-two hours, before the absence is noticed. The wall's oldest press-cutting is about a cook named Mary Mallon, who never showed a symptom in her life."
+The dossiers wall is scenery in the Abteilung Stille Office. Understand "dossiers" and "wall" and "files" as the dossiers wall. The description is "PROJECT MARY: the substitution doctrine, in summary. Identify a carrier with the target's build. Train the mimicry. Abduct during routine transit. Insert within seventy-two hours, before the absence is noticed. The wall's oldest press-cutting is about a cook named Mary Mallon, who never showed a symptom in her life. One folder sits a thumb's width out of alignment with the rest."
+
+After examining the dossiers wall:
+	if the MARY-07 dossier is carried by the player:
+		say "[line break]The gap where the folder stood has already closed. The wall does not repeat itself.";
+	otherwise:
+		now the MARY-07 dossier is carried by the player;
+		say "[line break]You slip the folder out of line. MARY-07 - OPERATION DOPPELGANGER - and inside it three enclosures: a security assessment, a transcript, and a surveillance log.[line break]The Amanuensis does not look up. 'Read them in this room,' she says. 'The room is part of the reading.'[line break](READ the ASSESSMENT, the TRANSCRIPT and the LOG, then NAME what you found: DIET, HAND, WARMTH, SLEEP or TIMING.)";
+
+The MARY-07 dossier is a container. The printed name is "MARY-07 dossier". Understand "mary" and "mary 07" and "folder" and "dossier" as the MARY-07 dossier. The description is "OPERATION DOPPELGANGER, in triplicate. Three enclosures, three watchers who noticed: a deputy, a brother, and an analyst. None of them saw the same woman."
+
+The Lonicera assessment is a thing in the MARY-07 dossier. The printed name is "Lonicera assessment". Understand "assessment" and "lonicera" and "security assessment" as the Lonicera assessment. The description is "BEHAVIORAL ANOMALY ASSESSMENT - subject designated Chief Medical Advisor Yukio - prepared by Lonicera, Senior Security Liaison, Alopes Diplomatic Corps, over 2343.03.20 to 2343.05.12.[line break]1. PROFESSIONAL COMPETENCE: on three documented occasions the subject referenced protocols that were out of date or incorrect - subtle errors, the kind a non-specialist would not notice, but consistent with a person briefed on medicine rather than trained in it.[line break]2. PHYSICAL TELL: the subject consistently favors her right hand for tasks that, according to public record, the original performs with her left.[line break]3. INTERPERSONAL DYNAMICS: increased warmth toward subordinate staff, inconsistent with the original's documented demeanor. The warmth appears calculated, deployed to build rapport.[line break]4. DIETARY CHANGES: food preferences have shifted in ways that do not align with her known preferences.[line break]ASSESSMENT: insufficient to justify formal investigation. Continued monitoring recommended. The possibility of deliberate infiltration cannot be excluded."
+
+The Akio transcript is a thing in the MARY-07 dossier. The printed name is "Akio transcript". Understand "transcript" and "akio" as the Akio transcript. The description is "SPECIAL AGENT AKIO YUAN - the Chief Medical Advisor's brother - receiving room, Meridian security.[line break]'You sleep on your right side, Yukio. You always have. Since we were children. You told me - during the Siege, when we had to share the shelter cot - that it was because your left shoulder hurt from the way the air filtration units vibrated.'[line break]'That was a long time ago.'[line break]'No. It was last month. You subvocal-messaged me on the 14th. You said the new quarters were difficult, that you could not sleep on your left side because the vibrations had come back, and that you had to relearn the right side. Relearn, Yukio. Like it was new.'[line break]Then, to the room at large: 'Take me to the Medical Chancellor. Now.'"
+
+The Gamor log is a thing in the MARY-07 dossier. The printed name is "Gamor log". Understand "log" and "gamor" and "surveillance log" as the Gamor log. The description is "SEEKERS RECONNAISSANCE UNIT - Meridian Hall, dinner service.[line break]Service began at nineteen hundred. Shire arrived at eighteen forty-five; the subject at nineteen-oh-three. Second course delivered at nineteen twenty-two. Shire appeared to abandon his meal midway through the third course.[line break]Physical proximity increased at twenty-oh-four: the subject placed her hand over his on the table surface. Duration: fourteen seconds.[line break]Shire ordered the Aldebaran Reserve - forty-five thousand credits a bottle - and ordered a second glass at twenty-one fifteen, after the contact event.[line break]In a four-hour dinner the sum of physical contact is fourteen seconds, and it is logged to the second."
+
+Lonicera-read is a truth state that varies. Lonicera-read is false.
+Akio-read is a truth state that varies. Akio-read is false.
+Gamor-read is a truth state that varies. Gamor-read is false.
+flaw-diet is a truth state that varies. flaw-diet is false.
+flaw-hand is a truth state that varies. flaw-hand is false.
+flaw-warmth is a truth state that varies. flaw-warmth is false.
+flaw-sleep is a truth state that varies. flaw-sleep is false.
+flaw-timing is a truth state that varies. flaw-timing is false.
+
+After examining the Lonicera assessment:
+	now Lonicera-read is true.
+After examining the Akio transcript:
+	now Akio-read is true.
+After examining the Gamor log:
+	now Gamor-read is true.
+
+To decide what number is the flaws named:
+	let n be 0;
+	if flaw-diet is true, increment n;
+	if flaw-hand is true, increment n;
+	if flaw-warmth is true, increment n;
+	if flaw-sleep is true, increment n;
+	if flaw-timing is true, increment n;
+	decide on n.
+
+To decide if the hearing is complete:
+	if the flaws named is at least 2, decide yes;
+	otherwise decide no.
+
+To report the hearing:
+	if the hearing is complete:
+		say "[line break]'Two flaws is a hearing,' the Amanuensis says. 'Name the mimic now - ACCUSE the one you mean - and I will stamp it.'";
+	otherwise:
+		say "[line break]'One flaw is an impression,' she says. 'Name me another.'[line break](ASK me about DIET, HAND, WARMTH, SLEEP or TIMING.)".
 
 The Stille Amanuensis is a woman in the Abteilung Stille Office. "The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm." The description is "Keeper of the Mary dossiers. Her lineage - the Alpsox root, the kin who bent to the Crown in the Crimson Winter - is recorded in the archive as a choice, and the archive does not flatter it."
 
 Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^mary$|^project$":
-	say "'The perfect spy does not know she is a spy,' the Amanuensis says. 'The perfect impostor was never suspected. One to six percent of the infected carry without symptom, for decades. We refined that mercy of biology into a doctrine. You have read the wall.'"
+	say "'The perfect spy does not know she is a spy,' the Amanuensis says. 'The perfect impostor was never suspected. One to six percent of the infected carry without symptom, for decades. We refined that mercy of biology into a doctrine. You have read the wall - and there is a folder in it that sits a thumb's width out of line with the rest. MARY-07. READ THE DOSSIERS WALL to take it down.'"
 Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^doppelganger$|^yukio$":
 	say "'Sixty-eight days,' she says. 'MARY-07 wore the Chief Medical Advisor's face, took twenty-three documents, twelve officials, four factions of the bureaucracy - and sat down across from the man who taught her template everything about recognizing fakes. He opened the door himself. That is the lesson we keep: the disguise is never the weapon. The welcome is.'"
 Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^alpsox$|^schism$":
@@ -1576,17 +1626,72 @@ Check accusing:
 Carry out accusing the stern quartermaster:
 	if the stille seal is carried by the player:
 		say "The Amanuensis has already stamped that finding.";
-	otherwise:
+	otherwise if the MARY-07 dossier is not carried by the player:
+		say "'On what evidence?' the Amanuensis asks, without looking up. 'You have watched one woman catalogue requisitions and disliked her boots. The Stille does not stamp dislikes. Take the folder off the wall, or take nothing.'";
+	otherwise if the hearing is complete:
 		say "You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk.
 'Well caught,' says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. 'MARY-11,' the Amanuensis says, to nobody in particular. 'Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11.'
-Then, to you: 'The Stille does not sell trust, traveler. We demonstrate its absence. You looked at the details. Take the finding with you.'";
+Then, to you: 'The Stille does not sell trust, traveler. We demonstrate its absence. You read the folder, and then you looked at the details. Take the finding with you.'";
 		grant the stille seal noting "The Amanuensis presses gall-coloured wax into your hand and stamps it with a modest spiral. Abteilung Stille has no objections on file.";
+	otherwise:
+		say "'You have read the folder and named nothing,' she says. 'A file is not a finding. Name me what you saw - DIET, HAND, WARMTH, SLEEP, TIMING - then accuse.'";
 
 Carry out accusing the young quartermaster:
 	say "Aurel raises both hands, scar, resoled boots and all. 'Traveler. I am the original. Look at the details - the Stille's copies are very good, but they are new.'"
 
 Instead of asking the Stille Amanuensis about something:
-	say "The Amanuensis returns to her stamps."
+	let qt be "[the topic understood]" in lower case;
+	if the MARY-07 dossier is not carried by the player:
+		say "The Amanuensis returns to her stamps. 'There is a folder on that wall sitting out of line,' she says. 'It has been out of line for a year, waiting for somebody who looks at details.'";
+	otherwise if qt is "diet" or qt is "food" or qt is "appetite":
+		if Lonicera-read is false:
+			say "'You are guessing,' she says. 'Read the deputy's assessment, then name what she logged.'";
+		otherwise if flaw-diet is true:
+			say "'You have said that one.'";
+		otherwise:
+			now flaw-diet is true;
+			say "'Preference reversed,' the Amanuensis says. 'Lonicera filed it as recovery from illness, because that is the charitable reading and Lonicera is a charitable woman. It was not illness. A template inherits the shape of a palate and not the history of it. You cannot remember what you never ate.'";
+			report the hearing;
+	otherwise if qt is "hand" or qt is "hands" or qt is "left hand" or qt is "right hand":
+		if Lonicera-read is false:
+			say "'You are guessing,' she says. 'Read the deputy's assessment, then name what she logged.'";
+		otherwise if flaw-hand is true:
+			say "'You have said that one.'";
+		otherwise:
+			now flaw-hand is true;
+			say "'The right hand,' she says. 'Public record says left. Three documented occasions, and not one of them noticed by the man sitting across the table from her. He was looking at her face. That is where the training puts your eyes.'";
+			report the hearing;
+	otherwise if qt is "warmth" or qt is "warm" or qt is "kindness":
+		if Lonicera-read is false:
+			say "'You are guessing,' she says. 'Read the deputy's assessment, then name what she logged.'";
+		otherwise if flaw-warmth is true:
+			say "'You have said that one.'";
+		otherwise:
+			now flaw-warmth is true;
+			say "'Warmth toward subordinates,' she says. 'The original was not warm. We instructed the asset to be warmer than the original, because warmth buys rapport and rapport buys documents. It is the oldest error in the doctrine: we made her better than the woman she replaced - and better is a deviation.'";
+			report the hearing;
+	otherwise if qt is "sleep" or qt is "sleeping" or qt is "sleep position":
+		if Akio-read is false:
+			say "'You are guessing,' she says. 'Read the brother's transcript, then name what he heard.'";
+		otherwise if flaw-sleep is true:
+			say "'You have said that one.'";
+		otherwise:
+			now flaw-sleep is true;
+			say "'Relearn,' the Amanuensis repeats. 'Eleven years of micro-behaviour, and one of them is which shoulder you sleep on. The brother needed no file. He needed one sentence in the wrong tense. That is what a family is, traveler: a second copy of the pattern, held somewhere we cannot reach.'";
+			report the hearing;
+	otherwise if qt is "timing" or qt is "time" or qt is "timestamps" or qt is "fourteen seconds":
+		if Gamor-read is false:
+			say "'You are guessing,' she says. 'Read the analyst's log, then name what he counted.'";
+		otherwise if flaw-timing is true:
+			say "'You have said that one.'";
+		otherwise:
+			now flaw-timing is true;
+			say "'Fourteen seconds,' she says. 'Four hours of dinner, and the analyst can tell you to the second how long the hand stayed. The Seekers were never the danger to her. Typhi's own internal monitoring had flagged the deviation before the Alopes deputy did. We write our failures down. It is the only part of this department that is not a lie.'";
+			report the hearing;
+	otherwise if qt is "progress" or qt is "flaws" or qt is "evidence":
+		say "The Amanuensis ticks the folder open a finger's width.[line break]'Named: [flaws named] of five - [if flaw-diet is true]diet, [end if][if flaw-hand is true]hand, [end if][if flaw-warmth is true]warmth, [end if][if flaw-sleep is true]sleep, [end if][if flaw-timing is true]timing[end if].'[line break]'Two is a hearing. Then ACCUSE the one you mean.'";
+	otherwise:
+		say "The Amanuensis returns to her stamps."
 
 The Puppet Workshop is east of the Dark Concourse. "Cold white light on a hundred workbenches: holographic emitters, animatronic frames, infrasound generators in crates marked CULTURAL SPECIFIC. Along the far wall, steel doors with hatches and warning stripes - the items that do not need puppets. On a raised plinth at the centre stands the Construct - two and a half meters of borrowed height, a face with nothing on it, dorsal appendages folded like sleeping arms. The Director supervises a fitting with a tablet and no expression."
 

@@ -1,0 +1,27 @@
+s
+choose stille
+go to stille
+ask amanuensis about mary
+ask amanuensis about doppelganger
+accuse stern quartermaster
+ask amanuensis about diet
+read dossiers wall
+ask amanuensis about diet
+ask amanuensis about sleep
+accuse stern quartermaster
+read assessment
+read transcript
+read log
+ask amanuensis about diet
+ask amanuensis about diet
+ask amanuensis about sleep
+accuse stern quartermaster
+ask amanuensis about hand
+ask amanuensis about warmth
+ask amanuensis about timing
+ask amanuensis about progress
+accuse young quartermaster
+accuse stern quartermaster
+seals
+quit
+yes

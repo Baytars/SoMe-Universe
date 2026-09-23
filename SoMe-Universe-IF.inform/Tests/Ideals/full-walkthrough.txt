@@ -290,7 +290,39 @@ The young quartermaster catalogs requisitions with a slight smile, as if the req
 
 The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
 
->You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk. "Well caught," says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. "MARY-11," the Amanuensis says, to nobody in particular. "Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11." Then, to you: "The Stille does not sell trust, traveler. We demonstrate its absence. You looked at the details. Take the finding with you."
+>PROJECT MARY: the substitution doctrine, in summary. Identify a carrier with the target's build. Train the mimicry. Abduct during routine transit. Insert within seventy-two hours, before the absence is noticed. The wall's oldest press-cutting is about a cook named Mary Mallon, who never showed a symptom in her life. One folder sits a thumb's width out of alignment with the rest.
+
+
+You slip the folder out of line. MARY-07 - OPERATION DOPPELGANGER - and inside it three enclosures: a security assessment, a transcript, and a surveillance log.
+The Amanuensis does not look up. "Read them in this room," she says. "The room is part of the reading."
+(READ the ASSESSMENT, the TRANSCRIPT and the LOG, then NAME what you found: DIET, HAND, WARMTH, SLEEP or TIMING.)
+
+>BEHAVIORAL ANOMALY ASSESSMENT - subject designated Chief Medical Advisor Yukio - prepared by Lonicera, Senior Security Liaison, Alopes Diplomatic Corps, over 2343.03.20 to 2343.05.12.
+1. PROFESSIONAL COMPETENCE: on three documented occasions the subject referenced protocols that were out of date or incorrect - subtle errors, the kind a non-specialist would not notice, but consistent with a person briefed on medicine rather than trained in it.
+2. PHYSICAL TELL: the subject consistently favors her right hand for tasks that, according to public record, the original performs with her left.
+3. INTERPERSONAL DYNAMICS: increased warmth toward subordinate staff, inconsistent with the original's documented demeanor. The warmth appears calculated, deployed to build rapport.
+4. DIETARY CHANGES: food preferences have shifted in ways that do not align with her known preferences.
+ASSESSMENT: insufficient to justify formal investigation. Continued monitoring recommended. The possibility of deliberate infiltration cannot be excluded.
+
+>SPECIAL AGENT AKIO YUAN - the Chief Medical Advisor's brother - receiving room, Meridian security.
+"You sleep on your right side, Yukio. You always have. Since we were children. You told me - during the Siege, when we had to share the shelter cot - that it was because your left shoulder hurt from the way the air filtration units vibrated."
+"That was a long time ago."
+"No. It was last month. You subvocal-messaged me on the 14th. You said the new quarters were difficult, that you could not sleep on your left side because the vibrations had come back, and that you had to relearn the right side. Relearn, Yukio. Like it was new."
+Then, to the room at large: "Take me to the Medical Chancellor. Now."
+
+>(the codex log)
+Leonardo's navigation log, written in mirror-script cipher - the writing runs right to left, every letter reversed. Now that a mirror has read it, the pages yield: star charts of the Liver-Moon, the four chambers of the Central Sun, and a correction in the margin: the seat of the soul is the brain.
+
+>"Preference reversed," the Amanuensis says. "Lonicera filed it as recovery from illness, because that is the charitable reading and Lonicera is a charitable woman. It was not illness. A template inherits the shape of a palate and not the history of it. You cannot remember what you never ate."
+
+"One flaw is an impression," she says. "Name me another."
+(ASK me about DIET, HAND, WARMTH, SLEEP or TIMING.)
+
+>"Relearn," the Amanuensis repeats. "Eleven years of micro-behaviour, and one of them is which shoulder you sleep on. The brother needed no file. He needed one sentence in the wrong tense. That is what a family is, traveler: a second copy of the pattern, held somewhere we cannot reach."
+
+"Two flaws is a hearing," the Amanuensis says. "Name the mimic now - ACCUSE the one you mean - and I will stamp it."
+
+>You name the stern quartermaster, and the painted scar does not so much as flicker - but the young one laughs out loud, and the lamp-light seems to rearrange itself around the stern desk. "Well caught," says the Amanuensis. The stern quartermaster bows - a bow with a spiral in it - and the painted scar comes away on a cotton pad. "MARY-11," the Amanuensis says, to nobody in particular. "Template: quartermaster. Deployment: this office, for the instruction of guests. Return to the vault, MARY-11." Then, to you: "The Stille does not sell trust, traveler. We demonstrate its absence. You read the folder, and then you looked at the details. Take the finding with you."
 
 The Amanuensis presses gall-coloured wax into your hand and stamps it with a modest spiral. Abteilung Stille has no objections on file.
 
@@ -385,7 +417,7 @@ The Keeper binds the last seal to its standard and steps back. Ten banners over 
     *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 62 turns.
+In that game you scored 10 out of a possible 10, in 68 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

@@ -103,7 +103,7 @@ The young quartermaster catalogs requisitions with a slight smile, as if the req
 
 The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
 
->In the Stille office, ACCUSE the stern quartermaster - name the mimic and the Amanuensis stamps your finding.
+>In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Abyssal Deck
