@@ -16,6 +16,8 @@ Umin命名风格遵循**轴心国三国（德国、日本、意大利）**的历
 - **多元性** — 杂牌军联盟，不同病原体来源对应不同命名风格
 - **医学隐喻** — 军事术语与病理机制的双关
 
+> **The Unseen Crown（Umin）** 是上述所有病原势力的**总称 / 伞状阵营**——类似 Halo 中的星盟，集合细菌、病毒、真菌、寄生虫与肿瘤叛军等众多「病种」于一冠之下，各派系保留自身文化与命名传统，但同奉 Unseen Crown。其领地即 **Disease Citadel**（游戏中称「the Unseen Crown's domain」，病害诞生的地方），正式入口为 Dark Concourse。
+
 ---
 
 ## Naming by Category

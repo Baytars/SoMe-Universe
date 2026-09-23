@@ -5,3 +5,11 @@ demo.inform/Index/
 SoMe-Universe-IF.inform/Build/
 SoMe-Universe-IF.inform/Index/
 build/
+# Local API token for playtest agent (gitignored, not committed)
+SoMe-Universe-IF.inform/Tests/.playtest_token
+# Playtest agent regenerable artifacts (re-run the harness to recreate)
+SoMe-Universe-IF.inform/Tests/playtest_commands.txt
+SoMe-Universe-IF.inform/Tests/playtest_transcript.txt
+SoMe-Universe-IF.inform/Tests/playtest_review_*.txt
+# Agent workspace memory (private agent data, not project source)
+.workbuddy/

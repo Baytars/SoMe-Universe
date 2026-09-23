@@ -6,12 +6,18 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
-Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260923 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
 
-Three roads leave the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north - and a third way, west, where the land glows wrong. The Ten wait behind them for the first traveler to walk the war. The west road belongs to the Old Metals, and the stories agree: look, but do not look like food.
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
 
 >You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
 

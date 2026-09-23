@@ -6,12 +6,18 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
-Release 1 / Serial number 260922 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260923 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
 
-Three roads leave the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north - and a third way, west, where the land glows wrong. The Ten wait behind them for the first traveler to walk the war. The west road belongs to the Old Metals, and the stories agree: look, but do not look like food.
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
 
 >You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:
 
@@ -47,11 +53,18 @@ Wind moves dust that never settles - every grain older than the first cell. Warn
 
 The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. Somewhere behind, the Radiologist is shouting a number.
 
->Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
-The gatekeeper-priest pronounces, unhurried: "Alive, and armored, and arrived. The Old Metals receive few guests, and none twice." Then, the offer - the only recruitment speech made inside a god's house: "The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON."
+>At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.
 
->You can't go that way.
 
-The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.
 
->Are you sure you want to quit? 
+    *** The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. ***
+
+
+In that game you scored 0 out of a possible 10, in 7 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+> 

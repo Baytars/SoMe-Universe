@@ -16,18 +16,25 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 ## Quick Navigation
 
 ### 🏛️ Factions
-- [Fear Technology Division](Factions/Umin_Fear_Technology.md) — Umin's psychological warfare division
-- [Typhi Subfaction](Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration
-- [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces
-- [Rabies Subfaction](Factions/Umin_Rabies_Subfaction.md) — Vampire court, light and water phobia
-- [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator
-- [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
+
+**The Unseen Crown (Umin)** — the umbrella coalition of all pathogen powers; holds the Disease Citadel. See [The Unseen Crown](Factions/The_Unseen_Crown.md).
+*Its Six Ways (subfactions of Umin):*
+- [Archaeology Division](Factions/Umin_Archaeology_Division.md) — seekers of primordial life (the Seekers of Primordial Life)
+- [Fear Technology Division](Factions/Umin_Fear_Technology.md) — Umin's psychological warfare division (the Puppet Workshop)
+- [Pallidum Subfaction](Factions/Umin_Pallidum_Subfaction.md) — Syphilis, The Great Imitator (the Pale Masquerade)
+- [Rabies Subfaction](Factions/Umin_Rabies_Subfaction.md) — Vampire court, light and water phobia (the Undead Court)
+- [Typhi Subfaction](Factions/Umin_Typhi_Subfaction.md) — Asymptomatic carrier infiltration (the Department of Silence)
+- [Vibrio Subfaction](Factions/Umin_Vibrio_Subfaction.md) — Cholera naval forces (the Abyssal Fleet)
+
+**Athena Aegis Accord (AAA)** — the immune defenders / healer powers that *oppose* Umin (do **not** belong to Umin).
 - [Celestial Corps](Factions/Celestial_Corps.md) — Anatomists as astronauts, surgeons as heavenly army
+- [Heavy Metal Pantheon](Factions/Heavy_Metal_Pantheon.md) — Atomic ancients, bioaccumulative toxins
 - [Lab Martyrs](Factions/Lab_Martyrs.md) — Silent heroes: experimental animals who crossed the species barrier
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway
 - [Semmelweis Gateway](Locations/Alopes_Semmelweis_Gateway.md) — The entrance portal
+- [Disease Citadel](Locations/Disease_Citadel.md) — the Unseen Crown's domain, seat of the six disease-factions
 
 ### 📖 Lore
 - [Umin Naming Convention](Lore/Umin_Naming_Convention.md) — Axis Powers naming heritage

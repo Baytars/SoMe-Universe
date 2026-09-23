@@ -26,12 +26,15 @@ Instead of going to the Singularity:
 	say "You pass back through the after-image of the Big Bang - the room where everything began, now only a shape in the light.";
 	now the player is in the Singularity
 
+To say the newcomer primer:
+	say "[bold type]WHO YOU ARE[roman type]: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.[paragraph break][bold type]HOW TO PLAY[roman type]: Type a direction alone - [bold type]N[roman type], [bold type]S[roman type], [bold type]E[roman type], [bold type]W[roman type] - to move. [bold type]LOOK[roman type] re-reads a room; [bold type]EXAMINE <thing>[roman type] or [bold type]LOOK AT <thing>[roman type] studies something; [bold type]ASK <someone> ABOUT <topic>[roman type] questions a character.[paragraph break][bold type]THE FIRST STEP[roman type]: Two gates stand open - [bold type]SOUTH[roman type] to the Hall of Medicine, [bold type]NORTH[roman type] to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with [bold type]CHOOSE <patron>[roman type] - e.g. [bold type]CHOOSE CRADLE[roman type] or [bold type]CHOOSE VIBRIO[roman type].[paragraph break]Only after you have sworn can you cross the cosmos by concordance ([bold type]GO TO <place>[roman type]); until then [bold type]GO TO[roman type] is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type [bold type]HELP[roman type] any time to see this again."
+
 After looking in the Singularity for the first time:
-	say "Three roads leave the newborn light: the Hall of Medicine to the south, the Disease Citadel to the north - and a third way, west, where the land glows wrong. The Ten wait behind them for the first traveler to walk the war. The west road belongs to the Old Metals, and the stories agree: look, but do not look like food."
+	say the newcomer primer.
 
 The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Under the banners wait a medullary preceptor, a fleet navigator, an element-priest, and a quiet keeper - one recruiter for each power, each ready to make the case for a sworn oath."
 
-The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born, its five doors open onto the dark for Archaeology, Fear Technology, the Pale Masquerade, the Undead Court and the Abyssal fleet - and under six banners wait a resurrected Archaea, a containment supervisor, a masked emissary, a pale Bride, a personnel officer, and a gum-chewing girl in a sailor suit. Each is a recruiter for a faction of the Unseen Crown, each with a case to make and a secret to trade."
+The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born, and its six ways open onto the dark for Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, the Department of Silence and the Abyssal fleet - and under six banners wait a resurrected Archaea, a containment supervisor, a masked emissary, a pale Bride, a personnel officer, and a gum-chewing girl in a sailor suit. Each is a recruiter for a faction of the Unseen Crown, each with a case to make and a secret to trade."
 
 After going to the Disease Citadel for the first time:
 	say "You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a plain-clothes veteran Archaea[roman type] (the Archaeology Division), [bold type]a containment supervisor[roman type] with a drone on her shoulder (Fear Technology), [bold type]a sunflower muse[roman type] (the Pale Masquerade), [bold type]a pale Bride of Count Dracula[roman type] (the Undead Court), [bold type]a personnel officer[roman type] (the Department of Silence), and [bold type]a gum-chewing girl in a sailor suit[roman type] (the Abyssal Legion).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: [bold type]ASK THE GIRL ABOUT JOINING[roman type]."
@@ -41,8 +44,8 @@ After going to the Hall of Medicine for the first time:
 
 
 
-After looking in the Singularity for the first time:
-	say "[bold type]HOW TO WALK[roman type]: the two gates are SOUTH (Hall of Medicine) and NORTH (Disease Citadel). Type a direction on its own - like [bold type]N[roman type] - to walk through it."
+Helping is an action applying to nothing. Understand "help" or "commands" as helping.
+Report helping: say the newcomer primer.
 
 Chapter - The Patron Choice
 
@@ -178,7 +181,7 @@ Carry out warping to:
 				rule succeeds;
 	say "The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
 
-The five Umin doors are scenery in the Disease Citadel. The printed name is "five doors". Understand "doors" and "five doors" and "porcelain plates" and "plates" as the five Umin doors. The description is "Five doors on the dark, each named on a porcelain plate: ARCHAEOLOGY. FEAR TECHNOLOGY. THE PALE MASQUERADE. THE UNDEAD COURT. THE ABYSSAL FLEET. Examine any door - and once sworn, the concordance will carry you through: GO TO its faction."
+The six Umin doors are scenery in the Disease Citadel. The printed name is "six doors". Understand "doors" and "six doors" and "porcelain plates" and "plates" as the six Umin doors. The description is "Six doors on the dark, each named on a porcelain plate: ARCHAEOLOGY. FEAR TECHNOLOGY. THE PALE MASQUERADE. THE UNDEAD COURT. THE DEPARTMENT OF SILENCE. THE ABYSSAL FLEET. Examine any door - and once sworn, the concordance will carry you through: GO TO its faction."
 
 The archaea door is scenery in the Disease Citadel. The printed name is "Archaeology door". Understand "archaeology" and "archaeology door" and "archaea" and "sulfolobus door" as the archaea door. The description is "Porcelain plate: ARCHAEOLOGY DIVISION, THE SEEKERS OF PRIMORDIAL LIFE. Through the gap: mineral heat, sample racks, and the tiled motto IN THE BEGINNING, THERE WAS SULFUR. [if the player's patron is unsworn]The hinges hold against the unsworn.[otherwise]The concordance will carry you: GO TO ARCHAEOLOGY.[end if]"
 
@@ -310,7 +313,7 @@ The Keeper's road-map is a thing carried by the player. The printed name is "the
 - NORTHWEST: the Celestial Corps, over the Void Verge.
 - WEST: the Heavy Metal Pantheon, in the Contaminated Wastes.
 - SOUTHWEST: the Lab Martyrs, in the Siberian Reach.
-- SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens five doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond.
+- SOUTH: the Unseen Crown (Umin) - the Dark Concourse opens six doors: the Archaeology Division, Fear Technology, the Pallidum court, the Rabies court, the Typhi office, and the Vibrio fleet beyond.
 Trade at the Port Market, east of the Cradle's outer court. Trust carefully. Decide slowly. - K."
 
 An exchange token is a kind of thing. The printed name of an exchange token is "exchange token". Understand "token" and "tokens" and "exchange" as an exchange token. The description of an exchange token is "A stamped token of exchange, good at the Pericardium Free Port. The Pump's peace is not free."
@@ -356,22 +359,18 @@ Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets
 		increase radiation-dose by 1;
 	if radiation-dose is 1:
 		say "The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. Somewhere behind, the Radiologist is shouting a number.";
-	otherwise if radiation-dose is 2:
-		say "Your skin tightens. The dust glows where you walked, and the road ahead has begun to swim; the Cathedral's light is inside your eyes now, and it does not leave when you blink.";
-	otherwise if radiation-dose is 3:
-		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
-	otherwise if radiation-dose is 4:
-		say "Your gums have begun to bleed in a language you do not speak. The mercury god is quiet, and his silence is the worst sermon this hall has ever held.";
-	otherwise if radiation-dose is 5:
+	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
 		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
+
+Before going to the Black Cathedral when the Aegis gauntlets are not worn by the player:
+	say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
+	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
 Every turn when the player is in the Black Cathedral and the Aegis gauntlets are not worn by the player:
 	increase radiation-dose by 1;
-	if radiation-dose is 3:
+	if radiation-dose is 1:
 		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
-	if radiation-dose is 4:
-		say "Your gums have begun to bleed in a language you do not speak. The mercury god is quiet, and his silence is the worst sermon this hall has ever held.";
-	if radiation-dose is 5:
+	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
 		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
 
@@ -382,13 +381,13 @@ Instead of going east from the Contaminated Wastes when the Aegis gauntlets are 
 The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" as the Keeper.
 
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^mission$":
-	say "'Ten factions,' the Keeper says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and five doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
+	say "'Ten factions,' the Keeper says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and six doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^umin$|^crown$":
 	say "'The Unseen Crown,' she says, and does not lower her voice, which is its own kind of armour. 'Archaeology. Fear Technology. Pallidum. Rabies. Typhi. Vibrio on the water. They are hosts, traveler, not friends. Be courteous, and come back with everything you left with.'"
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^accord$":
 	say "'I do not keep the war's books,' she says, tapping the nearest standard. 'I keep its promises. Every faction swore a seal to whoever could walk all ten halls. None of them believed you existed. Show them.'"
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
-	say "'From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its five doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
+	say "'From this deck you may go to: the Port Market; the Cradle; the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
 
 Instead of giving a seal to the Keeper:
 	now the noun is on the standard rack;
@@ -1082,6 +1081,9 @@ After going to the Fabrica Bridge for the first time:
 	say "Vesalius turns from the chart-table before the door has closed. 'So the fleet's letters were right - someone new is walking the war.' He measures you with one look. 'You will want to be useful, not ornamental. Leonardo keeps the truth reversed, Harvey keeps the numbers, Bethune keeps the blood moving. And I keep the errors - mine, and everyone else's. You will see which one you are.'";
 
 After going to the Black Cathedral for the first time:
+	if the Aegis gauntlets are not worn by the player:
+		say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning.";
 	say "Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
 
 After going to the Shrine of the Knitting Mouse for the first time:

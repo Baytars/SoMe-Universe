@@ -12,6 +12,7 @@
 
 set -e
 BASE="$(cd "$(dirname "$0")/.." && pwd)"
+BASEW="$(cygpath -w "$BASE")"
 I7="/c/Program Files/Inform/Compilers/inform7"
 I6="/c/Program Files/Inform/Compilers/inform6.exe"
 BUILD="/mnt/d/projects/inform/build"
@@ -24,7 +25,7 @@ BLESS=no
 echo "== inform7 translation =="
 "$I7" -internal "C:/Program Files/Inform/Internal" \
       -external "C:/Users/Gamorang/Documents/Inform" \
-      -format=Inform6/32d -o "$WINBUILD/auto.inf" "$BASE/Source/story.ni" >/dev/null
+      -format=Inform6/32d -o "$WINBUILD/auto.inf" "$BASEW/Source/story.ni" >/dev/null
 
 echo "== inform6 compilation (Glulx) =="
 "$I6" -E2 -w -G "$WINBUILD/auto.inf" "$WINBUILD/story.ulx" >/dev/null
