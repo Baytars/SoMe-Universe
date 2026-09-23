@@ -402,7 +402,7 @@ The chart table is a scenery supporter in the Free Port Landing. Understand "tab
 
 The Rationality Protocol pamphlet is a thing on the chart table. Understand "pamphlet" and "rationality" and "protocol" as the Rationality Protocol pamphlet. The description is "An AAA field manual: PRE-EMPTIVE EDUCATION. RAPID RESPONSE. PSYCHOLOGICAL INOCULATION. TRUST RESTORATION. A margin note adds, in pencil: 'Fear is the battlefield. Keep your pulse under command.'"
 
-The Keeper's road-map is a thing carried by the player. The printed name is "the Keeper's road-map". Understand "manifest" and "roadmap" and "road-map" and "map" and "dossier" and "brief" and "orders" as the Keeper's road-map. The description is "ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact:
+The Keeper's road-map is a thing carried by the player. The printed name is "Keeper's road-map". The indefinite article is "the". Understand "manifest" and "roadmap" and "road-map" and "map" and "dossier" and "brief" and "orders" as the Keeper's road-map. The description is "ACCORD ENVOY BRIEF, FIRST CLASS. Ten factions require formal contact:
 - WEST: the Pantheon - the Cathedral of the Old Metals. The Radiology clergy guard the turn; go armored or do not go.
 - NORTH: the Empire of Aukin and the Cradle, beyond the White Rib Gate (Thoracica).
 - NORTHWEST: the Celestial Corps, over the Void Verge.
