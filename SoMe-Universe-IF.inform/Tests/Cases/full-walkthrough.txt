@@ -8,6 +8,16 @@ n
 attend
 attend
 ask generalizer about autoimmunity
+ask franklin about fire
+ask franklin about names
+ask franklin about miners
+enter memory
+n
+read list
+n
+say the names
+place the eighth seal
+tell franklin about names
 go to landing
 report
 go to martyrs

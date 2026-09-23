@@ -234,7 +234,7 @@ The sightings lanyard is a seal. The printed name is "Sightings Lanyard". Unders
 The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand "pennant" and "abyssal" as the abyssal pennant. The description is "A wet swallow-tailed flag that never quite dries. The Abyssal Legion flew it over the first flooded field."
 
 [Comment: TRIAL TEXTS - shown when a faction representative is asked ABOUT SEAL/TRIAL/TASK. Edit these freely; the task mechanics live elsewhere, these are only the briefing strings.]
-The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court, then answer the Generalizer's question on what the self is for - the Cradle presses the sigil into your hand."
+The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Sacrum as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets."
 The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
 The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
@@ -261,6 +261,7 @@ To decide which patron is the patron of (tk - a seal):
 [Comment: FACTION REPRESENTATIVES - which NPC speaks for which faction. Add or reassign freely.]
 The faction patron of the Generalizer is cradle.
 The faction patron of Tylean is cradle.
+The faction patron of Sister Franklin is cradle.
 The faction patron of Vesalius is celestial.
 The faction patron of Lucifer is pantheon.
 The faction patron of HeLa is martyrs.
@@ -438,7 +439,7 @@ After going to the Pilgrim Turn for the first time:
 Instead of going west from the Pilgrim Turn when the Aegis gauntlets are not worn by the player and radiology-warning is less than 2:
 	if radiology-warning is 0:
 		now radiology-warning is 1;
-		say "The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body.[paragraph break]'You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.[paragraph break]'There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aukin gauntlets are the first lesson made wearable. Earn the gauntlets at the Cradle, wear them here, and I will not only step aside - I will walk you to the door.[paragraph break]'The gate to Aukin lies north of the port. GO TO CRADLE, attend the lectures, and the Cradle presses its gauntlets into your hands - no market sells them. The road west has no third option.'";
+		say "The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body.[paragraph break]'You want the gods. I understand - I serve their light, and I have watched it take tumors that no knife could reach. But radiology is a borrowed fire: we lead-line our priests, we dose our patients like artillery officers, and still the light takes its tax from us. You would walk into the Cathedral wearing nothing. That is not pilgrimage; that is donation.[paragraph break]'There is a road to worthiness. Aukin teaches it: the radiology curriculum, year on year - chelation weaves, lead habits, the grammar of shielding. Their Aukin gauntlets are the first lesson made wearable. Earn the gauntlets at the Cradle, wear them here, and I will not only step aside - I will walk you to the door.[paragraph break]'The gate to Aukin lies north of the port. GO TO CRADLE, attend the lectures, then ask Sister Franklin of the White Moon about the fire and walk her memory - come out of it and tell her what you carried, and the Cradle presses its gauntlets into your hands. No market sells them. The road west has no third option.'";
 	otherwise:
 		now radiology-warning is 2;
 		say "The Radiologist does not lower his staff - but he steps aside, and the grief in his face is worse than the barrier was. 'Stubbornness is also a kind of faith, and I have buried better stubbornness than yours. The Wastes will judge you in steps, not in words. Walk, then. Walk, and count.'";
@@ -456,18 +457,18 @@ Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets
 		say "The tally reads [radiation-dose] - your shadow on the vitrified road now glows faintly with your own afterimage. The Cathedral is one step west. Turn back, or pay the toll.";
 	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them."
 
 Before going to the Black Cathedral when the Aegis gauntlets are not worn by the player:
 	say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
-	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
+	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them."
 Every turn when the player is in the Black Cathedral and the Aegis gauntlets are not worn by the player:
 	increase radiation-dose by 1;
 	if radiation-dose is 1:
 		say "The mirror's light licks over your hands like water finding cracks. Lucifer watches, and does not gloat; the elements do not gloat at arithmetic.";
 	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them."
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them."
 
 Instead of going east from the Contaminated Wastes when the Aegis gauntlets are not worn by the player and radiology-warning is 2:
 	continue the action;
@@ -572,7 +573,7 @@ Instead of taking the Pasteur vial when the Pasteur vial is not carried by the p
 Instead of asking the Port Factor about something:
 	say "The Factor listens pleasantly and keeps wrapping."
 
-The Cradle Inner Court is north of the Cradle Outer Court. "The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors."
+The Cradle Inner Court is north of the Cradle Outer Court. "The medullary court, lit from within by the AIRE-flame: shelves upon shelves of the body's own tissues, every self-peptide catalogued in amber light. The Supreme Preceptor Tylean sits at the centre of the circle. The Generalizer waits by the Foreign Selves chair, honey-gold flame at her shoulder. A lecture is forming among the preceptors. At the back of the court, apart from them all, a woman in a white habit reads testimony pages in her lap."
 
 The Aegis gauntlets are a plural-named wearable thing in the Cradle Inner Court. The Aegis gauntlets are scenery. Understand "gauntlets" and "aegis" and "gloves" and "aukin" and "aukin gauntlets" as the Aegis gauntlets. The printed name of the Aegis gauntlets is "Aukin gauntlets". The description is "Chelation-weave field gauntlets of the Cradle - the first lesson of the radiology curriculum made wearable. They bind and escort what they touch: mercury, lead, cadmium, heat. The Cradle grants them only to those who study at the Inner Court; they are never sold."
 
@@ -606,14 +607,14 @@ At the back of the hall, a schism is audible: the Narrow Faction wants the Forei
 To run the curriculum exchange:
 	if the cradle sigil is carried by the player:
 		say "'You have the sigil, traveler. Teach it as you heard it.'";
+	otherwise if curriculum-passed is true:
+		say "'You have heard the doctrine, and you answered the Chair's question,' the Generalizer says. 'What remains is not doctrine.' She nods past the AIRE-flame, where the woman in the white habit sits among her pages. 'Sister Franklin of the White Moon. She does not teach. She asks you to walk.'";
 	otherwise if lecture-progress >= 2:
 		say "'So. The Narrow Faction demands we cut the Foreign Selves curriculum to unambiguous enemy-forms. Tell me, traveler - and think like a cadet, not a diplomat - what does intolerance engineer?'
 'Autoimmunity,' you say. 'The stricter the definition of self, the more of the self becomes unrecognizable. Intolerance is the engineering cause of autoimmunity.'
-The Generalizer smiles for exactly one second. 'Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take the Cradle's sigil to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh.'";
-		grant the cradle sigil noting "The Generalizer presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening.";
-		if the Aegis gauntlets are not carried by the player:
-			now the Aegis gauntlets are carried by the player;
-			say "From the AIRE-flame she lifts the Aukin gauntlets - chelation-weave, the Cradle's own shielding, the first lesson made wearable. 'Earn the west,' she says, 'and it is yours. Buy it, and it is no one's.' Wear them before you walk the Old Metals' road.";
+The Generalizer smiles for exactly one second. 'Correct. Curriculum bias is not a diplomatic nuisance; it is friendly fire scheduled in advance. Take that sentence to your Accord - and tell them the Long Dwindling is not our weakness alone. It is every long peace, made flesh.'
+She glances past the AIRE-flame to the back of the court. 'You have been taught what the self is for. Now be examined in it. Sister Franklin does not teach; she witnesses, and she asks you to walk. ASK her about THE FIRE.'";
+		now curriculum-passed is true;
 	otherwise:
 		say "'Attend the lecture first, traveler,' she says, nodding at the forming preceptors. 'Then we will speak of the wars.'"
 
@@ -630,6 +631,211 @@ Instead of asking the Generalizer about something when the topic understood matc
 
 Attending is an action applying to nothing.
 Understand "attend" or "attend lecture" or "attend the lecture" or "listen to the lecture" as attending.
+
+Section - Sister Franklin and the Apocalypse of the White Moon
+
+[Comment: AUKIN'S SEAL TASK.
+The chain: attend the lectures -> answer the Chair on intolerance (curriculum-passed) -> ASK FRANKLIN about THE FIRE and two of her questions -> ENTER THE MEMORY -> read the registry in the vestibule -> SAY THE NAMES in the Core Chamber -> lay the Eighth Seal on the throne -> TELL FRANKLIN one thing you carried out -> sigil and gauntlets.
+CONTENT STRINGS (everything inside say "...") ARE MEANT TO BE REWRITTEN FREELY. Only the chain above is structural: keep the flags, change the words.]
+
+curriculum-passed is a truth state that varies. curriculum-passed is false.
+franklin-stage is a number that varies. franklin-stage is 0.
+franklin-questions is a number that varies. franklin-questions is 0.
+memory-walked is a truth state that varies. memory-walked is false.
+names-read is a truth state that varies. names-read is false.
+names-spoken is a truth state that varies. names-spoken is false.
+The memory-walker is a person that varies.
+
+Sister Franklin is a woman in the Cradle Inner Court. Understand "franklin" and "sister franklin" and "white moon" as Sister Franklin. "Sister Franklin of the White Moon sits apart from the preceptors with a lapful of testimony pages, reading." The description is "A woman in a white habit, ink to the knuckles, younger than the habit makes her look. She is the only person in the war who has read every fragment of the Apocalypse, and it sits on her the way a second habit would. She does not teach. She witnesses."
+
+To franklin preaches:
+	if franklin-stage is 0:
+		now franklin-stage is 1;
+	say "'The temples were not built to contain the fire,' Sister Franklin says, without looking up. 'Read the founding record. They were built to remember. Containment was a side effect.'
+She turns a page. 'Seven seals, seven memories. The First remembers the fall. The Seventh remembers what the fire was before we chained it. When the seventh opens, the fire will remember that it was a god. That is not destruction. That is return.'
+Another page. 'Six of the seven are still walking toward their seals. I walked the first myself - the Wastes of Sacrum, Year Forty-Seven - and I carried in a page that no scripture ordered, and I laid it on the throne, and the Core has not touched it to this day.'
+She looks up at last. 'I do not teach you this. Teaching is for people who think the knowing is the point. I ask you to walk it as I walked it - not as a story. As a year.'
+[line break](ASK her about the NAMES, the MINERS, the CHILDREN, the WOLVES, or the EIGHTH SEAL - then ENTER THE MEMORY.)"
+
+To franklin answers (qt - a text):
+	increment franklin-questions;
+	if franklin-stage is 0:
+		now franklin-stage is 1;
+	if qt is "names" or qt is "the names" or qt is "list":
+		say "'Four thousand two hundred and seventeen, officially,' she says. 'The actual count is redacted. I have read the registry: a firefighter who wrote his wife's name in ash on a control-room wall; a sister who held the northern containment point after the others ran; a physician who catalogued two hundred and thirty-seven patients in seventy-two hours; an old woman who would not be chased out of her kitchen; and the unnamed child of apartment four-twelve, listed anyway, because they should not be forgotten.' She looks at you. 'The fire does not remember their names. Only we can.'";
+	otherwise if qt is "miners" or qt is "the miners":
+		say "'Mining Collective Two Hundred and Six dug the tunnel beneath the reactor,' she says. 'They were told it was urgent. They were not told it was fatal. A year later six of them went back with no orders at all, sat on the warm floor of the room beneath the world, and said nothing. The breathing slowed. They paid for it with everything they had left, and they knew the price before they paid it.'";
+	otherwise if qt is "children" or qt is "the children" or qt is "3047":
+		say "'Three thousand and forty-seven children born to irradiated parents,' she says. 'Healthy. Breathing. Asking why the sky is red on some nights. The institutions wanted monsters. There were no monsters. That number is the one thing the fire did not take.'";
+	otherwise if qt is "wolves" or qt is "the wolves":
+		say "'Wolves, bison, wild horses,' she says. 'The Zone is the most alive ground on the continent now. The fire did not poison the land. The fire made the humans leave, and what the humans left, life reclaimed. Remember that when you go west and think the contamination is the whole story.'";
+	otherwise if qt is "katerina" or qt is "vasya" or qt is "guseva":
+		say "'Sister Katerina kept speaking the binding words after the formation broke, and she did not burn - she became. Vasily Ignatenko died of thirteen days and left one sentence behind him: tell her I was not afraid, and then, in a smaller hand, I was afraid. Angelina Guseva wrote down every name because a record is a kind of love.' She closes that page. 'The testimony is the point. Not the doctrine.'";
+	otherwise:
+		say "'The Complete Apocalypse ends with the fire saying: you are my pieces,' she says. 'The Brotherhood of the Unspoken answered it. They wrote an eighth seal that was never in any scripture - the seal that says yes, and pieces can choose. We did not choose to be shattered. We chose what to do with the pieces.' She touches the page on her knee. 'That is the one I carried into the Core Chamber. It is the one you will carry, if you walk it.'";
+	if franklin-questions >= 2:
+		if franklin-stage < 2:
+			now franklin-stage is 2;
+		say "[line break]She folds the page once, along a crease worn white. 'Two questions is a hearing,' she says. 'Come into the memory, then. Walk it as I walked it, and bring me back one thing.'[line break](ENTER THE MEMORY.)"
+
+Instead of asking Sister Franklin about something:
+	let qt be "[the topic understood]" in lower case;
+	if qt is "seal" or qt is "trial" or qt is "task" or qt is "earn":
+		say the trial text of the cradle sigil;
+	otherwise if qt is "fire" or qt is "the fire" or qt is "apocalypse" or qt is "seven seals" or qt is "seventh seal" or qt is "the seventh seal" or qt is "prometheus" or qt is "temple" or qt is "chernobyl" or qt is "wastes" or qt is "sacrum":
+		franklin preaches;
+	otherwise if qt is "names" or qt is "the names" or qt is "list" or qt is "miners" or qt is "the miners" or qt is "children" or qt is "the children" or qt is "wolves" or qt is "the wolves" or qt is "katerina" or qt is "vasya" or qt is "guseva" or qt is "eighth" or qt is "eighth seal" or qt is "the eighth seal" or qt is "witness":
+		franklin answers qt;
+	otherwise:
+		say "Sister Franklin listens, and offers nothing on that."
+
+[Comment: THE MEMORY - Franklin's walk through the Wastes of Sacrum. The player acts AS her for its duration.]
+The Threshold of Ash is a room. "Ash to the horizon, and every grain older than the first cell. You came back here without orders, without a medal, and with one page in your coat that you wrote yourself. The contaminated vestibule lies north, where the registry was found. Beyond it, down, is the room beneath the world."
+
+The Contaminated Vestibule is north of the Threshold of Ash. "An administrative office of the temple, stripped by forty-seven years of weather and one night of everything else. Water-damaged pages lie where the wind dropped them. This is where the casualty registry was recovered - and where a firefighter's jacket was found with the dosimeter still pinned to it, reading LETHAL."
+
+The Core Chamber is north of the Contaminated Vestibule. "The room beneath the reactor that should not exist. The geometry is wrong: the walls are not walls, the floor is warm, and it breathes - slowly, the way something enormous breathes when it is not asleep and not awake. On the far side waits a throne, and on the throne something that is not alive and is not dead. It has been waiting longer than the temple has been standing. It is waiting for you specifically."
+
+The list of names is a thing in the Contaminated Vestibule. The printed name is "List of Names". Understand "list" and "names" and "registry" and "casualty list" and "page" as the list of names. The description is "OFFICIAL CASUALTY COUNT: 4,217. ACTUAL: redacted. Names in italics were recovered from personal effects. Names in brackets were never found; they are listed anyway."
+
+The last letter is a thing in the Contaminated Vestibule. The printed name is "Vasya's Testament". Understand "letter" and "testament" and "vasya" and "vasya's testament" as the last letter. The description is "A firefighter's last letter, handwriting going to pieces across the page. 'I wrote your name in the ash on the wall of the control room. I wanted to leave something.'"
+
+The dosimeter is scenery in the Contaminated Vestibule. Understand "dosimeter" as the dosimeter. The description is "Pinned to a jacket nobody collected. The needle is past the end of the scale and has been for forty-seven years."
+
+The throne is a scenery supporter in the Core Chamber. Understand "throne" and "seat" as the throne. The description is "Not furniture. A place in the geometry that something sits in. The stone around it is warm to the touch and has been warm since the miners first broke through."
+
+The warm floor is scenery in the Core Chamber. Understand "floor" and "stone" and "warm floor" as the warm floor. The description is "It breathes. Six men sat on it once, saying nothing, offering nothing but the fact of being there, and the breathing slowed."
+
+The eighth seal page is a thing. The printed name is "Eighth Seal". Understand "eighth seal" and "eighth" and "seal page" and "my page" as the eighth seal page. The description is "The page you wrote with the Brotherhood of the Unspoken and carried in against every order: the fire says you are my pieces. It answers: yes - and pieces can choose."
+
+To end the memory walk:
+	now the player is the memory-walker;
+	now Sister Franklin is in the Cradle Inner Court;
+	now the memory-walker is in the Cradle Inner Court.
+
+Entering the memory is an action applying to nothing.
+Understand "enter memory" or "enter the memory" or "remember" or "walk the memory" or "enter fire" or "enter the fire" as entering the memory.
+
+Instead of entering the memory:
+	if the location is not the Cradle Inner Court:
+		say "A memory is only walked where she keeps it: the Cradle Inner Court, in her presence.";
+	otherwise if Sister Franklin is not in the location:
+		say "Sister Franklin is not here to hold the door open.";
+	otherwise if curriculum-passed is false:
+		say "'The doctrine first,' Sister Franklin says. 'You cannot witness what you have not been taught to see. Attend the lectures, and answer the Chair of Foreign Selves.'";
+	otherwise if franklin-stage < 2:
+		say "'Ask me first,' she says. 'Hear it from a mouth before you take it into a body.'[line break](ASK her about THE FIRE, then about the NAMES, the MINERS, the CHILDREN, or the EIGHTH SEAL.)";
+	otherwise if memory-walked is true:
+		say "'Once is the doctrine,' Sister Franklin says. 'Walking it twice is tourism.'";
+	otherwise:
+		say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.[line break]You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Sacrum with a page in your coat that you wrote yourself.[line break](READ THE LIST, say the names where the fire can hear them, and lay the page down. LEAVE THE MEMORY steps back out.)";
+		now franklin-stage is 3;
+		now names-read is false;
+		now names-spoken is false;
+		now the memory-walker is the player;
+		now the player is Sister Franklin;
+		now the eighth seal page is carried by the player;
+		now Sister Franklin is in the Threshold of Ash.
+
+Leaving the memory is an action applying to nothing.
+Understand "leave memory" or "leave the memory" or "wake" or "wake up" or "step out" or "end memory" as leaving the memory.
+
+Instead of leaving the memory:
+	if the player is not Sister Franklin:
+		say "You are not inside anyone's memory.";
+	otherwise:
+		say "You step back out of the year. The ash goes with you, a little.";
+		now franklin-stage is 2;
+		end the memory walk.
+
+Instead of warping to when the player is Sister Franklin:
+	say "There is no concordance inside a memory. Walk it, or LEAVE THE MEMORY."
+
+To witness the list:
+	if names-read is false:
+		now names-read is true;
+	say "OFFICIAL CASUALTY COUNT: 4,217. ACTUAL: redacted.
+Vasily Ignatenko - firefighter - thirteen days. Lyudmila, his wife - six years - listed as indirect.
+Sister Katerina Voronova - northern containment point - what remained was not suitable for burial.
+Brother Alexei Volkov - three days, in the medical tent, and he left his testimony under a floor.
+Dr. Angelina Guseva - triage - two months. Nurse Natalia Oleinik - two hundred and thirty-seven patients in seventy-two hours - survived.
+Old woman Olya Petrenko, who refused to be moved, and her cat.
+The unnamed child of Apartment 412. Age: seven. Classification: changed.
+Pages fourteen through eighty-nine missing.
+This list is incomplete. The full list would not fit in any volume.
+Write their names. Say them aloud. The fire does not remember their names. Only we can."
+
+Understand "read [something]" as examining.
+
+Instead of examining the list of names:
+	witness the list.
+
+Reciting the names is an action applying to nothing.
+Understand "say names" or "say the names" or "recite names" or "recite the names" or "speak names" or "read names aloud" as reciting the names.
+
+Instead of reciting the names:
+	if the player is not Sister Franklin:
+		say "You are not inside the memory. Nobody is listening.";
+	otherwise if the location is not the Core Chamber:
+		say "Not here. Names are said where the fire can hear them.";
+	otherwise if names-read is false:
+		say "You have not read the registry. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
+	otherwise if names-spoken is true:
+		say "You have said them. The floor is warm under your knees and the breathing has already slowed once.";
+	otherwise:
+		now names-spoken is true;
+		say "You say them aloud, one by one, in the room beneath the world: the firefighter, the wife, the sister at the northern point, the brother under the floor, the physician and her nurse, the old woman and her cat, and the child of apartment four-twelve whose name nobody kept.
+You do not pray and you do not bind. You say the names the way you would read a register in a town that has decided to forget.
+The breathing changes. It does not stop - it attends."
+
+To lay down the seal:
+	if the player is not Sister Franklin:
+		say "You are not inside the memory.";
+	otherwise if the location is not the Core Chamber:
+		say "The page is meant for the room beneath the world, not for here.";
+	otherwise if the eighth seal page is not carried by the player:
+		say "You are not carrying the page.";
+	otherwise if names-spoken is false:
+		say "Not before the names. A page laid over silence is only paper, and the fire has had paper enough.";
+	otherwise:
+		now the eighth seal page is on the throne;
+		now memory-walked is true;
+		say "You set the page down on the warm stone.
+It says: the fire told us we are its pieces. It answers: yes - and pieces can choose. We did not choose to be shattered. We chose what to do with the pieces. We are the eighth seal. The seal that says we know what we are made of, and we stay anyway.
+You sit, the way the six miners sat, and offer nothing except the fact of being there.
+The breathing slows. Not all the way. Enough.
+You climb back up through the tunnels toward the light, and the weight goes with you, and some of it stays here.";
+		end the memory walk;
+		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)";
+
+Offering the seal is an action applying to nothing.
+Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" as offering the seal.
+
+Instead of offering the seal:
+	lay down the seal.
+
+Instead of putting the eighth seal page on the throne:
+	lay down the seal.
+
+Instead of telling Sister Franklin about something when memory-walked is true:
+	if the cradle sigil is carried by the player:
+		say "'You carry it,' Sister Franklin says. 'Go and teach it somewhere that has forgotten worse.'";
+	otherwise:
+		let tt be "[the topic understood]" in lower case;
+		if tt is "names" or tt is "the names" or tt is "katerina" or tt is "vasya" or tt is "miners" or tt is "the miners" or tt is "children" or tt is "the children" or tt is "3047" or tt is "wolves" or tt is "the wolves" or tt is "guseva" or tt is "fire" or tt is "the fire" or tt is "eighth" or tt is "eighth seal" or tt is "the eighth seal":
+			say "She listens the way the Dhyana Church means by listening - the whole of her, at once. 'Yes,' she says. 'That one. You were listening.'
+She closes the page at last. 'The dead are not saved by being counted. They are saved by being named by somebody who was not obliged to.'";
+			grant the cradle sigil noting "Sister Franklin presses the Cradle Sigil into your hand - a ring of bone-white alloy, stamped with the sign for listening. 'A witness is a kind of weapon,' she says. 'Carry it like one.'";
+			now franklin-stage is 4;
+			if the Aegis gauntlets are not carried by the player:
+				now the Aegis gauntlets are carried by the player;
+				say "[line break]From the AIRE-flame the preceptors lift the Aukin gauntlets - chelation-weave, the Cradle's own shielding, the first lesson made wearable. 'Earn the west,' Sister Franklin says, 'and it is yours. Buy it, and it is no one's.' Wear them before you walk west into the Old Metals.";
+		otherwise:
+			say "'That is not from the fragments,' she says. 'Try again - tell me something you carried out of the fire.'[line break](TELL FRANKLIN ABOUT the NAMES, the MINERS, the CHILDREN, or the WOLVES.)"
+
+Instead of telling Sister Franklin about something:
+	say "'I am not the Chair,' she says. 'I do not grade. Walk it first - then tell me what you carried out.'"
+
 
 Part Four - The Void and the Celestial Corps
 
@@ -1167,7 +1373,7 @@ After going to the Fabrica Bridge for the first time:
 After going to the Black Cathedral for the first time:
 	if the Aegis gauntlets are not worn by the player:
 		say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
-		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets through study at the Cradle - no market sells them.";
+		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them.";
 	say "You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.[paragraph break]Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
 
 After going to the Shrine of the Knitting Mouse for the first time:

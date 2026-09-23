@@ -2,24 +2,24 @@ s
 choose cradle
 go to cradle
 n
+enter memory
 attend
 attend
 ask generalizer about autoimmunity
+enter memory
+ask franklin about seal
 ask franklin about fire
+enter memory
 ask franklin about names
-ask franklin about miners
+ask franklin about wolves
 enter memory
 n
 read list
 n
 say the names
-place the eighth seal
+put seal on throne
 tell franklin about names
+seals
 wear gauntlets
-go to singularity
-w
-w
-w
-choose pantheon
 quit
 yes
