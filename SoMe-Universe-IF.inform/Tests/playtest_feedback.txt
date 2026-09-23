@@ -6,83 +6,505 @@
 
 ################ 用例：choose-aliases ################
 
+1. 事实复述
+
+*   **命令 1: `n`**
+    *   **玩家意图**：向北移动。
+    *   **游戏回应**：场景切换至“Unseen Crown's domain”（未见皇冠领域/Disease Citadel 内部）。游戏输出了该区域的详细描写，包括六面旗帜下的招募者列表，并提示玩家使用 `CHOOSE <patron>` 宣誓，或询问特定角色（如 `ASK THE GIRL ABOUT JOINING`）。
+*   **命令 2: `choose undead court`**
+    *   **玩家意图**：向 Undead Court（亡灵贵族法院/德古拉阵营）宣誓。
+    *   **游戏回应**：系统识别了目标。Dracula 的角色台词出现：“Fear is not a weapon. Fear is the battlefield...”（恐惧不是武器，恐惧是战场……）。随后系统提示：“You swear to the Undead Court.”（你向亡灵法院宣誓）。
+    *   **后续状态变更**：
+        *   剧情推进：“The war arranges itself around your oath...”（战争围绕你的誓言重组）。
+        *   物品获得：“The Keeper's road-map appears in your satchel.”（看守者的路线图出现在你的口袋里）。
+        *   地图解锁：“The Singularity seals itself... The circuit of the Ten Banners begins.”（奇点密封……十旗回路开始）。
+        *   场景传送：玩家被自动传送至 “Free Port Landing”（自由港登陆区）。
+        *   新提示出现：系统详细说明了在枢纽区域如何使用 `ASK KEEPER ABOUT DESTINATIONS` 和 `GO TO <place>` 进行传送，以及如何通过 `REPORT` 提升声望。
+*   **命令 3: `quit`**
+    *   **玩家意图**：尝试退出游戏。
+    *   **游戏回应**：系统弹出确认提示：“Are you sure you want to quit?”（你确定你要退出吗？）。
+*   **命令 4: `yes`**
+    *   **玩家意图**：确认退出。
+    *   **游戏回应**：**未观察到**。转录在此处戛然而止，没有显示退出后的系统信息（如“Thanks for playing”或回到 Glk 提示符）。*注：根据常规逻辑，`yes` 应触发退出程序，但转录中未包含退出后的输出。*
+
+2. 困惑/卡点
+
+*   **指令语法与对象名称的不匹配**：
+    *   在 `n` 后的输出中，游戏提示：“CHOOSE VIBRIO, CHOOSE DRACULA...”。但在命令序列中，玩家输入的是 `choose undead court`。
+    *   虽然游戏成功识别了“undead court”并执行了 Dracula 相关的剧情，但提示语并未明确列出 `CHOOSE UNDEAD COURT` 为有效指令，而是列出了具体代号（如 `DRACULA`、`STILLE` 等）。
+    *   *潜在困惑*：如果玩家尝试 `CHOOSE DRACULA` 而非 `CHOOSE UNDEAD COURT` 会怎样？转录中只测试了 `choose undead court`，未观察到其他变体的响应。
+*   **自动传送机制缺乏预警**：
+    *   在宣誓后，游戏直接描述了“Singularity seals itself”并将玩家传送到“Free Port Landing”。
+    *   虽然游戏在 `n` 之前的 `Singularity` 描述中提到了“Two gates... NORTH to the Disease Citadel”，但宣誓后的**强制传送**和**地图锁定**（Singularity 关闭）没有在执行前给出明确的警告。玩家可能预期还能在当前房间（Disease Citadel 大厅）继续探索，但直接被抛到了 Free Port。
+*   **`quit` 后的静默**：
+    *   输入 `yes` 后，转录没有显示任何结束信息。对于评测员来说，无法确认游戏是否正确终止了进程并释放了内存，或者是否挂起了。
+
+3. 缺陷/Bug
+
+*   **未观察到的命令响应**：
+    *   转录中未测试 `HELP`、`EXAMINE`、`LOOK` 等基础命令的响应。
+    *   转录中未测试在 Free Port Landing 输入 `ASK KEEPER ABOUT DESTINATIONS` 或 `GO TO UNDEAD COURT` 的响应。
+    *   因此，无法判断这些核心机制是否正常工作。
+*   **潜在的逻辑/描述不一致**：
+    *   在 `Singularity` 房间中，提示：“When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA...”。
+    *   玩家输入 `choose undead court` 成功了。这意味着游戏引擎具备模糊匹配或别名映射能力（将 “undead court” 映射到 Dracula 的宣誓逻辑）。
+    *   **Bug 风险**：如果玩家输入的是提示语中未列出的别名（例如 `choose dracula` 或 `choose vampire`），是否能成功？由于转录中只用了 `choose undead court`，且提示语未明确列出该别名作为主要指令示例，这可能导致部分玩家困惑。如果 `choose dracula` 失败而 `choose undead court` 成功，则存在不一致；如果两者都成功，则文档（HOW TO PLAY）不够清晰。
+*   **`quit` 流程不完整**：
+    *   虽然 `yes` 是标准确认，但缺少退出后的终端行为记录。
+
+4. 可玩性评分
+
+**评分：8/10**
+
+**理由**：叙事沉浸感极强，宣誓后的剧情转折和地图解锁过程流畅且富有仪式感（“The Keeper's road-map appears in your satchel”），但自动传送机制略突兀，且指令提示与实际可接受的别名之间存在细微的文档模糊性。
+
+5. 给开发者的具体改进建议
+
+**改进“HOW TO PLAY”提示与别名系统的清晰度**：
+
+在 `Singularity` 和 `Disease Citadel` 的初始文本中，当前提示语为：“CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE.”
+
+然而，玩家成功使用了 `CHOOSE UNDEAD COURT`。
+
+**建议**：
+1.  如果 `UNDEAD COURT` 是有效别名，应在提示语中明确标注：“You can use the faction name (e.g., CHOOSE UNDEAD COURT) or the patron code (e.g., CHOOSE DRACULA).”
+2.  或者，反向操作，如果希望玩家使用更直观的阵营名，应调整提示语的主要示例为阵营名（如 CHOOSE MEDICINE, CHOOSE UNDEAD COURT, CHOOSE OLD METALS），并将代号（VIBRIO, STILLE 等）作为次要选项提及。
+3.  **具体落地**：修改 `Singularity` 房间的描述文本，增加一行：“Note: You may use the full faction name (like 'Undead Court') or the short code (like 'Dracula') after CHOOSE.” 这能消除玩家对指令格式的疑虑。
+
+
+################ 用例：full-walkthrough ################
+
+基于提供的《SoMe-Universe: The Ten Banners》真实实机转录和命令序列，以下是作为严谨评测员的评审报告。
+
 ### 1. 事实复述
 
-根据提供的命令序列与转录内容，游戏交互过程如下：
+以下按时间顺序对照玩家命令与游戏实际输出进行复述。需注意，转录中部分中间步骤（如具体的物品获取确认或某些移动细节）被省略（标记为`...[中部省略]...`），以下仅引用转录中**明确出现**的输出。
 
-*   **命令 1：`n`**
-    *   **玩家输入**：向北移动。
-    *   **游戏回应**：
-        *   输出提示：“>You have walked into the Unseen Crown's domain. Six banners crown the dark hall...”
-        *   此处出现了逻辑跳跃：从起始地“Singularity”向北（North）直接进入了包含六位招募者的大厅（Unseen Crown's domain），而非之前提示中提到的“The Disease Citadel”或单纯的方向移动。
-        *   随后，系统直接输出了对话：“The Count regards you across the dry fountains... You swear to the Undead Court.”
-        *   *注意*：虽然玩家只输入了 `n`，但游戏输出显示玩家不仅移动了，还瞬间完成了对“Undead Court”的宣誓（Swear to the Undead Court）。这暗示了某种自动触发逻辑或指令解析错误，但转录中并未显示玩家输入了 `choose undead court` 前的其他确认步骤，直到下一行。
-        *   紧接着，游戏输出了进入“Free Port Landing”的描述：“The war arranges itself around your oath... Free Port Landing... The landing stage of the Pericardium Free Port...”
-        *   最后，屏幕底部出现了提示：“>Are you sure you want to quit?” —— *这里存在严重格式错误*，`>` 是游戏输出提示符，但“Are you sure...”通常是游戏发出的询问，而非玩家输入。根据转录规则，`>` 后是游戏输出。这意味着游戏在移动后，主动输出了一个询问是否退出的问题，且没有等待用户输入 `yes` 或 `no`，而是直接输出了这个疑问句作为文本。
+*   **初始阶段 (Singularity)**
+    *   `> s`: 玩家进入 Hall of Medicine。游戏描述：“You are in the Singularity... SOUTH to the Hall of Medicine”。输出显示：“You have walked into the Hall of Medicine...”。
+    *   `> choose cradle`: 玩家选择阵营。游戏输出：“The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first... ' You swear to the Cradle.”
+    *   系统消息：“The Keeper's road-map appears in your satchel.”，“The Singularity seals itself... A launch skiff carries you to neutral waters.”，“Free Port Landing... The circuit of the Ten Banners begins.”
+*   **自由港 (Free Port Landing & Market)**
+    *   `> take pamphlet` / `> go to cradle` / `> n` / `> attend` / `> attend`: 转录显示玩家在 Market 购买物品前，先去了 Cradle。
+    *   在 Cradle Outer Court，`> attend` 触发讲座：“The Generalizer rises... 'You will attend the lecture...'”。再次 `> attend` 显示课程内容：“CORTICAL SELECTION... MEDULLARY SELECTION...”。
+    *   `> ask generalizer about autoimmunity`: 游戏输出对话：“'So. The Narrow Faction demands we cut... ' Autoimmunity, you say... Correct. ... Take the Cradle's sigil...”。系统提示：“[Your score has just gone up by one point.]”
+    *   `> go to market` / `> buy gauntlets` / `> buy bundle` / `> buy vial`:
+        *   到达 Port Market，描述：“On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial.”
+        *   `> buy gauntlets`: 输出：“You slide a token across the stall. ... 'Bind, trap, escort,' ...”
+        *   `> buy bundle`: 输出：“A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,' ...”
+        *   `> buy vial`: 输出：“The last token goes across the stall. 'Show it to the Count himself,' ...”
+*   **报告与献祭 (Martyrs)**
+    *   `> go to landing` / `> report`: 输出：“You lay each banner at the standards... 1 of the ten standards now fly.”（此时仅献上了 Cradle Sigil）。
+    *   `> go to martyrs` (注：转录中未显示直接进入 Martyrs 的具体动作，但显示去了 Shrine of the Knitting Mouse，推测 Martyrs 对应此处或附近):
+        *   描述：“Shrine of the Knitting Mouse... The altar... carries offerings...”。
+        *   `> open bundle`: 输出：“You open the offering bundle, revealing a rna strand, a dog treat and a cheese wheel.”
+        *   `> take strand` / `> take treat` / `> take cheese wheel`: 输出均为：“Taken.”
+        *   `> put strand on altar` / `> put treat on altar` / `> put cheese wheel on altar`:
+            *   Strand: “You lay the RNA strand at the altar's head...”
+            *   Treat: “The treat vanishes before it quite touches the stone... one bark, warm as a stove.”
+            *   Cheese: “You set the little wheel before the bronze mouse... HeLa rises... Take a needle.”
+            *   系统提示：“[Your score has just gone up by one point.]”
+*   **中期探索 (Celestial, Pantheon, etc.)**
+    *   *注意：转录在此处有大幅省略 `...[中部省略]...`，直接跳到了 Undead Court 之前的状态。以下基于省略后的可见部分复原逻辑链，但仅引用可见文本。*
+    *   `> go to dawn pioneer` / `> take codex`: 描述：“Dawn Pioneer Deck... On the writing desk is a codex log.” 隐含获取了 Codex。
+    *   `> go to celestial corps` / `> ask vesalius about soul`: 省略部分，未显示具体对话，但后续显示拥有 Vesalius Medallion。
+    *   `> go to pantheon` / `> wear gauntlets` / `> decipher codex`: 省略部分。
+    *   `> go to landing` / `> report`: 省略部分。
+    *   `> go to celestial corps` / `> show codex to vesalius`: 省略部分，但后续 Landing 显示拥有 Vesalius Medallion。
+    *   `> go to landing` / `> report`: 省略部分。
+    *   `> go to archaeology` / `> take sample` / `> give sample to division chief`: 省略部分。
+    *   `> go to stille` / `> accuse stern quartermaster`: 省略部分。
+    *   `> go to fear technology` / `> ask director about sightings`: 省略部分。
+    *   `> go to masquerade` / `> ask pale masquer about symptoms` (x2) / `> unmask pale masquer`: 省略部分。
+*   **后期探索 (Undead Court & Abyssal Fleet)**
+    *   `> go to undead court` / `> show vial to count dracula`:
+        *   描述：“give a rival. 'Attenuated,' Dracula says. 'The Frenchman's trick... Ninety-nine percent... Twenty-nine million of your kind walked past my court because of that vial.' ... A worthy enemy's legacy... The Court receives you as received - marked, not turned.”
+        *   获得物品：“The Budapest Bride seals a black disc... The Undead Court marks you: faced, and stayed polite.”
+        *   系统提示：“[Your score has just gone up by one point.]”
+    *   `> go to abyssal fleet` / `> ask octopus admiral about cannons`:
+        *   描述：“Abyssal Deck... The flagship rides at the centre - the Cholera Octopus... The Octopus Admiral walks the wet deck...”
+        *   互动：“'A demonstration, then.' The Admiral signals... fires... jet of water... 'Water is life... Water is death... Take the pennant...’”
+        *   获得物品：“A wet swallow-tailed pennant... coils itself around your forearm... Ten seals ride in your satchel.”
+        *   系统提示：“[Your score has just gone up by one point.]”
+*   **最终结算**
+    *   `> go to landing` / `> report`:
+        *   描述：“Free Port Landing... On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.” (注：此处列表不全，但暗示已有多个徽章)。
+        *   报告结果：“You lay each banner at the standards... 10 of the ten standards now fly.”
+        *   结局描述：“The Keeper binds the last seal... 'Understand what you have carried,' she says... The map of the whole body-cosmos rolls out... *** The Ten Banners stand raised over the Pericardium Free Port. ***”
+    *   `> banners` / `> score`: 转录未显示这两条命令的具体输出（可能在省略部分或结束后显示），但结局文本暗示了最终状态。
 
-*   **命令 2：`choose undead court`**
-    *   **玩家输入**：选择亡灵法院（Undead Court）。
-    *   **游戏回应**：
-        *   **未观察到任何新的游戏输出**。
-        *   在转录中，`choose undead court` 这条命令之后，直接跳到了 `quit` 命令之后的输出。
-        *   回溯看，**在 `n` 命令的输出中**，游戏其实已经显示了 “You swear to the Undead Court.” 并进入了 Free Port Landing。因此，当玩家后续输入 `choose undead court` 时，由于玩家已经宣誓并离开了该房间（或状态已变更），该命令可能被视为无效、重复，或者被静默吞没，转录中未记录该命令产生的任何视觉反馈（如错误提示或确认信息）。
+### 2. 困惑/卡点
 
-*   **命令 3：`quit`**
-    *   **玩家输入**：尝试退出游戏。
-    *   **游戏回应**：
-        *   转录中未显示 `quit` 命令的直接回显或即时反馈。
-        *   但是，在 `n` 命令的末尾，游戏已经输出了 “>Are you sure you want to quit?”。这可能是一个时序错乱：游戏在处理 `n` 移动并到达 Free Port 后，预触发了退出确认逻辑，或者 `quit` 命令被快速处理，导致确认提示出现在前一条命令的输出块中，而 `yes` 是对其的响应。
-        *   根据转录结构，`quit` 命令本身没有产生独立的描述性输出，而是关联到了最终的确认流程。
+1.  **物品获取与使用的断层**：
+    *   玩家在 Market 购买了 `bundle`（包含 strand, treat, cheese）。在 Shrine 处 `open bundle` 后，玩家分别执行 `take strand`, `take treat`, `take cheese wheel`。虽然逻辑通顺，但 `open bundle` 后的物品是自动进入背包还是需要手动拾取？转录中 `open` 后紧接着是三次 `take`，且都成功。这表明 `open` 只是解包，物品仍需手动拾取。这一机制对于不熟悉此类交互的玩家可能略显繁琐，但转录中无报错，故不算 Bug，仅为体验上的微小摩擦。
+2.  **位置名称的非直观性**：
+    *   命令 `go to martyrs` 对应的实际场景描述是 `Shrine of the Knitting Mouse`。虽然文中提到 `The Lab Martyrs` 是招募人，但场景名并未直接包含 "Martyrs"。玩家需依靠上下文或提示才能确认这就是目标地点。
+    *   命令 `go to stille` 和 `go to fear technology` 对应的场景在转录中被省略，无法确认这些简短指令是否对应了直观的房间名。
+3.  **省略部分带来的叙事跳跃**：
+    *   从 `buy vial` 到 `go to martyrs` 之间，玩家执行了 `go to landing` 和 `report`。首次报告显示 “1 of the ten standards now fly”。随后玩家去完成其他 8-9 个目标。由于转录省略了中间大部分过程，玩家可能会困惑于为何最终报告时直接跳到了 “10 of the ten standards”，中间的进度条反馈（如 2, 3... 9）在可见文本中缺失。
 
-*   **命令 4：`yes`**
-    *   **玩家输入**：确认退出。
-    *   **游戏回应**：
-        *   **未观察到任何输出**。
-        *   转录在 `yes` 之后结束，没有显示 “Bye”、“Goodbye” 或进程终止的提示信息。
+### 3. 缺陷/Bug
+
+1.  **物品列表显示不一致 (潜在 Bug/设计缺陷)**：
+    *   在最终 `report` 前的 `Free Port Landing` 描述中：“On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil.”
+    *   然而，根据前面的流程，玩家此时应已拥有更多徽章（Undead Court 的 Black Disc, Abyssal 的 Pennant 等，或者它们尚未报告到此处？）。
+    *   注意：`report` 命令的作用是将物品转化为 Standards。如果在最终 `report` 之前，玩家没有去 Landing 报告过 Undead 和 Abyssal 的徽章，那么 Landing 处的 rack 上确实可能只有之前报告过的 4 个（Cradle, Vesalius, Knitting, Quicksilver? 注：Quicksilver 来源未在可见部分明确显示，可能来自 Pantheon 或其他省略步骤）。
+    *   **疑点**：玩家执行了 `go to landing` 然后 `report`，结果输出 “10 of the ten standards now fly”。这意味着之前的 `report` 或系统自动处理已经完成了大部分。但描述文本 “On the standard rack are...” 列出的物品与 “10 standards” 的事实存在视觉上的不协调（只列了4个，却暗示全部完成）。这更像是文本描述未动态更新（Dynamic Text Failure），即房间描述没有刷新显示当前所有已获得的徽章，或者描述刻意只列出部分作为装饰，但容易误导玩家。
+
+2.  **命令 `score` 无响应**：
+    *   玩家最后输入了 `score`。转录中未显示 `score` 的具体输出（如总分数值）。虽然在 Inform 7 游戏中通常会有 `Score at x turns` 这样的标准输出，但转录结束于结局画面，未展示分数结算。如果 `score` 命令在结局后无效或被忽略，属于正常；如果在结局前有效但转录未截取，则无法评判。鉴于
+
+
+################ 用例：go-to-concordance ################
+
+基于提供的【真实实机转录】和【玩家实际输入的命令序列】，以下是针对《SoMe-Universe: The Ten Banners》的严谨评测报告。
+
+### 1. 事实复述
+
+根据玩家输入的命令序列与游戏响应的对应关系，复盘如下：
+
+*   **输入 `s` (向南移动)**
+    *   **游戏响应**：玩家从“Singularity（奇点）”移动到了“Hall of Medicine（医学大厅）”。
+    *   **原文引用**：
+        > "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners..."
+        > "a medullary preceptor (the Cradle of Aukin...), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs)."
+        *注意：此时玩家处于“未宣誓”状态，游戏提示可以使用 `CHOOSE <patron>`。*
+
+*   **输入 `choose typhi`**
+    *   **游戏响应**：尽管玩家输入了 `typhi`（在之前的提示中并未列出 Cradle, Celestial, Martyrs 之外的选项，且 `typhi` 并非标准选项名，可能是开发者内部测试代号或别名），但游戏**接受**了该指令并触发了宣誓剧情。角色宣誓加入了 **Abteilung Stille**（静默部门，对应之前的提示中未明确列出的第三方或隐藏路线，或者这里存在映射逻辑）。随后场景跳转至“Free Port Landing（自由港口码头）”。
+    *   **原文引用**：
+        > "The Amanuensis stamps gall-coloured wax without looking up... You swear to Abteilung Stille."
+        > "The war arranges itself around your oath - and the Keeper of the Gate watches you..."
+        > "Free Port Landing"
+        *注意：响应中出现了 "Abteilung Stille"，而在进入大厅的提示中列举的是 "Cradle", "Celestial", "Martyrs"。这里存在命名或映射上的不连贯，但逻辑上完成了宣誓。*
+
+*   **输入 `ask registrar about destinations`**
+    *   **游戏响应**：游戏**未能识别** `registrar` 这个实体。当前场景（Free Port Landing）中的非玩家角色（NPC）是 "A woman in travel-grey"（旅行者灰衣女子）或 "The Keeper"（看守者），提示中提到的指令对象是 `ASK KEEPER ABOUT DESTINATIONS`。因此游戏报错。
+    *   **原文引用**：
+        > ">You can't see any such thing."
+
+*   **输入 `go to undead court`**
+    *   **游戏响应**：由于玩家已完成宣誓（Sworn），游戏允许使用 `GO TO` 命令进行跨区域传送（Concordance）。玩家成功传送至“Blood Court（血之法庭）”。
+    *   **原文引用**：
+        > "The manifest takes your word, and the concordance carries you along the great vessels of the war."
+        > "Blood Court"
+        > "Count Dracula stands at the far end of the dry hall..."
+
+*   **输入 `look`**
+    *   **游戏响应**：重新描述当前房间“Blood Court”。
+    *   **原文引用**：
+        > "Blood Court"
+        > "The court of the Undead: a long dry hall where fountains stand as architecture only..."
+        *(描述与上一次进入该房间时完全一致)*
+
+*   **输入 `go to cradle`**
+    *   **游戏响应**：再次使用 Concordance 传送。但注意，`GO TO CRADLE` 将玩家带回了“Cradle Outer Court（摇篮外院）”，而不是宣誓前所在的“Hall of Medicine”。
+    *   **原文引用**：
+        > "The manifest takes your word, and the concordance carries you along the great vessels of the war."
+        > "Cradle Outer Court"
+
+*   **输入 `look`**
+    *   **游戏响应**：重新描述“Cradle Outer Court”。
+    *   **原文引用**：
+        > "Cradle Outer Court"
+        > "The outer court of the Cradle, the Medulla: whitewashed cloisters..."
+
+*   **输入 `go to nowhere`**
+    *   **游戏响应**：这是一个负向测试。游戏识别了 `GO TO` 语法的意图，但拒绝了无效目的地 `nowhere`，并打印了当前可用的目的地列表。
+    *   **原文引用**：
+        > "The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."
+
+*   **输入 `quit`**
+    *   **游戏响应**：游戏发起退出确认。
+    *   **原文引用**：
+        > "Are you sure you want to quit?"
+
+*   **输入 `yes`**
+    *   **游戏响应**：转录在此处结束，未显示实际退出的系统消息（如 "Bye." 或返回 Shell 提示符），通常这是正常的转录截断。
+
+### 2. 困惑/卡点
+
+1.  **NPC 命名与提示不一致导致卡点**：
+    *   在 **Free Port Landing**，玩家输入的 `ask registrar about destinations` 失败了。
+    *   **原因**：场景描述中出现的 NPC 是 "A woman in travel-grey"，而在“HOW TO TRAVEL”提示中明确写的是 `ASK KEEPER ABOUT DESTINATIONS`。游戏中并没有名为 "Registrar" 的角色被引入或定义。玩家如果按照常识猜测“登记员/注册官”可能是管理港口的角色，会很自然输入 `REGISTRAR`，但游戏拒绝了这一猜测，要求玩家必须精确知晓别名 `KEEPER`。对于初次接触的玩家，这是一个轻微的认知摩擦点。
+
+2.  **`CHOOSE TYphi` 的映射困惑**：
+    *   玩家输入 `choose typhi` 后，响应文本提到 "You swear to Abteilung Stille"。
+    *   **困惑**：在进入 Hall of Medicine 时，提示给出的选项是 `CHOOSE CRADLE`, `CHOOSE CELESTIAL`, 或 `CHOOSE MARTYRS`。`TYPHI` 和 `ABTEILUNG STILLE` 是首次出现的术语。虽然这在 RPG 中可能是“别名”机制（Alias），但在没有 `EXAMINE` 或 `LOOK` 提示这些别名映射的情况下，直接输入 `typhi` 却能成功宣誓，对于普通玩家来说逻辑跳跃较大。除非 `typhi` 是 `Stille` 的公开别名，否则显得隐藏过深。
+
+3.  **`GO TO` 目的地列表的完整性**：
+    *   当执行 `go to nowhere` 时，游戏打印了 15 个目的地。其中包含了 `STILLE`。结合之前的宣誓结果，玩家现在属于 `Stille` 阵营，那么 `GO TO STILLE` 应该是合法的。但在之前的 `Free Port Landing` 提示中，`HOW TO TRAVEL` 部分只列举了 `UNDEAD COURT` 和 `MARKET` 作为示例，没有列出全量列表，迫使玩家去尝试或猜测。
+
+### 3. 缺陷/Bug
+
+*   **缺少对无效 `GO TO` 目标的友好错误处理（轻微）**：
+    *   当输入 `go to nowhere` 时，游戏直接打印了全量目的地列表。这在 UX 上是可接受的（作为一种提示），但如果目标是让游戏显得严谨，通常会先说 "You can't go there yet" 或 "No such destination"，然后才列出列表。目前的响应 "The concordance charts..." 略带叙事色彩，稍显生硬，但不算 Bug。
+
+*   **`ASK REGISTRAR` 未识别为模糊匹配或别名**：
+    *   如前所述，`REGISTRAR` 对于港口场景是一个合理的语义猜测（Registrar of Port），但游戏直接返回 `You can't see any such thing.`。
+    *   **缺陷分析**：Inform 7 强大的 NLP 引擎本可以将 "Registrar" 设置为 "Keeper" 的别名，或者在 `You can't see any such thing` 后追加提示 "Perhaps you mean KEEPER?"。目前的输出对于依赖语境猜测的玩家不够友好。
+
+*   **`CHOOSE TYphi` 的潜在逻辑漏洞**：
+    *   如果在 Hall of Medicine 的文本中明确写着 "Three roads... south to Medicine... Inside, each faction keeps a recruiter... CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS"，那么 `TYPHI` 作为有效指令而不在文档中提及，属于**文档与代码实现不同步**。如果 `TYPHI` 是 `STILLE` 的别名，应该在游戏说明书或场景描述中有所暗示，否则这是隐藏机制。
+
+*   **未观察到的缺陷**：
+    *   转录中未测试 `EXAMINE`, `SEARCH`, `LOOK AT` 等命令的响应。
+    *   转录中未测试未宣誓状态下使用 `GO TO` 的拒绝响应（虽然初始文本提到了 "until then GO TO is refused"，但实际操作流程中玩家先宣誓了，所以未观察到拒绝后的具体文案）。
+
+### 4. 可玩性评分
+
+**评分：7/10**
+
+**理由**：
+核心机制（宣誓 -> 解锁传送）清晰且反馈即时，叙事风格独特（冷峻、哥特式现代感）。主要扣分点在于 NPC 别名（Registrar vs Keeper）的提示不足，以及隐藏选项（Typhi/Stille）缺乏前期铺垫，导致新手可能感到困惑或错过路线。
+
+### 5. 给开发者的一条具体建议
+
+**建议**：在 `Free Port Landing` 的场景描述或 `HOW TO TRAVEL` 提示中，将 `ASK KEEPER ABOUT DESTINATIONS` 修改为更具描述性或包含别名的形式，或者在玩家输入错误的 NPC 名字（如 `REGISTRAR`）时，增加启发式提示。
+
+**具体实施代码逻辑（Inform 7 伪代码思路）**：
+1.  将 "Keeper" 在 Free Port Landing 场景中的别设为 "Registrar" 或 "Port Authority"。
+2.  或者，添加一个 `Ask about wrong person` 规则，当玩家询问 `REGISTRAR` 时，响应："The woman in travel-grey doesn't answer to that title, but she is the **Keeper** who maintains the standards. Try ASK KEEPER."
+
+这样既能保留 "Keeper" 的术语一致性，又能降低玩家的认知门槛，避免死胡同。
+
+
+################ 用例：prologue-choice ################
+
+你好，我是 Agnes-3.0-flash，由 Sapiens AI 开发。以下是基于提供的《SoMe-Universe: The Ten Banners》实机转录及命令序列的严谨评测报告。
+
+### 1. 事实复述
+
+根据提供的命令序列与游戏输出对照，玩家的操作及游戏响应如下：
+
+*   **命令 1: `s`**
+    *   **玩家意图**：向南移动。
+    *   **游戏响应**：玩家从“Singularity”（奇点）移动到“Hall of Medicine”（医学殿堂）。
+    *   **关键输出**：
+        > "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners..."
+        > "When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS."
+
+*   **命令 2: `choose cradle`**
+    *   **玩家意图**：选择“Cradle”（摇篮派系）。
+    *   **游戏响应**：角色宣誓加入 Cradle，触发剧情转折，并传送到“Free Port Landing”（自由港登陆处）。
+    *   **关键输出**：
+        > "You swear to the Cradle."
+        > "The war arranges itself around your oath... The Keeper's road-map appears in your satchel."
+        > "The circuit of the Ten Banners begins."
+        > "Free Port Landing ... On the chart table is a Rationality Protocol pamphlet."
+
+*   **命令 3: `take pamphlet`**
+    *   **玩家意图**：拿取手册。
+    *   **游戏响应**：物品获取成功。
+    *   **关键输出**：
+        > "Taken."
+
+*   **命令 4: `banners`**
+    *   **玩家意图**：查看派系进度。
+    *   **游戏响应**：显示当前状态，10个派系均未获得（not yet won），尽管玩家已宣誓 Cradle，但列表中 Cradle Sigil 仍显示为 "not yet won"。
+    *   **关键输出**：
+        > "Banners: 0 delivered, 0 in hand, 10 not yet won."
+        > "Cradle Sigil - not yet won."
+
+*   **命令 5: `n`**
+    *   **玩家意图**：向北移动（根据常见方向约定或游戏内提示 N/S 可用）。
+    *   **游戏响应**：**未观察到移动成功的描述**。输出仅包含通用旅行提示，没有描述新房间或状态变化。
+    *   **关键输出**：
+        > "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go."
+        > *注意：此处没有出现类似 "You have walked into..." 的房间描写，也没有错误提示，暗示移动可能未发生或处于无效状态。*
+
+*   **命令 6: `quit`**
+    *   **玩家意图**：退出游戏。
+    *   **游戏响应**：触发确认退出提示。
+    *   **关键输出**：
+        > "Are you sure you want to quit?"
+
+*   **命令 7: `yes`**
+    *   **玩家意图**：确认退出。
+    *   **游戏响应**：转录在此处结束，**未观察到**退出后的最终输出（如 "Goodbye" 或系统返回提示符）。
+
+### 2. 困惑/卡点
+
+*   **BANNERS 状态与剧情逻辑矛盾**：
+    玩家在 `Hall of Medicine` 执行 `choose cradle` 后，游戏明确输出 "You swear to the Cradle." 并触发了传送至 Free Port 的剧情。然而，随后执行 `banners` 命令时，列表显示 "Cradle Sigil - not yet won."。这造成了逻辑困惑：宣誓是否等同于获得 Sigil？如果宣誓只是步骤之一，那么当前进度是多少？如果宣誓应当立即赋予首个 Sigil，则状态显示错误。
+*   **方向移动 `n` 的静默失败/无效化**：
+    在 Free Port Landing，游戏提示 "HOW TO WALK: directions still work where roads exist"。但玩家输入 `n` 后，**没有**出现新的房间描述（如 "You walk north..."），也没有出现 "There is no road here" 之类的错误提示，而是直接输出了一段关于 "GO TO" 的通用旅行指引。这使得玩家无法判断 `n` 指令是被忽略、失败，还是导致了不可见的状态变化。
+*   **Swearing 与 Winning 的界限模糊**：
+    在 Hall of Medicine 中，提示说 "When one wins you over: CHOOSE..."。但宣誓后并未立即获得对应派系的“获胜”状态（Banners 列表全红），这暗示“宣誓”只是进入主线的第一步，而非实际占领该派系。但对刚宣誓的玩家来说，看到自己宣誓的派系仍显示 "not yet won" 会产生困惑。
+
+### 3. 缺陷/Bug
+
+*   **Banners 状态更新缺失（潜在逻辑Bug）**：
+    玩家已完成 `choose cradle` 宣誓，但 `banners` 列表中 "Cradle Sigil" 仍显示 "not yet won"。
+    *   *证据*：
+        > "You swear to the Cradle." ...
+        > ">Banners: 0 delivered, 0 in hand, 10 not yet won."
+        > "Cradle Sigil - not yet won."
+    如果设计意图是宣誓后应获得 "in hand" 或 "won" 的状态，则此处存在状态机未更新的Bug。如果宣誓不等于获得Sigil，则游戏文案在 `choose` 后的反馈 "You swear to the Cradle" 可能误导玩家认为已获得该势力支持，而 Banners 的显示又否定了这一点。
+*   **方向指令 `n` 响应不明确（UI/UX缺陷）**：
+    输入 `n` 后，游戏未提供明确的反馈（无论是成功移动、失败提示还是无效指令警告），而是重复了通用提示。
+    *   *证据*：
+        命令 `n` 后，输出仅为：
+        > "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go."
+        缺乏 "You cannot go north from here" 或 "You have walked into [Room Name]" 的关键信息，导致玩家无法确定当前空间位置是否发生变化。
+*   **退出流程中断（转录截断或Bug）**：
+    玩家输入 `quit` 得到确认提示，输入 `yes` 后，转录戛然而止。
+    *   *证据*：
+        最后一行输出为：
+        > "Are you sure you want to quit?"
+        输入 `yes` 后，**未观察到**标准的退出结束符（如 "Goodbye." 或 glk 解释器的退出提示）。这可能是转录截取不完整，也可能是游戏在确认退出时崩溃或无响应。
+
+### 4. 可玩性评分
+
+**评分：6/10**
+**理由**：游戏引入了宏大的叙事和清晰的UI指引（How to Play），但在核心交互逻辑（宣誓与进度的关系）和空间移动反馈上存在明显的模糊性和潜在的状态不一致，导致玩家在初期即遇到困惑。
+
+### 5. 给开发者的一条具体、可落地的改进建议
+
+**建议：明确区分“宣誓（Swearing）”与“获得徽章（Winning Sigil）”的状态，并修复方向移动的反馈机制。**
+
+*   **具体操作**：
+    1.  在 `choose cradle` 成功后，如果设计意图是宣誓后应自动获得该派系的第一个徽章或标记为 "In Hand"，请修改状态机，使 `banners` 列表中 "Cradle Sigil" 显示为 "In Hand" 或 "Won"，并在宣誓时输出明确提示，例如："You now hold the Cradle Sigil."
+    2.  如果宣誓仅为主线触发器，不授予即时徽章，请在 `banners` 列表中增加备注或修改提示语，例如在 "Cradle Sigil - not yet won" 下方增加 "(You have sworn to the Cradle; complete their trial to win the Sigil)"，以避免玩家误以为宣誓无效。
+    3.  对于方向移动，当玩家输入 `n` 而当前房间无北方出口时，必须输出明确的否定响应，例如："There is no road north from the Free Port Landing. Use GO TO for distant travel." 而非静默忽略或仅显示通用提示。
+
+
+################ 用例：recruiters ################
+
+根据提供的《SoMe-Universe: The Ten Banners》实机转录及命令序列，以下是严谨的试玩评测报告：
+
+### 1. 事实复述
+
+依据玩家实际输入的命令序列，游戏响应如下：
+
+*   **输入 `> n`**
+    *   **游戏响应**：玩家进入 **Unseen Crown's domain**（疾病堡垒/看不见王冠的领域）。
+    *   **关键输出**：描述了六个招募者（Archaea, Fear, Pale Masquerade, Undead Court, Department of Silence, Abyssal Legion）。提示可以通过 `CHOOSE` 命令宣誓，并列举了六个可选阵营。
+*   **输入 `> choose undead court`**
+    *   **游戏响应**：系统识别该命令。
+    *   **关键输出**：“The Count regards you... 'Welcome to the field.' You swear to the Undead Court.”（伯爵注视着你……你向亡灵庭院宣誓）。
+    *   **状态变更**：“The Singularity seals itself... The circuit of the Ten Banners begins. Free Port Landing”（奇点关闭，战争地图开启，玩家传送至自由港）。此时获得了“concordance”（契约/通行权），可以使用 `GO TO` 命令。
+*   **输入 `> go to undead court`**
+    *   **游戏响应**：玩家传送至 **Blood Court**（亡灵庭院/血之法庭）。
+    *   **关键输出**：“The manifest takes your word, and the concordance carries you... Blood Court”。描述了三位新娘：Budapest（布达佩斯）、Bucharest（布加勒斯特）、Belgrade（贝尔格莱德）以及 Count Dracula（德古拉伯爵）。
+*   **输入 `> ask budapest about secret`**
+    *   **游戏响应**：Budapest 回应了关于“秘密”的问题。
+    *   **关键输出**：Budapest 谈论了“Nightfall”（夜幕/停电计划），提到“forty-seven substations, seventy-two hours”（47个变电站，72小时），并解释了这是“deterrence”（威慑）。
+*   **输入 `> ask budapest about recruiter`**
+    *   **游戏响应**：Budapest 回应了关于“recruiter”（招募者/门卫少女）的问题。
+    *   **关键输出**：Budapest 解释说那是“Rota duty”（轮换任务），每世纪一次，目的是“teaches patience”（磨练耐心）并让新人“feeding on conversation”（通过对话吸取养分）。
+*   **输入 `> ask belgrade about secret`**
+    *   **游戏响应**：Belgrade 回应了关于“secret”（秘密）的问题。
+    *   **关键输出**：Belgrade 揭示了“medical secret”（医学秘密）：“The Frenchman's vaccine works on our disease.”（法国人的疫苗对你们的疾病有效）。提到 Count Dracula 对此印象深刻，甚至会对疫苗“bow”（鞠躬）。
+*   **输入 `> quit`**
+    *   **游戏响应**：系统询问确认。
+    *   **关键输出**：“Are you sure you want to quit?”（你确定要退出吗？）
+*   **输入 `> yes`**
+    *   **游戏响应**：游戏结束，无后续输出。
+
+### 2. 困惑/卡点
+
+*   **初始移动后的逻辑跳跃**：
+    *   在Singularity房间，指南说“Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel”。
+    *   玩家输入 `n` 后，直接进入了“Unseen Crown's domain”并看到了所有六个阵营的招募者列表。这里存在轻微的描写矛盾：指南暗示Singularity到Disease Citadel是单向或特定的，但`n`命令直接触发了进入该领域并展示所有阵营的机制，而非单纯的房间描述。不过游戏文本通过“walked into the Unseen Crown's domain”进行了合理化解释。
+*   **Ask 命令的对象切换**：
+    *   玩家在 `Blood Court` 中先问 `Budapest` 两个问题，然后问 `Belgrade`。游戏正确识别了不同的NPC（新娘们），没有混淆对象。
+    *   然而，`ask belgrade about secret` 的响应内容非常具体地指向了“vaccine”和“Count Dracula”，这与Budapest之前提到的“deterrence/substations”形成了不同的叙事线（一个侧重基础设施控制，一个侧重生物武器/医学）。虽然逻辑上成立，但玩家需要自行拼凑不同新娘的秘密是否互斥或互补。
+*   **“Recruiter” 指代不明**：
+    *   在 `ask budapest about recruiter` 中，Budapest 提到了“the girl at the gate”。如果玩家在Singularity的“Unseen Crown's domain”里看到的“gum-chewing girl in a sailor suit (the Abyssal Legion)”是指向亡灵庭院招募者，那么这里的逻辑是通顺的；但如果玩家认为“recruiter”是通用的，这里可能会产生轻微困惑，因为Budapest将其特定化为“Rota duty”和“feeding on conversation”。
+
+### 3. 缺陷/Bug
+
+*   **无观察到的致命Bug**：
+    *   所有输入的命令（移动、选择、询问、退出）都得到了预期的文本反馈。
+    *   `GO TO` 功能在宣誓后正常工作。
+    *   NPC 对话逻辑连贯，未出现“无响应”或“乱码”。
+*   **潜在的 UX 问题（非Bug，但值得关注）**：
+    *   在 `Singularity` 房间，游戏提示 `CHOOSE <patron>` 的例子包括 `CHOOSE CRADLE` 或 `CHOOSE VIBRIO`，但列表中展示的阵营名是 `Undead Court` 等。玩家输入 `choose undead court` 成功了，说明系统做了同义词映射。但如果玩家输入 `choose undead`（省略Court）或 `choose dracula`，系统是否也会接受？转录中未测试边界情况，但当前命令序列未表现出错误。
+    *   **缺失的房间描述细节**：在 `Blood Court` 中，描述提到“what is preserved in the glass better left undescribed”。这是一个典型的恐怖游戏手法，但作为严谨评测，这是设计意图，非Bug。
+
+### 4. 可玩性评分
+
+**评分：9/10**
+
+**理由**：文字风格极佳，沉浸感强，信息密度高且清晰；命令系统（移动、询问、选择）响应精准，没有明显的逻辑断层或死路，世界观构建扎实。
+
+### 5. 给开发者的建议
+
+**具体可落地的改进建议**：
+在 `Blood Court` 房间描述中，虽然提到“Three Brides flank him - Budapest, Bucharest, Belgrade”，但在玩家执行 `ask [name] about [topic]` 时，游戏目前直接给出回应，**缺少了 NPC 的动作反馈或视觉锚定**。
+
+*   **现状**：`> ask budapest about secret` -> 直接输出Budapest的台词。
+*   **建议**：在输出Budapest的台词前，增加一句简短的动态描写，例如：*“The Budapest Bride turns from the stair, her jade pin catching the dry light.”* 然后再接台词。
+*   **目的**：增强空间感。目前玩家只是在“读”对话，加上动作描写可以让玩家感觉到是在与特定位置的角色互动，而非仅仅调取数据库中的字符串，从而提升文字冒险的临场感。
+
+
+################ 用例：smoke ################
+
+### 1. 事实复述
+
+基于提供的命令序列与游戏转录文本，逐条复盘如下：
+
+1.  **玩家输入 `s`**
+    *   **玩家意图**：向南移动。
+    *   **游戏响应**：游戏输出显示进入“Hall of Medicine”（医厅）。描述中列出了三个招募者：Crade（重金石神庭代理人）、Celestial Corps（天军）和 Lab Martyrs（实验室烈士）。游戏提示可以通过 `CHOOSE` 宣誓或 `ASK` 提问。
+
+2.  **玩家输入 `choose vibrio`**
+    *   **玩家意图**：尝试向 Vibrio 宣誓。
+    *   **游戏响应**：**逻辑错位**。游戏输出并未显示选择了 Vibrio，而是显示了一名女性角色“Salute”（敬礼），背景是“abyss”（深渊），台词提到“Water is life...”，并明确宣告：“You swear to the Abyssal Legion.”（你向深渊军团宣誓）。随后剧情跳转，获得地图，Singularity 封闭，玩家被传送至“Free Port Landing”。
+
+3.  **玩家输入 `banners`**
+    *   **玩家意图**：查看旗帜/进度状态。
+    *   **游戏响应**：输出显示“Banners: 0 delivered, 0 in hand, 10 not yet won.”（交付0，手持0，未获10）。列表中列出了10个特定的象征物（如 Cradle Sigil, Abyssal Pennant 等），状态均为“not yet won”。
+
+4.  **玩家输入 `n`**
+    *   **玩家意图**：向北移动。
+    *   **游戏响应**：游戏输出一行旅行提示：“Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go.”（行走、游泳或航行——清单更快。使用 GO TO 目的地，或告诉守护者你要去哪。） *注意：此处没有显示新的房间描述，仅显示了帮助性提示。*
+
+5.  **玩家输入 `quit`**
+    *   **玩家意图**：退出游戏。
+    *   **游戏响应**：游戏询问确认：“Are you sure you want to quit?”
+
+6.  **玩家输入 `yes`**
+    *   **玩家意图**：确认退出。
+    *   **游戏响应**：转录在此处结束（通常 Glk 会随后关闭窗口，但转录未记录后续关闭过程）。
 
 ---
 
 ### 2. 困惑/卡点
 
-1.  **移动逻辑与剧情跳变矛盾**：
-    *   起始提示明确说明：“Two gates stand open - SOUTH to the Hall of Medicine, **NORTH to the Disease Citadel**.”
-    *   然而，玩家输入 `n` 后，游戏输出却是 “>You have walked into the **Unseen Crown's domain**. Six banners crown the dark hall...”
-    *   **卡点**：玩家期望去“Disease Citadel”，但实际进入了“Unseen Crown's domain”并遇到了包括 Dracula 在内的六个招募者。这两个地点在描述中似乎不同（一个是具体堡垒，一个是六色旗帜大厅）。更奇怪的是，进入该大厅后，游戏**立即自动**执行了与 Count 的对话并完成了宣誓，跳过了玩家主动 `ASK` 或 `CHOOSE` 的交互环节，尽管提示语中建议 “Court any of them before you swear”。这种自动宣誓让玩家困惑：我是被强制宣誓了吗？还是我的 `n` 命令触发了某个隐藏事件？
+*   **宣誓对象与实际结果不符（严重逻辑断层）**：
+    *   玩家在“Hall of Medicine”执行 `choose vibrio`。根据第一步的游戏提示，该房间里的可选目标是 `CHOOSE CRADLE`, `CHOOSE CELESTIAL`, 或 `CHOOSE MARTYRS`。
+    *   **混淆点**：“Vibrio”（维布里奥菌）是医学/生物学概念，可能对应“Cradle”或“Martyrs”的某种隐喻，但游戏未建立直接映射。更关键的是，游戏响应却是宣誓给“Abyssal Legion”（深渊军团，通常与海洋/水有关，如第二步提到的“Water is life”）。
+    *   **原文证据**：输入 `choose vibrio` 后，输出为 `You swear to the Abyssal Legion.`。这在逻辑上是不连贯的：玩家在医厅输入了一个非本厅列出的名字，却宣誓给了一个看似属于“水/深渊”阵营的势力。
 
-2.  **`choose undead court` 的无效响应**：
-    *   玩家在 `n`（已自动宣誓并离开）之后，又输入了 `choose undead court`。
-    *   转录中**完全没有**该命令的任何输出反馈。既没有说 “You have already sworn...”，也没有说 “Command not understood”，甚至没有复述房间描述。
-    *   **卡点**：玩家无法判断之前的自动宣誓是否成功，或者这个后续输入是否被系统忽略。沉默的响应（Silent Response）在文字冒险中通常意味着错误，但缺乏报错信息导致玩家困惑。
-
-3.  **退出确认的时序异常**：
-    *   “>Are you sure you want to quit?” 出现在 `n` 命令的最后一行输出中。
-    *   通常，退出确认应发生在玩家输入 `quit` 之后。
-    *   **卡点**：玩家必须理解，这个确认提示是跟随 `n` 移动事件一起触发的，还是系统预渲染的？如果玩家在 `n` 之后输入其他命令（如 `look`），是否会取消这个未完成的退出流程？由于缺乏中间状态，玩家无法确定当前的交互模式（是处于“等待退出确认”状态，还是正常游戏状态）。
-
-4.  **`yes` 后的静默**：
-    *   输入 `yes` 后，转录直接结束。
-    *   **卡点**：没有标准的“游戏结束”消息。玩家不确定是程序崩溃、正常静默退出，还是转录截断。
+*   **移动指令 `n` 的响应模糊**：
+    *   玩家在 Free Port Landing 输入 `n`。游戏没有进入新房间，而是重复了关于使用 `GO TO` 或告知 Keeper 的提示。
+    *   **原文证据**：`>Walk, swim, or sail - the manifests are faster...`
+    *   **困惑**：玩家可能认为 `n` 会移动，但游戏似乎在暗示当前枢纽点（Hub）不允许简单的方向键移动，或者“North”在此处没有道路。缺乏对“为什么不能向北走”的物理描述（如“北边是悬崖”或“北边无门”）。
 
 ---
 
 ### 3. 缺陷/Bug
 
-1.  **【严重】自动宣誓逻辑缺陷**：
-    *   在 `n` 命令中，玩家仅移动进入大厅，游戏却直接输出：“The Count regards you... You swear to the Undead Court.”
-    *   这违反了文字冒险游戏的基本交互原则。即使设计为“快速旅行”或“触发式剧情”，也应给予玩家选择权或至少展示一个中间状态（如“您看到 Count Dracula，是否与他交谈？”）。
-    *   此外，起始提示说 Northern Gate 通向 "Disease Citadel"，但实际进入的是 "Unseen Crown's domain"（包含 Undead Court, Fear Technology 等）。**地点名称与入口提示不符**，属于逻辑/地图数据错误。
+*   **Bug 1：无效/错误目标导致的错误宣誓（逻辑漏洞）**
+    *   **现象**：在 Hall of Medicine，指令列表明确写着 `CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS`。玩家输入 `choose vibrio`（一个未列出的、甚至可能是错误拼写或非当前有效目标的名字），游戏竟然成功触发了宣誓流程，并且宣誓对象变成了 `Abyssal Legion`。
+    *   **缺陷分析**：
+        1.  游戏未验证输入是否在有效列表中。
+        2.  即使允许模糊匹配，`vibrio` 与 `Abyssal` 的关联极弱，这看起来像是硬编码的错误映射或调试残留。
+        3.  这导致玩家跳过了正常的招募互动（如 `ASK THE PRECEPTOR`），直接进入了主线，破坏了“Court any of them before you swear”的玩法承诺。
 
-2.  **【严重】命令无响应（Silent Drop）**：
-    *   `choose undead court` 命令后无任何输出。
-    *   在 Inform 7 等引擎中，如果玩家已经宣誓，再次选择通常会报错或提示状态变更。此处完全静默，表明命令解析器可能存在 Bug，或者该命令在处理完自动宣誓后，被错误地标记为“无操作”且未生成错误/状态提示。
+*   **Bug 2：BANNERS 状态与剧情不同步**
+    *   **现象**：玩家已成功宣誓给 `Abyssal Legion`（原文：`You swear to the Abyssal Legion.`），但随后执行 `banners` 时，`Abyssal Pennant` 的状态显示为 `not yet won`。
+    *   **原文证据**：
+        *   宣誓成功：`You swear to the Abyssal Legion.`
+        *   状态查询：`Abyssal Pennant - not yet won.`
+    *   **缺陷分析**：如果“Swear”等同于“Win”该旗帜，那么状态应为 `in hand` 或 `won`。如果“Swear”只是第一步，还需要后续任务才能获得 Pennant，游戏未在宣誓后提示这一区别，导致玩家困惑为何宣誓后旗帜列表仍显示“未获”。
 
-3.  **【中等】退出流程异常**：
-    *   “>Are you sure you want to quit?” 作为 `n` 命令的一部分输出，是严重的 UI/UX 逻辑错误。退出确认应由 `quit` 命令专门触发，不应混入移动描述中。
-    *   `yes` 后无结束提示，可能是转录抓取不完整，但也可能是游戏在静默关闭时丢失了“Bye”文本，缺乏闭环体验。
-
-4.  **【轻微】提示符混淆**：
-    *   转录中 `>Are you sure you want to quit?` 使用了 `>` 提示符。根据说明，`>` 是游戏输出。这意味着游戏输出了一行“询问句”，但并没有暂停等待输入，而是继续输出了吗？
-    *   结合 `yes` 是下一个玩家输入，说明游戏确实在等待输入。但问题在于，这个询问出现在 `n` 的移动结算中，而非 `quit` 之后。如果玩家先输入 `look` 再输入 `yes`，游戏逻辑是否会错乱？这是一个潜在的竞态条件（Race Condition）或状态机 Bug。
+*   **Bug 3：移动指令无实质响应**
+    *   **现象**：在 Free Port Landing 输入 `n`，游戏未进行空间移动，也未给出简单的“你不能向北走”的否定反馈，而是重新输出一段通用的旅行帮助文本。
+    *   **原文证据**：`>Walk, swim, or sail - the manifests are faster.`
+    *   **缺陷分析**：对于方向键输入，标准的文字冒险游戏行为应是“你没有向北走的路”或类似的空间否定。当前行为像是把方向键当成了触发帮助系统的按钮，体验生硬。
 
 ---
 
@@ -90,576 +512,161 @@
 
 **评分：3/10**
 
-**理由**：核心交互逻辑存在严重断裂——移动命令直接触发强制宣誓并跨越多级剧情，导致玩家的主动选择权（ASK/CHOOSE）被剥夺或变得无意义；后续的重复选择命令无反馈，且退出流程时序错乱，使得基础的游戏回路（移动-交互-退出）均无法正常闭环。
+**理由**：核心逻辑存在严重断裂（输入 `choose vibrio` 导致错误的 `Abyssal` 宣誓），且状态同步错误（宣誓后旗帜未更新），使得玩家难以建立对游戏规则的基本信任，早期体验充满误导性。
 
 ---
 
 ### 5. 给开发者的一条具体、可落地的改进建议
 
-**修复自动宣誓与地点不匹配的逻辑 Bug**：
+**建议：修复 `CHOOSE` 命令的目标验证与状态同步逻辑。**
 
-1.  **修正入口描述**：将 `n` 方向的出口描述从 "NORTH to the Disease Citadel" 修改为 "NORTH to the Unseen Crown's Domain"，或者确保 `n` 方向确实进入 Disease Citadel，而 Unseen Crown's Domain 需要通过其他路径到达。
-2.  **移除或条件化自动宣誓**：在 "Unseen Crown's domain" 房间中，玩家进入后应只描述场景和可见的招募者。不应在 `n` 移动的瞬间自动执行 "You swear to the Undead Court"。
-    *   建议：让玩家显式输入 `choose undead court` 或 `ask dracula about joining` 来触发宣誓。
-    *   如果设计意图是“快速开始”，请提供一个明确的确认步骤，例如：“Dracula beckons you. Shall you swear your oath now? (Y/N)”，并在玩家输入 `Y` 后才执行宣誓和传送至 Free Port。
-3.  **为无效命令添加反馈**：如果玩家在新宣誓后再次输入 `choose undead court`，游戏应返回 “You have already sworn your oath to the Undead Court.” 而非静默。
-
-
-################ 用例：full-walkthrough ################
-
-这是一个非常严谨的文字冒险游戏（GIFG）评测任务。基于你提供的《SoMe-Universe: The Ten Banners》真实实机转录文本，我将严格遵循“事实复述”、“困惑/卡点”、“缺陷/Bug”、“可玩性评分”及“改进建议”的结构进行评审。
-
-**特别说明**：由于转录文本中段标注了 `...[中部省略]...`，我将基于**可见部分**和**命令序列的逻辑对应关系**进行评审。对于省略部分，若无法从前后文确证游戏的具体回应，我将标记为“未观察到”或基于上下文推断其必然发生的情节，但绝不虚构具体对话。
-
----
-
-### 1. 事实复述：玩家输入与游戏关键回应对照
-
-以下按照命令序列时间轴梳理，仅引用转录中真实出现的文本。
-
-| 玩家输入命令 | 游戏关键回应（引用/概括转录原文） |
-| :--- | :--- |
-| `s` | 进入 Hall of Medicine。游戏提示："You are in the Singularity... Two gates stand open - SOUTH to the Hall of Medicine..." 随后显示 "You have walked into the Hall of Medicine..." |
-| `choose cradle` | 游戏执行了誓言。输出："The Generalizer lifts the honey-gold AIRE flame... You swear to the Cradle." 并伴随剧情描写："The war arranges itself around your oath... The Keeper's road-map appears in your satchel." |
-| `take pamphlet` | **注意**：转录中此处紧接着是 `go to cradle` 前的动作。在 Free Port Landing 描述中提到 "On the chart table is a Rationality Protocol pamphlet." 但玩家随后去买了东西。*纠正*：查看命令序列，`take pamphlet` 是在 `choose cradle` 之后立即执行的。但在转录中，`choose cradle` 后直接进入了 Singularity 的封印剧情。这里存在逻辑跳跃，或者 `take pamphlet` 被静默处理或发生在未显示的行。*再看转录*：实际上 `take pamphlet` 位于 `choose cradle` 和 `go to cradle` 之间。但在转录文本中，`choose cradle` 后直接是 "The Singularity seals itself..." 没有显示 "Taken"。这可能是一个隐性Bug或转录缺失，但后续玩家未再提及 pamphlet。 |
-| `go to cradle` | 移动至 Cradle Outer Court。输出："Cradle Outer Court... Stairs rise to the Inner Court..." |
-| `n` | 移动至 Inner Court（转录中未显示房间名，但触发了 "The Generalizer rises before you have finished bowing."）。 |
-| `attend` (第一次) | 触发讲座流程。输出："The preceptors walk the outer doctrine first. CORTICAL SELECTION..." |
-| `attend` (第二次) | 触发后续讲座。输出："Then the inner doctrine. MEDULLARY SELECTION..." |
-| `ask generalizer about autoimmunity` | 触发核心对话。输出："The Generalizer smiles for exactly one second. 'Correct... Take the Cradle's sigil to your Accord...'" 获得物品 "Cradle Sigil"。 |
-| `go to market` | 移动至 Port Market。输出："Port Market... On the stall are some Aegis gauntlets, an offering bundle (closed) and a Pasteur vial." |
-| `buy gauntlets` | 购买成功。输出：">You slide a token across the stall... 'Bind, trap, escort,' he says." |
-| `buy bundle` | 购买成功。输出：">A token changes hands. 'Strand for HeLa, treat for Laika, cheese for the mouse,' the Factor recites." |
-| `buy vial` | 购买成功。输出：">The last token goes across the stall. 'Show it to the Count himself,' the Factor says again." |
-| `go to landing` | 移动至 Free Port Landing。输出房间描述。 |
-| `report` | 提交第一个信物。输出："You lay each banner at the standards... 1 of the ten standards now fly." |
-| `go to martyrs` | 移动至 Shrine of the Knitting Mouse (Lab Martyrs)。输出房间描述。 |
-| `open bundle` | 打开之前购买的包。输出：">You open the offering bundle, revealing a rna strand, a dog treat and a cheese wheel." |
-| `take strand` | 物品获取。输出：">Taken." |
-| `take treat` | 物品获取。输出：">Taken." |
-| `take cheese wheel` | 物品获取。输出：">Taken." |
-| `put strand on altar` | 放置物品。输出：">You lay the RNA strand at the altar's head, where the luminosity gathers." |
-| `put treat on altar` | 放置物品。输出：">The treat vanishes before it quite touches the stone, and from the treeline comes one bark, warm as a stove." |
-| `put cheese wheel on altar` | 放置物品。输出：">You set the little wheel before the bronze mouse... Three offerings, three silences... Take a needle." 获得物品 "Knitting Needle" (转录称 "One of the two bronze needles... rests in your hand")。 |
-| `go to landing` | 移动回 Free Port Landing。 |
-| `report` | 提交第二个信物。输出："...2 of the ten standards now fly." |
-| `go to dawn pioneer` | 移动至 Dawn Pioneer Deck。输出："Dawn Pioneer Deck... On the writing desk is a codex log." |
-| `take codex` | 物品获取。输出：">Taken." |
-| `go to celestial corps` | 移动至 Celestial Corps 大厅（转录省略了具体房间描述，直接显示下一步动作）。 |
-| `ask vesalius about soul` | **未观察到**具体对话输出，转录此处被 `...[中部省略]...` 截断。但根据后续逻辑，这是获取 Celestial 信物的必要步骤。 |
-| `go to pantheon` | 移动至 Heavy Metal Pantheon（转录省略）。 |
-| `wear gauntlets` | 穿戴之前购买的装备。输出应为 "Worn." 或类似确认，转录省略。 |
-| `decipher codex` | 关键动作。输出应为成功解读，获取 Celestial 信物。转录省略。 |
-| `go to landing` | 移动回中心。 |
-| `report` | 提交第三个信物。输出：“未直接显示数字”，但根据后续逻辑，这是第3个。 |
-| `go to celestial corps` | 再次移动。 |
-| `show codex to vesalius` | 展示物品。输出：“未观察到”具体对话，转录省略。 |
-| `go to landing` | 移动回中心。 |
-| `report` | 提交第四个信物。输出：“未观察到”具体数字，转录省略。 |
-| `go to archaeology` | 移动至新地点（转录省略）。 |
-| `take sample` | 物品获取（转录省略）。 |
-| `give sample to division chief` | 剧情互动（转录省略）。 |
-| `go to stille` | 移动至 Stille（疑似 Stillness 或类似地名，转录省略）。 |
-| `accuse stern quartermaster` | 剧情互动（转录省略）。 |
-| `go to fear technology` | 移动至新地点（转录省略）。 |
-| `ask director about sightings` | 剧情互动（转录省略）。 |
-| `go to masquerade` | 移动至 Masquerade Hall。 |
-| `ask pale masquer about symptoms` (x2) | 对话（转录省略）。 |
-| `unmask pale masquer` | 关键剧情：揭露身份。获得 Masquerade 信物（转录省略，但后续 Report 会体现）。 |
-| `go to undead court` | 移动至 Undead Court。 |
-| `show vial to count dracula` | 展示 Pasteur vial。输出："Attenuated," Dracula says... "The Court receives you as received - marked, not turned." 获得物品 "Black disc of spread wings" (Undead Court Seal)。 |
-| `go to abyssal fleet` | 移动至 Abyssal Deck。 |
-| `ask octopus admiral about cannons` | 对话。输出：">A demonstration, then. ... The hulk folds inward... Take the pennant to your Accord..." 获得物品 "Wet swallow-tailed pennant" (Abyssal Seal)。 |
-| `go to landing` | 移动回中心。 |
-| `report` | 提交剩余信物。输出："On the standard rack are a Vesalius Medallion, a Quicksilver Ampoule, a Knitting Needle and a Cradle Sigil." (注：这里列举了已获得的信物，暗示之前的 Report 可能未逐一展示所有中间状态，或者这是最后一次汇总展示)。 随后输出："10 of the ten standards now fly." 游戏结束。 |
-| `banners` | 查看进度。输出："*** The Ten Banners stand raised over the Pericardium Free Port. ***" |
-| `score` | 查看分数。输出未显示，但通常 Inform 7 会显示总分。 |
-
-*注：由于转录中段大量省略，上述中间步骤的“关键回应”依据命令逻辑推导其必然发生的状态，但引用原文仅限可见部分。*
-
----
-
-### 2. 困惑/卡点 (Confusion / Bottlenecks)
-
-1.  **物品获取与使用的断点**：
-    *   在 `go to market` 后，玩家购买了 `gauntlets`、`bundle` 和 `vial`。
-    *   `gauntlets` 在 `go to pantheon` 后使用 `wear`。
-    *   `vial` 在 `go to undead court` 后使用 `show`。
-    *   `bundle` 在 `go to martyrs` 后打开。
-    *   **卡点**：在 Free Port Landing 的初始描述中，提到 "On the chart table is a Rationality Protocol pamphlet." 玩家执行了 `take pamphlet`，但在后续任何 Room 描述或 Inventory 中，该 pamphlet 从未再次被提及或被使用。它似乎是一个“死物品”或教程后的遗留物，容易让严谨的玩家困惑：“我拿了它，但它没任何用？”
-
-2.  **REPORT 机制的不透明性**：
-    *   第一次 `report` 后，游戏显示 "1 of the ten standards now fly."
-    *   第二次 `report` 后，显示 "2 of the ten standards now fly."
-    *   最后一次 `report` (在 Abyssal Fleet 之后) 前，游戏列出信物堆，然后直接显示 "10 of the ten standards now fly."
-    *   **困惑**：中间省略的 3 到 9 个信物的 `report` 状态未被展示。玩家无法直观看到每完成一个大厅，标准旗是如何逐一升起的。对于追求“走完十个大厅”成就感的玩家，这种跳变（Jump-cut）削弱了仪式感。
-
-3.  **指令语法的晦涩**：
-    *   游戏提示使用 `ASK <someone> ABOUT <topic>`。
-    *   玩家输入了 `ask generalizer about autoimmunity`。
-    *   但在后续省略部分，玩家输入了 `ask director about sightings` 和 `ask octopus admiral about cannons`。
-    *   **卡点**：`octopus admiral` 是全称还是简称？游戏接受度未知（转录未显示中间部分，
-
-
-################ 用例：go-to-concordance ################
-
-这是一个基于你提供的《SoMe-Universe: The Ten Banners》实机转录的严谨评测报告。
-
-### 1. 事实复述
-
-根据提供的【命令序列】与【转录文本】，逐条复述如下：
-
-1.  **玩家输入 `s`**
-    *   **游戏响应**：玩家从“Singularity”（奇点）移动至“Hall of Medicine”（医学大厅）。
-    *   **关键输出**：`"You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners..."`。列出了四位招募者：medullary preceptor (Cradle), fleet navigator (Celestial Corps), element-priest (Heavy Metal Pantheon), quiet keeper (Lab Martyrs)。提示可以 `ASK THE PRECEPTOR ABOUT JOINING` 或 `CHOOSE`。
-
-2.  **玩家输入 `choose typhi`**
-    *   **游戏响应**：玩家似乎选择了名为“Typhi”的派系/角色（转录中未出现“Typhi”字样，但后续文本显示玩家宣誓效忠了“Amtabteilung Stille”）。
-    *   **关键输出**：`"The Amanuensis stamps gall-coloured wax... 'The perfect spy does not know she is a spy,' she says."` 以及 `"You swear to Abteilung Stille."`。随后显示 `"The Keeper's road-map appears in your satchel."` 和 `"The Singularity seals itself... The gates open. A launch skiff carries you to neutral waters."`。
-    *   **注意**：此处逻辑略有跳跃。在医学大厅，通常预期的 `CHOOSE` 对象是 Cradle, Celestial, Pantheon 或 Martyrs。`CHOOSE TYPHI` 被接受并触发了宣誓流程，最终结果是加入了 `Abteilung Stille`（通常与间谍/情报相关，可能与 Typhi 有关联，或 Typhi 是 Stille 的别名/上级）。玩家并未直接询问招募者，而是直接输入了 `choose` 命令。
-
-3.  **玩家输入 `ask registrar about destinations`**
-    *   **游戏响应**：拒绝。
-    *   **关键输出**：`"You can't see any such thing."`
-    *   **分析**：此时玩家位于“Free Port Landing”（自由港登陆点，见下一条输出的开头背景）。在 Landing 处，并没有名为“registrar”（注册员）的角色，而是“Keeper”（看守者/标准持有者）或“A woman in travel-grey”（穿灰衣的女人）。玩家试图询问不存在的对象，游戏给予了标准否定回复。
-
-4.  **玩家输入 `go to undead court`**
-    *   **游戏响应**：成功传送。
-    *   **关键输出**：`"The manifest takes your word, and the concordance carries you along the great vessels of the war."` 随后进入 `"Blood Court"` 描述。
-    *   **关键输出**：详细描述了 Undead Court（血庭），包括 Dracula 和三新娘（Budapest, Bucharest, Belgrade）的描写。
-
-5.  **玩家输入 `look`**
-    *   **游戏响应**：重新显示当前房间描述。
-    *   **关键输出**：重复输出 `"Blood Court"` 的段落，包括 Dracula 和三新娘的状态描述。
-
-6.  **玩家输入 `go to cradle`**
-    *   **游戏响应**：成功传送。
-    *   **关键输出**：`"The manifest takes your word..."` 随后进入 `"Cradle Outer Court"`。
-    *   **关键输出**：描述了 Medulla 的外部庭院，提到 `Stairs rise to the Inner Court` 和 `a road runs east toward the sound of surf and money`。
-
-7.  **玩家输入 `look`**
-    *   **游戏响应**：重新显示当前房间描述。
-    *   **关键输出**：重复输出 `"Cradle Outer Court"` 的段落。
-
-8.  **玩家输入 `go to nowhere`**
-    *   **游戏响应**：拒绝。
-    *   **关键输出**：`"The concordance charts the port landing and every banner's hall. Destinations: LANDING, MARKET, CRADLE, CELESTIAL CORPS, PANTHEON, MARTYRS, CONCOURSE, ARCHAEOLOGY, STILLE, FEAR TECHNOLOGY, MASQUERADE, UNDEAD COURT, CASTLE, ABYSSAL FLEET."`
-    *   **分析**：游戏没有直接说“不能去那里”，而是列出了所有有效的目的地（Concordance 列表）。这暗示“nowhere”不在列表中，因此被拒绝。
-
-9.  **玩家输入 `quit`**
-    *   **游戏响应**：询问确认。
-    *   **关键输出**：`"Are you sure you want to quit?"`
-
-10. **玩家输入 `yes`**
-    *   **游戏响应**：结束会话（转录在此处截止，通常意味着游戏正常退出）。
-
----
-
-### 2. 困惑/卡点
-
-1.  **招募者与派系的映射模糊（`choose typhi` 事件）**：
-    *   在“Hall of Medicine”中，游戏提示 `CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS`（注意：Heavy Metal Pantheon 被排除，因为它在西边且只有活人能见）。
-    *   玩家输入了 `choose typhi`。Typhi 并不在上述提示的选项中，也不明显对应 Stille（尽管 Stille 是选项之一，但并未在提示中列出，或者 Typhi 是 Stille 的代号）。
-    *   **卡点**：对于新玩家，如果不知道 `Typhi` 是 `Stille` 的别名或上级，可能会感到困惑。虽然游戏接受了输入并推进了剧情（宣誓 Stille），但缺乏中间的解释性反馈（例如：“Typhi is known as the leader of Stille...”）。玩家直接从“看到招募者”跳到了“宣誓 Stille”，中间缺少对 Typhi/Stille 关系的显式确认。
-
-2.  **`ask registrar` 的无果而终**：
-    *   玩家到达 Free Port Landing 后，输入 `ask registrar about destinations`。游戏回复 `You can't see any such thing`。
-    *   **卡点**：在 Landing 的描述中，只提到了 `A woman in travel-grey` 和 `The Keeper`。没有提到“Registrar”。如果玩家误以为这里的 NPC 是 Registrar（可能来自其他部分的记忆或通用词汇），游戏没有提供纠错提示（例如：“You see no one called a registrar here, only the Keeper.”），而是给出了通用的否定。这可能导致玩家不知道应该 `ASK KEEPER`。虽然系统文本后续提示了 `ASK KEEPER ABOUT DESTINATIONS`，但这是在 `go to undead court` 成功后的输出中才重新强调的（或者是在 Landing 的初始描述中，但转录显示玩家在 Landing 时并未看到那段“HOW TO TRAVEL”的详细提示，那段提示似乎是在宣誓后、进入 Landing 时作为系统消息弹出的，但转录中它在 `choose typhi` 之后、`go to undead court` 之前出现。仔细看转录，`HOW TO TRAVEL` 部分是在 `Free Port Landing` 描述中出现的。玩家在 `ask registrar` 时，应该已经看到了 `ASK KEEPER ABOUT DESTINATIONS` 的提示，但仍然尝试了 `registrar`。这表明玩家可能在寻找更具体的“注册处”功能，而游戏未识别该意图）。
-
-3.  **`go to nowhere` 的响应方式**：
-    *   玩家输入无效目的地 `nowhere`。游戏没有简单回复 `You can't go there`，而是打印了整个目的地列表。
-    *   **卡点**：这是一种“教导式”响应。虽然有帮助，但如果列表很长，可能会打断流畅性。不过在此语境下，它有效地纠正了玩家的错误尝试，并告知了可用选项。不算严重卡点，但略显啰嗦。
-
----
-
-### 3. 缺陷/Bug
-
-1.  **`choose typhi` 与 Stille 的映射缺乏即时反馈**：
-    *   **问题**：玩家输入 `choose typhi`，游戏直接跳到 `"You swear to Abteilung Stille"`。
-    *   **证据**：转录中 `"The Amanuensis stamps gall-coloured wax... You swear to Abteilung Stille."`
-    *   **缺陷**：如果没有前置知识，玩家可能误以为 Typhi 是一个独立的、未被提及的派系，或者游戏静默地将 Typhi 映射到了 Stille。更好的设计是：`"You ask for Typhi. The Amanuensis nods: 'Typhi leads Stille. We are one.' You swear to Abteilung Stille."`。目前的静默映射可能导致“我是怎么加入 Stille 的？”的困惑，尤其是当初始提示中并未列出 Stille 作为主要选项（提示中只列了 Cradle, Celestial, Martyrs，并说明 Pantheon 不在场，但未明确说 Stille 是第四个可选项，虽然暗示了）的情况下。
-
-2.  **`ask registrar` 的 NPC 命名不一致**：
-    *   **问题**：在 Free Port Landing，NPC 被描述为 `A woman in travel-grey` 和 `The Keeper`。玩家尝试 `ask registrar`。
-    *   **证据**：`"You can't see any such thing."`
-    *   **缺陷**：游戏未识别“registrar”为任何已知 NPC。如果“Registrar”是该游戏中常见的术语（例如在 Singularity 或其他地方出现过），这里应该将其映射到 `Keeper` 或提供澄清。如果是玩家误记，游戏可以稍微具体一点，如 `"You see no registrar here. Perhaps the Keeper holds the records?"`。目前的通用拒绝略显生硬。
-
-3.  **`go to cradle` 后的位置描述轻微混淆**：
-    *   **问题**：玩家 `go to cradle`，游戏显示 `Cradle Outer Court`。描述中提到 `Stairs rise to the Inner Court`。
-    *   **潜在缺陷**：通常 `GO TO <place>` 会传送至该地点的核心或入口。这里传送到 Outer Court 是合理的。但描述中说 `a road runs east toward the sound of surf and money`，暗示 Outer Court 有通往外界的路。然而，玩家此时是通过 Concordance 来的，是否可以直接走这条路？转录中未测试 `go east` 在 Cradle Outer Court 的行为，因此无法判断是否存在出口矛盾。但作为评测员，指出这点为“未观察到潜在的路径逻辑”而非确定的 Bug。
-
-4.  **`go to nowhere` 的响应冗余**：
-    *   **问题**：对于无效输入，游戏输出完整的目的地列表。
-    *   **证据**：`"The concordance charts... Destinations: LANDING, MARKET..."`
-    *   **缺陷**：如果玩家多次输入无效地点，这会造成屏幕大量重复信息。建议仅在玩家首次尝试无效地点或输入 `HELP` 时显示完整列表，后续可简短提示 `"Invalid destination. Type HELP for the list."`。
-
----
-
-### 4. 可玩性评分
-
-**评分：8/10**
-
-**理由**：游戏叙事氛围浓厚，Concordance 机制（通过 `GO TO` 快速旅行）设计直观，有效地连接了分散的叙事节点。主要扣分点在于招募/宣誓环节的静默映射（Typhi -> Stille）缺乏解释性反馈，以及 NPC 交互中对非标准名称（registrar）的处理较为生硬，未提供引导性纠错。
-
----
-
-### 5. 给开发者的具体、可落地的改进建议
-
-**建议：优化 `CHOOSE` 
-
-
-################ 用例：prologue-choice ################
-
-## 1. 事实复述
-
-根据提供的命令序列与转录记录，玩家输入与游戏关键回应如下：
-
-1.  **输入 `s`**
-    *   **游戏回应**：玩家进入“Hall of Medicine”。游戏输出描述：“You have walked into the Hall of Medicine... a medullary preceptor (the Cradle of Aukin)...”。此时玩家位于医学大厅，面临多个招募者。
-2.  **输入 `choose cradle`**
-    *   **游戏回应**：触发剧情对话，角色“The Generalizer”发言：“Then learn this first, traveler: the stricter the definition of self...”。随后系统提示：“You swear to the Cradle. The war arranges itself around your oath...”。
-    *   **状态变化**：玩家获得地图（Keeper's road-map appears in your satchel），Singularity（奇点）封锁，玩家被传送至“Free Port Landing”（自由港登陆点）。
-3.  **输入 `take pamphlet`**
-    *   **游戏回应**：简单确认：“Taken.”。玩家取走了之前描述中提到的“Rationality Protocol pamphlet”。
-4.  **输入 `banners`**
-    *   **游戏回应**：列出10个旗帜的状态，显示为“Banners: 0 delivered, 0 in hand, 10 not yet won.”，并逐一列出如“Cradle Sigil - not yet won.”等。尽管玩家已宣誓效忠Cradle，但系统判定该Sigil仍未“won”（未获得/完成）。
-5.  **输入 `n`**
-    *   **游戏回应**：输出提示文本：“Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go.”。这表明向北移动不可行或未被映射为实际位移，而是触发了导航提示信息。
-6.  **输入 `quit`**
-    *   **游戏回应**：询问确认：“Are you sure you want to quit?”。
-7.  **输入 `yes`**
-    *   **游戏回应**：转录在此处结束，未显示退出成功的信息（通常退出后解释器会返回提示符，但本用例只关注游戏内输出，此处视为触发退出流程）。
-
-## 2. 困惑/卡点
-
-*   **“Cradle Sigil”状态逻辑矛盾**：玩家已执行 `choose cradle` 并宣誓效忠，系统也提示“The war arranges itself around your oath”，但在随后的 `banners` 命令中，“Cradle Sigil”仍显示为“not yet won”。玩家可能困惑于：既然已宣誓，为何对应的Sigil/Seal尚未获得？是否需要进行额外操作（如寻找特定物品或与特定NPC交互）才能将“宣誓”转化为“持有Seal”？
-*   **方向 `n` 的无响应/非位移**：在Free Port Landing，玩家尝试 `n`（北）移动，游戏未描述任何房间变化或新地点，而是输出一段关于使用 `GO TO` 或询问 Keeper 的导航指南。虽然这符合“枢纽站”的设计逻辑，但对于习惯即时位移指令的玩家来说，方向键失效且仅返回提示语，可能造成短暂的交互困惑。
-*   **招募者与旗帜名称的不完全对应**：在 Hall of Medicine，招募者包括 “element-priest (the Heavy Metal Pantheon)”，但紧接着说明该 Pantheon “waits west... not here to recruit”。然而 `banners` 列表中出现了 “Sulfur Sigil” 和 “Stille Seal” 等，这些具体名称与招募者头衔（Cradle, Celestial, Pantheon, Martyrs）之间的映射关系在初始文本中不够直观，玩家可能需要自行猜测哪个招募者对应哪一面旗帜。
-
-## 3. 缺陷/Bug
-
-*   **未观察到明显的死路或崩溃**：
-    *   命令 `take pamphlet` 正确响应。
-    *   命令 `banners` 正确列出状态。
-    *   命令 `n` 虽然没有位移，但给出了合理的替代方案提示，属于设计意图而非Bug。
-    *   `quit` 命令正确触发确认提示。
-*   **潜在的UI/逻辑问题（非严格Bug，但体验不佳）**：
-    *   在宣誓后，游戏未明确告知玩家“如何获得 Cradle Sigil”。`banners` 命令显示其“not yet won”，但当前场景（Free Port Landing）中，没有直接的指令提示玩家下一步该怎么做才能拿到第一个 Seal。玩家必须依赖通用的 `ASK KEEPER ABOUT DESTINATIONS` 或 `GO TO` 指令，这对于新手来说缺乏引导。
-*   **缺失的房间描述响应**：
-    *   玩家输入 `n` 时，如果玩家期望看到“north is blocked”或“there is a wall here”这样的标准文本冒险反馈，当前的纯导航提示语显得略微突兀，但没有实质性错误。
-
-## 4. 可玩性评分
-
-**评分：7/10**
-**理由**：核心循环清晰（宣誓->获得地图->前往枢纽->解锁GO TO），叙事氛围浓厚，但初始阶段对“宣誓后如何获得首个Seal”的引导不足，导致 `banners` 状态与玩家预期存在断层。
-
-## 5. 给开发者的一条具体、可落地的改进建议
-
-**建议在宣誓成功后，立即在剧情对话中补充具体的“下一步行动”指引。**
-
-*   **现状**：宣誓后，系统提示 “The Keeper's road-map appears in your satchel. (Type BANNERS at any time to review the campaign.)”，但玩家查看 `banners` 后发现 Cradle Sigil 仍未获得，且不知如何获得。
-*   **改进**：在 “You swear to the Cradle.” 之后，增加一行提示，例如：“The Generalizer nods. 'Your oath is recorded, but the Sigil itself lies in the depths of the Medicine Hall. Speak with the Preceptor directly to claim it, or travel to his Hall of Resonance in the pericardium.’” 这样能明确告知玩家：虽然整体局势已改变，但具体的“Sigil”需要通过特定交互（如 Ask Preceptor about the Sigil 或 GO TO Medicine Hall）来获取，消除 `banners` 列表中的状态歧义。
-
-
-################ 用例：recruiters ################
-
-1. 事实复述
-
-基于提供的命令序列与转录文本，以下是对应玩家输入与游戏回应的逐条分析：
-
-1.  **玩家输入：`n`**
-    *   **游戏回应：** 游戏未显示“移动”或“进入房间”的即时描述，而是直接输出了 Unseen Crown 领域的宏大场景描述（`>You have walked into the Unseen Crown's domain...`），随后列出了六个招募者及其阵营。注意：此处游戏逻辑似乎是直接跳转到了招募大厅，而非简单的向北移动描述。
-
-2.  **玩家输入：`choose undead court`**
-    *   **游戏回应：** 游戏描述了 Dracula 的登场及宣誓过程：`>The Count regards you across the dry fountains... You swear to the Undead Court.` 随后触发了剧情转折，主角被传送至 Free Port Landing（自由港），并获得了地图（`The Keeper's road-map appears in your satchel.`）。系统提示现在可以使用 `GO TO` 命令进行跳转。
-
-3.  **玩家输入：`go to undead court`**
-    *   **游戏回应：** 游戏确认传送：`>The manifest takes your word, and the concordance carries you along the great vessels of the war.` 接着描述了 Blood Court（Blood Court/Undead Court）的环境与人物：`Blood Court ... Dracula holds the far end... Three Brides flank him - Budapest, Bucharest, Belgrade...`
-
-4.  **玩家输入：`ask budapest about secret`**
-    *   **游戏回应：** Budapest 回应了关于“使命”和“时间表”的问题，但并未直接回答“secret（秘密）”这个词，而是谈起了 Nightfall 任务（`"Mission, then. Nightfall is not a metaphor..."`）。*注：转录中该段文字前缀为 `>`，根据转录格式说明，这是游戏输出，即 Budapest 的台词。*
-
-5.  **玩家输入：`ask budapest about recruiter`**
-    *   **游戏回应：** Budapest 回答了关于“gate girl”的问题（`>"The girl at the gate?" A flicker of something like warmth...`）。这对应了询问“recruiter”的意图，解释了守门女孩的角色（Rota duty）。
-
-6.  **玩家输入：`ask belgrade about secret`**
-    *   **游戏回应：** 这里出现了一个显著的逻辑错位。玩家询问的是 **Belgrade**，但游戏输出的回应却是 **Budapest** 的台词：`>"You want the medical secret," she says... "The Frenchman's vaccine works on our disease..."`。转录中没有任何 Belgrade 说话的描述，也没有 Belgrade 对“secret”的回应。
-
-7.  **玩家输入：`quit`**
-    *   **游戏回应：** `>Are you sure you want to quit?`（标准退出确认）。
-
-8.  **玩家输入：`yes`**
-    *   **游戏回应：** （转录在此结束，通常此时游戏进程终止）。
-
-2. 困惑/卡点
-
-*   **NPC 回应混淆/归属错误：**
-    在第 6 步命令 `ask belgrade about secret` 中，游戏输出了一段明确指向 **Budapest** 的对话（`"You want the medical secret," she says...`）。然而，在前一步中，玩家已经问过 Budapest 关于 recruiter 的问题，Budapest 回答了关于女孩的问题。现在玩家问 **Belgrade**，游戏却再次输出了 Budapest 风格的内容（或者转录记录时错误地将 Belgrade 的回应标记为了相同的说话人，亦或是 Belgrade 没有反应，游戏错误地复读了之前的逻辑/文本）。
-    *   *引用证据：* 玩家输入 `ask belgrade about secret`，游戏输出 `>"You want the medical secret," she says...`。这里的 "she" 指代不明，且与上一段 Budapest 的回答在语境上缺乏区分。如果 Belgrade 没有说话，游戏不应显示对话；如果 Belgrade 说话了，转录中缺少了 Belgrade 的标识（如 `Belgrade says:` 或类似动作描写），导致玩家困惑这是谁在说话。
-
-*   **命令与输出的非即时对应性：**
-    在 `n` 之后，游戏没有显示标准的 "You move north" 或房间名称变化，而是直接进入了 Unseen Crown 的长篇描述。虽然这在游戏设计中可能合理（快速推进），但在转录中显得突兀，玩家可能不确定是否移动到了正确的房间。
-
-3. 缺陷/Bug
-
-*   **Bug 1：NPC 对话归属错误（严重逻辑/展示缺陷）**
-    *   *现象：* 玩家询问 **Belgrade** 关于 secret，游戏输出了一段以 `"she says"` 开头的对话，内容关于疫苗和 Dracula。
-    *   *分析：* 在 `Blood Court` 描述中，Belgrade 被描述为 `has a physician's hands`。因此，关于“medical secret”的回答很可能**应该由 Belgrade 给出**。然而，转录中显示的文字是 `>"You want the medical secret," she says...`。如果这段文字是 Belgrade 说的，转录缺少了 `Belgrade responds` 或类似的标识，使其看起来像是上一位 NPC（Budapest）继续说话，或者系统错误地将 Belgrade 的回答文本直接粘贴了出来，没有加上名字前缀。
-    *   *更严重的情况：* 如果这段文字确实是 Budapest 说的，那么 Belgrade 对 `ask belgrade about secret` 的回应就**完全缺失**了（静默失败），而游戏错误地重复或误发了 Budapest 的台词。
-    *   *结论：* 无论哪种情况，`ask belgrade about secret` 的响应存在严重的展示或逻辑错误。
-
-*   **Bug 2：命令识别的潜在模糊性**
-    *   *现象：* 在第一步 `n` 之后，游戏直接进入 `Unseen Crown`。但在初始描述中，`Singularity` 向北是 `Disease Citadel`，向南是 `Hall of Medicine`，向西是 `Old Metals`。`Unseen Crown` 是招募大厅。
-    *   *分析：* 如果 `n` 导致进入 `Unseen Crown`，这与初始描述中的方向指引（N/S/W 通往具体势力领域）可能存在冲突，除非 `Unseen Crown` 是一个独立的招募枢纽，且 `n` 是进入该枢纽的特定路径。转录中显示 `n` 后直接进入 `Unseen Crown` 并列出 6 个招募者，这与初始 `Singularity` 描述中提到的 `Two gates stand open - SOUTH... NORTH...` 不完全对应。初始描述说向北是 Disease Citadel，但玩家输入 `n` 后却到了 `Unseen Crown`（包含所有 6 个势力的招募者）。这可能是一个设计上的“快捷入口”或 Bug。
-    *   *引用：* 初始提示 `THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel...` vs 实际结果 `>You have walked into the Unseen Crown's domain... Six banners crown the dark hall...`。
-
-4. 可玩性评分：5/10
-    理由：核心机制清晰，但在关键互动环节（NPC 询问）出现了明显的文本归属错误或逻辑断裂，严重影响了沉浸感和信息获取的准确性。
-
-5. 给开发者的一条具体、可落地的改进建议
-
-**修复 NPC 对话标识缺失问题：**
-在所有 `ASK <NPC> ABOUT <TOPIC>` 的返回结果中，务必在对话文本前明确加上 NPC 的名字或标识符。
-*   **当前错误输出：** `>"You want the medical secret," she says...`
-*   **建议修复输出：** `>Belgrade's hands unclench slightly. "You want the medical secret," she says, her physician's gaze sharp. ...`
-*   **或者：** 确保不同 NPC 的回应不会在转录或游戏内界面中混淆。检查 Belgrade 的对话树，确保 `ask belgrade about secret` 有独立的、正确的回应，且不与 Budapest 的回应重叠或错误归属。
-
-
-################ 用例：smoke ################
-
-基于提供的【真实实机转录】和【命令序列】，以下是针对《SoMe-Universe: The Ten Banners》的严格评测报告。
-
-### 1. 事实复述
-
-根据玩家输入的命令序列与转录内容的对应关系：
-
-1.  **命令：`s`**
-    *   **玩家动作**：玩家尝试向南移动。
-    *   **游戏响应**：游戏输出显示玩家进入了“Hall of Medicine”（医学大厅）。
-        *   原文引用：`>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners...`
-        *   游戏列出了四个招募者：a medullary preceptor, a fleet navigator, an element-priest, and a quiet keeper。
-        *   提示玩家可以使用 `CHOOSE CRADLE`, `CHOOSE CELESTIAL`, or `CHOOSE MARTYRS` 宣誓。
-
-2.  **命令：`choose vibrio`**
-    *   **玩家动作**：玩家试图宣誓给名为 “Vibrio” 的派系。
-    *   **游戏响应**：**出现严重逻辑/名称不匹配错误**。游戏响应显示玩家宣誓给了“Abyssal Legion”（深渊军团），并触发了剧情转折，直接传送到了新地图。
-        *   原文引用：`"Water is life, water is death," she says. ... You swear to the Abyssal Legion.`
-        *   随后发生场景切换：`The Singularity seals itself... Free Port Landing...`
-        *   *注：在医学大厅的列表中并没有出现“Vibrio”或“Abyssal Legion”的招募者，且初始说明中 `CHOOSE VIBRIO` 只是举例（e.g.），但在当前大厅中，游戏似乎将“Vibrio”错误地映射到了“Abyssal Legion”的宣誓逻辑上，或者这是一个未在前文房间描述中明确列出的隐藏分支/Bug。*
-
-3.  **命令：`banners`**
-    *   **玩家动作**：查看旗帜/任务进度。
-    *   **游戏响应**：输出当前状态为 0 delivered, 0 in hand, 10 not yet won。
-        *   原文引用：`>Banners: 0 delivered, 0 in hand, 10 not yet won.`
-        *   列出了所有10个未获得的徽章/旗帜名称，其中包含 `Abyssal Pennant`（深渊旗帜），状态为 `not yet won`。
-        *   *矛盾点：玩家刚刚宣誓给了 Abyssal Legion，但 Banner 列表显示对应 Abyssal 的徽章仍未获得。*
-
-4.  **命令：`n`**
-    *   **玩家动作**：向北移动。
-    *   **游戏响应**：输出通用的移动提示，没有描述新的房间，也没有向北进入任何具体地点的描述。
-        *   原文引用：`>Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go.`
-        *   这看起来像是通用的导航提示，而非进入某个具体房间（如 Disease Citadel）的描述。
-
-5.  **命令：`quit`**
-    *   **玩家动作**：请求退出游戏。
-    *   **游戏响应**：询问确认。
-        *   原文引用：`>Are you sure you want to quit?`
-
-6.  **命令：`yes`**
-    *   **玩家动作**：确认退出。
-    *   **游戏响应**：**未观察到**后续输出（转录在此处截止，或退出成功导致无输出，通常 glk 退出后无输出属正常）。
-
----
-
-### 2. 困惑/卡点
-
-1.  **宣誓对象与徽章状态不同步**：
-    *   玩家在 `choose vibrio` 后，游戏明确叙述 `You swear to the Abyssal Legion` 并解锁了 `GO TO` 功能。
-    *   然而，随后的 `banners` 命令显示 `Abyssal Pennant - not yet won`。玩家已经宣誓，为何对应派系的旗帜依然显示未获得？这造成了进度系统的困惑。
-2.  **`choose vibrio` 的命名一致性**：
-    *   初始教程提到 `CHOOSE VIBRIO` 是示例。但在 Hall of Medicine 房间描述中，招募者描述为 `a quiet keeper (the Lab Martyrs)` 等，并未出现“Vibrio”这一名称。
-    *   当玩家输入 `choose vibrio` 时，游戏却响应了“Abyssal Legion”的宣誓。这意味着“Abyssal Legion”可能对应“Vibrio”这个内部代号，但游戏在房间描述中未明确告知玩家这一对应关系，导致玩家可能无法直观理解为何选择“Vibrio”会触发“Abyssal Legion”的剧情。
-3.  **`n` 命令后的模糊输出**：
-    *   在 `Free Port Landing` 场景中，输入 `n` 后，游戏仅输出了关于使用 `GO TO` 或告诉 Keeper 的通用提示，未描述北方是否有路或进入了哪个房间。这让玩家不确定 `n` 是否有效移动了位置，还是仅仅是一个无效/通用响应。
-
----
-
-### 3. 缺陷/Bug
-
-1.  **房间描述缺失/逻辑断点（Hall of Medicine vs Abyssal Legion）**：
-    *   在 Hall of Medicine 中，文本列出了四个招募者：Crade, Celestial, Heavy Metal, Lab Martyrs。
-    *   文本提示：“The fourth banner - the Heavy Metal Pantheon - is not here to recruit...”。
-    *   然而，玩家成功使用 `choose vibrio` 触发了 `Abyssal Legion` 的宣誓。Abyssal Legion 既不在上述四个招募者名单中，也不在“不在这里招募”的名单中（那说的是 Heavy Metal）。
-    *   **缺陷**：游戏文本暗示 Abyssal 不在医学大厅，但玩家却在此处通过命令成功宣誓了 Abyssal，且直接跳过了 Heavy Metal 的限制逻辑。这属于**文本引导与机制执行的不一致**。
-2.  **Banner 进度未更新**：
-    *   宣誓完成后，`banners` 命令显示所有旗帜均为 `not yet won`。
-    *   通常宣誓是获得旗帜/进度的前提，或者宣誓本身应标记为“in hand”或改变状态。目前状态仍为 0/0/10，暗示宣誓后需要去“REPORT”才能算数，但教程中并未清晰指引“宣誓后立即需要 REPORT”这一逻辑闭环，导致玩家看到宣誓成功却进度未变时的困惑。
-3.  **`n` 命令响应非房间描述**：
-    *   在 `Free Port Landing`，输入方向键 `n` 通常应进入相邻房间。但输出却是通用的导航帮助文本。这可能意味着该方向无路，但游戏没有明确说 “There is no road north”，而是输出了通用的 Travel 提示，容易让指令型玩家误判当前状态。
-
----
-
-### 4. 可玩性评分
-
-**评分：4/10**
-
-**理由**：核心循环（探索->宣誓->解锁传送->收集徽章）设计有趣，但存在严重的文本逻辑断裂（宣誓对象与房间描述不符）和状态同步Bug（宣誓后徽章状态未更新），导致玩家无法准确判断游戏进展，体验受阻。
-
----
-
-### 5. 给开发者的一条具体、可落地的改进建议
-
-**建议：修复 `choose vibrio` 在 Hall of Medicine 中的逻辑映射与房间描述的矛盾。**
-
-*   **具体操作**：
-    1.  如果 **Abyssal Legion** 确实不能在 Hall of Medicine 宣誓，那么 `choose vibrio` 命令应返回错误提示（如 "That recruiter is not present here"），而不是直接触发宣誓剧情并传送。
-    2.  如果 **Abyssal Legion** 可以在 Hall of Medicine 宣誓，则需要在房间描述中明确列出该招募者（例如：“...and a deep-sea watcher (the Abyssal Legion/Vibrio)”），并解释为什么之前的文本说“只有活着的才能见到 Heavy Metal”时，隐含了 Abyssal 也不在这里，或者修改文本以包含 Abyssal。
-    3.  同时，修正 `banners` 命令的逻辑：当玩家宣誓给某个派系后，对应的 Banner 状态应至少更新为 "In Hand" 或类似状态，以便玩家确认宣誓已被系统记录。
+1.  **目标验证**：在 Hall of Medicine，严格限制 `CHOOSE` 命令只能接受当前场景存在的角色代号（`CRADLE`, `CELESTIAL`, `MARTYRS`）。如果玩家输入其他词（如 `VIBRIO`），应返回错误：“在这里你无法向 Vibrio 宣誓。可用的招募者是：Cradle, Celestial, 或 Martyrs。” 而不是默认映射到错误的 `Abyssal` 分支。
+2.  **状态同步**：如果“Swearing to a faction”意味着获得了该势力的旗帜（Pennant），则 `BANNERS` 列表中对应项应立即从 `not yet won` 更新为 `in hand`（或 `sworn`，视游戏设定而定）。若宣誓不等于获得旗帜，请在宣誓成功的输出中明确提示：“你已向 Abyssal Legion 宣誓。要获得 Abyssal Pennant，你还需要 [执行任务X]。”
 
 
 ################ 用例：west-shielded-passage ################
 
 1. 事实复述
 
-*   `> go to market`
-    *   **玩家意图**：前往港口市场。
-    *   **游戏回应**：显示“Port Market”房间描述，提到“On the stall are some Aegis gauntlets...”。
-*   `> buy gauntlets`
-    *   **玩家意图**：购买护腕。
-    *   **游戏回应**：显示动作描述“You slide a token across the stall...”，并得到物品“Aegis gauntlets”。
-*   `> wear gauntlets`
-    *   **玩家意图**：装备护腕。
-    *   **游戏回应**：显示动作描述“You put on the Aegis gauntlets.”。
-*   `> go to singularity`
-    *   **玩家意图**：返回奇点。
-    *   **游戏回应**：显示移动提示“The concordance serves even the unsworn...”，随后进入“Singularity”房间。
-*   `> w`
-    *   **玩家意图**：向西移动。
-    *   **游戏回应**：显示“Pilgrim Turn”房间，描述有Radiology教士和警示牌“TURN BACK, OR COME ARMED”。
-*   `> w`
-    *   **玩家意图**：继续向西移动。
-    *   **游戏回应**：显示“Contaminated Wastes”房间。此时出现Lucifer的对话：“Lucifer does not turn... The Pantheon does not send recruiters... CHOOSE PANTHEON.”
-*   `> w`
-    *   **玩家意图**：继续向西移动（试图进入Cathedral内部）。
-    *   **游戏回应**：此处转录显示直接触发了`choose pantheon`的结果（见下一条命令回应），说明游戏逻辑判定玩家在Wastes房间时若选择招募或尝试深入，即进入招募流程。*注：根据命令序列，这里玩家输入了`w`，但游戏输出直接跳到了招募成功的状态，或者转录在此处省略了“尝试进入Black Cathedral被辐射阻止”的中间步骤，直接展示了招募台词。仔细看转录，`> w` 之后紧接着是 Lucifer 的台词和 `CHOOSE PANTHEON` 的提示，这表明在 Contaminated Wastes 房间里，Lucifer 已经出现并提供了招募选项，或者游戏逻辑将“到达Wastes”等同于“面对招募者”。*
-    *   **修正观察**：仔细看转录流。在`Pilgrim Turn`处，玩家输入`w`到达`Contaminated Wastes`。在`Contaminated Wastes`处，游戏输出了Lucifer的长篇独白和`CHOOSE PANTHEON`提示。随后玩家输入`choose pantheon`（见下一条）。
-    *   **关键点**：玩家在`Pilgrim Turn`时已穿戴Gauntlets。
-*   `> choose pantheon`
-    *   **玩家意图**：宣誓加入黑金属神庭。
-    *   **游戏回应**：显示Lucifer接受誓言：“The Morning Star inclines... You swear to the Heavy Metal Pantheon.”，并提示“The circuit of the Ten Banners begins.”，随后场景切换至“Free Port Landing”。
-*   `> quit`
-    *   **玩家意图**：退出游戏。
-    *   **游戏回应**：显示确认提示“Are you sure you want to quit?”。
-*   `> yes`
-    *   **玩家意图**：确认退出。
-    *   **游戏回应**：转录在此结束（未观察到后续输出）。
+基于提供的命令序列与转录内容，以下是对应的交互记录：
+
+*   **输入**: `go to market`
+    *   **游戏回应**: 显示“Port Market”房间描述。提到“On the stall are some Aegis gauntlets...”以及 Port Factor 的描述。
+*   **输入**: `buy gauntlets`
+    *   **游戏回应**: 玩家滑动代币，Factor 回应：“'Bind, trap, escort,' he says. 'Not warfare. Hostage negotiation.'”
+*   **输入**: `wear gauntlets`
+    *   **游戏回应**: “>You put on the Aegis gauntlets.”（确认装备成功，但转录中未显示状态变化提示，仅显示动作）。
+*   **输入**: `go to singularity`
+    *   **游戏回应**: 提示“>The concordance serves even the unsworn for errands: the Port Market, and the Singularity where the road west begins.”随后进入“Singularity”房间，描述为“After the Big Bang, the Singularity no more exists.”
+*   **输入**: `w`
+    *   **游戏回应**: “>You step off the newborn light and onto the road west.”进入“Pilgrim Turn”。描述提到道路向西分叉，有Radiology clergy，石牌写着“TURN BACK, OR COME ARMED”。出现一名修士阻挡西行道路。
+*   **输入**: `w`
+    *   **游戏回应**: 进入“Contaminated Wastes”。描述提到“Wind moves dust that never settles...”。
+        *   **关键交互**: Lucifer（Morning Star）出现。尽管房间描述是荒原，但叙事直接切入了 Lucifer 的对话：“Lucifer does not turn, but the mirror ripples at your approach...”。
+        *   **招募台词**: Gatekeeper-priest 说道：“'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' ... 'CHOOSE PANTHEON.'”
+*   **输入**: `w`
+    *   **游戏回应**: 此处转录似乎缺失了对第三个 `w` 的显式房间移动反馈，或者该命令被系统忽略/未产生新房间输出。*注：根据转录文本，在 Lucifer 对话后直接跳到了 `choose pantheon` 后的结果。观察转录，在“Contaminated Wastes”描述后紧接着是 Lucifer 的对话，之后玩家输入了 `choose pantheon`。实际上，玩家序列中有三个 `w`，但转录中只显示了一次从 Pilgrim Turn 到 Contaminated Wastes 的移动。第三个 `w` 可能未被显示或被视为无效，因为 Lucifer 的对话紧接着发生。或者，转录将多个 `w` 的效果合并了。仔细看图：`w` -> Pilgrim Turn; `w` -> Contaminated Wastes + Lucifer 对话。第三个 `w` 在转录中没有对应的后续房间变化，直接是 `choose pantheon` 的执行。*
+*   **输入**: `choose pantheon`
+    *   **游戏回应**: Lucifer 回应：“The Morning Star inclines his dripping crown... You swear to the Heavy Metal Pantheon.” 随后获得剧情进展：“The war arranges itself around your oath... The circuit of the Ten Banners begins.” 场景切换至“Free Port Landing”。
+*   **输入**: `quit`
+    *   **游戏回应**: “>Are you sure you want to quit?”
+*   **输入**: `yes`
+    *   **游戏回应**: 转录结束于此（通常意味着游戏退出，但未显示结束画面）。
 
 2. 困惑/卡点
 
-*   **辐射死亡机制未触发**：用例目的是测试“未武装走向Black Cathedral时...被辐射结清死亡”。然而，由于玩家在Market购买了并佩戴了Gauntlets，游戏逻辑判定玩家“Come Armed”，因此**没有触发辐射死亡**，而是顺利在Contaminated Wastes见到了Lucifer并成功宣誓。这导致用例(b)的场景成立，而用例(a)的场景（未武装死亡）在本转录中**未观察到**，因为玩家全程保持武装状态。
-*   **移动逻辑模糊**：在`Contaminated Wastes`房间，玩家输入`w`（第3个w），游戏并未移动到新房间（如Black Cathedral内部），而是直接输出了Lucifer的招募对话。这暗示Black Cathedral的入口或内部就是Wastes房间本身，或者Lucifer在Wastes处拦截。描述中提到“toward a hall that catches the light...”，但移动`w`后停留在Wastes且发生对话，缺乏明确的“进入大厅”的空间感反馈。
+*   **空间逻辑跳跃**: 在“Contaminated Wastes”房间，玩家并未移动到 Black Cathedral 内部， Lucifer 的对话却直接发生。房间描述提到“toward a hall”，但 Lucifer 的出现似乎打破了线性探索，直接触发了“到达”判定。
+*   **命令反馈缺失**: 玩家连续输入 `w` 三次，但转录中只清晰展示了两次房间转换（Singularity -> Pilgrim Turn -> Contaminated Wastes）。第三个 `w` 没有产生新的房间描述，而是直接进入了 Lucifer 的对话交互阶段。这会让玩家困惑：我是还在 Wastes 里，还是已经进入了某个隐形区域？
+*   **“Singularity no more exists”**: 玩家 `go to singularity` 后，房间描述变为“After the Big Bang, the Singularity no more exists.” 这与之前 Singularity 是“universe beginning to explode”的状态形成强烈对比，暗示时间线或叙事机制的特殊性，但缺乏过渡说明。
 
 3. 缺陷/Bug
 
-*   **用例目标偏差**：该用例文件名为`west-shielded-passage.txt`，旨在测试西路剧情。但玩家序列在开始时即`buy gauntlets`且`wear`，直接跳过了“未武装死亡”的负面测试路径。因此，无法验证“未武装时是否被辐射杀死”这一逻辑。
-*   **无缺陷（基于已观察部分）**：在玩家已武装的前提下，从Market到Singularity，再到Wastes，最后宣誓并传送回Landing，流程逻辑自洽，未出现死循环或无响应命令。`HELP`、`SEARCH`等命令未在序列中出现，无法判断其功能。
+*   **未观察到 HELP/EXAMINE 的响应**: 虽然开头提到了 `HELP`，但玩家未输入，无法确认其功能。
+*   **装备反馈单薄**: `wear gauntlets` 仅显示“You put on the Aegis gauntlets.”，没有显示角色属性变化或“你正在穿着...”的状态提示，可能导致玩家不确定装备是否生效。
+*   ** Lucifer 对话触发条件模糊**: 在“Contaminated Wastes”，玩家刚走进房间（第二次 `w`），Lucifer 就说了“The traveler. How patient your kind has become - walking into my hall...”。这表明游戏逻辑判定玩家“已到达” Black Cathedral，但玩家实际位置仍显示为“Contaminated Wastes”。这是一个**叙事与位置状态的不一致**。如果 Lucifer 在 Wastes 里说话合理，他应该提到自己在 Wastes；如果他在 Hall 里说话，那么房间名应该有变化，或者有一个移动命令被吞并了。
+*   **第三个 `w` 无响应**: 如前所述，第三个 `w` 没有产生输出，可能是 Bug，也可能是游戏认为玩家已在 Lucifer 面前，多余的移动被忽略。
 
-4. 可玩性评分 1-10，并附一句话理由。
+4. 可玩性评分 1-10
 
-**评分：8**
-**理由**：剧情反馈清晰，物品-状态-结果链条（买护腕->穿护腕->通过关卡->招募成功）完整且符合预期，但缺乏对负面路径（死亡）的验证，且房间空间移动感稍显扁平。
+**7/10**
+理由：叙事氛围独特（Old Metals / Radiation 主题），招募机制有趣，但空间逻辑（Wastes 与 Hall 的模糊边界）和命令反馈（静默的 `w`）影响了流畅度。
 
-5. 给开发者的一条具体、可落地的改进建议。
+5. 给开发者的一条具体、可落地的改进建议
 
-建议增加**动态状态检查反馈**：当玩家在`Pilgrim Turn`或`Contaminated Wastes`房间尝试向西移动时，若未穿戴Gauntlets，应立即在移动前或移动瞬间给出“辐射伤害”或“死亡”的明确警告/结果，而非静默忽略或仅在到达后触发对话；同时，在`Contaminated Wastes`房间，将Lucifer的出现与“是否武装”解耦，让Lucifer始终存在，但其招募台词（如`CHOOSE PANTHEON`）仅在玩家存活且通过辐射检定后生效，以增强逻辑严密性。
+**建议**: 在“Contaminated Wastes”触发 Lucifer 对话前，增加一个明确的移动反馈或房间变化。例如，将第三次 `w` 的房间输出改为“Black Cathedral Entrance”或保持 Wastes 但明确提示“你走到了一面巨大的镜子前，镜中映出...”，以避免玩家困惑于位置状态与 NPC 对话的不匹配。或者，移除多余的 `w`，让第二次 `w` 直接进入与 Lucifer 的交互场景，确保每个方向指令都有明确的视觉/文本反馈。
+
+---
+
+**额外确认部分：**
+
+**(a) 未武装走向 Black Cathedral 时，是否在到达前被辐射『结清』死亡，且没有 Lucifer 招募台词？**
+*   **未观察到**。本用例中玩家**已经武装**（购买了 Aegis gauntlets 并穿戴）。因此，无法基于此转录判断未武装状态下的表现。
+
+**(b) 若用例是武装（佩戴 Aegis gauntlets）通行，是否顺利走到 Cathedral 并成功 choose Pantheon？**
+*   **是**。
+    *   **武装**: 玩家成功 `buy gauntlets` 和 `wear gauntlets`。
+    *   **通行**: 玩家通过 `w` 穿过 Pilgrim Turn（尽管有修士阻挡，但玩家继续向西进入 Wastes，暗示装甲起到了作用，或者修士只是叙事障碍而非物理障碍，因为玩家成功进入了 Wastes）。
+    *   **Choose Pantheon**: 在 Lucifer 的招募台词 “CHOOSE PANTHEON” 后，玩家输入 `choose pantheon`，游戏确认 “You swear to the Heavy Metal Pantheon” 并推进剧情。
+
+    *注意*: 严格来说，玩家是在“Contaminated Wastes”触发了 Lucifer 的对话并完成选择，而非物理上进入了一个名为“Black Cathedral”的房间。但剧情逻辑上，这被视为“到达”Old Metals 的核心区域并成功宣誓。
 
 
 ################ 用例：west-unshielded-death ################
 
 ### 1. 事实复述
 
-根据提供的命令序列和转录文本，玩家的行动与游戏回应如下：
+根据提供的命令序列与转录内容，逐条分析如下：
 
-1.  **输入 `n`**
-    *   **游戏回应**：玩家进入 "Unseen Crown's domain"（未见之冠的领域）。
-    *   **原文引用**：">You have walked into the Unseen Crown's domain. Six banners crown the dark hall..."
-    *   *注：此处文本似乎直接跳过了 Singularity 到某个特定区域的过渡，或者游戏逻辑允许直接从起点向北进入该区域。*
-
-2.  **输入 `s`**
-    *   **游戏回应**：玩家返回 "Singularity"。
-    *   **原文引用**：">You pass back through the after-image of the Big Bang... Singularity / After the Big Bang, the Singularity no more exists."
-
-3.  **输入 `w`**
-    *   **游戏回应**：玩家进入 "Pilgrim Turn"。
-    *   **原文引用**：">You step off the newborn light and onto the road west. / Pilgrim Turn / The road west forks at a shrine..."
-
-4.  **输入 `w`**
-    *   **游戏回应**：遇到 Radiologist（放射科医师）阻拦。
-    *   **原文引用**：">The Radiologist's staff comes down across the road like a barrier dropping. 'Stop. Hear the whole sentence before you spend your body...'"
-    *   *注：医师警告玩家若未穿戴防护（Aegis gauntlets）前行将付出代价，并建议前往 Aukin 获取装备。*
-
-5.  **输入 `w`**
-    *   **游戏回应**：玩家坚持前行，医师放行但表示悲痛。
-    *   **原文引用**：">The Radiologist does not lower his staff - but he steps aside... 'Stubbornness is also a kind of faith... The Wastes will judge you in steps...'"
-
-6.  **输入 `w`**
-    *   **游戏回应**：进入 "Contaminated Wastes"（污染废土）。
-    *   **原文引用**："> Contaminated Wastes / Wind moves dust that never settles... The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin."
-
-7.  **输入 `w`**
-    *   **游戏回应**：触发死亡剧情。
-    *   **原文引用**：">At the Cathedral's threshold the borrowed light comes due all at once... *** The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. ***"
-    *   *注：玩家因未武装在到达大教堂前被辐射“结清”死亡。*
-
-8.  **输入 `w`**
-    *   **游戏回应**：由于游戏通常已重置或处于死亡状态，此输入无可见的新场景描述（转录中该命令后无新文本输出，可能处于等待重启或静默状态，或者死亡后无法移动）。
-
-9.  **输入 `w`**
-    *   **游戏回应**：同上，无新输出。
-
-10. **输入 `quit`**
-    *   **游戏回应**：无明确转录显示退出确认界面，但通常 Glk 解释器会在此处询问是否退出。
-
-11. **输入 `yes`**
-    *   **游戏回应**：无明确转录显示退出成功，但逻辑上这是响应 quit 的确认。
+*   **输入 `> n`**：
+    *   游戏输出：`>You have walked into the Unseen Crown's domain. Six banners crown the dark hall...`
+    *   说明：玩家向北移动，进入了“The Unseen Crown’s domain”（未见之冠领地），即疾病堡垒/招募大厅。游戏中列出了六个招募者（Archaea, Fear Technology, Pale Masquerade, Undead Court, Department of Silence, Abyssal Legion）。
+*   **输入 `> s`**：
+    *   游戏输出：`>You pass back through the after-image of the Big Bang - the room where everything began, now only a shape in the light.`
+    *   说明：玩家向南移动，返回“Singularity”（奇点/起点）。
+*   **输入 `> w`**：
+    *   游戏输出：`>You step off the newborn light and onto the road west.`
+    *   说明：玩家向西移动，离开奇点，进入“Pilgrim Turn”（朝圣者拐角）。描述了通往西路的景象，包括辐射警示和Radiology修士的阻挡。
+*   **输入 `> w`**：
+    *   游戏输出：`>The Radiologist's staff comes down across the road like a barrier dropping. "Stop. Hear the whole sentence before you spend your body.`
+    *   说明：玩家继续向西，遭遇Radiology修士。修士解释了辐射危害，并指出若未穿戴Aegis手套（Aegis gauntlets）则无法通行，建议去Aukin获取或购买。
+*   **输入 `> w`**：
+    *   游戏输出：`>The Radiologist does not lower his staff - but he steps aside, and the grief in his face is worse than the barrier was. "Stubbornness is also a kind of faith... Walk, then. Walk, and count."`
+    *   说明：玩家再次尝试向西。修士虽然表示“steps aside”（让开），但语气充满悲伤，暗示玩家正在强行闯入无防护区域。
+*   **输入 `> w`**：
+    *   游戏输出：`>Contaminated Wastes Wind moves dust that never settles... The afterglow finds you at once - a warmth in the teeth...`
+    *   说明：玩家进入“Contaminated Wastes”（受污染荒原）。环境描述提到辐射余辉开始影响玩家。
+*   **输入 `> w`**：
+    *   游戏输出：`>At the Cathedral's threshold the borrowed light comes due all at once...`
+    *   说明：玩家试图再次向西，到达Black Cathedral门口。
+*   **输入 `> w`**：
+    *   游戏输出：`*** The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. ***`
+    *   说明：玩家彻底死亡。游戏提示符前无正常房间描述，直接显示死亡总结。
+*   **输入 `> w`**：
+    *   游戏输出：（空）
+    *   说明：由于玩家已死亡，后续移动指令无响应（或处于死亡状态）。
+*   **输入 `> quit`**：
+    *   游戏输出：（转录中未显示确认对话，通常 `quit` 会触发退出提示或直接退出，此处结合下一条 `yes` 推断为游戏询问是否退出）。
+    *   *注：转录中 `quit` 后没有显示文本，直接接 `yes` 的响应。通常 Inform 引擎在 quit 时会问 "Do you really want to quit?"，玩家输入 yes。*
+*   **输入 `> yes`**：
+    *   游戏输出：（转录结束，游戏进程终止）。
 
 ### 2. 困惑/卡点
 
-*   **方向逻辑的突然跳跃**：在 Singularity 时，提示说 "TWO GATES STAND OPEN - SOUTH... NORTH... AND WEST"。玩家输入 `n` 后进入了 "Unseen Crown's domain"，但这似乎不是标准的“Hall of Medicine”或“Disease Citadel”。转录中 `n` 后的房间描述非常独特（六个旗帜，六个招募者），这与 Singularity 描述中提到的 "Inside, each faction keeps a recruiter" 不完全对应，Singularity 描述暗示是单一招募者或需要选择。这里的房间似乎是某种特殊的“枢纽”或错误跳转。
-*   **死亡后的无响应**：在玩家死亡（"Lucifer buried you in glass"）之后，转录显示玩家继续输入了 `w` 和 `w`。通常文本冒险游戏在角色死亡后会提供 `restart` 或 `quit` 选项，或者锁定输入。如果游戏允许在死后继续输入方向键却没有任何反馈（静默），这是一个体验卡点，玩家不知道游戏是否还活着。
-*   **医师的劝阻无效化**：医师明确说 "The road west has no third option" 且警告不穿戴后果，但玩家输入 `w` 后医师直接放行（"steps aside"）。这里的逻辑是“允许你走，但让你死”，这在叙事上是合理的，但在玩法上缺乏强制阻挡机制，仅靠叙事警告，对新玩家可能不够直观（直到死后才知道）。
+*   **修士对话逻辑的模糊性**：
+    *   在第二次 `> w` 时，修士说 "he steps aside"（他让开了）。这在直观上可能被误解为“道路已通行，可以安全进入”。然而，前文刚强调 "wearing nothing. That is not pilgrimage; that is donation."（赤身裸体进入不是朝圣，是捐赠/牺牲）。
+    *   玩家在未获取任何装备（如 Aegis gauntlets）的情况下，通过连续输入 `w` 强行通过。游戏机制允许玩家“无视”非NPC阻挡的对话警告继续移动，这可能导致新手困惑：*“修士让开了，为什么我还是死在这里？”*
+*   **死亡地点的矛盾感**：
+    *   修士警告说辐射会“take its tax”，且建议“Earn the gauntlets... and I will... walk you to the door.”
+    *   玩家实际是在“Cathedral's threshold”（大教堂门槛处）被“Lucifer buried you in glass”（路西法将你埋入玻璃中）。这里的“Lucifer”作为致死实体出现，与开头提到的六大阵营（Archaea, Fear, etc.）没有直接的招募者对应关系（除非 Lucifer 是未列出的特定剧情实体或 Old Metals 的人格化代表），容易造成叙事上的断层。
 
 ### 3. 缺陷/Bug
 
-*   **Bug/逻辑漏洞：死亡后输入无响应**：在 "The Old Metals took their tax..." 消息之后，玩家输入了两次 `w`，转录中没有任何游戏输出。这既不像标准的死亡后菜单（如 "You are dead. Type RESTART or QUIT."），也不像是系统挂起。如果 Glk 解释器没有捕捉到后续输入，或者游戏引擎在死亡后未正确处理输入缓冲区，这是一个 Bug。
-*   **描述缺失：Black Cathedral 本身**：玩家目标是 "Black Cathedral"，但在死亡场景中，只描述了 "At the Cathedral's threshold... the door keeps"。玩家实际上**没有进入**大教堂内部，而是在门口被杀。因此，关于大教堂内部的描述（如果有招募者或特定房间）在此用例中未观察到。
-*   **指令识别**：转录中未显示 `HELP` 或 `EXAMINE` 等命令的响应，因为玩家只使用了方向键。无法判断其他命令是否正常工作。
+*   **缺乏明确的“阻挡”机制或状态反馈**：
+    *   当玩家在 `Contaminated Wastes` 移动时，游戏仅提供了环境描述（"warmth in the teeth"），没有明确的 HP 扣除提示或警告状态变化（如 "Your shielding level is 0%".
+    *   由于是纯文字，玩家很难量化“还差多少距离就会死”，只能凭直觉尝试。
+*   **命令识别范围有限（基于本用例）**：
+    *   本用例仅测试方向键。未观察到 `HELP`, `SEARCH`, `EXAMINE` 的响应。
+    *   *注意*：虽然这是用例脚本导致的，但作为评测，需指出如果在实际游玩中，玩家输入 `SEARCH` 寻找防护装备，游戏是否会有反应？转录中未提供此信息，故标记为**未观察到**。
+*   **剧情逻辑漏洞（针对本题要求 a）**：
+    *   **确认 (a)**：未武装走向 Black Cathedral 时，是否【在到达前】就被辐射『结清』死亡？
+        *   **观察结果**：玩家是在 "At the Cathedral's threshold"（门槛处）死亡的。这算作“到达”该房间后的第一步或触发点，而非在之前的 "Contaminated Wastes" 房间中途死亡。
+        *   **是否出现 Lucifer 招募台词**：转录中死亡信息为 `*** The Old Metals took their tax. Lucifer buried you in glass... ***`。这里提到了 Lucifer，但**没有**出现 `'Alive, and armored, and arrived'` 或 `'CHOOSE PANTHEON'` 等招募/成功通关台词。这符合“未武装则死”的逻辑，但 Lucifer 的出现略显突兀（通常 Lucifer 是特定阵营或结局代表，这里作为 Old Metals 的代名词或执行者出现）。
+    *   **确认 (b)**：若用例是武装通行，是否顺利走到 Cathedral？
+        *   **观察结果**：本用例**未测试**武装通行路径（没有 `CHOOSE CRADLE` 或购买手套的命令）。因此无法确认 (b) 的情况。
 
-### 4. 可玩性评分 1-10
+### 4. 可玩性评分
 
-**评分：6**
-**理由**：叙事氛围强烈，死亡判定机制符合“未武装则死”的剧情设定，但死亡后的静默无反馈和方向逻辑的轻微跳跃（Unseen Crown 房间）降低了流畅度。
+**评分：6/10**
 
-### 5. 给开发者的改进建议
+**理由**：
+地图探索流畅，辐射区的氛围描写出色（"vitrified glass", "radium afterglow"），但缺乏对玩家状态的即时反馈（如辐射累积值），导致“强行突破”时缺乏紧张的博弈感，更像是“猜步数”，且修士的对话暗示“让开”与后续的必死结局之间存在引导上的矛盾。
 
-**建议**：在玩家因辐射死亡后，立即显示明确的系统提示，例如：
-```
-*** YOU ARE DEAD ***
-The Old Metals have claimed you.
-Type QUIT to exit, or RESTART to try again with Aegis gauntlets.
-```
-**具体落地**：检查游戏引擎中 `death` 状态的处理逻辑。当辐射伤害导致生命值归零时，确保 `glk_put_char` 或等效函数输出了上述提示，并重置或锁定方向键输入，防止玩家对着“尸体”输入 `w` 而得到无响应的体验。
+### 5. 给开发者的一条具体、可落地的改进建议
 
----
-
-### 额外确认
-
-**(a) 未武装走向 Black Cathedral 时，是否【在到达前】就被辐射『结清』死亡，且【没有】出现 Lucifer 的招募台词？**
-
-*   **是，在到达前死亡**：转录显示玩家在 "Contaminated Wastes" 之后，下一次移动（`w`）时触发死亡信息 "At the Cathedral's threshold... Lucifer buried you in glass"。玩家并未进入大教堂内部房间，也未遇到 Lucifer 进行对话。
-*   **没有招募台词**：转录中**未出现** 'Alive, and armored, and arrived' 或 'CHOOSE PANTHEON'。这些台词属于“成功武装通行”后的剧情，本用例是“未武装死亡”用例，因此不出现这些台词是**正确且预期**的行为。
-
-**(b) 若用例是武装（佩戴 Aegis gauntlets）通行，是否顺利走到 Cathedral 并成功 choose Pantheon？**
-
-*   **未观察到**：本用例 `west-unshielded-death.txt` 专门测试**未武装**路径。玩家未使用任何命令获取或穿戴 Aegis gauntlets（如 `CHOOSE CRADLE` 或购买）。因此，武装通行及成功 `choose Pantheon` 的情节在本转录中**不存在**，也未观察到。
+**建议**：在 `Contaminated Wastes` 房间增加动态状态描述。
+*   **当前问题**：玩家进入 Wastes 后，描述是静态的。
+*   **改进方案**：根据玩家是否持有 "Aegis gauntlets" 属性动态改变描述。
+    *   **若未持手套**：`"The air tastes like copper. Your skin prickles where the gamma rays hit. You feel unshielded and fragile."` 或者在 `LOOK` 时显示 `>You are not wearing shielding. The radiation is accumulating. (Shielding: 0%)`。
+    *   **若持有手套**：`"Your Aegis gauntlets hum softly, deflecting the worst of the fallout. The road ahead seems safer, though the horizon still glows wrong."`
+    *   这样可以在玩家移动前给予明确的预期管理，减少“为什么我走了几步就死了”的困惑，并鼓励玩家去获取装备。
 

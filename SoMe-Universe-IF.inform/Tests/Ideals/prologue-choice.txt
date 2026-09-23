@@ -6,7 +6,7 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
-Release 1 / Serial number 260923 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
@@ -21,9 +21,9 @@ Only after you have sworn can you cross the cosmos by concordance (GO TO <place>
 
 >You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
 
-   a medullary preceptor (the Cradle of Aukin), a fleet navigator (the Celestial Corps), an element-priest (the Heavy Metal Pantheon), and a quiet keeper (the Lab Martyrs).
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
 
-Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The fourth banner - the Heavy Metal Pantheon - is not here to recruit: it waits west of the Singularity, and only the living meet it. For example: ASK THE PRECEPTOR ABOUT JOINING.
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
 >The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
 
@@ -57,7 +57,8 @@ YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keep
 >Taken.
 
 >Banners: 0 delivered, 0 in hand, 10 not yet won.
-  Cradle Sigil - not yet won.
+(Oath sworn - but swearing is only the first step: win that faction's challenge and carry its seal home to earn its banner.)
+  Cradle Sigil - oath sworn, seal not yet earned (win the hall's challenge and bring the seal).
   Vesalius Medallion - not yet won.
   Quicksilver Ampoule - not yet won.
   Knitting Needle - not yet won.
@@ -68,6 +69,6 @@ YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keep
   Sightings Lanyard - not yet won.
   Abyssal Pennant - not yet won.
 
->Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go.
+>There is no road north on foot from the Landing - only open water and the white-rib shore, which the concordance reaches but your feet do not. Use GO TO WHITE RIB GATE, or ASK KEEPER ABOUT DESTINATIONS for every destination.
 
 >Are you sure you want to quit? 

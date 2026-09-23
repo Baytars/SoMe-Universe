@@ -6,7 +6,7 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
-Release 1 / Serial number 260923 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
@@ -51,7 +51,7 @@ A priest of the Radiology Order bars the west road - lead-lined vestments, a col
 Contaminated Wastes
 Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
 
-The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. Somewhere behind, the Radiologist is shouting a number.
+The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. The Old Metals" tally reads 1: a warning, not yet a sentence. The Cathedral is still west - walk, and count.
 
 >At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.
 

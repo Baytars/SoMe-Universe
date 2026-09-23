@@ -6,7 +6,7 @@ Welcome to the Cheap Glk Implementation, library version 1.0.7.
 
 SoMe-Universe: The Ten Banners
 Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
-Release 1 / Serial number 260923 / Inform 7 v10.1.2 / D
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
 
 Singularity
 You are in the Singularity. The universe is beginning to explode.
@@ -52,7 +52,9 @@ A priest of the Radiology Order bars the west road - lead-lined vestments, a col
 Contaminated Wastes
 Wind moves dust that never settles - every grain older than the first cell. Warning stones mark the old mills and the old mines; somewhere under the horizon, a radium afterglow pulses like a slow heart. A road of vitrified glass runs on west, toward a hall that catches the light and returns it wrong.
 
->Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
+>You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.
+
+Lucifer does not turn, but the mirror ripples at your approach. "The traveler. How patient your kind has become - walking into my hall without a price named." A bead of mercury runs down the crown and hangs, suspended. "Everything in this room is for sale, including the exits. Ask me what things cost."
 The gatekeeper-priest pronounces, unhurried: "Alive, and armored, and arrived. The Old Metals receive few guests, and none twice." Then, the offer - the only recruitment speech made inside a god's house: "The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON."
 
 >The Morning Star inclines his dripping crown. "You cannot destroy an element," Lucifer says. "You can only hope to contain it. Learn containment, and you will never fear the dark chemistry." You swear to the Heavy Metal Pantheon.

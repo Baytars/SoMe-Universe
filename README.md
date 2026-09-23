@@ -30,11 +30,12 @@ Players take on the roles of anthropomorphized cells—Red Blood Cells, White Bl
 *Member nations:*
 - [Empire of Anstar](Factions/Anstar_Empire.md) — largest AAA member; military backbone, host of the Aegis Council (Anstar City)
 - [Duchy of Alopes](Factions/Duchy_of_Alopes.md) — Constitutional Duchy of Continent Sacrum; rapid-response & medical expertise (capital Anshington)
-*Sworn defender-powers (recruited in the Hall of Medicine):*
+*Sworn defender-powers (keep vigil in the Hall of Medicine — three banners):*
+- **Cradle of Aukin** — immune academy of Aukin; **sworn agent of the Heavy Metal Pantheon**, keeps the Pantheon's interest in the Hall
 - [Celestial Corps](Factions/Celestial_Corps.md) — Anatomists as astronauts, surgeons as heavenly army
 - [Lab Martyrs](Factions/Lab_Martyrs.md) — Silent heroes: experimental animals who crossed the species barrier
 
-**Heavy Metal Pantheon** — [Elemental / Environmental power](Factions/Heavy_Metal_Pantheon.md): atomic ancients, bioaccumulative toxins. *Independent — **not** an AAA member* (classified as an "Independent Contractor" aligned with neither Umin nor the Accord as a formal member; in-game it waits west of the Singularity, "only the living meet it").
+**Heavy Metal Pantheon** — [Elemental / Environmental power](Factions/Heavy_Metal_Pantheon.md): atomic ancients, bioaccumulative toxins. *Independent — **not** an AAA member* (classified as an "Independent Contractor" aligned with neither Umin nor the Accord as a formal member). In-game it is **not** recruited in the Hall of Medicine: the Cradle of Aukin keeps its interest there as sworn agent, and the Pantheon itself answers only at the Black Cathedral, west of the Wastes ("only the living meet it").
 
 ### 📍 Locations
 - [John Snow Bridge](Locations/Alopes_John_Snow_Bridge.md) — The exit gateway

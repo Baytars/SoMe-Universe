@@ -32,7 +32,7 @@ To say the newcomer primer:
 After looking in the Singularity for the first time:
 	say the newcomer primer.
 
-The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and four living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin, the Celestial Corps, the Heavy Metal Pantheon, and the Shrine of the Lab Martyrs. Under the banners wait a medullary preceptor, a fleet navigator, an element-priest, and a quiet keeper - one recruiter for each power, each ready to make the case for a sworn oath."
+The Hall of Medicine is south of the Singularity. "In the Hall of Medicine shrines many deceased historical medical characters - and three living powers of the Athena Aegis Accord keep their vigil here: the Cradle of Aukin (which keeps the Heavy Metal Pantheon's interest in this hall as its sworn agent), the Celestial Corps, and the Shrine of the Lab Martyrs. Under the banners wait a medullary preceptor, a fleet navigator, and a quiet keeper - one recruiter for each power, each ready to make the case for a sworn oath."
 
 The Disease Citadel is north of the Singularity. "The Disease Citadel is where diseases are born, and its six ways open onto the dark for Archaeology, Fear Technology, the Pale Masquerade, the Undead Court, the Department of Silence and the Abyssal fleet - and under six banners wait a resurrected Archaea, a containment supervisor, a masked emissary, a pale Bride, a personnel officer, and a gum-chewing girl in a sailor suit. Each is a recruiter for a faction of the Unseen Crown, each with a case to make and a secret to trade."
 
@@ -40,7 +40,7 @@ After going to the Disease Citadel for the first time:
 	say "You have walked into the Unseen Crown's domain. Six banners crown the dark hall, and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a plain-clothes veteran Archaea[roman type] (the Archaeology Division), [bold type]a containment supervisor[roman type] with a drone on her shoulder (Fear Technology), [bold type]a sunflower muse[roman type] (the Pale Masquerade), [bold type]a pale Bride of Count Dracula[roman type] (the Undead Court), [bold type]a personnel officer[roman type] (the Department of Silence), and [bold type]a gum-chewing girl in a sailor suit[roman type] (the Abyssal Legion).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE VIBRIO, CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE. For example: [bold type]ASK THE GIRL ABOUT JOINING[roman type]."
 
 After going to the Hall of Medicine for the first time:
-	say "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a medullary preceptor[roman type] (the Cradle of Aukin), [bold type]a fleet navigator[roman type] (the Celestial Corps), [bold type]an element-priest[roman type] (the Heavy Metal Pantheon), and [bold type]a quiet keeper[roman type] (the Lab Martyrs).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The fourth banner - the Heavy Metal Pantheon - is not here to recruit: it waits west of the Singularity, and only the living meet it. For example: [bold type]ASK THE PRECEPTOR ABOUT JOINING[roman type]."
+	say "You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:[paragraph break]   [bold type]a medullary preceptor[roman type] (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), [bold type]a fleet navigator[roman type] (the Celestial Corps), and [bold type]a quiet keeper[roman type] (the Lab Martyrs).[paragraph break]Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: [bold type]ASK THE PRECEPTOR ABOUT JOINING[roman type]."
 
 
 
@@ -59,7 +59,10 @@ Check choosing a patron:
 	if the player's patron is not unsworn:
 		say "You have already sworn to a patron." instead;
 	if the location is not the Hall of Medicine and the location is not the Disease Citadel and the location is not the Black Cathedral:
-		say "The swearing is done at the two gates, or at the door of the Pantheon itself if you have crossed the Wastes alive." instead.
+		say "The swearing is done at the two gates, or at the door of the Pantheon itself if you have crossed the Wastes alive." instead;
+	let t be the topic understood;
+	if "[t]" matches the regular expression "^(pantheon|heavy metal|heavy metal pantheon|metal pantheon|lucifer|mercury|radium)" and the location is the Hall of Medicine:
+		say "The Heavy Metal Pantheon keeps no banner in this hall - the Cradle of Aukin keeps its interest here as agent. The Old Metals answer only at their own door, west of the Wastes. Cross alive, then swear at the Cathedral: CHOOSE PANTHEON." instead.
 
 Carry out choosing a patron:
 	let choice be the topic understood;
@@ -68,7 +71,7 @@ Carry out choosing a patron:
 		say "That is this gate's name, not a patron. Pick one of its six banners: [bold type]CHOOSE VIBRIO[roman type], CHOOSE DRACULA, CHOOSE FEAR, CHOOSE ARCHAEOLOGY, CHOOSE PALLIDUM, or CHOOSE STILLE.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(hall|medicine|hall of medicine)$":
-		say "That is the other gate's name, not a patron. Its four banners are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE PANTHEON, CHOOSE MARTYRS - or stay here and pick one of the six above.";
+		say "That is the other gate's name, not a patron. Its three banners are: CHOOSE CRADLE, CHOOSE CELESTIAL, CHOOSE MARTYRS - or stay here and pick one of the six above.";
 		rule succeeds;
 	if the lowered matches the regular expression "^(cradle|cradle of aukin|aukin|aukin empire|tylean|generalizer)( or .*)?$":
 		say "The Generalizer lifts the honey-gold AIRE flame. 'Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable.' You swear to the Cradle.";
@@ -104,7 +107,7 @@ Carry out choosing a patron:
 		if the location is the Disease Citadel:
 			say "No patron by that name. The six banners of this gate answer to any of their names: CHOOSE VIBRIO or CHOOSE ABYSSAL LEGION, CHOOSE DRACULA or CHOOSE UNDEAD COURT, CHOOSE FEAR or CHOOSE FEAR TECHNOLOGY, CHOOSE ARCHAEOLOGY or CHOOSE ARCHAEOLOGY DIVISION, CHOOSE PALLIDUM or CHOOSE PALE MASQUERADE, CHOOSE STILLE or CHOOSE DEPARTMENT OF SILENCE." instead;
 		otherwise:
-			say "No patron by that name. The four banners of this gate answer to: CHOOSE CRADLE (Cradle of Aukin), CHOOSE CELESTIAL (Celestial Corps), CHOOSE PANTHEON (Heavy Metal Pantheon), CHOOSE MARTYRS (Lab Martyrs)." instead.
+			say "No patron by that name. The three banners of this gate answer to: CHOOSE CRADLE (Cradle of Aukin, agent of the Pantheon), CHOOSE CELESTIAL (Celestial Corps), CHOOSE MARTYRS (Lab Martyrs)." instead.
 
 Report choosing a patron:
 	if the player's patron is not unsworn:
@@ -228,6 +231,19 @@ The sightings lanyard is a seal. The printed name is "Sightings Lanyard". Unders
 
 The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand "pennant" and "abyssal" as the abyssal pennant. The description is "A wet swallow-tailed flag that never quite dries. The Abyssal Legion flew it over the first flooded field."
 
+To decide which patron is the patron of (tk - a seal):
+	if tk is the cradle sigil, decide on cradle;
+	if tk is the corps medallion, decide on celestial;
+	if tk is the quicksilver ampoule, decide on pantheon;
+	if tk is the knitting needle, decide on martyrs;
+	if tk is the sulfur sigil, decide on archaeology;
+	if tk is the pale masque, decide on pallidum;
+	if tk is the bat sigil, decide on rabies;
+	if tk is the stille seal, decide on typhi;
+	if tk is the sightings lanyard, decide on fear-tech;
+	if tk is the abyssal pennant, decide on vibrio;
+	decide on unsworn.
+
 To grant (prize - a seal) noting (flavor - text):
 	now the player carries the prize;
 	increase the score by 1;
@@ -242,11 +258,15 @@ Carry out requesting the banner tally:
 	let delivered be the number of seals on the standard rack;
 	let held be the number of seals carried by the player;
 	say "Banners: [delivered] delivered, [held] in hand, [10 minus delivered minus held] not yet won.";
+	if the player's patron is not unsworn:
+		say "(Oath sworn - but swearing is only the first step: win that faction's challenge and carry its seal home to earn its banner.)";
 	repeat with token running through seals:
 		if token is on the standard rack:
 			say "  [printed name of token] - delivered to the Keeper.";
 		otherwise if token is carried by the player:
-			say "  [printed name of token] - in your satchel.";
+			say "  [printed name of token] - in your satchel (won, not yet delivered).";
+		otherwise if the patron of token is the player's patron:
+			say "  [printed name of token] - oath sworn, seal not yet earned (win the hall's challenge and bring the seal).";
 		otherwise:
 			say "  [printed name of token] - not yet won."
 
@@ -299,7 +319,7 @@ Instead of going southeast from the Free Port Landing:
 	say "The southeast channel is reserved for the great conduits."
 
 Instead of going north from the Free Port Landing:
-	say "Walk, swim, or sail - the manifests are faster. GO TO a destination, or just tell the Keeper where you mean to go."
+	say "There is no road north on foot from the Landing - only open water and the white-rib shore, which the concordance reaches but your feet do not. Use GO TO WHITE RIB GATE, or ASK KEEPER ABOUT DESTINATIONS for every destination."
 
 The standard rack is a scenery supporter in the Free Port Landing. Understand "standard" or "standards" or "rack" as the standard rack. The description is "Ten standards in a row, each waiting for a faction's seal. [if the number of seals on the standard rack is 0]Every pole is bare.[otherwise][The number of seals on the standard rack] of the ten fly banners now.[end if]"
 
@@ -355,10 +375,13 @@ radiology-warning is a number that varies. radiology-warning is 0.
 radiation-dose is a number that varies. radiation-dose is 0.
 
 Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets are not worn by the player:
-	if the Aegis gauntlets are not worn by the player:
-		increase radiation-dose by 1;
+	increase radiation-dose by 1;
 	if radiation-dose is 1:
-		say "The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. Somewhere behind, the Radiologist is shouting a number.";
+		say "The afterglow finds you at once - a warmth in the teeth, a taste like a struck coin. The Old Metals' tally reads [radiation-dose]: a warning, not yet a sentence. The Cathedral is still west - walk, and count.";
+	otherwise if radiation-dose is 2:
+		say "The geiger in your skull ticks louder - the tally reads [radiation-dose]. The dust is tasting you now, counting grains into your marrow. One more step west and the light begins to settle its account.";
+	otherwise if radiation-dose is 3:
+		say "The tally reads [radiation-dose] - your shadow on the vitrified road now glows faintly with your own afterimage. The Cathedral is one step west. Turn back, or pay the toll.";
 	otherwise:
 		say "The Morning Star closes his own eyes - the only mercy the Old Metals keep - and the traveler's story ends the way the light ends: everywhere, gently, all at once.";
 		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning."
@@ -378,7 +401,7 @@ Instead of going east from the Contaminated Wastes when the Aegis gauntlets are 
 	continue the action;
 
 
-The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" as the Keeper.
+The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" and "registrar" as the Keeper.
 
 Instead of asking the Keeper about something when the topic understood matches the regular expression "^mission$":
 	say "'Ten factions,' the Keeper says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and six doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
@@ -1084,7 +1107,7 @@ After going to the Black Cathedral for the first time:
 	if the Aegis gauntlets are not worn by the player:
 		say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
 		end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning.";
-	say "Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
+	say "You cross the vitrified threshold into the Black Cathedral; the mercury mirror fills the room, and your reflection in it is not the face you brought in.[paragraph break]Lucifer does not turn, but the mirror ripples at your approach. 'The traveler. How patient your kind has become - walking into my hall without a price named.' A bead of mercury runs down the crown and hangs, suspended. 'Everything in this room is for sale, including the exits. Ask me what things cost.'[line break]The gatekeeper-priest pronounces, unhurried: 'Alive, and armored, and arrived. The Old Metals receive few guests, and none twice.' Then, the offer - the only recruitment speech made inside a god's house: 'The Pantheon does not send recruiters into the mild world. It has no need of recruiters. Whoever stands here has already paid the toll the Wastes exact, and the gods respect a paid toll. If you mean to swear, swear here, at the door of the mirror: CHOOSE PANTHEON.'";
 
 After going to the Shrine of the Knitting Mouse for the first time:
 	say "HeLa's luminosity brightens as you enter - recognition, not surprise. 'You are the one they are all courting.' She says it without envy. 'Be careful with the courting, traveler. The ones who were never asked built this shrine, and the ones everyone asks forget to look at it. You will look. I can tell already.'";
