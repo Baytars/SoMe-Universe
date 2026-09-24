@@ -468,6 +468,10 @@ Every turn when the player is in the Contaminated Wastes and the Aegis gauntlets
 Before going to the Black Cathedral when the Aegis gauntlets are not worn by the player:
 	say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The Old Metals take their tax at the step, not in the hall.";
 	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them."
+
+Before warping to when the Aegis gauntlets are not worn by the player and the topic understood matches the regular expression "^(pantheon|black cathedral|heavy metal|cathedral)$", case insensitively:
+	say "At the Cathedral's threshold the borrowed light comes due all at once - the vitrified road behind you glows with your own afterimage, and the door keeps. The concordance will not carry the unarmored west; the Old Metals take their tax at the step, not in the hall.";
+	end the story finally saying "The Old Metals took their tax. Lucifer buried you in glass, and made the glass a warning. To walk the west alive, earn the Aukin gauntlets: attend the lectures at the Cradle, then walk Sister Franklin's memory of the Wastes and tell her what you carried out - no market sells them."
 Every turn when the player is in the Black Cathedral and the Aegis gauntlets are not worn by the player:
 	increase radiation-dose by 1;
 	if radiation-dose is 1:

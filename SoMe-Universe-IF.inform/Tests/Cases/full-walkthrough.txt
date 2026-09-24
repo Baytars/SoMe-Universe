@@ -34,8 +34,8 @@ go to dawn pioneer
 take codex
 go to celestial corps
 ask vesalius about soul
-go to pantheon
 wear gauntlets
+go to pantheon
 decipher codex
 go to landing
 report
