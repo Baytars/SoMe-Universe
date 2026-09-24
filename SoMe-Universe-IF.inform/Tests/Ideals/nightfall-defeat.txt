@@ -98,16 +98,39 @@ A practice yard the Court keeps for the marked: bare stone under a sky that is n
 
 The threshold holds three doors and no light behind any of them. THEATER WILDS (see far, more foes), THEATER CASTLE (balanced), THEATER MAZE (groping dark, fewer foes). Name one to step into the night.
 
->No run is in progress - step into the Grounds and the night begins.
-
-The threshold holds three doors and no light behind any of them. THEATER WILDS (see far, more foes), THEATER CASTLE (balanced), THEATER MAZE (groping dark, fewer foes). Name one to step into the night.
-
 >The Wilds swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is 20, your guard 2, your vision 5 - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3, or just ADVANCE to decline it. Outlast wave twelve and the night is yours.
 
 >Wave 1: all 2 shapes are seen and turned before they land. (Vision 5.) Vitality: 20.
 
 >Wave 2: 3 shapes lunge from the gloom; your guard turns 2, 1 slip past - 1 wounds. (Vision 5.) Vitality: 19.
 
->You step back toward the dry hall; the run is abandoned. The night will wait.
+>Wave 3: 4 shapes lunge from the gloom; your guard turns 2, 2 slip past - 2 wounds. (Vision 5.) Vitality: 17.
+The Court offers three boons of the night - PICK 1, 2, or 3:
+  1) Crimson Font: +8 vitality
+  2) Glass Archive: +5 vitality
+  3) Thirst Protocol: +1 power, +3 vitality
+>The wind off the open moor carries your scent across the night; an extra shape joins the hunt. (Wind exposure.)
+Wave 4: you make out 5 of 6 shapes in the dark; 1 stir beyond your sight. Your guard turns 2; 4 reach you - 4 wounds. (Vision 5.) Vitality: 13.
+
+>Wave 5: you make out 5 of 6 shapes in the dark; 1 stir beyond your sight. Your guard turns 2; 4 reach you - 4 wounds. (Vision 5.) Vitality: 9.
+
+>Wave 6: you make out 5 of 7 shapes in the dark; 2 stir beyond your sight. Your guard turns 2; 5 reach you - 5 wounds. (Vision 5.) Vitality: 4.
+The Court offers three boons of the night - PICK 1, 2, or 3:
+  1) Thirst Protocol: +1 power, +3 vitality
+  2) Renfield's Madness: +1 power each wave
+  3) Cold Sun: foes -1 each wave
+>Wave 7: you make out 5 of 8 shapes in the dark; 3 stir beyond your sight. Your guard turns 2; 6 reach you - 6 wounds. (Vision 5.) Vitality: -2.
+The shapes overrun you at wave 7. The night takes its due and spills you back at the Blood Court's threshold. (Best night: 7 waves.) Stand up and try again - the Court keeps no grudge against the living who keep standing.
+
+Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
+
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
+
+The Budapest Bride watches the stair, unhurried - black hair pinned with a single jade pin, the kind of stillness that makes you aware of your own pulse, which is, of course, the point.
+
+The Bucharest Bride stands where the gallery light ends, and the dark approves of her: dark hair, darker eyes, the rose-and-ash coloring that launches a thousand warning poems.
+
+The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
 >Are you sure you want to quit? 

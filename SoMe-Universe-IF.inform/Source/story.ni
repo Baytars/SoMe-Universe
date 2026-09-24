@@ -2037,6 +2037,7 @@ An arena is a kind of value. The arenas are undecided, wilds, manor, maze.
 nightfall-vision is a number that varies. nightfall-vision is 0.
 nightfall-arena is an arena that varies. nightfall-arena is undecided.
 nightfall-arena-foe is a number that varies. nightfall-arena-foe is 0.
+nightfall-corner-cd is a number that varies. nightfall-corner-cd is 0.
 
 The Nightfall Grounds is north of the Blood Court. "A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day, and three theaters of the night wait beyond it. THEATER WILDS - an open moor under a thin moon, where you see far but the dark sends more. THEATER CASTLE - drafty halls and guttering candles, balanced. THEATER MAZE - a lightless warren where you grope, fewer foes but little sight. Name one to begin; ADVANCE to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave."
 
@@ -2056,11 +2057,13 @@ bname	beffect
 "Witchlight"	"+2 vision (see further in the dark)"
 
 To start the nightfall run:
+	seed the random-number generator with 1337;
 	now nightfall-active is true;
 	now nightfall-wave is 0;
 	now nightfall-vitality is 20;
 	now nightfall-power is 2;
 	now nightfall-pending is false;
+	now nightfall-corner-cd is 0;
 	now timetable-held is false;
 	now renfield-held is false;
 	now coldsun-held is false;
@@ -2080,7 +2083,9 @@ To start the nightfall run:
 	if nightfall-arena is wilds, say "Wilds";
 	if nightfall-arena is manor, say "Castle";
 	if nightfall-arena is maze, say "Maze";
-	say " swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is [nightfall-vitality], your guard [nightfall-power], your vision [nightfall-vision] - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours."
+	say " swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is [nightfall-vitality], your guard [nightfall-power], your vision [nightfall-vision] - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3, or just ADVANCE to decline it. Outlast wave twelve and the night is yours.";
+	if nightfall-arena is maze:
+		say "In the Maze a dead-end corner is a safe point - CORNER (or DUCK, HIDE, GROPE) to catch your breath (+3 vitality) when the warren reopens it."
 
 Selecting a nightfall theater is an action applying to one topic.
 Understand "theater [text]" as selecting a nightfall theater.
@@ -2165,14 +2170,21 @@ Check advancing the nightfall:
 	if the location is not the Nightfall Grounds:
 		say "The night only advances on the Nightfall Grounds." instead;
 	if nightfall-active is false:
-		say "No run is in progress - step into the Grounds and the night begins." instead;
-	if nightfall-pending is true:
-		say "The Court holds its breath. PICK 1, 2, or 3 to take a boon before the next wave." instead.
+		say "No run is in progress - step into the Grounds and the night begins." instead.
 
 Carry out advancing the nightfall:
+	if nightfall-pending is true:
+		now nightfall-pending is false;
+		now offered-1 is 0;
+		now offered-2 is 0;
+		now offered-3 is 0;
 	if renfield-held is true, increase nightfall-power by 1;
+	if nightfall-corner-cd > 0, decrease nightfall-corner-cd by 1;
 	increment nightfall-wave;
 	let foes be nightfall-wave + nightfall-arena-foe;
+	if nightfall-arena is wilds and the remainder after dividing nightfall-wave by 4 is 0:
+		increase foes by 1;
+		say "The wind off the open moor carries your scent across the night; an extra shape joins the hunt. (Wind exposure.)";
 	if coldsun-held is true, decrease foes by 1;
 	if timetable-held is true, decrease foes by 1;
 	if foes < 1, now foes is 1;
@@ -2217,6 +2229,24 @@ Carry out picking a boon:
 	now nightfall-pending is false;
 	choose row chosen in the Table of Nightfall Boons;
 	say "You take [bname entry]. (Power [nightfall-power], Vitality [nightfall-vitality].) ADVANCE to the next wave."
+
+Cornering the nightfall is an action applying to nothing.
+Understand "corner" or "duck" or "hide" or "grope" as cornering the nightfall.
+
+Check cornering the nightfall:
+	if the location is not the Nightfall Grounds:
+		say "There is no corner to grope for here." instead;
+	if nightfall-active is false:
+		say "The night is not upon you." instead;
+	if nightfall-arena is not maze:
+		say "Only the Maze offers dead-end corners. (Safe points are a warren trick - the open Wilds and the Castle halls leave you nowhere to hide.)" instead;
+	if nightfall-corner-cd > 0:
+		say "The safe point is spent; the warren reopens it after a few waves." instead.
+
+Carry out cornering the nightfall:
+	increase nightfall-vitality by 3;
+	now nightfall-corner-cd is 3;
+	say "You press into a dead-end corner of the warren; the labyrinth forgets you for a breath. +3 vitality. (Vitality: [nightfall-vitality].)"
 
 The Abyssal Deck is southeast of the Dark Concourse. "A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank."
 
