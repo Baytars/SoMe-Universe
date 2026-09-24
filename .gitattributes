@@ -12,4 +12,9 @@ SoMe-Universe-IF.inform/Tests/Ideals/*.txt text eol=lf
 # checkout on another machine cannot change the compiled output.
 SoMe-Universe-IF.inform/Source/story.ni text eol=lf
 
+# These helpers REWRITE the LF-pinned Cases/Ideals. If they themselves get
+# CRLF'd, io.open(..., "w") emits CRLF into the test scripts and breaks glulxe.
+# Pin them LF so the working tree can never drift to CRLF.
+tools/*.py text eol=lf
+
 # Only the paths above are pinned; everything else keeps the platform default.
