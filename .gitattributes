@@ -18,3 +18,5 @@ SoMe-Universe-IF.inform/Source/story.ni text eol=lf
 tools/*.py text eol=lf
 
 # Only the paths above are pinned; everything else keeps the platform default.
+# Pin this file too so its own line endings never drift.
+.gitattributes text eol=lf
