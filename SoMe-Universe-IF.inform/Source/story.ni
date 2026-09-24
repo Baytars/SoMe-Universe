@@ -1990,7 +1990,7 @@ Instead of asking Count Dracula about something when the topic understood matche
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^brides$|^budapest$|^bucharest$|^belgrade$":
 	say "'My brides command their own battalions and converge only for the great operations,' he says. 'Every culture has a word for them. Vampire. Strigoi. Nosferatu. All correct. All insufficient.'"
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^nightfall$|^operations$":
-	say "'Forty-seven substations, seventy-two hours, one continent's night,' he says. 'The virus spreads fastest in the dark. The doctrine is not a metaphor, traveler. It is a timetable.'"
+	say "'Forty-seven substations, seventy-two hours, one continent's night,' he says. 'The virus spreads fastest in the dark. The doctrine is not a metaphor, traveler. It is a timetable - and it plays out in three theaters beyond the Grounds: the Wilds, the Castle, the Maze. Step north, name one, and survive what you cannot see.'"
 
 Instead of showing the Pasteur vial to Count Dracula:
 	if the bat sigil is carried by the player:
@@ -2033,7 +2033,12 @@ Instead of asking the Belgrade Bride about something when the topic understood m
 	now heard-belgrade-past is true.
 
 [ --- Nightfall: a compact roguelike survival gauntlet, open to the marked --- ]
-The Nightfall Grounds is north of the Blood Court. "A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day. Forty-seven substations' worth of dark waits in the corners. The Budapest Bride's voice follows you: 'ADVANCE to face a wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave.'"
+An arena is a kind of value. The arenas are undecided, wilds, manor, maze.
+nightfall-vision is a number that varies. nightfall-vision is 0.
+nightfall-arena is an arena that varies. nightfall-arena is undecided.
+nightfall-arena-foe is a number that varies. nightfall-arena-foe is 0.
+
+The Nightfall Grounds is north of the Blood Court. "A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day, and three theaters of the night wait beyond it. THEATER WILDS - an open moor under a thin moon, where you see far but the dark sends more. THEATER CASTLE - drafty halls and guttering candles, balanced. THEATER MAZE - a lightless warren where you grope, fewer foes but little sight. Name one to begin; ADVANCE to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave."
 
 Instead of going north in the Blood Court when the bat sigil is not carried by the player:
 	say "The way north is closed. 'The night is not for the unmarked,' the Budapest Bride says. 'Earn the Bat Sigil first, traveler.'" instead.
@@ -2048,6 +2053,7 @@ bname	beffect
 "Glass Archive"	"+5 vitality"
 "Renfield's Madness"	"+1 power each wave"
 "Cold Sun"	"foes -1 each wave"
+"Witchlight"	"+2 vision (see further in the dark)"
 
 To start the nightfall run:
 	now nightfall-active is true;
@@ -2061,7 +2067,43 @@ To start the nightfall run:
 	now offered-1 is 0;
 	now offered-2 is 0;
 	now offered-3 is 0;
-	say "The grounds go black. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is [nightfall-vitality], your guard [nightfall-power]. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours."
+	if nightfall-arena is wilds:
+		now nightfall-vision is 5;
+		now nightfall-arena-foe is 1;
+	otherwise if nightfall-arena is manor:
+		now nightfall-vision is 3;
+		now nightfall-arena-foe is 0;
+	otherwise if nightfall-arena is maze:
+		now nightfall-vision is 2;
+		now nightfall-arena-foe is -1;
+	say "The ";
+	if nightfall-arena is wilds, say "Wilds";
+	if nightfall-arena is manor, say "Castle";
+	if nightfall-arena is maze, say "Maze";
+	say " swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is [nightfall-vitality], your guard [nightfall-power], your vision [nightfall-vision] - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours."
+
+Selecting a nightfall theater is an action applying to one topic.
+Understand "theater [text]" as selecting a nightfall theater.
+
+Check selecting a nightfall theater:
+	if the location is not the Nightfall Grounds:
+		say "There are no theaters to enter here." instead;
+	if nightfall-active is true:
+		say "The night is already upon you - finish this run or step south to abandon it." instead.
+
+Carry out selecting a nightfall theater:
+	let t be the topic understood;
+	if t matches the regular expression "^wilds$|^moor$|^wilderness$|^wild$":
+		now nightfall-arena is wilds;
+		start the nightfall run;
+	otherwise if t matches the regular expression "^castle$|^hall$|^manor$|^castle hall$":
+		now nightfall-arena is manor;
+		start the nightfall run;
+	otherwise if t matches the regular expression "^maze$|^dungeon$|^warren$|^labyrinth$":
+		now nightfall-arena is maze;
+		start the nightfall run;
+	otherwise:
+		say "The night offers three theaters: the Wilds, the Castle, the Maze. Choose one - THEATER WILDS, THEATER CASTLE, or THEATER MAZE."
 
 To offer nightfall boons:
 	let offered be a list of numbers;
@@ -2090,10 +2132,12 @@ To apply nightfall boon (bn - a number):
 		decrease nightfall-vitality by 2;
 	if bn is 6, increase nightfall-vitality by 5;
 	if bn is 7, now renfield-held is true;
-	if bn is 8, now coldsun-held is true.
+	if bn is 8, now coldsun-held is true;
+	if bn is 9, increase nightfall-vision by 2.
 
 To end the nightfall in victory:
 	now nightfall-active is false;
+	now nightfall-arena is undecided;
 	if nightfall-wave > nightfall-best, now nightfall-best is nightfall-wave;
 	say "Wave twelve breaks like the false dawn. You have outlasted the night. The Court does not applaud - it remembers. The Budapest Bride nods once: 'You are not prey.'";
 	move the player to the Blood Court;
@@ -2101,15 +2145,17 @@ To end the nightfall in victory:
 
 To end the nightfall in defeat:
 	now nightfall-active is false;
+	now nightfall-arena is undecided;
 	if nightfall-wave > nightfall-best, now nightfall-best is nightfall-wave;
 	say "The shapes overrun you at wave [nightfall-wave]. The night takes its due and spills you back at the Blood Court's threshold. (Best night: [nightfall-best] waves.) Stand up and try again - the Court keeps no grudge against the living who keep standing.";
 	move the player to the Blood Court.
 
-Every turn when the location is the Nightfall Grounds and nightfall-active is false:
-	start the nightfall run.
+Every turn when the location is the Nightfall Grounds and nightfall-active is false and nightfall-arena is undecided:
+	say "The threshold holds three doors and no light behind any of them. THEATER WILDS (see far, more foes), THEATER CASTLE (balanced), THEATER MAZE (groping dark, fewer foes). Name one to step into the night."
 
 After going from the Nightfall Grounds when nightfall-active is true:
 	now nightfall-active is false;
+	now nightfall-arena is undecided;
 	say "You step back toward the dry hall; the run is abandoned. The night will wait."
 
 Advancing the nightfall is an action applying to nothing.
@@ -2126,16 +2172,24 @@ Check advancing the nightfall:
 Carry out advancing the nightfall:
 	if renfield-held is true, increase nightfall-power by 1;
 	increment nightfall-wave;
-	let foes be nightfall-wave;
+	let foes be nightfall-wave + nightfall-arena-foe;
 	if coldsun-held is true, decrease foes by 1;
 	if timetable-held is true, decrease foes by 1;
 	if foes < 1, now foes is 1;
-	let breach be foes - nightfall-power;
+	let seen be nightfall-vision;
+	if seen > foes, now seen is foes;
+	let guard-turned be nightfall-power;
+	if guard-turned > seen, now guard-turned is seen;
+	let breach be foes - guard-turned;
 	if breach > 0:
 		decrease nightfall-vitality by breach;
-		say "Wave [nightfall-wave]: [foes] shapes lunge from the dark. Your guard turns [nightfall-power]; [breach] slip through - [breach] wounds. Vitality: [nightfall-vitality].";
+		if seen is foes:
+			say "Wave [nightfall-wave]: [foes] shapes lunge from the gloom; your guard turns [nightfall-power], [breach] slip past - [breach] wounds. (Vision [nightfall-vision].) Vitality: [nightfall-vitality].";
+		otherwise:
+			let unseen be foes - seen;
+			say "Wave [nightfall-wave]: you make out [seen] of [foes] shapes in the dark; [unseen] stir beyond your sight. Your guard turns [nightfall-power]; [breach] reach you - [breach] wounds. (Vision [nightfall-vision].) Vitality: [nightfall-vitality].";
 	otherwise:
-		say "Wave [nightfall-wave]: [foes] shapes lunge and all are turned before they land. Vitality: [nightfall-vitality].";
+		say "Wave [nightfall-wave]: all [foes] shapes are seen and turned before they land. (Vision [nightfall-vision].) Vitality: [nightfall-vitality].";
 	if nightfall-wave is 12:
 		end the nightfall in victory;
 	otherwise if the remainder after dividing nightfall-wave by 3 is 0:
