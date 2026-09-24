@@ -438,9 +438,17 @@ The Bucharest Bride stands where the gallery light ends, and the dark approves o
 
 The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
->You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy. Very well, traveler. The Court receives you as received - marked, not turned."
+>"The Frenchman found a way to cheat death," Dracula says, and the hall's acoustics file the sentence as precedent. "We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go."
 
-The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: faced, and stayed polite.
+>"Before the timetable, I kept another," the Budapest Bride says. "I was a dispatcher at the Budapest Pasteur Institute - the house that took in the bitten from every corner of the Balkans and sent them home alive, if they arrived in time. Forty-seven substations, seventy-two hours: that was my schedule then, too. The Court simply gave me the dark version of it. I do not serve. I obey. I enjoy it - because I was always the one who made the trains of the saved run on time."
+
+>"I was a namer of small deaths," the Bucharest Bride says. "A pathologist - Victor Babes taught the world to see the body's signature under glass, the little inclusion that named rabies before it killed. I spoke a dozen tongues and still ran out of words for what we are. That is why I collect yours. Every culture has a word for us. They are all correct. They are all insufficient - I learned that in a laboratory, long before I learned it in a crypt."
+
+>"I was a doctor in the place where your word for me was born," the Belgrade Bride says. "Serbia - where the imperial surgeons first wrote down the returning dead and called the terror by its true name: rabies. I read those reports. I watched my own patients become exactly what the old papers described, and I could not stop it. That is why I understand why your patients scream. Every operative you see is already dead. We are simply fighting while dying - and somewhere a Serb reached Budapest in time and lived. I am what happens to the ones who did not."
+
+>You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." He turns, slowly, to each of the three. "You have heard the boy Meister. You have heard what Budapest scheduled, what Bucharest named, what Belgrade could not save. You do not carry a relic. You carry a witness." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy, seen whole. Very well, traveler. The Court receives you as received - marked, not turned."
+
+The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: you faced the first fear, heard its witnesses, and stayed polite.
 
 [Your score has just gone up by one point.]
 
@@ -476,7 +484,7 @@ The Keeper binds the last seal to its standard and steps back. Ten banners over 
     *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 80 turns.
+In that game you scored 10 out of a possible 10, in 84 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

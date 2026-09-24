@@ -424,6 +424,21 @@ Meister is remembered as the **Patron Saint of Survivors**:
 
 ---
 
+## The Mirror Law — AAA's Patron Saints of the Rabies War
+
+The same physicians who haunt the Undead Court appear on the Accord's side too — but under a **reversed moral polarity**. Where the Court *turns* them (dissolving the person into a place-name and a monster), the Accord *enshrines* them (keeping the name, minting it as a medal, a protocol, a patron saint). The Court's brides have no private pre-turning identity; the Accord's saints keep theirs. That is not a coincidence — it is the same war seen from the two ends of a mirror.
+
+| Physician / Event | Undead Court (turned) | Athena Aegis Accord (enshrined) |
+|---|---|---|
+| **Joseph Meister** (bitten 14×, kept Pasteur's tomb) | — (the Court's "worthy enemy") | **Patron Saint of Survivors**; "to pull a Meister" = survive impossible odds; the Joseph Meister Medal |
+| **Endre Hőgyes** (1890, brought Pasteur vaccine to Hungary; first director of the Budapest Pasteur Institute; the Balkan dispatch hub that received Serbian bite-victims) | **The Budapest Bride** — holds the *Nightfall timetable* (47 substations, 72 hours of dark) | **The Golden-Window Doctrine / Hőgyes Medal** — PEP must reach the bitten within 24–72 h or they die. The bride's *72 hours of dark* is the exact inverse of the Accord's *72-hour golden window*; her调度 obsession is his, turned inside out. |
+| **Victor Babeș** (described the cytoplasmic inclusion / Babeș–Negri body, 1886; multilingual philosopher of science; built the world's 2nd anti-rabies centre in Bucharest) | **The Bucharest Bride** — collects every culture's name for her (vampire, strigoi, nosferatu), all "correct, all insufficient" | **The Babeș School of Diagnosis** — to *name* the pathogen under the microscope is to disarm it. The bride hoards names because no name can hold the terror; the Accord uses the name (the Babeș body) to break it. |
+| **The Serbian vampire etymology + Balkan rabies reality** (Flückinger's *Visum et Repertum*, 1732, first forensic record of the "returning dead"; Serbia a millennial canine-rabies zone; patients sent to Budapest; last human case 1980) | **The Belgrade Bride** — was a doctor, saw "the returning dead" and could not save them; "every operative is already dead, fighting while dying" | **The Demythologization Creed / Field-Recorder archetype** — the Accord's first act of recognition was to write the vampire superstition *up* as a rabies forensic report. The bride *became* the myth; the Accord *dissected* it. The Balkan patients who reached Budapest alive are the inverse of her grief — "fought, and survived." |
+
+**The roster, then, reads as a single inverted litany:** Meister (the one who *survived*) → Hőgyes (the one who arrived *in time*) → Babeș (the one who *named* it) → the Balkan Recorder (the one who *demythologized* it). The Court dissolves these names into Budapest, Bucharest, Belgrade. The Accord puts the names back on the medals.
+
+---
+
 ## Psychological Warfare Value
 
 ### The Fear Multiplier

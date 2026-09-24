@@ -112,6 +112,10 @@ tell pale masquer about pupil
 tell pale masquer about serology
 unmask pale masquer
 go to undead court
+ask count dracula about pasteur
+ask budapest bride about past
+ask bucharest bride about past
+ask belgrade bride about past
 show vial to count dracula
 go to abyssal fleet
 ask octopus admiral about cannons

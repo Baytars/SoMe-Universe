@@ -25,7 +25,7 @@ Only after you have sworn can you cross the cosmos by concordance (GO TO <place>
 
 Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
 
->The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+>The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.
 
 
 The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
@@ -54,30 +54,17 @@ HOW TO WALK: directions still work where roads exist - type N / S / and so on to
 
 YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
->The Keeper keeps no trial to disclose.
-
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
-Shrine of the Knitting Mouse
-A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters.
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
 
-HeLa sits by the altar in a soft luminosity - the immortal navigator, first of the cell lines, still dividing, still serving.
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
 
-Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void.
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
 
->Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs" altar.
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
+>The last token goes across the stall. "Show it to the Count himself," the Factor says again. "He has watched empires rise and fall. He will want to see what the living made."
 
-Fabrica Bridge
-The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall.
-
-Vesalius, Admiral of the Celestial Fleet, stands with the posture of a man who corrected two hundred errors and expects to correct two hundred more.
-
-Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends.
-
-Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport.
-
->Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Blood Court
@@ -91,25 +78,23 @@ The Bucharest Bride stands where the gallery light ends, and the dark approves o
 
 The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
->In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier.
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
+>You hold up the steel-cased vial. Dracula does not bow. "You carry the Frenchman's trick like a postcard, traveler," he says. "You have not yet learned what you hold. Speak with me of Meister - the boy bitten fourteen times - and with my brides of what they were before the Court took them. Then bring me the vial, and I will know you for a witness and not a courier."
 
-Abteilung Stille Office
-A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
+>"The Frenchman found a way to cheat death," Dracula says, and the hall's acoustics file the sentence as precedent. "We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go."
 
-The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm.
+>"Before the timetable, I kept another," the Budapest Bride says. "I was a dispatcher at the Budapest Pasteur Institute - the house that took in the bitten from every corner of the Balkans and sent them home alive, if they arrived in time. Forty-seven substations, seventy-two hours: that was my schedule then, too. The Court simply gave me the dark version of it. I do not serve. I obey. I enjoy it - because I was always the one who made the trains of the saved run on time."
 
-The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got.
+>"I was a namer of small deaths," the Bucharest Bride says. "A pathologist - Victor Babes taught the world to see the body's signature under glass, the little inclusion that named rabies before it killed. I spoke a dozen tongues and still ran out of words for what we are. That is why I collect yours. Every culture has a word for us. They are all correct. They are all insufficient - I learned that in a laboratory, long before I learned it in a crypt."
 
-The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
+>"I was a doctor in the place where your word for me was born," the Belgrade Bride says. "Serbia - where the imperial surgeons first wrote down the returning dead and called the terror by its true name: rabies. I read those reports. I watched my own patients become exactly what the old papers described, and I could not stop it. That is why I understand why your patients scream. Every operative you see is already dead. We are simply fighting while dying - and somewhere a Serb reached Budapest in time and lived. I am what happens to the ones who did not."
 
->In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster.
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
+>You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." He turns, slowly, to each of the three. "You have heard the boy Meister. You have heard what Budapest scheduled, what Bucharest named, what Belgrade could not save. You do not carry a relic. You carry a witness." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy, seen whole. Very well, traveler. The Court receives you as received - marked, not turned."
 
-Abyssal Deck
-A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank.
+The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: you faced the first fear, heard its witnesses, and stayed polite.
 
-The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
+[Your score has just gone up by one point.]
 
->At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching.
+>Seals in your keeping:  Bat Sigil.
+REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
 >Are you sure you want to quit? 

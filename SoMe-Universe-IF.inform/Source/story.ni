@@ -240,7 +240,7 @@ The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercu
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
 The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from the vent and GIVE it to the Division Chief."
 The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK THE MASQUER ABOUT SYMPTOMS for the chancre, READ THE CRIMSON DOTS and TAKE THE CANDLE TO HER FACE for her signatures, then ASK her for PSORIASIS, ARTHRITIS and DEMENTIA and TELL her what gives each away - PALMS, PAINLESS, PUPIL. When she goes quiet, TELL HER ABOUT SEROLOGY, and only then UNMASK her."
-The trial text of the bat sigil is "Buy the Pasteur vial from the Cradle's factor (one token), then SHOW it to Count Dracula himself."
+The trial text of the bat sigil is "In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier."
 The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
 The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
 The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching."
@@ -1954,6 +1954,22 @@ Instead of asking the Renfield doorman about something when the topic understood
 Instead of asking the Renfield doorman about something when the topic understood matches the regular expression "^insects$|^gift$":
 	say "'Master says I can eat bugs,' the doorman says, radiantly. 'Master says bugs are good. You think I'm crazy? I'm the only sane one here. I know what's coming. I'm ready.'"
 
+met-meister-lore is a truth state that varies. met-meister-lore is false.
+heard-budapest-past is a truth state that varies. heard-budapest-past is false.
+heard-bucharest-past is a truth state that varies. heard-bucharest-past is false.
+heard-belgrade-past is a truth state that varies. heard-belgrade-past is false.
+nightfall-active is a truth state that varies. nightfall-active is false.
+nightfall-pending is a truth state that varies. nightfall-pending is false.
+nightfall-wave is a number that varies. nightfall-wave is 0.
+nightfall-vitality is a number that varies. nightfall-vitality is 0.
+nightfall-power is a number that varies. nightfall-power is 0.
+nightfall-best is a number that varies. nightfall-best is 0.
+offered-1 is a number that varies. offered-1 is 0.
+offered-2 is a number that varies. offered-2 is 0.
+offered-3 is a number that varies. offered-3 is 0.
+timetable-held is a truth state that varies. timetable-held is false.
+renfield-held is a truth state that varies. renfield-held is false.
+coldsun-held is a truth state that varies. coldsun-held is false.
 The Blood Court is below the Castle Gate. "The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux."
 
 The thirst gallery is scenery in the Blood Court. Understand "gallery" and "glass" and "fountains" as the thirst gallery. The description is "The Thirst Gallery: trophies of the conversion protocol, preserved dry. The fountains have never run water in this hall. Water is the enemy of memory."
@@ -1967,7 +1983,8 @@ The Bucharest Bride is a woman in the Blood Court. "The Bucharest Bride stands w
 The Belgrade Bride is a woman in the Blood Court. "The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief." The description is "Senior commander, third of three. She was turned the week she lost her first patient, and it shows as elegance: white-blond hair pinned for surgery, a mourning ring worn on the wrong hand. Of the three she is the most beautiful and the least interested in being told so. The file on her is the thinnest. The file notes, without comment: I was a doctor once."
 
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^pasteur$|^meister$":
-	say "'The Frenchman found a way to cheat death,' Dracula says, and the hall's acoustics file the sentence as precedent. 'We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go.'"
+	say "'The Frenchman found a way to cheat death,' Dracula says, and the hall's acoustics file the sentence as precedent. 'We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go.'";
+	now met-meister-lore is true.
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^light$|^water$|^bite$":
 	say "'Three fears, older than your cities,' he says. 'Light, water, the bite. Your soldiers fear capture more than death now - a bite kills his squad without killing him, because they cannot trust him not to kill them. Fear is not a weapon, traveler. Fear is the battlefield. We fight to make you afraid of winning.'"
 Instead of asking Count Dracula about something when the topic understood matches the regular expression "^brides$|^budapest$|^bucharest$|^belgrade$":
@@ -1978,10 +1995,13 @@ Instead of asking Count Dracula about something when the topic understood matche
 Instead of showing the Pasteur vial to Count Dracula:
 	if the bat sigil is carried by the player:
 		say "'Once was courtesy, traveler. Twice would be baiting.'";
+	otherwise if met-meister-lore is false or heard-budapest-past is false or heard-bucharest-past is false or heard-belgrade-past is false:
+		say "You hold up the steel-cased vial. Dracula does not bow. 'You carry the Frenchman's trick like a postcard, traveler,' he says. 'You have not yet learned what you hold. Speak with me of Meister - the boy bitten fourteen times - and with my brides of what they were before the Court took them. Then bring me the vial, and I will know you for a witness and not a courier.'";
 	otherwise:
 		say "You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival.
-'Attenuated,' Dracula says. 'The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial.' A bride closes his hand around it; he does not look at it again. 'A worthy enemy's legacy. Very well, traveler. The Court receives you as received - marked, not turned.'";
-		grant the bat sigil noting "The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: faced, and stayed polite.";
+'Attenuated,' Dracula says. 'The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial.'
+He turns, slowly, to each of the three. 'You have heard the boy Meister. You have heard what Budapest scheduled, what Bucharest named, what Belgrade could not save. You do not carry a relic. You carry a witness.' A bride closes his hand around it; he does not look at it again. 'A worthy enemy's legacy, seen whole. Very well, traveler. The Court receives you as received - marked, not turned.'";
+		grant the bat sigil noting "The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: you faced the first fear, heard its witnesses, and stayed polite.";
 
 Instead of showing something to Count Dracula:
 	say "He gestures, without interest, at the dry fountains of the Thirst Gallery. Nothing else interests him."
@@ -2000,6 +2020,149 @@ Instead of asking the Belgrade Bride about something when the topic understood m
 	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, traveler. Every operative you see is already dead. We are simply fighting while dying.'";
 Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^pasteur$|^medicine$":
 	say "'You want the medical secret,' she says, and there is no bitterness in it. 'The Frenchman's vaccine works on our disease. The Count respects it because it is the only weapon ever pointed at us that he did not laugh at. Ask him about it - he will bow. The Count bows to exactly one thing in four hundred years: not an army. A syringe.'";
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+	say "'Before the timetable, I kept another,' the Budapest Bride says. 'I was a dispatcher at the Budapest Pasteur Institute - the house that took in the bitten from every corner of the Balkans and sent them home alive, if they arrived in time. Forty-seven substations, seventy-two hours: that was my schedule then, too. The Court simply gave me the dark version of it. I do not serve. I obey. I enjoy it - because I was always the one who made the trains of the saved run on time.'";
+	now heard-budapest-past is true.
+
+Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+	say "'I was a namer of small deaths,' the Bucharest Bride says. 'A pathologist - Victor Babes taught the world to see the body's signature under glass, the little inclusion that named rabies before it killed. I spoke a dozen tongues and still ran out of words for what we are. That is why I collect yours. Every culture has a word for us. They are all correct. They are all insufficient - I learned that in a laboratory, long before I learned it in a crypt.'";
+	now heard-bucharest-past is true.
+
+Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+	say "'I was a doctor in the place where your word for me was born,' the Belgrade Bride says. 'Serbia - where the imperial surgeons first wrote down the returning dead and called the terror by its true name: rabies. I read those reports. I watched my own patients become exactly what the old papers described, and I could not stop it. That is why I understand why your patients scream. Every operative you see is already dead. We are simply fighting while dying - and somewhere a Serb reached Budapest in time and lived. I am what happens to the ones who did not.'";
+	now heard-belgrade-past is true.
+
+[ --- Nightfall: a compact roguelike survival gauntlet, open to the marked --- ]
+The Nightfall Grounds is north of the Blood Court. "A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day. Forty-seven substations' worth of dark waits in the corners. The Budapest Bride's voice follows you: 'ADVANCE to face a wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave.'"
+
+Instead of going north in the Blood Court when the bat sigil is not carried by the player:
+	say "The way north is closed. 'The night is not for the unmarked,' the Budapest Bride says. 'Earn the Bat Sigil first, traveler.'" instead.
+
+Table of Nightfall Boons
+bname	beffect
+"Moonlit Fangs"	"+2 power"
+"Crimson Font"	"+8 vitality"
+"Thirst Protocol"	"+1 power, +3 vitality"
+"Nightfall Timetable"	"foes grow one slower each wave"
+"Bat Swarm"	"+3 power, -2 vitality"
+"Glass Archive"	"+5 vitality"
+"Renfield's Madness"	"+1 power each wave"
+"Cold Sun"	"foes -1 each wave"
+
+To start the nightfall run:
+	now nightfall-active is true;
+	now nightfall-wave is 0;
+	now nightfall-vitality is 20;
+	now nightfall-power is 2;
+	now nightfall-pending is false;
+	now timetable-held is false;
+	now renfield-held is false;
+	now coldsun-held is false;
+	now offered-1 is 0;
+	now offered-2 is 0;
+	now offered-3 is 0;
+	say "The grounds go black. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is [nightfall-vitality], your guard [nightfall-power]. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours."
+
+To offer nightfall boons:
+	let offered be a list of numbers;
+	repeat with k running from 1 to 3:
+		let c be a random number between 1 and the number of rows in the Table of Nightfall Boons;
+		while c is listed in offered:
+			now c is a random number between 1 and the number of rows in the Table of Nightfall Boons;
+		add c to offered;
+	now offered-1 is entry 1 of offered;
+	now offered-2 is entry 2 of offered;
+	now offered-3 is entry 3 of offered;
+	say "The Court offers three boons of the night - PICK 1, 2, or 3:";
+	repeat with k running from 1 to 3:
+		choose row (entry k of offered) in the Table of Nightfall Boons;
+		say "[line break]  [k]) [bname entry]: [beffect entry]".
+
+To apply nightfall boon (bn - a number):
+	if bn is 1, increase nightfall-power by 2;
+	if bn is 2, increase nightfall-vitality by 8;
+	if bn is 3:
+		increase nightfall-power by 1;
+		increase nightfall-vitality by 3;
+	if bn is 4, now timetable-held is true;
+	if bn is 5:
+		increase nightfall-power by 3;
+		decrease nightfall-vitality by 2;
+	if bn is 6, increase nightfall-vitality by 5;
+	if bn is 7, now renfield-held is true;
+	if bn is 8, now coldsun-held is true.
+
+To end the nightfall in victory:
+	now nightfall-active is false;
+	if nightfall-wave > nightfall-best, now nightfall-best is nightfall-wave;
+	say "Wave twelve breaks like the false dawn. You have outlasted the night. The Court does not applaud - it remembers. The Budapest Bride nods once: 'You are not prey.'";
+	move the player to the Blood Court;
+	say "[line break](Best night: [nightfall-best] waves.)".
+
+To end the nightfall in defeat:
+	now nightfall-active is false;
+	if nightfall-wave > nightfall-best, now nightfall-best is nightfall-wave;
+	say "The shapes overrun you at wave [nightfall-wave]. The night takes its due and spills you back at the Blood Court's threshold. (Best night: [nightfall-best] waves.) Stand up and try again - the Court keeps no grudge against the living who keep standing.";
+	move the player to the Blood Court.
+
+Every turn when the location is the Nightfall Grounds and nightfall-active is false:
+	start the nightfall run.
+
+After going from the Nightfall Grounds when nightfall-active is true:
+	now nightfall-active is false;
+	say "You step back toward the dry hall; the run is abandoned. The night will wait."
+
+Advancing the nightfall is an action applying to nothing.
+Understand "advance" or "next" or "survive" or "fight" as advancing the nightfall.
+
+Check advancing the nightfall:
+	if the location is not the Nightfall Grounds:
+		say "The night only advances on the Nightfall Grounds." instead;
+	if nightfall-active is false:
+		say "No run is in progress - step into the Grounds and the night begins." instead;
+	if nightfall-pending is true:
+		say "The Court holds its breath. PICK 1, 2, or 3 to take a boon before the next wave." instead.
+
+Carry out advancing the nightfall:
+	if renfield-held is true, increase nightfall-power by 1;
+	increment nightfall-wave;
+	let foes be nightfall-wave;
+	if coldsun-held is true, decrease foes by 1;
+	if timetable-held is true, decrease foes by 1;
+	if foes < 1, now foes is 1;
+	let breach be foes - nightfall-power;
+	if breach > 0:
+		decrease nightfall-vitality by breach;
+		say "Wave [nightfall-wave]: [foes] shapes lunge from the dark. Your guard turns [nightfall-power]; [breach] slip through - [breach] wounds. Vitality: [nightfall-vitality].";
+	otherwise:
+		say "Wave [nightfall-wave]: [foes] shapes lunge and all are turned before they land. Vitality: [nightfall-vitality].";
+	if nightfall-wave is 12:
+		end the nightfall in victory;
+	otherwise if the remainder after dividing nightfall-wave by 3 is 0:
+		now nightfall-pending is true;
+		offer nightfall boons;
+	otherwise if nightfall-vitality <= 0:
+		end the nightfall in defeat.
+
+Picking a boon is an action applying to one number.
+Understand "pick [number]" or "select [number]" as picking a boon.
+
+Check picking a boon:
+	if the location is not the Nightfall Grounds:
+		say "There is no boon to pick here." instead;
+	if nightfall-pending is false:
+		say "No boon is on offer right now." instead;
+	if the number understood is not 1 and the number understood is not 2 and the number understood is not 3:
+		say "Pick 1, 2, or 3." instead.
+
+Carry out picking a boon:
+	let chosen be offered-1;
+	if the number understood is 2, now chosen is offered-2;
+	if the number understood is 3, now chosen is offered-3;
+	apply nightfall boon chosen;
+	now nightfall-pending is false;
+	choose row chosen in the Table of Nightfall Boons;
+	say "You take [bname entry]. (Power [nightfall-power], Vitality [nightfall-vitality].) ADVANCE to the next wave."
 
 The Abyssal Deck is southeast of the Dark Concourse. "A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank."
 

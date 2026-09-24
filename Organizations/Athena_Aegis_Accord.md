@@ -290,6 +290,21 @@ The Athena Aegis Accord represents the most ambitious attempt at continental coo
 
 ---
 
+## PATRON SAINTS OF THE RABIES WAR
+
+The Rabies Subfaction denies its enemies their names; the Accord returns the names and mints them. Where the Undead Court *turns* the great physicians of the rabies war into place-named brides (Budapest, Bucharest, Belgrade — faceless, monstrous, stripped of pre-turning identity), the Accord *enshrines* the same people as patron saints, medals, and protocols. The mirror is deliberate: the same war, the two ends of one glass.
+
+| Patron Saint | Who they were | What the Accord made of them |
+|---|---|---|
+| **Joseph Meister** | The first human saved by Pasteur's vaccine (bitten 14×, 1885); kept the Pasteur Institute and its tomb | **Patron Saint of Survivors.** "To pull a Meister" = survive impossible odds. The Joseph Meister Medal is awarded for saving lives under fire. |
+| **Endre Hőgyes** | Brought Pasteur vaccine to Hungary (1890); first director of the Budapest Pasteur Institute — the Balkan dispatch hub that received Serbian bite-victims | **The Golden-Window Doctrine.** PEP must reach the bitten within 24–72 h or they die. The bride's 72 hours of *dark* is the inverse of the Accord's 72-hour *golden window*. The Hőgyes Medal honors field logisticians who got the vial there in time. |
+| **Victor Babeș** | Described the Babeș–Negri cytoplasmic body (1886); multilingual philosopher of science; built the world's 2nd anti-rabies centre in Bucharest | **The Babeș School of Diagnosis.** To *name* the pathogen under the microscope is to disarm it. The bride hoards names because none can hold the terror; the Accord uses the name (the Babeș body) to break it. |
+| **The Balkan Recorder** (archetype) | The Serbian source of the word *vampire* and Flückinger's *Visum et Repertum* (1732) — the first forensic record of the "returning dead"; a millennial canine-rabies zone that sent its bitten to Budapest | **The Demythologization Creed.** The Accord's first act of recognition was to write the vampire superstition *up* as a rabies forensic report. The bride *became* the myth; the Accord *dissected* it. |
+
+**Operating principle:** every physician the Court consumes, the Accord commemorates. The roster is an inverted litany — Meister (survived) → Hőgyes (in time) → Babeș (named) → the Recorder (demythologized) — and it is the Accord's standing answer to Dracula's "we respect him" bow: *we do more than bow; we remember the man.*
+
+---
+
 ## CROSS-REFERENCES
 
 - **Umin**: [Umin Faction File](../SoMe_Factions/Umin_The_Unseen_Crown.md)
