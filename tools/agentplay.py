@@ -7,10 +7,14 @@ explore and see where the game's guidance fails.
 Primary model is OpenRouter's anonymous-free `stealth/space-bunny-alpha`; on any
 failure we fall through the remaining models in order (see MODELS below).
 
+Switch provider with AGENTPLAY_PROVIDER=agnes to use the independent Agnes API
+(api.agnes-ai.cn) — NOT subject to the OpenRouter space-bunny rate limit.
+
 Usage:
     set OPENROUTER_API_KEY=...            # or pass --key-file
     python tools/agentplay.py --smoke     # fixed script, no API calls
     python tools/agentplay.py --turns 40  # real autonomous run
+    AGENTPLAY_PROVIDER=agnes AGNES_TOKEN=sk-... python tools/agentplay.py --turns 40 --key-file Tests/.playtest_token
 
 The API key is never written to disk by this script (repo-safe).
 """
@@ -22,6 +26,14 @@ OUT = os.path.join(BUILD, "agentplay")
 
 API_URL = os.getenv("OPENROUTER_URL", "https://openrouter.ai/api/v1/chat/completions")
 
+# Agnes provider (independent of OpenRouter; NOT subject to the space-bunny 429).
+# Token via AGNES_TOKEN env or --key-file (Tests/.playtest_token).
+AGNES_URL = os.getenv("AGNES_URL", "https://api.agnes-ai.cn/v1/chat/completions")
+AGNES_MODEL = os.getenv("AGNES_MODEL", "agnes-3.0-flash")
+
+# Provider selection: "openrouter" (default) or "agnes". Set AGENTPLAY_PROVIDER=agnes.
+PROVIDER = os.getenv("AGENTPLAY_PROVIDER", "openrouter").lower()
+
 # Fallback order. First entry is primary; later entries are tried in this order
 # when a call fails (HTTP error, timeout, empty content). Override with the
 # AGENTPLAY_MODELS env var (comma separated).
@@ -32,6 +44,7 @@ MODELS = [
     "meta-llama/llama-3.3-70b-instruct:free",
     "qwen/qwen-2.5-72b-instruct:free",
 ]
+AGNES_MODELS = [AGNES_MODEL]
 
 SYSTEM = """You are playing a text adventure called SOME-UNIVERSE: THE TEN BANNERS, as a brand-new player who knows nothing about it beyond what appears on screen.
 
@@ -135,7 +148,7 @@ class Game:
             pass
 
 
-def call_model(model, messages, key, timeout=120, max_tokens=700):
+def call_model(model, messages, key, url=API_URL, timeout=120, max_tokens=700):
     payload = {
         "model": model,
         "messages": messages,
@@ -144,7 +157,7 @@ def call_model(model, messages, key, timeout=120, max_tokens=700):
     }
     body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
-        API_URL, data=body,
+        url, data=body,
         headers={
             "Authorization": "Bearer " + key,
             "Content-Type": "application/json",
@@ -160,11 +173,11 @@ def call_model(model, messages, key, timeout=120, max_tokens=700):
     return True, content
 
 
-def call_with_fallback(messages, key, models):
+def call_with_fallback(messages, key, models, url=API_URL):
     errs = []
     for m in models:
         try:
-            ok, res = call_model(m, messages, key)
+            ok, res = call_model(m, messages, key, url=url)
             if ok:
                 return m, res, errs
             errs.append("%s: %s" % (m, res))
@@ -190,10 +203,21 @@ def build_messages(history, tail=1400, system=None):
 
 
 def run(args):
-    key = os.getenv("OPENROUTER_API_KEY") or ""
-    if args.key_file and os.path.exists(args.key_file):
-        key = io.open(args.key_file, encoding="utf-8").read().strip()
-    models = [m.strip() for m in os.getenv("AGENTPLAY_MODELS", "").split(",") if m.strip()] or MODELS
+    if PROVIDER == "agnes":
+        key = os.getenv("AGNES_TOKEN") or ""
+        if args.key_file and os.path.exists(args.key_file):
+            key = io.open(args.key_file, encoding="utf-8").read().strip()
+        models = [m.strip() for m in os.getenv("AGENTPLAY_MODELS", "").split(",") if m.strip()] or AGNES_MODELS
+        api_url = AGNES_URL
+        provider_label = "agnes (%s)" % AGNES_MODEL
+    else:
+        key = os.getenv("OPENROUTER_API_KEY") or ""
+        if args.key_file and os.path.exists(args.key_file):
+            key = io.open(args.key_file, encoding="utf-8").read().strip()
+        models = [m.strip() for m in os.getenv("AGENTPLAY_MODELS", "").split(",") if m.strip()] or MODELS
+        api_url = API_URL
+        provider_label = "openrouter"
+    print("[provider] %s  models=%s" % (provider_label, models))
 
     goal = ""
     if args.goal:
@@ -239,7 +263,7 @@ def run(args):
             for attempt in range(3):
                 mm, rep, errs = call_with_fallback(
                     build_messages(history, system=SYSTEM + goal) if goal else build_messages(history),
-                    key, models)
+                    key, models, url=api_url)
                 if mm is None:
                     break
                 model = mm
