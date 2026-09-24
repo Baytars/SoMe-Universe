@@ -239,7 +239,7 @@ The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius leg
 The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
 The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from the vent and GIVE it to the Division Chief."
-The trial text of the pale masque is "At the Masquerade, UNMASK the Pale Masquer - look twice at the beautiful, and she gives you the mask."
+The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK THE MASQUER ABOUT SYMPTOMS for the chancre, READ THE CRIMSON DOTS and TAKE THE CANDLE TO HER FACE for her signatures, then ASK her for PSORIASIS, ARTHRITIS and DEMENTIA and TELL her what gives each away - PALMS, PAINLESS, PUPIL. When she goes quiet, TELL HER ABOUT SEROLOGY, and only then UNMASK her."
 The trial text of the bat sigil is "Buy the Pasteur vial from the Cradle's factor (one token), then SHOW it to Count Dracula himself."
 The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
 The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
@@ -1440,9 +1440,27 @@ Lucifer is a man in the Black Cathedral. "Lucifer - the Mercury God, the Morning
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^mirror$":
 	say "'I do not show faces,' Lucifer says. The voice is the sound of a bead of metal finding the floor. 'Faces lie cheaply. I show the nervous system - yours is very fine, traveler. So easily unravelled. I do not destroy it. I merely rearrange.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^mercury$|^quicksilver$":
-	say "'They sought eternal life in me. I gave them eternal death - the difference was merely a matter of perspective,' he says. 'A night with Venus, a lifetime with Mercury. I fought the Great Imitator for centuries and killed as many of their physicians as of my true enemy. Then they found penicillin and threw me away. Fine. I am patient. I am eternal.'"
+	say "'They sought eternal life in me. I gave them eternal death - the difference was merely a matter of perspective,' he says. 'A night with Venus, a lifetime with Mercury. I fought the Great Imitator for centuries and killed as many of their physicians as of my true enemy. Then they found penicillin and threw me away. Fine. I am patient. I am eternal.'".
+
+[Comment: OSLER CHALLENGE STATE - declared up here because Lucifer's Pallidum answer also touches it; stages run 0 nothing heard, 1 chancre heard, 2 three faces refuted, 3 latency named, 4 masque given. All wording lives in the Masquerade section below; only these flags drive the mechanics.]
+masquer-stage is a number that varies. masquer-stage is 0.
+faces-refuted is a number that varies. faces-refuted is 0.
+sig-palms is a truth state that varies. sig-palms is false.
+sig-painless is a truth state that varies. sig-painless is false.
+sig-pupil is a truth state that varies. sig-pupil is false.
+sig-serology is a truth state that varies. sig-serology is false.
+face-psoriasis is a truth state that varies. face-psoriasis is false.
+face-arthritis is a truth state that varies. face-arthritis is false.
+face-dementia is a truth state that varies. face-dementia is false.
+asked-grey is a truth state that varies. asked-grey is false.
+
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^pallidum$|^imitator$":
-	say "'Ancient enemies,' he says, with something almost like fondness. 'We both take minds. The difference is, they used to worship me.'"
+	say "'Ancient enemies,' he says, with something almost like fondness. 'We both take minds. The difference is, they used to worship me.'";
+	if asked-grey is true:
+		now sig-serology is true;
+		say "[line break]'Mercury,' he adds, and the mirror behind him goes silver. 'They rubbed me into her for four hundred years and I never once touched her. An element does not cure; an element simply remains. Ask the Grey Physician what remains in the blood when there is nothing left to look at - she has the word for it, and she will not give it to you twice.'[line break](You have the word now: TELL THE MASQUER ABOUT SEROLOGY when she goes quiet.)";
+	otherwise:
+		say "[line break]'Ask the Grey Physician about mercury first,' he says. 'Then come back, and I will tell you what a cure is.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^biomagnification$|^food chain$":
 	say "'Nothing dies in me,' Lucifer says. 'A thousandth of a part in the water; a tenfold in the weed; a hundredfold in the small fish; a thousand in the great. By the time I reach your table I am a hundred thousand times myself. You cannot destroy an element, traveler. You can only hope to contain it.'"
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^chelation$|^gauntlets$":
@@ -1782,27 +1800,139 @@ The Grey Physician is a woman in the Masquerade Ballroom. "The Grey Physician st
 
 The Pale Masquer is a person in the Masquerade Ballroom. "The Pale Masquer wears white porcelain with a spiral flourish, and moves through the pavane like the person the dance was invented for." The description is "Behind the mask: nothing but elegant, spiralling darkness - or so the fixture says. The mask is the flagship's signature. Maschera Pallida."
 
-mask-count is a number that varies. mask-count is 0.
+[Comment: THE SHEPHERD - the zeroth portrait. Every face in the mural is borrowed; this one is not.]
+The unlabelled portrait is scenery in the Masquerade Ballroom. Understand "portrait" and "shepherd" and "boy" and "unlabelled" as the unlabelled portrait. The description is "One portrait in the Hall of Romances has no plaque. A shepherd boy in a hat whose lace spells his own name, hair coiled in a spiral, holding a silver crook with a sheep's skull at the head. He is not one of the gifts. He is the face the ball was wearing before it learned to borrow - and the name on the lace is where the disease got its name."
+
+The silver crook is scenery in the Masquerade Ballroom. Understand "crook" and "staff" and "silver" and "skull" and "sheep's skull" as the silver crook. The description is "Silver, with a sheep's skull at the head. Before penicillin there was mercury: inunction, thrice daily, for a disease the mercury could not touch. The crook is silver. The skull is what the cure left."
+
+The ewe-lamb pair is scenery in the Masquerade Ballroom. Understand "ewe" and "lamb" and "sheep" and "mother" and "baby" and "pair" as the ewe-lamb pair. The description is "The ewe is healthy. The lamb is not. She does not have to reach you to keep going - she can be carried in what you make. Congenital, they call it, in the notes nobody hangs in a ballroom."
+
+The shepherd bed is scenery in the Masquerade Ballroom. Understand "bed" and "shepherd bed" and "couch" as the shepherd bed. The description is "A bed, painted plainly, among romances. Most of her entrances are negotiated here, which is why the mural pretends not to see it. Fracastoro knew."
+
+The crimson dots are scenery in the Masquerade Ballroom. Understand "dots" and "red dots" and "crimson" and "coins" and "copper" as the crimson dots. The description is "Copper coins scattered on the palms and the soles - the secondary rash that a hundred dermatologies have mislabelled. Palms and soles: that is the one thing psoriasis will not do for her."
+
+The tallow candle is in the Masquerade Ballroom. Understand "candle" and "tallow" and "flame" and "light" as the tallow candle. The description is "A tallow candle lifted from the ballroom sconce. It burns with a small, steady, entirely unromantic flame."
+
+After examining the crimson dots:
+	now sig-palms is true;
+	say "[line break](Palms and soles. That is the signature - TELL THE MASQUER ABOUT THE PALMS when she wears the scaly face.)"
+
+After examining the unlabelled portrait:
+	say "[line break](Every face in this hall is a gift she took. This one is the face she was wearing before she learned to take them.)"
 
 Instead of asking the Crimson Dancer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
-	say "'Symptoms?' The Crimson Dancer's laugh is polished. 'Palms and soles, traveler - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others.'"
+	say "'Symptoms?' The Crimson Dancer's laugh is polished. 'Palms and soles, traveler - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others.'[line break]He turns, and the crimson dots on his costume catch the candlelight.[line break](EXAMINE THE CRIMSON DOTS.)"
 
 Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
-	say "'Mercury,' the Grey Physician says, in the tone of a prescription. 'Inunction, thrice daily. The cure is nearly as loyal as the disease. I buried my practice and it never once left me.'"
+	now asked-grey is true;
+	say "'Mercury,' the Grey Physician says, in the tone of a prescription. 'Inunction, thrice daily. The cure is nearly as loyal as the disease. I buried my practice and it never once left me.'[line break](ASK her about MERCURY, or about SEROLOGY. The Black Cathedral keeps the other half of that story.)"
+
+Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^mercury$|^quicksilver$":
+	now asked-grey is true;
+	say "'The grey cure,' she says. 'We rubbed it in until the gums went and the mind went with them, and the spirochaete went on dancing. Mercury is an element, traveler. It does not treat anything; it merely outlasts the argument. If you want the element's own account of her, ASK LUCIFER ABOUT PALLIDUM in the Black Cathedral.'"
+
+Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^serology$|^blood$|^test$|^wassermann$":
+	now sig-serology is true;
+	say "'A blood test,' the Grey Physician says, and for the first time she sounds like a woman and not a prescription. 'The Wassermann was a mirror we thought she could not help but look into. She learned to fog it. A false negative is a mask too, and it is the only one she cannot take off in front of a lamp.[line break]Here is the thing nobody puts on a plaque: when she has no symptoms at all - when she has gone quiet for twenty years and the chart says nothing - the blood still says yes. Seropositive, with nothing to show for it.[line break](When she tells you she has gone, TELL HER ABOUT SEROLOGY.)'"
 
 Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
-	increment mask-count;
-	if mask-count is 1:
-		say "'A chancre,' the Pale Masquer says, 'painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. They still teach the rash that followed as if it were mine alone.'";
+	if sig-painless is false:
+		now sig-painless is true;
+		if masquer-stage is 0:
+			now masquer-stage is 1;
+		say "'A chancre,' the Pale Masquer says, 'painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. Painless, and self-healing: that is how I get a fortnight alone in a body. They still teach the rash that followed as if it were mine alone.'[line break](She has nine diseases to wear. ASK her about PSORIASIS, about ARTHRITIS, or about DEMENTIA, and tell her what gives each one away.)";
 	otherwise:
-		say "'Arthritis,' the Pale Masquer says instead, 'Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, traveler. The chart cannot hold me. That is the point of me.'";
+		say "'Arthritis,' the Pale Masquer says instead, 'Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, traveler. The chart cannot hold me. That is the point of me.[line break]Name them, then. PSORIASIS. ARTHRITIS. DEMENTIA. What gives each one away?'";
+
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^psoriasis$|^psoriatic$":
+	now face-psoriasis is true;
+	say "She puts on psoriasis: scaly plaques across the elbows and the knees, a respectable, boring, photographable rash.[line break]'Psoriasis,' the Pale Masquer says sweetly. 'Half the dermatologies in the world would sign for it. Tell me what I have forgotten.'[line break](TELL THE MASQUER ABOUT what this rash is really doing.)"
+
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^arthritis$|^joints$|^charcot$":
+	now face-arthritis is true;
+	say "She puts on arthritis: a knee swollen out of shape, a spine that has quietly reorganised itself.[line break]'Charcot joints,' the Pale Masquer says. 'Neuropathic. Ruined. Look how ruined. Any rheumatologist would weep and reach for a prescription.'[line break](TELL THE MASQUER ABOUT what makes this destruction unlike any other arthritis.)"
+
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^dementia$|^paresis$|^madness$":
+	now face-dementia is true;
+	say "She puts on dementia: a mild, plausible confusion, a biography editing itself as she speaks it.[line break]'General paresis of the insane,' the Pale Masquer says. 'A mind going soft in a man of fifty. They used to fill asylums with me and call it something else.'[line break](TELL THE MASQUER ABOUT what the pupils do.)"
+
+Instead of showing the tallow candle to the Pale Masquer:
+	if sig-pupil is true:
+		say "You have already held the flame to her face. The pupils do not move the second time either.";
+	otherwise if masquer-stage is 0:
+		say "You are not holding a diagnosis yet, only a candle. Hear her out first - ASK ABOUT SYMPTOMS - and then you will know what you are looking for.";
+	otherwise:
+		now sig-pupil is true;
+		say "You lift the tallow flame toward the porcelain, and the candlelight falls across both her eyes.[line break]They do not move.[line break]They track your face perfectly - accommodation intact, she follows you as closely as any lover - but the light does not touch them. Argyll Robertson: the pupil that accommodates and does not react. She can see the pleasure close at hand, and she cannot see the light at all.[line break](TELL THE MASQUER ABOUT the PUPIL when she wears the demented face.)"
+
+To refute a masquer face:
+	if faces-refuted is 3:
+		now masquer-stage is 2;
+		say "[line break]Three faces, three signatures, and she takes them all back without an argument - which is worse than an argument.[line break]'Enough,' the Pale Masquer says. 'You are good. You are very good. So I shall do the only thing you cannot answer.'[line break]She curtsies, and the pavane carries her to the far end of the hall, and there is simply nothing left to look at: no rash, no joint, no confusion, no lesion anywhere on her.[line break]'I have gone,' her voice says, from nowhere you can point at. 'Latency. Twenty years if I like it. There is nothing in this room to diagnose, traveler. Diagnose me.'[line break](TELL HER ABOUT SEROLOGY - if you have the word for it.)";
+	otherwise:
+		say "[line break]The face comes off in her hands like a letter she has read. 'One,' she says.[line break](Ask her for another: PSORIASIS, ARTHRITIS, DEMENTIA.)";
+
+Instead of telling the Pale Masquer about something:
+	let tt be "[the topic understood]" in lower case;
+	let sig be "none";
+	if tt is "palms" or tt is "the palms" or tt is "soles" or tt is "palms and soles" or tt is "rash" or tt is "the rash":
+		now sig is "palms";
+	otherwise if tt is "painless" or tt is "the painless" or tt is "pain" or tt is "no pain":
+		now sig is "painless";
+	otherwise if tt is "pupil" or tt is "the pupil" or tt is "pupils" or tt is "the pupils" or tt is "argyll" or tt is "argyll robertson":
+		now sig is "pupil";
+	otherwise if tt is "serology" or tt is "serological" or tt is "seropositive" or tt is "blood" or tt is "the blood":
+		now sig is "serology";
+	if sig is "palms":
+		if face-psoriasis is false:
+			say "She is not wearing that face, and a name given to the wrong mask is only flattery.[line break](Ask her for a face first: PSORIASIS, ARTHRITIS, DEMENTIA.)";
+		otherwise if sig-palms is false:
+			say "You are guessing. Look at the crimson dots on the dancer and say what the rash is really doing.";
+		otherwise:
+			now face-psoriasis is false;
+			increment faces-refuted;
+			say "'Copper coins on the palms and the soles,' you say. 'Psoriasis does palms, but not like that - and it does not come with a chancre nobody felt, and it does not come with the rest of you.'";
+			refute a masquer face;
+	otherwise if sig is "painless":
+		if face-arthritis is false:
+			say "She is not wearing that face, and a name given to the wrong mask is only flattery.[line break](Ask her for a face first: PSORIASIS, ARTHRITIS, DEMENTIA.)";
+		otherwise if sig-painless is false:
+			say "You are guessing. Hear her out on her first mask - ASK ABOUT SYMPTOMS - and she will tell you what she has never once been.";
+		otherwise:
+			now face-arthritis is false;
+			increment faces-refuted;
+			say "'Painless,' you say. 'Every other arthritis hurts, and the patient protects the joint. Yours destroys it quietly, because the pain fibres went first. Charcot is not arthritis; it is arthritis with the warning removed.'";
+			refute a masquer face;
+	otherwise if sig is "pupil":
+		if face-dementia is false:
+			say "She is not wearing that face, and a name given to the wrong mask is only flattery.[line break](Ask her for a face first: PSORIASIS, ARTHRITIS, DEMENTIA.)";
+		otherwise if sig-pupil is false:
+			say "You are guessing. You have not looked. Take the CANDLE to her face and see what her pupils do.";
+		otherwise:
+			now face-dementia is false;
+			increment faces-refuted;
+			say "'Argyll Robertson,' you say. 'She follows your face across the room and never once answers the light. Accommodation spared, light reflex gone. No ordinary dementia does that.'";
+			refute a masquer face;
+	otherwise if sig is "serology":
+		if masquer-stage < 2:
+			say "She is still in the room, wearing something you could point at. Wait until she has nothing left to show you.";
+		otherwise if sig-serology is false:
+			say "You do not have the word for it yet. ASK THE GREY PHYSICIAN ABOUT SEROLOGY, and she will give it to you.";
+		otherwise:
+			now masquer-stage is 3;
+			say "'No symptoms,' you say. 'Nothing to look at, nothing to chart. And the blood still says yes.'[line break]The pavane stops.[line break]'Seropositive,' the Pale Masquer says, and it is the first thing she has said with no curtsy behind it. 'That is the only face I cannot wear. Every other one is a disguise; that one is a description.[line break]Thirty, forty percent of my audiences never get this far. You looked twice at nothing at all, traveler.'[line break](UNMASK THE PALE MASQUER.)";
+	otherwise:
+		say "She curtsies, and whatever you said goes no further than the floor.[line break](Name what gives a face away: PALMS, PAINLESS, or the PUPIL - and when she has gone quiet, SEROLOGY.)"
 
 Instead of unmasking the Pale Masquer:
 	if the pale masque is carried by the player:
 		say "She is already unmasked, in the way that matters.";
+	otherwise if masquer-stage < 3:
+		say "You reach for the porcelain, and there is nothing to reach for: she has gone quiet, and a masquer with no symptoms is not a thing you can unhand.[line break]'On what finding?' her voice says, mildly, from the whole room at once.[line break](She must be caught in the blood, not in the mirror. Hear her chancre, refute three faces, and name her latency first.)";
 	otherwise:
+		now masquer-stage is 4;
 		say "You reach for the porcelain spiral, and she permits it - that is the horror of it, the mask tilts forward into your hand like a gift.
-Beneath: a face that has been every face in the mural. 'Osler said it best,' she says. 'Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You looked twice, traveler. Nobody looks twice at the beautiful.'
+Beneath: a face that has been every face in the mural. 'Osler said it best,' she says. 'Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You named me in the blood when there was nothing else to name. Nobody looks twice at the beautiful, and you looked twice at nothing at all.'
 She sets the porcelain in your hands with a curtsy.";
 		grant the pale masque noting "The Pale Masque settles into your satchel, lighter than porcelain has any right to be.";
 

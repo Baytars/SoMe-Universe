@@ -1,0 +1,166 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
+
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
+
+>The Pale Masquer curtsies, porcelain spiral catching the light. "I wear a thousand faces, traveler, and every one of them is beautiful." You swear to the Pallidum court.
+
+
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
+(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK KEEPER ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Masquerade Ballroom
+Candlelight, water-music, and three masked figures moving through the figures of a slow pavane. A mural runs the length of the hall: the Hall of Romances, each portrait labelled with a gift. Somewhere a string quartet plays one beat behind itself.
+
+The Pale Masquer wears white porcelain with a spiral flourish, and moves through the pavane like the person the dance was invented for.
+
+The Crimson Dancer turns through the pavane with impeccable timing, mask lacquered the red of a secondary rash.
+
+The Grey Physician stands at the hall's edge with a physician's stillness and a physician's mask, grey as granulation tissue.
+
+You can also see a tallow candle here.
+
+>You reach for the porcelain, and there is nothing to reach for: she has gone quiet, and a masquer with no symptoms is not a thing you can unhand.
+"On what finding?" her voice says, mildly, from the whole room at once.
+(She must be caught in the blood, not in the mirror. Hear her chancre, refute three faces, and name her latency first.)
+
+>Taken.
+
+>You are not holding a diagnosis yet, only a candle. Hear her out first - ASK ABOUT SYMPTOMS - and then you will know what you are looking for.
+
+>One portrait in the Hall of Romances has no plaque. A shepherd boy in a hat whose lace spells his own name, hair coiled in a spiral, holding a silver crook with a sheep's skull at the head. He is not one of the gifts. He is the face the ball was wearing before it learned to borrow - and the name on the lace is where the disease got its name.
+
+
+(Every face in this hall is a gift she took. This one is the face she was wearing before she learned to take them.)
+
+>Silver, with a sheep's skull at the head. Before penicillin there was mercury: inunction, thrice daily, for a disease the mercury could not touch. The crook is silver. The skull is what the cure left.
+
+>The ewe is healthy. The lamb is not. She does not have to reach you to keep going - she can be carried in what you make. Congenital, they call it, in the notes nobody hangs in a ballroom.
+
+>A bed, painted plainly, among romances. Most of her entrances are negotiated here, which is why the mural pretends not to see it. Fracastoro knew.
+
+>"Symptoms?" The Crimson Dancer's laugh is polished. "Palms and soles, traveler - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others."
+He turns, and the crimson dots on his costume catch the candlelight.
+(EXAMINE THE CRIMSON DOTS.)
+
+>"Mercury," the Grey Physician says, in the tone of a prescription. "Inunction, thrice daily. The cure is nearly as loyal as the disease. I buried my practice and it never once left me."
+(ASK her about MERCURY, or about SEROLOGY. The Black Cathedral keeps the other half of that story.)
+
+>"The grey cure," she says. "We rubbed it in until the gums went and the mind went with them, and the spirochaete went on dancing. Mercury is an element, traveler. It does not treat anything; it merely outlasts the argument. If you want the element's own account of her, ASK LUCIFER ABOUT PALLIDUM in the Black Cathedral."
+
+>"A chancre," the Pale Masquer says, "painless as a good invitation, gone in a fortnight - and the courts all swore themselves healthy. That was my first mask, traveler. Painless, and self-healing: that is how I get a fortnight alone in a body. They still teach the rash that followed as if it were mine alone."
+(She has nine diseases to wear. ASK her about PSORIASIS, about ARTHRITIS, or about DEMENTIA, and tell her what gives each one away.)
+
+>You lift the tallow flame toward the porcelain, and the candlelight falls across both her eyes.
+They do not move.
+They track your face perfectly - accommodation intact, she follows you as closely as any lover - but the light does not touch them. Argyll Robertson: the pupil that accommodates and does not react. She can see the pleasure close at hand, and she cannot see the light at all.
+(TELL THE MASQUER ABOUT the PUPIL when she wears the demented face.)
+
+>She is not wearing that face, and a name given to the wrong mask is only flattery.
+(Ask her for a face first: PSORIASIS, ARTHRITIS, DEMENTIA.)
+
+>She puts on psoriasis: scaly plaques across the elbows and the knees, a respectable, boring, photographable rash.
+"Psoriasis," the Pale Masquer says sweetly. "Half the dermatologies in the world would sign for it. Tell me what I have forgotten."
+(TELL THE MASQUER ABOUT what this rash is really doing.)
+
+>You are guessing. Look at the crimson dots on the dancer and say what the rash is really doing.
+
+>Copper coins scattered on the palms and the soles - the secondary rash that a hundred dermatologies have mislabelled. Palms and soles: that is the one thing psoriasis will not do for her.
+
+
+(Palms and soles. That is the signature - TELL THE MASQUER ABOUT THE PALMS when she wears the scaly face.)
+
+>"Copper coins on the palms and the soles," you say. "Psoriasis does palms, but not like that - and it does not come with a chancre nobody felt, and it does not come with the rest of you."
+
+The face comes off in her hands like a letter she has read. "One," she says.
+(Ask her for another: PSORIASIS, ARTHRITIS, DEMENTIA.)
+
+>She puts on arthritis: a knee swollen out of shape, a spine that has quietly reorganised itself.
+"Charcot joints," the Pale Masquer says. "Neuropathic. Ruined. Look how ruined. Any rheumatologist would weep and reach for a prescription."
+(TELL THE MASQUER ABOUT what makes this destruction unlike any other arthritis.)
+
+>"Painless," you say. "Every other arthritis hurts, and the patient protects the joint. Yours destroys it quietly, because the pain fibres went first. Charcot is not arthritis; it is arthritis with the warning removed."
+
+The face comes off in her hands like a letter she has read. "One," she says.
+(Ask her for another: PSORIASIS, ARTHRITIS, DEMENTIA.)
+
+>She puts on dementia: a mild, plausible confusion, a biography editing itself as she speaks it.
+"General paresis of the insane," the Pale Masquer says. "A mind going soft in a man of fifty. They used to fill asylums with me and call it something else."
+(TELL THE MASQUER ABOUT what the pupils do.)
+
+>"Argyll Robertson," you say. "She follows your face across the room and never once answers the light. Accommodation spared, light reflex gone. No ordinary dementia does that."
+
+Three faces, three signatures, and she takes them all back without an argument - which is worse than an argument.
+"Enough," the Pale Masquer says. "You are good. You are very good. So I shall do the only thing you cannot answer."
+She curtsies, and the pavane carries her to the far end of the hall, and there is simply nothing left to look at: no rash, no joint, no confusion, no lesion anywhere on her.
+"I have gone," her voice says, from nowhere you can point at. "Latency. Twenty years if I like it. There is nothing in this room to diagnose, traveler. Diagnose me."
+(TELL HER ABOUT SEROLOGY - if you have the word for it.)
+
+>You do not have the word for it yet. ASK THE GREY PHYSICIAN ABOUT SEROLOGY, and she will give it to you.
+
+>"A blood test," the Grey Physician says, and for the first time she sounds like a woman and not a prescription. "The Wassermann was a mirror we thought she could not help but look into. She learned to fog it. A false negative is a mask too, and it is the only one she cannot take off in front of a lamp.
+Here is the thing nobody puts on a plaque: when she has no symptoms at all - when she has gone quiet for twenty years and the chart says nothing - the blood still says yes. Seropositive, with nothing to show for it.
+(When she tells you she has gone, TELL HER ABOUT SEROLOGY.)"
+>"No symptoms," you say. "Nothing to look at, nothing to chart. And the blood still says yes."
+The pavane stops.
+"Seropositive," the Pale Masquer says, and it is the first thing she has said with no curtsy behind it. "That is the only face I cannot wear. Every other one is a disguise; that one is a description.
+Thirty, forty percent of my audiences never get this far. You looked twice at nothing at all, traveler."
+(UNMASK THE PALE MASQUER.)
+
+>You reach for the porcelain spiral, and she permits it - that is the horror of it, the mask tilts forward into your hand like a gift. Beneath: a face that has been every face in the mural. "Osler said it best," she says. "Know me in all my manifestations, and all things clinical will be added unto you. Thirty, forty percent of my audiences misdiagnose me to the end. You named me in the blood when there was nothing else to name. Nobody looks twice at the beautiful, and you looked twice at nothing at all." She sets the porcelain in your hands with a curtsy.
+
+The Pale Masque settles into your satchel, lighter than porcelain has any right to be.
+
+[Your score has just gone up by one point.]
+
+>Seals in your keeping:  Pale Masque.
+REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
+>Are you sure you want to quit? 

@@ -1,0 +1,31 @@
+s
+choose pallidum
+go to masquerade
+unmask pale masquer
+take candle
+show candle to pale masquer
+examine unlabelled portrait
+examine silver crook
+examine ewe-lamb pair
+examine shepherd bed
+ask crimson dancer about symptoms
+ask grey physician about symptoms
+ask grey physician about mercury
+ask pale masquer about symptoms
+show candle to pale masquer
+tell pale masquer about palms
+ask pale masquer about psoriasis
+tell pale masquer about palms
+examine crimson dots
+tell pale masquer about palms
+ask pale masquer about arthritis
+tell pale masquer about painless
+ask pale masquer about dementia
+tell pale masquer about pupil
+tell pale masquer about serology
+ask grey physician about serology
+tell pale masquer about serology
+unmask pale masquer
+seals
+quit
+yes

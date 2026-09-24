@@ -57,8 +57,20 @@ accuse stern quartermaster
 go to fear technology
 ask director about sightings
 go to masquerade
+ask crimson dancer about symptoms
+examine crimson dots
+ask grey physician about symptoms
+ask grey physician about serology
 ask pale masquer about symptoms
-ask pale masquer about symptoms
+take candle
+show candle to pale masquer
+ask pale masquer about psoriasis
+tell pale masquer about palms
+ask pale masquer about arthritis
+tell pale masquer about painless
+ask pale masquer about dementia
+tell pale masquer about pupil
+tell pale masquer about serology
 unmask pale masquer
 go to undead court
 show vial to count dracula
