@@ -70,48 +70,25 @@ The Workshop does its work - a low-frequency drone under hearing, a figure at th
 >The Director taps the tablet. "Site-66 containment walk. You carry the protocol; the Construct is on the plinth. Six beats of the cascade, traveler - steady a counter, then face each. Your sanity starts at 50. STEADY pre-empt, respond, inoculate, or restore; then FACE the beat. Hold to the end and the pass is yours."
 Beat 1 - Initial Sighting. A shape at the treeline of vision, and no story has formed around it yet. STEADY a counter, then FACE it.
 
->You settle the counter in your mind: pre-empt. FACE the beat when ready.
-
->Beat 1: the right counter holds; the sighting loses its edge. Sanity 53.
+>Beat 1: you faced it bare, no counter steadied - nothing between you and the sighting. Sanity 41.
 Beat 2 - Viral Spread. The image is already moving from feed to feed; every delay gives it another host. STEADY a counter, then FACE.
 
->You settle the counter in your mind: respond. FACE the beat when ready.
-
->Beat 2: the right counter holds; the sighting loses its edge. Sanity 56.
+>Beat 2: you faced it bare, no counter steadied - nothing between you and the sighting. Sanity 32.
 Beat 3 - Scientific Denial, discredited. The Construct folds into the posture of someone you lost - you know that posture. The likeness is already inside your memory; facts cannot argue with it. STEADY a counter, then FACE.
 
->You settle the counter in your mind: inoculate. FACE the beat when ready.
-
->Beat 3: the Construct folds into someone you lost - you name the borrowed face without denying the being beneath it, and the shape dissolves. Inoculation holds. Sanity 59.
+>Beat 3: the Construct wears your lost one's posture and you face it bare - the shape presses closer. Sanity 23.
 Beat 4 - Increased Belief. The evidence has not changed. The crowd's trust has. STEADY a counter, then FACE.
 
->You settle the counter in your mind: restore. FACE the beat when ready.
-
->Beat 4: the right counter holds; the sighting loses its edge. Sanity 62.
+>Beat 4: you faced it bare, no counter steadied - nothing between you and the sighting. Sanity 14.
 Beat 5 - More Sightings, psychosomatic. New reports arrive faster than they can be verified, and the symptoms begin to synchronize. STEADY a counter, then FACE.
 
->You settle the counter in your mind: respond. FACE the beat when ready.
+>Beat 5: you faced it bare, no counter steadied - nothing between you and the sighting. Sanity 5.
 
->Beat 5: the right counter holds; the sighting loses its edge. Sanity 65.
-Beat 6 - Authority Collapse. The orders are clear. No one believes the people giving them. STEADY a counter, then FACE.
 
->You settle the counter in your mind: restore. FACE the beat when ready.
+The borrowed face stops behaving like a test. The Director slams the containment shutters down between you and the plinth.
 
->Beat 6: the right counter holds; the sighting loses its edge. Sanity 68.
+"No pass. No penalty," she says. "Breathe. Read the protocol again. ASK ME ABOUT SIGHTINGS when you are ready to restart."
 
-Six beats weathered. The Director closes the tablet. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse."
-
-"Six exposures. Six correct responses. You held through the Recognition and everything after it."
-
-"REDACTED," she says, and the tablet shows a line that was not in the pamphlet: THIN MAN-01 was Daniel of the Phoenix Incident - a living man made into a construct. "The mind that fears cannot think," she finishes. "You kept yours. The pass is graded by what you kept."
-
-Clearance: Level 4 - Unblinking.
-
-The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.
-
-[Your score has just gone up by one point.]
-
->Seals in your keeping:  Sightings Lanyard.
-REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+>You carry no seal yet - win a faction's challenge and bring its sigil home.
 
 >Are you sure you want to quit? 

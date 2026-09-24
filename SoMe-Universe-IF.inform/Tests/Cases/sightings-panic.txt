@@ -1,0 +1,13 @@
+s
+choose cradle
+take pamphlet
+go to fear technology
+ask director about sightings
+face
+face
+face
+face
+face
+seals
+quit
+yes

@@ -1,0 +1,35 @@
+s
+choose cradle
+take pamphlet
+go to fear technology
+ask director about sightings
+steady pre-empt
+face
+steady respond
+face
+steady inoculate
+face
+steady restore
+face
+steady respond
+face
+steady restore
+face
+seals
+retake walk
+steady pre-empt
+face
+steady respond
+face
+steady inoculate
+face
+steady inoculate
+face
+steady inoculate
+face
+steady inoculate
+face
+seals
+banners
+quit
+yes

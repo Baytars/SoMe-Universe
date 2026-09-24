@@ -114,4 +114,64 @@ The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHT
 >Seals in your keeping:  Sightings Lanyard.
 REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
 
+>The Director resets the tablet to Beat 1. "Audit mode. Same six beats. Let us see whether the first pass was luck."
+The Director taps the tablet. "Site-66 containment walk. You carry the protocol; the Construct is on the plinth. Six beats of the cascade, traveler - steady a counter, then face each. Your sanity starts at 50. STEADY pre-empt, respond, inoculate, or restore; then FACE the beat. Hold to the end and the pass is yours."
+Beat 1 - Initial Sighting. A shape at the treeline of vision, and no story has formed around it yet. STEADY a counter, then FACE it.
+
+>You settle the counter in your mind: pre-empt. FACE the beat when ready.
+
+>Beat 1: the right counter holds; the sighting loses its edge. Sanity 53.
+Beat 2 - Viral Spread. The image is already moving from feed to feed; every delay gives it another host. STEADY a counter, then FACE.
+
+>You settle the counter in your mind: respond. FACE the beat when ready.
+
+>Beat 2: the right counter holds; the sighting loses its edge. Sanity 56.
+Beat 3 - Scientific Denial, discredited. The Construct folds into the posture of someone you lost - you know that posture. The likeness is already inside your memory; facts cannot argue with it. STEADY a counter, then FACE.
+
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
+
+>Beat 3: the Construct folds into someone you lost - you name the borrowed face without denying the being beneath it, and the shape dissolves. Inoculation holds. Sanity 59.
+Beat 4 - Increased Belief. The evidence has not changed. The crowd's trust has. STEADY a counter, then FACE.
+
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
+
+>Beat 4: the wrong counter feeds the cascade; the sighting hits harder. Sanity 51.
+Beat 5 - More Sightings, psychosomatic. New reports arrive faster than they can be verified, and the symptoms begin to synchronize. STEADY a counter, then FACE.
+
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
+
+>Beat 5: the wrong counter feeds the cascade; the sighting hits harder. Sanity 43.
+Beat 6 - Authority Collapse. The orders are clear. No one believes the people giving them. STEADY a counter, then FACE.
+
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
+
+>Beat 6: the wrong counter feeds the cascade; the sighting hits harder. Sanity 35.
+
+Six beats weathered. The Director closes the tablet. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse."
+
+"You bent, recovered, and finished. Field access under supervision."
+
+"REDACTED," she says, and the tablet shows a line that was not in the pamphlet: THIN MAN-01 was Daniel of the Phoenix Incident - a living man made into a construct. "The mind that fears cannot think," she finishes. "You kept yours. The pass is graded by what you kept."
+
+Clearance: Level 2 - Conditioned.
+
+The Director slides your pass back across the tablet. "Site-66 records Level 2. Best standing on file: Level 4."
+
+>Seals in your keeping:  Sightings Lanyard.
+REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
+>Banners: 0 delivered, 1 in hand, 11 not yet won.
+(Oath sworn - but swearing is only the first step: win that faction's challenge and carry its seal home to earn its banner.)
+  Cradle Sigil - oath sworn, seal not yet earned (win the hall's challenge and bring the seal).
+  Vesalius Medallion - not yet won.
+  Quicksilver Ampoule - not yet won.
+  Knitting Needle - not yet won.
+  Sulfur Sigil - not yet won.
+  Pale Masque - not yet won.
+  Bat Sigil - not yet won.
+  Stille Seal - not yet won.
+  Sightings Lanyard - in your satchel (won, not yet delivered).
+    Clearance Level 4, retained sanity 68.
+  Abyssal Pennant - not yet won.
+
 >Are you sure you want to quit? 

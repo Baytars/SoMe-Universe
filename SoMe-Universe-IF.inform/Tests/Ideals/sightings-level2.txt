@@ -85,27 +85,27 @@ Beat 3 - Scientific Denial, discredited. The Construct folds into the posture of
 >Beat 3: the Construct folds into someone you lost - you name the borrowed face without denying the being beneath it, and the shape dissolves. Inoculation holds. Sanity 59.
 Beat 4 - Increased Belief. The evidence has not changed. The crowd's trust has. STEADY a counter, then FACE.
 
->You settle the counter in your mind: restore. FACE the beat when ready.
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
 
->Beat 4: the right counter holds; the sighting loses its edge. Sanity 62.
+>Beat 4: the wrong counter feeds the cascade; the sighting hits harder. Sanity 51.
 Beat 5 - More Sightings, psychosomatic. New reports arrive faster than they can be verified, and the symptoms begin to synchronize. STEADY a counter, then FACE.
 
->You settle the counter in your mind: respond. FACE the beat when ready.
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
 
->Beat 5: the right counter holds; the sighting loses its edge. Sanity 65.
+>Beat 5: the wrong counter feeds the cascade; the sighting hits harder. Sanity 43.
 Beat 6 - Authority Collapse. The orders are clear. No one believes the people giving them. STEADY a counter, then FACE.
 
->You settle the counter in your mind: restore. FACE the beat when ready.
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
 
->Beat 6: the right counter holds; the sighting loses its edge. Sanity 68.
+>Beat 6: the wrong counter feeds the cascade; the sighting hits harder. Sanity 35.
 
 Six beats weathered. The Director closes the tablet. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse."
 
-"Six exposures. Six correct responses. You held through the Recognition and everything after it."
+"You bent, recovered, and finished. Field access under supervision."
 
 "REDACTED," she says, and the tablet shows a line that was not in the pamphlet: THIN MAN-01 was Daniel of the Phoenix Incident - a living man made into a construct. "The mind that fears cannot think," she finishes. "You kept yours. The pass is graded by what you kept."
 
-Clearance: Level 4 - Unblinking.
+Clearance: Level 2 - Conditioned.
 
 The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.
 
@@ -113,5 +113,19 @@ The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHT
 
 >Seals in your keeping:  Sightings Lanyard.
 REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
+>Banners: 0 delivered, 1 in hand, 11 not yet won.
+(Oath sworn - but swearing is only the first step: win that faction's challenge and carry its seal home to earn its banner.)
+  Cradle Sigil - oath sworn, seal not yet earned (win the hall's challenge and bring the seal).
+  Vesalius Medallion - not yet won.
+  Quicksilver Ampoule - not yet won.
+  Knitting Needle - not yet won.
+  Sulfur Sigil - not yet won.
+  Pale Masque - not yet won.
+  Bat Sigil - not yet won.
+  Stille Seal - not yet won.
+  Sightings Lanyard - in your satchel (won, not yet delivered).
+    Clearance Level 2, retained sanity 35.
+  Abyssal Pennant - not yet won.
 
 >Are you sure you want to quit? 
