@@ -235,8 +235,8 @@ The abyssal pennant is a seal. The printed name is "Abyssal Pennant". Understand
 
 [Comment: TRIAL TEXTS - shown when a faction representative is asked ABOUT SEAL/TRIAL/TASK. Edit these freely; the task mechanics live elsewhere, these are only the briefing strings.]
 The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner Court and answer the Generalizer on what intolerance engineers; then ASK SISTER FRANKLIN about THE FIRE and two of her questions, ENTER THE MEMORY, and walk the Wastes of Thoracica as she walked it - read the registry, SAY THE NAMES in the Core Chamber, lay the Eighth Seal on the throne. Come out and TELL FRANKLIN one thing you carried back: she grants the sigil and the Aukin gauntlets. She then opens the remaining six temples one at a time - ASK her about each, WALK it, read its register, SAY THE NAMES at its seat, TAKE the key, and tell her what that walk left behind."
-The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
-The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
+The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible. Four steps:[line break]1 - TAKE CODEX from the writing desk aboard Leonardo's ship (GO TO LEONARDO; the Dawn Pioneer Deck is the room WEST of Vesalius' bridge, so GO TO CELESTIAL CORPS then WEST also works).[line break]2 - WEAR GAUNTLETS, then GO TO PANTHEON - the Black Cathedral, in the contaminated west. Unshielded, the Old Metals take their tax at the threshold; the Cradle earns you their gauntlets and no market sells them.[line break]3 - Standing at the mercury mirror, DECIPHER CODEX - the pool reads what the air cannot.[line break]4 - GO TO CELESTIAL CORPS and SHOW CODEX TO VESALIUS: he strikes the cardiac error from his own chart for it."
+The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral: TAKE CODEX from the desk aboard Leonardo's ship (GO TO LEONARDO), WEAR GAUNTLETS, GO TO PANTHEON, and DECIPHER CODEX at the pool - Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
 The trial text of the sulfur sigil is "The casket is vent-hot and the Chief does not hand out bandages: wear the Cradle's Aukin gauntlets first, then TAKE the sulfolobus sample from the vent and GIVE it to the Division Chief. Bare hands make it a donation, not a retrieval."
 The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK THE MASQUER ABOUT SYMPTOMS for the chancre, READ THE CRIMSON DOTS and TAKE THE CANDLE TO HER FACE for her signatures, then ASK her for PSORIASIS, ARTHRITIS and DEMENTIA and TELL her what gives each away - PALMS, PAINLESS, PUPIL. When she goes quiet, TELL HER ABOUT SEROLOGY, and only then UNMASK her."
@@ -521,7 +521,11 @@ The White Rib Gate is north of the Free Port Landing. "The sternum of the contin
 
 The white rib wall is scenery in the White Rib Gate. Understand "wall" and "ribs" and "bone" as the white rib wall. The description is "Not a garrison but a shield. The records agree that no army has ever needed to breach it, because the country behind it taught theirs."
 
-The Cradle Outer Court is north of the White Rib Gate. "The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle."
+The Cradle Outer Court is north of the White Rib Gate. "The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. A white stair climbs north to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle."
+
+Instead of going up in the Cradle Outer Court:
+	say "The stair climbs by going north here - the Inner Court is up, and up is north.";
+	try going north.
 
 The exam scaffolds are scenery in the Cradle Outer Court. Understand "scaffolds" and "cloisters" and "lattices" as the exam scaffolds. The description is "Cadets read presenting signals off the lattice: pancreas, thyroid, neuron, and the shapes that most resemble pathogens. Learn the self, say the preceptors, before you are permitted to fight anything foreign."
 
@@ -799,9 +803,9 @@ Instead of asking Sister Franklin about something:
 			say "'That temple is either behind you or not yet walking,' she says. 'The one in front of you now is [site-label].'"
 
 [Comment: THE MEMORY - Franklin's walk through the Wastes of Thoracica. The player acts AS her for its duration.]
-The Threshold of Ash is a room. "Ash to the horizon, and every grain older than the first cell. You came back here without orders, without a medal, and with one page in your coat that you wrote yourself. The contaminated vestibule lies north, where the registry was found. Beyond it, down, is the room beneath the world."
+The Threshold of Ash is a room. "Ash to the horizon, and every grain older than the first cell. You came back here without orders, without a medal, and with one page in your coat that you wrote yourself. The contaminated vestibule lies north, where the registry was found; beyond it the corridor continues north, into the Core Chamber - the room beneath the world."
 
-The Contaminated Vestibule is north of the Threshold of Ash. "An administrative office of the temple, stripped by forty-seven years of weather and one night of everything else. Water-damaged pages lie where the wind dropped them. This is where the casualty registry was recovered - and where a firefighter's jacket was found with the dosimeter still pinned to it, reading LETHAL."
+The Contaminated Vestibule is north of the Threshold of Ash. "An administrative office of the temple, stripped by forty-seven years of weather and one night of everything else. Water-damaged pages lie where the wind dropped them. This is where the casualty registry was recovered - and where a firefighter's jacket was found with the dosimeter still pinned to it, reading LETHAL. The corridor continues north to the Core Chamber, where the fire can hear anything said aloud. (South returns to the ash.)"
 
 The Core Chamber is north of the Contaminated Vestibule. "The room beneath the reactor that should not exist. The geometry is wrong: the walls are not walls, the floor is warm, and it breathes - slowly, the way something enormous breathes when it is not asleep and not awake. On the far side waits a throne, and on the throne something that is not alive and is not dead. It has been waiting longer than the temple has been standing. It is waiting for you specifically."
 
@@ -814,6 +818,20 @@ The dosimeter is scenery in the Contaminated Vestibule. Understand "dosimeter" a
 The throne is a scenery supporter in the Core Chamber. Understand "throne" and "seat" as the throne. The description is "Not furniture. A place in the geometry that something sits in. The stone around it is warm to the touch and has been warm since the miners first broke through."
 
 The warm floor is scenery in the Core Chamber. Understand "floor" and "stone" and "warm floor" as the warm floor. The description is "It breathes. Six men sat on it once, saying nothing, offering nothing but the fact of being there, and the breathing slowed."
+
+[Comment: The Core Chamber lies NORTH of the vestibule even though every description calls it "beneath the world". Players reliably try DOWN, so honour it.]
+Instead of going down in the Contaminated Vestibule:
+	say "The stair goes down by going north here - the room beneath the world is reached along the corridor, not through the floor.";
+	try going north.
+
+Instead of going up in the Contaminated Vestibule:
+	say "Up is the way out of the memory, and that is LEAVE THE MEMORY, not a climb."
+
+Instead of going up in the Threshold of Ash:
+	say "Up is the way out of the memory, and that is LEAVE THE MEMORY, not a climb."
+
+Instead of going down in the Threshold of Ash:
+	say "Nothing lies under the ash but older ash. The vestibule is north."
 
 The eighth seal page is a thing. The printed name is "Eighth Seal". Understand "eighth seal" and "eighth" and "seal page" and "my page" as the eighth seal page. The description is "The page you wrote with the Brotherhood of the Unspoken and carried in against every order: the fire says you are my pieces. It answers: yes - and pieces can choose."
 
@@ -837,7 +855,7 @@ Instead of entering the memory:
 	otherwise if memory-walked is true:
 		say "'Once is the doctrine,' Sister Franklin says. 'Walking it twice is tourism.'";
 	otherwise:
-		say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.[line break]You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Thoracica with a page in your coat that you wrote yourself.[line break](READ THE LIST, say the names where the fire can hear them, and lay the page down. LEAVE THE MEMORY steps back out.)";
+		say "She sets two fingers against your temple, and the Inner Court goes out like a hooded lamp.[line break]You are Sister Franklin of the White Moon. It is Year Forty-Seven of the First Breach, and you are walking back into the Wastes of Thoracica with a page in your coat that you wrote yourself.[line break]The road is one line north: the ash, then the VESTIBULE where the registry lies (go NORTH), then the CORE CHAMBER beyond it (NORTH again - not down). Read the LIST there, SAY THE NAMES where the fire can hear them, then LAY THE EIGHTH SEAL on the throne. LEAVE THE MEMORY steps back out.)";
 		now franklin-stage is 3;
 		now names-read is false;
 		now names-spoken is false;
@@ -876,7 +894,7 @@ Old woman Olya Petrenko, who refused to be moved, and her cat.
 The unnamed child of Apartment 412. Age: seven. Classification: changed.
 Pages fourteen through eighty-nine missing.
 This list is incomplete. The full list would not fit in any volume.
-Write their names. Say them aloud. The fire does not remember their names. Only we can."
+Write their names. Say them aloud. The fire does not remember their names. Only we can.[line break](The fire hears nothing up here. Go NORTH twice from the ash - vestibule first, then the Core Chamber - and SAY THE NAMES there.)"
 
 Understand "read [something]" as examining.
 
@@ -890,7 +908,7 @@ To lay down the seal:
 	if the player is not Sister Franklin:
 		say "You are not inside the memory.";
 	otherwise if the location is not the Core Chamber:
-		say "The page is meant for the room beneath the world, not for here.";
+		say "The page is meant for the Core Chamber - north of the vestibule, the room beneath the world - not for here.";
 	otherwise if the eighth seal page is not carried by the player:
 		say "You are not carrying the page.";
 	otherwise if names-spoken is false:
@@ -908,7 +926,7 @@ You climb back up through the tunnels toward the light, and the weight goes with
 		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved. On your palm where the page was, there is a key - Prometheus' key, the first of six, the one the Wastes leave behind.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)";
 
 Offering the seal is an action applying to nothing.
-Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" as offering the seal.
+Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" or "lay the eighth seal" or "lay eighth seal" or "place the seal" or "put the seal down" or "put my page down" as offering the seal.
 
 Instead of offering the seal:
 	lay down the seal.
@@ -1239,7 +1257,7 @@ Instead of reciting the names:
 		say "There are no names here. This temple was never built and nobody has died in it. LISTEN instead.";
 	otherwise if the current site is no-site:
 		if the location is not the Core Chamber:
-			say "Not here. Names are said where the fire can hear them - deeper in, at the Core Chamber.";
+			say "Not here. Names are said where the fire can hear them - deeper in, at the Core Chamber[if the location is the Contaminated Vestibule], reached by going NORTH along the stair - north, not down[otherwise if the location is the Threshold of Ash], two rooms north: the vestibule first, then the Core Chamber[end if].";
 		otherwise if names-read is false:
 			say "You have not read the registry. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
 		otherwise if names-spoken is true:
@@ -1248,7 +1266,7 @@ Instead of reciting the names:
 			now names-spoken is true;
 			say "You say them aloud, one by one, in the room beneath the world: the firefighter, the wife, the sister at the northern point, the brother under the floor, the physician and her nurse, the old woman and her cat, and the child of apartment four-twelve whose name nobody kept.
 You do not pray and you do not bind. You say the names the way you would read a register in a town that has decided to forget.
-The breathing changes. It does not stop - it attends.";
+The breathing changes. It does not stop - it attends.[line break](Now LAY THE EIGHTH SEAL on the throne - PLACE THE EIGHTH SEAL, or PUT SEAL ON THRONE.)";
 	otherwise if at the seat:
 		if walk-registry-read is false:
 			say "You have not read the register. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
@@ -1380,7 +1398,7 @@ The codex log can be mirror-read or mirror-sealed. The codex log is mirror-seale
 Leonardo is a man in the Dawn Pioneer Deck. "Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine." The description is "The First Star-Mapper. His notebooks were never printed in his lifetime; his method was: observe, dissect, draw, compare, publish. He failed at the last one. Others must succeed."
 
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^codex$|^log$", case insensitively:
-	say "'The unworthy must not see,' Leonardo says, tapping the mirror-script. 'It is a cipher of the mirror, traveler - it reads only in its own kind. Somewhere in the contaminated west there is a mirror of polished mercury. The old alchemists made it to show nerves. It will read me.'"
+	say "'The unworthy must not see,' Leonardo says, tapping the mirror-script. 'It is a cipher of the mirror, traveler - it reads only in its own kind. Somewhere in the contaminated west there is a mirror of polished mercury. The old alchemists made it to show nerves. It will read me.'[line break](TAKE CODEX from this desk, then carry it to that mirror - GO TO PANTHEON - and DECIPHER CODEX there.)"
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^microcosm$", case insensitively:
 	say "'As above, so below,' he says. 'The stars are bone and blood; the organs are planets and moons. I sailed past the great Liver-Moon and knew it as the organ I dissected in Milan. To understand the body is to understand the universe - they are one and the same.'"
 Instead of asking Leonardo about something when the topic understood matches the regular expression "^voyages$|^expeditions$", case insensitively:
@@ -1410,7 +1428,21 @@ Harvey applauds twice, flat and precise. Bethune just grins.";
 		otherwise:
 			say "'The chart is corrected, traveler. The medallion is yours.'";
 	otherwise:
-		say "Vesalius turns the codex right way round, then back. 'Reversed, every line. It reads only in its own kind, traveler. A mirror - the mercury kind, in the contaminated west. Bring it legible.'"
+		say "Vesalius turns the codex right way round, then back. 'Reversed, every line. It reads only in its own kind, traveler. A mirror - the mercury kind, in the contaminated west. Bring it legible.'[line break](WEAR GAUNTLETS, GO TO PANTHEON, and DECIPHER CODEX at the pool - then show it to him again.)"
+
+Instead of examining the mercury mirror when the codex log is carried by the player and the codex log is mirror-sealed:
+	say "[description of the mercury mirror][line break]";
+	if the Aegis gauntlets are worn by the player:
+		say "(DECIPHER CODEX - hold it low over the polished metal.)";
+	otherwise:
+		say "(WEAR GAUNTLETS first, or the mirror takes your fingertips before it takes the script.)"
+
+Instead of examining the codex log when the codex log is mirror-read and the corps medallion is nowhere:
+	say "[description of the codex log][line break]";
+	if the location is the Fabrica Bridge:
+		say "(SHOW CODEX TO VESALIUS.)";
+	otherwise:
+		say "(Carry it to Vesalius on the Fabrica bridge: GO TO CELESTIAL CORPS, then SHOW CODEX TO VESALIUS.)"
 
 Harvey is a man in the Fabrica Bridge. "Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends." The description is "The Circulation Prophet. He did not merely describe the blood's circuit; he measured it, hour by hour, until the numbers left no room for Galen."
 
@@ -1476,6 +1508,30 @@ Instead of asking Lucifer about something when the topic understood matches the 
 Instead of asking Lucifer about something when the topic understood matches the regular expression "^radium$|^girls$", case insensitively:
 	say "'The Radium Girls are not my court's servants,' he says, and for a moment the dripping crown stills. 'They are honored dead. They painted me on their skin and drank me in tonics and believed - no. They did not lie to themselves; their employers lied to them. Fear is the beginning of respect. Their deaths taught your kind to fear us. Respect came later, in law.'"
 
+Instead of examining the codex log when the codex log is mirror-sealed:
+	say "[description of the codex log][line break]";
+	if the location is the Black Cathedral and the Aegis gauntlets are worn by the player:
+		say "(DECIPHER CODEX - hold it low over the pool.)";
+	otherwise if the location is the Black Cathedral:
+		say "(WEAR GAUNTLETS first - bare hands never reach this mercury.)";
+	otherwise if the codex log is carried by the player:
+		say "(It reads only in its own kind. Carry it to the mercury mirror: GO TO PANTHEON, then DECIPHER CODEX.)";
+	otherwise:
+		say "(Take it first: TAKE CODEX.)"
+
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^codex$|^log$|^mirror-script$", case insensitively:
+	say "'A mirror-script brought to a mirror,' Lucifer says, and the pool behind him goes still. 'Bring it here in front of me, and I will read it for you.'";
+	if the codex log is carried by the player:
+		if the Aegis gauntlets are worn by the player:
+			say "[line break](DECIPHER CODEX here.)";
+		otherwise:
+			say "[line break](WEAR GAUNTLETS first - the pool answers only through chelation weave.)";
+	otherwise:
+		say "[line break](You are not carrying it. It lies on the writing desk aboard the Dawn Pioneer: GO TO LEONARDO, then TAKE CODEX.)"
+
+Instead of showing the codex log to Lucifer:
+	read the codex in the mirror.
+
 To read the codex in the mirror:
 	if the codex log is mirror-read:
 		say "The codex has already given up its cipher.";
@@ -1489,6 +1545,41 @@ Lucifer watches with the patience of an element. 'A mirror-script brought to a m
 
 Deciphering is an action applying to one visible thing.
 Understand "decipher [something]" as deciphering.
+Understand "mirror-read [something]" as deciphering.
+Understand "decode [something]" as deciphering.
+Understand "decipher [something] in the mirror" as deciphering.
+Understand "decipher [something] at the mirror" as deciphering.
+Understand "decipher [something] with the mirror" as deciphering.
+Understand "decipher [something] in the mercury pool" as deciphering.
+Understand "decipher [something] at the mercury pool" as deciphering.
+Understand "read [something] in the mirror" as deciphering.
+Understand "read [something] at the mirror" as deciphering.
+Understand "read [something] in the mercury pool" as deciphering.
+Understand "read [something] at the mercury pool" as deciphering.
+Understand "hold [something] over the mirror" as deciphering.
+Understand "hold [something] over the mercury pool" as deciphering.
+Understand "dip [something] in the mirror" as deciphering.
+Understand "dip [something] in the mercury pool" as deciphering.
+Understand "decipher [something] in mirror" as deciphering.
+Understand "decipher [something] at mirror" as deciphering.
+Understand "decipher [something] with mirror" as deciphering.
+Understand "decipher [something] in mercury pool" as deciphering.
+Understand "decipher [something] at mercury pool" as deciphering.
+Understand "read [something] in mirror" as deciphering.
+Understand "read [something] at mirror" as deciphering.
+Understand "read [something] in mercury pool" as deciphering.
+Understand "read [something] at mercury pool" as deciphering.
+Understand "read [something] over pool" as deciphering.
+Understand "read [something] over mirror" as deciphering.
+Understand "hold [something] over mirror" as deciphering.
+Understand "hold [something] over pool" as deciphering.
+Understand "hold [something] over the pool" as deciphering.
+Understand "dip [something] in mirror" as deciphering.
+Understand "dip [something] in mercury pool" as deciphering.
+Understand "dip [something] in pool" as deciphering.
+Understand "decode [something] in the mirror" as deciphering.
+Understand "decode [something] in the mercury pool" as deciphering.
+Understand "decode [something] in mercury pool" as deciphering.
 
 Check deciphering:
 	if the noun is not the codex log:

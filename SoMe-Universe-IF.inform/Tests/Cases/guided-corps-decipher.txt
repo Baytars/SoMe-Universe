@@ -1,0 +1,32 @@
+s
+choose cradle
+go to cradle
+n
+attend
+attend
+ask generalizer about autoimmunity
+ask franklin about names
+ask franklin about wolves
+enter memory
+n
+read list
+n
+say the names
+put seal on throne
+tell franklin about names
+wear gauntlets
+go to leonardo
+take codex
+read codex
+ask leonardo about codex
+go to pantheon
+read codex
+examine mirror
+read codex in mercury pool
+show codex to lucifer
+read codex
+go to celestial corps
+show codex to vesalius
+seals
+quit
+yes

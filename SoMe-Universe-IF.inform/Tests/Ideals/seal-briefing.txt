@@ -77,7 +77,11 @@ Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a ves
 
 Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport.
 
->Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart.
+>Bring Leonardo's codex to Vesalius legible. Four steps:
+1 - TAKE CODEX from the writing desk aboard Leonardo's ship (GO TO LEONARDO; the Dawn Pioneer Deck is the room WEST of Vesalius" bridge, so GO TO CELESTIAL CORPS then WEST also works).
+2 - WEAR GAUNTLETS, then GO TO PANTHEON - the Black Cathedral, in the contaminated west. Unshielded, the Old Metals take their tax at the threshold; the Cradle earns you their gauntlets and no market sells them.
+3 - Standing at the mercury mirror, DECIPHER CODEX - the pool reads what the air cannot.
+4 - GO TO CELESTIAL CORPS and SHOW CODEX TO VESALIUS: he strikes the cardiac error from his own chart for it.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Blood Court

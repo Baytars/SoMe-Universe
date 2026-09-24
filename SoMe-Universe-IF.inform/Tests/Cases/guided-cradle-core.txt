@@ -1,0 +1,20 @@
+s
+choose cradle
+go to cradle
+n
+attend
+attend
+ask generalizer about autoimmunity
+ask franklin about names
+ask franklin about wolves
+enter memory
+up
+down
+n
+read list
+down
+say the names
+place the eighth seal
+tell franklin about names
+quit
+yes
