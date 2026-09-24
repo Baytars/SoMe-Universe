@@ -926,7 +926,7 @@ You climb back up through the tunnels toward the light, and the weight goes with
 		say "[line break]Sister Franklin opens her eyes across from you in the Inner Court. The AIRE-flame has not moved. On your palm where the page was, there is a key - Prometheus' key, the first of six, the one the Wastes leave behind.[line break]'Tell me one thing from the fragments,' she says. 'Just so I know you were listening.'[line break](TELL FRANKLIN ABOUT what you carried out: the NAMES, the MINERS, the CHILDREN, the WOLVES.)";
 
 Offering the seal is an action applying to nothing.
-Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" or "lay the eighth seal" or "lay eighth seal" or "place the seal" or "put the seal down" or "put my page down" as offering the seal.
+Understand "place the eighth seal" or "offer the seal" or "lay the seal" or "place seal" or "offer the eighth seal" or "lay down the seal" or "lay the eighth seal" or "lay eighth seal" or "place the seal" or "put the seal down" or "put my page down" or "lay the eighth seal on the throne" or "lay the seal on the throne" or "put the eighth seal on the throne" or "put the seal on the throne" or "place the eighth seal on the throne" or "place the seal on the throne" as offering the seal.
 
 Instead of offering the seal:
 	lay down the seal.
@@ -1266,7 +1266,7 @@ Instead of reciting the names:
 			now names-spoken is true;
 			say "You say them aloud, one by one, in the room beneath the world: the firefighter, the wife, the sister at the northern point, the brother under the floor, the physician and her nurse, the old woman and her cat, and the child of apartment four-twelve whose name nobody kept.
 You do not pray and you do not bind. You say the names the way you would read a register in a town that has decided to forget.
-The breathing changes. It does not stop - it attends.[line break](Now LAY THE EIGHTH SEAL on the throne - PLACE THE EIGHTH SEAL, or PUT SEAL ON THRONE.)";
+The breathing changes. It does not stop - it attends.[line break](Now LAY THE EIGHTH SEAL ON THE THRONE - or PLACE THE EIGHTH SEAL.)";
 	otherwise if at the seat:
 		if walk-registry-read is false:
 			say "You have not read the register. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
@@ -1391,7 +1391,7 @@ The Dawn Pioneer Deck is above the Void Verge. "The deck of Leonardo's vessel sm
 
 The writing desk is a scenery supporter in the Dawn Pioneer Deck. Understand "desk" as the writing desk. The description is "Scarred walnut, ink-stained, drawing instruments racked in grade order."
 
-The codex log is a thing on the writing desk. Understand "codex" and "log" and "book" and "journal" and "script" as the codex log. The description is "Leonardo's navigation log, written in mirror-script cipher - the writing runs right to left, every letter reversed. [if the codex log is mirror-read]Now that a mirror has read it, the pages yield: star charts of the Liver-Moon, the four chambers of the Central Sun, and a correction in the margin: the seat of the soul is the brain.[otherwise]The unworthy must not see, says a note in plain hand. It reads only in its own kind - a mirror.[end if]"
+The codex log is a thing on the writing desk. Understand "codex" and "log" and "book" and "journal" and "script" and "codex log" and "the codex log" as the codex log. The description is "Leonardo's navigation log, written in mirror-script cipher - the writing runs right to left, every letter reversed. [if the codex log is mirror-read]Now that a mirror has read it, the pages yield: star charts of the Liver-Moon, the four chambers of the Central Sun, and a correction in the margin: the seat of the soul is the brain.[otherwise]The unworthy must not see, says a note in plain hand. It reads only in its own kind - a mirror.[end if]"
 
 The codex log can be mirror-read or mirror-sealed. The codex log is mirror-sealed.
 

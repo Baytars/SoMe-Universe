@@ -16,7 +16,7 @@ put seal on throne
 tell franklin about names
 wear gauntlets
 go to leonardo
-take codex
+take codex log
 read codex
 ask leonardo about codex
 go to pantheon

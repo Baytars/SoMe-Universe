@@ -14,7 +14,7 @@ n
 read list
 down
 say the names
-place the eighth seal
+lay the eighth seal on the throne
 tell franklin about names
 quit
 yes
