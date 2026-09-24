@@ -504,7 +504,10 @@ Instead of showing something to the Keeper:
 	say "She has already catalogued it, apparently."
 
 Last instead of asking someone about something:
-	say "[The noun] listens, and offers nothing on that."
+	if the faction patron of the noun is unsworn:
+		say "[The noun] listens, and offers nothing on that.";
+	otherwise:
+		say "[The noun] listens, and offers nothing on that. (Every faction's own answers to [bold type]ASK [the noun] ABOUT SEAL[roman type] - that is how this one states its trial.)";
 
 Instead of telling someone about something:
 	say "Better to ask [the noun] directly."
@@ -1852,6 +1855,9 @@ Carry out steadying:
 
 Facing the cascade is an action applying to nothing.
 	Understand "face" or "endure" or "step" or "proceed" as facing the cascade.
+	[ The prompt says "FACE the beat", so accept the phrases players actually type -
+	  otherwise they get "I only understood you as far as wanting to face" and lose the turn. ]
+	Understand "face the beat" or "face beat" or "face it" or "face it now" or "face this" or "face next" or "face the construct" or "face the sighting" or "face the next beat" or "endure it" or "step forward" as facing the cascade.
 
 Check facing the cascade:
 	if the location is not the Puppet Workshop:
