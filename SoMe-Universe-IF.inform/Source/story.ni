@@ -141,7 +141,7 @@ The concordance names of the Cradle Outer Court are { "cradle", "medulla", "auki
 The concordance names of the Singularity are { "singularity", "start", "beginning" }.
 The concordance names of the Fabrica Bridge are { "celestial corps", "fabrica", "bridge" }.
 The concordance names of the Dawn Pioneer Deck are { "dawn pioneer", "pioneer", "leonardo" }.
-The concordance names of the Black Cathedral are { "pantheon", "heavy metal", "cathedral" }.
+The concordance names of the Black Cathedral are { "pantheon", "black cathedral", "heavy metal", "cathedral" }.
 The concordance names of the Shrine of the Knitting Mouse are { "martyrs", "lab martyrs", "shrine", "novosibirsk" }.
 The concordance names of the Dark Concourse are { "concourse", "umin" }.
 The concordance names of the Sulfur Vent Gallery are { "archaeology", "archaeology division", "sulfur vent" }.
@@ -159,7 +159,7 @@ Understand "travel to [text]" as warping to.
 
 Check warping to:
 	if the player's patron is unsworn:
-		if the topic understood matches the regular expression "^singularity$|^start$":
+		if the topic understood matches the regular expression "^singularity$|^start$", case insensitively:
 			say "The concordance serves even the unsworn for errands: the Singularity, where the road west begins.";
 			continue the action;
 		if the location is the Disease Citadel:
@@ -238,10 +238,10 @@ The trial text of the cradle sigil is "Attend the lectures at the Cradle Inner C
 The trial text of the corps medallion is "Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart."
 The trial text of the quicksilver ampoule is "Read Leonardo's codex in the mercury mirror of the Black Cathedral - wear the Aukin gauntlets to touch the pool, and Lucifer himself hands you the ampoule."
 The trial text of the knitting needle is "Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs' altar."
-The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from the vent and GIVE it to the Division Chief."
+The trial text of the sulfur sigil is "The casket is vent-hot and the Chief does not hand out bandages: wear the Cradle's Aukin gauntlets first, then TAKE the sulfolobus sample from the vent and GIVE it to the Division Chief. Bare hands make it a donation, not a retrieval."
 The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK THE MASQUER ABOUT SYMPTOMS for the chancre, READ THE CRIMSON DOTS and TAKE THE CANDLE TO HER FACE for her signatures, then ASK her for PSORIASIS, ARTHRITIS and DEMENTIA and TELL her what gives each away - PALMS, PAINLESS, PUPIL. When she goes quiet, TELL HER ABOUT SEROLOGY, and only then UNMASK her."
 The trial text of the bat sigil is "In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier."
-The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
+The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then ASK the Amanuensis ABOUT two of the flaws you found - DIET, HAND, WARMTH, SLEEP or TIMING. Only when two are on record will she hear your ACCUSATION of the stern quartermaster."
 The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet - it names four counters and when each one is for - then at the Puppet Workshop ASK the Director about sightings to begin the Site-66 containment walk. STEADY one of the four counters - pre-empt, respond, inoculate, restore - then FACE each of the six Fear-Cascade beats; facing one bare costs you more than answering wrong, so always steady something. Your sanity starts at 50 and breaks at 5. Hold to the end and the Director grants the lanyard, cleared by how much you kept - and the walk can be RETAKE WALK'd later to improve your Clearance."
 The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about the ocean and about her weaknesses first, then about cannons - survive the Bridge Table by deploying the right counter for each of her four attack phases until all eight guns are silenced, and she will grant the pennant."
 
@@ -285,7 +285,7 @@ To decide which seal is the standard of (p - a patron):
 	if p is vibrio, decide on the abyssal pennant;
 	decide on the cradle sigil.
 
-Instead of asking a person about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+Instead of asking a person about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$", case insensitively:
 	if the faction patron of the noun is unsworn:
 		say "[The noun] keeps no trial to disclose.";
 	otherwise:
@@ -296,11 +296,11 @@ Instead of asking a person about something when the topic understood matches the
 			say the trial text of s.
 
 [Comment: these two representatives have catch-all asking rules below, so they need their own more specific SEAL rules to win over them.]
-Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$", case insensitively:
 	let s be the standard of the faction patron of the Stille Amanuensis;
 	say the trial text of s.
 
-Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$":
+Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^seal$|^trial$|^task$|^earn$", case insensitively:
 	let s be the standard of the faction patron of the Octopus Admiral;
 	say the trial text of s.
 
@@ -482,13 +482,13 @@ Instead of going east from the Contaminated Wastes when the Aegis gauntlets are 
 
 The Keeper is a woman in the Free Port Landing. "A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. 'Awake, are you? Good. The banners have been waiting for someone who could still choose.'" The description is "She calls herself the Keeper of the Gate, and claims - lightly, the way you would admit to a hobby - that she has watched every faction rise. Ten hooks hang from her belt, one per standard, empty and patient. She does not ask for your name. Names, she says, are the first thing the war eats." Understand "keeper" and "woman" and "gatekeeper" and "grey woman" and "registrar" as the Keeper.
 
-Instead of asking the Keeper about something when the topic understood matches the regular expression "^mission$":
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^mission$", case insensitively:
 	say "'Ten factions,' the Keeper says. 'Aukin's Cradle, the Celestial Corps, the Pantheon, the Martyrs - and six doors of the Unseen Crown to the south. Bring me a seal from each, and the Accord will finally have a map of the war.'"
-Instead of asking the Keeper about something when the topic understood matches the regular expression "^umin$|^crown$":
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^umin$|^crown$", case insensitively:
 	say "'The Unseen Crown,' she says, and does not lower her voice, which is its own kind of armour. 'Archaeology. Fear Technology. Pallidum. Rabies. Typhi. Vibrio on the water. They are hosts, traveler, not friends. Be courteous, and come back with everything you left with.'"
-Instead of asking the Keeper about something when the topic understood matches the regular expression "^accord$":
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^accord$", case insensitively:
 	say "'I do not keep the war's books,' she says, tapping the nearest standard. 'I keep its promises. Every faction swore a seal to whoever could walk all ten halls. None of them believed you existed. Show them.'"
-Instead of asking the Keeper about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$":
+Instead of asking the Keeper about something when the topic understood matches the regular expression "^destinations$|^where$|^map$|^go$|^travel$", case insensitively:
 	say "'From this deck you may go to: the Cradle (where a neutral factor keeps a stall for offerings and vials); the Celestial Corps; the Pantheon; the Lab Martyrs; the Dark Concourse and its six doors - Archaeology, Fear Technology, the Masquerade, the Undead Court, the Department of Silence, the Abyssal Fleet. Say GO TO and a name,' she says. 'The concordance does the walking.'"
 
 Instead of giving a seal to the Keeper:
@@ -539,13 +539,13 @@ The Pasteur vial is a thing on the factor's stall. Understand "vial" and "pasteu
 
 The Port Factor is a man in the Cradle Outer Court. "The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack." The description is "Grey-robed, portly, and absolutely neutral. His family have kept the stall since the Cradle Accords were younger than the AAA by centuries."
 
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$|^cradle$|^aukin$":
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^port$|^pump$|^cradle$|^aukin$", case insensitively:
 	say "'The great pump must serve all circulation,' he says. 'Every power has an interest in keeping it open. No act of war inside the sac, traveler - the Port Conclave enforces that one the old way.'"
 
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^bundle$|^offerings$":
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^bundle$|^offerings$", case insensitively:
 	say "'Going to the shrine? Nobody visits the Martyrs empty-handed,' he says. 'Strand for HeLa, treat for Laika, cheese for the mouse. One token the bundle.'"
 
-Instead of asking the Port Factor about something when the topic understood matches the regular expression "^vial$|^pasteur$":
+Instead of asking the Port Factor about something when the topic understood matches the regular expression "^vial$|^pasteur$", case insensitively:
 	say "'The Undead Court respects exactly one thing the living make,' he says. 'Take it. One token. And traveler - show it to the Count himself. Only him.'"
 
 Instead of buying the offering bundle:
@@ -590,13 +590,13 @@ The aire library is in the Cradle Inner Court. The aire library is scenery. Unde
 
 Tylean is a man in the Cradle Inner Court. "Supreme Preceptor Tylean, He Who Listens to the Truth, wears the plain grey of an office that passes by clerical succession, not blood." The description is "The head of state, head of the Dhyana Church, and supreme preceptor of the Cradle in one person. He listens the way other sovereigns ride reviews."
 
-Instead of asking Tylean about something when the topic understood matches the regular expression "^dhyana$|^listening$":
+Instead of asking Tylean about something when the topic understood matches the regular expression "^dhyana$|^listening$", case insensitively:
 	say "'The most terrible wars are lost at birth,' Tylean says, 'when defenders are made who were never taught who they defend, or from whom. Everything else we build is commentary on that sentence.'"
-Instead of asking Tylean about something when the topic understood matches the regular expression "^accords$|^cradle accords$":
+Instead of asking Tylean about something when the topic understood matches the regular expression "^accords$|^cradle accords$", case insensitively:
 	say "'Whoever sacked the academy would produce one generation of untaught soldiers,' he says, 'and be invaded by their own immune armies within a decade. So they signed the Cradle Accords instead - the oldest surviving treaty in the world, older than the Accord you serve.'"
-Instead of asking Tylean about something when the topic understood matches the regular expression "^schism$|^sin$|^original sin$":
+Instead of asking Tylean about something when the topic understood matches the regular expression "^schism$|^sin$|^original sin$", case insensitively:
 	say "'The plague was Umin's crime,' he says quietly. 'The Hunt was ours: a people murdering the women who kept its medicine. We named that an Original Sin and built a country out of the penitence. We held the ground outside the fallen capital through the whole occupation. Aukin is an apology with walls.'"
-Instead of asking Tylean about something when the topic understood matches the regular expression "^phoenix$":
+Instead of asking Tylean about something when the topic understood matches the regular expression "^phoenix$", case insensitively:
 	say "'Phoenix was the old capital,' he says. 'We guarded its approaches for two centuries. When the liberation came, the city passed into our keeping by common Accord - not by conquest. Ask the port folk east of here; the sea remembers it too.'"
 
 The Generalizer is a woman in the Cradle Inner Court. "The Generalizer, current Chair of Foreign Selves, keeps one hand near the AIRE flame as if warming it by habit." The description is "Post-AIRE generation, honey-gold flame, and the sharpest tongue in the Curriculum Wars. She teaches that a ten-percent sampling of self, through cross-reactivity, must cover ninety percent of the response space."
@@ -609,7 +609,7 @@ Instead of attending in the Cradle Inner Court:
 		say "The preceptors walk the outer doctrine first. CORTICAL SELECTION: cadets prove they can see the body's signal at all. Those who cannot read the presenting lattice are released back into circulation - unharmed, ungraded, and dangerous to no one but themselves.";
 	otherwise if lecture-progress is 2:
 		say "Then the inner doctrine. MEDULLARY SELECTION: the AIRE-lit library of every tissue the body owns. Strong binders of self are deleted; agonistic binders go to the Treg Cloister, to return as suppressors of friendly fire rather than as fighters. Graduates leave for the periphery and never see the Inner Court again. The preceptors, whose flame burns a fortnight-equivalent, are replaced in endless relay.
-At the back of the hall, a schism is audible: the Narrow Faction wants the Foreign Selves curriculum cut to unambiguous enemy-forms. The Generalizer's people answer that narrowing AIRE coverage mathematically guarantees more autoreactive graduates. The dispute is the loudest silence in the empire.";
+At the back of the hall, a schism is audible: the Narrow Faction wants the Foreign Selves curriculum cut to unambiguous enemy-forms. The Generalizer's people answer that narrowing AIRE coverage mathematically guarantees more autoreactive graduates. The dispute is the loudest silence in the empire.[line break](The Chair has finished, and she is looking at you. ASK THE GENERALIZER what intolerance engineers.)";
 	otherwise:
 		say "The preceptors resume their relay, the same doctrine in a new mouth.";
 
@@ -638,13 +638,15 @@ The cradle introduction is a thing. The printed name is "Cradle introduction". U
 
 cradle-vouched is a truth state that varies. cradle-vouched is false.
 
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^autoimmunity$":
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^autoimmunity$", case insensitively:
 	run the curriculum exchange.
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^curriculum$|^curriculum wars$|^narrow$":
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^curriculum$|^curriculum wars$|^narrow$|^narrow faction$", case insensitively:
 	run the curriculum exchange.
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^foreign selves$":
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "intolerance|autoimmun|autoreactiv|doctrine", case insensitively:
+	run the curriculum exchange.
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^foreign selves$", case insensitively:
 	say "'The chair teaches cadets to recognize self-tissue that looks foreign, and foreign things that mimic the self,' she says. 'My predecessor held it through the DOPPELGANGER affair. The chair survived him. The chair outlives the person - that is doctrine, not metaphor.'"
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^vasud$|^stuart$|^doppelganger$|^yukio$|^mary$":
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^vasud$|^stuart$|^doppelganger$|^yukio$|^mary$", case insensitively:
 	say "'A foreign agent wore a graduate's face and sat down across from the Chair of Foreign Selves himself,' she says. 'The first successful direct assault on central education in recorded history, our archives call it. He was pensioned into Lower Intestinal exile by his own foreign ministry. The Cradle never recalled him. We had already lost the argument he failed.'";
 	if curriculum-passed is false:
 		say "[line break]'Hear the lecture, and answer me on what intolerance engineers. Then I will give you a line to carry to Typhi.'";
@@ -653,7 +655,7 @@ Instead of asking the Generalizer about something when the topic understood matc
 		say "[line break]'The face they copied was ours,' she says. 'Yukio Yuan - medulla graduate, Foreign Selves, and Vasud Stuart's own student. Vasud held this chair before me. Stille built its mimic out of a woman this court taught to read a face, and then walked her through Vasud's door.' She writes three lines on a card and presses it into your hand.[line break]'SHOW THAT to the Amanuensis in the Abteilung Stille office. She will not open a folder for a stranger. The Cradle is not a stranger to this case.'";
 	otherwise:
 		say "[line break]'You carry the card,' she says. 'SHOW it to the Amanuensis. The folder is hers to open, not mine.'"
-Instead of asking the Generalizer about something when the topic understood matches the regular expression "^dwindling$|^involution$|^long dwindling$":
+Instead of asking the Generalizer about something when the topic understood matches the regular expression "^dwindling$|^involution$|^long dwindling$", case insensitively:
 	say "'Less of the old medulla lights every decade. Cohorts shrink. Nations fight with veteran memory-cells because we cannot graduate fresh ones fast enough,' she says. 'Aukin calls it the Long Dwindling and treats it as the strategic problem of the age. Our adversaries call it a target window.'"
 
 Attending is an action applying to nothing.
@@ -1237,7 +1239,7 @@ Instead of reciting the names:
 		say "There are no names here. This temple was never built and nobody has died in it. LISTEN instead.";
 	otherwise if the current site is no-site:
 		if the location is not the Core Chamber:
-			say "Not here. Names are said where the fire can hear them.";
+			say "Not here. Names are said where the fire can hear them - deeper in, at the Core Chamber.";
 		otherwise if names-read is false:
 			say "You have not read the registry. You will not invent names - that is precisely what the Order did, and it is why the count is redacted.";
 		otherwise if names-spoken is true:
@@ -1256,7 +1258,7 @@ The breathing changes. It does not stop - it attends.";
 			now walk-names-spoken is true;
 			speak the names of the current site;
 	otherwise:
-		say "Not here. Names are said at the seat, where the temple can hear them."
+		say "Not here. Names are said at the seat, where the temple can hear them - the Core Chamber of this walk."
 
 [Comment: TAKING THE KEY.]
 To close the site walk of (s - a temple site):
@@ -1377,13 +1379,13 @@ The codex log can be mirror-read or mirror-sealed. The codex log is mirror-seale
 
 Leonardo is a man in the Dawn Pioneer Deck. "Leonardo, First Captain of the Celestial Explorer Corps, watches the blood-tide with the patience of a man who has dissected thirty corpses to draw one spine." The description is "The First Star-Mapper. His notebooks were never printed in his lifetime; his method was: observe, dissect, draw, compare, publish. He failed at the last one. Others must succeed."
 
-Instead of asking Leonardo about something when the topic understood matches the regular expression "^codex$|^log$":
+Instead of asking Leonardo about something when the topic understood matches the regular expression "^codex$|^log$", case insensitively:
 	say "'The unworthy must not see,' Leonardo says, tapping the mirror-script. 'It is a cipher of the mirror, traveler - it reads only in its own kind. Somewhere in the contaminated west there is a mirror of polished mercury. The old alchemists made it to show nerves. It will read me.'"
-Instead of asking Leonardo about something when the topic understood matches the regular expression "^microcosm$":
+Instead of asking Leonardo about something when the topic understood matches the regular expression "^microcosm$", case insensitively:
 	say "'As above, so below,' he says. 'The stars are bone and blood; the organs are planets and moons. I sailed past the great Liver-Moon and knew it as the organ I dissected in Milan. To understand the body is to understand the universe - they are one and the same.'"
-Instead of asking Leonardo about something when the topic understood matches the regular expression "^voyages$|^expeditions$":
+Instead of asking Leonardo about something when the topic understood matches the regular expression "^voyages$|^expeditions$", case insensitively:
 	say "'Four,' he says. 'The Skull, for the Celestial Dome. The Heart, for the Central Sun and its four chambers. The Vascular, for the great rivers - Vena Cava, Aorta. The Fetal, for the Womb of Creation. Vesalius went further. He is aboard the Fabrica, east of here. Bring him something worth correcting.'"
-Instead of asking Leonardo about something when the topic understood matches the regular expression "^vesalius$":
+Instead of asking Leonardo about something when the topic understood matches the regular expression "^vesalius$", case insensitively:
 	say "'The Admiral keeps the bridge,' Leonardo says. 'Same year as Copernicus, 1543 - the Fabrica and De Revolutionibus together, the heavens and the body both discovered false. He will test you. Let him.'"
 
 The Fabrica Bridge is east of the Dawn Pioneer Deck. "The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall."
@@ -1392,11 +1394,11 @@ The star chart is scenery in the Fabrica Bridge. Understand "chart" and "star ch
 
 Vesalius is a man in the Fabrica Bridge. "Vesalius, Admiral of the Celestial Fleet, stands with the posture of a man who corrected two hundred errors and expects to correct two hundred more." The description is "Father of modern anatomy. Without anatomy, he likes to say, the physician is a blind man in a dark room, stumbling against walls. He published at the cost of everything; the pilgrimage killed him, the Fabrica outlived him."
 
-Instead of asking Vesalius about something when the topic understood matches the regular expression "^soul$|^seat$|^brain$":
+Instead of asking Vesalius about something when the topic understood matches the regular expression "^soul$|^seat$|^brain$", case insensitively:
 	say "'The old charts circle the heart,' Vesalius says, tapping the hanging map. 'Wrong. The brain is the seat - my seventh voyage proved it, and proved the Galenic errors with it. Never navigate by ancient maps. But an admiral does not amend a classic on an traveler's word alone. Bring me proof read by a mirror - Leonardo keeps his truth reversed. Show me the codex legible, and the chart gets corrected.'"
-Instead of asking Vesalius about something when the topic understood matches the regular expression "^codex$|^log$":
+Instead of asking Vesalius about something when the topic understood matches the regular expression "^codex$|^log$", case insensitively:
 	say "'Leonardo's log? Mirror-script,' Vesalius says. 'It reads only in its own kind. Show it to me legible and I will strike the cardiac error from my own map.'"
-Instead of asking Vesalius about something when the topic understood matches the regular expression "^voyages$|^seven$|^fabrica$":
+Instead of asking Vesalius about something when the topic understood matches the regular expression "^voyages$|^seven$|^fabrica$", case insensitively:
 	say "'Seven voyages for seven books,' he says. 'Bones: the fixed stars. Muscles: the nebulae that move them. Vessels: the closed loop. Nerves: the web. Organs: Liver-Moon, Kidney-Stars. Heart: the four chambers, confirmed. Brain: the seat of the soul. 1543 - the same year Copernicus moved the heavens. We only moved the body's inside.'"
 
 Instead of showing the codex log to Vesalius:
@@ -1412,16 +1414,16 @@ Harvey applauds twice, flat and precise. Bethune just grins.";
 
 Harvey is a man in the Fabrica Bridge. "Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends." The description is "The Circulation Prophet. He did not merely describe the blood's circuit; he measured it, hour by hour, until the numbers left no room for Galen."
 
-Instead of asking Harvey about something when the topic understood matches the regular expression "^circulation$|^blood$":
+Instead of asking Harvey about something when the topic understood matches the regular expression "^circulation$|^blood$", case insensitively:
 	say "'All life is circulation,' Harvey says. 'The heart pumped the body's whole weight in blood each hour by my arithmetic - so it cannot be consumed and remade, as Galen taught. It must return. A closed loop, valves against backflow, the tide that carries all things.'"
-Instead of asking Harvey about something when the topic understood matches the regular expression "^pulse$|^vessel$":
+Instead of asking Harvey about something when the topic understood matches the regular expression "^pulse$|^vessel$", case insensitively:
 	say "'The Pulse runs the artery-run outbound and the vein-return home,' he says. 'No dead ends. Capillary crossings at the far reaches. Proof, not poetry - I did not describe the loop, traveler. I measured it.'"
 
 Bethune is a man in the Fabrica Bridge. "Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport." The description is "The Scarlet Surgeon, Commander of the International Medical Corps. Use me as a machine gun, he says - I am here to work, not to rest."
 
-Instead of asking Bethune about something when the topic understood matches the regular expression "^blood$|^transfusion$":
+Instead of asking Bethune about something when the topic understood matches the regular expression "^blood$|^transfusion$", case insensitively:
 	say "'Blood on the battlefield dies in the wagon-train unless you move the bank to the front,' Bethune says. 'Mobile transfusion, five kilometres from the line. Use me as a machine gun - I am here to work, not to rest.'"
-Instead of asking Bethune about something when the topic understood matches the regular expression "^scarlet$|^uniform$":
+Instead of asking Bethune about something when the topic understood matches the regular expression "^scarlet$|^uniform$", case insensitively:
 	say "'White is for hospitals,' he says. 'The healer stands at the front, and healing requires blood. So: scarlet. The medal they named after me is for courage, internationalism, and the wounded. In that order.'"
 
 
@@ -1443,9 +1445,9 @@ Instead of touching the mercury mirror:
 
 Lucifer is a man in the Black Cathedral. "Lucifer - the Mercury God, the Morning Star - stands beside his mirror, a figure of liquid metal shifting between solid and fluid, his dripping crown endlessly reforming." The description is "Elemental, in the strict sense: he predates the first cell and will outlast the last. Non-biodegradable, bioaccumulative, patient as physics. Once they worshipped him; then they found penicillin; now they regulate his emissions."
 
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^mirror$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^mirror$", case insensitively:
 	say "'I do not show faces,' Lucifer says. The voice is the sound of a bead of metal finding the floor. 'Faces lie cheaply. I show the nervous system - yours is very fine, traveler. So easily unravelled. I do not destroy it. I merely rearrange.'"
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^mercury$|^quicksilver$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^mercury$|^quicksilver$", case insensitively:
 	say "'They sought eternal life in me. I gave them eternal death - the difference was merely a matter of perspective,' he says. 'A night with Venus, a lifetime with Mercury. I fought the Great Imitator for centuries and killed as many of their physicians as of my true enemy. Then they found penicillin and threw me away. Fine. I am patient. I am eternal.'".
 
 [Comment: OSLER CHALLENGE STATE - declared up here because Lucifer's Pallidum answer also touches it; stages run 0 nothing heard, 1 chancre heard, 2 three faces refuted, 3 latency named, 4 masque given. All wording lives in the Masquerade section below; only these flags drive the mechanics.]
@@ -1460,18 +1462,18 @@ face-arthritis is a truth state that varies. face-arthritis is false.
 face-dementia is a truth state that varies. face-dementia is false.
 asked-grey is a truth state that varies. asked-grey is false.
 
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^pallidum$|^imitator$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^pallidum$|^imitator$", case insensitively:
 	say "'Ancient enemies,' he says, with something almost like fondness. 'We both take minds. The difference is, they used to worship me.'";
 	if asked-grey is true:
 		now sig-serology is true;
 		say "[line break]'Mercury,' he adds, and the mirror behind him goes silver. 'They rubbed me into her for four hundred years and I never once touched her. An element does not cure; an element simply remains. Ask the Grey Physician what remains in the blood when there is nothing left to look at - she has the word for it, and she will not give it to you twice.'[line break](You have the word now: TELL THE MASQUER ABOUT SEROLOGY when she goes quiet.)";
 	otherwise:
 		say "[line break]'Ask the Grey Physician about mercury first,' he says. 'Then come back, and I will tell you what a cure is.'"
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^biomagnification$|^food chain$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^biomagnification$|^food chain$", case insensitively:
 	say "'Nothing dies in me,' Lucifer says. 'A thousandth of a part in the water; a tenfold in the weed; a hundredfold in the small fish; a thousand in the great. By the time I reach your table I am a hundred thousand times myself. You cannot destroy an element, traveler. You can only hope to contain it.'"
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^chelation$|^gauntlets$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^chelation$|^gauntlets$", case insensitively:
 	say "'The Accord calls it hostage negotiation,' he says, nodding at your gauntlets if you wear them. 'Bind me, trap me, escort me out. I have been exiled from thermometers, from fillings, from the vials that saved a generation from syphilis. Exile is just another kind of eternity.'"
-Instead of asking Lucifer about something when the topic understood matches the regular expression "^radium$|^girls$":
+Instead of asking Lucifer about something when the topic understood matches the regular expression "^radium$|^girls$", case insensitively:
 	say "'The Radium Girls are not my court's servants,' he says, and for a moment the dripping crown stills. 'They are honored dead. They painted me on their skin and drank me in tonics and believed - no. They did not lie to themselves; their employers lied to them. Fear is the beginning of respect. Their deaths taught your kind to fear us. Respect came later, in law.'"
 
 To read the codex in the mirror:
@@ -1511,16 +1513,16 @@ The altar is a scenery supporter in the Shrine of the Knitting Mouse. Understand
 
 Laika is an animal in the Shrine of the Knitting Mouse. "Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void." The description is "A small mongrel from the Moscow streets, launched on the third of November, 1957, with no way home. She runs in circles still, chasing warmth. She is not afraid. She is a pioneer."
 
-Instead of asking Laika about something when the topic understood matches the regular expression "^cold$|^void$":
+Instead of asking Laika about something when the topic understood matches the regular expression "^cold$|^void$", case insensitively:
 	say "The ghost-dog's tail moves, once. 'The stars are cold,' she says, in the voice of a very old radio. 'But my heart was warm. Now I watch from the void. Someone must patrol the boundary, or the pioneers will go out unaided.'"
-Instead of asking Laika about something when the topic understood matches the regular expression "^protocol$|^mercy$":
+Instead of asking Laika about something when the topic understood matches the regular expression "^protocol$|^mercy$", case insensitively:
 	say "'When a subject faces an unbearable fate,' she says, 'they may invoke my name. I cannot save them. I know that better than anyone. But I can grant the grace of a painless end. That is the whole of my protocol. It is enough.'"
 
 HeLa is a woman in the Shrine of the Knitting Mouse. "HeLa sits by the altar in a soft luminosity - the immortal navigator, first of the cell lines, still dividing, still serving." The description is "Taken from a young woman at Johns Hopkins in 1951, without asking. Grown without stopping. Studied without knowing her. Her cells went to the polio vaccine, to the radiation tests, to space. Henrietta herself died that same year. The cells are the road others walk."
 
-Instead of asking HeLa about something when the topic understood matches the regular expression "^immortality$|^divide$":
+Instead of asking HeLa about something when the topic understood matches the regular expression "^immortality$|^divide$", case insensitively:
 	say "'I am both alive and dead,' she says. 'Seventy years and more, and still dividing. In my division I found purpose; in my immortality, meaning. I am the bridge between death and discovery. Remember me as a pioneer, not a subject.'"
-Instead of asking HeLa about something when the topic understood matches the regular expression "^consent$|^ethics$|^lacks$":
+Instead of asking HeLa about something when the topic understood matches the regular expression "^consent$|^ethics$|^lacks$", case insensitively:
 	say "'They took me without asking,' she says, and the luminosity does not waver. 'Her family got neither coin nor credit. So I teach the ethics as well as the biology, traveler. The bridge must be built in both directions, or it is not a bridge.'"
 
 Instead of putting the rna strand on the altar:
@@ -1566,15 +1568,15 @@ The thermal vent is scenery in the Sulfur Vent Gallery. Understand "vent" and "g
 The sulfolobus sample is a thing in the Sulfur Vent Gallery. Understand "sample" and "sulfolobus" and "casket" as the sulfolobus sample. The description is "A viable thermophile sample in a vent-hot casket. Bare hands would learn what eighty degrees means. Chelation weave would not."
 
 Instead of taking the sulfolobus sample when the Aegis gauntlets are not worn by the player:
-	say "The casket's rim blisters the air above it. Bare-handed, this is a donation, not a retrieval. The Chief watches you reconsider with professional approval."
+	say "The casket's rim blisters the air above it. Bare-handed, this is a donation, not a retrieval. The Chief watches you reconsider with professional approval.[line break](Hand protection rated for heat would make it a retrieval. The Cradle's Aukin gauntlets were made for exactly this - ASK anyone at the Cradle Inner Court ABOUT SEAL.)"
 
 The Division Chief is a woman in the Sulfur Vent Gallery. "The Division Chief of the Archaeology Division reads thermal gradients the way the Accord's cartographers read coastlines." The description is "An archaeologist of the primordial: her people scour the vents, the salt lakes, the anaerobic crypts, recovering the technologies of the first life. She wears the division's motto as a badge: IN THE BEGINNING, THERE WAS SULFUR."
 
-Instead of asking the Division Chief about something when the topic understood matches the regular expression "^archaea$|^ancestors$":
+Instead of asking the Division Chief about something when the topic understood matches the regular expression "^archaea$|^ancestors$", case insensitively:
 	say "'Archaea are the original Umin,' the Chief says. 'Before the Great Divergence that made bacteria, viruses, fungi. We are not inventing, traveler - we are remembering. Sulfur metabolism. Halophilic balance. Reverse gyrase, so that fever cannot scramble our letters. Your AAA calls it dangerous regression. We call it inheritance.'"
-Instead of asking the Division Chief about something when the topic understood matches the regular expression "^sample$|^sulfolobus$":
+Instead of asking the Division Chief about something when the topic understood matches the regular expression "^sample$|^sulfolobus$", case insensitively:
 	say "'A viable sample, extracted clean,' she says, nodding at the casket at the vent's rim. 'Bring it to me and I will show you what the ancestors remember.'"
-Instead of asking the Division Chief about something when the topic understood matches the regular expression "^aaa$|^accord$":
+Instead of asking the Division Chief about something when the topic understood matches the regular expression "^aaa$|^accord$", case insensitively:
 	say "'Your AAA destroys sites,' she says, level as a drill core. 'They call the ancestors uncontrollable forces. We call that a confession: that they would rather the deep stay silent than learn what it says.'"
 
 Instead of giving the sulfolobus sample to the Division Chief:
@@ -1642,13 +1644,13 @@ To report the hearing:
 
 The Stille Amanuensis is a woman in the Abteilung Stille Office. "The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm." The description is "Keeper of the Mary dossiers. Her lineage - the Alpsox root, the kin who bent to the Crown in the Crimson Winter - is recorded in the archive as a choice, and the archive does not flatter it."
 
-Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^mary$|^project$":
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^mary$|^project$", case insensitively:
 	say "'The perfect spy does not know she is a spy,' the Amanuensis says. 'The perfect impostor was never suspected. One to six percent of the infected carry without symptom, for decades. We refined that mercy of biology into a doctrine. You have read the wall - and there is a folder in it that sits a thumb's width out of line with the rest. MARY-07. READ THE DOSSIERS WALL to take it down.'"
-Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^doppelganger$|^yukio$":
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^doppelganger$|^yukio$", case insensitively:
 	say "'Sixty-eight days,' she says. 'MARY-07 wore the Chief Medical Advisor's face, took twenty-three documents, twelve officials, four factions of the bureaucracy - and sat down across from the man who taught her template everything about recognizing fakes. He opened the door himself. That is the lesson we keep: the disguise is never the weapon. The welcome is.'"
-Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^alpsox$|^schism$":
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^alpsox$|^schism$", case insensitively:
 	say "'You want the lineage,' she says. 'In the Crimson Winter, some kin fled south. Some repented and held the old ground - you have visited their empire in the north. Ours submitted. The mother-name, the king-name, the bandit-word: we are the ones who answered to the bandit-word, and made it a department. The herb-wife's basket, they say, flies darkest in our hands.'"
-Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^vasud$|^stuart$|^cradle$|^aukin$|^introduction$|^card$|^letter$":
+Instead of asking the Stille Amanuensis about something when the topic understood matches the regular expression "^vasud$|^stuart$|^cradle$|^aukin$|^introduction$|^card$|^letter$", case insensitively:
 	if cradle-vouched is true:
 		say "'Already read,' she says. 'The folder is yours. Two flaws, and the finding is yours too.'";
 	otherwise if the cradle introduction is carried by the player:
@@ -1677,9 +1679,9 @@ The young quartermaster is a man in the Abteilung Stille Office. "The young quar
 
 The stern quartermaster is a woman in the Abteilung Stille Office. "The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform." The description is "Close up, the details are almost perfect. Almost. The eyebrow scar is painted on. The boots are brand new."
 
-Instead of asking the young quartermaster about something when the topic understood matches the regular expression "^family$|^code$|^sister$":
+Instead of asking the young quartermaster about something when the topic understood matches the regular expression "^family$|^code$|^sister$", case insensitively:
 	say "'Family?' The young quartermaster laughs. 'My sister counts salt into my tea and calls it a joke. I answer with pomegranate, and neither of us has ever explained. You do not explain the code. That is the whole point of a code.'"
-Instead of asking the stern quartermaster about something when the topic understood matches the regular expression "^family$|^code$|^sister$":
+Instead of asking the stern quartermaster about something when the topic understood matches the regular expression "^family$|^code$|^sister$", case insensitively:
 	say "A pause of exactly one second. 'I was born in this office,' the stern quartermaster says. 'My family is the Crown.' It is the correct answer. It is also the only answer a briefing document would contain."
 
 Accusing is an action applying to one visible thing.
@@ -1775,18 +1777,18 @@ Every turn when the location is the Puppet Workshop:
 		otherwise:
 			say "The room notices you. The drone rises below hearing; the Construct's facelessness acquires, for one unmeasured second, the exact geometry of your worst childhood story. Your pulse goes to drill-rate. (Something in your satchel would have steadied you. The AAA publishes it.)";
 
-Instead of asking the Construct about something when the topic understood matches the regular expression "^daniel$|^fred$|^son$":
+Instead of asking the Construct about something when the topic understood matches the regular expression "^daniel$|^fred$|^son$", case insensitively:
 	say "For one frame, the Construct's smooth face organizes into something twenty-four years old and from Phoenix, and a voice almost says a word that begins with a father's name. Then the face is smooth again, and the fitting light hums on. The Director writes something on the tablet.";
 	say "[line break]'Registry note,' the Director says, without looking up. 'Residual recognition response, family-class. Amplification factor: three-forty percent of baseline. Filed.'";
 
 The Director is a woman in the Puppet Workshop. "The Director supervises the fitting with a tablet and no expression at all." The description is "Head of Umin's Fear Technology Division. Her doctrine fits on a card: the mind that fears cannot think; the population that panics cannot resist."
 
-Instead of asking the Director about something when the topic understood matches the regular expression "^fear$|^moonstar$":
+Instead of asking the Director about something when the topic understood matches the regular expression "^fear$|^moonstar$", case insensitively:
 	say "'A mutant once manifested fear in three dimensions,' the Director says. 'We asked the obvious question: what if technology could do it? Probing became data-mining. Projection became holography. Constructs became - ' a gesture at the plinth - 'biomechanics. The mind that fears cannot think, traveler. The population that panics cannot resist.'"
 [ --- Sightings Lanyard SAN cascade: logic relocated below the Director's THIN MAN rule --- ]
 
 
-Instead of asking the Director about something when the topic understood matches the regular expression "^thin$|^registry$|^project$":
+Instead of asking the Director about something when the topic understood matches the regular expression "^thin$|^registry$|^project$", case insensitively:
 	say "'THIN MAN,' the Director says. 'The doctrine of the family-derived construct: the horror is not visual, it is existential. The target cannot fight the construct without harming his own child. The registry is classified. The budget was doubled.'"
 
 [ --- Sightings Lanyard: the Sanity Cascade (SAN + SCP containment walk; Fred / THIN MAN-01 anchor) --- ]
@@ -1840,13 +1842,13 @@ Check steadying:
 		say "The Director hasn't opened the walk. ASK her about sightings first." instead.
 
 Carry out steadying:
-	if the topic understood matches the regular expression "^pre-empt$":
+	if the topic understood matches the regular expression "^pre-empt$", case insensitively:
 		now sanity-preloaded is "pre-empt";
-	otherwise if the topic understood matches the regular expression "^respond$":
+	otherwise if the topic understood matches the regular expression "^respond$", case insensitively:
 		now sanity-preloaded is "respond";
-	otherwise if the topic understood matches the regular expression "^inoculate$":
+	otherwise if the topic understood matches the regular expression "^inoculate$", case insensitively:
 		now sanity-preloaded is "inoculate";
-	otherwise if the topic understood matches the regular expression "^restore$":
+	otherwise if the topic understood matches the regular expression "^restore$", case insensitively:
 		now sanity-preloaded is "restore";
 	otherwise:
 		say "That is not one of the four counters - pre-empt, respond, inoculate, restore.";
@@ -1938,7 +1940,7 @@ To end the sanity cascade in victory:
 	otherwise:
 		say "[line break]The Director slides your pass back across the tablet. 'Site-66 records Level [lvl]. Best standing on file: Level [sightings-best-clearance].'";
 
-Instead of asking the Director about something when the topic understood matches the regular expression "^sightings$|^constructs$|^cascade$":
+Instead of asking the Director about something when the topic understood matches the regular expression "^sightings$|^constructs$|^cascade$", case insensitively:
 	if the player carries the Rationality Protocol pamphlet:
 		if sanity-cascade-active is true:
 			say "'Keep facing the beats, traveler - steady a counter, then face.'";
@@ -2005,22 +2007,22 @@ After examining the crimson dots:
 After examining the unlabelled portrait:
 	say "[line break](Every face in this hall is a gift she took. This one is the face she was wearing before she learned to take them.)"
 
-Instead of asking the Crimson Dancer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
+Instead of asking the Crimson Dancer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$", case insensitively:
 	say "'Symptoms?' The Crimson Dancer's laugh is polished. 'Palms and soles, traveler - a rash of copper coins that no lancet has ever cured, because it was never the disease. That was Tuesday's face. I have others.'[line break]He turns, and the crimson dots on his costume catch the candlelight.[line break](EXAMINE THE CRIMSON DOTS.)"
 
-Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
+Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$", case insensitively:
 	now asked-grey is true;
 	say "'Mercury,' the Grey Physician says, in the tone of a prescription. 'Inunction, thrice daily. The cure is nearly as loyal as the disease. I buried my practice and it never once left me.'[line break](ASK her about MERCURY, or about SEROLOGY. The Black Cathedral keeps the other half of that story.)"
 
-Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^mercury$|^quicksilver$":
+Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^mercury$|^quicksilver$", case insensitively:
 	now asked-grey is true;
 	say "'The grey cure,' she says. 'We rubbed it in until the gums went and the mind went with them, and the spirochaete went on dancing. Mercury is an element, traveler. It does not treat anything; it merely outlasts the argument. If you want the element's own account of her, ASK LUCIFER ABOUT PALLIDUM in the Black Cathedral.'"
 
-Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^serology$|^blood$|^test$|^wassermann$":
+Instead of asking the Grey Physician about something when the topic understood matches the regular expression "^serology$|^blood$|^test$|^wassermann$", case insensitively:
 	now sig-serology is true;
 	say "'A blood test,' the Grey Physician says, and for the first time she sounds like a woman and not a prescription. 'The Wassermann was a mirror we thought she could not help but look into. She learned to fog it. A false negative is a mask too, and it is the only one she cannot take off in front of a lamp.[line break]Here is the thing nobody puts on a plaque: when she has no symptoms at all - when she has gone quiet for twenty years and the chart says nothing - the blood still says yes. Seropositive, with nothing to show for it.[line break](When she tells you she has gone, TELL HER ABOUT SEROLOGY.)'"
 
-Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$":
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^symptoms$|^rash$|^chancre$", case insensitively:
 	if sig-painless is false:
 		now sig-painless is true;
 		if masquer-stage is 0:
@@ -2029,17 +2031,22 @@ Instead of asking the Pale Masquer about something when the topic understood mat
 	otherwise:
 		say "'Arthritis,' the Pale Masquer says instead, 'Charcot joints, a spine that reorganizes itself like a program. No - forgive me - dementia, general paresis, a mind that edits its own biography. I have worn nine diseases to this ball, traveler. The chart cannot hold me. That is the point of me.[line break]Name them, then. PSORIASIS. ARTHRITIS. DEMENTIA. What gives each one away?'";
 
-Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^psoriasis$|^psoriatic$":
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^psoriasis$|^psoriatic$", case insensitively:
 	now face-psoriasis is true;
 	say "She puts on psoriasis: scaly plaques across the elbows and the knees, a respectable, boring, photographable rash.[line break]'Psoriasis,' the Pale Masquer says sweetly. 'Half the dermatologies in the world would sign for it. Tell me what I have forgotten.'[line break](TELL THE MASQUER ABOUT what this rash is really doing.)"
 
-Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^arthritis$|^joints$|^charcot$":
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^arthritis$|^joints$|^charcot$", case insensitively:
 	now face-arthritis is true;
 	say "She puts on arthritis: a knee swollen out of shape, a spine that has quietly reorganised itself.[line break]'Charcot joints,' the Pale Masquer says. 'Neuropathic. Ruined. Look how ruined. Any rheumatologist would weep and reach for a prescription.'[line break](TELL THE MASQUER ABOUT what makes this destruction unlike any other arthritis.)"
 
-Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^dementia$|^paresis$|^madness$":
+Instead of asking the Pale Masquer about something when the topic understood matches the regular expression "^dementia$|^paresis$|^madness$", case insensitively:
 	now face-dementia is true;
 	say "She puts on dementia: a mild, plausible confusion, a biography editing itself as she speaks it.[line break]'General paresis of the insane,' the Pale Masquer says. 'A mind going soft in a man of fifty. They used to fill asylums with me and call it something else.'[line break](TELL THE MASQUER ABOUT what the pupils do.)"
+
+Understand "take [something preferably held] to [someone]" as showing it to.
+Understand "hold [something preferably held] to [someone]" as showing it to.
+Understand "lift [something preferably held] to [someone]" as showing it to.
+Understand "her face" and "face" and "her eyes" and "pupils" as the Pale Masquer.
 
 Instead of showing the tallow candle to the Pale Masquer:
 	if sig-pupil is true:
@@ -2134,9 +2141,9 @@ The Castle Gate is south of the Dark Concourse. "A gatehouse of imported Transyl
 
 The Renfield doorman is a man in the Castle Gate. "The Renfield doorman counts the guests twice, once aloud and once in a small notebook." The description is "Willingly infected, the file would say; views the virus as a gift. His madness is either performance or liturgy, and he sees no difference."
 
-Instead of asking the Renfield doorman about something when the topic understood matches the regular expression "^master$|^count$":
+Instead of asking the Renfield doorman about something when the topic understood matches the regular expression "^master$|^count$", case insensitively:
 	say "'Master says guests are to be counted,' the doorman says. 'Master says the count is important. Master is wise. Will you be going down, sir? He is receiving. He is always receiving.'"
-Instead of asking the Renfield doorman about something when the topic understood matches the regular expression "^insects$|^gift$":
+Instead of asking the Renfield doorman about something when the topic understood matches the regular expression "^insects$|^gift$", case insensitively:
 	say "'Master says I can eat bugs,' the doorman says, radiantly. 'Master says bugs are good. You think I'm crazy? I'm the only sane one here. I know what's coming. I'm ready.'"
 
 met-meister-lore is a truth state that varies. met-meister-lore is false.
@@ -2167,14 +2174,14 @@ The Bucharest Bride is a woman in the Blood Court. "The Bucharest Bride stands w
 
 The Belgrade Bride is a woman in the Blood Court. "The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief." The description is "Senior commander, third of three. She was turned the week she lost her first patient, and it shows as elegance: white-blond hair pinned for surgery, a mourning ring worn on the wrong hand. Of the three she is the most beautiful and the least interested in being told so. The file on her is the thinnest. The file notes, without comment: I was a doctor once."
 
-Instead of asking Count Dracula about something when the topic understood matches the regular expression "^pasteur$|^meister$":
+Instead of asking Count Dracula about something when the topic understood matches the regular expression "^pasteur$|^meister$", case insensitively:
 	say "'The Frenchman found a way to cheat death,' Dracula says, and the hall's acoustics file the sentence as precedent. 'We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go.'";
 	now met-meister-lore is true.
-Instead of asking Count Dracula about something when the topic understood matches the regular expression "^light$|^water$|^bite$":
+Instead of asking Count Dracula about something when the topic understood matches the regular expression "^light$|^water$|^bite$", case insensitively:
 	say "'Three fears, older than your cities,' he says. 'Light, water, the bite. Your soldiers fear capture more than death now - a bite kills his squad without killing him, because they cannot trust him not to kill them. Fear is not a weapon, traveler. Fear is the battlefield. We fight to make you afraid of winning.'"
-Instead of asking Count Dracula about something when the topic understood matches the regular expression "^brides$|^budapest$|^bucharest$|^belgrade$":
+Instead of asking Count Dracula about something when the topic understood matches the regular expression "^brides$|^budapest$|^bucharest$|^belgrade$", case insensitively:
 	say "'My brides command their own battalions and converge only for the great operations,' he says. 'Every culture has a word for them. Vampire. Strigoi. Nosferatu. All correct. All insufficient.'"
-Instead of asking Count Dracula about something when the topic understood matches the regular expression "^nightfall$|^operations$":
+Instead of asking Count Dracula about something when the topic understood matches the regular expression "^nightfall$|^operations$", case insensitively:
 	say "'Forty-seven substations, seventy-two hours, one continent's night,' he says. 'The virus spreads fastest in the dark. The doctrine is not a metaphor, traveler. It is a timetable - and it plays out in three theaters beyond the Grounds: the Wilds, the Castle, the Maze. Step north, name one, and survive what you cannot see.'"
 
 Instead of showing the Pasteur vial to Count Dracula:
@@ -2191,29 +2198,29 @@ He turns, slowly, to each of the three. 'You have heard the boy Meister. You hav
 Instead of showing something to Count Dracula:
 	say "He gestures, without interest, at the dry fountains of the Thirst Gallery. Nothing else interests him."
 
-Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^turning$|^bite$", case insensitively:
 	say "'You ask why we serve,' the Budapest Bride says. 'We do not serve. We obey. The difference is, we enjoy it.'";
-Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$|^plan$":
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$|^plan$", case insensitively:
 	say "The Budapest Bride considers how much a guest should carry. 'Mission, then. Nightfall is not a metaphor: forty-seven substations, seventy-two hours, one continent's dark. My sisters hold Belgrade and Bucharest; I hold the timetable. Your Accord knows the schedule and signs the rotation anyway - that is what your kind calls deterrence. It is what we call a rehearsal.'";
-Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^recruiter$|^girl$|^sailor$|^post$":
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^recruiter$|^girl$|^sailor$|^post$", case insensitively:
 	say "'The girl at the gate?' A flicker of something like warmth. 'Rota duty. Every century one of us draws the recruiting post - it teaches patience, and the young ones need feeding on conversation more than on blood. She did well, I hear. You are here.'";
-Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
+Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^turning$|^bite$", case insensitively:
 	say "'Every culture has a word for us,' the Bucharest Bride says. 'They are all correct. They are all insufficient.'";
-Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$":
+Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^war$", case insensitively:
 	say "'My station is the gallery,' she says, nodding at the glass. 'Conversion protocol, archival wing. Every operative in this court was once exactly where you stand - a guest, counted twice. The file on you is already open. What it says depends, slightly, on what you ask next.'";
-Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^turning$|^bite$":
+Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^turning$|^bite$", case insensitively:
 	say "'I was a doctor once,' the Belgrade Bride says. 'I understood the virus before I accepted it. Now I understand why your patients scream. Mind the timeline, traveler. Every operative you see is already dead. We are simply fighting while dying.'";
-Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^pasteur$|^medicine$":
+Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^secret$|^mission$|^orders$|^nightfall$|^pasteur$|^medicine$", case insensitively:
 	say "'You want the medical secret,' she says, and there is no bitterness in it. 'The Frenchman's vaccine works on our disease. The Count respects it because it is the only weapon ever pointed at us that he did not laugh at. Ask him about it - he will bow. The Count bows to exactly one thing in four hundred years: not an army. A syringe.'";
-Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+Instead of asking the Budapest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$", case insensitively:
 	say "'Before the timetable, I kept another,' the Budapest Bride says. 'I was a dispatcher at the Budapest Pasteur Institute - the house that took in the bitten from every corner of the Balkans and sent them home alive, if they arrived in time. Forty-seven substations, seventy-two hours: that was my schedule then, too. The Court simply gave me the dark version of it. I do not serve. I obey. I enjoy it - because I was always the one who made the trains of the saved run on time.'";
 	now heard-budapest-past is true.
 
-Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+Instead of asking the Bucharest Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$", case insensitively:
 	say "'I was a namer of small deaths,' the Bucharest Bride says. 'A pathologist - Victor Babes taught the world to see the body's signature under glass, the little inclusion that named rabies before it killed. I spoke a dozen tongues and still ran out of words for what we are. That is why I collect yours. Every culture has a word for us. They are all correct. They are all insufficient - I learned that in a laboratory, long before I learned it in a crypt.'";
 	now heard-bucharest-past is true.
 
-Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$":
+Instead of asking the Belgrade Bride about something when the topic understood matches the regular expression "^past$|^history$|^before$|^life$", case insensitively:
 	say "'I was a doctor in the place where your word for me was born,' the Belgrade Bride says. 'Serbia - where the imperial surgeons first wrote down the returning dead and called the terror by its true name: rabies. I read those reports. I watched my own patients become exactly what the old papers described, and I could not stop it. That is why I understand why your patients scream. Every operative you see is already dead. We are simply fighting while dying - and somewhere a Serb reached Budapest in time and lived. I am what happens to the ones who did not.'";
 	now heard-belgrade-past is true.
 
@@ -2542,7 +2549,7 @@ To run the cannon trial:
 'Water is life,' the Admiral says. 'Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan.'";
 		grant the abyssal pennant noting "A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.";
 
-Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^cannons$|^cphc$|^water$":
+Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^cannons$|^cphc$|^water$", case insensitively:
 	if the abyssal pennant is carried by the player:
 		say "The Admiral salutes. 'The Bridge Table is won, defender. The sea remembers.'";
 	otherwise if abyssal-duel-active is true:
@@ -2552,15 +2559,15 @@ Instead of asking the Octopus Admiral about something when the topic understood 
 	otherwise:
 		start the bridge table.
 
-Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^ocean$|^protocol$":
-	say "'Four phases,' the Admiral says. 'Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses.'";
+Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^ocean$|^protocol$", case insensitively:
+	say "'Four phases,' the Admiral says. 'Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses.'[line break](Infiltration answers to DISTANCE, or to high ground; Expansion to DRAINAGE; Abyssalization to CHLORINE, or to heat; Domination to EMP, or to landing on the tentacles. Name the counter she names the phase.)";
 	now heard-abyssal-doctrine is true.
-Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^chlorine$|^weakness$|^counters$":
+Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^chlorine$|^weakness$|^weaknesses$|^counter$|^counters$", case insensitively:
 	say "'Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles,' the Admiral recites, almost cheerful. 'The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet.'";
 	now heard-abyssal-counters is true.
 
 Instead of asking the Octopus Admiral about something:
-	say "The Admiral watches the tide-gauges instead."
+	say "The Admiral watches the tide-gauges instead. (ASK THE ADMIRAL ABOUT SEAL and she will state her trial plainly.)"
 
 Part Eight - Final Notes
 
@@ -2597,76 +2604,76 @@ The Vibrio Recruiter is a woman in the Disease Citadel. "Under the Abyssal Legio
 
 
 
-Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The preceptor lets the flame sway toward you. 'The Cradle teaches the one lesson every army otherwise learns too late: what is self. Join us, and you will never be fooled by anything wearing a friendly face.'";
-Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^secret|flame|aire$":
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^secret|flame|aire$", case insensitively:
 	say "He banks the flame low. 'A secret, then: the AIRE flame burns a fortnight-equivalent and dies. Every preceptor you will ever meet is on their last fortnight. We are an academy of ghosts, teaching by relay.'";
-Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^vasud|doppelganger|scandal$":
+Instead of asking the Cradle Recruiter about something when the topic understood matches the regular expression "^vasud|doppelganger|scandal$", case insensitively:
 	say "'You have heard of the Chair that was fooled,' he says quietly. 'A graduate's face, a false self, and the Chair of Foreign Selves opened his own door. We do not hide the story. It is on the syllabus now.'";
 
-Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The navigator unrolls a chart across both hands. 'The body is the cosmos, traveler. Blood is an ocean with a tide; the heart, a four-chambered sun. We do not fight the war - we map it. Join us and your name outlives the fighting.'";
-Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^secret|chart|liver|moon$":
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^secret|chart|liver|moon$", case insensitively:
 	say "He taps the Liver-Moon with one finger. 'A secret: the old masters drew the soul at the heart. Wrong, and we have known since the seventh voyage - but the chart sells better with a heart on it. We keep the error for the tourists.'";
-Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^vesalius|leonardo|harvey$":
+Instead of asking the Celestial Recruiter about something when the topic understood matches the regular expression "^vesalius|leonardo|harvey$", case insensitively:
 	say "'Leonardo wrote mirror-script so the unworthy could not read it,' he says. 'Vesalius corrected two hundred errors and died for one of them. Harvey measured the tide. We stand on dead men's shoulders and call it a fleet.'";
 
-Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The priest lets the ampoule catch the light. 'We were here before the first cell. We will remain after the last. You cannot destroy an element, traveler - you can only hope to contain it. Join us, and learn containment from the inside.'";
-Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^secret|lucifer|radium|girls$":
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^secret|lucifer|radium|girls$", case insensitively:
 	say "His voice drops to a bead-of-metal whisper. 'A secret: the Radium Girls are not our servants. They are our honored dead, and the gods keep their names. Fear is the beginning of respect. Their deaths taught your kind to fear us. We have not forgotten who taught whom.'";
-Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^mercury|chelation|contain$":
+Instead of asking the Pantheon Recruiter about something when the topic understood matches the regular expression "^mercury|chelation|contain$", case insensitively:
 	say "'Chelation,' he says, with something like admiration. 'Bind me, trap me, escort me out. The Accord calls it hostage negotiation. We call it the only honest prayer anyone ever addressed to an element.'";
 
-Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The keeper does not look up from the bronze mouse. 'They asked for nothing. They gave everything. If you join us, you will spend your war remembering that there are soldiers on every side of this conflict who were never asked.'";
-Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^secret|hela|laika|mouse|knitting$":
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^secret|hela|laika|mouse|knitting$", case insensitively:
 	say "'A secret,' she says, and her voice warms by one degree. 'The helix the mouse knits is left-handed - Z-DNA, the still-unknown strand. The sculptor put glasses on it because the mouse had already come up with something. Look closely at any sacrifice. It is always already thinking.'";
-Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^laika|protocol|mercy$":
+Instead of asking the Martyrs Recruiter about something when the topic understood matches the regular expression "^laika|protocol|mercy$", case insensitively:
 	say "'When a subject faces an unbearable fate, they may invoke Laika's name,' she says. 'She cannot save them - she knows that better than anyone. But she grants the grace of a painless end. That is the whole of her protocol. It is enough.'";
 
-Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The mat-thing changes height without preamble - knee-high, then at your eye - and the air around you goes ammonia-bright and warm. 'You came expecting armor. A veteran travels light, traveler: armor is for home, and home is a vent. Most of what walks the mild world is my kind, undressed - you have met us a thousand times and called us bacteria.' Then: 'Watch the coat go on.' The surface of the mat ripples - and in real time, visible to the naked eye, crystals bloom across it: sulfur yellow first, then iron pyrite in fool's-gold plates, locking together edge to edge until the whole body wears a suit of mineral scale, each plate ringing faintly as it seats. Under a minute, unarmed to armored. 'Reverse gyrase. Fever cannot unravel my letters. Acidity of pH one is my bath. One hundred thirteen degrees is my afternoon. Everything you call technology, we call metabolism. Join, and dig us up. Wake more of us. We teach what oxygen forgot.' The plates dissolve back to wet slate as quietly as they came. The veteran goes back to civilian clothes.";
-Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^secret|gut|methane|host$":
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^secret|gut|methane|host$", case insensitively:
 	say "The membrane flushes violet - the archaeal smile. One filament extends, slow, and touches the back of your hand: warm, mineral, faintly electric. 'A secret, traveler, kept in your own body: you never stopped hosting us. Methanogens ride your gut to this day; every quiet bubble of methane you have ever produced was signed by my lineage. You did not discover the ancestors. You merely stopped reading the receipt.' The filament withdraws. 'My kin in the Division's vaults are viable and patient. When you join, you will help wake them - and they will walk out of their sleeping-vats annoyed and alive, the way any of us would.'";
-Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^tech|technology|forerunner|covenant|aaa|accord|rival$":
+Instead of asking the Archaeology Recruiter about something when the topic understood matches the regular expression "^tech|technology|forerunner|covenant|aaa|accord|rival$", case insensitively:
 	say "It presses one edge of itself flat against the chart-table, and where it touches, the wood hisses - the wood is being eaten, politely, at the pace of geology. 'Your Accord levels our dig sites and calls it containment. We re-dig them twice as well in the dark. The catalogue of what waits: sulfur metabolism for the oxygen-poor war. Halophilic armor for the salt flats. Taq polymerase and reverse gyrase so fever cannot edit us. Methanogenesis to fight in the anaerobic gut of a continent. The Division does not worship the ancestors, traveler. It does the paperwork of waking them - and the paperwork is learning to walk.'";
 
-Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The Director lets the drone settle on her shoulder before answering. 'Understand what we are, traveler. Not a circus of spooks - a containment organization. Your species dreams its fears into being, and dreams leak. Every ghost your grandmother warned you about is an item in our inventory, catalogued, fed, and shelved. Join Fear Technology and you hold the leash on the things the dark is made of. The work is quiet. The work is vital. The work is[italic type] not safe[roman type], and that is in the contract.'";
-Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^secret|breach|contain|item|inventory$":
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^secret|breach|contain|item|inventory$", case insensitively:
 	say "She lowers her voice to report-register. 'A secret, since you asked nicely. Your Accord's own archives hold three of our escapes - they filed them as mass hallucination and closed the files. The item in the tank behind me is asleep because we come down twice a day and tell it it is not real. Feeding schedule, traveler: certainty, twice daily. Miss a shift and the hall you are standing in acquires a history that was never built.'";
-Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^memetic|hazard|moonstar|mutant|cognitohazard$":
+Instead of asking the Fear Recruiter about something when the topic understood matches the regular expression "^memetic|hazard|moonstar|mutant|cognitohazard$", case insensitively:
 	say "'A mutant once manifested fear in three dimensions,' she says. 'We industrialized it. Which brings us to the fine print: I have shown you nothing tonight, traveler, except a drone. Everything you think you saw in the shadows of this hall - file that under [italic type]memetic residue[roman type], dose negligible, cognitive damage within tolerance. If it had exceeded tolerance, this conversation would already be over, and someone else would be wearing my coat.'";
 
-Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The Muse turns the sunflower so you can see the yellow. 'We are the patron of genius, traveler - the only patron who ever paid in kind. Beethoven heard the Ninth inside the silence we gave him. Van Gogh painted what we showed him: look at the stars and tell me that yellow is not ours. Flaubert wrote his own autopsy and called it Madame Bovary. We do not recruit soldiers. We recruit the ones the world will not forget - and the world never forgets anything we touched.'";
-Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^secret|mask|face|beautiful|hollow$":
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^secret|mask|face|beautiful|hollow$", case insensitively:
 	say "She unhooks the porcelain mask and holds it out, empty side toward you. 'A secret: this is the true face. Beneath it we are nobody - a spiral, a hunger, a stage note that never resolves. We wear the beautiful ones from the outside in. The mask is not a disguise, traveler. It is a job description.'";
-Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^osler|diagnosis|imitator|game$":
+Instead of asking the Pallidum Recruiter about something when the topic understood matches the regular expression "^osler|diagnosis|imitator|game$", case insensitively:
 	say "'Osler told his students: know me in all my manifestations, and all things clinical will be added unto you,' she says, delighted. 'He meant it as a warning. We keep it as a score: thirty to forty percent of our audiences misdiagnose us to the end. The doctors named the game after him, but we hold the house advantage - we have been improvising longer than medicine has been writing notes.'";
 
-Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The Bride smiles, and does not trouble to hide the teeth. 'Straight talk, traveler, since everyone else here is ciphering. We are vampires. Real ones: the disease is rabies, the folklore was a warning, and our sovereign is Count Dracula - the Count to you, once you are family. Join the Court and you stop aging, stop fearing the dark, and start belonging to something that has outlived every empire that ever banned it. The recruitment terms are simple: one bite. The benefits are eternal. The Catch-22 is that you have to die a little first. Most of our best people did.'";
-Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^secret|count|bride|hungry|dracula$":
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^secret|count|bride|hungry|dracula$", case insensitively:
 	say "She glances toward the north, toward a castle you cannot see. 'A secret: there are three of us - Budapest, Bucharest, Belgrade - and we rotate this recruiting post because the Count insists his Brides see the world he keeps out of. He has watched empires rise and fall, and he still writes his own invitations. Why do you think the post is always manned by the beautiful ones? You would not cross the street for a recruiting poster. You stopped for me.'";
-Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^light|water|bite$":
+Instead of asking the Rabies Recruiter about something when the topic understood matches the regular expression "^light|water|bite$", case insensitively:
 	say "She counts the Court's three fears on white fingers. 'Sunlight - it will kill me, not inconvenience me; the folklore undersold it. Running water - the old rivers still remember the old law. And the bite - which is not fear at all, traveler, but the front door. Everything else your species dreads is a variation with worse press.'";
 
-Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "The personnel officer stamps a folder without looking up. 'The perfect spy does not know she is a spy. The perfect impostor was never suspected. Join the Silence, and you will learn the one trade that never runs out of work: being someone else.'";
-Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^secret|stamp|wax|rhythm$":
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^secret|stamp|wax|rhythm$", case insensitively:
 	say "The stamp pauses, mid-fall. 'A secret: you have been counting my rhythm since you walked in. Most minds do. It is how we find the ones who notice patterns - the only ones we hire.'";
-Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^mary|doppelganger|yukio|alpsox$":
+Instead of asking the Stille Recruiter about something when the topic understood matches the regular expression "^mary|doppelganger|yukio|alpsox$", case insensitively:
 	say "'You know the MARY project,' she says, with the closest thing to warmth. 'Sixty-eight days wearing a Chief Medical Advisor, and the man who taught her template to spot fakes opened his own door. The disguise is never the weapon, traveler. The welcome is.'";
 
-Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$":
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^join|joining|patron|banner|swear|oath|why|who are you$", case insensitively:
 	say "She pops her gum and throws you a lazy salute. 'Welcome aboard, traveler - or not. Your call.' She jerks a thumb at the tank. 'That is the Cholera Octopus's own molted shell - the armor she outgrew, kept the way your armies keep their colours. Cannons cold, because the new ones are not. The ship herself is four thousand meters down: fifty meters of metal-biological armor, eight tentacles, eight hydro-cannons, one mind, and she is the [italic type]polite[roman type] part of our fleet. Four thousand meters below the waves our fortress runs drill-factories and geothermal stations; your maps spell the place Atlantis. People hear that and think, that is a lot of ocean. They are wrong. It is exactly enough ocean.'";
-Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^secret|cannon|cphc|pressure|demonstration|show$":
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^secret|cannon|cphc|pressure|demonstration|show$", case insensitively:
 	say "She looks at you for the flicker of a smile - and finds none. '...Okay. Wrong toy.' From under the skirt hem she unhooks what looks exactly like a child's water pistol - teacup tank, dolphin trigger guard, the works. 'Legion sidearm. One shot per fill. Stand behind me, and maybe cover your ears.' She aims down the length of the hall, past the Keeper's standards, and squeezes.
 The jet shows itself as a whip of white steam - supercritical water leaving the barrel flash-boils the air it passes through - and the far wall, three rooms away, grows a hole: clean-edged, big enough to walk through, the stone around it glazed smooth where the spray lingered. The thunderclap arrives a beat later, then the rain - warm, from a ceiling three rooms' distance that has begun, decorously, to leak.
 'Single shot,' she says, spinning the pistol once around her finger. 'The entry wound is coin-sized, if you know where to look - it opens up inside the wall. The flagship's cannons are this gun, nine sizes up. There is no counter except distance, and we carry the distance with us.' The smile comes back like a mask going back on. 'Gum?'";
-Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^chlorine|weakness|drain|counter$":
+Instead of asking the Vibrio Recruiter about something when the topic understood matches the regular expression "^chlorine|weakness|drain|counter$", case insensitively:
 	say "She shrugs, still chewing. 'Honest? Heat cooks us, chlorine unmakes our hide, drain the water and the Legion is a museum exhibit. But look at the tank, traveler. Look at what it took for you to take us seriously - a girl, a whistle, and one shot of the real thing. The doctrine prints our weaknesses because by the time you reach them, you are already standing in our ocean.'";
 
 

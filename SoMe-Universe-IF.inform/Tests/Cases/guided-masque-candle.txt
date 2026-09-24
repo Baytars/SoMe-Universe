@@ -1,0 +1,8 @@
+s
+choose cradle
+go to masquerade
+ask pale masquer about symptoms
+take candle
+take tallow candle to pale masquer
+quit
+yes

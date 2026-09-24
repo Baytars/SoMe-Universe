@@ -54,30 +54,6 @@ HOW TO WALK: directions still work where roads exist - type N / S / and so on to
 
 YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
 
->The Keeper keeps no trial to disclose.
-
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Shrine of the Knitting Mouse
-A small bronze mouse in pince-nez glasses sits knitting a double helix - Z-DNA, left-handed, the still-unknown strand. Four lampposts ring the shrine, each worked with cell division in bronze. The altar before the monument carries offerings: strands, treats, wheels, slides. Laika's ghost-shape patrols the treeline. HeLa's soft luminosity sits by the altar like a candle that never gutters.
-
-HeLa sits by the altar in a soft luminosity - the immortal navigator, first of the cell lines, still dividing, still serving.
-
-Laika patrols the treeline in a slow, patient circle - the first of many to see the Earth from above, still on watch at the boundary between life and void.
-
->Buy the offering bundle from the Cradle's factor (one token), then lay its three offerings - strand, treat, wheel - on the Martyrs" altar.
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
-
-Fabrica Bridge
-The flagship's bridge: seven interconnecting chambers, one for each book of the Fabrica. Vesalius holds the chart-table at the centre. Harvey stands by a model of the Pulse, its loop closed with no dead ends. Bethune, in scarlet, checks a transfusion kit by the viewport. An anatomical star chart hangs on the after wall.
-
-Vesalius, Admiral of the Celestial Fleet, stands with the posture of a man who corrected two hundred errors and expects to correct two hundred more.
-
-Harvey, Commodore of the Blood Sea Fleet, stands by a model of the Pulse - a vessel shaped as a closed loop with no dead ends.
-
-Bethune, in a scarlet uniform that is not regulation and does not intend to be, checks a mobile transfusion kit by the viewport.
-
->Bring Leonardo's codex to Vesalius legible: have it mirror-read at the Black Cathedral's mercury pool first (the Aukin gauntlets let you touch it), then SHOW it to Vesalius to correct his chart.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Blood Court
@@ -91,19 +67,8 @@ The Bucharest Bride stands where the gallery light ends, and the dark approves o
 
 The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
 
->In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier.
->The manifest takes your word, and the concordance carries you along the great vessels of the war.
+>"The Frenchman found a way to cheat death," Dracula says, and the hall's acoustics file the sentence as precedent. "We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go."
 
-Abteilung Stille Office
-A quiet office of quiet people: green-shaded lamps, gall-coloured wax, and a wall of dossiers on people who are not there any more. Two quartermasters work duplicate desks under the lamps - the young one and the stern one, and at this distance they are difficult to tell apart. The Stille Amanuensis presides from a raised desk.
-
-The Stille Amanuensis runs the intelligence analysis of Abteilung Stille from a raised desk, stamping gall-coloured wax with metronomic calm.
-
-The young quartermaster catalogs requisitions with a slight smile, as if the requisitions were jokes only he got.
-
-The stern quartermaster catalogs the same requisitions with no smile at all, in the same rhythm, at the same desk-style, in the same uniform.
-
->In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then ASK the Amanuensis ABOUT two of the flaws you found - DIET, HAND, WARMTH, SLEEP or TIMING. Only when two are on record will she hear your ACCUSATION of the stern quartermaster.
 >The manifest takes your word, and the concordance carries you along the great vessels of the war.
 
 Abyssal Deck
@@ -111,5 +76,6 @@ A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel
 
 The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
 
->At the Abyssal Deck, ASK the Octopus Admiral about the ocean and about her weaknesses first, then about cannons - survive the Bridge Table by deploying the right counter for each of her four attack phases until all eight guns are silenced, and she will grant the pennant.
+>"Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles," the Admiral recites, almost cheerful. "The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet."
+
 >Are you sure you want to quit? 

@@ -1,0 +1,9 @@
+s
+choose cradle
+go to cradle
+n
+attend
+attend
+ask Generalizer about Narrow Faction
+quit
+yes

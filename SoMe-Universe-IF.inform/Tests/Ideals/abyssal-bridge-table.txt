@@ -64,6 +64,7 @@ The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-
 >You would watch a demonstration before you can name what you are watching. Ask me of the ocean, and of our weaknesses, first.
 
 >"Four phases," the Admiral says. "Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses."
+(Infiltration answers to DISTANCE, or to high ground; Expansion to DRAINAGE; Abyssalization to CHLORINE, or to heat; Domination to EMP, or to landing on the tentacles. Name the counter she names the phase.)
 
 >"Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles," the Admiral recites, almost cheerful. "The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet."
 

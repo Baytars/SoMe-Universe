@@ -251,8 +251,12 @@ def run(args):
                     "GAME MASTER: your reply was not wrapped in <cmd>...</cmd>. "
                     "Send ONLY the tag and nothing else, e.g. <cmd>look</cmd>."})
             if not cmd:
-                print("!! model returned no usable command; reply was:", repr(rep)[:200])
-                break
+                # The model sometimes loses the tag entirely and dumps its
+                # reasoning. Ending the run there throws away everything we have
+                # learned about the trial so far, so refresh the screen instead
+                # and let it try again on the next turn.
+                cmd = "look"
+                print("!! no <cmd> after nudges; falling back to '%s'" % cmd)
 
         game.send(cmd)
         out = game.read()

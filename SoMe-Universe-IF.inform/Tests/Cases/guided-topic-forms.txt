@@ -1,0 +1,8 @@
+s
+choose cradle
+go to undead court
+ask Count Dracula about Pasteur
+go to abyssal fleet
+ask Octopus Admiral about weaknesses
+quit
+yes
