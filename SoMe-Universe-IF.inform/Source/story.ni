@@ -242,7 +242,7 @@ The trial text of the sulfur sigil is "Extract a clean sulfolobus sample from th
 The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK THE MASQUER ABOUT SYMPTOMS for the chancre, READ THE CRIMSON DOTS and TAKE THE CANDLE TO HER FACE for her signatures, then ASK her for PSORIASIS, ARTHRITIS and DEMENTIA and TELL her what gives each away - PALMS, PAINLESS, PUPIL. When she goes quiet, TELL HER ABOUT SEROLOGY, and only then UNMASK her."
 The trial text of the bat sigil is "In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier."
 The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
-The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
+The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet, then at the Puppet Workshop ASK the Director about sightings to begin the Site-66 containment walk. STEADY one of the four counters - pre-empt, respond, inoculate, restore - then FACE each of the six Fear-Cascade beats; hold your sanity through the Recognition (beat three, where the Construct wears a lost one's shape) and the Director grants the lanyard, cleared by how much you kept."
 The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about the ocean and about her weaknesses first, then about cannons - survive the Bridge Table by deploying the right counter for each of her four attack phases until all eight guns are silenced, and she will grant the pennant."
 
 To decide which patron is the patron of (tk - a seal):
@@ -1777,18 +1777,155 @@ The Director is a woman in the Puppet Workshop. "The Director supervises the fit
 
 Instead of asking the Director about something when the topic understood matches the regular expression "^fear$|^moonstar$":
 	say "'A mutant once manifested fear in three dimensions,' the Director says. 'We asked the obvious question: what if technology could do it? Probing became data-mining. Projection became holography. Constructs became - ' a gesture at the plinth - 'biomechanics. The mind that fears cannot think, traveler. The population that panics cannot resist.'"
+[ --- Sightings Lanyard SAN cascade: logic relocated below the Director's THIN MAN rule --- ]
+
+
+Instead of asking the Director about something when the topic understood matches the regular expression "^thin$|^registry$|^project$":
+	say "'THIN MAN,' the Director says. 'The doctrine of the family-derived construct: the horror is not visual, it is existential. The target cannot fight the construct without harming his own child. The registry is classified. The budget was doubled.'"
+
+[ --- Sightings Lanyard: the Sanity Cascade (SAN + SCP containment walk; Fred / THIN MAN-01 anchor) --- ]
+sanity is a number that varies. sanity is 0.
+sanity-cascade-active is a truth state that varies. sanity-cascade-active is false.
+sanity-beat is a number that varies. sanity-beat is 0.
+sanity-preloaded is a text that varies. sanity-preloaded is "".
+sightings-cascade-won is a truth state that varies. sightings-cascade-won is false.
+
+To decide which text is the required counter for (b - a number):
+	if b is 1, decide on "pre-empt";
+	if b is 2, decide on "respond";
+	if b is 3, decide on "inoculate";
+	if b is 4, decide on "restore";
+	if b is 5, decide on "respond";
+	decide on "restore".
+
+To start the sanity cascade:
+	now sanity is 50;
+	now sanity-cascade-active is true;
+	now sanity-beat is 1;
+	now sanity-preloaded is "";
+	now sightings-cascade-won is false;
+	say "The Director taps the tablet. 'Site-66 containment walk. You carry the protocol; the Construct is on the plinth. Six beats of the cascade, traveler - steady a counter, then face each. Your sanity starts at [sanity]. STEADY pre-empt, respond, inoculate, or restore; then FACE the beat. Hold to the end and the pass is yours.'";
+	announce the sanity beat.
+
+To announce the sanity beat:
+	if sanity-beat is 1:
+		say "Beat 1 - Initial Sighting. A shape at the treeline of vision. STEADY your counter, then FACE it.";
+	otherwise if sanity-beat is 2:
+		say "Beat 2 - Viral Spread. The sighting propagates through the network. STEADY, then FACE.";
+	otherwise if sanity-beat is 3:
+		say "Beat 3 - Scientific Denial, discredited. The Construct folds into the shape of someone you lost - you know that posture. Only recognizing it as a projection holds you. STEADY inoculate, then FACE.";
+	otherwise if sanity-beat is 4:
+		say "Beat 4 - Increased Belief. The crowd believes the impossible. STEADY restore, then FACE.";
+	otherwise if sanity-beat is 5:
+		say "Beat 5 - More Sightings, psychosomatic. Copycats bloom. STEADY respond, then FACE.";
+	otherwise:
+		say "Beat 6 - Authority Collapse. The last pillar wobbles. STEADY restore, then FACE.".
+
+Steadying is an action applying to one topic.
+	Understand "steady [text]" or "composed [text]" or "calm [text]" or "breathe [text]" as steadying.
+
+Check steadying:
+	if the location is not the Puppet Workshop:
+		say "There is no cascade to steady here." instead;
+	if sanity-cascade-active is false:
+		say "The Director hasn't opened the walk. ASK her about sightings first." instead.
+
+Carry out steadying:
+	if the topic understood matches the regular expression "^pre-empt$":
+		now sanity-preloaded is "pre-empt";
+	otherwise if the topic understood matches the regular expression "^respond$":
+		now sanity-preloaded is "respond";
+	otherwise if the topic understood matches the regular expression "^inoculate$":
+		now sanity-preloaded is "inoculate";
+	otherwise if the topic understood matches the regular expression "^restore$":
+		now sanity-preloaded is "restore";
+	otherwise:
+		say "That is not one of the four counters - pre-empt, respond, inoculate, restore.";
+		stop;
+	say "You settle the counter in your mind: [sanity-preloaded]. FACE the beat when ready."
+
+Facing the cascade is an action applying to nothing.
+	Understand "face" or "endure" or "step" or "proceed" as facing the cascade.
+
+Check facing the cascade:
+	if the location is not the Puppet Workshop:
+		say "The cascade only advances on the Puppet Workshop floor." instead;
+	if sanity-cascade-active is false:
+		say "The Director hasn't opened the walk. ASK her about sightings first." instead.
+
+Carry out facing the cascade:
+	decrease sanity by 4;
+	let req be the required counter for sanity-beat;
+	let personal be false;
+	if sanity-beat is 3, now personal is true;
+	if sanity-preloaded is req:
+		increase sanity by 7;
+		if personal is true:
+			say "Beat 3: the Construct folds into someone you lost - you name it: a template, not a person, and the shape dissolves. Inoculation holds. Sanity [sanity].";
+		otherwise:
+			say "Beat [sanity-beat]: the right counter holds; the sighting loses its edge. Sanity [sanity].";
+	otherwise if sanity-preloaded is not "":
+		decrease sanity by 4;
+		if personal is true:
+			say "Beat 3: the Construct wears your lost one's posture and you reach for the wrong counter - the shape presses closer. Sanity [sanity].";
+		otherwise:
+			say "Beat [sanity-beat]: the wrong counter feeds the cascade; the sighting hits harder. Sanity [sanity].";
+	otherwise:
+		if personal is true:
+			say "Beat 3: the Construct wears your lost one's posture and you face it bare - the shape presses closer. Sanity [sanity].";
+		otherwise:
+			say "Beat [sanity-beat]: you faced it bare, no counter steadied. Sanity [sanity].";
+	now sanity-preloaded is "";
+	if sanity <= 0:
+		now sanity-cascade-active is false;
+		now sanity is 50;
+		say "Panic break - the room goes white at the edges and the drone swallows the word you were about to say. (The walk resets. ASK the Director about sightings to begin again.)";
+		stop;
+	if sanity-beat is 6:
+		end the sanity cascade in victory;
+		stop;
+	otherwise:
+		increment sanity-beat;
+		announce the sanity beat.
+
+To end the sanity cascade in victory:
+	now sanity-cascade-active is false;
+	now sightings-cascade-won is true;
+	let lvl be 1;
+	if sanity >= 60:
+		now lvl is 4;
+	otherwise if sanity >= 45:
+		now lvl is 3;
+	otherwise if sanity >= 30:
+		now lvl is 2;
+	say "Six beats weathered. The Director closes the tablet. 'Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse. You held, traveler - through the Recognition and the rest.'";
+	say "[line break]'REDACTED,' she says, and the tablet shows a line that was not in the pamphlet: THIN MAN-01 was Daniel of the Phoenix Incident - a living man made into a construct. 'The mind that fears cannot think,' she finishes. 'You kept yours. The pass is graded by what you kept.'";
+	if lvl is 4:
+		say "[line break]Clearance: Level 4 - Unblinking.";
+	otherwise if lvl is 3:
+		say "[line break]Clearance: Level 3.";
+	otherwise if lvl is 2:
+		say "[line break]Clearance: Level 2.";
+	otherwise:
+		say "[line break]Clearance: Level 1 - provisional.";
+	grant the sightings lanyard noting "The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS."
+
 Instead of asking the Director about something when the topic understood matches the regular expression "^sightings$|^constructs$|^cascade$":
 	if the player carries the Rationality Protocol pamphlet:
 		if the sightings lanyard is carried by the player:
 			say "'You have the pass. Walk the floor whenever you like.'";
+		otherwise if sanity-cascade-active is true:
+			say "'Keep facing the beats, traveler - steady a counter, then face.'";
 		otherwise:
-			say "The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. 'Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse.' She closes the tablet. 'A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, traveler. The pass is provisional. The lesson is not.'";
-			grant the sightings lanyard noting "The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.";
+			start the sanity cascade;
 	otherwise:
 		say "'Your pulse is at drill-rate, traveler,' the Director observes, 'and the cascade eats drill-rate for breakfast. The AAA publishes a field protocol - pre-emptive education, rapid response, inoculation, trust restoration. Read it. Then walk my floor and ask again.'"
 
-Instead of asking the Director about something when the topic understood matches the regular expression "^thin$|^registry$|^project$":
-	say "'THIN MAN,' the Director says. 'The doctrine of the family-derived construct: the horror is not visual, it is existential. The target cannot fight the construct without harming his own child. The registry is classified. The budget was doubled.'"
+After going from the Puppet Workshop when sanity-cascade-active is true:
+	now sanity-cascade-active is false;
+	now sanity is 50;
+	say "You step out of Site-66; the walk is abandoned. The Construct's fitting light hums on without you."
+
 
 The Masquerade Ballroom is below the Dark Concourse. "Candlelight, water-music, and three masked figures moving through the figures of a slow pavane. A mural runs the length of the hall: the Hall of Romances, each portrait labelled with a gift. Somewhere a string quartet plays one beat behind itself."
 

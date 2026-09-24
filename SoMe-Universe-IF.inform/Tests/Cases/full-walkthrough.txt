@@ -56,6 +56,18 @@ ask amanuensis about sleep
 accuse stern quartermaster
 go to fear technology
 ask director about sightings
+steady pre-empt
+face
+steady respond
+face
+steady inoculate
+face
+steady restore
+face
+steady respond
+face
+steady restore
+face
 go to masquerade
 ask crimson dancer about symptoms
 examine crimson dots

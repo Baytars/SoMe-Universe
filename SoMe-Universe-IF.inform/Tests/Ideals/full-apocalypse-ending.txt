@@ -590,7 +590,42 @@ The Construct stands motionless on the plinth - THIN MAN-01, a living urban lege
 
 The Workshop does its work - a low-frequency drone under hearing, a figure at the edge of the lamp - and finds your pulse already catalogued in a pamphlet's four headings. Fear is the battlefield. You keep your footing on it.
 
->The Director completes the walk-through at parade pace, and you keep pace because a pamphlet has already told you the shape of every turn. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse." She closes the tablet. "A fifty-thousand-credit construct costs your Accord two-point-three million in countermeasures, and the more you fight, the more you look like the ones hiding something. You kept your pulse, traveler. The pass is provisional. The lesson is not."
+>The Director taps the tablet. "Site-66 containment walk. You carry the protocol; the Construct is on the plinth. Six beats of the cascade, traveler - steady a counter, then face each. Your sanity starts at 50. STEADY pre-empt, respond, inoculate, or restore; then FACE the beat. Hold to the end and the pass is yours."
+Beat 1 - Initial Sighting. A shape at the treeline of vision. STEADY your counter, then FACE it.
+
+>You settle the counter in your mind: pre-empt. FACE the beat when ready.
+
+>Beat 1: the right counter holds; the sighting loses its edge. Sanity 53.
+Beat 2 - Viral Spread. The sighting propagates through the network. STEADY, then FACE.
+
+>You settle the counter in your mind: respond. FACE the beat when ready.
+
+>Beat 2: the right counter holds; the sighting loses its edge. Sanity 56.
+Beat 3 - Scientific Denial, discredited. The Construct folds into the shape of someone you lost - you know that posture. Only recognizing it as a projection holds you. STEADY inoculate, then FACE.
+
+>You settle the counter in your mind: inoculate. FACE the beat when ready.
+
+>Beat 3: the Construct folds into someone you lost - you name it: a template, not a person, and the shape dissolves. Inoculation holds. Sanity 59.
+Beat 4 - Increased Belief. The crowd believes the impossible. STEADY restore, then FACE.
+
+>You settle the counter in your mind: restore. FACE the beat when ready.
+
+>Beat 4: the right counter holds; the sighting loses its edge. Sanity 62.
+Beat 5 - More Sightings, psychosomatic. Copycats bloom. STEADY respond, then FACE.
+
+>You settle the counter in your mind: respond. FACE the beat when ready.
+
+>Beat 5: the right counter holds; the sighting loses its edge. Sanity 65.
+Beat 6 - Authority Collapse. The last pillar wobbles. STEADY restore, then FACE.
+
+>You settle the counter in your mind: restore. FACE the beat when ready.
+
+>Beat 6: the right counter holds; the sighting loses its edge. Sanity 68.
+Six beats weathered. The Director closes the tablet. "Initial sighting. Viral spread. Scientific denial - discredited. Increased belief. More sightings, psychosomatic. Authority collapse. You held, traveler - through the Recognition and the rest."
+
+"REDACTED," she says, and the tablet shows a line that was not in the pamphlet: THIN MAN-01 was Daniel of the Phoenix Incident - a living man made into a construct. "The mind that fears cannot think," she finishes. "You kept yours. The pass is graded by what you kept."
+
+Clearance: Level 4 - Unblinking.
 
 The Director hangs the laminated pass around your neck: BEARER CLEARED FOR SIGHTINGS.
 
@@ -776,7 +811,7 @@ You set the Apocalypse of the White Moon beside the standards, and the Keeper re
     *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 133 turns.
+In that game you scored 10 out of a possible 10, in 145 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
