@@ -2342,6 +2342,14 @@ After going from the Nightfall Grounds when nightfall-active is true:
 	now nightfall-arena is undecided;
 	say "You step back toward the dry hall; the run is abandoned. The night will wait."
 
+[ Leaving by `go to X` uses the custom `warping to` action, which moves the player
+  directly and never triggers the going rulebook - so it needs this sibling rule. ]
+Before warping to when the location is the Nightfall Grounds and nightfall-active is true:
+	now nightfall-active is false;
+	now nightfall-arena is undecided;
+	say "You abandon the run and the concordance carries you out; the night closes over the yard behind you. Step back into the Grounds from the Blood Court when you are ready.";
+	continue the action.
+
 Advancing the nightfall is an action applying to nothing.
 Understand "advance" or "next" or "survive" or "fight" as advancing the nightfall.
 

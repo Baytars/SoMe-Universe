@@ -1,0 +1,21 @@
+s
+choose dracula
+go to cradle
+buy vial
+go to undead court
+ask count dracula about pasteur
+ask budapest bride about past
+ask bucharest bride about past
+ask belgrade bride about past
+show vial to count dracula
+go north
+theater wilds
+advance
+advance
+go to cradle
+go to undead court
+go north
+theater wilds
+advance
+quit
+yes

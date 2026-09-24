@@ -1,0 +1,141 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
+Release 1 / Serial number 260925 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
+
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
+
+>The Count regards you across the dry fountains. "Fear is not a weapon. Fear is the battlefield," he says. "Welcome to the field." You swear to the Undead Court.
+
+
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
+(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK KEEPER ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall are an offering bundle (closed) and a Pasteur vial.
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The last token goes across the stall. "Show it to the Count himself," the Factor says again. "He has watched empires rise and fall. He will want to see what the living made."
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
+
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
+
+The Budapest Bride watches the stair, unhurried - black hair pinned with a single jade pin, the kind of stillness that makes you aware of your own pulse, which is, of course, the point.
+
+The Bucharest Bride stands where the gallery light ends, and the dark approves of her: dark hair, darker eyes, the rose-and-ash coloring that launches a thousand warning poems.
+
+The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
+
+>"The Frenchman found a way to cheat death," Dracula says, and the hall's acoustics file the sentence as precedent. "We despise him. We fear him. We respect him. A worthy enemy. The boy Meister was bitten fourteen times - fourteen deaths owed - and lived, and spent his life keeping the Frenchman's tomb. That is what your kind fights with, traveler. Not victory. Survival. It is... satisfactory, as weapons go."
+
+>"Before the timetable, I kept another," the Budapest Bride says. "I was a dispatcher at the Budapest Pasteur Institute - the house that took in the bitten from every corner of the Balkans and sent them home alive, if they arrived in time. Forty-seven substations, seventy-two hours: that was my schedule then, too. The Court simply gave me the dark version of it. I do not serve. I obey. I enjoy it - because I was always the one who made the trains of the saved run on time."
+
+>"I was a namer of small deaths," the Bucharest Bride says. "A pathologist - Victor Babes taught the world to see the body's signature under glass, the little inclusion that named rabies before it killed. I spoke a dozen tongues and still ran out of words for what we are. That is why I collect yours. Every culture has a word for us. They are all correct. They are all insufficient - I learned that in a laboratory, long before I learned it in a crypt."
+
+>"I was a doctor in the place where your word for me was born," the Belgrade Bride says. "Serbia - where the imperial surgeons first wrote down the returning dead and called the terror by its true name: rabies. I read those reports. I watched my own patients become exactly what the old papers described, and I could not stop it. That is why I understand why your patients scream. Every operative you see is already dead. We are simply fighting while dying - and somewhere a Serb reached Budapest in time and lived. I am what happens to the ones who did not."
+
+>You hold up the steel-cased vial, and for the first time the fixed point at the end of the hall moves - a bow, precisely as deep as the one he would give a rival. "Attenuated," Dracula says. "The Frenchman's trick: weaken the wolf until it teaches the sheep. Ninety-nine percent, if given in time. Twenty-nine million of your kind walked past my court because of that vial." He turns, slowly, to each of the three. "You have heard the boy Meister. You have heard what Budapest scheduled, what Bucharest named, what Belgrade could not save. You do not carry a relic. You carry a witness." A bride closes his hand around it; he does not look at it again. "A worthy enemy's legacy, seen whole. Very well, traveler. The Court receives you as received - marked, not turned."
+
+The Budapest Bride seals a black disc of spread wings into your hand. The Undead Court marks you: you faced the first fear, heard its witnesses, and stayed polite.
+
+[Your score has just gone up by one point.]
+
+>
+Nightfall Grounds
+A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day, and three theaters of the night wait beyond it. THEATER WILDS - an open moor under a thin moon, where you see far but the dark sends more. THEATER CASTLE - drafty halls and guttering candles, balanced. THEATER MAZE - a lightless warren where you grope, fewer foes but little sight. Name one to begin; ADVANCE to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave.
+
+The threshold holds three doors and no light behind any of them. THEATER WILDS (see far, more foes), THEATER CASTLE (balanced), THEATER MAZE (groping dark, fewer foes). Name one to step into the night.
+
+>The Wilds swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is 20, your guard 2, your vision 5 - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3, or just ADVANCE to decline it. Outlast wave twelve and the night is yours.
+
+>Wave 1: all 2 shapes are seen and turned before they land. (Vision 5.) Vitality: 20.
+
+>Wave 2: 3 shapes lunge from the gloom; your guard turns 2, 1 slip past - 1 wounds. (Vision 5.) Vitality: 19.
+
+>You abandon the run and the concordance carries you out; the night closes over the yard behind you. Step back into the Grounds from the Blood Court when you are ready.
+
+The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Cradle Outer Court
+The outer court of the Cradle, the Medulla: whitewashed cloisters where cadets from every nation sit cross-legged among signal-lattices, learning to see the body's own presentation before they are permitted to fight anything at all. Stairs rise to the Inner Court; to one side, a neutral factor keeps a modest stall, tariffs funding the Cradle.
+
+On the factor's stall is an offering bundle (closed).
+
+The Port Factor watches the cloister with the serenity of a man whose tariffs fund an academy nobody dares to sack.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Blood Court
+The court of the Undead: a long dry hall where fountains stand as architecture only, running nothing. Dracula holds the far end like a fixed point the room is measured from. Three Brides flank him - Budapest, Bucharest, Belgrade - and the gallery behind is walled in glass, with what is preserved in the glass better left undescribed. Every surface is dark, dry, and exactly 0.1 lux.
+
+Count Dracula stands at the far end of the dry hall. He does not so much hold the room as permit it to continue.
+
+The Budapest Bride watches the stair, unhurried - black hair pinned with a single jade pin, the kind of stillness that makes you aware of your own pulse, which is, of course, the point.
+
+The Bucharest Bride stands where the gallery light ends, and the dark approves of her: dark hair, darker eyes, the rose-and-ash coloring that launches a thousand warning poems.
+
+The Belgrade Bride has a physician's hands - pale, precise, kept folded like an instrument tray - and the tired, luminous beauty of a portrait by someone who only painted grief.
+
+>
+Nightfall Grounds
+A practice yard the Court keeps for the marked: bare stone under a sky that is never quite day, and three theaters of the night wait beyond it. THEATER WILDS - an open moor under a thin moon, where you see far but the dark sends more. THEATER CASTLE - drafty halls and guttering candles, balanced. THEATER MAZE - a lightless warren where you grope, fewer foes but little sight. Name one to begin; ADVANCE to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3. Outlast wave twelve and the night is yours. Step south to leave.
+
+The threshold holds three doors and no light behind any of them. THEATER WILDS (see far, more foes), THEATER CASTLE (balanced), THEATER MAZE (groping dark, fewer foes). Name one to step into the night.
+
+>The Wilds swallows the light. Forty-seven substations, seventy-two hours, compressed to twelve waves. Your vitality is 20, your guard 2, your vision 5 - shapes beyond it strike unguarded. ADVANCE (or NEXT) to face each wave; every third wave the Court offers a boon - PICK 1, 2, or 3, or just ADVANCE to decline it. Outlast wave twelve and the night is yours.
+
+>Wave 1: all 2 shapes are seen and turned before they land. (Vision 5.) Vitality: 20.
+
+>Are you sure you want to quit? 
