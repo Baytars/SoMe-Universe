@@ -79,7 +79,17 @@ ask bucharest bride about past
 ask belgrade bride about past
 show vial to count dracula
 go to abyssal fleet
+ask octopus admiral about ocean
+ask octopus admiral about counters
 ask octopus admiral about cannons
+deploy distance
+deploy drainage
+deploy chlorine
+deploy emp
+deploy distance
+deploy drainage
+deploy chlorine
+deploy emp
 go to landing
 report
 banners

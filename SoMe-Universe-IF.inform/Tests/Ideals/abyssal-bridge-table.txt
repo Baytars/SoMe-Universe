@@ -1,0 +1,113 @@
+Welcome to the Cheap Glk Implementation, library version 1.0.7.
+
+
+
+
+
+SoMe-Universe: The Ten Banners
+Ten powers want you. Decide who to become. by The SoMe-Universe Contributors
+Release 1 / Serial number 260924 / Inform 7 v10.1.2 / D
+
+Singularity
+You are in the Singularity. The universe is beginning to explode.
+
+WHO YOU ARE: You are the first traveler - a mind awake at the birth of the cosmos, before any side has claimed you. Ten powers want your oath; your task is to choose one and then walk every other.
+
+HOW TO PLAY: Type a direction alone - N, S, E, W - to move. LOOK re-reads a room; EXAMINE <thing> or LOOK AT <thing> studies something; ASK <someone> ABOUT <topic> questions a character.
+
+THE FIRST STEP: Two gates stand open - SOUTH to the Hall of Medicine, NORTH to the Disease Citadel - the Unseen Crown's domain. Walk to one (just type N or S). Inside, each faction keeps a recruiter; when one wins you over, swear with CHOOSE <patron> - e.g. CHOOSE CRADLE or CHOOSE VIBRIO.
+
+Only after you have sworn can you cross the cosmos by concordance (GO TO <place>); until then GO TO is refused. Three roads leave the newborn light: south to Medicine, north to the Disease Citadel (the Unseen Crown's domain), and west - where the land glows wrong - belongs to the Old Metals. Type HELP any time to see this again.
+
+>You have walked into the Hall of Medicine, where the healing powers of the Accord keep their banners - and under each waits a recruiter who wants your oath:
+
+   a medullary preceptor (the Cradle of Aukin - sworn agent of the Heavy Metal Pantheon), a fleet navigator (the Celestial Corps), and a quiet keeper (the Lab Martyrs).
+
+Court any of them before you swear - each hides a secret, if you ask. When one wins you over: CHOOSE CRADLE, CHOOSE CELESTIAL, or CHOOSE MARTYRS. The Heavy Metal Pantheon keeps no banner in this hall - the Cradle keeps its interest as agent, and the Old Metals themselves answer only at their own door, west of the Wastes. For example: ASK THE PRECEPTOR ABOUT JOINING.
+
+>The Generalizer lifts the honey-gold AIRE flame. "Then learn this first, traveler: the stricter the definition of self, the more of the self becomes unrecognizable." You swear to the Cradle.
+
+
+The war arranges itself around your oath - and the Keeper of the Gate watches you like a woman who has just seen the weather change.
+The Keeper's road-map appears in your satchel.
+(Sworn is not won. GO TO each faction's hall, complete its trial, and earn all ten seals - then REPORT. Type BANNERS to track them; ASK a faction's representative ABOUT SEAL to learn its trial.)
+
+The Singularity seals itself behind the Big Bang. The gates open. A launch skiff carries you to neutral waters.
+
+The circuit of the Ten Banners begins.
+
+Free Port Landing
+The landing stage of the Pericardium Free Port, the one place the war may not touch: tariffs fund the Cradle, every flag may dock, and no act of war may be committed within the pericardial sac. The Keeper keeps the standards here, on the one ground every faction still respects - where oaths bind and the war holds its breath. Go to any banner's hall from this deck - the port's manifests know them all.
+
+On the chart table is a Rationality Protocol pamphlet.
+
+A woman in travel-grey stands at the standards, and she is already speaking as you arrive - not at you, exactly, but near you, the way weather speaks. "Awake, are you? Good. The banners have been waiting for someone who could still choose."
+
+
+HOW TO TRAVEL: no compass needed at this hub. List every destination:
+      ASK KEEPER ABOUT DESTINATIONS
+then jump straight there:
+      GO TO UNDEAD COURT      (GO TO LANDING brings you home.)
+Carry every won seal home and REPORT to raise the standards.
+
+HOW TO WALK: directions still work where roads exist - type N / S / and so on to walk a real road instead of using the concordance.
+
+YOUR ROAD: ten halls, ten seals, and every faction watching you choose. The Keeper raises a standard for each seal you bring home - type BANNERS to see how far you have come, REPORT to raise what you carry. No one has ever walked all ten halls and lived to be welcome in all of them. When the tenth standard flies, you will be the first - and you will finally see the whole war.
+
+>The manifest takes your word, and the concordance carries you along the great vessels of the war.
+
+Abyssal Deck
+A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel-anchored in shallow artificial sea. The flagship rides at the centre - the Cholera Octopus, fifty meters of metal and arm, each of eight tentacles cradling a cannon-bore. The Octopus Admiral walks the wet deck as if salinity were a rank.
+
+The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
+
+>You would watch a demonstration before you can name what you are watching. Ask me of the ocean, and of our weaknesses, first.
+
+>"Four phases," the Admiral says. "Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses."
+
+>"Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles," the Admiral recites, almost cheerful. "The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet."
+
+>"The Bridge Table," the Admiral says. "Eight guns. Four answers. Read the water, defender."
+The Cholera Octopus slips in with the tide - INFILTRATION. It has your schedule; the bridge approaches are already mapped. Your move, defender: DEPLOY a counter.
+
+>You take the high ground and read the tide-gauge - the leak is spotted before the Octopus commits. The infiltration founders on foreknowledge.
+A gun goes dark. 7 of eight remain.
+The rice-cloud reservoirs vent - EXPANSION. The deck floods; the ink deploys, a turbid sea. Your move, defender: DEPLOY a counter.
+
+>Your sluices open; the flood finds no purchase, the ink drains to mud. The expansion collapses on dry deck.
+A gun goes dark. 6 of eight remain.
+The bore breaches its own critical point - ABYSSALIZATION. Superheated water boils the steel; the sea itself burns. Your move, defender: DEPLOY a counter.
+
+>Chlorine into the bore, heat into the hide - the supercritical blade sputters and dies. The sea does not boil.
+A gun goes dark. 5 of eight remain.
+The tentacles coil for the fall - DOMINATION. It means to push you through the bridge, into exile. Your move, defender: DEPLOY a counter.
+
+>EMP blinds the pumps; you land on the tentacle-joints and sever them. The Octopus cannot swim what it cannot feel.
+A gun goes dark. 4 of eight remain.
+The Cholera Octopus slips in with the tide - INFILTRATION. It has your schedule; the bridge approaches are already mapped. Your move, defender: DEPLOY a counter.
+
+>You take the high ground and read the tide-gauge - the leak is spotted before the Octopus commits. The infiltration founders on foreknowledge.
+A gun goes dark. 3 of eight remain.
+The rice-cloud reservoirs vent - EXPANSION. The deck floods; the ink deploys, a turbid sea. Your move, defender: DEPLOY a counter.
+
+>Your sluices open; the flood finds no purchase, the ink drains to mud. The expansion collapses on dry deck.
+A gun goes dark. 2 of eight remain.
+The bore breaches its own critical point - ABYSSALIZATION. Superheated water boils the steel; the sea itself burns. Your move, defender: DEPLOY a counter.
+
+>Chlorine into the bore, heat into the hide - the supercritical blade sputters and dies. The sea does not boil.
+A gun goes dark. 1 of eight remain.
+The tentacles coil for the fall - DOMINATION. It means to push you through the bridge, into exile. Your move, defender: DEPLOY a counter.
+
+>EMP blinds the pumps; you land on the tentacle-joints and sever them. The Octopus cannot swim what it cannot feel.
+A gun goes dark. 0 of eight remain.
+"Enough," the Admiral says. "Eight guns silenced, and the bridge holds. You read the water, defender - and the water read you back."
+"A demonstration, then." The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated. "Water is life," the Admiral says. "Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan."
+
+A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.
+
+[Your score has just gone up by one point.]
+
+>Seals in your keeping:  Abyssal Pennant.
+REPORT raises every seal you carry at once; or GIVE a single seal TO KEEPER to deliver just that one.
+
+>Are you sure you want to quit? 

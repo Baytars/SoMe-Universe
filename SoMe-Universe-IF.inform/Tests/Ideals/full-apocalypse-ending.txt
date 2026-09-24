@@ -710,7 +710,45 @@ A floodable landing deck under sodium lights: the navy of the Unseen Crown, keel
 
 The Octopus Admiral walks the wet deck as if salinity were a rank, eight grease-marks of hydro-cannon oil on her sleeve.
 
->"A demonstration, then." The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated. "Water is life," the Admiral says. "Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan."
+>"Four phases," the Admiral says. "Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses."
+
+>"Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles," the Admiral recites, almost cheerful. "The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet."
+
+>"The Bridge Table," the Admiral says. "Eight guns. Four answers. Read the water, defender."
+The Cholera Octopus slips in with the tide - INFILTRATION. It has your schedule; the bridge approaches are already mapped. Your move, defender: DEPLOY a counter.
+
+>You take the high ground and read the tide-gauge - the leak is spotted before the Octopus commits. The infiltration founders on foreknowledge.
+A gun goes dark. 7 of eight remain.
+The rice-cloud reservoirs vent - EXPANSION. The deck floods; the ink deploys, a turbid sea. Your move, defender: DEPLOY a counter.
+
+>Your sluices open; the flood finds no purchase, the ink drains to mud. The expansion collapses on dry deck.
+A gun goes dark. 6 of eight remain.
+The bore breaches its own critical point - ABYSSALIZATION. Superheated water boils the steel; the sea itself burns. Your move, defender: DEPLOY a counter.
+
+>Chlorine into the bore, heat into the hide - the supercritical blade sputters and dies. The sea does not boil.
+A gun goes dark. 5 of eight remain.
+The tentacles coil for the fall - DOMINATION. It means to push you through the bridge, into exile. Your move, defender: DEPLOY a counter.
+
+>EMP blinds the pumps; you land on the tentacle-joints and sever them. The Octopus cannot swim what it cannot feel.
+A gun goes dark. 4 of eight remain.
+The Cholera Octopus slips in with the tide - INFILTRATION. It has your schedule; the bridge approaches are already mapped. Your move, defender: DEPLOY a counter.
+
+>You take the high ground and read the tide-gauge - the leak is spotted before the Octopus commits. The infiltration founders on foreknowledge.
+A gun goes dark. 3 of eight remain.
+The rice-cloud reservoirs vent - EXPANSION. The deck floods; the ink deploys, a turbid sea. Your move, defender: DEPLOY a counter.
+
+>Your sluices open; the flood finds no purchase, the ink drains to mud. The expansion collapses on dry deck.
+A gun goes dark. 2 of eight remain.
+The bore breaches its own critical point - ABYSSALIZATION. Superheated water boils the steel; the sea itself burns. Your move, defender: DEPLOY a counter.
+
+>Chlorine into the bore, heat into the hide - the supercritical blade sputters and dies. The sea does not boil.
+A gun goes dark. 1 of eight remain.
+The tentacles coil for the fall - DOMINATION. It means to push you through the bridge, into exile. Your move, defender: DEPLOY a counter.
+
+>EMP blinds the pumps; you land on the tentacle-joints and sever them. The Octopus cannot swim what it cannot feel.
+A gun goes dark. 0 of eight remain.
+"Enough," the Admiral says. "Eight guns silenced, and the bridge holds. You read the water, defender - and the water read you back."
+"A demonstration, then." The Admiral signals. One tentacle swings its bore to bear on a derelict hulk at the far end of the flood - and fires. No shell: a jet of water driven past its own critical point, a blade that passes through armor and detonates inside it in a bloom of collapsing cavitation, micro-jet after micro-jet, thousands of degrees in a thousandth of a second. The hulk folds inward, politely, like something dehydrated. "Water is life," the Admiral says. "Water is death. The cholera field taught us the lesson in hours; the cannon teaches it in an instant. You watched without flinching, traveler. Take the pennant to your Accord - and tell them the sea remembers every drainage plan."
 
 A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.
 
@@ -738,7 +776,7 @@ You set the Apocalypse of the White Moon beside the standards, and the Keeper re
     *** The Ten Banners stand raised over the Pericardium Free Port. ***
 
 
-In that game you scored 10 out of a possible 10, in 123 turns.
+In that game you scored 10 out of a possible 10, in 133 turns.
 
 
 Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?

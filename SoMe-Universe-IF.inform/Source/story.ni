@@ -243,7 +243,7 @@ The trial text of the pale masque is "At the Masquerade, run the diagnosis: ASK 
 The trial text of the bat sigil is "In the Blood Court: ASK Count Dracula about PASTEUR or MEISTER, then ASK each of his three brides - Budapest, Bucharest, Belgrade - about their PAST. Only then SHOW the Pasteur vial (bought from the Cradle's factor, one token) to the Count, and he will mark you a witness, not a courier."
 The trial text of the stille seal is "In the Stille office: READ THE DOSSIERS WALL to take the MARY-07 folder, read its three enclosures, then NAME two flaws to the Amanuensis - DIET, HAND, WARMTH, SLEEP or TIMING. Only then will she hear your ACCUSATION of the stern quartermaster."
 The trial text of the sightings lanyard is "Read the Rationality Protocol pamphlet the Accord publishes, then keep your pulse through the Puppet Workshop and ASK the Director about sightings."
-The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about cannons or water, and watch the hydro-cannon trial without flinching."
+The trial text of the abyssal pennant is "At the Abyssal Deck, ASK the Octopus Admiral about the ocean and about her weaknesses first, then about cannons - survive the Bridge Table by deploying the right counter for each of her four attack phases until all eight guns are silenced, and she will grant the pennant."
 
 To decide which patron is the patron of (tk - a seal):
 	if tk is the cradle sigil, decide on cradle;
@@ -2174,6 +2174,90 @@ The Octopus Admiral is a woman in the Abyssal Deck. "The Octopus Admiral walks t
 
 wave-count is a number that varies. wave-count is 0.
 
+abyssal-duel-active is a truth state that varies. abyssal-duel-active is false.
+abyssal-duel-phase is a number that varies. abyssal-duel-phase is 1.
+deck-integrity is a number that varies. deck-integrity is 0.
+octopus-guns is a number that varies. octopus-guns is 0.
+heard-abyssal-doctrine is a truth state that varies. heard-abyssal-doctrine is false.
+heard-abyssal-counters is a truth state that varies. heard-abyssal-counters is false.
+bridge-table-won is a truth state that varies. bridge-table-won is false.
+
+Deploying a counter is an action applying to one topic.
+Understand "deploy [text]" or "counter [text]" or "parry [text]" or "defend [text]" as deploying a counter.
+
+Check deploying a counter:
+	if the location is not the Abyssal Deck:
+		say "There is no counter to deploy here." instead;
+	if abyssal-duel-active is false:
+		say "The Bridge Table is not set. Ask the Octopus Admiral about her cannons to begin it." instead.
+
+Carry out deploying a counter:
+	let cn be "[the topic understood]";
+	resolve the abyssal counter (cn).
+
+To start the bridge table:
+	now abyssal-duel-active is true;
+	now abyssal-duel-phase is 1;
+	now deck-integrity is 10;
+	now octopus-guns is 8;
+	say "'The Bridge Table,' the Admiral says. 'Eight guns. Four answers. Read the water, defender.'";
+	announce the abyssal phase.
+
+To announce the abyssal phase:
+	if abyssal-duel-phase is 1:
+		say "The Cholera Octopus slips in with the tide - INFILTRATION. It has your schedule; the bridge approaches are already mapped. Your move, defender: DEPLOY a counter.";
+	otherwise if abyssal-duel-phase is 2:
+		say "The rice-cloud reservoirs vent - EXPANSION. The deck floods; the ink deploys, a turbid sea. Your move, defender: DEPLOY a counter.";
+	otherwise if abyssal-duel-phase is 3:
+		say "The bore breaches its own critical point - ABYSSALIZATION. Superheated water boils the steel; the sea itself burns. Your move, defender: DEPLOY a counter.";
+	otherwise:
+		say "The tentacles coil for the fall - DOMINATION. It means to push you through the bridge, into exile. Your move, defender: DEPLOY a counter.".
+
+To advance the abyssal phase:
+	if abyssal-duel-phase is 4:
+		now abyssal-duel-phase is 1;
+	otherwise:
+		now abyssal-duel-phase is abyssal-duel-phase + 1.
+
+To resolve the abyssal counter (cn - a text):
+	let matched be false;
+	if abyssal-duel-phase is 1 and (cn is "distance" or cn is "high ground"):
+		now matched is true;
+		say "You take the high ground and read the tide-gauge - the leak is spotted before the Octopus commits. The infiltration founders on foreknowledge.";
+	otherwise if abyssal-duel-phase is 2 and (cn is "drainage"):
+		now matched is true;
+		say "Your sluices open; the flood finds no purchase, the ink drains to mud. The expansion collapses on dry deck.";
+	otherwise if abyssal-duel-phase is 3 and (cn is "chlorine" or cn is "heat"):
+		now matched is true;
+		say "Chlorine into the bore, heat into the hide - the supercritical blade sputters and dies. The sea does not boil.";
+	otherwise if abyssal-duel-phase is 4 and (cn is "emp" or cn is "land"):
+		now matched is true;
+		say "EMP blinds the pumps; you land on the tentacle-joints and sever them. The Octopus cannot swim what it cannot feel.";
+	if matched is true:
+		decrement octopus-guns;
+		say "A gun goes dark. [octopus-guns] of eight remain.";
+		if octopus-guns is 0:
+			end the bridge table in victory;
+			stop;
+	otherwise:
+		now deck-integrity is deck-integrity - 2;
+		say "The CPHC blade finds the gap. Deck integrity [deck-integrity].";
+		if deck-integrity <= 0:
+			end the bridge table in defeat;
+			stop;
+	advance the abyssal phase;
+	announce the abyssal phase.
+
+To end the bridge table in victory:
+	now abyssal-duel-active is false;
+	now bridge-table-won is true;
+	say "'Enough,' the Admiral says. 'Eight guns silenced, and the bridge holds. You read the water, defender - and the water read you back.'";
+	run the cannon trial.
+
+To end the bridge table in defeat:
+	now abyssal-duel-active is false;
+	say "The deck floods past its limits. The Admiral's hand closes on your shoulder and pulls you back from the rail. 'Read the water before you answer it, defender. The Bridge Table can be attempted again.'".
+
 To run the cannon trial:
 	if the abyssal pennant is nowhere:
 		increment wave-count;
@@ -2182,12 +2266,21 @@ To run the cannon trial:
 		grant the abyssal pennant noting "A wet swallow-tailed pennant, Abyssal blue-green, coils itself around your forearm like it has already been at sea.";
 
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^cannons$|^cphc$|^water$":
-	run the cannon trial.
+	if the abyssal pennant is carried by the player:
+		say "The Admiral salutes. 'The Bridge Table is won, defender. The sea remembers.'";
+	otherwise if abyssal-duel-active is true:
+		say "The Bridge Table is already set. Deploy a counter, defender.";
+	otherwise if heard-abyssal-doctrine is false or heard-abyssal-counters is false:
+		say "You would watch a demonstration before you can name what you are watching. Ask me of the ocean, and of our weaknesses, first.";
+	otherwise:
+		start the bridge table.
 
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^ocean$|^protocol$":
-	say "'Four phases,' the Admiral says. 'Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses.'"
+	say "'Four phases,' the Admiral says. 'Infiltration: we enter with the tide. Expansion: the field floods, the ink deploys. Abyssalization: supercritical injection, the sea boils. Domination: we swim; you do not. Your Accord's counters are honest ones - high ground, drainage, chlorine, and distance. We respect an enemy that reads its own weaknesses.'";
+	now heard-abyssal-doctrine is true.
 Instead of asking the Octopus Admiral about something when the topic understood matches the regular expression "^chlorine$|^weakness$|^counters$":
-	say "'Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles,' the Admiral recites, almost cheerful. 'The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet.'"
+	say "'Heat cooks us. Chlorine unmakes our hide. EMP blinds the pumps; land disables the tentacles,' the Admiral recites, almost cheerful. 'The doctrine is water, traveler. Take the water away, and we are a museum exhibit. You will notice the deck is floodable anyway. Doctrine and honesty can share a fleet.'";
+	now heard-abyssal-counters is true.
 
 Instead of asking the Octopus Admiral about something:
 	say "The Admiral watches the tide-gauges instead."

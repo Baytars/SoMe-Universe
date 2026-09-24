@@ -1,0 +1,18 @@
+s
+choose cradle
+go to abyssal fleet
+ask octopus admiral about cannons
+ask octopus admiral about ocean
+ask octopus admiral about counters
+ask octopus admiral about cannons
+deploy distance
+deploy drainage
+deploy chlorine
+deploy emp
+deploy distance
+deploy drainage
+deploy chlorine
+deploy emp
+seals
+quit
+yes
